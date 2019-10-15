@@ -1,0 +1,53 @@
+@media (max-width: 1500px) {
+
+.imgvf {
+    background-image: url(../img/2-4/a4.gif);
+    background-size: 250px 140px;
+    width: 250px;
+    height: 140px;
+    margin: 11% auto 0;
+    background-repeat: no-repeat;
+}
+
+.seleccion {
+    top: 0;
+    position: relative;
+    margin: 0% 7% 0;
+}
+
+
+.contenedorimg {
+    border: solid 1px #dcdcdc00;
+    width: auto;
+    height: auto;
+    margin: 5px;
+    border-radius: 15px;
+    float: left;
+}
+#contenedorPiezas {
+    background: #5561ff00;
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-left: auto;
+    /* box-shadow: 0px 0px 10px 2px #dadada; */
+    margin-top: auto;
+        margin: 0% 28% 0;
+}
+.recibidores {
+    width: 100%;
+    position: relative;
+    left: auto;
+    top: auto;
+    margin: 5% 25% 0;
+}
+
+.item6 {
+    font-size: 14px;
+    float: left;
+    /* padding: 0px; */
+    margin-left: 28px;
+    margin-right: 25px;
+}
+
+}

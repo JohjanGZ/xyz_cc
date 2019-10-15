@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Upss</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<style type="text/css">        
+    body, html {
+	height: 100%;
+	min-height: 400px;
+	margin: 0;
+    }
+    .error-404{
+	background-image: url('/themes/responsive/images/shared/404_background.png');
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    }
+    h1{
+	position: absolute;
+	font-size: 3.5em;
+	font-weight: bolder;
+	top: 5%;
+    }
+    .text{
+	position: absolute;
+	font-size: 2em;
+	top: 80%;
+	text-align: center;
+    }
+    p{
+	margin: 0px auto;
+    }
+    a, a:hover{
+	 color: #00c821;
+    }
+    
+    
+    /* Media querys */
+    @media (min-width: 768px) and (max-width: 1024px) {
+	.error-404 {
+	    width: 100%;
+	    background-image: url('/themes/responsive/images/shared/404_background_tablet.png');
+	}
+	h1{ 
+	    top: 10%;
+	}
+	.text{
+	    font-size: 1.5em;
+	}
+    }
+    @media (min-width: 479px) and (max-width: 768px) and (orientation: landscape){
+	.error-404 {
+	    width: 100%;
+	    background-image: url('/themes/responsive/images/shared/404_background_tablet.png');
+	}
+	h1{
+	    font-size: 2.7em;
+	    top: 0%;
+	}
+	.text{
+	    font-size: 1.5em;
+	}
+    }
+    @media (min-width: 479px) and (max-width: 768px) and (orientation: portrait){
+	.error-404 {
+	    background-size: cover;
+	    width: 100%;
+	    background-image: url('/themes/responsive/images/shared/404_background_mobile.png');
+	}
+	h1{
+	    font-size: 3em;
+	    top: 25%;
+	}
+	.text{
+	    font-size: 1.5em;
+	    top: 85%;
+	}
+    }
+    @media only screen and (max-width: 479px) {
+	.error-404 {
+	    width: 100%;
+	    background-image: url('/themes/responsive/images/shared/404_background_mobile.png');
+	}
+	h1{
+	    top: 32%;
+	    font-size: 2.0em;
+	}
+	.text{
+	    font-size: 1.3em;
+	    top: 73%;
+	}
+    }
+    @media only screen and (max-width: 350px) {
+	.text{
+	    font-size: 1.1em;
+	    top: 68%;
+	}
+    }
+    @media only screen and (max-height: 350px) and (max-width: 770px) and (orientation: landscape){
+	.text{
+	    top: 100%;
+	}
+    }
+    @media only screen and (max-height: 435px) and (max-width: 1024px) and (orientation: landscape){
+	body, html {
+	    min-height: 495px;
+	}
+	h1{
+	    top: 12%;
+	    font-size: 2em;
+	}
+	.text{
+	    top: 90%;
+	}
+    }
+    @media only screen and (max-height: 330px) and (max-width: 1024px) and (orientation: landscape){
+	body, html {
+	    min-height: 350px;
+	}
+	h1{
+	    top: 0;
+	}
+	.text{
+	    top: 90%;
+	}
+    }
+    /* Safari 6.1-10.0 (10.1 is the latest version of Safari at this time) */
+    @media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) {
+	.error-404{
+	    top: 50%;
+	    left: 40%;
+	    display: block;
+	    justify-content: initial;
+	    align-items: initial;
+	}
+	@media (orientation: landscape){	    
+	    .error-404 .text{
+		transform: translate(-40%, -50%);
+		left: 48%;
+		top: 87%;
+	    }
+	    .error-404 h1{
+		transform: translate(-40%, -50%);
+		left: 48%;
+		top: 10%;
+	    }
+	}
+	@media (orientation: portrait){	    
+	    .error-404 .text{
+		transform: translate(-40%, -50%);
+		left: 45%;
+		top: 78%;
+	    }
+	    .error-404 h1{
+		transform: translate(-40%, -50%);
+		left: 48%;
+		top: 30%;
+	    }
+	}
+    }
+</style>
+</head>
+<body>
+    <div class="error-404">
+	<h1>ERROR 404</h1>
+	<div class="text">
+	    <p class="message">Maybe you wanted to say</p>
+	    <a class="url" href=""></a>
+	</div>
+    </div>
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+	var url = window.location.origin;
+	var newUrl = url.split('://');
+	if(typeof newUrl[1] !== "undefined"){
+	    newUrl = newUrl[1].split('/');
+	}
+	var lang = navigator.language || navigator.userLanguage;
+
+	// message by language
+	var message_es = "Quizá quisiste decir";
+	var message_en = "Maybe you wanted to say";
+	var message_fr = "Tu voulais dire";
+	
+	if(lang.indexOf('es')>-1){
+	    $('.error-404 .message').text(message_es);
+	}else if(lang.indexOf('fr')>-1){
+	    $('.error-404 .message').text(message_fr);
+	}
+	
+	$('.error-404 .url').text(newUrl[0]).attr('href', url);
+    });    
+</script>
+</html>

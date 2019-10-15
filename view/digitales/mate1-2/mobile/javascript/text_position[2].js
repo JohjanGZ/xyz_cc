@@ -1,0 +1,1 @@
+﻿positionForPages[2]={page:2,positions:[{word:"Indice 2°_parte 1_Actividades.indd   2",left:0.015978,top:0.975328,width:0.164988,height:0.008536},{word:"4/10/19   8:41",left:0.928513,top:0.975328,width:0.060071,height:0.008536}]};

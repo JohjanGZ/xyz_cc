@@ -1,0 +1,94 @@
+.Portada {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 72, 72, 0.95);
+   /* background-color: rgba(107, 77, 239, 0.93);*/
+    text-align: center;
+    position: fixed;
+    top: 0%;
+    z-index: 111111111111111;
+}
+
+#Fondo-Portada {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -100;
+}
+
+#Logo {
+  height: 90px;
+  width: 90px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  z-index: 10;
+}
+
+.mierda {
+  height: 200px;
+  width: 100%;
+  background-color: aqua;
+}
+
+#Frase-Presentacion {
+    padding: 15% 0 0 0;
+    font-size: 300%;
+    font-weight: bold;
+    color: #fff;
+}
+
+#Btn-Ready {
+  height: auto;
+  width: 300px;
+  font-size: 18px;
+  background-color: transparent;
+  color: #FFF;
+  line-height: 26px;
+  border-radius: 28px;
+  border-color: #b00000;
+  cursor: pointer;
+  transition: width 0.2s;
+}
+
+#Btn-Ready:hover {
+  width: 320px;
+  background-color: #b00000;
+}
+
+#Aprende-Mas {
+  color: #FFF;
+  font-size: 18px;
+  opacity: 0.6;
+  position: absolute;
+  bottom: 0px;
+}
+
+.icon-keyboard_arrow_down {
+  color: #FFF;
+  font-size: 28px;
+  opacity: 0.6;
+}
+
+  .FormNombre{
+    width: 50%;
+   
+
+  }
+input{
+  text-align: center;
+}
+  
+input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #2196F3;
+    -webkit-box-shadow: 0 1px 0 0 #2196F3;
+    box-shadow: 0 1px 0 0 #2196F3;
+}
+
+
+input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
+   
+  background-color: #ffffff;
+    border-radius: 15px;
+  }

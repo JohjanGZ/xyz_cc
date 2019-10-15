@@ -1,0 +1,86 @@
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("font/Montserrat-Regular.otf");
+}
+
+body{
+
+  font-family: Montserrat-Regular;
+}
+
+ ul li  {
+    list-style: none;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    width: 160px;
+    height: auto;
+    overflow: visible;
+  
+    padding: 4px 8px;
+    border: 0;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+ 
+ .menu-libros  {
+
+    margin: 0 28px 20px;
+  
+}
+
+ 
+
+
+.iconview{
+    position: relative;
+    top: 100px;
+
+    z-index: 0;
+}
+
+/*-------------------------------------------------------fin Portadas----------------------------------------------------------------- */
+
+
+
+.btn, .btn-large, .btn-small, .btn-flat {
+    
+    text-transform: none;
+    
+}
+
+.btn:hover, .btn:focus {
+    color: #fff !important;
+    text-decoration: none;
+}
+
+#indice .unit-content .actividades .item {
+    border-bottom: 1px solid #e5e5e5;
+    border-bottom-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    position: relative;
+    text-align: left;
+    padding: 15px 5px;
+}
+
+.contenedor-libros{
+  padding: 0 35px;
+}
+
+
+table.highlight > tbody > tr:hover {
+    background-color: rgba(45, 178, 74, 0.12);
+}
+
+.li-contenido{
+    width: auto !important;
+}
+
+.btn-back{
+
+    border-radius: 3px !important;
+
+
+}

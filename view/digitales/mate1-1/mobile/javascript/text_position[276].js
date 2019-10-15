@@ -1,0 +1,1 @@
+﻿positionForPages[276]={page:276,positions:[{word:"BICENTENARIO",left:0.054081,top:0.916887,width:0.148837,height:0.018485},{word:"PERÚ 2021",left:0.077617,top:0.933480,width:0.101765,height:0.018485}]};

@@ -1,0 +1,97 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+
+#timer {
+    background-image: url(../img/cronometro.png);
+    background-size: 100% 100%;
+  height: 80px;
+    background-position: center;
+    margin: 0px 0 0 80%;
+    width: 200px;
+}
+
+
+#timer .cuerpo {
+    display: table;
+    background: #227cc000;
+    color: #eee;
+    font-weight: bold;
+    width: 61%;
+    text-align: center;
+    text-shadow: 1px 1px 4px #999;
+    /* margin: 9% 0% 0% 34%; */
+    position: relative;
+	top: 23%;
+    left: 35%;
+    border-radius: 100%;
+}
+
+.divider {
+    height: 1px;
+    overflow: hidden;
+    background-color: #e0e0e000;
+}
+
+#timer .cuerpo div {
+    display: table-cell;
+    font-size: 30px;
+    padding: 0;
+    width: 10%;
+}
+#timer .cuerpo .divider {
+    width: 1%;
+    color: #761b56;
+}
+#btn-comenzar{box-sizing:border-box;background:#eee;border:none;margin:0 auto;padding:20px;width:100%;font-size:30px;color:#777;}
+#btn-comenzar:hover{background:#fff;}
+
+
+@media (max-width: 450px){
+
+#timer {
+    height: 25px;
+    width: 80px;
+    margin: 1% 0 0 42%;
+    position: initial;
+}
+
+#timer .cuerpo div {
+    display: table-cell;
+    font-size: 100%;
+    padding: 0;
+    width: 9%;
+}
+
+#timer .cuerpo {
+
+    top: 32%;
+
+}
+}
+
+
+
+@media (max-width: 800px){
+
+#timer {
+         height: 50;
+    width: 120px;
+    margin: 1% 0 0 42%;
+          
+    position: initial;
+}
+
+#timer .cuerpo div {
+    display: table-cell;
+    font-size: 19px;
+    padding: 0;
+    width: 9%;
+}
+
+#timer .cuerpo {
+
+        top: 24%;
+
+}
+}
+

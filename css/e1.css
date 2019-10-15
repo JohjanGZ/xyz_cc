@@ -1,0 +1,152 @@
+
+label {
+
+        font-size: 1.5rem;
+    color: #424141;
+    
+}
+
+
+.botonimagen{
+  background-image:url(img/btn_siguiente.png);
+  background-repeat:no-repeat;
+  height:100px;
+  width:100px;
+  background-position:center;
+}
+
+
+
+ul:not(.browser-default) > li {
+    list-style-type: none;
+    float: left;
+}
+
+
+
+
+
+.botonimagen{
+  background-image:url(img/btn_siguiente.png);
+  background-repeat:no-repeat;
+  height:100px;
+  width:100px;
+  background-position:center;
+}
+
+
+/* Puzzle */
+#contenedorPiezas {
+    background: #5561ff00;
+    /* width: 652px; */
+    height: 242px;
+    float: left;
+    margin-left: 40px;
+    /* box-shadow: 0px 0px 10px 2px #dadada; */
+    margin-top: 110px;
+}
+
+#puzzle {
+   
+    background: #d0eb6a00;
+    width: 400px;
+    height: 200px;
+    float: right;
+    margin-right: 192px;
+    /* box-shadow: 0px 0px 10px 2px #dadada; */
+    padding: 20px;
+
+}
+.ftitulo{
+    color:#0095DA;
+}
+
+.contenedorPieza {
+     width: 80px;
+    height: auto;
+    height: 150px;
+    float: left;
+   
+
+}
+
+
+
+#contenedorPuzzle img {
+           float: left;
+           padding: 43px 10px 40px 10px;
+    width: 80px;
+    height: auto;
+    position: relative;
+    z-index: 10;
+
+}
+
+
+                                                 /*---/////////////////////////- Numeros -//////////////////////////---*/
+
+
+/*--------------------------------------uno---------------------------------------------------*/
+
+#uno, #dos, #tres {    
+       box-shadow: inset 0px 1px 3px 0px #7d7c7c;
+     /*  border: #25252591 solid 2px;*/
+    width: 324px;
+    /* min-width: 346px; */
+}
+                                               /*---///////////////////////-fin numeros-//////////////////////////---*/
+#v, #f {
+    box-shadow: inset 0px 1px 3px 0px #7d7c7c;
+    /* border: #25252591 solid 2px; */
+    width: 324px;
+    /* min-width: 346px; */
+    min-width: 346px;
+    /* border: #25252591 solid 2px; */
+    width: 324px;
+    /* min-width: 346px; */
+    min-width: 346px;
+    background-color: #f2f0ff40;
+}
+
+.labelC{
+
+position: absolute;
+    padding: 22px;
+    width: 60px;
+}
+
+
+
+.container, .content-wrapper {
+   
+    position: fixed;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    
+}
+
+
+.contenedorimg{
+
+border: solid 1px gainsboro;
+    width: 100px;
+    height: 150px;
+    margin: 5px;
+    border-radius: 15px;
+
+}
+
+ul:not(.browser-default) > li {
+    list-style-type: none;
+    float: left;
+}
+.caballo{
+    height: 156px !important;
+    
+    margin-top: -10px;
+}
+
+
+
+

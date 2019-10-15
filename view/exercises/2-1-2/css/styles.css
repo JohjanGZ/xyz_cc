@@ -1,0 +1,91 @@
+.container, .content-wrapper {
+    position: fixed;
+    margin: -31px auto 0;
+    width: 100%;
+    max-width: 100%;
+}
+
+
+.imgvf {
+    background-image: url(../img/a2.gif);
+    background-size: 100% 100%;
+    width: 450px;
+    height: 158px;
+    margin: 7% auto 0;
+    background-repeat: no-repeat;
+}
+
+.contenedorimg {
+    /*border: solid 1px gainsboro;*/
+    width: 100px;
+    height: 76px;
+    margin: 5px;
+    border-radius: 15px;
+}
+#contenedorPieza {
+    background: #5561ff00;
+    /* width: 652px; */
+    height: auto;
+    float: left;
+    margin-left: 211px;
+    /* box-shadow: 0px 0px 10px 2px #dadada; */
+    margin-top: 80px;
+       margin: 0 32% 0;
+}
+
+
+#contenedorPuzzle img {
+    float: left;
+    padding: 15px 8px 15px 26px;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    z-index: 10;
+}
+#ta{
+    color: #FF8C00;
+    font-size: 42px;
+}
+#ti{
+    color: #800080;
+    font-size: 42px;
+}
+#te{
+    color: #40E0D0;
+    font-size: 42px;
+}
+
+.recibidores {
+    position: relative;
+    left: 195px;
+    margin: 0 auto;
+        width: 59%;
+}
+ul:not(.browser-default) > li {
+    list-style-type: none;
+    float: left;
+}
+#v {
+    box-shadow: inset 0px 1px 3px 0px #7d7c7c;
+    /* border: #25252591 solid 2px; */
+    width: 324px;
+    /* min-width: 346px; */
+    min-width: 346px;
+    /* border: #25252591 solid 2px; */
+    width: 324px;
+    /* min-width: 346px; */
+    min-width: 346px;
+}
+
+#f {    
+     box-shadow: inset 0px 1px 3px 0px #7d7c7c;
+    /* border: #25252591 solid 2px; */
+    width: 324px;
+    /* min-width: 346px; */
+    min-width: 346px;
+    /* border: #25252591 solid 2px; */
+    width: 324px;
+    /* min-width: 346px; */
+    min-width: 346px;
+   
+}
