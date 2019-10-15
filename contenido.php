@@ -112,13 +112,13 @@
 												 	id_unidad:'1',
 												 	ejercicios:'Ejercicio 1,Ejercicio 2,Ejercicio 3,Ejercicio 4,Ejercicio 5,Ejercicio 6,Ejercicio 7,Ejercicio 8,Ejercicio 9,Ejercicio 10',
 												 	nombre:'Unidad 1',
-												 	enlace:'2do',
+												 	enlace:'matematica',
 
 												 }
 												 );
 													$('#portada').css('display', 'block !important');
 												}
-									function ver_digitales() {
+											function ver_digitales() {
 												 $('#actividades').load('contenido_digitales.php', 
 												 {
 												 	id_unidad:'1',
