@@ -69,7 +69,7 @@ for (var i = ul.children.length; i >= 0; i--) {
     ul.appendChild(ul.children[Math.random() * i | 0]);
      ul.appendChild(ul.children[Math.random() * i | 0]);
 }
-
+1
   var r=0;
   $('.item img').click(function() {
     $(this).css({"filter":"brightness(0.8)", "border":"solid" , "border-color":"#93ff00"});
@@ -116,7 +116,3 @@ function result_tipo_2_1_1(){
             } 
 </script>
 <script type="text/javascript" src="../exercises/comunicacion/1/js/validate.js"></script>
-
-
-
-

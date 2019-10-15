@@ -1,22 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <link rel="icon" type="image/png" href="img/favicon.ico" />
+
   <title>Arca de Papel</title>
 
   <!-- CSS  -->
-  <link href="icon/icon.CSS?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link rel="stylesheet" type="text/css" href="css/header.css">
-  <link rel="stylesheet" type="text/css" href="css/vendor/vendor.min.css">
-
-  <link rel="stylesheet" type="text/css" href="css/datatables.min.css">
-
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/datatables.min.js"></script>    
-  <link rel="stylesheet" type="text/css" href="css/index.css">
+ 
 <style type="text/css">
   #off{
     transform: translate(80vw, 0vh);
