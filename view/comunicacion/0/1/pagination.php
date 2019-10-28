@@ -194,7 +194,7 @@
         $("#ventana").load('../../../exercises/comunicacion/1-1-11/index.php', 
         { 
         next: "Page_12()",  
-        procesar:"result_tipo_2_1_11()",
+        procesar:"result_tipo_1_1_11()",
         titulo:"<center><h5><span class='ftitulo'>Relaciona</span> cada diagrama con la expresión que le corresponde.</h5></center>",
         restaurar:"start_11()",
         nota:cal
@@ -203,10 +203,10 @@
         return false;
     };
         function start_12(){  
-        $("#ventana").load('../../../exercises/comunicacion/1-1-10/index.php', 
+        $("#ventana").load('../../../exercises/comunicacion/1-1-12/index.php', 
         { 
         next: "Page_13()", 
-        procesar:"result_tipo_2_1_12()",
+        procesar:"result_tipo_1_1_12()",
         titulo:"<center><h5><span class='ftitulo'>Relaciona</span> cada diagrama con la expresión que le corresponde.</h5></center>",
         restaurar:"start_12()",
         nota:cal
@@ -215,7 +215,7 @@
         return false;
     };
         function start_13(){  
-        $("#ventana").load('../../../exercises/comunicacion/1-1-10/index.php', 
+        $("#ventana").load('../../../exercises/comunicacion/1-1-13/index.php', 
         { 
        next: "Page_14()",  
         procesar:"result_tipo_2_1_13()",
@@ -227,7 +227,7 @@
         return false;
     };
         function start_14(){  
-        $("#ventana").load('../../../exercises/comunicacion/1-1-10/index.php', 
+        $("#ventana").load('../../../exercises/comunicacion/1-1-14/index.php', 
         { 
         next: "Page_15()", 
         procesar:"result_tipo_2_1_14()",

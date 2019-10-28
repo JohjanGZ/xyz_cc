@@ -156,7 +156,7 @@ width: 50%;
         })
 
 
-          function result_tipo_2_1_11(){               
+          function result_tipo_1_1_11(){               
                   var  min= $('#Minutos').text();
                   var  seg= $('#Segundos').text();
                   var  milseg= $('#Centesimas').text();
