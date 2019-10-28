@@ -1,5 +1,6 @@
 <?php require('../../../tools/var/variables.php'); ?>
           <head>     
+
           <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
           <link rel="stylesheet" type="text/css" href="../../../exercises/comunicacion/1-1-9/css/styles.css">
           </head>
@@ -168,7 +169,7 @@
 
 
                           if(r==3){                  
-                              localStorage.setItem("Nota2-1-9","2");
+                              localStorage.setItem("Nota2-1-9",nota);
                               localStorage.setItem("Time2-1-9", tiempo);
                               correcto(); 
                           }

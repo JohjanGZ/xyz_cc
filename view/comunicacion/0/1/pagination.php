@@ -1,7 +1,4 @@
 <script type="text/javascript">
-
-
-    
    function Page_1(){
         start_1();
         inicio();
@@ -52,8 +49,25 @@
         inicio();
          count = 3;
     }
+   function Page_11(){
+        start_11();
+        inicio();
+         count = 3;
+    }
+   function Page_12(){
+        start_12();
+        inicio();
+         count = 3;
+    }
+   function Page_13(){
+        start_13();
+        inicio();
+         count = 3;
+    }
+
+    var cal= 20/20;
     ////////////// 2do 
-// ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
+            // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
     function start_1(){
         $("#ventana").load('../../../exercises/comunicacion/1-1-1/index.php', 
         {
@@ -61,7 +75,8 @@
         procesar:"result_tipo_2_1_1()",
         titulo:"<center><h5><span class='ftitulo'>Selecciona</span> la imagen que falta en la secuencia.</h5></center>",
         restaurar:"start_1()",
-        ejercicio:"2-1-1",
+       
+        nota:cal
         }
         );
         return false;  
@@ -73,7 +88,8 @@
         procesar:"result_tipo_2_1_2()",
         titulo:"<center><h5><span class='ftitulo'>Selecciona</span> la imagen que falta en la secuencia.</h5></center>",
         restaurar:"start_2()",
-        ejercicio:"2-1-2"
+        
+        nota:cal
         }
         );
         return false;
@@ -85,7 +101,7 @@
         procesar:"result_tipo_2_1_3()",
         titulo:"<center><h5><span class='ftitulo'>Selecciona</span> la imagen que falta en la secuencia.</h5></center>",
          restaurar:"start_3()",
-         ejercicio:"2-1-3"
+          nota:cal
         }          
         );
         return false;
@@ -97,7 +113,7 @@
             procesar:"result_tipo_2_1_4()",
             titulo:" <center><h5><span class='ftitulo'>Selecciona</span> la imagen que falta en la secuencia.</h5></center>",
             restaurar:"start_4()",
-            ejercicio:"2-1-4"
+             nota:cal
         }
         );
         return false;
@@ -109,7 +125,7 @@
         procesar:"result_tipo_2_1_5()",
         titulo:"<center><h5><span class='ftitulo'>Selecciona</span> la imagen que falta en la secuencia.</h5></center>",
         restaurar:"start_5()",
-        ejercicio:"2-1-5"
+         nota:cal
         }
         );
         return false;
@@ -121,7 +137,7 @@
         procesar:"result_tipo_2_1_6()",
         titulo:"<center><h5><span class='ftitulo'>Selecciona</span> los dibujos cuyos nombres empiecen con:</h5></center>",
         restaurar:"start_6()",
-        ejercicio:"2-1-6"
+         nota:cal
         }
         );
         return false;
@@ -133,7 +149,7 @@
         procesar:"result_tipo_2_1_7()",
         titulo:"<center><h5><span class='ftitulo'>Observa</span> los dibujos y <span class='ftitulo'>une</span> cada dibujo con su vocal inicial</h5></center>",
         restaurar:"start_7()",
-        ejercicio:"2-1-7"
+         nota:cal
         }
         );
         return false;
@@ -145,7 +161,7 @@
         procesar:"result_tipo_2_1_8()",
         titulo:"<center><h5><span class='ftitulo'>Observa</span> el diagrama y<span class='ftitulo'> Completa</span> las oraciones </h5></center>",
         restaurar:"start_8()",
-        ejercicio:"2-1-8"
+         nota:cal
         }
         );
         return false;
@@ -155,9 +171,9 @@
         {
         next: "Page_10()", 
         procesar:"result_tipo_2_1_9()",
-        titulo:"<center><h5> <span class='ftitulo'>Observa</span> la imagen y <span class='ftitulo'>Señala</span> verdadero <span style='color:#ffd768'>(</span>V<span style='color:#ffd768'>)</span> o falso <span style='color:#b9659b'>(</span>F<span style='color:#b9659b'>)</span> según corresponda.</h5></center>",
+        titulo:"<center><h5> <span class='ftitulo'>Selecciona</span> las palabras que contengan la vocal <span>(</span>U<span>)</span>.</h5></center>",
         restaurar:"start_9()",
-        ejercicio:"2-1-9"
+         nota:cal
         }
         );
         return false;
@@ -165,11 +181,59 @@
     function start_10(){  
         $("#ventana").load('../../../exercises/comunicacion/1-1-10/index.php', 
         { 
-        next: "resultado()", 
+         next: "Page_11()",  
         procesar:"result_tipo_2_1_10()",
-        titulo:"<center><h5><span class='ftitulo'>Relaciona</span> cada diagrama con la expresión que le corresponde.</h5></center>",
+        titulo:"<center><h5> <span class='ftitulo'>Selecciona</span> la letra <span>(</span>U<span>) en cada nombre.</span>.</h5></center>",
         restaurar:"start_10()",
-        ejercicio:"2-1-10"
+         nota:cal
+        }                    
+        );
+        return false;
+    };
+        function start_11(){  
+        $("#ventana").load('../../../exercises/comunicacion/1-1-11/index.php', 
+        { 
+        next: "Page_12()",  
+        procesar:"result_tipo_2_1_11()",
+        titulo:"<center><h5><span class='ftitulo'>Relaciona</span> cada diagrama con la expresión que le corresponde.</h5></center>",
+        restaurar:"start_11()",
+        nota:cal
+        }                    
+        );
+        return false;
+    };
+        function start_12(){  
+        $("#ventana").load('../../../exercises/comunicacion/1-1-10/index.php', 
+        { 
+        next: "Page_13()", 
+        procesar:"result_tipo_2_1_12()",
+        titulo:"<center><h5><span class='ftitulo'>Relaciona</span> cada diagrama con la expresión que le corresponde.</h5></center>",
+        restaurar:"start_12()",
+        nota:cal
+        }                    
+        );
+        return false;
+    };
+        function start_13(){  
+        $("#ventana").load('../../../exercises/comunicacion/1-1-10/index.php', 
+        { 
+       next: "Page_14()",  
+        procesar:"result_tipo_2_1_13()",
+        titulo:"<center><h5><span class='ftitulo'>Relaciona</span> cada diagrama con la expresión que le corresponde.</h5></center>",
+        restaurar:"start_13()",
+        nota:cal
+        }                    
+        );
+        return false;
+    };
+        function start_14(){  
+        $("#ventana").load('../../../exercises/comunicacion/1-1-10/index.php', 
+        { 
+        next: "Page_15()", 
+        procesar:"result_tipo_2_1_14()",
+        titulo:"<center><h5><span class='ftitulo'>Relaciona</span> cada diagrama con la expresión que le corresponde.</h5></center>",
+        restaurar:"start_14()",
+        nota:cal
         }                    
         );
         return false;

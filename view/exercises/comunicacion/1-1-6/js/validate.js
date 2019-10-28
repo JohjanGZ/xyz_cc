@@ -32,7 +32,7 @@ function result_tipo_2_1_6(){
 
         if(r==4)
                 {
-                    localStorage.setItem("Nota2-1-6","2");
+                    localStorage.setItem("Nota2-1-6",nota);
                     localStorage.setItem("Time2-1-6", tiempo);
                     correcto(); 
                 }

@@ -24,8 +24,8 @@
   $grado=$_POST['grado'];
   $titulo=$_POST['titulo'];
   $color=$_POST['color'];
- $enlace=$_POST['enlace'];
-echo  $datos= json_encode($_POST['data']);
+  $enlace=$_POST['enlace'];
+  $datos= json_encode($_POST['data']);
  ?>
  <script type="text/javascript">
  	var enlace = <?=$enlace?>;

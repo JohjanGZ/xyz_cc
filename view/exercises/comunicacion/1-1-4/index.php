@@ -88,7 +88,7 @@ function result_tipo_2_1_4(){
 
         if(r==1)
                 {
-                    localStorage.setItem("Nota2-1-4","2");
+                    localStorage.setItem("Nota2-1-4",nota);
                     localStorage.setItem("Time2-1-4", tiempo);
                     correcto(); 
                 }

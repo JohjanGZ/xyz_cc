@@ -4,4 +4,9 @@
    $titulo=$_POST['titulo'];
    $restaurar=$_POST['restaurar'];
    $ejercicio=$_POST['ejercicio'];
+   $nota=$_POST['nota'];
 ?>
+            <script type="text/javascript">
+              
+              var nota = <?=$nota?>
+            </script>

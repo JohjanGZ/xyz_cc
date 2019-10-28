@@ -222,7 +222,7 @@ $('.a').click(function(){
                               var tiempo=min+":"+seg+":"+milseg;
 
                           if(r==5){                  
-                              localStorage.setItem("Nota2-1-7","2");
+                              localStorage.setItem("Nota2-1-7",nota);
                               localStorage.setItem("Time2-1-7", tiempo);
                               correcto(); 
                           }

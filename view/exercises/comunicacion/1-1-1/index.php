@@ -86,7 +86,7 @@
 
         if(r==1)
                 {                   
-                    localStorage.setItem("Nota2-1-1","2");
+                    localStorage.setItem("Nota2-1-1",nota);
                     localStorage.setItem("Time2-1-1", tiempo);
                     correcto(); 
                 }
