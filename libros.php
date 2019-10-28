@@ -1,5 +1,5 @@
 <style type="text/css">
-  ul li {
+ul li {
     width: 180px; 
 }
 /*-------------------------------------------------------Portadas----------------------------------------------------------------- */
@@ -190,10 +190,8 @@ url(img/portadas/portada4.png);
 }
 .portada5:hover {
 background-image:
-linear-gradient(
-      rgba(7, 189, 3, 0.68), 
+linear-gradient(      rgba(7, 189, 3, 0.68), 
       rgba(7, 189, 3, 0.68)
-
     ),
 url(img/portadas/portada5.png);
  background-size: 160px 220px;
@@ -249,7 +247,7 @@ url(img/portadas/portada6.png);
 <center>
   <ul class="" data-id="2">
   <li class="menu-libros">
-    <a onclick="primero()">
+    <a onclick="comunicacion1()">
      <div class="portada1" > <i class="iconview material-icons">visibility</i></div>   
      </a>
   <div class="wrap-info">       
@@ -270,7 +268,7 @@ url(img/portadas/portada6.png);
   </li>
       <li class="menu-libros">
    <!-- <a onclick="primero()"> -->
-     <div class="com3 disable" > <i class="iconview material-icons">visibility</i></div>   
+     <div class="com3 disable"><i class="iconview material-icons">visibility</i></div>   
     <!-- </a>-->
   <div class="wrap-info">              
     <span class="titulo data" data-titlejs="Ondas Matematicas 1er grado" title="Ondas Matematicas 1er grado">
@@ -316,11 +314,11 @@ url(img/portadas/portada6.png);
 
     <div class="wrap-mask">
             
-       <!-- <a onclick="segundo()">-->
+      <!-- <a onclick="matematica1()">-->
         <div class="mate1 disable" ><center> <i class=" iconview material-icons">visibility</i> </center></div>
         <div class="mask" style="cursor: pointer;">
         </div>
-    <!--  </a>-->
+  <!-- </a>-->
     </div>
   </div>
   <div class=" titulo wrap-info">    
@@ -333,7 +331,7 @@ url(img/portadas/portada6.png);
 
     <div class="wrap-mask">
             
-        <a onclick="segundo()">
+        <a onclick="matematica2()">
         <div class="portada2" ><center> <i class=" iconview material-icons">visibility</i> </center></div>
         <div class="mask" style="cursor: pointer;">
         </div>
@@ -423,7 +421,7 @@ url(img/portadas/portada6.png);
   <div class="wrap-img">
 
     <div class="wrap-mask">
-       <a onclick="tercero()">
+       <a onclick="inicial3()">
       <div class="portada3" > <i class="iconview material-icons">visibility</i></div>
       <div class="mask" style="cursor: pointer;">
           </a>
@@ -442,49 +440,7 @@ url(img/portadas/portada6.png);
 
 </ul>
   </center>       
-<script type="text/javascript">
-    function primero() {
-       $("#portada").css("display", "block");
-       $('#cuerpo').load('comunicacion.php',{      
-      grado:'1' , titulo:'Comunicación 1ero', color:'rgba(150, 193, 43, 1)',
-      unidades:["unidad2", "unidad3", "unidad4", "unidad5" ]
-    });
-    }
-    function segundo(){
-       $("#portada").css("display", "block");
-       $('#cuerpo').load('contenido.php',{ unidad:["unidad1","unidad2"] , titulo:'Matemáticas 2do', color:'#ce1916'});
-    }
-    function tercero() {
-       $("#portada").css("display", "block");
-       $('#cuerpo').load('inicial.php',{ grado:'3' , titulo:'Inicial 3 años', color:'#26c6da'});
-    }
-    function cuarto() {
-       $("#portada").css("display", "block");
-       $('#cuerpo').load('view/inicial/',{ grado:'4' , titulo:'Cuarto Grado', color:'#8d03b4'});
-    }
-    function quinto() {
-       $("#portada").css("display", "block");
-       $('#cuerpo').load('contenido.php',{ grado:'5' , titulo:'Quinto Grado', color:'#3eae0b'});
-    }
-    function sexto() {
-       $("#portada").css("display", "block");
-       $('#cuerpo').load('contenido.php',{ grado:'5', titulo:'Sexto Grado', color:'#e64804'});
-    }
-        function unidades() {
-       $("#portada").css("display", "block");
-       $('#cuerpo').load('view/unidades.php',{ grado:'5', titulo:'Sexto Grado', color:'#e64804'});
-    }
-        function ejercicios() {
-       $("#portada").css("display", "block");
-       $('#cuerpo').load('view/ejercicios.php',{ grado:'5', titulo:'Sexto Grado', color:'#e64804'});
-    }
-        function libros() {
-       $("#portada").css("display", "block");
-       $('#cuerpo').load('view/libros.php',{ grado:'5', titulo:'Sexto Grado', color:'#e64804'});
-    }
-
-     $("#portada").css("display", "none");
-  </script>
+<script type="text/javascript" src="js/unidades.js"></script>
 </div>
 </div>
     </div>

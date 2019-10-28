@@ -1,7 +1,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=0.5"/>
-  <script type="text/javascript" src="../../js/jspdf.js"></script>
+  <script type="text/javascript" src="../../../js/jspdf.js"></script>
+
   <div class="container">
-  <link rel="stylesheet" type="text/css" href="responsive/r1.css">
+ <!-- <link rel="stylesheet" type="text/css" href="responsive/r1.css">-->
     <style type="text/css">
         #notas{ 
             margin-top: 3%;

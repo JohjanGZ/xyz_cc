@@ -1,6 +1,6 @@
-  <link rel="stylesheet" type="text/css" href="../tools/pantalla-inicio/css/pantalla-inicio.css">
+  <link rel="stylesheet" type="text/css" href="../../../tools/pantalla-inicio/css/pantalla-inicio.css">
         <div id="portada" class="Portada scale-transition">     
-     		<center><img width="7vw" src="../../LOGO.png"></center>    
+     		<center><img width="7vw" src="../../../../LOGO.png"></center>    
               <p id="Frase-Presentacion"> Hola, ingresa tu nombre y presiona "Empezar" </p> 
                 <center>
 					<div class="FormNombre">
@@ -12,4 +12,4 @@
               <button id="Ready" class="btn waves-effect waves-light white black-text scale-transition" onclick="IniciarCronometro()" >Empezar
               </button>                
 		</div>
-<script src="../../js/core.js"></script>
+<script src="../../../../js/core.js"></script>

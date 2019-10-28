@@ -8,18 +8,10 @@
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
    <link rel="stylesheet" type="text/css"  href="css/portada.css">
   <link rel="stylesheet" type="text/css" href="css/header.css">
-  <link rel="stylesheet" type="text/css" href="css/e1.css">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link rel="stylesheet" type="text/css" href="css/header.css">
   <link rel="stylesheet" type="text/css" href="css/vendor/vendor.min.css">
-  <link rel="stylesheet" type="text/css" href="css/datatables.min.css">
+<link rel="stylesheet" type="text/css" href="css/datatables.min.css">
+    <link rel="stylesheet" type="text/css" href="css/blink/blink.min.css">
 
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/datatables.min.js"></script>    
   <link rel="stylesheet" type="text/css" href="css/index.css">
-
-  <?php 
-  include ('sound/sound.php');
-  include ('portada.php');
-  include ('crono.php');
- ?>

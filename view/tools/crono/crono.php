@@ -1,4 +1,4 @@
- <link rel="stylesheet" type="text/css" href="../tools/crono/css/styles.css">   
+ <link rel="stylesheet" type="text/css" href="../../../tools/crono/css/styles.css">   
      <div id="timer">
             <div class="cuerpo">
                 <div id="Minutos">00</div>

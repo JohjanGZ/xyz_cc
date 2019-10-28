@@ -3,8 +3,8 @@ echo "<div id='fullscreen' >";
 include('carga.php');
 include('header.php');
 ?>
-<script type="text/javascript" src="fullscreen/release/jquery.fullscreen.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/blink/blink.min.css">
+<script type="text/javascript" src="js/fullscreen/release/jquery.fullscreen.min.js"></script>
+
 <style type="text/css">
 .bg-fullscreen{
   background:#eee !important;
@@ -30,7 +30,6 @@ a div:hover, button:hover, .btn:hover, .btn-floating:hover, .material-icons:hove
     font-weight: bold;
     font-family: cursive;
     color: #bf3185;
-    /*text-shadow: 0px 1px 2px #000000b3;*/
 }
 
 </style>
@@ -58,11 +57,9 @@ a div:hover, button:hover, .btn:hover, .btn-floating:hover, .material-icons:hove
                 }
                 function BackHome(){
                  $('#cuerpo').load('libros.php');
-                 //$("#portada").css("display", "block");
+                 
                 }
-                function mate1_1() {
-                        $('#cuerpo').load('view/iframe/mate1-1.php');
-                        }
+
               </script>
 </div>
 <audio id="click" src="asset/cursor/sound/click.mp3" ></audio>
@@ -77,7 +74,6 @@ a div:hover, button:hover, .btn:hover, .btn-floating:hover, .material-icons:hove
     });
 });
               $("html").click(function(){
-
                 document.getElementById('click').play();
               });
 
@@ -96,8 +92,8 @@ a div:hover, button:hover, .btn:hover, .btn-floating:hover, .material-icons:hove
                               return false;
                             });
 
-                            // document's event
-                            $(document).bind('fscreenchange', function(e, state, elem) {
+                            // document's ev{"adId":"00000001325f6931000000203296ac82"}ent
+                            $(document).bind('fscreenchange', function(e, state, elem){
                               // if we currently in fullscreen mode
                               if ($.fullscreen.isFullScreen()) {
                                 $('#fullscreen .requestfullscreen').hide();
@@ -110,10 +106,5 @@ a div:hover, button:hover, .btn:hover, .btn-floating:hover, .material-icons:hove
                               $('#state').text($.fullscreen.isFullScreen() ? '' : 'not');
                             });
                     });
-
-
- $('#button').toolbar({
-  content: '#toolbar-options',
-});
-
     </script>
+

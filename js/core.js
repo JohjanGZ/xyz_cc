@@ -15,15 +15,6 @@ $( ".pieza" ).hover(function(){
     }
     }
 
-$(document).ready(function(){
-   $("html").mouseup(function(){
-        $(this).css({"cursor":"url(../asset/cursor/cursor_pointer.png),auto"})
-    });
-
-       $("html").mousedown(function(){
-        $(this).css({"cursor":"url(../asset/cursor/cursor.png),pointer !important"})
-    });
-});
 
 
 var centesimas = 0;

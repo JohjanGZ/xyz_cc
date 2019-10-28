@@ -51,7 +51,7 @@
 ////////////// 2do 
 // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
     function start2_1_1(){
-        $("#ventana").load('../exercises/inicial/3-1/index.php', 
+        $("#ventana").load('../../../exercises/inicial/3-1-1/index.php', 
         {
         next: "PageTipo2_1_2()", 
         procesar:"result_tipo_2_1_1()",
@@ -63,7 +63,7 @@
         return false;  
     };
     function start2_1_2(){
-        $("#ventana").load('../exercises/inicial/3-2/index.php', 
+        $("#ventana").load('../../../exercises/inicial/3-1-2/index.php', 
         { 
         next: "PageTipo2_1_3()", 
         procesar:"result_tipo_2_1_2()",
@@ -75,7 +75,7 @@
         return false;
     };
     function start2_1_3(){ 
-        $("#ventana").load('../exercises/inicial/3-3/index.php', 
+        $("#ventana").load('../../../exercises/inicial/3-1-3/index.php', 
         { 
         next: "PageTipo2_1_4()", 
         procesar:"result_tipo_2_1_3()",
@@ -87,7 +87,7 @@
         return false;
     };
     function start2_1_4(){
-        $("#ventana").load('../exercises/inicial/3-4/index.php', 
+        $("#ventana").load('../../../exercises/inicial/3-1-4/index.php', 
         {
             next: "PageTipo2_1_5()", 
             procesar:"result_tipo_2_1_4()",
@@ -99,7 +99,7 @@
         return false;
     };
     function start2_1_5(){  
-        $("#ventana").load('../exercises/inicial/3-5/index.php',
+        $("#ventana").load('../../../exercises/inicial/3-1-5/index.php',
         {
         next: "resultado()", 
         procesar:"result_tipo_2_1_5()",
@@ -111,7 +111,7 @@
         return false;
     };
     function start2_1_6(){  
-        $("#ventana").load('../exercises/inicial/6/index.php', 
+        $("#ventana").load('../../../exercises/inicial/6/index.php', 
         {
         next: "resultado()", 
         procesar:"result_tipo_2_1_6()",
@@ -123,7 +123,7 @@
         return false;
     };
     function start2_1_7(){
-        $("#ventana").load('../exercises/2-1-7/', 
+        $("#ventana").load('../../../exercises/2-1-7/', 
         {
         next: "PageTipo2_1_8()", 
         procesar:"result_tipo_2_1_7()",
@@ -135,7 +135,7 @@
         return false;
     };
     function start2_1_8(){  
-        $("#ventana").load('../exercises/2-1-8/', 
+        $("#ventana").load('../../../../../exercises/2-1-8/', 
         {
         next: "PageTipo2_1_9()", 
         procesar:"result_tipo_2_1_8()",
@@ -147,7 +147,7 @@
         return false;
     };
     function start2_1_9(){  
-        $("#ventana").load('../exercises/2-1-9/', 
+        $("#ventana").load('../../../exercises/2-1-9/', 
         {
         next: "PageTipo2_1_10()", 
         procesar:"result_tipo_2_1_9()",
@@ -159,7 +159,7 @@
         return false;
     };
     function start2_1_10(){
-        $("#ventana").load('../exercises/2-1-10/', 
+        $("#ventana").load('../../../exercises/2-1-10/', 
         { 
         next: "resultado()", 
         procesar:"result_tipo_2_1_10()",
@@ -171,7 +171,7 @@
         return false;
     };
     function resultado(){
-        $("#ventana").load('../exercises/resultado/resultado.php');
+        $("#ventana").load('../../../exercises/resultado/resultado.php');
         return false;
     };
 </script>

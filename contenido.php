@@ -70,7 +70,7 @@
 								</span>
 								<span class='title'>
 										1 - Unidad 1
-							</span>
+								</span>
 							</a>
 						</li>
 						<li  id='unidad1' class='litema js-indice-tema disabled'>

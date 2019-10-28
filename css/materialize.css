@@ -4,10 +4,10 @@
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
 html{
-cursor: url(../asset/cursor/cursor_pointer.png),auto;
+cursor: url(../../../asset/cursor/cursor_pointer.png),auto;
 }
 a div:hover, button:hover, .btn:hover, .btn-floating:hover, .material-icons:hover, a:hover{
-  cursor: url(../asset/cursor/cursor.png),pointer !important;
+  cursor: url(../../../asset/cursor/cursor.png),pointer !important;
 }
 .btn-intentos{
     position: absolute; 

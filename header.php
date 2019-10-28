@@ -1,7 +1,5 @@
-
+<?php include('head.php'); ?>
   <title>Arca de Papel</title>
-
-  <!-- CSS  -->
  
 <style type="text/css">
   #off{
@@ -17,14 +15,13 @@
   #nav-mobile{
   display: block;
   }
-
 	@media only screen and (min-width: 601px){
-nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i{
-    height: 84px;
-    line-height: 64px;
-    padding: 10px;
-}
-}
+    nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i{
+        height: 84px;
+        line-height: 64px;
+        padding: 10px;
+    }
+  }
 </style>
 </head>
 <body>

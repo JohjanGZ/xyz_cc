@@ -16,7 +16,7 @@
 	    color: #5561ff;
 	    text-decoration: none;
 	}
-	#indice .units ul li {
+	#indice .units ul li{
     	width: 80%;
 	}
 </style>
@@ -25,18 +25,18 @@
   $titulo=$_POST['titulo'];
   $color=$_POST['color'];
   $_POST['key'];
- ?>
+?>
 <style type="text/css">
-.TituloGrado{
-	-webkit-text-stroke: 1px #f6c303;
-    font-size: 50px;
-    font-weight: 900;
-    text-shadow: 2px 2px #acaaaa;
-    font-family: sans-serif;
-    color: <?=$color?>;
-}
+	.TituloGrado{
+		-webkit-text-stroke: 1px #f6c303;
+	    font-size: 50px;
+	    font-weight: 900;
+	    text-shadow: 2px 2px #acaaaa;
+	    font-family: sans-serif;
+	    color: <?=$color?>;
+	}
 </style>
-  <!-- CSS  -->
+  <!-- CSS -->
 <div class="content-wrapper libro" style="margin-top: 58px;">
 	<center><h4 class="TituloGrado"><?=$titulo?></h4></center><br><br>
 		<div id="indice" data-id="1499880">
@@ -74,19 +74,19 @@
 									<span class='title'>5 - Unidad 5</span>				
 								</a>
 							</li>
-						</ul>
+						</ul>					
 					</div>
-				</div>
-				<div id="contenido" class="col-indice col-main">
-					<div class="card unit-content js-unit-content showFromBottomToTop active" data-id="">
-							<div class="content" id="actividades">
-								Selecciona una Unidad
-								<br><br><br> 
-							</div> 
-					</div>	
+					<div id="contenido" class="col-indice col-main">
+							<div class="card unit-content js-unit-content showFromBottomToTop active" data-id="">
+									<div class="content" id="actividades">
+										Selecciona una Unidad
+										<br><br><br> 
+									</div> 
+							</div>	
+					</div>
 				</div> 
 			</div> 
-		</div> 
+		</div>
 </div>
 	<script type='text/javascript'>
 		var ejercicios=0;
