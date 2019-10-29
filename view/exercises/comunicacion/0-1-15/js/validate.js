@@ -4,6 +4,10 @@ var nI = 0;
 var nO = 0;
 var nU = 0;
 
+var ul = document.querySelector('#listA');
+for (var i = ul.children.length; i >= 0; i--) {
+    ul.appendChild(ul.children[Math.random() * i | 0]);
+}
 
 $(".pieza").draggable({
     start: function() {
