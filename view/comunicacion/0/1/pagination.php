@@ -81,6 +81,11 @@
         inicio();
          count = 3;
     }
+    function Page_17(){
+        start_17();
+        inicio();
+         count = 3;
+    }
 
     var cal= 20/20;
     ////////////// 2do 
@@ -274,6 +279,19 @@
         procesar:"result_tipo_1_0_16()",
         titulo:"<center><h5><span class='ftitulo'>Selecciona</span> las imágenes que se encuentran debajo y son iguales a las que se muestran.</h5></center>",
         restaurar:"start_16()",
+        nota:cal  
+        }                    
+        );
+        return false;
+    };
+    function start_17(){  
+        $("#ventana").load('../../../exercises/comunicacion/1-0-17/index.php', 
+        { 
+        next: "Page_18()", 
+        procesar:"result_tipo_1_0_17()",
+        titulo:"<center><h5><span >Selecciona</span> las imágenes que se encuentran debajo y son iguales a las que se muestran.</h5></center>",
+        restaurar:"start_17()",
+        dir:"1-0-17",
         nota:cal  
         }                    
         );
