@@ -2,7 +2,7 @@
           <head>     
 
           <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-          <link rel="stylesheet" type="text/css" href="../../../exercises/comunicacion/1-1-9/css/styles.css">
+          <link rel="stylesheet" type="text/css" href="../../../exercises/comunicacion/0-1-9/css/styles.css">
           </head>
           <style type="text/css">
             h4 {
@@ -181,4 +181,4 @@
                   
                       }
 </script>
-<script type="text/javascript" src="../../../exercises/comunicacion/1-1-9/js/validate.js"></script>
+<script type="text/javascript" src="../../../exercises/comunicacion/0-1-9/js/validate.js"></script>

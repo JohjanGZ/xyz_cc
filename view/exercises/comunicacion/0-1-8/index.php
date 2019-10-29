@@ -96,7 +96,7 @@
 
                 }
           </style>
-          <link rel="stylesheet" type="text/css" href="../../../exercises/comunicacion/1-1-8/css/styles.css">
+          <link rel="stylesheet" type="text/css" href="../../../exercises/comunicacion/0-1-8/css/styles.css">
           </head>
   <?=$titulo?>
 <div class="container">
@@ -105,22 +105,22 @@
             <div class="campo" id="imgIzquierda">
               
               <ul id="listA">
-                <li alt="n"  class="a" id="obj1"><img src="../../../exercises/comunicacion/1-1-8/img/1.png"></li>
-                <li alt="" class="a" id="obj2"><img src="../../../exercises/comunicacion/1-1-8/img/2.png"></li>
-                <li alt="" class="a" id="obj3"><img src="../../../exercises/comunicacion/1-1-8/img/3.png"></li>
-                <li alt="" class="a" id="obj4"><img  src="../../../exercises/comunicacion/1-1-8/img/4.png"></li>
-                <li alt="" class="a" id="obj1"><img src="../../../exercises/comunicacion/1-1-8/img/5.png"></li>
-                <li alt="n" class="a" id="obj1"><img src="../../../exercises/comunicacion/1-1-8/img/6.png"></li>
+                <li alt="n"  class="a" id="obj1"><img src="../../../exercises/comunicacion/0-1-8/img/1.png"></li>
+                <li alt="" class="a" id="obj2"><img src="../../../exercises/comunicacion/0-1-8/img/2.png"></li>
+                <li alt="" class="a" id="obj3"><img src="../../../exercises/comunicacion/0-1-8/img/3.png"></li>
+                <li alt="" class="a" id="obj4"><img  src="../../../exercises/comunicacion/0-1-8/img/4.png"></li>
+                <li alt="" class="a" id="obj1"><img src="../../../exercises/comunicacion/0-1-8/img/5.png"></li>
+                <li alt="n" class="a" id="obj1"><img src="../../../exercises/comunicacion/0-1-8/img/6.png"></li>
               </ul> 
             </div>
             <div class="campo" id="imgDerecha">
               <ul id="listB">    
-                <li alt="n" class="a" id="obj7"><img src="../../../exercises/comunicacion/1-1-8/img/7.png"></li>
-                <li alt="" class="a" id="obj8"><img src="../../../exercises/comunicacion/1-1-8/img/8.png"></li>
-                <li alt="n" class="a" id="obj9"><img src="../../../exercises/comunicacion/1-1-8/img/9.png"></li>
-                <li alt="" class="a" id="obj10"><img src="../../../exercises/comunicacion/1-1-8/img/10.png"></li>
-                <li alt="" class="a" id="obj11"><img src="../../../exercises/comunicacion/1-1-8/img/11.png"></li>
-                <li alt="n" class="a" id="obj12"><img src="../../../exercises/comunicacion/1-1-8/img/12.png"></li>
+                <li alt="n" class="a" id="obj7"><img src="../../../exercises/comunicacion/0-1-8/img/7.png"></li>
+                <li alt="" class="a" id="obj8"><img src="../../../exercises/comunicacion/0-1-8/img/8.png"></li>
+                <li alt="n" class="a" id="obj9"><img src="../../../exercises/comunicacion/0-1-8/img/9.png"></li>
+                <li alt="" class="a" id="obj10"><img src="../../../exercises/comunicacion/0-1-8/img/10.png"></li>
+                <li alt="" class="a" id="obj11"><img src="../../../exercises/comunicacion/0-1-8/img/11.png"></li>
+                <li alt="n" class="a" id="obj12"><img src="../../../exercises/comunicacion/0-1-8/img/12.png"></li>
               </ul>
             </div>
  
@@ -132,7 +132,7 @@
                   <div class="modal-content">
                   <h4>Respuesta correcta</h4>
                   <center>
-                  <img class="materialboxed"  width="80%" src="../../../exercises/comunicacion/1-1-8/img/respuesta.png">
+                  <img class="materialboxed"  width="80%" src="../../../exercises/comunicacion/0-1-8/img/respuesta.png">
                   </center>
                   </div>
                   <div class="modal-footer">
@@ -193,4 +193,4 @@
                   
                       }
 </script>
-<script type="text/javascript" src="../../../exercises/comunicacion/1-1-8/js/validate.js"></script>
+<script type="text/javascript" src="../../../exercises/comunicacion/0-1-8/js/validate.js"></script>

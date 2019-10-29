@@ -24,15 +24,16 @@
                 margin: 5vh auto 0;
                 }
           </style>
-          <link rel="stylesheet" type="text/css" href="../../../exercises/comunicacion/1-1-2/css/styles.css">
+          <link rel="stylesheet" type="text/css" href="../../../exercises/comunicacion/0-1-3/css/styles.css">
           </head>
   <?=$titulo?>
 <div class="container">
-  <center><img class="img-principal" width="35%" src="../../../exercises/comunicacion/1-1-2/img/principal.png"></center>
+  <center><img class="img-principal" width="35%" src="../../../exercises/comunicacion/0-1-3/img/principal.png"></center>
       	<section id="contenedorpuzzle">
               <div class="row">
-              	<div class=""><div class="item" alt="" id="item1"><img src="../../../exercises/comunicacion/1-1-2/img/1.png"></div></div>
-              	<div class=""><div class="item"  id="item2"><img alt="n" src="../../../exercises/comunicacion/1-1-2/img/2.png"></div></div>
+              	<div class=""><div class="item" alt="" id="item1"><img src="../../../exercises/comunicacion/0-1-3/img/1.png"></div></div>
+              	<div class=""><div class="item"  id="item2"><img src="../../../exercises/comunicacion/0-1-3/img/2.png"></div></div>
+                <div class=""><div class="item"  id="item2"><img alt="n" src="../../../exercises/comunicacion/0-1-3/img/3.png"></div></div>
 
               </div>
               <div class="row center recibidor" id="recibidor">
@@ -43,7 +44,7 @@
                   <div class="modal-content">
                   <h4>Respuesta correcta</h4>
                   <center>
-                  <img class="materialboxed"  width="80%" src="../../../exercises/comunicacion/1-1-2/img/respuesta.png">
+                  <img class="materialboxed"  width="80%" src="../../../exercises/comunicacion/0-1-3/img/respuesta.png">
                   </center>
                   </div>
                   <div class="modal-footer">
@@ -60,13 +61,11 @@ for (var i = ul.children.length; i >= 0; i--) {
 }
 1
   var r=0;
-  $('.item img').click(function() {
+  $('.item img').click(function(){
     $(this).css({"border":"solid" , "border-color":"#37D3F7","background":"#B6ECFF"});
-     var element=$(this).attr("alt");
-    
-      var select=$(this).attr("value");
+    var element=$(this).attr("alt");   
+    var select=$(this).attr("value");
       if(select!="seleccionado"){
-
       if(element=="n"){
         r++;
          $(this).attr("value","seleccionado");
@@ -79,8 +78,7 @@ for (var i = ul.children.length; i >= 0; i--) {
     }
   })
 
-function result_tipo_2_1_2(){
-                
+function result_tipo_2_1_3(){               
                   var  min= $('#Minutos').text();
                   var  seg= $('#Segundos').text();
                   var  milseg= $('#Centesimas').text();
@@ -88,15 +86,15 @@ function result_tipo_2_1_2(){
 
         if(r==1)
                 {
-                    localStorage.setItem("Nota2-1-2",nota);
-                    localStorage.setItem("Time2-1-2", tiempo);
+                    localStorage.setItem("Nota2-1-3",nota);
+                    localStorage.setItem("Time2-1-3", tiempo);
                     correcto(); 
                 }
                 else {
                     incorrecto();
-                    localStorage.setItem("Nota2-1-2","0");
-                    localStorage.setItem("Time2-1-2", tiempo);  
+                    localStorage.setItem("Nota2-1-3","0");
+                    localStorage.setItem("Time2-1-3", tiempo);  
                 }    
             } 
 </script>
-<script type="text/javascript" src="../../../exercises/comunicacion/1-1-2/js/validate.js"></script>
+<script type="text/javascript" src="../../../exercises/comunicacion/0-1-3/js/validate.js"></script>

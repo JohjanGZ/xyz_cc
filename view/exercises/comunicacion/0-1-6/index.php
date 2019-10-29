@@ -41,18 +41,18 @@
                 }
           </style>
 
-          <link rel="stylesheet" type="text/css" href="../../../exercises/comunicacion/1-1-6/css/styles.css">
+          <link rel="stylesheet" type="text/css" href="../../../exercises/comunicacion/0-1-6/css/styles.css">
           </head>
   <?=$titulo?>
 <div class="container">
-  <center><img class="img-principal"  src="../../../exercises/comunicacion/1-1-6/img/principal.png"></center>
+  <center><img class="img-principal"  src="../../../exercises/comunicacion/0-1-6/img/principal.png"></center>
       	<section class="fila1" id="contenedorpuzzle">
               <div class="row">
-              	<div class=""><div class="item"  id="item1"><img alt="n" src="../../../exercises/comunicacion/1-1-6/img/1.png"></div></div>
-              	<div class=""><div class="item"  id="item2"><img  src="../../../exercises/comunicacion/1-1-6/img/2.png"></div></div>
-                <div class=""><div class="item"  id="item3"><img alt="n" src="../../../exercises/comunicacion/1-1-6/img/3.png"></div></div>
-                <div class=""><div class="item"  id="item5"><img alt="n" src="../../../exercises/comunicacion/1-1-6/img/5.png"></div></div>
-                <div class=""><div class="item"  id="item6"><img alt="n" src="../../../exercises/comunicacion/1-1-6/img/6.png"></div></div>
+              	<div class=""><div class="item"  id="item1"><img alt="n" src="../../../exercises/comunicacion/0-1-6/img/1.png"></div></div>
+              	<div class=""><div class="item"  id="item2"><img  src="../../../exercises/comunicacion/0-1-6/img/2.png"></div></div>
+                <div class=""><div class="item"  id="item3"><img alt="n" src="../../../exercises/comunicacion/0-1-6/img/3.png"></div></div>
+                <div class=""><div class="item"  id="item5"><img alt="n" src="../../../exercises/comunicacion/0-1-6/img/5.png"></div></div>
+                <div class=""><div class="item"  id="item6"><img alt="n" src="../../../exercises/comunicacion/0-1-6/img/6.png"></div></div>
               </div>
         </section>
 </div>
@@ -60,7 +60,7 @@
                   <div class="modal-content">
                   <h4>Respuesta correcta</h4>
                   <center>
-                  <img class="materialboxed"  width="80%" src="../../../exercises/comunicacion/1-1-6/img/respuesta.png">
+                  <img class="materialboxed"  width="80%" src="../../../exercises/comunicacion/0-1-6/img/respuesta.png">
                   </center>
                   </div>
                   <div class="modal-footer">
@@ -71,4 +71,4 @@
 <?php require('../../../tools/botones/botones.php');?>
 <script type="text/javascript">
 </script>
-<script type="text/javascript" src="../../../exercises/comunicacion/1-1-6/js/validate.js"></script>
+<script type="text/javascript" src="../../../exercises/comunicacion/0-1-6/js/validate.js"></script>

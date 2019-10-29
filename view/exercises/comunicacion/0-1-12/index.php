@@ -1,7 +1,7 @@
 <?php require('../../../tools/var/variables.php'); ?>
           <head>     
           <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-          <link rel="stylesheet" type="text/css" href="../../../exercises/comunicacion/1-1-12/css/styles.css">
+          <link rel="stylesheet" type="text/css" href="../../../exercises/comunicacion/0-1-12/css/styles.css">
           </head>
           <style type="text/css">
 h4 {
@@ -64,48 +64,48 @@ h4 {
         <div class="row">
             
             <div class="muestra">
-                <img src="../../../exercises/comunicacion/1-1-12/img/principal.png" class="responsive-img">
+                <img src="../../../exercises/comunicacion/0-1-12/img/principal.png" class="responsive-img">
             </div>
             <div class="campo" id="palabras">
                 <ul id="listA">
                     <li>
                         <div class="box a" alt="n">
-                            <img src="../../../exercises/comunicacion/1-1-12/img/2.png" class="responsive-img">
+                            <img src="../../../exercises/comunicacion/0-1-12/img/2.png" class="responsive-img">
                         </div>
                     </li>
                     <li>
                         <div class="box a" alt="">
-                            <img src="../../../exercises/comunicacion/1-1-12/img/3.png" class="responsive-img">
+                            <img src="../../../exercises/comunicacion/0-1-12/img/3.png" class="responsive-img">
                         </div>
                     </li>
                     <li>
                         <div class="box a" alt="n">
-                            <img src="../../../exercises/comunicacion/1-1-12/img/4.png" class="responsive-img">
+                            <img src="../../../exercises/comunicacion/0-1-12/img/4.png" class="responsive-img">
                         </div>
                     </li>
                     <li>
                         <div class="box a" alt="n">
-                            <img src="../../../exercises/comunicacion/1-1-12/img/5.png" class="responsive-img">
+                            <img src="../../../exercises/comunicacion/0-1-12/img/5.png" class="responsive-img">
                         </div>
                     </li>
                     <li>
                         <div class="box a" alt="n">
-                            <img src="../../../exercises/comunicacion/1-1-12/img/6.png" class="responsive-img">
+                            <img src="../../../exercises/comunicacion/0-1-12/img/6.png" class="responsive-img">
                         </div>
                     </li>
                     <li>
                         <div class="box a" alt="n">
-                            <img src="../../../exercises/comunicacion/1-1-12/img/7.png" class="responsive-img">
+                            <img src="../../../exercises/comunicacion/0-1-12/img/7.png" class="responsive-img">
                         </div>
                     </li>
                     <li>
                         <div class="box a" alt="n">
-                            <img src="../../../exercises/comunicacion/1-1-12/img/8.png" class="responsive-img">
+                            <img src="../../../exercises/comunicacion/0-1-12/img/8.png" class="responsive-img">
                         </div>
                     </li>
                     <li>
                         <div class="box a" alt="">
-                            <img src="../../../exercises/comunicacion/1-1-12/img/9.png" class="responsive-img">
+                            <img src="../../../exercises/comunicacion/0-1-12/img/9.png" class="responsive-img">
                         </div>
                     </li>
                 </ul>
@@ -120,4 +120,4 @@ h4 {
 <script type="text/javascript">
 
 </script>
-<script type="text/javascript" src="../../../exercises/comunicacion/1-1-12/js/validate.js"></script>
+<script type="text/javascript" src="../../../exercises/comunicacion/0-1-12/js/validate.js"></script>

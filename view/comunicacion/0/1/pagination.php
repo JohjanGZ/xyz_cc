@@ -86,7 +86,7 @@
     ////////////// 2do 
             // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
     function start_1(){
-        $("#ventana").load('../../../exercises/comunicacion/1-1-1/index.php', 
+        $("#ventana").load('../../../exercises/comunicacion/0-1-1/index.php', 
         {
         next: "Page_2()", 
         procesar:"result_tipo_2_1_1()",
@@ -99,7 +99,7 @@
         return false;  
     };
     function start_2(){
-        $("#ventana").load('../../../exercises/comunicacion/1-1-2/index.php', 
+        $("#ventana").load('../../../exercises/comunicacion/0-1-2/index.php', 
         { 
         next: "Page_3()", 
         procesar:"result_tipo_2_1_2()",
@@ -112,7 +112,7 @@
         return false;
     };
     function start_3(){   
-        $("#ventana").load('../../../exercises/comunicacion/1-1-3/index.php', 
+        $("#ventana").load('../../../exercises/comunicacion/0-1-3/index.php', 
         { 
         next: "Page_4()", 
         procesar:"result_tipo_2_1_3()",
@@ -124,7 +124,7 @@
         return false;
     };
     function start_4(){
-        $("#ventana").load('../../../exercises/comunicacion/1-1-4/index.php', 
+        $("#ventana").load('../../../exercises/comunicacion/0-1-4/index.php', 
         {
             next: "Page_5()", 
             procesar:"result_tipo_2_1_4()",
@@ -136,7 +136,7 @@
         return false;
     };
     function start_5(){  
-        $("#ventana").load('../../../exercises/comunicacion/1-1-5/index.php', 
+        $("#ventana").load('../../../exercises/comunicacion/0-1-5/index.php', 
         {   
         next: "Page_6()", 
         procesar:"result_tipo_2_1_5()",
@@ -148,7 +148,7 @@
         return false;
     };
     function start_6(){  
-        $("#ventana").load('../../../exercises/comunicacion/1-1-6/index.php', 
+        $("#ventana").load('../../../exercises/comunicacion/0-1-6/index.php', 
         {
         next: "Page_7()", 
         procesar:"result_tipo_2_1_6()",
@@ -160,7 +160,7 @@
         return false;
     };
     function start_7(){  
-        $("#ventana").load('../../../exercises/comunicacion/1-1-7/index.php', 
+        $("#ventana").load('../../../exercises/comunicacion/0-1-7/index.php', 
         {
         next: "Page_8()", 
         procesar:"result_tipo_2_1_7()",
@@ -172,7 +172,7 @@
         return false;
     };
     function start_8(){  
-        $("#ventana").load('../../../exercises/comunicacion/1-1-8/index.php', 
+        $("#ventana").load('../../../exercises/comunicacion/0-1-8/index.php', 
         {
         next: "Page_9()", 
         procesar:"result_tipo_2_1_8()",
@@ -184,7 +184,7 @@
         return false;
     };
     function start_9(){  
-        $("#ventana").load('../../../exercises/comunicacion/1-1-9/index.php', 
+        $("#ventana").load('../../../exercises/comunicacion/0-1-9/index.php', 
         {
         next: "Page_10()", 
         procesar:"result_tipo_2_1_9()",
@@ -196,7 +196,7 @@
         return false;
     };
     function start_10(){  
-        $("#ventana").load('../../../exercises/comunicacion/1-1-10/index.php', 
+        $("#ventana").load('../../../exercises/comunicacion/0-1-10/index.php', 
         { 
          next: "Page_11()",  
         procesar:"result_tipo_2_1_10()",
@@ -208,7 +208,7 @@
         return false;
     };
     function start_11(){  
-        $("#ventana").load('../../../exercises/comunicacion/1-1-11/index.php', 
+        $("#ventana").load('../../../exercises/comunicacion/0-1-11/index.php', 
         { 
         next: "Page_12()",  
         procesar:"result_tipo_1_1_11()",
@@ -220,7 +220,7 @@
         return false;
     };
     function start_12(){  
-        $("#ventana").load('../../../exercises/comunicacion/1-1-12/index.php', 
+        $("#ventana").load('../../../exercises/comunicacion/0-1-12/index.php', 
         { 
         next: "Page_14()", 
         procesar:"result_tipo_1_1_12()",
@@ -232,7 +232,7 @@
         return false;
     };
     function start_13(){  
-        $("#ventana").load('../../../exercises/comunicacion/1-1-13/index.php', 
+        $("#ventana").load('../../../exercises/comunicacion/0-1-13/index.php', 
         { 
        next: "Page_14()",  
         procesar:"result_tipo_2_1_13()",
@@ -244,7 +244,7 @@
         return false;
     };
     function start_14(){  
-        $("#ventana").load('../../../exercises/comunicacion/1-1-14/index.php', 
+        $("#ventana").load('../../../exercises/comunicacion/0-1-14/index.php', 
         { 
         next: "Page_15()", 
         procesar:"result_tipo_1_1_14()",
@@ -256,7 +256,7 @@
         return false;
     };
     function start_15(){  
-        $("#ventana").load('../../../exercises/comunicacion/1-1-15/index.php', 
+        $("#ventana").load('../../../exercises/comunicacion/0-1-15/index.php', 
         { 
         next: "Page_16()", 
         procesar:"result_tipo_1_1_15()",
@@ -268,7 +268,7 @@
         return false;
     };
     function start_16(){  
-        $("#ventana").load('../../../exercises/comunicacion/1-1-16/index.php', 
+        $("#ventana").load('../../../exercises/comunicacion/0-1-16/index.php', 
         { 
         next: "Page_17()", 
         procesar:"result_tipo_1_1_16()",

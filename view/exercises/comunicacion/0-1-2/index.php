@@ -3,7 +3,7 @@
           <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
           <style type="text/css">
                 #contenedorpuzzle{
-                   width: 875px;
+                width: 590px;
                 margin: 10vh auto;
                 }
                 .item img {
@@ -24,16 +24,15 @@
                 margin: 5vh auto 0;
                 }
           </style>
-          <link rel="stylesheet" type="text/css" href="../../../exercises/comunicacion/1-1-5/css/styles.css">
+          <link rel="stylesheet" type="text/css" href="../../../exercises/comunicacion/0-1-2/css/styles.css">
           </head>
   <?=$titulo?>
 <div class="container">
-  <center><img class="img-principal" width="35%" src="../../../exercises/comunicacion/1-1-5/img/principal.png"></center>
+  <center><img class="img-principal" width="35%" src="../../../exercises/comunicacion/0-1-2/img/principal.png"></center>
       	<section id="contenedorpuzzle">
               <div class="row">
-              	<div class=""><div class="item" alt="" id="item1"><img src="../../../exercises/comunicacion/1-1-5/img/1.png"></div></div>
-              	<div class=""><div class="item"  id="item2"><img alt="n" src="../../../exercises/comunicacion/1-1-5/img/2.png"></div></div>
-                <div class=""><div class="item"  id="item2"><img  src="../../../exercises/comunicacion/1-1-5/img/3.png"></div></div>
+              	<div class=""><div class="item" alt="" id="item1"><img src="../../../exercises/comunicacion/0-1-2/img/1.png"></div></div>
+              	<div class=""><div class="item"  id="item2"><img alt="n" src="../../../exercises/comunicacion/0-1-2/img/2.png"></div></div>
 
               </div>
               <div class="row center recibidor" id="recibidor">
@@ -44,7 +43,7 @@
                   <div class="modal-content">
                   <h4>Respuesta correcta</h4>
                   <center>
-                  <img class="materialboxed"  width="80%" src="../../../exercises/comunicacion/1-1-5/img/respuesta.png">
+                  <img class="materialboxed"  width="80%" src="../../../exercises/comunicacion/0-1-2/img/respuesta.png">
                   </center>
                   </div>
                   <div class="modal-footer">
@@ -61,7 +60,7 @@ for (var i = ul.children.length; i >= 0; i--) {
 }
 1
   var r=0;
-  $('.item img').click(function(){
+  $('.item img').click(function() {
     $(this).css({"border":"solid" , "border-color":"#37D3F7","background":"#B6ECFF"});
      var element=$(this).attr("alt");
     
@@ -80,7 +79,8 @@ for (var i = ul.children.length; i >= 0; i--) {
     }
   })
 
-function result_tipo_2_1_5(){               
+function result_tipo_2_1_2(){
+                
                   var  min= $('#Minutos').text();
                   var  seg= $('#Segundos').text();
                   var  milseg= $('#Centesimas').text();
@@ -88,15 +88,15 @@ function result_tipo_2_1_5(){
 
         if(r==1)
                 {
-                    localStorage.setItem("Nota2-1-5",nota);
-                    localStorage.setItem("Time2-1-5", tiempo);
+                    localStorage.setItem("Nota2-1-2",nota);
+                    localStorage.setItem("Time2-1-2", tiempo);
                     correcto(); 
                 }
                 else {
                     incorrecto();
-                    localStorage.setItem("Nota2-1-5","0");
-                    localStorage.setItem("Time2-1-5", tiempo);  
+                    localStorage.setItem("Nota2-1-2","0");
+                    localStorage.setItem("Time2-1-2", tiempo);  
                 }    
             } 
 </script>
-<script type="text/javascript" src="../../../exercises/comunicacion/1-1-5/js/validate.js"></script>
+<script type="text/javascript" src="../../../exercises/comunicacion/0-1-2/js/validate.js"></script>
