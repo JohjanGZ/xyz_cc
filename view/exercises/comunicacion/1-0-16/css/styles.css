@@ -11,7 +11,6 @@ h4 {
 }
 
 #palabras {
-    padding: 50px;
     display: flex;
     justify-content: space-around;
 }
@@ -52,6 +51,7 @@ h4 {
 
 
 /* Styles nuevos*/
+
 .muestra img {
     width: 100px;
     height: 100px!important;
@@ -67,5 +67,36 @@ h4 {
 @media (min-width: 1024px) {
     #palabras li {
         width: 40%;
+    }
+}
+
+@media (min-height: 540px) {
+    center h5 {
+        max-width: 85%;
+    }
+    #palabras {
+        padding: 10px 50px;
+    }
+    .muestra img {
+        width: 80px;
+        height: 80px!important;
+    }
+    .box {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (min-height: 640px) {
+    #palabras {
+        padding: 50px;
+    }
+    .muestra img {
+        width: 100px;
+        height: 100px!important;
+    }
+    .box {
+        width: 100%;
+        height: 140px;
     }
 }

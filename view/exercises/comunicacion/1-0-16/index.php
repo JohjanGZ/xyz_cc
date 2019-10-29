@@ -61,7 +61,7 @@
                             <img src="<?= $dir ?>/img/2.png" class="responsive-img">
                         </div>
                     </li>
-
+ 
                 </ul>
                 <ul class="listC">
                     <li>

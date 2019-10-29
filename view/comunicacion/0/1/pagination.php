@@ -291,7 +291,7 @@
         { 
         next: "Page_17()", 
         procesar:"result_tipo_1_0_16()",
-        titulo:"<center><h5><span class='ftitulo'>Selecciona</span> las imágenes que se encuentran debajo y son iguales a las que se muestran.</h5></center>",
+        titulo:"<center><h5><span class='ftitulo'>Selecciona</span> las imágenes de la parte inferior que sean iguales a las que se muestran.</h5></center>",
         restaurar:"start_16()",
         dir:ruta+ "1-0-16",
         nota:cal  
@@ -304,7 +304,7 @@
         { 
         next: "Page_18()", 
         procesar:"result_tipo_1_0_17()",
-        titulo:"<center><h5><span >Selecciona</span> las imágenes que se encuentran debajo y son iguales a las que se muestran.</h5></center>",
+        titulo:"<center><h5><span >Selecciona</span> las imágenes de la parte inferior que sean iguales a las que se muestran.</h5></center>",
         restaurar:"start_17()",
         dir:ruta+"1-0-17",
         nota:cal  
