@@ -176,7 +176,7 @@
         {
         next: "Page_9()", 
         procesar:"result_tipo_2_1_8()",
-        titulo:"<center><h5><span class='ftitulo'>Observa</span> el diagrama y<span class='ftitulo'> Completa</span> las oraciones </h5></center>",
+        titulo:"<center><h5><span class='ftitulo'>Selecciona</span> los dibujos que lleven al final la vocal 'a'</center>",
         restaurar:"start_8()",
          nota:cal
         }
@@ -212,7 +212,7 @@
         { 
         next: "Page_12()",  
         procesar:"result_tipo_1_1_11()",
-        titulo:"<center><h5><span class='ftitulo'>Relaciona</span> cada diagrama con la expresión que le corresponde.</h5></center>",
+        titulo:"<center><h5><span class='ftitulo'>observa</span> y <span class='ftitulo'>selecciona</span> el dibujo que lleve la vocal 'e'.</h5></center>",
         restaurar:"start_11()",
         nota:cal
         }                    
@@ -224,7 +224,7 @@
         { 
         next: "Page_14()", 
         procesar:"result_tipo_1_1_12()",
-        titulo:"<center><h5><span class='ftitulo'>Relaciona</span> cada diagrama con la expresión que le corresponde.</h5></center>",
+        titulo:"<center><h5><span class='ftitulo'>observa</span> y <span class='ftitulo'>selecciona</span> el dibujo que lleve la vocal 'i'.</h5></center>",
         restaurar:"start_12()",
         nota:cal
         }                    
@@ -248,7 +248,7 @@
         { 
         next: "Page_15()", 
         procesar:"result_tipo_1_1_14()",
-        titulo:"<center><h5><span class='ftitulo'>Selecciona</span>  la vocal correcta con la que comienza cada palabra.</h5></center>",
+        titulo:"<center><h5><span class='ftitulo'>Selecciona</span> la vocal correcta con la que comienza cada palabra.</h5></center>",
         restaurar:"start_14()",
         nota:cal
         }                    

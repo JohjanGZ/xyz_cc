@@ -76,6 +76,18 @@
             </div>
         </div>
     </div>
+
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Respuesta correcta</h4>
+            <center>
+              <img class="materialboxed"  width="80%" src="../../../exercises/comunicacion/0-1-14/img/respuesta.png">
+            </center>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Listo!</a>
+        </div>
+    </div>
   </body>
 
 
