@@ -4,7 +4,7 @@
           <link rel="stylesheet" type="text/css" href="../../../exercises/comunicacion/1-1-11/css/styles.css">
           </head>
           <style type="text/css">
-        h4 {
+h4 {
     text-align: center;
 }
 
@@ -50,8 +50,8 @@
     justify-content: center;
 }
 .box img {
-width: 50%;
-    height: 60%;
+    width: 50%;
+    height: auto;
 }
 
 .box:hover {
@@ -127,54 +127,5 @@ width: 50%;
 <script src="../../../../js/core.js"></script>
 <?php require('../../../tools/botones/botones.php');?>
 <script type="text/javascript">
-        var r = 0;
-        var ul = document.querySelector('#listA');
-        for (var i = ul.children.length; i >= 0; i--) {
-            ul.appendChild(ul.children[Math.random() * i | 0]);
-        }
-   
-        $('.a').click(function () {
-
-            $(this).css({
-                "border": "solid",
-                "border-color": "#37D3F7",
-                "background": "#B6ECFF"
-            });
-            var element = $(this).attr("alt");
-            var select = $(this).attr("value");
-            if (select != "seleccionado") {
-
-                if (element == "n") {
-                    r++;
-                    $(this).attr("value", "seleccionado");
-                } else {
-                    r--;
-                    $(this).attr("value", "seleccionado");
-                }
-                console.log(r);
-            }
-        })
-
-
-          function result_tipo_1_1_11(){               
-                  var  min= $('#Minutos').text();
-                  var  seg= $('#Segundos').text();
-                  var  milseg= $('#Centesimas').text();
-                  var tiempo=min+":"+seg+":"+milseg;
- 
-
-
-                          if(r==7){                  
-                              localStorage.setItem("Nota2-1-11",nota);
-                              localStorage.setItem("Time2-1-11", tiempo);
-                              correcto(); 
-                          }
-                          else{
-                              incorrecto();
-                              localStorage.setItem("Nota2-1-9","0");
-                              localStorage.setItem("Time2-1-9", tiempo);
-                          }    
-                  
-                      }
 </script>
-<script type="text/javascript" src="../../../exercises/comunicacion/1-1-9/js/validate.js"></script>
+<script type="text/javascript" src="../../../exercises/comunicacion/1-1-11/js/validate.js"></script>

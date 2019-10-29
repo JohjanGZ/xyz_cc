@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 1</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/materialize.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <h4><span>Selecciona</span> las imágenes que se encuentran debajo y son iguales a las que se muestran</h4>
+            <div class="muestra">
+                <img src="img/carita feliz.png" class="responsive-img">
+                <img src="img/luna feliz.png" class="responsive-img">
+                <img src="img/sol punta.png" class="responsive-img">
+            </div>
+            <div class="campo" id="palabras">
+                <ul class="listA">
+                    <li>
+                        <div class="box a" alt="n">
+                            <img src="img/carita feliz.png" class="responsive-img">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box a" alt="">
+                            <img src="img/carita triste.png" class="responsive-img">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box a" alt="n">
+                            <img src="img/sol punta.png" class="responsive-img">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box a" alt="">
+                            <img src="img/sol punta redondas.png" class="responsive-img">
+                        </div>
+                    </li>
+
+                </ul>
+                <ul class="listB">
+                    <li>
+                        <div class="box a" alt="n">
+                            <img src="img/luna feliz.png" class="responsive-img">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box a" alt="">
+                            <img src="img/luna triste.png" class="responsive-img">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box a" alt="n">
+                            <img src="img/carita feliz.png" class="responsive-img">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box a" alt="">
+                            <img src="img/carita triste.png" class="responsive-img">
+                        </div>
+                    </li>
+
+                </ul>
+                <ul class="listC">
+                    <li>
+                        <div class="box a" alt="">
+                            <img src="img/sol punta redondas.png" class="responsive-img">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box a" alt="n">
+                            <img src="img/sol punta.png" class="responsive-img">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box a" alt="">
+                            <img src="img/luna triste.png" class="responsive-img">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box a" alt="n">
+                            <img src="img/luna feliz.png" class="responsive-img">
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <a class="btn" id="validar">Validar</a>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+        var r = 0;
+
+        var ul = document.querySelector('.listA');
+        for (var i = ul.children.length; i >= 0; i--) {
+            ul.appendChild(ul.children[Math.random() * i | 0]);
+        }
+        var ul = document.querySelector('.listB');
+        for (var i = ul.children.length; i >= 0; i--) {
+            ul.appendChild(ul.children[Math.random() * i | 0]);
+        }
+        var ul = document.querySelector('.listC');
+        for (var i = ul.children.length; i >= 0; i--) {
+            ul.appendChild(ul.children[Math.random() * i | 0]);
+        }
+
+        $('.a').click(function() {
+
+            $(this).css({
+                "border": "solid",
+                "border-color": "#37D3F7",
+                "background": "#B6ECFF"
+            });
+            var element = $(this).attr("alt");
+            var select = $(this).attr("value");
+            if (select != "seleccionado") {
+
+                if (element == "n") {
+                    r++;
+                    $(this).attr("value", "seleccionado");
+                } else {
+                    r--;
+                    $(this).attr("value", "seleccionado");
+                }
+                console.log(r);
+            }
+        })
+
+        // Formulario - Registrados
+        $('#validar').on('click', function(e) {
+            e.preventDefault();
+            //alert('hola');
+            function result_tipo_1_1_12() {
+                if (r == 6) {
+                    alert('¡Bien!');
+                } else {
+                    alert('¡Mal!');
+                }
+            }
+            result_tipo_1_1_12();
+        });
+    </script>
+</body>
+
+</html>

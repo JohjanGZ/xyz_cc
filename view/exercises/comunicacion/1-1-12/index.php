@@ -4,7 +4,7 @@
           <link rel="stylesheet" type="text/css" href="../../../exercises/comunicacion/1-1-12/css/styles.css">
           </head>
           <style type="text/css">
-4 {
+h4 {
     text-align: center;
 }
 

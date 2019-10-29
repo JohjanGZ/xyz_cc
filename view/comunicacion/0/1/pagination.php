@@ -65,6 +65,23 @@
          count = 3;
     }
 
+    function Page_14(){
+        start_14();
+        inicio();
+         count = 3;
+    }
+
+    function Page_15(){
+        start_15();
+        inicio();
+         count = 3;
+    }
+    function Page_16(){
+        start_16();
+        inicio();
+         count = 3;
+    }
+
     var cal= 20/20;
     ////////////// 2do 
             // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
@@ -190,7 +207,7 @@
         );
         return false;
     };
-        function start_11(){  
+    function start_11(){  
         $("#ventana").load('../../../exercises/comunicacion/1-1-11/index.php', 
         { 
         next: "Page_12()",  
@@ -202,10 +219,10 @@
         );
         return false;
     };
-        function start_12(){  
+    function start_12(){  
         $("#ventana").load('../../../exercises/comunicacion/1-1-12/index.php', 
         { 
-        next: "Page_13()", 
+        next: "Page_14()", 
         procesar:"result_tipo_1_1_12()",
         titulo:"<center><h5><span class='ftitulo'>Relaciona</span> cada diagrama con la expresión que le corresponde.</h5></center>",
         restaurar:"start_12()",
@@ -214,7 +231,7 @@
         );
         return false;
     };
-        function start_13(){  
+    function start_13(){  
         $("#ventana").load('../../../exercises/comunicacion/1-1-13/index.php', 
         { 
        next: "Page_14()",  
@@ -226,14 +243,38 @@
         );
         return false;
     };
-        function start_14(){  
+    function start_14(){  
         $("#ventana").load('../../../exercises/comunicacion/1-1-14/index.php', 
         { 
         next: "Page_15()", 
-        procesar:"result_tipo_2_1_14()",
-        titulo:"<center><h5><span class='ftitulo'>Relaciona</span> cada diagrama con la expresión que le corresponde.</h5></center>",
+        procesar:"result_tipo_1_1_14()",
+        titulo:"<center><h5><span class='ftitulo'>Selecciona</span>  la vocal correcta con la que comienza cada palabra.</h5></center>",
         restaurar:"start_14()",
         nota:cal
+        }                    
+        );
+        return false;
+    };
+    function start_15(){  
+        $("#ventana").load('../../../exercises/comunicacion/1-1-15/index.php', 
+        { 
+        next: "Page_16()", 
+        procesar:"result_tipo_1_1_15()",
+        titulo:"<center><h5><span class='ftitulo'>Clasifica</span> cada dibujo de acuerdo a la vocal con la que termine su nombre.</h5></center>",
+        restaurar:"start_15()",
+        nota:cal  
+        }                    
+        );
+        return false;
+    };
+    function start_16(){  
+        $("#ventana").load('../../../exercises/comunicacion/1-1-16/index.php', 
+        { 
+        next: "Page_17()", 
+        procesar:"result_tipo_1_1_16()",
+        titulo:"<center><h5><span class='ftitulo'>Selecciona</span> las imágenes que se encuentran debajo y son iguales a las que se muestran.</h5></center>",
+        restaurar:"start_16()",
+        nota:cal  
         }                    
         );
         return false;

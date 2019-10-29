@@ -14,7 +14,7 @@ h4 {
 #palabras li {
     width: 100%;
     margin: auto;
-    margin-bottom: 15%;
+    margin-bottom: 2vh;
     margin-right: 1px;
 }
 
@@ -45,7 +45,6 @@ h4 {
 }
 .box img {
     width: 50%;
-    height: 100%;
 }
 
 .box:hover {
