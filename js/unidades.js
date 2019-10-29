@@ -24,7 +24,7 @@
                   "id":"0",
                   "nombre": "Unidad 1 - Voy a leer y a escribir",  
                   "temas": {
-                          "0": ""
+                          "0": "tema 1"
                            }               
             }
         }
@@ -65,7 +65,7 @@
                           "3": "ejericio 4 de la unidad 2 matematica 1",
                           "4": "ejericio 5 de la unidad 2 matematica 1",
                           "5": "ejericio 6 de la unidad 2 matematica 1",
-                  } 
+                  }
               }
           }
         });
@@ -160,29 +160,6 @@
         }
         });
 }
-/*  
-    function cuarto() {
-       $("#portada").css("display", "block");
-       $('#cuerpo').load('view/inicial/',{ grado:'4' , titulo:'Cuarto Grado', color:'#8d03b4'});
-    }
-    function quinto() {
-       $("#portada").css("display", "block");
-       $('#cuerpo').load('contenido.php',{ grado:'5' , titulo:'Quinto Grado', color:'#3eae0b'});
-    }
-    function sexto() {
-       $("#portada").css("display", "block");
-       $('#cuerpo').load('contenido.php',{ grado:'5', titulo:'Sexto Grado', color:'#e64804'});
-    }
-        function unidades() {
-       $("#portada").css("display", "block");
-       $('#cuerpo').load('view/unidades.php',{ grado:'5', titulo:'Sexto Grado', color:'#e64804'});
-    }
-        function ejercicios() {
-       $("#portada").css("display", "block");
-       $('#cuerpo').load('view/ejercicios.php',{ grado:'5', titulo:'Sexto Grado', color:'#e64804'});
-    }
-*/
-
     function libros() {
        $("#portada").css("display", "block");
        $('#cuerpo').load('view/libros.php');
