@@ -24,15 +24,15 @@
                 margin: 5vh auto 0;
                 }
           </style>
-          <link rel="stylesheet" type="text/css" href="../../../exercises/comunicacion/1-0-2/css/styles.css">
+          <link rel="stylesheet" type="text/css" href="<?= $dir ?>/css/styles.css">
           </head>
   <?=$titulo?>
 <div class="container">
-  <center><img class="img-principal" width="35%" src="../../../exercises/comunicacion/1-0-2/img/principal.png"></center>
+  <center><img class="img-principal" width="35%" src="<?= $dir ?>/img/principal.png"></center>
       	<section id="contenedorpuzzle">
               <div class="row">
-              	<div class=""><div class="item" alt="" id="item1"><img src="../../../exercises/comunicacion/1-0-2/img/1.png"></div></div>
-              	<div class=""><div class="item"  id="item2"><img alt="n" src="../../../exercises/comunicacion/1-0-2/img/2.png"></div></div>
+              	<div class=""><div class="item" alt="" id="item1"><img src="<?= $dir ?>/img/1.png"></div></div>
+              	<div class=""><div class="item"  id="item2"><img alt="n" src="<?= $dir ?>/img/2.png"></div></div>
 
               </div>
               <div class="row center recibidor" id="recibidor">
@@ -43,7 +43,7 @@
                   <div class="modal-content">
                   <h4>Respuesta correcta</h4>
                   <center>
-                  <img class="materialboxed"  width="80%" src="../../../exercises/comunicacion/1-0-2/img/respuesta.png">
+                  <img class="materialboxed"  width="80%" src="<?= $dir ?>/img/respuesta.png">
                   </center>
                   </div>
                   <div class="modal-footer">
@@ -99,4 +99,4 @@ function result_tipo_1_0_2(){
                 }    
             } 
 </script>
-<script type="text/javascript" src="../../../exercises/comunicacion/1-0-2/js/validate.js"></script>
+<script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>

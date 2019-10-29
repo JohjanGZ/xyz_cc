@@ -1,7 +1,7 @@
 <?php require('../../../tools/var/variables.php'); ?>
           <head>     
           <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-          <link rel="stylesheet" type="text/css" href="../../../exercises/comunicacion/1-0-11/css/styles.css">
+          <link rel="stylesheet" type="text/css" href="<?= $dir ?>/css/styles.css">
           </head>
           <style type="text/css">
 h4 {
@@ -63,58 +63,58 @@ h4 {
     <div class="container">
         <div class="row">
             <div class="muestra">
-                <img src="../../../exercises/comunicacion/1-0-11/img/principal.png" class="responsive-img">
+                <img src="<?= $dir ?>/img/principal.png" class="responsive-img">
             </div>
             <div class="campo" id="palabras">
                 <ul id="listA">
                     <li id="obj1" >
                         <div class="box a" alt="n">
-                            <img src="../../../exercises/comunicacion/1-0-11/img/2.png" class="responsive-img">
+                            <img src="<?= $dir ?>/img/2.png" class="responsive-img">
                         </div>
                     </li>
                     <li id="obj2" >
                         <div class="box a" alt="">
-                            <img src="../../../exercises/comunicacion/1-0-11/img/3.png" class="responsive-img">
+                            <img src="<?= $dir ?>/img/3.png" class="responsive-img">
                         </div>
                     </li>
                     <li id="obj3" >
                         <div class="box a" alt="n">
-                            <img src="../../../exercises/comunicacion/1-0-11/img/4.png" class="responsive-img">
+                            <img src="<?= $dir ?>/img/4.png" class="responsive-img">
                         </div>
                     </li>
                     <li id="obj4" >
                         <div class="box a" alt="n">
-                            <img src="../../../exercises/comunicacion/1-0-11/img/5.png" class="responsive-img">
+                            <img src="<?= $dir ?>/img/5.png" class="responsive-img">
                         </div>
                     </li>
                     <li id="obj5" >
                         <div class="box a" alt="n">
-                            <img src="../../../exercises/comunicacion/1-0-11/img/6.png" class="responsive-img">
+                            <img src="<?= $dir ?>/img/6.png" class="responsive-img">
                         </div>
                     </li>
                     <li id="obj6" >
                         <div class="box a" alt="n">
-                            <img src="../../../exercises/comunicacion/1-0-11/img/7.png" class="responsive-img">
+                            <img src="<?= $dir ?>/img/7.png" class="responsive-img">
                         </div>
                     </li>
                     <li id="obj7" >
                         <div class="box a" alt="n">
-                            <img src="../../../exercises/comunicacion/1-0-11/img/8.png" class="responsive-img">
+                            <img src="<?= $dir ?>/img/8.png" class="responsive-img">
                         </div>
                     </li>
                     <li id="obj8">
                         <div class="box a" alt="n">
-                            <img src="../../../exercises/comunicacion/1-0-11/img/9.png" class="responsive-img">
+                            <img src="<?= $dir ?>/img/9.png" class="responsive-img">
                         </div>
                     </li>
                     <li id="obj9">
                         <div class="box a" alt="">
-                            <img src="../../../exercises/comunicacion/1-0-11/img/10.png" class="responsive-img">
+                            <img src="<?= $dir ?>/img/10.png" class="responsive-img">
                         </div>
                     </li>
                     <li id="obj9" >
                         <div class="box a" alt="">
-                            <img src="../../../exercises/comunicacion/1-0-11/img/11.png" class="responsive-img">
+                            <img src="<?= $dir ?>/img/11.png" class="responsive-img">
                         </div>
                     </li>
                 </ul>
@@ -126,7 +126,7 @@ h4 {
         <div class="modal-content">
             <h4>Respuesta correcta</h4>
             <center>
-              <img class="materialboxed"  width="80%" src="../../../exercises/comunicacion/1-0-11/img/respuesta.png">
+              <img class="materialboxed"  width="80%" src="<?= $dir ?>/img/respuesta.png">
             </center>
         </div>
         <div class="modal-footer">
@@ -140,4 +140,4 @@ h4 {
 <?php require('../../../tools/botones/botones.php');?>
 <script type="text/javascript">
 </script>
-<script type="text/javascript" src="../../../exercises/comunicacion/1-0-11/js/validate.js"></script>
+<script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>

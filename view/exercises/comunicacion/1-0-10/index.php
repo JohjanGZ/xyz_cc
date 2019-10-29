@@ -1,7 +1,7 @@
 <?php require('../../../tools/var/variables.php'); ?>
           <head>     
           <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-          <link rel="stylesheet" type="text/css" href="../../../exercises/comunicacion/1-0-10/css/styles.css">
+          <link rel="stylesheet" type="text/css" href="<?= $dir ?>/css/styles.css">
           </head>
           <style type="text/css">
 h4 {
@@ -53,7 +53,7 @@ h4 {
             <div class="campo" id="palabras">
                 <ul id="listA">
                     <li>
-                        <img src="../../../exercises/comunicacion/1-0-10/img/2.png" class="responsive-img">
+                        <img src="<?= $dir ?>/img/2.png" class="responsive-img">
                         <span class="a" alt="">o</span>
                         <span class="a" alt="">r</span>
                         <span class="a" alt="n">u</span>
@@ -61,19 +61,19 @@ h4 {
                         <span class="a" alt="">a</span>
                     </li>
                     <li>
-                        <img src="../../../exercises/comunicacion/1-0-10/img/4.png" class="responsive-img">
+                        <img src="<?= $dir ?>/img/4.png" class="responsive-img">
                         <span class="a" alt="n">u</span>
                         <span class="a" alt="">v</span>
                         <span class="a" alt="">a</span>
                     </li>
                     <li>
-                        <img src="../../../exercises/comunicacion/1-0-10/img/3.png" class="responsive-img">
+                        <img src="<?= $dir ?>/img/3.png" class="responsive-img">
                         <span class="a" alt="n">u</span>
                         <span class="a" alt="">ñ</span>
                         <span class="a" alt="">a</span>
                     </li>
                     <li>
-                        <img src="../../../exercises/comunicacion/1-0-10/img/1.png" class="responsive-img">
+                        <img src="<?= $dir ?>/img/1.png" class="responsive-img">
                         <span class="a" alt="">n</span>
                         <span class="a" alt="n">u</span>
                         <span class="a" alt="">b</span>

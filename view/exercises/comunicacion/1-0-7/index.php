@@ -77,7 +77,7 @@
               margin: 0;
             }
           </style>
-          <link rel="stylesheet" type="text/css" href="../../../exercises/comunicacion/1-0-7/css/styles.css">
+          <link rel="stylesheet" type="text/css" href="<?= $dir ?>/css/styles.css">
           </head>
   <?=$titulo?>
 <div class="container">
@@ -86,11 +86,11 @@
             <div class="campo" id="imgIzquierda">
               
               <ul id="listA">
-                <li alt="a"  class="a" id="obj1"><img src="../../../exercises/comunicacion/1-0-7/img/1.png"></li>
-                <li alt="e" class="a" id="obj2"><img src="../../../exercises/comunicacion/1-0-7/img/2.png"></li>
-                <li alt="i" class="a" id="obj3"><img src="../../../exercises/comunicacion/1-0-7/img/3.png"></li>
-                <li alt="o" class="a" id="obj4"><img src="../../../exercises/comunicacion/1-0-7/img/4.png"></li>
-                <li alt="u" class="a" id="obj1"><img src="../../../exercises/comunicacion/1-0-7/img/5.png"></li>
+                <li alt="a"  class="a" id="obj1"><img src="<?= $dir ?>/img/1.png"></li>
+                <li alt="e" class="a" id="obj2"><img src="<?= $dir ?>/img/2.png"></li>
+                <li alt="i" class="a" id="obj3"><img src="<?= $dir ?>/img/3.png"></li>
+                <li alt="o" class="a" id="obj4"><img src="<?= $dir ?>/img/4.png"></li>
+                <li alt="u" class="a" id="obj1"><img src="<?= $dir ?>/img/5.png"></li>
               </ul>
           
             </div>
@@ -100,11 +100,11 @@
             <div class="campo" id="imgDerecha">
               <ul id="listB">
                 
-                <li alt="u" class="b" id="obj2"><img src="../../../exercises/comunicacion/1-0-7/img/6.png"></li>
-                <li alt="e" class="b" id="obj3"><img src="../../../exercises/comunicacion/1-0-7/img/7.png"></li>
-                <li alt="a" class="b" id="obj4"><img src="../../../exercises/comunicacion/1-0-7/img/8.png"></li>
-                <li alt="i" class="b" id="obj4"><img src="../../../exercises/comunicacion/1-0-7/img/9.png"></li>
-                <li alt="o" class="b" id="obj4"><img src="../../../exercises/comunicacion/1-0-7/img/10.png"></li>
+                <li alt="u" class="b" id="obj2"><img src="<?= $dir ?>/img/6.png"></li>
+                <li alt="e" class="b" id="obj3"><img src="<?= $dir ?>/img/7.png"></li>
+                <li alt="a" class="b" id="obj4"><img src="<?= $dir ?>/img/8.png"></li>
+                <li alt="i" class="b" id="obj4"><img src="<?= $dir ?>/img/9.png"></li>
+                <li alt="o" class="b" id="obj4"><img src="<?= $dir ?>/img/10.png"></li>
               </ul>
             </div>
  
@@ -118,7 +118,7 @@
                   <div class="modal-content">
                   <h4>Respuesta correcta</h4>
                   <center>
-                  <img class="materialboxed"  width="80%" src="../../../exercises/comunicacion/1-0-7/img/respuesta.png">
+                  <img class="materialboxed"  width="80%" src="<?= $dir ?>/img/respuesta.png">
                   </center>
                   </div>
                   <div class="modal-footer">

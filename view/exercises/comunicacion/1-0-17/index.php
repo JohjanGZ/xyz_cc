@@ -1,7 +1,7 @@
 <?php require('../../../tools/var/variables.php'); ?>
   <head>     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-    <link rel="stylesheet" type="text/css" href="../../../exercises/comunicacion/1-0-16/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="<?= $dir ?>/css/styles.css">
   </head>
   <style type="text/css">
 
@@ -12,30 +12,30 @@
         <div class="row">
             <h4><span></span> </h4>
             <div class="muestra">
-                <img src="../../../exercises/comunicacion/1-0-16/img/1.png" class="responsive-img">
-                <img src="../../../exercises/comunicacion/1-0-16/img/5.png" class="responsive-img">
-                <img src="../../../exercises/comunicacion/1-0-16/img/3.png" class="responsive-img">
+                <img src="<?= $dir ?>/img/1.png" class="responsive-img">
+                <img src="<?= $dir ?>/img/5.png" class="responsive-img">
+                <img src="<?= $dir ?>/img/3.png" class="responsive-img">
             </div>
             <div class="campo" id="palabras">
                 <ul class="listA">
                     <li>
                         <div class="box a" alt="n">
-                            <img src="../../../exercises/comunicacion/1-0-16/img/1.png" class="responsive-img">
+                            <img src="<?= $dir ?>/img/1.png" class="responsive-img">
                         </div>
                     </li>
                     <li>
                         <div class="box a" alt="">
-                            <img src="../../../exercises/comunicacion/1-0-16/img/2.png" class="responsive-img">
+                            <img src="<?= $dir ?>/img/2.png" class="responsive-img">
                         </div>
                     </li>
                     <li>
                         <div class="box a" alt="n">
-                            <img src="../../../exercises/comunicacion/1-0-16/img/3.png" class="responsive-img">
+                            <img src="<?= $dir ?>/img/3.png" class="responsive-img">
                         </div>
                     </li>
                     <li>
                         <div class="box a" alt="">
-                            <img src="../../../exercises/comunicacion/1-0-16/img/4.png" class="responsive-img">
+                            <img src="<?= $dir ?>/img/4.png" class="responsive-img">
                         </div>
                     </li>
 
@@ -43,22 +43,22 @@
                 <ul class="listB">
                     <li>
                         <div class="box a" alt="n">
-                            <img src="../../../exercises/comunicacion/1-0-16/img/5.png" class="responsive-img">
+                            <img src="<?= $dir ?>/img/5.png" class="responsive-img">
                         </div>
                     </li>
                     <li>
                         <div class="box a" alt="">
-                            <img src="../../../exercises/comunicacion/1-0-16/img/6.png" class="responsive-img">
+                            <img src="<?= $dir ?>/img/6.png" class="responsive-img">
                         </div>
                     </li>
                     <li>
                         <div class="box a" alt="n">
-                            <img src="../../../exercises/comunicacion/1-0-16/img/1.png" class="responsive-img">
+                            <img src="<?= $dir ?>/img/1.png" class="responsive-img">
                         </div>
                     </li>
                     <li>
                         <div class="box a" alt="">
-                            <img src="../../../exercises/comunicacion/1-0-16/img/2.png" class="responsive-img">
+                            <img src="<?= $dir ?>/img/2.png" class="responsive-img">
                         </div>
                     </li>
 
@@ -66,22 +66,22 @@
                 <ul class="listC">
                     <li>
                         <div class="box a" alt="">
-                            <img src="../../../exercises/comunicacion/1-0-16/img/4.png" class="responsive-img">
+                            <img src="<?= $dir ?>/img/4.png" class="responsive-img">
                         </div>
                     </li>
                     <li>
                         <div class="box a" alt="n">
-                            <img src="../../../exercises/comunicacion/1-0-16/img/3.png" class="responsive-img">
+                            <img src="<?= $dir ?>/img/3.png" class="responsive-img">
                         </div>
                     </li>
                     <li>
                         <div class="box a" alt="">
-                            <img src="../../../exercises/comunicacion/1-0-16/img/6.png" class="responsive-img">
+                            <img src="<?= $dir ?>/img/6.png" class="responsive-img">
                         </div>
                     </li>
                     <li>
                         <div class="box a" alt="n">
-                            <img src="../../../exercises/comunicacion/1-0-16/img/5.png" class="responsive-img">
+                            <img src="<?= $dir ?>/img/5.png" class="responsive-img">
                         </div>
                     </li>
                 </ul>
@@ -94,7 +94,7 @@
         <div class="modal-content">
             <h4>Respuesta correcta</h4>
             <center>
-              <img class="materialboxed"  width="80%" src="../../../exercises/comunicacion/1-0-16/img/respuesta.png">
+              <img class="materialboxed"  width="80%" src="<?= $dir ?>/img/respuesta.png">
             </center>
         </div>
         <div class="modal-footer">
@@ -108,7 +108,7 @@
 <script type="text/javascript">
 
 </script>
-<script type="text/javascript" src="../../../exercises/comunicacion/1-0-16/js/validate.js"></script>
+<script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script>
 
 function result_tipo_1_0_17() {
