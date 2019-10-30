@@ -31,7 +31,21 @@
                           "4":"Lectoescritura: Palabras con M - m",
                           "5":"Lectoescritura: Palabras con L - l"
 
-                           }               
+                           },
+              "2":{
+                  "ruta":"comunicacion/2",
+                  "id":"2",
+                  "nombre": "Unidad 2 - Juego con mis amigos y amigas",  
+                  "temas": {
+                          "0": "Palabras con D-d",
+                          "1": "¿Qué será? Mi oído me ayudará",
+                          "2": "Discriminacion visual",
+                          "3": "Palabras con T - t",
+                          "4": "Una canción",
+                          "5": "Una revisión media",
+                          "6": "Palabras con N-n",
+                           }
+                  },               
             }
         }
     });
