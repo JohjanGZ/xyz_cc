@@ -24,7 +24,7 @@
         {
         next: "Page_2()", 
         procesar:"result_tipo_1_1_1()",
-        titulo:"<center><h5><span class='ftitulo'>Selecciona</span> la imagen que falta en la secuencia.</h5></center>",
+        titulo:"<center><h5><span class='ftitulo'>Lee</span> atentamente y contesta las preguntas.</h5></center>",
         restaurar:"start_1()",
         dir:ruta,
         cod: "1-1-1",

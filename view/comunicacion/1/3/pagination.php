@@ -1,16 +1,16 @@
 <script type="text/javascript">
-   function Page_4(){
-        start_4();
+   function Page_7(){
+        start_7();
         inicio();
          count = 3;
     }
-   function  Page_5(){
-        start_5();
+   function  Page_8(){
+        start_8();
         inicio();
          count = 3;
     }
-   function Page_6(){
-        start_6();
+   function Page_9(){
+        start_9();
         inicio();
           count = 3;
     }
@@ -20,43 +20,43 @@
     ////////////// 2do 
             // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
    
-    function start_4(){
-        $("#ventana").load(ruta+'1-1-4/index.php', 
+    function start_7(){
+        $("#ventana").load(ruta+'1-1-7/index.php', 
         {
-        next: "Page_5()", 
-        procesar:"result_tipo_1_1_4()",
-        titulo:"<center><h5><span class='ftitulo'>Selecciona</span> la imagen que falta en la secuencia.</h5></center>",
-        restaurar:"start_4()",
+        next: "Page_8()", 
+        procesar:"result_tipo_1_1_7()",
+        titulo:"<center><h5><span class='ftitulo'>Lee</span> atentamente y contesta las preguntas.</h5></center>",
+        restaurar:"start_7()",
         dir:ruta,
-        cod: "1-1-4",
+        cod: "1-1-7",
         nota:cal
         }
         );
         return false;  
     };
-    function start_5(){
-        $("#ventana").load(ruta+'1-1-5/index.php', 
+    function start_8(){
+        $("#ventana").load(ruta+'1-1-8/index.php', 
         { 
-        next: "Page_6()", 
-        procesar:"result_tipo_1_1_5()",
-        titulo:"<center><h5><span class='ftitulo'>Indica</span> la respuesta correcta.<br>¿A dónde quiero ir todas las mañanas?</h5></center>",
-        restaurar:"start_5()",
+        next: "Page_9()", 
+        procesar:"result_tipo_1_1_8()",
+        titulo:"<center><h5>¿A dónde se fue el patito?<span class='ftitulo'> Selecciona</span> la respuesta.</h5></center>",
+        restaurar:"start_8()",
         dir:ruta,
-        cod: "1-1-5",
+        cod: "1-1-8",
         nota:cal
         }
         );
         return false;
     };
-    function start_6(){   
-        $("#ventana").load(ruta+'1-1-6/index.php', 
+    function start_9(){   
+        $("#ventana").load(ruta+'1-1-9/index.php', 
         { 
         next: "resultado()", 
-        procesar:"result_tipo_1_1_6()",
-        titulo:"<center><h5><span class='ftitulo'>Señala</span>, ¿qué cosas utilizas en el colegio?</h5></center>",
-        restaurar:"start_5()",
+        procesar:"result_tipo_1_1_9()",
+        titulo:"<center><h5>¿Cómo estaban los papás del patito cuando se perdió?<span class='ftitulo'> Selecciona</span>.</h5></center>",
+        restaurar:"start_9()",
         dir:ruta,
-        cod: "1-1-6",
+        cod: "1-1-9",
         nota:cal
         }          
         );

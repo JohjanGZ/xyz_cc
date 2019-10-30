@@ -5,6 +5,7 @@ h4 {
 #listA {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 #palabras {
@@ -12,28 +13,18 @@ h4 {
 }
 
 #palabras li {
-    width: 100%;
-    margin: auto;
     margin-bottom: 2vh;
     margin-right: 1px;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
-@media (min-width: 600px) {
-    #palabras li {
-        width: 40%;
-    }
-}
-
-@media (min-width: 1024px) {
-    #palabras li {
-        width: 28%;
-    }
-}
 .muestra {
     width: 100px;
     margin: auto;
     margin-top: 30px;
 }
+
 .box {
     height: 200px;
     width: 200px;
@@ -43,6 +34,7 @@ h4 {
     align-items: center;
     justify-content: center;
 }
+
 .box img {
     width: 50%;
     height: auto;

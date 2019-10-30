@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>1-1-14</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="js/ui/jquery-ui.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="campo" id="palabras">
+                <ul id="listA">
+                    <li>
+                        <div class="box" alt="n">
+                            <img src="img/1.png" class="responsive-img">
+                        </div>
+                        <div id="la" class="vocal">
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box" alt="">
+                            <img src="img/2.png" class="responsive-img">
+                        </div>
+                        <div id="le" class="vocal">
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box" alt="n">
+                            <img src="img/3.png" class="responsive-img">
+                        </div>
+                        <div id="li" class="vocal">
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box" alt="n">
+                            <img src="img/4.png" class="responsive-img">
+                        </div>
+                        <div id="lo" class="vocal">
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box" alt="n">
+                            <img src="img/5.png" class="responsive-img">
+                        </div>
+                        <div id="lu" class="vocal">
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="contenedor-silabas">
+                <div class="silaba pieza" id="la">
+                    <h4>La</h4>
+                </div>
+                <div class="silaba pieza" id="le">
+                    <h4>Le</h4>
+                </div>
+                <div class="silaba pieza" id="li">
+                    <h4>Li</h4>
+                </div>
+                <div class="silaba pieza" id="lo">
+                    <h4>Lo</h4>
+                </div>
+                <div class="silaba pieza" id="lu">
+                    <h4>Lu</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <a class="btn" id="validar">Validar</a>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/ui/jquery-ui.min.js"></script>
+
+    <script type="text/javascript">
+        var r = 0;
+        var la = 0;
+        var le = 0;
+        var li = 0;
+        var lo = 0;
+        var lu = 0;
+
+        var ul = document.querySelector('.contenedor-silabas');
+        for (var i = ul.children.length; i >= 0; i--) {
+            ul.appendChild(ul.children[Math.random() * i | 0]);
+        }
+
+        $(".pieza").draggable({
+            start: function() {
+                element = $(this).attr("id");
+            }
+        });
+
+        // la
+        $("#la").droppable({
+            classes: {
+                "ui-droppable-active": "ui-state-active",
+                "ui-droppable-hover": "ui-state-hover"
+            },
+            drop: function(event, ui) {
+                $(this).css("background-color", "transparent");
+                $("#" + element + " h4").css("background-color", "transparent");
+                if (element == "la") {
+                    la++
+                }
+                element.removeClass("pieza");
+            }
+        });
+
+        // le
+        $("#le").droppable({
+            classes: {
+                "ui-droppable-active": "ui-state-active",
+                "ui-droppable-hover": "ui-state-hover"
+            },
+            drop: function(event, ui) {
+                $(this).css("background-color", "transparent");
+                $("#" + element + " h4").css("background-color", "transparent");
+                if (element == "le") {
+                    le++
+                }
+                element.removeClass("pieza");
+            }
+        });
+
+        // li
+        $("#li").droppable({
+            classes: {
+                "ui-droppable-active": "ui-state-active",
+                "ui-droppable-hover": "ui-state-hover"
+            },
+            drop: function(event, ui) {
+                $(this).css("background-color", "transparent");
+                $("#" + element + " h4").css("background-color", "transparent");
+                if (element == "li") {
+                    li++
+                }
+                element.removeClass("pieza");
+            }
+        });
+
+        // lo
+        $("#lo").droppable({
+            classes: {
+                "ui-droppable-active": "ui-state-active",
+                "ui-droppable-hover": "ui-state-hover"
+            },
+            drop: function(event, ui) {
+                $(this).css("background-color", "transparent");
+                $("#" + element + " h4").css("background-color", "transparent");
+                if (element == "lo") {
+                    lo++
+                }
+                element.removeClass("pieza");
+            }
+        });
+
+        // lu
+        $("#lu").droppable({
+            classes: {
+                "ui-droppable-active": "ui-state-active",
+                "ui-droppable-hover": "ui-state-hover"
+            },
+            drop: function(event, ui) {
+                $(this).css("background-color", "transparent");
+                $("#" + element + " h4").css("background-color", "transparent");
+
+                //  $( this ).target.append(event.target);
+                if (element == "lu") {
+                    lu++
+                }
+                element.removeClass("pieza");
+            }
+        });
+
+        // Formulario - Registrados
+        $('#validar').on('click', function(e) {
+            e.preventDefault();
+            //alert('hola');
+            function result_tipo_1_1_14() {
+                if (la == 1 && le == 1 && li == 1 && lo == 1 && lu == 1) {
+                    localStorage.setItem("Nota2-1-9", "2");
+                    alert('Bien!');
+                } else {
+                    alert('Mal!');
+                    localStorage.setItem("Nota2-1-9", "0");
+                }
+
+            }
+            result_tipo_1_1_14();
+        });
+    </script>
+</body>
+
+</html>

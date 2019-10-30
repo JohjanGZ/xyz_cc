@@ -1,67 +1,48 @@
 <script type="text/javascript">
-   function Page_4(){
-        start_4();
+   function Page_15(){
+        start_15();
+        inicio();
+        count = 3;
+    }
+   function  Page_16(){
+        start_16();
         inicio();
          count = 3;
-    }
-   function  Page_5(){
-        start_5();
-        inicio();
-         count = 3;
-    }
-   function Page_6(){
-        start_6();
-        inicio();
-          count = 3;
     }
 
     var cal= 20/20;
     var ruta="../../../exercises/comunicacion/";
     ////////////// 2do 
             // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
-   
-    function start_4(){
-        $("#ventana").load(ruta+'1-1-4/index.php', 
+    function start_15(){
+        $("#ventana").load(ruta+'1-1-15/index.php', 
         {
-        next: "Page_5()", 
-        procesar:"result_tipo_1_1_4()",
-        titulo:"<center><h5><span class='ftitulo'>Selecciona</span> la imagen que falta en la secuencia.</h5></center>",
-        restaurar:"start_4()",
+        next: "Page_16()", 
+        procesar:"result_tipo_1_1_15()",
+        titulo:"<center><h5><span class='ftitulo'>Arrastra</span> la sílaba con la que empieza cada imagen.</h5></center>",
+        restaurar:"start_15()",
         dir:ruta,
-        cod: "1-1-4",
+        cod: "1-1-15",
         nota:cal
         }
         );
         return false;  
     };
-    function start_5(){
-        $("#ventana").load(ruta+'1-1-5/index.php', 
+    function start_16(){
+        $("#ventana").load(ruta+'1-1-16/index.php', 
         { 
-        next: "Page_6()", 
-        procesar:"result_tipo_1_1_5()",
-        titulo:"<center><h5><span class='ftitulo'>Indica</span> la respuesta correcta.<br>¿A dónde quiero ir todas las mañanas?</h5></center>",
-        restaurar:"start_5()",
+        next: "resultado()", 
+        procesar:"result_tipo_1_1_16()",
+        titulo:"<center><h5><span class='ftitulo'>Completa</span> con la sílaba La, Le o Lo según corresponda.</h5></center>",
+        restaurar:"start_16()",
         dir:ruta,
-        cod: "1-1-5",
+        cod: "1-1-16",
         nota:cal
         }
         );
         return false;
     };
-    function start_6(){   
-        $("#ventana").load(ruta+'1-1-6/index.php', 
-        { 
-        next: "resultado()", 
-        procesar:"result_tipo_1_1_6()",
-        titulo:"<center><h5><span class='ftitulo'>Señala</span>, ¿qué cosas utilizas en el colegio?</h5></center>",
-        restaurar:"start_5()",
-        dir:ruta,
-        cod: "1-1-6",
-        nota:cal
-        }          
-        );
-        return false;
-    };
+    
     function resultado(){
         $("#ventana").load('../../../exercises/resultado/resultado.php');
         return false;
