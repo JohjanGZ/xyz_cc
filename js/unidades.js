@@ -31,7 +31,8 @@
                           "4":"Lectoescritura: Palabras con M - m",
                           "5":"Lectoescritura: Palabras con L - l"
 
-                           },
+                           }
+                         },
               "2":{
                   "ruta":"comunicacion/2",
                   "id":"2",
@@ -44,9 +45,12 @@
                           "4": "Una canción",
                           "5": "Una revisión media",
                           "6": "Palabras con N-n",
+
                            }
-                  },               
-            }
+                  },     
+
+                            
+            
         }
     });
   }
