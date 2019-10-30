@@ -84,9 +84,6 @@ $('.a').click(function() {
         ctx.lineWidth = 5;
         ctx.stroke();
 
-
-
-
         if (obj1 == obj2) {
             r++;
             console.log(r);
