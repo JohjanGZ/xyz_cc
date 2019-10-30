@@ -26,7 +26,7 @@
                   "temas": {
                           "0": "Comprensión lectora: Cuatro letritas",
                           "1": "Comprensión lectora: Mi colegio",
-                          "2": "Comprensión lectora: Cuatro letritas",
+                          "2": "Comprensión lectora: Patito travieso",
                           "3": "Lectoescritura: Palabras con P - p",
                           "4":"Lectoescritura: Palabras con M - m",
                           "5":"Lectoescritura: Palabras con L - l"
