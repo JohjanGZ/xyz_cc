@@ -50,7 +50,7 @@
   else{
         localStorage.setItem("Alumno", name);
         $("#portada").css("display", "none");
-                Page_4();  
+                Page_10();  
       }
   }
 </script>
