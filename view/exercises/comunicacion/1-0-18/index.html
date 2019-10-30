@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>1-1-17</title>
+    <title>1-1-18</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/materialize.css">
     <link rel="stylesheet" href="js/ui/jquery-ui.min.css">
@@ -14,7 +14,7 @@
 <body>
     <div class="container">
         <div class="row center">
-            <h4>Ordena las siguientes secuencias.</h4>
+            <h4><span>Ordena</span> las siguientes secuencias.</h4>
             <div class="row recibidor" id="recibidor">
                 <div class="col s12 m6 l6 xl6">
                     <div class="contenedor-elemento f-right">
@@ -29,20 +29,14 @@
                     </div>
 
                 </div>
-                <div class="col s12 m6 l6 xl6">
-                    <div class="contenedor-elemento f-right">
+                <div class="col s12 ">
+                    <div class="contenedor-elemento">
                         <label class="title">3</label>
                         <div class="contenedorPieza" id="tI"></div>
                     </div>
 
                 </div>
-                <div class="col s12 m6 l6 xl6">
-                    <div class="contenedor-elemento f-left">
-                        <label class="title">4</label>
-                        <div class="contenedorPieza" id="cO"></div>
-                    </div>
 
-                </div>
             </div>
             <div id="contenedorPiezas">
                 <ul id="listA">
@@ -53,7 +47,7 @@
                     </li>
                     <li>
                         <div class="box">
-                            <img class="pieza responsive-img" id="vI" src="img/3.png" alt="pieza3">
+                            <img class="pieza responsive-img img-x" id="vI" src="img/3.png" alt="pieza3">
                         </div>
                     </li>
                     <li>
@@ -61,11 +55,7 @@
                             <img class="pieza responsive-img img-x" id="vA" src="img/1.png" alt="pieza1">
                         </div>
                     </li>
-                    <li>
-                        <div class="box">
-                            <img class="pieza responsive-img" id="vO" src="img/4.png" alt="pieza4">
-                        </div>
-                    </li>
+
 
                 </ul>
             </div>
@@ -81,13 +71,11 @@
         var nA = 0;
         var nE = 0;
         var nI = 0;
-        var nO = 0;
 
         var ul = document.querySelector('#listA');
         for (var i = ul.children.length; i >= 0; i--) {
             ul.appendChild(ul.children[Math.random() * i | 0]);
         }
-
 
         $(".pieza").draggable({
             start: function() {
@@ -144,22 +132,6 @@
             }
         });
 
-        //cO
-        $("#cO").droppable({
-            classes: {
-                "ui-droppable-active": "ui-state-active",
-                "ui-droppable-hover": "ui-state-hover"
-            },
-            drop: function(event, ui) {
-                $(this).css("background-color", "rgba(139, 195, 74, 0.14)");
-                //  $( this ).target.append(event.target);
-
-                if (element == "vO") {
-                    nO++
-                }
-                element.removeClass("pieza");
-            }
-        });
 
 
         //validar
@@ -167,7 +139,7 @@
             e.preventDefault();
             //alert('hola');
             function result_tipo_1_1_15() {
-                if (nA == 1 && nE == 1 && nI == 1 && nO == 1) {
+                if (nA == 1 && nE == 1 && nI == 1) {
                     alert('Bien!');
                 } else {
                     alert('Mal!');

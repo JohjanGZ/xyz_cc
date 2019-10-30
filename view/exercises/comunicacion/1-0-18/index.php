@@ -13,33 +13,27 @@
             <h4><span></span> </h4>
 
             <div class="row recibidor" id="recibidor">
-                <div class="col s12 m6 l3 xl6">
-                    <div class="contenedor-elemento f-right">
+                <div class="col s12 m6 l4 xl6">
+                    <div class="contenedor-elemento f-right ce-uno">
                         <label class="title">1</label>
                         <div class="contenedorPieza" id="uA"></div>
                     </div>
                 </div>
-                <div class="col s12 m6 l3 xl6">
-                    <div class="contenedor-elemento f-left">
+                <div class="col s12 m6 l4 xl6">
+                    <div class="contenedor-elemento ce-dos">
                         <label class="title">2</label>
                         <div class="contenedorPieza" id="dE"></div>
                     </div>
 
                 </div>
-                <div class="col s12 m6 l3 xl6">
-                    <div class="contenedor-elemento f-right">
+                <div class="col s12 m6 l4 xl6">
+                    <div class="contenedor-elemento ce-tres">
                         <label class="title">3</label>
                         <div class="contenedorPieza" id="tI"></div>
                     </div>
 
                 </div>
-                <div class="col s12 m6 l3 xl6">
-                    <div class="contenedor-elemento f-left">
-                        <label class="title">4</label>
-                        <div class="contenedorPieza" id="cO"></div>
-                    </div>
-
-                </div>
+               
             </div>
             <div id="contenedorPiezas">
                 <ul id="listA">
@@ -50,7 +44,7 @@
                     </li>
                     <li>
                         <div class="box">
-                            <img class="pieza responsive-img" id="vI" src="<?= $dir ?>/img/3.png" alt="pieza3">
+                            <img class="pieza responsive-img img-x" id="vI" src="<?= $dir ?>/img/3.png" alt="pieza3">
                         </div>
                     </li>
                     <li>
@@ -58,12 +52,6 @@
                             <img class="pieza responsive-img img-x" id="vA" src="<?= $dir ?>/img/1.png" alt="pieza1">
                         </div>
                     </li>
-                    <li>
-                        <div class="box">
-                            <img class="pieza responsive-img" id="vO" src="<?= $dir ?>/img/4.png" alt="pieza4">
-                        </div>
-                    </li>
-
                 </ul>
             </div>
 
@@ -94,21 +82,21 @@
 
 // Validar
 
-function result_tipo_1_0_17() {
+function result_tipo_1_0_18() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
 
-    if (nA == 1 && nE == 1 && nI == 1 && nO == 1) {
-        localStorage.setItem("Nota2-1-12", nota);
-        localStorage.setItem("Time2-1-12", tiempo);
+    if (nA == 1 && nE == 1 && nI == 1){
+        localStorage.setItem("Nota<?=$cod?>", nota);
+        localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();
     } else {
         incorrecto();
-        localStorage.setItem("Nota2-1-12", "0");
-        localStorage.setItem("Time2-1-12", tiempo);
+        localStorage.setItem("Nota<?=$cod?>", "0");
+        localStorage.setItem("Time<?=$cod?>", tiempo);
     }
 
 };

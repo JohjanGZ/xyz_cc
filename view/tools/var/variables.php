@@ -5,7 +5,9 @@
    $restaurar=$_POST['restaurar'];
    $ejercicio=$_POST['ejercicio'];
    $nota=$_POST['nota'];
-   $dir=$_POST['dir'];
+   $ruta=$_POST['dir'];
+   $cod=$_POST['cod'];
+   $dir=$ruta.$cod;
 ?>
             <script type="text/javascript">
               

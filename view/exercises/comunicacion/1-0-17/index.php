@@ -102,13 +102,13 @@ function result_tipo_1_0_17() {
 
 
     if (nA == 1 && nE == 1 && nI == 1 && nO == 1) {
-        localStorage.setItem("Nota2-1-12", nota);
-        localStorage.setItem("Time2-1-12", tiempo);
+        localStorage.setItem("Nota<?=$cod?>", nota);
+        localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();
     } else {
         incorrecto();
-        localStorage.setItem("Nota2-1-12", "0");
-        localStorage.setItem("Time2-1-12", tiempo);
+        localStorage.setItem("Nota<?=$cod?>", "0");
+        localStorage.setItem("Time<?=$cod?>", tiempo);
     }
 
 };

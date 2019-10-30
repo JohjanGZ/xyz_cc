@@ -222,14 +222,14 @@ $('.a').click(function(){
                               var tiempo=min+":"+seg+":"+milseg;
 
                           if(r==5){                  
-                              localStorage.setItem("Nota2-1-7",nota);
-                              localStorage.setItem("Time2-1-7", tiempo);
+                              localStorage.setItem("Nota<?=$cod?>",nota);
+                              localStorage.setItem("Time<?=$cod?>", tiempo);
                               correcto(); 
                           }
                           else{
                               incorrecto();
-                              localStorage.setItem("Nota2-1-7","0");
-                              localStorage.setItem("Time2-1-7", tiempo);
+                              localStorage.setItem("Nota<?=$cod?>","0");
+                              localStorage.setItem("Time<?=$cod?>", tiempo);
                           }    
                         } 
 </script>

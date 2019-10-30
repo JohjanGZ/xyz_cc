@@ -97,23 +97,3 @@ $("#cU").droppable({
         element.removeClass("pieza");
     }
 });
-
-function result_tipo_1_0_15() {
-    var min = $('#Minutos').text();
-    var seg = $('#Segundos').text();
-    var milseg = $('#Centesimas').text();
-    var tiempo = min + ":" + seg + ":" + milseg;
-
-
-
-    if (nA == 3 && nE == 2 && nI == 1 && nO == 3 && nU == 1) {
-        localStorage.setItem("Nota2-1-12", nota);
-        localStorage.setItem("Time2-1-12", tiempo);
-        correcto();
-    } else {
-        incorrecto();
-        localStorage.setItem("Nota2-1-12", "0");
-        localStorage.setItem("Time2-1-12", tiempo);
-    }
-
-}

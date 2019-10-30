@@ -125,14 +125,14 @@ h4 {
 
 
                           if(r==4){                  
-                              localStorage.setItem("Nota2-1-10",nota);
-                              localStorage.setItem("Time2-1-9", tiempo);
+                              localStorage.setItem("Nota<?=$cod?>",nota);
+                              localStorage.setItem("Time<?=$cod?>", tiempo);
                               correcto(); 
                           }
                           else{
                               incorrecto();
-                              localStorage.setItem("Nota2-1-10","0");
-                              localStorage.setItem("Time2-1-10", tiempo);
+                              localStorage.setItem("Nota<?=$cod?>","0");
+                              localStorage.setItem("Time<?=$cod?>", tiempo);
                           }    
                   
                       }

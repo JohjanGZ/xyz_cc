@@ -25,24 +25,3 @@ $('.a').click(function() {
         console.log(r);
     }
 })
-
-
-function result_tipo_1_0_11() {
-    var min = $('#Minutos').text();
-    var seg = $('#Segundos').text();
-    var milseg = $('#Centesimas').text();
-    var tiempo = min + ":" + seg + ":" + milseg;
-
-
-
-    if (r == 7) {
-        localStorage.setItem("Nota2-1-11", nota);
-        localStorage.setItem("Time2-1-11", tiempo);
-        correcto();
-    } else {
-        incorrecto();
-        localStorage.setItem("Nota2-1-9", "0");
-        localStorage.setItem("Time2-1-9", tiempo);
-    }
-
-}

@@ -86,6 +86,11 @@
         inicio();
          count = 3;
     }
+    function Page_18(){
+        start_18();
+        inicio();
+         count = 3;
+    }
 
     var cal= 20/20;
     var ruta="../../../exercises/comunicacion/";
@@ -98,7 +103,8 @@
         procesar:"result_tipo_1_0_1()",
         titulo:"<center><h5><span class='ftitulo'>Selecciona</span> la imagen que falta en la secuencia.</h5></center>",
         restaurar:"start_1()",
-        dir:ruta+"1-0-1",
+        dir:ruta,
+        cod: "1-0-1",
         nota:cal
         }
         );
@@ -111,7 +117,8 @@
         procesar:"result_tipo_1_0_2()",
         titulo:"<center><h5><span class='ftitulo'>Selecciona</span> la imagen que falta en la secuencia.</h5></center>",
         restaurar:"start_2()",
-        dir:ruta+ "1-0-2",
+        dir:ruta,
+        cod:"1-0-2",
         nota:cal
         }
         );
@@ -124,7 +131,8 @@
         procesar:"result_tipo_1_0_3()",
         titulo:"<center><h5><span class='ftitulo'>Selecciona</span> la imagen que falta en la secuencia.</h5></center>",
         restaurar:"start_3()",
-        dir:ruta+ "1-0-3",
+        dir:ruta,
+        cod:"1-0-3",
         nota:cal
         }          
         );
@@ -137,7 +145,8 @@
             procesar:"result_tipo_1_0_4()",
             titulo:" <center><h5><span class='ftitulo'>Selecciona</span> la imagen que falta en la secuencia.</h5></center>",
             restaurar:"start_4()",
-            dir:ruta+ "1-0-4",
+            dir:ruta,
+            cod:"1-0-4",
             nota:cal
         }
         );
@@ -150,7 +159,8 @@
         procesar:"result_tipo_1_0_5()",
         titulo:"<center><h5><span class='ftitulo'>Selecciona</span> la imagen que falta en la secuencia.</h5></center>",
         restaurar:"start_5()",
-        dir:ruta+ "1-0-5",
+        dir:ruta,
+        cod: "1-0-5",
          nota:cal
         }
         );
@@ -163,7 +173,8 @@
         procesar:"result_tipo_1_0_6()",
         titulo:"<center><h5><span class='ftitulo'>Selecciona</span> los dibujos cuyos nombres empiecen con:</h5></center>",
         restaurar:"start_6()",
-        dir:ruta+ "1-0-6",
+        dir:ruta,
+        cod:"1-0-6",
          nota:cal
         }
         );
@@ -176,7 +187,8 @@
         procesar:"result_tipo_1_0_7()",
         titulo:"<center><h5><span class='ftitulo'>Observa</span> los dibujos y <span class='ftitulo'>une</span> cada dibujo con su vocal inicial</h5></center>",
         restaurar:"start_7()",
-        dir:ruta+ "1-0-7",
+        dir:ruta,
+        cod: "1-0-7",
          nota:cal
         }
         );
@@ -189,7 +201,8 @@
         procesar:"result_tipo_1_0_8()",
         titulo:"<center><h5><span class='ftitulo'>Selecciona</span> los dibujos que lleven al final la vocal 'a'</center>",
         restaurar:"start_8()",
-        dir:ruta+ "1-0-8",
+        dir:ruta,
+        cod: "1-0-8",
          nota:cal
         }
         );
@@ -202,7 +215,8 @@
         procesar:"result_tipo_1_0_9()",
         titulo:"<center><h5> <span class='ftitulo'>Selecciona</span> las palabras que contengan la vocal <span>(</span>U<span>)</span>.</h5></center>",
         restaurar:"start_9()",
-        dir:ruta+ "1-0-9",
+        dir:ruta,
+        cod: "1-0-9",
         nota:cal
         }
         );
@@ -215,7 +229,8 @@
         procesar:"result_tipo_1_0_10()",
         titulo:"<center><h5> <span class='ftitulo'>Selecciona</span> la letra <span>(</span>U<span>) en cada nombre.</span>.</h5></center>",
         restaurar:"start_10()",
-        dir:ruta+ "1-0-10",
+        dir:ruta,
+        cod: "1-0-10",
         nota:cal
         }                    
         );
@@ -228,7 +243,8 @@
         procesar:"result_tipo_1_0_11()",
         titulo:"<center><h5><span class='ftitulo'>observa</span> y <span class='ftitulo'>selecciona</span> el dibujo que lleve la vocal 'e'.</h5></center>",
         restaurar:"start_11()",
-        dir:ruta+ "1-0-11",
+        dir:ruta,
+        cod: "1-0-11",
         nota:cal
         }                    
         );
@@ -237,11 +253,12 @@
     function start_12(){  
         $("#ventana").load(ruta+'1-0-12/index.php', 
         { 
-        next: "Page_14()", 
+        next: "Page_13()", 
         procesar:"result_tipo_1_0_12()",
         titulo:"<center><h5><span class='ftitulo'>observa</span> y <span class='ftitulo'>selecciona</span> el dibujo que lleve la vocal 'i'.</h5></center>",
         restaurar:"start_12()",
-        dir:ruta+ "1-0-12",
+        dir:ruta,
+        cod: "1-0-12",
         nota:cal
         }                    
         );
@@ -254,7 +271,8 @@
         procesar:"result_tipo_1_0_13()",
         titulo:"<center><h5><span class='ftitulo'>Relaciona</span> cada diagrama con la expresión que le corresponde.</h5></center>",
         restaurar:"start_13()",
-        dir:ruta+ "1-0-13",
+        dir:ruta,
+        cod: "1-0-13",
         nota:cal
         }                    
         );
@@ -267,7 +285,8 @@
         procesar:"result_tipo_1_0_14()",
         titulo:"<center><h5><span class='ftitulo'>Selecciona</span> la vocal correcta con la que comienza cada palabra.</h5></center>",
         restaurar:"start_14()",
-        dir:ruta+ "1-0-14",
+        dir:ruta,
+        cod: "1-0-14",
         nota:cal
         }                    
         );
@@ -280,7 +299,8 @@
         procesar:"result_tipo_1_0_15()",
         titulo:"<center><h5><span class='ftitulo'>Clasifica</span> cada dibujo de acuerdo a la vocal con la que termine su nombre.</h5></center>",
         restaurar:"start_15()",
-        dir:ruta+ "1-0-15",
+        dir:ruta,
+        cod: "1-0-15",
         nota:cal  
         }                    
         );
@@ -293,7 +313,8 @@
         procesar:"result_tipo_1_0_16()",
         titulo:"<center><h5><span class='ftitulo'>Selecciona</span> las imágenes de la parte inferior que sean iguales a las que se muestran.</h5></center>",
         restaurar:"start_16()",
-        dir:ruta+ "1-0-16",
+        dir:ruta,
+        cod: "1-0-16",
         nota:cal  
         }                    
         );
@@ -306,7 +327,22 @@
         procesar:"result_tipo_1_0_17()",
         titulo:"<center><h5><span >Selecciona</span> las imágenes de la parte inferior que sean iguales a las que se muestran.</h5></center>",
         restaurar:"start_17()",
-        dir:ruta+"1-0-17",
+        dir:ruta,
+        cod: "1-0-17",
+        nota:cal  
+        }                    
+        );
+        return false;
+    };
+    function start_18(){  
+        $("#ventana").load(ruta+'1-0-18/index.php', 
+        { 
+        next: "resultado()", 
+        procesar:"result_tipo_1_0_18()",
+        titulo:"<center><h5><span >Ordena</span> las siguientes secuencias.</h5></center>",
+        restaurar:"start_18()",
+        dir:ruta,
+        cod:"1-0-18",
         nota:cal  
         }                    
         );

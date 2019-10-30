@@ -181,14 +181,14 @@
 
 
                           if(r==5){                  
-                              localStorage.setItem("Nota2-1-8",nota);
-                              localStorage.setItem("Time2-1-8", tiempo);
+                              localStorage.setItem("Nota<?=$cod?>",nota);
+                              localStorage.setItem("Time<?=$cod?>", tiempo);
                               correcto(); 
                           }
                           else{
                               incorrecto();
-                              localStorage.setItem("Nota2-1-8","0");
-                              localStorage.setItem("Time2-1-8", tiempo);
+                              localStorage.setItem("Nota<?=$cod?>","0");
+                              localStorage.setItem("Time<?=$cod?>", tiempo);
                           }    
                   
                       }

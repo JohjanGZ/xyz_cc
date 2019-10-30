@@ -34,24 +34,3 @@ $('.a').click(function() {
         console.log(r);
     }
 })
-
-
-function result_tipo_1_0_16() {
-    var min = $('#Minutos').text();
-    var seg = $('#Segundos').text();
-    var milseg = $('#Centesimas').text();
-    var tiempo = min + ":" + seg + ":" + milseg;
-
-
-
-    if (r == 6) {
-        localStorage.setItem("Nota2-1-12", nota);
-        localStorage.setItem("Time2-1-12", tiempo);
-        correcto();
-    } else {
-        incorrecto();
-        localStorage.setItem("Nota2-1-12", "0");
-        localStorage.setItem("Time2-1-12", tiempo);
-    }
-
-}

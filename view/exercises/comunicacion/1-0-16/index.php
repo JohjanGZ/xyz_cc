@@ -105,7 +105,29 @@
   
 <script src="../../../../js/core.js"></script>
 <?php require('../../../tools/botones/botones.php');?>
+<script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
+
 <script type="text/javascript">
 
+    // Validar
+
+    function result_tipo_1_0_16() {
+    var min = $('#Minutos').text();
+    var seg = $('#Segundos').text();
+    var milseg = $('#Centesimas').text();
+    var tiempo = min + ":" + seg + ":" + milseg;
+
+
+
+    if (r == 6) {
+        localStorage.setItem("Nota<?=$cod?>", nota);
+        localStorage.setItem("Time<?=$cod?>", tiempo);
+        correcto();
+    } else {
+        incorrecto();
+        localStorage.setItem("Nota<?=$cod?>", "0");
+        localStorage.setItem("Time<?=$cod?>", tiempo);
+    }
+
+}
 </script>
-<script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>

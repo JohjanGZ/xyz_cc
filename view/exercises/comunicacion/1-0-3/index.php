@@ -86,14 +86,14 @@ function result_tipo_1_0_3(){
 
         if(r==1)
                 {
-                    localStorage.setItem("Nota2-1-3",nota);
-                    localStorage.setItem("Time2-1-3", tiempo);
+                    localStorage.setItem("Nota<?=$cod?>",nota);
+                    localStorage.setItem("Time<?=$cod?>", tiempo);
                     correcto(); 
                 }
                 else {
                     incorrecto();
-                    localStorage.setItem("Nota2-1-3","0");
-                    localStorage.setItem("Time2-1-3", tiempo);  
+                    localStorage.setItem("Nota<?=$cod?>","0");
+                    localStorage.setItem("Time<?=$cod?>", tiempo);  
                 }    
             } 
 </script>
