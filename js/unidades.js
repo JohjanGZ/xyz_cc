@@ -24,7 +24,13 @@
                   "id":"0",
                   "nombre": "Unidad 1 - Voy a leer y a escribir",  
                   "temas": {
-                          "0": "tema 1"
+                          "0": "Comprensión lectora: Cuatro letritas",
+                          "1": "Comprensión lectora: Mi colegio",
+                          "2": "Comprensión lectora: Cuatro letritas",
+                          "3": "Lectoescritura: Palabras con P - p",
+                          "4":"Lectoescritura: Palabras con M - m",
+                          "5":"Lectoescritura: Palabras con L - l"
+
                            }               
             }
         }
