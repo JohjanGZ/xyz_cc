@@ -1,0 +1,118 @@
+.svg {
+    width: 554px;
+}
+
+.colores img {
+    width: 50px;
+    margin: 2vh;
+    border-radius: 18%;
+}
+
+ul.contenedor-colores {
+    position: absolute;
+    margin-left: 20vw;
+    text-align: center;
+    color: white;
+    display: inline-flex;
+}
+
+ul.contenedor-colores li {
+    margin-right: 10px;
+}
+
+#contenedorpuzzle {
+    width: 80%;
+    margin: 10vh auto;
+}
+
+.item img {
+    width: 250px;
+    margin: 3 20px 0;
+    float: left;
+    border: solid transparent;
+}
+
+.item img:hover {
+    border: solid;
+}
+
+center h5 {
+    width: 80%;
+}
+
+h5 {
+    font-size: 200%;
+}
+
+.img-principal {
+    margin: 5vh auto 0;
+}
+
+.fila1,
+.fila2,
+.fila3 {
+    margin: 0 auto 2vh;
+    width: 1160px;
+    box-shadow: 0 0 5px #80808061;
+}
+
+.container,
+.content-wrapper {
+    margin: 3vh auto 0;
+}
+
+.fila1 img {
+    width: 20vw;
+    margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+    .container,
+    .content-wrapper {
+        margin: 42px auto 0;
+    }
+}
+
+#imgIzquierda li,
+#imgDerecha li {
+    width: 170px;
+    height: 105px;
+    border: 3px solid silver;
+    position: relative;
+    padding: 5px 32px;
+    float: left;
+    margin: 5px;
+    border-radius: 15px;
+}
+
+#imgIzquierda li:hover,
+#imgDerecha li:hover {
+    border: solid #37D3F7;
+}
+
+#imgIzquierda img,
+#imgDerecha img {
+    width: auto;
+    max-height: 95px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.campo {
+    float: left;
+}
+
+ul {
+    margin: 0;
+}
+
+@media (max-height: 680px) {
+    .svg {
+        width: 1085px;
+        padding-top: 70px;
+    }
+    .colores img {
+        margin: 0 2vh;
+    }
+}
