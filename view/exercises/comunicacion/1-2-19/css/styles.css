@@ -1,0 +1,54 @@
+.container-two {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 90%;
+}
+
+#listA {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#palabras {
+    padding: 50px;
+}
+
+#palabras li {
+    margin-bottom: 2vh;
+    width: 18%;
+}
+@media (min-width: 1920px){
+    #palabras li {
+        width: 33.3%;
+    }
+}
+
+.muestra {
+    width: 100px;
+    margin: auto;
+    margin-top: 30px;
+}
+.box-img {
+    height: 200px;
+    width: 200px;
+}
+.box {
+    height: 150px;
+    width: 95%;
+    border: 3px solid silver;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.box img {
+    width: 80px;
+    height: auto;
+}
+
+.box:hover {
+    border: 3px solid #37D3F7;
+}

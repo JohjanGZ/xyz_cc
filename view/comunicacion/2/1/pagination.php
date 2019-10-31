@@ -19,11 +19,6 @@
         inicio();
          count = 3;
     }
-   function Page_5(){
-        start_5();
-        inicio();
-         count = 3;
-    }
     var cal= 20/20;
     var ruta="../../../exercises/comunicacion/";
     ////////////// 2do 
@@ -61,7 +56,7 @@
         { 
         next: "Page_4()", 
         procesar:"result_tipo_1_2_3()",
-        titulo:"<center><h5><span class='ftitulo'>Indica</span>, según el poema, ¿en dónde siente esas hermosas palabras?.</h5></center>",
+        titulo:"<center><h5><span class='ftitulo'>Observa</span> la letra que tiene cada pescador en su bote y <span class='ftitulo'>une</span> sus respectivas cañas con los peces que indica cada letra.</h5></center>",
         restaurar:"start_3()",
         dir:ruta,
         cod: "1-2-3",
@@ -73,26 +68,12 @@
     function start_4(){   
         $("#ventana").load(ruta+'1-2-4/index.php', 
         { 
-        next: "Page_5()", 
+        next: "resultado()", 
         procesar:"result_tipo_1_2_4()",
         titulo:"<center><h5><span class='ftitulo'>Indica</span>, según el poema, ¿en dónde siente esas hermosas palabras?.</h5></center>",
         restaurar:"start_4()",
         dir:ruta,
         cod: "1-2-4",
-        nota:cal
-        }          
-        );
-        return false;
-    };
-    function start_5(){   
-        $("#ventana").load(ruta+'1-2-5/index.php', 
-        { 
-        next: "resultado()", 
-        procesar:"result_tipo_1_2_5()",
-        titulo:"<center><h5><span class='ftitulo'>Indica</span>, según el poema, ¿en dónde siente esas hermosas palabras?.</h5></center>",
-        restaurar:"start_5()",
-        dir:ruta,
-        cod: "1-2-5",
         nota:cal
         }          
         );

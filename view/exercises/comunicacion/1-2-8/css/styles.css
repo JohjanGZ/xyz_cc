@@ -1,0 +1,45 @@
+.box-principal {
+    width: 30%;
+    margin-top: 9vh;
+}
+#listA {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#palabras {
+    padding: 20px;
+}
+
+#palabras li {
+    margin-bottom: 2vh;
+    margin-left: 10px;
+}
+
+.muestra {
+    width: 100px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.box {
+    height: 50px;
+    width: 100px;
+    border: 3px solid silver;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #0095DA ;
+}
+
+.box img {
+    width: 50%;
+    height: auto;
+}
+
+.box:hover {
+    border: 3px solid #37D3F7;
+}

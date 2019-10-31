@@ -41,7 +41,7 @@ font-size: 200%;
 @media (max-width: 1200px){
   .container, .content-wrapper{
     margin: 42px auto 0;
-}
+  }
 }
 
 #imgIzquierda li, #imgDerecha li{
