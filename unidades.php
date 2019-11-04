@@ -26,6 +26,7 @@
   $color=$_POST['color'];
   $enlace=$_POST['enlace'];
   $datos= json_encode($_POST['data']);
+  $libros=json_encode($_POST['libros']);
  ?>
  <script type="text/javascript">
  	var enlace = <?=$enlace?>;
@@ -39,6 +40,17 @@
 	    font-family: sans-serif;
 	    color: <?=$color?>;
 	}
+
+	.btn-libros{
+		background: #019e0d !important;
+		color:white !important;
+	}
+		.btn-libros:hover{
+		background: #017c9e !important;
+	}
+	.btn-libros .title{
+		color:white !important;
+	}
 	</style>
   <!-- CSS  -->
 <div class="content-wrapper libro" style="margin-top: 58px;">
@@ -48,6 +60,7 @@
 <div class="col-indice col-units" style="margin-left: 0px;">
 	<div class="units" id="wrapper">
 		<ul id="list-units">
+			<li class=' btn-libros'><a class='js-tema' ><span class='number'>2</span><span class='title'>Libros Digitales</span></a></li>
 
 		</ul>
 	</div>

@@ -9,7 +9,10 @@
         { 
           titulo:'Comunicación 1ero', 
           color:'#97be2e',
-          enlace:'', 
+          libros:{
+                  "0":{"title":"Libro 1", "enlace":"com1-1"},
+                  "1":{"title":"Libro 2", "enlace":"com1-2"}
+                   }, 
           data:{
               "0":{
                   "ruta":"comunicacion/0",
@@ -29,7 +32,7 @@
                           "2": "Comprensión lectora: Patito travieso",
                           "3": "Lectoescritura: Palabras con P - p",
                           "4":"Lectoescritura: Palabras con M - m",
-                          "5":"Lectoescritura: Palabras con L - l"
+                          "5":"Lectoescritura: Palabras con L - l",
 
                            }
                          },
@@ -37,16 +40,19 @@
                   "ruta":"comunicacion/2",
                   "id":"2",
                   "nombre": "Unidad 2 - Juego con mis amigos y amigas",  
-                  "temas": {
-                          "0": "Palabras con D-d",
+                  "temas":{
+                          "0": "Lectoescritura: Palabras con D-d",
                           "1": "¿Qué será? Mi oído me ayudará",
                           "2": "Discriminacion visual",
-                          "3": "Palabras con T - t",
+                          "3": "Lectoescritura: Palabras con T - t",
                           "4": "Una canción",
                           "5": "Una revisión media",
-                          "6": "Palabras con N-n",
+                          "6": "Lectoescritura: Palabras con N-n" ,  
+                          "7": "Lectoescritura: Palabras con F-f" , 
+                          "8": "Familia de palabras" , 
+                          }
 
-                           }
+
                   },     
 
                             
