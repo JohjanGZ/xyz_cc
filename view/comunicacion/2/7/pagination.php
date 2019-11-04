@@ -29,6 +29,11 @@
         inicio();
          count = 3;
     }
+    function  Page_30(){
+        start_30();
+        inicio();
+         count = 3;
+    }
 
     var cal= 20/20;
     var ruta="../../../exercises/comunicacion/";
@@ -107,12 +112,26 @@
     function start_29(){   
         $("#ventana").load(ruta+'1-2-29/index.php', 
         { 
-        next: "resultado()", 
+        next: "Page_30()", 
         procesar:"result_tipo_1_2_29()",
         titulo:"<center><h5><span class='ftitulo'>Observa </span>los dibujos y luego <span>completa</span> sus nombres con an-, en-, in-, on-.</h5></center>",
         restaurar:"start_29()",
         dir:ruta,
         cod: "1-2-29",
+        nota:cal
+        }          
+        );
+        return false;
+    };
+    function start_30(){   
+        $("#ventana").load(ruta+'1-2-30/index.php', 
+        { 
+        next: "resultado()", 
+        procesar:"result_tipo_1_2_30()",
+        titulo:"<center><h5><span class='ftitulo'>Observa </span>los dibujos y luego <span>completa</span> sus nombres con an-, en-, in-, on-.</h5></center>",
+        restaurar:"start_30()",
+        dir:ruta,
+        cod: "1-2-30",
         nota:cal
         }          
         );
