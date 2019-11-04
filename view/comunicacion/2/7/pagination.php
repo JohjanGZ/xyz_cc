@@ -53,7 +53,7 @@
         { 
         next: "Page_26()", 
         procesar:"result_tipo_1_2_25()",
-        titulo:"<center><h5><span class='ftitulo'>Lee </span>la siguiente pregunta y<span class='ftitulo'> marca.</span> la respuesta correcta.<br>¿Qué día es la revisión medica?</h5></center>",
+        titulo:"<center><h5><span class='ftitulo'>Observa </span>los dibujos y luego <span>completa</span> sus nombres.</h5></center>",
         restaurar:"start_25()",
         dir:ruta,
         cod: "1-2-25",
@@ -81,7 +81,7 @@
         { 
         next: "Page_28()", 
         procesar:"result_tipo_1_2_27()",
-        titulo:"<center><h5><span class='ftitulo'>Investiga </span>y luego <span class='ftitulo'>selecciona </span>. ¿como se llaman los médicos que se especializan en atender niños?</h5></center>",
+        titulo:"<center><h5><span class='ftitulo'>Selecciona </span> los dibujos que contengan las siguientes sílabas:</h5></center>",
         restaurar:"start_27()",
         dir:ruta,
         cod: "1-2-27",
@@ -95,7 +95,7 @@
         { 
         next: "Page_29()", 
         procesar:"result_tipo_1_2_28()",
-        titulo:"<center><h5><span class='ftitulo'>Observa </span>las imagen anterior y <span class='ftitulo'>determina</span>, ¿qué haran los médicos? luego <span class='ftitulo'>marca </span> según corresponde.</h5></center>",
+        titulo:"<center><h5><span class='ftitulo'>Observa </span>los dibujos y luego <span>completa</span> sus nombres con an-, en-, in-, on-.</h5></center>",
         restaurar:"start_28()",
         dir:ruta,
         cod: "1-2-28",
@@ -109,7 +109,7 @@
         { 
         next: "resultado()", 
         procesar:"result_tipo_1_2_29()",
-        titulo:"<center><h5><span class='ftitulo'>Investiga </span>y luego <span class='ftitulo'>selecciona </span>. ¿como se llaman los médicos que se especializan en atender niños?</h5></center>",
+        titulo:"<center><h5><span class='ftitulo'>Observa </span>los dibujos y luego <span>completa</span> sus nombres con an-, en-, in-, on-.</h5></center>",
         restaurar:"start_29()",
         dir:ruta,
         cod: "1-2-29",
