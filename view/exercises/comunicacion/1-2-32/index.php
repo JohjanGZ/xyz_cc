@@ -11,7 +11,62 @@
 
   <div class="container">
       <div class="row">
-         
+        <div class="contenedor-ejercicio"> 
+            <div class="contenedor-silabas">
+                    <div class="silabas">
+                        <h4 class="pieza" id="fabuloso">fabuloso</h4>
+                    </div>
+                    <div class="silabas">
+                        <h4 class="pieza" id="familia">familia</h4>
+                    </div>
+                    <div class="silabas">
+                        <h4 class="pieza" id="elefante">elefante</h4>
+                    </div>
+                    <div class="silabas">
+                        <h4 class="pieza" id="fin">fin</h4>
+                    </div>
+            </div>
+            <div class="contenedor-oraciones">
+                <div class="oracion">
+                    <span class="span-before">
+                        Mi
+                    </span>
+                    <div class="contenedor-palabra" id="familiaa">
+
+                    </div>
+                    <span class="span-after">
+                        es amable.
+                    </span>
+                </div>
+                <div class="oracion">
+                    <span class="span-before">
+                        El
+                    </span>
+                    <div class="contenedor-palabra" id="elefantee">
+                        
+                    </div>
+                    <span class="span-after">
+                        es un animal.
+                    </span>
+                </div>
+                <div class="oracion">
+                    <span class="span-before">
+                       Este es el
+                    </span>
+                    <div class="contenedor-palabra" id="finn">
+                        
+                    </div>
+                </div>
+                <div class="oracion">
+                    <span class="span-before">
+                        Este festival es
+                    </span>
+                    <div class="contenedor-palabra" id="fabulosoo">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
  
       </div>
 </div>
@@ -21,7 +76,7 @@
         <div class="modal-content">
             <h4>Respuesta correcta</h4>
             <center>
-              <img class="materialboxed"  width="80%" src="<?= $dir ?>/img/respuesta.png">
+              <img class="materialboxed"  width="80%" src="<?= $dir ?>/img/respuesta.jpg">
             </center>
         </div>
         <div class="modal-footer">
@@ -36,7 +91,7 @@
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
     // Validar
-    function result_tipo_1_2_31() {
+    function result_tipo_1_2_32() {
         var min = $('#Minutos').text();
         var seg = $('#Segundos').text();
         var milseg = $('#Centesimas').text();

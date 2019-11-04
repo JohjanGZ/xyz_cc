@@ -151,7 +151,7 @@
                 <div class="silabas">
                     <h4 class="pieza" id="on">on</h4>
                 </div>
-            </div>
+        </div>
 
     <div id="modal1" class="modal">
         <div class="modal-content">
