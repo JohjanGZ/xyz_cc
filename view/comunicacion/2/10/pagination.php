@@ -97,7 +97,7 @@
         { 
         next: "Page_42()", 
         procesar:"result_tipo_1_2_41()",
-        titulo:"<center><h5><span class='ftitulo'>Arrastra </span>la palabra que corresponde a la imagen.</h5></center>",
+        titulo:"<center><h5><span class='ftitulo'>Arrastra </span>un sustantivo propio para cada persona.</h5></center>",
         restaurar:"start_41()",
         dir:ruta,
         cod: "1-2-41",
