@@ -1,5 +1,10 @@
 <script type="text/javascript">
-   function Page_34(){
+    function Page_33(){
+        start_33();
+        inicio();
+         count = 3;
+    }
+    function Page_34(){
         start_34();
         inicio();
          count = 3;
@@ -24,7 +29,20 @@
     var ruta="../../../exercises/comunicacion/";
     ////////////// 2do 
             // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
-    
+    function start_33(){   
+        $("#ventana").load(ruta+'1-2-33/index.php', 
+        { 
+        next: "Page_34()", 
+        procesar:"result_tipo_1_2_33()",
+        titulo:"<center><h5><span class='ftitulo'>Busca, </span>en la sopa de letras, la familia de palabras de <span class='ftitulo'>pan</span>.</h5></center>",
+        restaurar:"start_33()",
+        dir:ruta,
+        cod: "1-2-33",
+        nota:cal
+        }          
+        );
+        return false;
+    };
     function start_34(){   
         $("#ventana").load(ruta+'1-2-34/index.php', 
         { 
