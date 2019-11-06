@@ -34,7 +34,7 @@
                         <img src="<?= $dir ?>/img/2.png">
                     </div>
                     <div class="contenedor-respuesta">
-                        <div class="palabra" alt="silvia">
+                        <div class="palabra" alt="n">
 
                         </div>
                         <div class="palabra" alt="ve">
@@ -43,7 +43,7 @@
                         <div class="palabra" alt="a">
 
                         </div>
-                        <div class="palabra" alt="david">
+                        <div class="palabra" alt="n">
 
                         </div>
                     </div>
@@ -51,7 +51,7 @@
            </div>
            <ul class="contenedor-silabas">
                 <li class="silabas">
-                    <h4 class="pieza" alt="silvia">silvia</h4>
+                    <h4 class="pieza" alt="n">Silvia</h4>
                 </li>
                 <li class="silabas">
                     <h4 class="pieza" alt="ve">ve</h4>
@@ -60,7 +60,7 @@
                     <h4 class="pieza" alt="a">a</h4>
                 </li>
                 <li class="silabas">
-                    <h4 class="pieza" alt="david">david</h4>
+                    <h4 class="pieza" alt="n">David</h4>
                 </li>
                 <li class="silabas">
                     <h4 class="pieza" alt="esa">esa</h4>

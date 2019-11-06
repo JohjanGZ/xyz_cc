@@ -43,6 +43,12 @@
                 <li class="silabas">
                     <h4 class="pieza" alt="vo">vo</h4>
                 </li>
+                <li class="silabas">
+                    <h4 class="pieza" alt="va">va</h4>
+                </li>
+                <li class="silabas">
+                    <h4 class="pieza" alt="ve">ve</h4>
+                </li>
             </ul>
            
         </div>

@@ -31,10 +31,10 @@
                         <img src="<?= $dir ?>/img/2.png">
                     </div>
                     <div class="contenedor-respuesta f">
-                        <div class="a palabra" alt="">
+                        <div class="a palabra" alt="n">
                             <h4>lavabo</h4>
                         </div>
-                        <div class="a palabra" alt="n">
+                        <div class="a palabra" alt="">
                             <h4>lavado</h4>
                         </div>
                     </div>
