@@ -65,15 +65,15 @@
         );
         return false;
     };
-    function start_4(){   
-        $("#ventana").load(ruta+'1-3-4/index.php', 
+    function start_21(){   
+        $("#ventana").load(ruta+'1-3-21/index.php', 
         { 
         next: "resultado()", 
-        procesar:"result_tipo_1_3_4()",
-        titulo:"<center><h5><span class='ftitulo'>Indica</span>, según el poema, ¿en dónde siente esas hermosas palabras?.</h5></center>",
-        restaurar:"start_4()",
+        procesar:"result_tipo_1_3_21()",
+        titulo:"<center><h5><span class='ftitulo'>Completa</span> con <span class='ftitulo'>ba, bu, bo, be</span>.</h5></center>",
+        restaurar:"start_21()",
         dir:ruta,
-        cod: "1-3-4",
+        cod: "1-3-21",
         nota:cal
         }          
         );
