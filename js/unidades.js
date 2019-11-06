@@ -60,9 +60,12 @@
                   "id":"3",
                   "nombre": "Unidad 3 - Leo en familia",  
                   "temas": {
-                          "0": "¿Qué será? Mi oído me ayudará",
-                          "1": "Desplazamiento",
-                          "2": "Lectura: Ondas Expresivas"
+                          "0": "Lectura: Ondas Expresivas",
+                          "1": "Un cuento",
+                          "2": "Desplazamiento",
+                          "3": "¿Qué será? Mi oído me ayudará",
+                          "4": "Lectoescritura: Palabras con V-v",
+                          "5": "Lectoescritura: Palabras con R-r",
                            }
                   },     
 
@@ -207,3 +210,4 @@
     }
 
     $("#portada").css("display", "none");
+0
