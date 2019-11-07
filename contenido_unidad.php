@@ -5,13 +5,14 @@
 			$link=$_POST['link'];
     ?>
     <style type="text/css">
+
     	ul .btn{
     		float: right !important;
     	}
     </style>
 <center><h5><?= $_POST['nombre']?></h5></center>						
 							<br><br>							
-<!--<a href="view/<?=$link?>" class="btn amber waves-effect waves-light pulse">Empezar ></a>	-->	
+
 <div class="actividades">
 	<div class="title-buttons">							
 		<div class="btn-group">
@@ -29,5 +30,6 @@
 		</ul>
 </div>
 	<script type="text/javascript">
+
 		$("#portada").css("display", "none");
 	</script>

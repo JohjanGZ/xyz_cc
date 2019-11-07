@@ -14,6 +14,7 @@
                   "1":{"title":"Libro 2", "enlace":"com1-2"}
                    }, 
           data:{
+              
               "0":{
                   "ruta":"comunicacion/0",
                   "id":"0",
@@ -39,7 +40,7 @@
               "2":{
                   "ruta":"comunicacion/2",
                   "id":"2",
-                  "nombre": "Unidad 2 - Juego con mis amigos y amigas",  
+                  "nombre": "Unidad 2 - Juego con mis amigos y amigas", 
                   "temas":{
                           "0": "Lectoescritura: Palabras con D-d",
                           "1": "¿Qué será? Mi oído me ayudará",
@@ -49,13 +50,11 @@
                           "5": "Una revisión media",
                           "6": "Lectoescritura: Palabras con N-n" ,  
                           "7": "Lectoescritura: Palabras con F-f" , 
-                          "8": "Familia de palabras" , 
+                          "8": "Familia de palabras", 
                           "9":  "El sustantivo"
                           }
-
-
                   },
-                "3":{
+              "3":{
                   "ruta":"comunicacion/3",
                   "id":"3",
                   "nombre": "Unidad 3 - Leo en familia",  
@@ -210,4 +209,3 @@
     }
 
     $("#portada").css("display", "none");
-0

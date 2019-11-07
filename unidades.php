@@ -30,6 +30,7 @@
  ?>
  <script type="text/javascript">
  	var enlace = <?=$enlace?>;
+
  </script>
 	<style type="text/css">
 	.TituloGrado{
@@ -78,6 +79,7 @@
 </div>
 			<script type='text/javascript'>
 				 	var unidades = <?=$datos?>;
+				 	var color = "<?=$color?>";
 					function ver_ejercicios(ejer,n,name){
 						 	$('#actividades').load('contenido_unidad.php', 
 								{ejercicios:ejer,nombre:name, link:n});
@@ -88,5 +90,8 @@
 					 $("#list-units").append("<li  id='unidad"+i+"' class='litema js-indice-tema'><a onclick='' class='js-tema' ><span class='number'>2</span><span class='title'>"+unidades[i].nombre+"</span></a></li>");					  
 					 $("#unidad"+i).click(function(){ ver_ejercicios(unidades[i].temas,unidades[i].ruta,unidades[i].nombre) });
 					}
+
+							localStorage.setItem("data", JSON.stringify(unidades));
+							localStorage.setItem("color", color);
 
 			</script>
