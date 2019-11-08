@@ -8,7 +8,7 @@
        $('#cuerpo').load('unidades.php',
         { 
           titulo:'Comunicación 1ero', 
-          color:'#97be2e',
+          color:'#8d003c',
           libros:{
                   "0":{"title":"Libro 1", "enlace":"com1-1"},
                   "1":{"title":"Libro 2", "enlace":"com1-2"}
