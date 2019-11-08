@@ -42,19 +42,12 @@
     $('#resolucion').html(window.innerWidth + " x " + window.innerHeight);
   });
   function IniciarCronometro(){
-      localStorage.clear();
-      var name = $('input:text[name=nombre]').val();
-  if(name.length <= 2){
-      alert('Porfavor, introduzca un nombre válido');
-  }
-  else{
-        localStorage.setItem("Alumno", name);
-        $("#portada").css("display", "none");
-            npage = Math.floor(Math.random()*55)+1;
+ 
+      $("#portada").css("display", "none");
+            npage = Math.floor(Math.random()*40)+1;
             Paginas(npage);
-            console.log(npage);
+           //console.log(npage);
       }
-  }
 </script>
 </body>
 </div>

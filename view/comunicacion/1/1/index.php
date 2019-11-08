@@ -42,16 +42,9 @@
     $('#resolucion').html(window.innerWidth + " x " + window.innerHeight);
   });
   function IniciarCronometro(){
-      localStorage.clear();
-      var name = $('input:text[name=nombre]').val();
-  if(name.length <= 2){
-      alert('Porfavor, introduzca un nombre válido');
-  }
-  else{
-        localStorage.setItem("Alumno", name);
         $("#portada").css("display", "none");
                 Page_1();  
-      }
+    
   }
 </script>
 </body>

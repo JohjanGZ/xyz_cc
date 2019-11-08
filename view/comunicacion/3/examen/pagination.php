@@ -200,81 +200,7 @@
         inicio();
          count = 3;
     }
-    function  Page_41(){
-        start_41();
-        inicio();
-         count = 3;
-    }
-    function  Page_42(){
-        start_42();
-        inicio();
-         count = 3;
-    }
-    function  Page_43(){
-        start_43();
-        inicio();
-         count = 3;
-    }
-    function  Page_44(){
-        start_44();
-        inicio();
-         count = 3;
-    }
-    function Page_45(){
-        start_45();
-        inicio();
-        count = 3;
-    }
-   function  Page_46(){
-        start_46();
-        inicio();
-         count = 3;
-    }
-   function Page_47(){
-        start_47();
-        inicio();
-         count = 3;
-    }
-    function  Page_48(){
-        start_48();
-        inicio();
-         count = 3;
-    }
-    function Page_49(){
-        start_49();
-        inicio();
-        count = 3;
-    }
-   function  Page_50(){
-        start_50();
-        inicio();
-         count = 3;
-    }
-   function Page_51(){
-        start_51();
-        inicio();
-         count = 3;
-    }
-    function  Page_52(){
-        start_52();
-        inicio();
-         count = 3;
-    }
-    function  Page_53(){
-        start_53();
-        inicio();
-         count = 3;
-    }
-   function Page_54(){
-        start_54();
-        inicio();
-         count = 3;
-    }
-    function  Page_55(){
-        start_55();
-        inicio();
-         count = 3;
-    }
+
     function Paginas(num_page){
         switch (num_page) {
             case 1: 
@@ -397,56 +323,11 @@
             case 40:
                 Page_40()
                 break;
-            case 41:
-                Page_41()
-                break;
-            case 42:
-                Page_42()
-                break;
-            case 43:
-                Page_43()
-                break;
-            case 44:
-                Page_44()
-                break;
-            case 45:
-                Page_45()
-                break;
-            case 46:
-                Page_46()
-                break;
-            case 47:
-                Page_47()
-                break;
-            case 48:
-                Page_48()
-                break;
-            case 49:
-                Page_49()
-                break;
-            case 50:
-                Page_50()
-                break;
-            case 51:
-                Page_51()
-                break;
-            case 52:
-                Page_52()
-                break;
-            case 53:
-                Page_53()
-                break;
-            case 54:
-                Page_54()
-                break;
-            case 55:
-                Page_55()
-                break;
         }
     } 
 
     //Define la cantidad de numeros aleatorios.
-    var cantidadNumeros = 55;
+    var cantidadNumeros = 40;
     var num_page = []
 
     while(num_page.length < cantidadNumeros ){
@@ -468,222 +349,12 @@
     ////////////// 2do 
             // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
     function start_1(){   
-        $("#ventana").load(ruta+'1-3-1/index.php', 
-        { 
-        next: "Page_"+num_page[0]+"()", 
-        procesar:"result_tipo_1_3_1()",
-        titulo:"<center><h5><span class='ftitulo'>Lee</span> atentamente y responde las preguntas.</h5></center>",
-        restaurar:"start_1()",
-        dir:ruta,
-        cod: "1-3-1",
-        nota:cal
-        }          
-        );
-        return false;
-    };
-    function start_2(){   
-        $("#ventana").load(ruta+'1-3-2/index.php', 
-        { 
-        next: "Page_"+num_page[1]+"()",
-        procesar:"result_tipo_1_3_2()",
-        titulo:"<center><h5>¿Cómo se llama el cuento? <span>Elige</span> la respuesta correcta.</h5></center>",
-        restaurar:"start_2()",
-        dir:ruta,
-        cod: "1-3-2",
-        nota:cal
-        }          
-        );
-        return false;
-    };
-    function start_3(){   
-        $("#ventana").load(ruta+'1-3-3/index.php', 
-        { 
-        next: "Page_"+num_page[2]+"()", 
-        procesar:"result_tipo_1_3_3()",
-        titulo:"<center><h5><span class='ftitulo'>Marca</span> la respuesta correcta.</h5></center>",
-        restaurar:"start_3()",
-        dir:ruta,
-        cod: "1-3-3",
-        nota:cal
-        }          
-        );
-        return false;
-    };
-    function start_4(){   
-        $("#ventana").load(ruta+'1-3-4/index.php', 
-        { 
-        next: "Page_"+num_page[3]+"()", 
-        procesar:"result_tipo_1_3_4()",
-        titulo:"<center><h5><span class='ftitulo'>Marca</span> la respuesta correcta.</h5></center>",
-        restaurar:"start_4()",
-        dir:ruta,
-        cod: "1-3-4",
-        nota:cal
-        }          
-        );
-        return false;
-    };
-    function start_5(){   
-        $("#ventana").load(ruta+'1-3-5/index.php', 
-        { 
-        next: "Page_"+num_page[4]+"()", 
-        procesar:"result_tipo_1_3_5()",
-        titulo:"<center><h5><span class='ftitulo'>Marca</span> la respuesta correcta.</h5></center>",
-        restaurar:"start_5()",
-        dir:ruta,
-        cod: "1-3-5",
-        nota:cal
-        }          
-        );
-        return false;
-    };
-    function start_6(){   
-        $("#ventana").load(ruta+'1-3-6/index.php', 
-        { 
-        next: "Page_"+num_page[5]+"()", 
-        procesar:"result_tipo_1_3_6()",
-        titulo:"<center><h5><span class='ftitulo'>Selecciona</span> la respuesta correcta.</h5></center>",
-        restaurar:"start_6()",
-        dir:ruta,
-        cod: "1-3-6",
-        nota:cal
-        }          
-        );
-        return false;
-    };
-    function start_7(){   
-        $("#ventana").load(ruta+'1-3-7/index.php', 
-        { 
-        next: "Page_"+num_page[6]+"()", 
-        procesar:"result_tipo_1_3_7()",
-        titulo:"<center><h5><span>Lectura: </span>Un cuento.</h5></center>",
-        restaurar:"start_7()",
-        dir:ruta,
-        cod: "1-3-7",
-        nota:cal
-        }          
-        );
-        return false;
-    };
-    function start_8(){   
-        $("#ventana").load(ruta+'1-3-8/index.php', 
-        { 
-        next: "Page_"+num_page[7]+"()", 
-        procesar:"result_tipo_1_3_8()",
-        titulo:"<center><h5><span class='ftitulo'>Marca</span> los nombres de los personajes del cuento.</h5></center>",
-        restaurar:"start_8()",
-        dir:ruta,
-        cod: "1-3-8",
-        nota:cal
-        }          
-        );
-        return false;
-    };
-    function start_9(){   
-        $("#ventana").load(ruta+'1-3-9/index.php', 
-        { 
-        next: "Page_"+num_page[8]+"()", 
-        procesar:"result_tipo_1_3_9()",
-        titulo:"<center><h5><span class='ftitulo'>Escoge</span> la respuesta correcta.</h5></center>",
-        restaurar:"start_9()",
-        dir:ruta,
-        cod: "1-3-9",
-        nota:cal
-        }          
-        );
-        return false;
-    };
-    function start_10(){   
-        $("#ventana").load(ruta+'1-3-10/index.php', 
-        { 
-        next: "Page_"+num_page[9]+"()", 
-        procesar:"result_tipo_1_3_10()",
-        titulo:"",
-        restaurar:"start_10()",
-        dir:ruta,
-        cod: "1-3-10",
-        nota:cal
-        }          
-        );
-        return false;
-    };
-    function start_11(){   
-        $("#ventana").load(ruta+'1-3-11/index.php', 
-        { 
-        next: "Page_"+num_page[10]+"()", 
-        procesar:"result_tipo_1_3_11()",
-        titulo:"",
-        restaurar:"start_11()",
-        dir:ruta,
-        cod: "1-3-11",
-        nota:cal
-        }          
-        );
-        return false;
-    };
-    function start_12(){   
-        $("#ventana").load(ruta+'1-3-12/index.php', 
-        { 
-        next: "Page_"+num_page[11]+"()", 
-        procesar:"result_tipo_1_3_12()",
-        titulo:"",
-        restaurar:"start_12()",
-        dir:ruta,
-        cod: "1-3-12",
-        nota:cal
-        }          
-        );
-        return false;
-    };
-    function start_13(){   
-        $("#ventana").load(ruta+'1-3-13/index.php', 
-        { 
-        next: "Page_"+num_page[12]+"()", 
-        procesar:"result_tipo_1_3_13()",
-        titulo:"<center><h5><span class='ftitulo'>Coloca</span> números del 1 al 4 según ocurrieron los hechos en el cuento.</h5></center>",
-        restaurar:"start_13()",
-        dir:ruta,
-        cod: "1-3-13",
-        nota:cal
-        }          
-        );
-        return false;
-    };
-    function start_14(){   
-        $("#ventana").load(ruta+'1-3-14/index.php', 
-        { 
-        next: "Page_"+num_page[13]+"()", 
-        procesar:"result_tipo_1_3_14()",
-        titulo:"<center><h5><span class='ftitulo'>Arrastra</span> los nombres de los personajes.</h5></center>",
-        restaurar:"start_14()",
-        dir:ruta,
-        cod: "1-3-14",
-        nota:cal
-        }          
-        );
-        return false;
-    };
-    function start_15(){   
-        $("#ventana").load(ruta+'1-3-15/index.php', 
-        { 
-        next: "Page_"+num_page[14]+"()", 
-        procesar:"result_tipo_1_3_15()",
-        titulo:"<center><h5><span class='ftitulo'>Responde</span> las siguientes preguntas.</h5></center>",
-        restaurar:"start_15()",
-        dir:ruta,
-        cod: "1-3-15",
-        nota:cal
-        }          
-        );
-        return false;
-    };
-    function start_16(){   
         $("#ventana").load(ruta+'1-3-16/index.php', 
         { 
-        next: "Page_"+num_page[15]+"()", 
+        next: "Page_"+num_page[0]+"()", 
         procesar:"result_tipo_1_3_16()",
         titulo:"<center><h5><span class='ftitulo'>Relaciona</span> cada animal con su respectiva forma de desplazarse.</h5></center>",
-        restaurar:"start_16()",
+        restaurar:"start_1()",
         dir:ruta,
         cod: "1-3-16",
         nota:cal
@@ -692,13 +363,13 @@
         return false;
     };
 
-    function start_17(){   
+    function start_2(){   
         $("#ventana").load(ruta+'1-3-17/index.php', 
         { 
-        next: "Page_"+num_page[16]+"()", 
+        next: "Page_"+num_page[1]+"()", 
         procesar:"result_tipo_1_3_17()",
         titulo:"<center><h5><span class='ftitulo'>Relaciona</span> cada animal con su respectiva forma de desplazarse.</h5></center>",
-        restaurar:"start_17()",
+        restaurar:"start_2()",
         dir:ruta,
         cod: "1-3-17",
         nota:cal
@@ -706,13 +377,13 @@
         );
         return false;
     };
-    function start_18(){
+    function start_3(){
         $("#ventana").load(ruta+'1-3-18/index.php', 
         {
-        next: "Page_"+num_page[17]+"()", 
+        next: "Page_"+num_page[2]+"()", 
         procesar:"result_tipo_1_3_18()",
         titulo:"<center><h5><span class='ftitulo'>Pronuncia</span> en voz alta cada sílaba y <span class='ftitulo'>encierra</span> las sílabas según el código.</h5></center>",
-        restaurar:"start_18()",
+        restaurar:"start_3()",
         dir:ruta,
         cod: "1-3-18",
         nota:cal
@@ -720,13 +391,13 @@
         );
         return false;  
     };
-    function start_19(){
+    function start_4(){
         $("#ventana").load(ruta+'1-3-19/index.php', 
         { 
-        next: "Page_"+num_page[18]+"()", 
+        next: "Page_"+num_page[3]+"()", 
         procesar:"result_tipo_1_3_19()",
         titulo:"<center><h5><span class='ftitulo'>Elige</span> el recuadro donde se encuentra la sìlaba <span class='ftitulo'>ra</span> o <span class='ftitulo'>rro</span> en cada caso.</h5></center>",
-        restaurar:"start_19()",
+        restaurar:"start_4()",
         dir:ruta,
         cod: "1-3-19",
         nota:cal
@@ -734,13 +405,13 @@
         );
         return false;
     };
-    function start_20(){   
+    function start_5(){   
         $("#ventana").load(ruta+'1-3-20/index.php', 
         { 
-        next: "Page_"+num_page[19]+"()", 
+        next: "Page_"+num_page[4]+"()", 
         procesar:"result_tipo_1_3_20()",
         titulo:"<center><h5><span class='ftitulo'>Completa</span> con <span class='ftitulo'>ba, bu, bo, be</span>.</h5></center>",
-        restaurar:"start_20()",
+        restaurar:"start_5()",
         dir:ruta,
         cod: "1-3-20",
         nota:cal
@@ -748,13 +419,13 @@
         );
         return false;
     };
-    function start_21(){   
+    function start_6(){   
         $("#ventana").load(ruta+'1-3-21/index.php', 
         { 
-        next: "Page_"+num_page[20]+"()", 
+        next: "Page_"+num_page[5]+"()", 
         procesar:"result_tipo_1_3_21()",
         titulo:"<center><h5><span class='ftitulo'>Completa</span> con <span class='ftitulo'>ba, bu, bo, be</span>.</h5></center>",
-        restaurar:"start_21()",
+        restaurar:"start_6()",
         dir:ruta,
         cod: "1-3-21",
         nota:cal
@@ -762,13 +433,13 @@
         );
         return false;
     };
-    function start_22(){
+    function start_7(){
         $("#ventana").load(ruta+'1-3-22/index.php', 
         {
-        next: "Page_"+num_page[21]+"()", 
+        next: "Page_"+num_page[6]+"()", 
         procesar:"result_tipo_1_3_22()",
         titulo:"<center><h5><span class='ftitulo'>Marca</span> la palabra que corresponda a la imagen.</h5></center>",
-        restaurar:"start_22()",
+        restaurar:"start_7()",
         dir:ruta,
         cod: "1-3-22",
         nota:cal
@@ -776,13 +447,13 @@
         );
         return false;  
     };
-    function start_23(){
+    function start_8(){
         $("#ventana").load(ruta+'1-3-23/index.php', 
         { 
-        next: "Page_"+num_page[22]+"()", 
+        next: "Page_"+num_page[7]+"()", 
         procesar:"result_tipo_1_3_23()",
         titulo:"<center><h5><span class='ftitulo'>Marca</span> la palabra que corresponda a la imagen.</h5></center>",
-        restaurar:"start_23()",
+        restaurar:"start_8()",
         dir:ruta,
         cod: "1-3-23",
         nota:cal
@@ -790,13 +461,13 @@
         );
         return false;
     };
-    function start_24(){   
+    function start_9(){   
         $("#ventana").load(ruta+'1-3-24/index.php', 
         { 
-        next: "Page_"+num_page[23]+"()", 
+        next: "Page_"+num_page[8]+"()", 
         procesar:"result_tipo_1_3_24()",
         titulo:"<center><h5><span class='ftitulo'>Completa</span> las palabras con <i>va, ve, vi, vo, vu</i>.</h5></center>",
-        restaurar:"start_24()",
+        restaurar:"start_9()",
         dir:ruta,
         cod: "1-3-24",
         nota:cal
@@ -804,13 +475,13 @@
         );
         return false;
     };
-    function start_25(){   
+    function start_10(){   
         $("#ventana").load(ruta+'1-3-25/index.php', 
         { 
-        next: "Page_"+num_page[24]+"()", 
+        next: "Page_"+num_page[9]+"()", 
         procesar:"result_tipo_1_3_25()",
         titulo:"<center><h5><span class='ftitulo'>Completa</span> las palabras con <i>va, ve, vi, vo, vu</i>.</h5></center>",
-        restaurar:"start_25()",
+        restaurar:"start_10()",
         dir:ruta,
         cod: "1-3-25",
         nota:cal
@@ -818,13 +489,13 @@
         );
         return false;
     };
-    function start_26(){   
+    function start_11(){   
         $("#ventana").load(ruta+'1-3-26/index.php', 
         { 
-        next: "Page_"+num_page[25]+"()", 
+        next: "Page_"+num_page[10]+"()", 
         procesar:"result_tipo_1_3_26()",
         titulo:"<center><h5><span class='ftitulo'>Completa</span> las palabras con <i>va, ve, vi, vo, vu</i>.</h5></center>",
-        restaurar:"start_26()",
+        restaurar:"start_11()",
         dir:ruta,
         cod: "1-3-26",
         nota:cal
@@ -832,13 +503,13 @@
         );
         return false;
     };
-    function start_27(){   
+    function start_12(){   
         $("#ventana").load(ruta+'1-3-27/index.php', 
         { 
-        next: "Page_"+num_page[26]+"()", 
+        next: "Page_"+num_page[11]+"()", 
         procesar:"result_tipo_1_3_27()",
         titulo:"<center><h5><span class='ftitulo'>Ordena</span> las sílabas y forma palabras. <span>Guíate</span> de las imágenes.</h5></center>",
-        restaurar:"start_27()",
+        restaurar:"start_12()",
         dir:ruta,
         cod: "1-3-27",
         nota:cal
@@ -846,13 +517,13 @@
         );
         return false;
     };
-    function start_28(){   
+    function start_13(){   
         $("#ventana").load(ruta+'1-3-28/index.php', 
         { 
-        next: "Page_"+num_page[27]+"()", 
+        next: "Page_"+num_page[12]+"()", 
         procesar:"result_tipo_1_3_28()",
         titulo:"<center><h5><span class='ftitulo'>Ordena</span> las sílabas y forma palabras. <span>Guíate</span> de las imágenes.</h5></center>",
-        restaurar:"start_28()",
+        restaurar:"start_13()",
         dir:ruta,
         cod: "1-3-28",
         nota:cal
@@ -860,13 +531,13 @@
         );
         return false;
     };
-    function start_29(){   
+    function start_14(){   
         $("#ventana").load(ruta+'1-3-29/index.php', 
         { 
-        next: "Page_"+num_page[28]+"()", 
+        next: "Page_"+num_page[13]+"()", 
         procesar:"result_tipo_1_3_29()",
         titulo:"<center><h5><span class='ftitulo'>Forma</span> oraciones con las siguientes palabras.</h5></center>",
-        restaurar:"start_29()",
+        restaurar:"start_14()",
         dir:ruta,
         cod: "1-3-29",
         nota:cal
@@ -874,13 +545,13 @@
         );
         return false;
     };
-    function start_30(){   
+    function start_15(){   
         $("#ventana").load(ruta+'1-3-30/index.php', 
         { 
-        next: "Page_"+num_page[29]+"()", 
+        next: "Page_"+num_page[14]+"()", 
         procesar:"result_tipo_1_3_30()",
         titulo:"<center><h5><span class='ftitulo'>Señala</span> la palabra que corresponde con la imagen.</h5></center>",
-        restaurar:"start_30()",
+        restaurar:"start_15()",
         dir:ruta,
         cod: "1-3-30",
         nota:cal
@@ -888,13 +559,13 @@
         );
         return false;
     };
-    function start_31(){   
+    function start_16(){   
         $("#ventana").load(ruta+'1-3-31/index.php', 
         { 
-        next: "Page_"+num_page[30]+"()", 
+        next: "Page_"+num_page[15]+"()", 
         procesar:"result_tipo_1_3_31()",
         titulo:"<center><h5><span class='ftitulo'>Señala</span> la palabra que corresponde con la imagen.</h5></center>",
-        restaurar:"start_31()",
+        restaurar:"start_16()",
         dir:ruta,
         cod: "1-3-31",
         nota:cal
@@ -902,13 +573,13 @@
         );
         return false;
     };
-    function start_32(){   
+    function start_17(){   
         $("#ventana").load(ruta+'1-3-32/index.php', 
         { 
-        next: "Page_"+num_page[31]+"()", 
+        next: "Page_"+num_page[16]+"()", 
         procesar:"result_tipo_1_3_32()",
         titulo:"<center><h5><span class='ftitulo'>Señala</span> la palabra que corresponde con la imagen.</h5></center>",
-        restaurar:"start_32()",
+        restaurar:"start_17()",
         dir:ruta,
         cod: "1-3-32",
         nota:cal
@@ -916,13 +587,13 @@
         );
         return false;
     };
-    function start_33(){
+    function start_18(){
         $("#ventana").load(ruta+'1-3-33/index.php', 
         {
-        next: "Page_"+num_page[32]+"()", 
+        next: "Page_"+num_page[17]+"()", 
         procesar:"result_tipo_1_3_33()",
         titulo:"<center><h5><span class='ftitulo'>Arrastra</span> los nombres de cada dibujo.</h5></center>",
-        restaurar:"start_33()",
+        restaurar:"start_18()",
         dir:ruta,
         cod: "1-3-33",
         nota:cal
@@ -930,13 +601,13 @@
         );
         return false;  
     };
-    function start_34(){
+    function start_19(){
         $("#ventana").load(ruta+'1-3-34/index.php', 
         { 
-        next: "Page_"+num_page[33]+"()", 
+        next: "Page_"+num_page[18]+"()", 
         procesar:"result_tipo_1_3_34()",
         titulo:"<center><h5><span class='ftitulo'>Arrastra</span> los nombres de cada dibujo.</h5></center>",
-        restaurar:"start_34()",
+        restaurar:"start_19()",
         dir:ruta,
         cod: "1-3-34",
         nota:cal
@@ -944,13 +615,13 @@
         );
         return false;
     };
-    function start_35(){   
+    function start_20(){   
         $("#ventana").load(ruta+'1-3-35/index.php', 
         { 
-        next: "Page_"+num_page[34]+"()", 
+        next: "Page_"+num_page[19]+"()", 
         procesar:"result_tipo_1_3_35()",
         titulo:"<center><h5><span class='ftitulo'>Completa</span> cada palabra con <span class='ftitulo'>r</span>.</h5></center>",
-        restaurar:"start_35()",
+        restaurar:"start_20()",
         dir:ruta,
         cod: "1-3-35",
         nota:cal
@@ -958,13 +629,13 @@
         );
         return false;
     };
-    function start_36(){   
+    function start_21(){   
         $("#ventana").load(ruta+'1-3-36/index.php', 
         { 
-        next: "Page_"+num_page[35]+"()", 
+        next: "Page_"+num_page[20]+"()", 
         procesar:"result_tipo_1_3_36()",
         titulo:"<center><h5><span class='ftitulo'>Clasifica</span> las palabras.</h5></center>",
-        restaurar:"start_36()",
+        restaurar:"start_21()",
         dir:ruta,
         cod: "1-3-36",
         nota:cal
@@ -972,13 +643,13 @@
         );
         return false;
     };
-    function start_37(){   
+    function start_22(){   
         $("#ventana").load(ruta+'1-3-37/index.php', 
         { 
-        next: "Page_"+num_page[36]+"()", 
+        next: "Page_"+num_page[21]+"()", 
         procesar:"result_tipo_1_3_37()",
         titulo:"<center><h5><span class='ftitulo'>Clasifica</span> las palabras.</h5></center>",
-        restaurar:"start_37()",
+        restaurar:"start_22()",
         dir:ruta,
         cod: "1-3-37",
         nota:cal
@@ -986,13 +657,13 @@
         );
         return false;
     };
-    function start_38(){   
+    function start_23(){   
         $("#ventana").load(ruta+'1-3-38/index.php', 
         { 
-        next: "Page_"+num_page[37]+"()", 
+        next: "Page_"+num_page[22]+"()", 
         procesar:"result_tipo_1_3_38()",
         titulo:"<center><h5><span class='ftitulo'>Arrastra</span> el nombre de cada palabra.</h5></center>",
-        restaurar:"start_38()",
+        restaurar:"start_23()",
         dir:ruta,
         cod: "1-3-38",
         nota:cal
@@ -1000,13 +671,13 @@
         );
         return false;
     };
-    function start_39(){   
+    function start_24(){   
         $("#ventana").load(ruta+'1-3-39/index.php', 
         { 
-        next: "Page_"+num_page[38]+"()", 
+        next: "Page_"+num_page[23]+"()", 
         procesar:"result_tipo_1_3_39()",
         titulo:"<center><h5><span class='ftitulo'>Lee</span> y <span class='ftitulo'>coloca</span> cada número donde corresponde.</h5></center>",
-        restaurar:"start_39()",
+        restaurar:"start_24()",
         dir:ruta,
         cod: "1-3-39",
         nota:cal
@@ -1014,13 +685,13 @@
         );
         return false;
     };
-    function start_40(){   
+    function start_25(){   
         $("#ventana").load(ruta+'1-3-40/index.php', 
         { 
-        next: "Page_"+num_page[39]+"()", 
+        next: "Page_"+num_page[24]+"()", 
         procesar:"result_tipo_1_3_40()",
         titulo:"<center><h5><span class='ftitulo'>Ordena</span> las palabras y <span class='ftitulo'>forma</span> oraciones.</h5></center>",
-        restaurar:"start_40()",
+        restaurar:"start_25()",
         dir:ruta,
         cod: "1-3-40",
         nota:cal
@@ -1028,13 +699,13 @@
         );
         return false;
     };
-    function start_41(){   
+    function start_26(){   
         $("#ventana").load(ruta+'1-3-41/index.php', 
         { 
-        next: "Page_"+num_page[40]+"()", 
+        next: "Page_"+num_page[25]+"()", 
         procesar:"result_tipo_1_3_41()",
         titulo:"<center><h5><span class='ftitulo'>Completa</span> las palabras con <span class='ftitulo'>rra, rre, rri, rro, rru</span>.</h5></center>",
-        restaurar:"start_41()",
+        restaurar:"start_26()",
         dir:ruta,
         cod: "1-3-41",
         nota:cal
@@ -1042,13 +713,13 @@
         );
         return false;
     };
-    function start_42(){   
+    function start_27(){   
         $("#ventana").load(ruta+'1-3-42/index.php', 
         { 
-        next: "Page_"+num_page[41]+"()", 
+        next: "Page_"+num_page[26]+"()", 
         procesar:"result_tipo_1_3_42()",
         titulo:"<center><h5><span class='ftitulo'>Completa</span> con <span class='ftitulo'>r</span> o <span class='ftitulo'>rr</span> segun corresponda.</h5></center>",
-        restaurar:"start_42()",
+        restaurar:"start_27()",
         dir:ruta,
         cod: "1-3-42",
         nota:cal
@@ -1056,13 +727,13 @@
         );
         return false;
     };
-    function start_43(){   
+    function start_28(){   
         $("#ventana").load(ruta+'1-3-43/index.php', 
         { 
-        next: "Page_"+num_page[42]+"()", 
+        next: "Page_"+num_page[27]+"()", 
         procesar:"result_tipo_1_3_43()",
         titulo:"<center><h5><span class='ftitulo'>Completa</span> con <span class='ftitulo'>r</span> o <span class='ftitulo'>rr</span> segun corresponda.</h5></center>",
-        restaurar:"start_43()",
+        restaurar:"start_28()",
         dir:ruta,
         cod: "1-3-43",
         nota:cal
@@ -1070,13 +741,13 @@
         );
         return false;
     };
-    function start_44(){   
+    function start_29(){   
         $("#ventana").load(ruta+'1-3-44/index.php', 
         { 
-        next: "Page_"+num_page[43]+"()", 
+        next: "Page_"+num_page[28]+"()", 
         procesar:"result_tipo_1_3_44()",
         titulo:"<center><h5><span class='ftitulo'>Arrastra</span> las palabras que esten compuestas por <span class='ftitulo'>r</span> y <span class='ftitulo'>rr</span> que se encuentren en las siguientes oraciones:</h5></center>",
-        restaurar:"start_44()",
+        restaurar:"start_29()",
         dir:ruta,
         cod: "1-3-44",
         nota:cal
@@ -1084,13 +755,13 @@
         );
         return false;
     };
-    function start_45(){
+    function start_30(){
         $("#ventana").load(ruta+'1-3-45/index.php', 
         {
-        next: "Page_"+num_page[44]+"()", 
+        next: "Page_"+num_page[29]+"()", 
         procesar:"result_tipo_1_3_45()",
         titulo:"<center><h5><span class='ftitulo'>Escribe</span> los nombres de cada imagen.</h5></center>",
-        restaurar:"start_45()",
+        restaurar:"start_30()",
         dir:ruta,
         cod: "1-3-45",
         nota:cal
@@ -1098,13 +769,13 @@
         );
         return false;  
     };
-    function start_46(){
+    function start_31(){
         $("#ventana").load(ruta+'1-3-46/index.php', 
         { 
-        next: "Page_"+num_page[45]+"()", 
+        next: "Page_"+num_page[30]+"()", 
         procesar:"result_tipo_1_3_46()",
         titulo:"<center><h5><span class='ftitulo'>Lee</span> y <span>completa</span> las oraciones con las palabras del recuadro.</h5></center>",
-        restaurar:"start_46()",
+        restaurar:"start_21()",
         dir:ruta,
         cod: "1-3-46",
         nota:cal
@@ -1112,13 +783,13 @@
         );
         return false;
     };
-    function start_47(){   
+    function start_32(){   
         $("#ventana").load(ruta+'1-3-47/index.php', 
         { 
-        next: "Page_"+num_page[46]+"()", 
+        next: "Page_"+num_page[31]+"()", 
         procesar:"result_tipo_1_3_47()",
         titulo:"<center><h5><span class='ftitulo'>Escribe</span> la acción que realiza cada persona.</h5></center>",
-        restaurar:"start_47()",
+        restaurar:"start_32()",
         dir:ruta,
         cod: "1-3-47",
         nota:cal
@@ -1126,13 +797,13 @@
         );
         return false;
     };
-    function start_48(){   
+    function start_33(){   
         $("#ventana").load(ruta+'1-3-48/index.php', 
         { 
-        next: "Page_"+num_page[47]+"()", 
+        next: "Page_"+num_page[32]+"()", 
         procesar:"result_tipo_1_3_48()",
         titulo:"<center><h5><span class='ftitulo'>Escribe</span> la acción que realiza cada persona.</h5></center>",
-        restaurar:"start_48()",
+        restaurar:"start_33()",
         dir:ruta,
         cod: "1-3-48",
         nota:cal
@@ -1140,13 +811,13 @@
         );
         return false;
     };
-    function start_49(){   
+    function start_34(){   
         $("#ventana").load(ruta+'1-3-49/index.php', 
         { 
-        next: "Page_"+num_page[48]+"()", 
+        next: "Page_"+num_page[33]+"()", 
         procesar:"result_tipo_1_3_49()",
         titulo:"<center><h5><span class='ftitulo'>Completa</span> considerando las pautas que se muestran en el ejemplo.</h5></center>",
-        restaurar:"start_49()",
+        restaurar:"start_34()",
         dir:ruta,
         cod: "1-3-49",
         nota:cal
@@ -1154,13 +825,13 @@
         );
         return false;
     };
-    function start_50(){   
+    function start_35(){   
         $("#ventana").load(ruta+'1-3-50/index.php', 
         { 
-        next: "Page_"+num_page[49]+"()", 
+        next: "Page_"+num_page[34]+"()", 
         procesar:"result_tipo_1_3_50()",
         titulo:"<center><h5><span class='ftitulo'>Completa</span> considerando las pautas que se muestran en el ejemplo.</h5></center>",
-        restaurar:"start_50()",
+        restaurar:"start_35()",
         dir:ruta,
         cod: "1-3-50",
         nota:cal
@@ -1168,13 +839,13 @@
         );
         return false;
     };
-    function start_51(){   
+    function start_36(){   
         $("#ventana").load(ruta+'1-3-51/index.php', 
         { 
-        next: "Page_"+num_page[50]+"()", 
+        next: "Page_"+num_page[35]+"()", 
         procesar:"result_tipo_1_3_51()",
         titulo:"<center><h5><span class='ftitulo'>Completa</span> las palabras con <i>ar, er, ir, or, ur</i>.</h5></center>",
-        restaurar:"start_51()",
+        restaurar:"start_36()",
         dir:ruta,
         cod: "1-3-51",
         nota:cal
@@ -1182,13 +853,13 @@
         );
         return false;
     };
-    function start_52(){   
+    function start_37(){   
         $("#ventana").load(ruta+'1-3-52/index.php', 
         { 
-        next: "Page_"+num_page[51]+"()", 
+        next: "Page_"+num_page[36]+"()", 
         procesar:"result_tipo_1_3_52()",
         titulo:"<center><h5><span class='ftitulo'>Completa</span> las palabras con <i>ar, er, ir, or, ur</i>.</h5></center>",
-        restaurar:"start_52()",
+        restaurar:"start_37()",
         dir:ruta,
         cod: "1-3-52",
         nota:cal
@@ -1196,13 +867,13 @@
         );
         return false;
     };
-    function start_53(){   
+    function start_38(){   
         $("#ventana").load(ruta+'1-3-53/index.php', 
         { 
-        next: "Page_"+num_page[52]+"()", 
+        next: "Page_"+num_page[37]+"()", 
         procesar:"result_tipo_1_3_53()",
         titulo:"<center><h5><span class='ftitulo'>Completa</span> las palabras con <i>ar, er, ir, or, ur</i>.</h5></center>",
-        restaurar:"start_53()",
+        restaurar:"start_38()",
         dir:ruta,
         cod: "1-3-53",
         nota:cal
@@ -1210,13 +881,13 @@
         );
         return false;
     };
-    function start_54(){   
+    function start_39(){   
         $("#ventana").load(ruta+'1-3-54/index.php', 
         { 
-        next: "Page_"+num_page[53]+"()", 
+        next: "Page_"+num_page[38]+"()", 
         procesar:"result_tipo_1_3_54()",
         titulo:"<center><h5><span class='ftitulo'>Completa</span> la frase.</h5></center>",
-        restaurar:"start_54()",
+        restaurar:"start_39()",
         dir:ruta,
         cod: "1-3-54",
         nota:cal
@@ -1224,13 +895,13 @@
         );
         return false;
     };
-    function start_55(){   
+    function start_40(){   
         $("#ventana").load(ruta+'1-3-55/index.php', 
         { 
-        next: "Page_"+num_page[54]+"()", 
+        next: "Page_"+num_page[39]+"()", 
         procesar:"result_tipo_1_3_55()",
         titulo:"<center><h5><span class='ftitulo'>Completa</span> la frase.</h5></center>",
-        restaurar:"start_55()",
+        restaurar:"start_40()",
         dir:ruta,
         cod: "1-3-55",
         nota:cal
