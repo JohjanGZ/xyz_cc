@@ -1,4 +1,4 @@
-<?php require ('head.php');?>
+<?php require ('../../head.php');?>
  <link rel="stylesheet" type="text/css" href="css/force-lastcape.css">
  <div id="vertical"></div>
 <div id="contenedor">

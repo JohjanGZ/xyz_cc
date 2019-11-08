@@ -1,4 +1,4 @@
-<?php require ('head.php');?>
+<?php require ('../../head.php');?>
  <link rel="stylesheet" type="text/css" href="css/force-lastcape.css">
  <div id="vertical"></div>
 <div id="contenedor">
@@ -41,17 +41,9 @@
   $(document).ready(function(){
     $('#resolucion').html(window.innerWidth + " x " + window.innerHeight);
   });
-  function IniciarCronometro(){
-      localStorage.clear();
-      var name = $('input:text[name=nombre]').val();
-  if(name.length <= 2){
-      alert('Porfavor, introduzca un nombre válido');
-  }
-  else{
-        localStorage.setItem("Alumno", name);
+  function IniciarCronometro(){ 
         $("#portada").css("display", "none");
                 Page_55();  
-      }
   }
 </script>
 </body>
