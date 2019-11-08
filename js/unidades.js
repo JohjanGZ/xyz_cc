@@ -4,17 +4,16 @@
 //----- 1ero
 
   function comunicacion1(){
-       $("#portada").css("display", "block");
-       $('#cuerpo').load('unidades.php',
-        { 
+  $("#portada").css("display", "block");
+  $('#cuerpo').load('unidades.php',
+    { 
           titulo:'Comunicación 1ero', 
           color:'#8d003c',
           libros:{
                   "0":{"title":"Libro 1", "enlace":"com1-1"},
                   "1":{"title":"Libro 2", "enlace":"com1-2"}
-                   }, 
+          }, 
           data:{
-              
               "0":{
                   "ruta":"comunicacion/0",
                   "id":"0",
@@ -35,7 +34,7 @@
                           "4":"Lectoescritura: Palabras con M - m",
                           "5":"Lectoescritura: Palabras con L - l",
                           }
-                    },
+                  },
               "2":{
                   "ruta":"comunicacion/2",
                   "id":"2",
@@ -56,20 +55,17 @@
               "3":{
                   "ruta":"comunicacion/3",
                   "id":"3",
-                  "nombre": "Unidad 3 - Leo en familia",  
-                  "temas": {
+                  "nombre": "Unidad 3 - Leo en familia",
+                  "temas":{
                           "0": "Lectura: Ondas Expresivas",
                           "1": "Un cuento",
                           "2": "Desplazamiento",
                           "3": "¿Qué será? Mi oído me ayudará",
                           "4": "Lectoescritura: Palabras con V-v",
                           "5": "Lectoescritura: Palabras con R-r",
-                           }
-                  },     
-
-                            
-            
-        }
+                          }
+                  },                               
+          }
     });
   }
 
@@ -111,7 +107,6 @@
           }
         });
   }
-
 //---- 2DO
     function matematica2(){
        $("#portada").css("display", "block");

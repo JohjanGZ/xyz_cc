@@ -91,8 +91,9 @@
         inicio();
          count = 3;
     }
-
-    var cal= 20/20;
+    var cant=18;
+    var cal= cant/cant;
+    console.log(cant);
     var ruta="../../../exercises/comunicacion/";
     ////////////// 2do 
             // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
