@@ -1,4 +1,4 @@
-<?php require ('head.php');?>
+<?php require ('../../head.php');?>
  <link rel="stylesheet" type="text/css" href="css/force-lastcape.css">
  <div id="vertical"></div>
 <div id="contenedor">
@@ -34,6 +34,8 @@
                                           <a href="#!" class="modal-close waves-effect waves-green btn-flat">Listo!</a>
                                         </div>
                                         </div>
+                                        <input type="hidden" name="" id="nota" value="0">                                     
+
 <div id="ventana"></div>
 <?php require ('pagination.php');?>
 <script src="../../../../js/materialize.min.js"></script>

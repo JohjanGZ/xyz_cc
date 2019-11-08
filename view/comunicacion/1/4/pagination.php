@@ -10,6 +10,9 @@
          count = 3;
     }
 
+
+    var cant=2;
+
     var cal= 20/20;
     var ruta="../../../exercises/comunicacion/";
     ////////////// 2do 
@@ -20,7 +23,7 @@
         {
         next: "Page_11()", 
         procesar:"result_tipo_1_1_10()",
-        titulo:"<center><h5><span class='ftitulo'>Selecciona</span> la imagen que falta en la secuencia.</h5></center>",
+        titulo:"<center><h5><span class='ftitulo'>Relaciona</span> las imágenes con la palabra correspondiente.</h5></center>",
         restaurar:"start_10()",
         dir:ruta,
         cod: "1-1-10",
@@ -34,7 +37,7 @@
         { 
         next: "resultado()", 
         procesar:"result_tipo_1_1_11()",
-        titulo:"<center><h5><span class='ftitulo'>Indica</span> la respuesta correcta.<br>¿A dónde quiero ir todas las mañanas?</h5></center>",
+        titulo:"<center><h5><span class='ftitulo'>Completa</span> las palabras con pa-, pe-, pi- ,po- , pu-</h5></center>",
         restaurar:"start_10()",
         dir:ruta,
         cod: "1-1-11",

@@ -326,7 +326,7 @@
         { 
         next: "Page_18()", 
         procesar:"result_tipo_1_0_17()",
-        titulo:"<center><h5><span >Selecciona</span> las imágenes de la parte inferior que sean iguales a las que se muestran.</h5></center>",
+        titulo:"<center><h5><span >Ordena</span> las siguientes secuencias.</h5></center>",
         restaurar:"start_17()",
         dir:ruta,
         cod: "1-0-17",

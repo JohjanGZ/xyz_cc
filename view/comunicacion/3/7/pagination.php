@@ -19,6 +19,8 @@
         inicio();
          count = 3;
     }
+
+    var cant=4;
     var cal= 20/20;
     var ruta="../../../exercises/comunicacion/";
     ////////////// 2do 
@@ -26,9 +28,9 @@
     function start_56(){   
         $("#ventana").load(ruta+'1-3-56/index.php', 
         { 
-        next: "Page_57()", 
+        next: "resultado()", 
         procesar:"result_tipo_1_3_56()",
-        titulo:"<center><h5><span class='ftitulo'>ca - que - qui - co - cu Une</span> las sílabas de 2 en 2 para formar palabras.</h5></center>",
+        titulo:"<center><h5><span class='ftitulo'>Completa</span> la frase.</h5></center>",
         restaurar:"start_56()",
         dir:ruta,
         cod: "1-3-56",

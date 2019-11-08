@@ -47,7 +47,7 @@
       
       <center>
          <li>
-            <a href="../../" class="tooltipped " data-position="right" data-tooltip="Ir a Inicio"><i class="material-icons small  icon-modulo">view_module</i>
+            <a href="../../../../" class="tooltipped " data-position="right" data-tooltip="Ir a Inicio"><i class="material-icons small  icon-modulo">view_module</i>
             </a>
         </li>
       </center>
@@ -58,7 +58,7 @@
   </ul>
 
   
-<a href="#" data-target="slide-out"   class="tooltipped sidenav-trigger pink-text text-accent-4 btn-menu" data-tooltip="Menu" data-position="right"><i class="small material-icons ">menu</i></a>
+<a href="#" data-target="slide-out"   class="amber btn-floating btn-menu pink-text pulse sidenav-trigger text-accent-4 tooltipped" data-tooltip="Menu" data-position="right"><i class="small material-icons ">menu</i></a>
 
 <script>
  
@@ -70,11 +70,9 @@
 
     var i = 0;
     $('.unidad-p').each(function() {
-      console.log("hola soy inicio: "+i);
 
   
       $(this).children('div').html(data[i].nombre);
-      console.log(color);
 
       for (let index = 0; index < data[i].temas.length; index++) {
         $(this).children('ul').append('<li class="menu-item-p"><div><a href="../../../'+data[i].ruta+'/'+(index+1)+'">'+data[i].temas[index]+'</a></div></li>');
@@ -87,6 +85,14 @@
            }
          });
       }
+
+    // background-color: #f8ae0dc7!important;
+      $(".ui-state-active").css("background-color",color+"!important");
+      $(".sidenav").css("background-color",color+"!important");
+      $(".ui-widget-content .ui-state-active").css("background-color",color+"!important");
+      $(".ui-menu-item").css("background-color",color+"!important");
+      $(".Portada").css("background-color",color+"!important");
+
     });
 
 

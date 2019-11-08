@@ -10,10 +10,20 @@
             align-items: center;
             height: 100vh;
             position: absolute;
-            background-color: #76e144;
             top: -100px;
             width: 100%;
             z-index: 1;
+        }
+
+        .aprobado{
+            background-color: #76e144;
+            background-image: url(../../../4);
+            background-size: 65vh auto;
+        }
+
+        .desaprobado{
+            background-color: #ff981c;
+
         }
         
         .contenedor-mensaje {
@@ -43,16 +53,63 @@
             font-size: 25px;
             border: 3px solid white;
             border-radius: 12px;
+            margin: 0 3px;
+        }
+        .btn-success a{
+            color: inherit!important;
         }
     </style>
 
 
-    <div class="contenedor-principal">
+    <div id="contenedor-principal" class="contenedor-principal">
         <div class="contenedor-mensaje">
-            <h1 class="display-1">¡Felicitaciones!</h1>
-            <h2 class="display-2">Completaste la unidad</h2>
-            <button class="btn-success">Regresar</button>
+            <h1 class="display-1"></h1>
+            <h2 class="display-2"></h2>
+            
         </div>
     </div>
 
     <a style="transform: translate(93vw, 73vh);" href="javascript:pruebaDivAPdf()" class="tooltipped btn btn-floating pulse" data-position="left" data-tooltip="Ver en PDF"><i class="material-icons">picture_as_pdf</i></a>
+
+    <script>
+        
+        $(document).ready(function(){
+
+            var aprobado = false;
+            var data = JSON.parse(localStorage.getItem("data"));
+            var ruta = window.location.pathname;
+            var tema = ruta.substr(-2,1);
+            var unidad = ruta.substr(-4,1);
+
+
+            var n = parseInt($("#nota").val());
+
+            if(n>(cant/2)){
+
+                $("#contenedor-principal").addClass("aprobado");
+                $(".display-1").text("¡Felicitaciones!");
+                $(".display-2").text("Completaste el tema");
+
+
+                if(tema == (data[unidad].temas.length)){
+                    $(".contenedor-mensaje").append('<button class="btn-success"><a href="../../../../">Salir</a></button>');
+                }else{
+                    $(".contenedor-mensaje").append('<button class="btn-success"><a href="../../../../">Salir</a></button><button class="btn-success"><a href="../'+(parseInt(tema)+1)+'">Siguiente</a></button>');
+                }
+
+
+
+
+
+            }else{
+                $("#contenedor-principal").addClass("desaprobado");
+                $(".display-1").text("Sigue intentando");
+                $(".contenedor-mensaje").append('<button class="btn-success"><a href="../'+(parseInt(tema))+'">Reiniciar tema</a></button>');
+
+            }
+
+
+        });
+
+        
+    </script>
