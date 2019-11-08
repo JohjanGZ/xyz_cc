@@ -14,7 +14,6 @@ var ctx = canvas.getContext("2d");
 
 $('.a').click(function() {
     var obj1 = null;
-    var obj2 = null;
     var valor = $(this).attr("value");
     if (valor != 1) {
         var sitio1 = $(this).index();
@@ -34,27 +33,26 @@ $('.a').click(function() {
         });
 
         obj1 = $(this).attr("alt");
-        console.log(obj1);
+        //console.log(obj1);
         ctx.beginPath();
         switch (sitio1) {
             case 0:
-                ctx.moveTo(85, 0);
+                ctx.moveTo(0, 30);
                 break;
             case 1:
-                ctx.moveTo(255, 0);
+                ctx.moveTo(0, 115);
                 break;
             case 2:
-                ctx.moveTo(425, 0);
+                ctx.moveTo(0, 190);
                 break;
             case 3:
-                ctx.moveTo(595, 0);
-                break;
-            case 4:
-                ctx.moveTo(765, 0);
+                ctx.moveTo(0, 275);
                 break;
         }
         valor = 1;
     }
+
+
 
     $('.b').click(function() {
 
@@ -62,32 +60,27 @@ $('.a').click(function() {
         $('.b').css({ "background-color": "white" });
         $(this).css({ "background-color": "silver", "background-color": "rgba(254, 205, 84, 0.65)", "border": "solid white", "box-shadow": "0 0 3px black", "z-index": "1" });
         var obj2 = $(this).attr("alt");
-        console.log(obj2);
+        //console.log(obj2);
         switch (sitio2) {
             case 0:
-                ctx.lineTo(85, 100);
+                ctx.lineTo(300, 30);
                 break;
             case 1:
-                ctx.lineTo(255, 100);
+                ctx.lineTo(300, 115);
                 break;
             case 2:
-                ctx.lineTo(425, 100);
+                ctx.lineTo(300, 190);
                 break;
             case 3:
-                ctx.lineTo(595, 100);
-                break;
-            case 4:
-                ctx.lineTo(765, 100);
+                ctx.lineTo(300, 275);
                 break;
         }
-        ctx.strokeStyle = "orange";
-        ctx.lineWidth = 5;
+        ctx.strokeStyle = "rgb(127, 27, 91)";
+        ctx.lineWidth = 7;
+
         ctx.stroke();
 
-
-
-
-        if (obj1 == obj2) {
+        if (obj1 == obj2 ) {
             r++;
             console.log(r);
         }

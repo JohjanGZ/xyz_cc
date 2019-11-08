@@ -5,34 +5,38 @@
     <link rel="stylesheet" type="text/css" href="<?= $dir ?>/css/styles.css">
 </head>
 <?=$titulo?>
-    <div class="container">
-        <div class="row svg">
 
-            <div class="campo" id="imgIzquierda">
-
+    <div class="container-two">
+        <div class="svg">
+            <div class="campo" id="Izquierda">
                 <ul id="listA">
-                    <li alt="1" class="a" id="obj1"><span>ca</span></li>
-                    <li alt="2" class="a" id="obj2"><span>ca</span></li>
-                    <li alt="3" class="a" id="obj3"><span>tan</span></li>
-                    <li alt="4" class="a" id="obj4"><span>sa</span></li>
+                    <li class="a" alt="1" id="obj1"><span>ta</span></li>
+                    <li class="a" alt="2" id="obj2"><span>es</span></li>
+                    <li class="a" alt="3" id="obj3"><span>ca</span></li>
+                    <li class="a" alt="4" id="obj4"><span>ca</span></li>
                 </ul>
-
             </div>
-            <div class="campo" id="centro">
-                <canvas height="400px" width="280px" id="micanvas"></canvas>
-            </div>
-            <div class="campo" id="imgDerecha">
+            <canvas id="canvas_1"></canvas>
+            <div class="campo" id="Centro">
                 <ul id="listB">
-                    <li alt="1" class="b" id="obj1"><span>pa</span></li>
-                    <li alt="2" class="b" id="obj2"><span>lle</span></li>
-                    <li alt="3" class="b" id="obj3"><span>que</span></li>
-                    <li alt="4" class="b" id="obj4"><span>co</span></li>
+                    <li class="b" alt="1" id="obj1"><span>ba</span></li>
+                    <li class="b" alt="2" id="obj2"><span>qui</span></li>
+                    <li class="b" alt="3" id="obj3"><span>si</span></li>
+                    <li class="b" alt="4" id="obj4"><span>mi</span></li>
                 </ul>
-            </div>
-
+            </div> 
+            <canvas id="canvas_2"></canvas>
+            <div class="campo" id="Derecha">
+                <ul id="listC">
+                    <li class="c" alt="1" id="obj1"><span>co</span></li>
+                    <li class="c" alt="2" id="obj2"><span>mal</span></li>
+                    <li class="c" alt="3" id="obj3"><span>llo</span></li>
+                    <li class="c" alt="4" id="obj4"><span>no</span></li>
+                </ul>
+            </div> 
         </div>
     </div>
-    </section>
+  
     <div id="modal1" class="modal">
         <div class="modal-content">
             <center>
@@ -51,7 +55,7 @@
     <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 
     <script type="text/javascript">
-        function result_tipo_1_3_56() {
+        function result_tipo_1_3_57() {
             var min = $('#Minutos').text();
             var seg = $('#Segundos').text();
             var milseg = $('#Centesimas').text();
@@ -63,8 +67,8 @@
                 localStorage.setItem("Time<?= $dir ?>", tiempo);
                 correcto();
             } else {
-                incorrecto();
                 console.log(r);
+                incorrecto();
                 localStorage.setItem("Nota<?= $dir ?>", "0");
                 localStorage.setItem("Time<?= $dir ?>", tiempo);
             }
