@@ -19,6 +19,8 @@
         inicio();
          count = 3;
     }
+
+    var cant=4;
     var cal= 20/20;
     var ruta="../../../exercises/comunicacion/";
     ////////////// 2do 
@@ -70,7 +72,7 @@
         { 
         next: "resultado()", 
         procesar:"result_tipo_1_2_4()",
-        titulo:"<center><h5><span class='ftitulo'>Indica</span>, según el poema, ¿en dónde siente esas hermosas palabras?.</h5></center>",
+        titulo:"<center><h5><span class='ftitulo'>Relaciona</span> las oraciones con la imagen correspondiente.</h5></center>",
         restaurar:"start_4()",
         dir:ruta,
         cod: "1-2-4",

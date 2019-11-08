@@ -1,9 +1,9 @@
   <link rel="stylesheet" type="text/css" href="../../../tools/pantalla-inicio/css/pantalla-inicio.css">
         <div id="portada" class="Portada scale-transition">    
 			  <div class="contenedor-top">
-          <button onclick="BackHome()" class="btn-back btn red"><i class="material-icons mediun">arrow_back</i></button>
-          <h3 class="unidad-tema">Unidad 1: <span>Leo en familia</span></h3>
-          <h4 style="margin-left: 40px;" class="unidad-tema">Tema: <span>Un cuento</span></h4>
+          <button class="btn-back btn red"><a href="../../../../" style="color:inherit!important;"><i class="material-icons mediun">arrow_back</i></a></button>
+          <h3 class="unidad-tema nombre-unidad"></h3>
+          <h4 style="margin-left: 40px;" class="unidad-tema nombre-tema"></h4>
         </div>
      		<center><img width="7vw" src="../../../../LOGO.png"></center>    
             <p id="Frase-Presentacion"> Hola, presiona "Empezar" para iniciar la actividad</p> 
@@ -13,3 +13,20 @@
                           
 		</div>
 <script src="../../../../js/core.js"></script>
+<script>
+  var data = JSON.parse(localStorage.getItem("data"));
+  var ruta = window.location.pathname;
+  var tema = ruta.substr(-2,1);
+  var unidad = ruta.substr(-4,1);
+
+
+
+  console.log(data);
+
+  $(".nombre-unidad").html(data[unidad].nombre);
+  console.log(data[unidad].nombre);
+  $(".nombre-tema").html(data[unidad].temas[tema-1]);
+
+
+
+</script>

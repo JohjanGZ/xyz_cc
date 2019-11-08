@@ -13,7 +13,7 @@
 }
 
 .ui-state-active {
-    background-color: #f2f0ff40 !important;
+    background-color: inherit !important;
 }
 
 .container,
@@ -72,7 +72,6 @@
     backface-visibility: hidden;
     -webkit-transform: translateX(-105%);
     transform: translateX(-105%);
-    background-color: rgba(255, 177, 7, 0.95);
     width: 240px!important;
 }
 
@@ -283,7 +282,7 @@ h5 span {
 }
 
 .Portada {
-    background-color: rgba(255, 177, 7, 0.95) !important;
+    /* background-color: rgba(255, 177, 7, 0.95) !important; */
 }
 
 
@@ -315,7 +314,7 @@ h5 span {
 .ui-widget-content .ui-state-active,
 .ui-menu-item {
     border: none!important;
-    background-color: #f8ae0dc7!important;
+    /* background-color: #f8ae0dc7!important; */
     font-weight: bold!important;
     color: white!important;
 }
@@ -368,7 +367,7 @@ span.ui-menu-icon {
 
 ul li.menu-item-p:hover {
     transform: scale(1.02);
-    background-color: #f3ac12!important;
+    background-color: inherit!important;
     box-shadow: 0px 2px 2px #0000003d;
 }
 

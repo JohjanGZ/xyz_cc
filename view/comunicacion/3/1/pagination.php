@@ -30,6 +30,7 @@
         count = 3;
     }
    
+    var cant=5;
     var cal= 20/20;
     var ruta="../../../exercises/comunicacion/";
     ////////////// 2do 

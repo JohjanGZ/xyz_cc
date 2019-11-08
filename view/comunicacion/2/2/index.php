@@ -34,6 +34,8 @@
                                           <a href="#!" class="modal-close waves-effect waves-green btn-flat">Listo!</a>
                                         </div>
                                         </div>
+                                        <input type="hidden" name="" id="nota" value="0">                                     
+
 <div id="ventana"></div>
 <?php require ('pagination.php');?>
 <script src="../../../../js/materialize.min.js"></script>
