@@ -8,7 +8,7 @@
        $('#cuerpo').load('unidades.php',
         { 
           titulo:'Comunicación 1ero', 
-          color:'#97be2e',
+          color:'#8d003c',
           libros:{
                   "0":{"title":"Libro 1", "enlace":"com1-1"},
                   "1":{"title":"Libro 2", "enlace":"com1-2"}
@@ -19,24 +19,23 @@
                   "ruta":"comunicacion/0",
                   "id":"0",
                   "nombre": "Unidad 0 - Aprendiendo en mi escuela",  
-                  "temas": {
-                          "0": "Actividad digital"
-                           }
+                  "temas":{
+                            "0": "Actividad digital"
+                          }
                   },
               "1":{
                   "ruta":"comunicacion/1",
                   "id":"0",
-                  "nombre": "Unidad 1 - Voy a leer y a escribir",  
-                  "temas": {
+                  "nombre": "Unidad 1 - Voy a leer y a escribir",
+                  "temas":{
                           "0": "Comprensión lectora: Cuatro letritas",
                           "1": "Comprensión lectora: Mi colegio",
                           "2": "Comprensión lectora: Patito travieso",
                           "3": "Lectoescritura: Palabras con P - p",
                           "4":"Lectoescritura: Palabras con M - m",
                           "5":"Lectoescritura: Palabras con L - l",
-
-                           }
-                         },
+                          }
+                    },
               "2":{
                   "ruta":"comunicacion/2",
                   "id":"2",
@@ -75,7 +74,6 @@
   }
 
 ///  *********   MATEMATICAS 
-
 //---- 1ERO
 
   function matematica1(){
@@ -101,7 +99,7 @@
               "1":{
                   "id":"2",
                   "nombre": "unidad 2",  
-                  "ejercicios": {
+                  "ejercicios":{
                           "0": "ejericio 1 de la unidad 2 matematica 1",
                           "1": "ejericio 2 de la unidad 2 matematica 1",
                           "2": "ejericio 3 de la unidad 2 matematica 1",
@@ -150,7 +148,7 @@
           color:'#26c6da',
           enlace:'inicial3', 
           data:{
-              "0": {
+              "0":{
                 "ruta":"inicial/3/1",
                 "id":"1",
                 "nombre": "unidad 1",  
@@ -176,17 +174,17 @@
           color:'#26c6da',
           enlace:'inicial/4', 
           data:{
-              "0": {
-                "id":"1",
-                "nombre": "unidad 1",  
-               "ejercicios":{
+              "0":{
+                  "id":"1",
+                  "nombre": "unidad 1",  
+                  "ejercicios":{
                           "0": "ejericio 1 de la unidad 1",
                           "1": "ejericio 2 de la unidad 1",
                           "2": "ejericio 3 de la unidad 1",
                           "3": "ejericio 4 de la unidad 1",
                           "4": "ejericio 5 de la unidad 1",
                           "5": "ejericio 6 de la unidad 1",
-                        } 
+                  } 
               },
               "1":{
                   "id":"2",
@@ -200,7 +198,7 @@
                           "5": "ejericio 6 de la unidad 2",
                   } 
               }
-        }
+          }
         });
 }
     function libros() {

@@ -91,7 +91,7 @@
 					 $("#unidad"+i).click(function(){ ver_ejercicios(unidades[i].temas,unidades[i].ruta,unidades[i].nombre) });
 					}
 
-							localStorage.setItem("data", JSON.stringify(unidades));
+							localStorage.setItem("data", JSON.stringify(unidades)); 
 							localStorage.setItem("color", color);
 
 			</script>
