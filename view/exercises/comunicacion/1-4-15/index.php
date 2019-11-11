@@ -10,16 +10,14 @@
   <body>
     
   <div class="container">
-        <div class="row">  
-            <div class="contenedor-ejercicios">
+        <div class="row">   
+           <div class="contenedor-ejercicios">
                 <div class="ejercicio">
                     <div class="imagen-palabra">
                         <img src="<?= $dir ?>/img/1.png">
                     </div>
                     <div class="contenedor-respuesta">
-                        <span class="span-before">s</span>
-                        <div class="palabra" alt="er"></div>
-                        <span class="span-after">piente</span>
+                        <div class="palabra" alt="helado"></div>
                     </div>
                 </div>
                 <div class="ejercicio">
@@ -27,26 +25,48 @@
                         <img src="<?= $dir ?>/img/2.png">
                     </div>
                     <div class="contenedor-respuesta">
-                        <span class="span-before">c</span>
-                        <div class="palabra" alt="ar"></div>
-                        <span class="span-after">tera</span>
+                        <div class="palabra" alt="zanahoria"></div>
                     </div>
                 </div>
-            </div>
-            <ul class="contenedor-silabas">
+                <div class="ejercicio">
+                    <div class="imagen-palabra">
+                        <img src="<?= $dir ?>/img/3.png">
+                    </div>
+                    <div class="contenedor-respuesta">
+                        <div class="palabra" alt="herradura"></div>
+                    </div>
+                </div>
+           </div>
+           <ul class="contenedor-silabas">
                 <li class="silabas">
-                    <h4 class="pieza" alt="ar">ar</h4>
+                    <h4 class="pieza" alt="helado">helado</h4>
                 </li>
                 <li class="silabas">
-                    <h4 class="pieza" alt="er">er</h4>
+                    <h4 class="pieza" alt="hamburguesa">hamburguesa</h4>
                 </li>
                 <li class="silabas">
-                    <h4 class="pieza" alt="ir">ir</h4>
+                    <h4 class="pieza" alt="hada">hada</h4>
                 </li>
                 <li class="silabas">
-                    <h4 class="pieza" alt="or">or</h4>
+                    <h4 class="pieza" alt="herradura">herradura</h4>
                 </li>
-            </ul>           
+                <li class="silabas">
+                    <h4 class="pieza" alt="zanahoria">zanahoria</h4>
+                </li>
+                <li class="silabas">
+                    <h4 class="pieza" alt="helicoptero">helicóptero</h4>
+                </li>
+                <li class="silabas">
+                    <h4 class="pieza" alt="hacha">hacha</h4>
+                </li>
+                <li class="silabas">
+                    <h4 class="pieza" alt="hamaca">hamaca</h4>
+                </li>
+                <li class="silabas">
+                    <h4 class="pieza" alt="hoja">hoja</h4>
+                </li>
+            </ul>
+           
         </div>
     </div>
 
@@ -71,13 +91,13 @@
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
     // Validar
-    function result_tipo_1_3_51() {
+    function result_tipo_1_4_15() {
         var min = $('#Minutos').text();
         var seg = $('#Segundos').text();
         var milseg = $('#Centesimas').text();
         var tiempo = min + ":" + seg + ":" + milseg;
 
-        if (r == 2) {
+        if (r == 3) {
             localStorage.setItem("Nota<?=$cod?>", nota);
             localStorage.setItem("Time<?=$cod?>", tiempo);
             correcto();
