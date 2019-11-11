@@ -167,4 +167,7 @@ $(document).ready(function() {
 });
 $(document).ready(function() {
     $('#incorrecto').modal();
-})
+});
+$(document).ready(function(){
+    $('.materialboxed').materialbox();
+});

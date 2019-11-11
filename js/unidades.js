@@ -63,6 +63,38 @@
                           "3": "¿Qué será? Mi oído me ayudará",
                           "4": "Lectoescritura: Palabras con V-v",
                           "5": "Lectoescritura: Palabras con R-r",
+                          "6": "Lectoescritura: Palabras con C- c y Q - q",
+                          "8": "El adjetivo",
+                          }
+                  },  
+               "4":{
+                  "ruta":"comunicacion/4",
+                  "id":"4",
+                  "nombre": "Unidad 4 - Disfruto del medio ambiente porque lo cuido con amor",
+                  "temas":{
+                          "0": "Lectura: Ondas Expresivas",
+                          "1": "Comprensión lectora",
+                          "2": "¿Qué será? Mi oído me ayudará",
+                          "3": "Lectoescritura: Palabras con H - h",
+                          "4": "Palabras con G - g",
+                          "5": "Analogías",
+                          "6": " El género masculino y femenino"
+    
+                          }
+                  },
+                "5":{
+                  "ruta":"comunicacion/5",
+                  "id":"5",
+                  "nombre": "Unidad 5 - Celebramos la fiesta de mi Perú",
+                  "temas":{
+                          "0": "Un cuento",
+                          "1": "Un cuento 2",
+                          "2": "La descripción de un animal",
+                          "3": "Discriminación visual",
+                          "4": "Lectoescritura: Palabras con J - j",
+                          "5": "Lectoescritura: Palabras con Z - z",
+                          "6": "Lectoescritura: Palabras con ce, ci"
+    
                           }
                   },                               
           }
