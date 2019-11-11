@@ -64,7 +64,9 @@
                           "4": "Lectoescritura: Palabras con V-v",
                           "5": "Lectoescritura: Palabras con R-r",
                           "6": "Lectoescritura: Palabras con C- c y Q - q",
-                          "7": "El adjetivo",
+                          "7": "Término excluido",
+                          "8": "El adjetivo",
+
                           }
                   },  
                "4":{
