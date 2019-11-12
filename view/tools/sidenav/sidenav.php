@@ -70,15 +70,16 @@
 
     var i = 0;
     $('.unidad-p').each(function() {
-
   
       $(this).children('div').html(data[i].nombre);
+
 
       for (let index = 0; index < data[i].temas.length; index++) {
         $(this).children('ul').append('<li class="menu-item-p"><div><a href="../../../'+data[i].ruta+'/'+(index+1)+'">'+data[i].temas[index]+'</a></div></li>');
       }
+
       i++;
-      if(i==4){
+      if(i==5){
         $( "#menu" ).menu({
            classes: {
              "ui-menu": "green"
@@ -86,7 +87,6 @@
          });
       }
 
-    // background-color: #f8ae0dc7!important;
       $(".ui-state-active").css("background-color",color+"!important");
       $(".sidenav").css("background-color",color+"!important");
       $(".ui-widget-content .ui-state-active").css("background-color",color+"!important");
@@ -95,11 +95,5 @@
 
     });
 
-
-    // $('.unidad-p').each(function() {
-    //   $('.unidad-p div').html(data[i].nombre);
-    //   i++;
-    // });
-    //
   });
 </script>

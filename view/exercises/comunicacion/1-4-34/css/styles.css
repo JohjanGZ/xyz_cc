@@ -1,0 +1,95 @@
+h5 {
+    width: 85%;
+}
+
+.contenedor-ejemplo {
+    width: 50%;
+    margin: 0 auto;
+    border: 3px solid silver;
+    border-radius: 12px;
+    padding: 3rem 0;
+}
+
+.contenedor-oraciones {
+    border: none;
+}
+
+.contenedor-oracion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-oracion img {
+    width: 100px;
+    height: 100px;
+}
+
+.contenedor-oracion span,
+.contenedor-palabras span {
+    display: block;
+    font-size: 1.9rem;
+}
+
+.contenedor-oracion span.span-before,
+.contenedor-palabras span.span-before {
+    margin-right: 7px;
+}
+
+.contenedor-oracion span.span-after,
+.contenedor-palabras span.span-before {
+    margin-left: 7px;
+}
+
+.contenedor-palabras {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.contenedor-palabras .palabra {
+    border: 3px solid silver;
+    border-radius: 12px;
+    width: 150px;
+    height: 150px;
+    margin: 0 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.palabra img {
+    width: 90%;
+}
+
+.contenedor-ejercicio {
+    padding-top: 30px;
+}
+
+.contenedor-oraciones {
+    padding-top: 30px;
+}
+
+@media(max-height: 640px) {
+    .contenedor-ejemplo {
+        padding: 0;
+        padding-bottom: 10px;
+    }
+    .contenedor-palabras-e>div h4 {
+        padding: 1px;
+    }
+    .contenedor-ejercicio {
+        display: flex;
+    }
+    .contenedor-silabas {
+        padding-top: 16px;
+    }
+    .silabas h4 {
+        margin-top: 14px;
+    }
+    .contenedor-oracion img {
+        width: 90px;
+        height: 90px;
+    }
+}

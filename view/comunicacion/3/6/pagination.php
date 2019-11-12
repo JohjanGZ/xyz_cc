@@ -195,7 +195,7 @@
     function start_37(){   
         $("#ventana").load(ruta+'1-3-37/index.php', 
         { 
-        next: "PAge_38()", 
+        next: "Page_38()", 
         procesar:"result_tipo_1_3_37()",
         titulo:"<center><h5><span class='ftitulo'>Clasifica</span> las palabras.</h5></center>",
         restaurar:"start_37()",

@@ -15,10 +15,6 @@ $(".pieza").draggable({
 });
 
 $(".palabra").droppable({
-    classes: {
-        "ui-droppable-active": "ui-state-active",
-        "ui-droppable-hover": "ui-state-hover"
-    },
     drop: function(event, ui) {
         $(this).css("background-color", "rgba(139, 195, 74, 0.14)");
         element2 = $(this).attr("alt");

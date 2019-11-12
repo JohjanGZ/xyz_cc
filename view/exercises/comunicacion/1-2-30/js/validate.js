@@ -15,10 +15,6 @@ $(".pieza").draggable({
 });
 // uA
 $("#uno").droppable({
-    classes: {
-        "ui-droppable-active": "ui-state-active",
-        "ui-droppable-hover": "ui-state-hover"
-    },
     drop: function(event, ui) {
         $(this).css("background-color", "rgba(139, 195, 74, 0.14)");
         $("#" + element).css("background-color", "transparent");
@@ -26,7 +22,7 @@ $("#uno").droppable({
             r++;
         }
         element.removeClass("pieza");
-        
+
     }
 });
 
@@ -43,7 +39,7 @@ $("#dos").droppable({
             r++;
         }
         element.removeClass("pieza");
-        
+
 
     }
 });
@@ -60,7 +56,7 @@ $("#tres").droppable({
             r++;
         }
         element.removeClass("pieza");
-        
+
 
     }
 });
@@ -77,7 +73,7 @@ $("#cuatro").droppable({
             r++;
         }
         element.removeClass("pieza");
-        
+
 
     }
 });
@@ -94,7 +90,7 @@ $("#cinco").droppable({
             r++;
         }
         element.removeClass("pieza");
-        
+
 
     }
 });

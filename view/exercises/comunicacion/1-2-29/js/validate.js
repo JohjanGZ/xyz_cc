@@ -14,10 +14,6 @@ $(".pieza").draggable({
 });
 // uA
 $("#ann2").droppable({
-    classes: {
-        "ui-droppable-active": "ui-state-active",
-        "ui-droppable-hover": "ui-state-hover"
-    },
     drop: function(event, ui) {
         $(this).css("background-color", "rgba(139, 195, 74, 0.14)");
         $("#" + element).css("background-color", "transparent");
@@ -30,10 +26,6 @@ $("#ann2").droppable({
 });
 
 $("#ann3").droppable({
-    classes: {
-        "ui-droppable-active": "ui-state-active",
-        "ui-droppable-hover": "ui-state-hover"
-    },
     drop: function(event, ui) {
         $(this).css("background-color", "rgba(139, 195, 74, 0.14)");
         $("#" + element).css("background-color", "transparent");
@@ -46,10 +38,6 @@ $("#ann3").droppable({
 });
 
 $("#ann").droppable({
-    classes: {
-        "ui-droppable-active": "ui-state-active",
-        "ui-droppable-hover": "ui-state-hover"
-    },
     drop: function(event, ui) {
         $(this).css("background-color", "rgba(139, 195, 74, 0.14)");
         $("#" + element).css("background-color", "transparent");
@@ -64,10 +52,6 @@ $("#ann").droppable({
 
 
 $("#enn2").droppable({
-    classes: {
-        "ui-droppable-active": "ui-state-active",
-        "ui-droppable-hover": "ui-state-hover"
-    },
     drop: function(event, ui) {
         $(this).css("background-color", "rgba(139, 195, 74, 0.14)");
         $("#" + element).css("background-color", "transparent");
@@ -80,10 +64,6 @@ $("#enn2").droppable({
 });
 
 $("#enn").droppable({
-    classes: {
-        "ui-droppable-active": "ui-state-active",
-        "ui-droppable-hover": "ui-state-hover"
-    },
     drop: function(event, ui) {
         $(this).css("background-color", "rgba(139, 195, 74, 0.14)");
         $("#" + element).css("background-color", "transparent");
@@ -96,10 +76,6 @@ $("#enn").droppable({
 });
 
 $("#inn").droppable({
-    classes: {
-        "ui-droppable-active": "ui-state-active",
-        "ui-droppable-hover": "ui-state-hover"
-    },
     drop: function(event, ui) {
         $(this).css("background-color", "rgba(139, 195, 74, 0.14)");
         $("#" + element).css("background-color", "transparent");
@@ -112,10 +88,6 @@ $("#inn").droppable({
 });
 
 $("#inn2").droppable({
-    classes: {
-        "ui-droppable-active": "ui-state-active",
-        "ui-droppable-hover": "ui-state-hover"
-    },
     drop: function(event, ui) {
         $(this).css("background-color", "rgba(139, 195, 74, 0.14)");
         $("#" + element).css("background-color", "transparent");
@@ -129,10 +101,6 @@ $("#inn2").droppable({
 
 
 $("#onn").droppable({
-    classes: {
-        "ui-droppable-active": "ui-state-active",
-        "ui-droppable-hover": "ui-state-hover"
-    },
     drop: function(event, ui) {
         $(this).css("background-color", "rgba(139, 195, 74, 0.14)");
         $("#" + element).css("background-color", "transparent");

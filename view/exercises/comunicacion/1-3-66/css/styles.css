@@ -1,0 +1,55 @@
+h5 {
+    width: 85%;
+}
+
+
+/************/
+
+.contenedor-silabas {
+    display: inline-flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.contenedor-silabas .silabas {
+    margin: 0px 5px;
+}
+
+.silabas h4 {
+    display: inline-block;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 3px 15px;
+    border: 3px solid silver;
+    border-radius: 12px;
+}
+
+.silabas h4:hover {
+    border-color: #37D3F7;
+}
+
+
+/**************/
+
+.contenedor-ejercicio {
+    padding-top: 30px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contenedor-ejercicio img {
+    width: 150px;
+    height: 150px;
+}
+
+@media(max-height: 640px) {
+    .contenedor-ejercicio {
+        padding-top: 15px;
+    }
+    .silabas h4 {
+        margin-top: 6px;
+    }
+}

@@ -19,12 +19,12 @@
   var tema = ruta.substr(-2,1);
   var unidad = ruta.substr(-4,1);
 
-
-
-  console.log(data);
+  if(unidad == "/"){
+    unidad = ruta.substr(-5,1);
+    tema = ruta.substr(-3,2);
+  }
 
   $(".nombre-unidad").html(data[unidad].nombre);
-  console.log(data[unidad].nombre);
   $(".nombre-tema").html(data[unidad].temas[tema-1]);
 
 

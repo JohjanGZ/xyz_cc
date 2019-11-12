@@ -15,10 +15,6 @@ $(".pieza").draggable({
 });
 // uA
 $("#naa").droppable({
-    classes: {
-        "ui-droppable-active": "ui-state-active",
-        "ui-droppable-hover": "ui-state-hover"
-    },
     drop: function(event, ui) {
         $(this).css("background-color", "rgba(139, 195, 74, 0.14)");
         $("#" + element).css("background-color", "transparent");
@@ -32,10 +28,6 @@ $("#naa").droppable({
 console.log(r);
 
 $("#naa2").droppable({
-    classes: {
-        "ui-droppable-active": "ui-state-active",
-        "ui-droppable-hover": "ui-state-hover"
-    },
     drop: function(event, ui) {
         $(this).css("background-color", "rgba(139, 195, 74, 0.14)");
         $("#" + element).css("background-color", "transparent");
@@ -49,10 +41,6 @@ $("#naa2").droppable({
 });
 
 $("#naa3").droppable({
-    classes: {
-        "ui-droppable-active": "ui-state-active",
-        "ui-droppable-hover": "ui-state-hover"
-    },
     drop: function(event, ui) {
         $(this).css("background-color", "rgba(139, 195, 74, 0.14)");
         $("#" + element).css("background-color", "transparent");
@@ -66,10 +54,6 @@ $("#naa3").droppable({
 });
 
 $("#noo").droppable({
-    classes: {
-        "ui-droppable-active": "ui-state-active",
-        "ui-droppable-hover": "ui-state-hover"
-    },
     drop: function(event, ui) {
         $(this).css("background-color", "rgba(139, 195, 74, 0.14)");
         $("#" + element).css("background-color", "transparent");
@@ -83,10 +67,6 @@ $("#noo").droppable({
 });
 
 $("#noo2").droppable({
-    classes: {
-        "ui-droppable-active": "ui-state-active",
-        "ui-droppable-hover": "ui-state-hover"
-    },
     drop: function(event, ui) {
         $(this).css("background-color", "rgba(139, 195, 74, 0.14)");
         $("#" + element).css("background-color", "transparent");
@@ -100,10 +80,6 @@ $("#noo2").droppable({
 });
 
 $("#noo3").droppable({
-    classes: {
-        "ui-droppable-active": "ui-state-active",
-        "ui-droppable-hover": "ui-state-hover"
-    },
     drop: function(event, ui) {
         $(this).css("background-color", "rgba(139, 195, 74, 0.14)");
         $("#" + element).css("background-color", "transparent");
