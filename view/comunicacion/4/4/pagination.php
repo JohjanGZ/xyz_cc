@@ -287,7 +287,7 @@
     function start_27(){   
         $("#ventana").load(ruta+'1-4-27/index.php', 
         { 
-        next: "Page_28()", 
+        next: "resultado()", 
         procesar:"result_tipo_1_4_27()",
         titulo:"<center><h5><span class='ftitulo'>Completa</span> el crucigrama con los nombres de las imagenes.</h5></center>",
         restaurar:"start_27()",

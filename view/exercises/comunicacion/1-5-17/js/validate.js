@@ -1,25 +1,56 @@
-var r = 0;
-var ul = document.querySelector('.contenedor-ejercicios');
-for (var i = ul.children.length; i >= 0; i--) {
-    ul.appendChild(ul.children[Math.random() * i | 0]);
+var arr = ['a', 'z'];
+for (var i = arr[0].charCodeAt(); i <= arr[1].charCodeAt(); i++) {
+    $('.abecedario').append("<div class='letras'><span  id='" + String.fromCharCode(i) + "'>" + String.fromCharCode(i) + "</span></div>");
+    // console.log(i);
 }
+
+var r = 0;
+var letra = "";
+
+// New on() style:
+$('.letras span').click(function() {
+    letra = $(this).text();
+    // Estilos a span
+    $('.letras span').css({ "transform": "scale(1)", "border": "2px solid #37D3F7", "box-shadow": "none", "background": "transparent" });
+    $(this).css({ "border": "solid #37D3F7", "box-shadow": "0 0 4px #00000057", "background": "#B6ECFF" });
+
+    console.log(letra)
+});
+
+
 $('.palabra').click(function() {
+    $(this).css({ "border": "solid #37D3F7", "background": "#B6ECFF" });
 
-    $(this).css({
-        "border": "solid",
-        "border-color": "#37D3F7",
-        "background": "#B6ECFF"
-    });
-    var element = $(this).attr("alt");
-    var select = $(this).attr("value");
-    if (select != "seleccionado") {
+    if ($(this).attr("alt") == letra) {
 
-        if (element == "n") {
+        if ($(this).text() == "") {
             r++;
-            $(this).attr("value", "seleccionado");
         } else {
-            r--;
-            $(this).attr("value", "seleccionado");
+
+            if ($(this).text() != $(this).attr("alt")) {
+                r = r + 2;
+            }
+
         }
+
+    } else {
+
+        if ($(this).text() == "") {
+            r--;
+        } else {
+
+            if ($(this).text() == $(this).attr("alt")) {
+                r = r - 2;
+            }
+
+        }
+
     }
-})
+
+    $(this).text(letra);
+
+    console.log(letra);
+
+    console.log(r);
+
+});
