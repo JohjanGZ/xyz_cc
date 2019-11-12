@@ -6,7 +6,6 @@ h4 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-top: 30px;
 }
 
 #palabras {
@@ -14,10 +13,9 @@ h4 {
 }
 
 #palabras li {
-    margin-bottom: 2vh;
+    margin-bottom: 1vh;
     margin-right: 1px;
     margin-left: 25px;
-    margin-right: 25px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -30,7 +28,8 @@ h4 {
 }
 
 .box {
-    width: 370px;
+    width: 320px;
+    height: 60px;
     border: 3px solid silver;
     border-radius: 12px;
     display: flex;
@@ -38,10 +37,12 @@ h4 {
     justify-content: center;
     padding: 7px 10px;
 }
-
-.box img {
-    width: 50%;
-    height: auto;
+.box h4 {
+    font-size: 28px;
+    margin: 0;
+}
+#palabras img {
+    width: 80%;
 }
 
 .box:hover {

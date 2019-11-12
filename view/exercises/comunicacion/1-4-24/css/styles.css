@@ -1,0 +1,105 @@
+    h4 {
+        text-align: center;
+    }
+    
+    .contenedor-elementos {
+        /* display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap; */
+    }
+    
+    .contenedor-element {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+    }
+    
+    .contenedor-element>div {
+        margin: 0 15px;
+    }
+    .contenedor-element .imagen-nube img {
+        width: 160px;
+    }
+    .contenedor-element .imagen img {
+        width: 93px;
+    }
+    
+    .silaba {
+        position: relative;
+    }
+    
+    h4 span {
+        color: #0095DA;
+        margin-right: 5px;
+    }
+    
+    .silaba-faltante {
+        width: 80px;
+        height: 40px;
+        background-color: #37D3F7;
+        margin: auto;
+        border-radius: 12px;
+    }
+    
+    .silaba-faltante h4 {
+        line-height: 1.9rem!important;
+    }
+    
+    .contenedor-faltante {
+        border: 3px solid silver;
+        width: 120px;
+        height: 50px;
+        border-radius: 12px;
+    }
+    
+    .contenedor-faltante.mr {
+        margin-left: 0;
+    }
+    
+    .silaba span.span-after {
+        right: -150px;
+    }
+    
+    span.moli {
+        left: 0;
+    }
+    
+    .contenedor-silabas {
+        display: flex;
+        width: 25%;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+    
+    /*.contenedor-silabas .silabas {
+        width: 50px;
+    }*/
+    
+    .silabas h4 {
+        background: #37D3F7;
+        display: inline-block;
+        font-size: 1.5rem;
+        padding: 7px;
+        border-radius: 12px;
+    }
+    .silabas h4:hover {
+        background: #37D3F7;
+    }
+    @media (max-height: 640px) {
+        .contenedor-element {
+            width: 33%!important;
+            padding: 16px!important;
+        }
+        .contenedor-faltante {
+            border: 3px solid silver;
+            width: 200px;
+            height: 50px;
+            border-radius: 12px;
+        }
+        .contenedor-element .imagen img {
+            width: 100px;
+        }
+        
+    }

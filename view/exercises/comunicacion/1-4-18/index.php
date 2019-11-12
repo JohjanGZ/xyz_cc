@@ -11,26 +11,46 @@
     
   <div class="container">
         <div class="row">
-            <div class="campo" id="palabras">
-            <center><h5>¿Cuál es el momento mágico de la espinaca?</h5></center>
-
-                <ul id="listA">
-                    <li id="obj1" >
-                        <div class="box a" alt="n">
-                            <h4>El momento de servir de comida.</h4>
-                        </div>
-                    </li>
-                    <li id="obj2" >
-                        <div class="box a" alt="">
-                            <h4>El momento de servir de basura.</h4>
-                        </div>
-                    </li>
-                    <li id="obj3" >
-                        <div class="box a" alt="">
-                            <h4>El momento de servir de postre.</h4>
-                        </div>
-                    </li>
-                </ul>
+            <div class="col l6">
+                <div class="campo" id="palabras">
+                    <ul id="listA">
+                        <li id="obj1" >
+                            <div class="box a" alt="n">
+                                <h4>Helado</h4>
+                            </div>
+                        </li>
+                        <li id="obj2" >
+                            <div class="box a" alt="">
+                                <h4>Hilado</h4>
+                            </div>
+                        </li>
+                        <li id="obj3" >
+                            <div class="box a" alt="n">
+                                <h4>Helado</h4>
+                            </div>
+                        </li>
+                        <li id="obj3" >
+                            <div class="box a" alt="">
+                                <h4>Helada</h4>
+                            </div>
+                        </li>
+                        <li id="obj3" >
+                            <div class="box a" alt="">
+                                <h4>Hilado</h4>
+                            </div>
+                        </li>
+                        <li id="obj3" >
+                            <div class="box a" alt="n">
+                                <h4>Helado</h4>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col l6">
+                <div class="campo" id="palabras">
+                    <img src="<?= $dir ?>/img/principal.png" class="responsive-img">
+                </div>
             </div>
         </div>
     </div>
@@ -56,13 +76,13 @@
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
     // Validar
-    function result_tipo_1_3_11() {
+    function result_tipo_1_4_18() {
         var min = $('#Minutos').text();
         var seg = $('#Segundos').text();
         var milseg = $('#Centesimas').text();
         var tiempo = min + ":" + seg + ":" + milseg;
 
-        if (r == 1) {
+        if (r == 3) {
             localStorage.setItem("Nota<?=$cod?>", nota);
             localStorage.setItem("Time<?=$cod?>", tiempo);
             correcto();

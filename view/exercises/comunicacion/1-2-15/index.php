@@ -11,7 +11,7 @@
     
     <div class="container">
         <div class="box-img">
-            <img src="<?= $dir ?>/img/1.png" class="responsive-img">
+            <img src="<?= $dir ?>/img/1.png" class="responsive-img materialboxed" style="background-color: #fff;">
         </div>
     </div>
   </body>

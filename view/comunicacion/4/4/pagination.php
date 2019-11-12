@@ -172,6 +172,132 @@
         );
         return false;
     };
+    function start_19(){   
+        $("#ventana").load(ruta+'1-4-19/index.php', 
+        { 
+        next: "Page_20()", 
+        procesar:"result_tipo_1_4_19()",
+        titulo:"<center><h5><span class='ftitulo'>Relaciona</span> cada palabra con su respectiva imagen.</h5></center>",
+        restaurar:"start_19()",
+        dir:ruta,
+        cod: "1-4-19",
+        nota:cal
+        }          
+        );
+        return false;
+    };
+    function start_20(){   
+        $("#ventana").load(ruta+'1-4-20/index.php', 
+        { 
+        next: "Page_21()", 
+        procesar:"result_tipo_1_4_20()",
+        titulo:"<center><h5><span class='ftitulo'>Relaciona</span> cada palabra con su respectiva imagen.</h5></center>",
+        restaurar:"start_20()",
+        dir:ruta,
+        cod: "1-4-20",
+        nota:cal
+        }          
+        );
+        return false;
+    };
+    function start_21(){   
+        $("#ventana").load(ruta+'1-4-21/index.php', 
+        { 
+        next: "Page_22()", 
+        procesar:"result_tipo_1_4_21()",
+        titulo:"<center><h5><span class='ftitulo'>Completa</span> las palabras con las sílabas <span class='ftitulo'>ha, he, hi, ho, hu</span>.</h5></center>",
+        restaurar:"start_21()",
+        dir:ruta,
+        cod: "1-4-21",
+        nota:cal
+        }          
+        );
+        return false;
+    };
+    function start_22(){   
+        $("#ventana").load(ruta+'1-4-22/index.php', 
+        { 
+        next: "Page_23()", 
+        procesar:"result_tipo_1_4_22()",
+        titulo:"<center><h5><span class='ftitulo'>Completa</span> las palabras con las sílabas <span class='ftitulo'>ha, he, hi, ho, hu</span>.</h5></center>",
+        restaurar:"start_22()",
+        dir:ruta,
+        cod: "1-4-22",
+        nota:cal
+        }          
+        );
+        return false;
+    };
+    function start_23(){   
+        $("#ventana").load(ruta+'1-4-23/index.php', 
+        { 
+        next: "Page_24()", 
+        procesar:"result_tipo_1_4_23()",
+        titulo:"<center><h5><span class='ftitulo'>Adivina</span> las palabras con <span class='ftitulo'>h</span> y luego <span class='ftitulo'>escribelas</span>.</h5></center>",
+        restaurar:"start_23()",
+        dir:ruta,
+        cod: "1-4-23",
+        nota:cal
+        }          
+        );
+        return false;
+    };
+    function start_24(){   
+        $("#ventana").load(ruta+'1-4-24/index.php', 
+        { 
+        next: "Page_25()", 
+        procesar:"result_tipo_1_4_24()",
+        titulo:"<center><h5><span class='ftitulo'>Adivina</span> las palabras con <span class='ftitulo'>h</span> y luego <span class='ftitulo'>escribelas</span>.</h5></center>",
+        restaurar:"start_24()",
+        dir:ruta,
+        cod: "1-4-24",
+        nota:cal
+        }          
+        );
+        return false;
+    };
+    function start_25(){   
+        $("#ventana").load(ruta+'1-4-25/index.php', 
+        { 
+        next: "Page_26()", 
+        procesar:"result_tipo_1_4_25()",
+        titulo:"<center><h5><span class='ftitulo'>Completa</span> las oraciones <span class='ftitulo'>escribelas</span> y luego <span class='ftitulo'>escribelas</span>.</h5></center>",
+        restaurar:"start_25()",
+        dir:ruta,
+        cod: "1-4-25",
+        nota:cal
+        }          
+        );
+        return false;
+    };
+    function start_26(){   
+        $("#ventana").load(ruta+'1-4-26/index.php', 
+        { 
+        next: "Page_27()", 
+        procesar:"result_tipo_1_4_26()",
+        titulo:"<center><h5><span class='ftitulo'>Completa</span> las oraciones <span class='ftitulo'>escribelas</span> y luego <span class='ftitulo'>escribelas</span>.</h5></center>",
+        restaurar:"start_26()",
+        dir:ruta,
+        cod: "1-4-26",
+        nota:cal
+        }          
+        );
+        return false;
+    };
+    function start_27(){   
+        $("#ventana").load(ruta+'1-4-27/index.php', 
+        { 
+        next: "Page_28()", 
+        procesar:"result_tipo_1_4_27()",
+        titulo:"<center><h5><span class='ftitulo'>Completa</span> el crucigrama con los nombres de las imagenes.</h5></center>",
+        restaurar:"start_27()",
+        dir:ruta,
+        cod: "1-4-27",
+        nota:cal
+        }          
+        );
+        return false;
+    };
     function resultado(){
         $("#ventana").load('../../../exercises/resultado/resultado.php');
         return false;
