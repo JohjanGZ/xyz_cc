@@ -13,99 +13,80 @@
             <div class="campo" id="palabras">
                 <ul id="listA">
                     <li>
-                        <div class="box" alt="n">
+                        <div class="box">
                             <img src="<?= $dir ?>/img/1.png" class="responsive-img">
                         </div>
                         <div class="caja-palabra">
-                            <div id="ta" class="vocal">
-
-                            </div>
-                            <span class="span-after">za</span>
+                            <span class="span-before">pi</span>
+                            <div id="1" class="vocal"></div>
                         </div>
-
                     </li>
                     <li>
-                        <div class="box" alt="">
+                        <div class="box">
                             <img src="<?= $dir ?>/img/2.png" class="responsive-img">
                         </div>
                         <div class="caja-palabra">
-
-                            <div id="te" class="vocal">
-
-                            </div>
-                            <span class="span-after">éfono</span>
+                            <span class="span-before">pa</span>
+                            <div id="2" class="vocal"></div>
                         </div>
-
                     </li>
                     <li>
-                        <div class="box" alt="n">
+                        <div class="box">
                             <img src="<?= $dir ?>/img/3.png" class="responsive-img">
                         </div>
                         <div class="caja-palabra">
-                            <div id="ti" class="vocal">
-
-                            </div>
-                            <span class="span-after">jera</span>
+                            <span class="span-before">le</span>
+                            <div id="3" class="vocal"></div>
                         </div>
-
                     </li>
                     <li>
-                        <div class="box" alt="n">
+                        <div class="box">
                             <img src="<?= $dir ?>/img/4.png" class="responsive-img">
                         </div>
                         <div class="caja-palabra">
-                            <span class="span-before">Pi</span>
-                            <div id="to" class="vocal">
-
-                            </div>
+                            <span class="span-before">ara</span>
+                            <div id="4" class="vocal"></div>
                         </div>
-
                     </li>
                     <li>
-                        <div class="box" alt="n">
+                        <div class="box">
                             <img src="<?= $dir ?>/img/5.png" class="responsive-img">
                         </div>
                         <div class="caja-palabra">
-
-                            <div id="to2" class="vocal">
-
-                            </div>
-                            <span class="span-after">alla</span>
+                            <span class="span-before">ni</span>
+                            <div id="5" class="vocal"></div>
                         </div>
                     </li>
                     <li>
-                        <div class="box" alt="n">
+                        <div class="box">
                             <img src="<?= $dir ?>/img/6.png" class="responsive-img">
                         </div>
                         <div class="caja-palabra">
-                            <span class="span-before">Car</span>
-
-                            <div id="tu" class="vocal">
-
-                            </div>
-                            <span class="span-after">chera</span>
+                            <span class="span-before">se</span>
+                            <div id="6" class="vocal"></div>
+                            <span class="span-after">rita</span>
                         </div>
                     </li>
                 </ul>
             </div>
             <div class="contenedor-silabas">
-                <div class="silaba pieza" id="taa">
-                    <h4>ta</h4>
+                <div class="silaba pieza" alt="ña">
+                    <h4>ña</h4>
                 </div>
-                <div class="silaba pieza" id="tee">
-                    <h4>te</h4>
+                <div class="silaba pieza" alt="ño">
+                    <h4>ño</h4>
                 </div>
-                <div class="silaba pieza" id="tii">
-                    <h4>ti</h4>
+                <div class="silaba pieza" alt="ña">
+                    <h4>ña</h4>
                 </div>
-                <div class="silaba pieza" id="too">
-                    <h4>to</h4>
+                <div class="silaba pieza" alt="ña">
+                    <h4>ña</h4>
                 </div>
-                <div class="silaba pieza" id="too2">
-                    <h4>to</h4>
+                <div class="silaba pieza" alt="ño">
+                    <h4>ño</h4>
                 </div>
-                <div class="silaba pieza" id="tuu">
-                    <h4>tu</h4>
+                <div class="silaba pieza" alt="ño">
+                    <h4>ño</h4>
                 </div>
             </div>
         </div>
@@ -116,7 +97,7 @@
         <div class="modal-content">
             <h4>Respuesta correcta</h4>
             <center>
-              <img class="materialboxed"  width="80%" src="<?= $dir ?>/img/respuesta.png">
+              <img class="materialboxed"  width="80%" src="<?= $dir ?>/img/respuesta.jpg">
             </center>
         </div>
         <div class="modal-footer">
@@ -131,13 +112,13 @@
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
     // Validar
-    function result_tipo_1_2_11() {
+    function result_tipo_1_6_8() {
         var min = $('#Minutos').text();
         var seg = $('#Segundos').text();
         var milseg = $('#Centesimas').text();
         var tiempo = min + ":" + seg + ":" + milseg;
 
-        if (ta == 1 && te == 1 && ti == 1 && to == 1 && to2 == 1) {
+        if (ña == 3 && ño == 3) {
             localStorage.setItem("Nota<?=$cod?>", nota);
             localStorage.setItem("Time<?=$cod?>", tiempo);
             correcto();

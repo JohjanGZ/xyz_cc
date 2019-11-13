@@ -17,6 +17,20 @@
                             <td></td>
                             <td></td>
                             <td></td>
+                            <td></td>
+                            <td>1</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>2</td>
                             <td><div class="palabra" maxlength="1" alt="h"></div></td>
                             <td><div class="palabra" maxlength="1" alt="i"></div></td>
                             <td><div class="palabra" maxlength="1" alt="l"></div></td>
@@ -26,6 +40,7 @@
                             <td></td>
                         </tr>
                         <tr>
+                            <td></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -41,6 +56,7 @@
                             <td></td>
                             <td></td>
                             <td></td>
+                            <td></td>
                             <td><div class="palabra" maxlength="1" alt="l"></div></td>
                             <td></td>
                             <td></td>
@@ -52,6 +68,7 @@
                         <tr>
                             <td></td>
                             <td></td>
+                            <td>6</td>
                             <td><div class="palabra" maxlength="1" alt="h"></div></td>
                             <td><div class="palabra" maxlength="1" alt="a"></div></td>
                             <td><div class="palabra" maxlength="1" alt="d"></div></td>
@@ -65,6 +82,7 @@
                             <td></td>
                             <td></td>
                             <td></td>
+                            <td>5</td>
                             <td><div class="palabra" maxlength="1" alt="d"></div></td>
                             <td></td>
                             <td></td>
@@ -76,6 +94,7 @@
                         <tr>
                             <td></td>
                             <td></td>
+                            <td>3</td>
                             <td><div class="palabra" maxlength="1" alt="h"></div></td>
                             <td><div class="palabra" maxlength="1" alt="o"></div></td>
                             <td><div class="palabra" maxlength="1" alt="s"></div></td>
@@ -88,6 +107,7 @@
                         <tr>
                             <td></td>
                             <td></td>
+                            <td></td>
                             <td><div class="palabra" maxlength="1" alt="o"></div></td>
                             <td></td>
                             <td></td>
@@ -98,6 +118,7 @@
                             <td></td>
                         </tr>
                         <tr>
+                            <td></td>
                             <td></td>
                             <td></td>
                             <td><div class="palabra" maxlength="1" alt="t"></div></td>
@@ -110,6 +131,7 @@
                             <td></td>
                         </tr>
                         <tr>
+                            <td>4</td>
                             <td><div class="palabra" maxlength="1" alt="h"></div></td>
                             <td><div class="palabra" maxlength="1" alt="u"></div></td>
                             <td><div class="palabra" maxlength="1" alt="e"></div></td>
@@ -122,6 +144,7 @@
                             <td></td>
                         </tr>
                         <tr>
+                            <td></td>
                             <td></td>
                             <td></td>
                             <td><div class="palabra" maxlength="1" alt="l"></div></td>

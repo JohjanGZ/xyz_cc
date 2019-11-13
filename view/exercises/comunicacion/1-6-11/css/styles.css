@@ -1,0 +1,77 @@
+.container-two {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 70%;
+}
+
+.campo {
+  padding: 50px 0 20px;
+}
+
+.campo img {
+  width: 95px;
+  height: auto;
+}
+
+/* tren 1 y 2 */
+
+.tren1, .tren2 {
+  display: flex;
+  justify-content: center;
+}
+
+.tren1 {
+  align-items: center;
+  margin-bottom: 3vh;
+}
+
+.tren2 {
+  margin-bottom: 3vh;
+}
+
+.letras {
+  margin-right: 1px;
+}
+
+.letras img {
+  border-radius: 12px;
+}
+
+#derecha {
+  margin-top: -11px;
+}
+
+.tren1:hover, .tren2:hover {
+  cursor: pointer;
+}
+
+/*  Palabra */
+
+.ordenar-palabra {
+  display: flex;
+  justify-content: center;
+}
+
+.box-palabra {
+  text-align: center;
+}
+
+.box-palabra span {
+  font-size: 2em;
+}
+
+.palabra {
+  display: flex;
+  margin-right: 2vh;
+}
+
+.palabra .p {
+  width: 80px;
+  height: 50px;
+  border-radius: 12px;
+  border: 2px solid #37D3F7;
+  margin-right: 0.9vh;
+  display: flex;
+  justify-content: center;
+  font-size: 1.8em;
+}

@@ -1,11 +1,10 @@
-var r = 0;
-var ta = 0;
-var te = 0;
-var ti = 0;
-var to = 0;
-var to2 = 0;
-var tu = 0;
+var ña = 0;
+var ño = 0;
 
+var ul = document.querySelector('#listA');
+for (var i = ul.children.length; i >= 0; i--) {
+    ul.appendChild(ul.children[Math.random() * i | 0]);
+}
 var ul = document.querySelector('.contenedor-silabas');
 for (var i = ul.children.length; i >= 0; i--) {
     ul.appendChild(ul.children[Math.random() * i | 0]);
@@ -13,83 +12,83 @@ for (var i = ul.children.length; i >= 0; i--) {
 
 $(".pieza").draggable({
     start: function() {
-        element = $(this).attr("id");
+        element = $(this).attr("alt");
     }
 });
 
 // ta
-$("#ta").droppable({
+$("#1").droppable({
 
     drop: function(event, ui) {
         $("#" + element + " h4").css("background-color", "transparent");
-        if (element == "taa") {
-            ta++
+        if (element == "ña") {
+            ña++
         }
         element.removeClass("pieza");
     }
 });
 
 // te
-$("#te").droppable({
+$("#2").droppable({
 
     drop: function(event, ui) {
         $("#" + element + " h4").css("background-color", "transparent");
-        if (element == "tee") {
-            te++
+        if (element == "ño") {
+            ño++
         }
         element.removeClass("pieza");
     }
 });
 
 // ti
-$("#ti").droppable({
+$("#3").droppable({
 
     drop: function(event, ui) {
         $(this).css("background-color", "transparent");
         $("#" + element + " h4").css("background-color", "transparent");
-        if (element == "tii") {
-            ti++
+        if (element == "ña") {
+            ña++
         }
         element.removeClass("pieza");
     }
 });
 
 // to
-$("#to").droppable({
+$("#4").droppable({
 
     drop: function(event, ui) {
         $(this).css("background-color", "transparent");
         $("#" + element + " h4").css("background-color", "transparent");
-        if (element == "too" || element == "too2") {
-            to++
+        if (element == "ña") {
+            ña++
         }
         element.removeClass("pieza");
     }
 });
 
 // to2
-$("#to2").droppable({
+$("#5").droppable({
 
     drop: function(event, ui) {
         $(this).css("background-color", "transparent");
         $("#" + element + " h4").css("background-color", "transparent");
 
-        if (element == "too" || element == "too2") {
-            to2++
+        if (element == "ño") {
+            ño++
         }
         element.removeClass("pieza");
     }
 });
 
 // tu
-$("#tu").droppable({
+$("#6").droppable({
 
     drop: function(event, ui) {
         $(this).css("background-color", "transparent");
         $("#" + element + " h4").css("background-color", "transparent");
 
-        if (element == "tu") {
-            to2++
+        if (element == "ño") {
+            ño++
         }
         element.removeClass("pieza");
     }

@@ -17,6 +17,7 @@
                             <td></td>
                             <td></td>
                             <td></td>
+                            <td>1</td>
                             <td><div class="palabra" maxlength="1" alt="s"></div></td>
                             <td><div class="palabra" maxlength="1" alt="u"></div></td>
                             <td><div class="palabra" maxlength="1" alt="e"></div></td>
@@ -27,6 +28,7 @@
                         <tr>
                             <td></td>
                             <td></td>
+                            <td>2</td>
                             <td><div class="palabra" maxlength="1" alt="p"></div></td>
                             <td><div class="palabra" maxlength="e" alt="e"></div></td>
                             <td><div class="palabra" maxlength="1" alt="s"></div></td>
@@ -37,6 +39,7 @@
                         </tr>
                         <tr>
                             <td></td>
+                            <td>3</td>
                             <td><div class="palabra" maxlength="1" alt="p"></div></td>
                             <td><div class="palabra" maxlength="1" alt="a"></div></td>
                             <td><div class="palabra" maxlength="1" alt="ñ"></div></td>
@@ -47,6 +50,7 @@
                             <td></td>
                         </tr>
                         <tr>
+                            <td>4</td>
                             <td><div class="palabra" maxlength="1" alt="n"></div></td>
                             <td><div class="palabra" maxlength="1" alt="i"></div></td>
                             <td><div class="palabra" maxlength="1" alt="ñ"></div></td>
@@ -60,7 +64,7 @@
                         <tr>
                             <td></td>
                             <td></td>
-                            <td></td>
+                            <td>5</td>
                             <td><div class="palabra" maxlength="1" alt="l"></div></td>
                             <td><div class="palabra" maxlength="1" alt="e"></div></td>
                             <td><div class="palabra" maxlength="1" alt="ñ"></div></td>
@@ -120,7 +124,7 @@
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
     // Validar
-    function result_tipo_1_6_93() {
+    function result_tipo_1_6_4() {
         var min = $('#Minutos').text();
         var seg = $('#Segundos').text();
         var milseg = $('#Centesimas').text();
