@@ -17,54 +17,54 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td><div class="palabra" maxlength="1" id="1"></div></td>
-                            <td><div class="palabra" maxlength="1" id="2"></div></td>
-                            <td><div class="palabra" maxlength="1" id="3"></div></td>
-                            <td><div class="palabra" maxlength="1" id="4"></div></td>
-                            <td><div class="palabra" maxlength="1" id="5"></div></td>
+                            <td><div class="palabra" maxlength="1" alt="s"></div></td>
+                            <td><div class="palabra" maxlength="1" alt="u"></div></td>
+                            <td><div class="palabra" maxlength="1" alt="e"></div></td>
+                            <td><div class="palabra" maxlength="1" alt="ñ"></div></td>
+                            <td><div class="palabra" maxlength="1" alt="o"></div></td>
                             <td></td>
                         </tr>
                         <tr>
                             <td></td>
                             <td></td>
-                            <td><div class="palabra" maxlength="1" id="6"></div></td>
-                            <td><div class="palabra" maxlength="e" id="7"></div></td>
-                            <td><div class="palabra" maxlength="1" id="8"></div></td>
-                            <td><div class="palabra" maxlength="1" id="9"></div></td>
-                            <td><div class="palabra" maxlength="1" id="10"></div></td>
-                            <td><div class="palabra" maxlength="1" id="11"></div></td>
-                            <td><div class="palabra" maxlength="1" id="12"></div></td>
+                            <td><div class="palabra" maxlength="1" alt="p"></div></td>
+                            <td><div class="palabra" maxlength="e" alt="e"></div></td>
+                            <td><div class="palabra" maxlength="1" alt="s"></div></td>
+                            <td><div class="palabra" maxlength="1" alt="t"></div></td>
+                            <td><div class="palabra" maxlength="1" alt="a"></div></td>
+                            <td><div class="palabra" maxlength="1" alt="ñ"></div></td>
+                            <td><div class="palabra" maxlength="1" alt="a"></div></td>
                         </tr>
                         <tr>
                             <td></td>
-                            <td><div class="palabra" maxlength="1" id="13"></div></td>
-                            <td><div class="palabra" maxlength="1" id="14"></div></td>
-                            <td><div class="palabra" maxlength="1" id="15"></div></td>
-                            <td><div class="palabra" maxlength="1" id="16"></div></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td><div class="palabra" maxlength="1" id="17"></div></td>
-                            <td><div class="palabra" maxlength="1" id="18"></div></td>
-                            <td><div class="palabra" maxlength="1" id="19"></div></td>
-                            <td><div class="palabra" maxlength="1" id="20"></div></td>
-                            <td></td>
+                            <td><div class="palabra" maxlength="1" alt="p"></div></td>
+                            <td><div class="palabra" maxlength="1" alt="a"></div></td>
+                            <td><div class="palabra" maxlength="1" alt="ñ"></div></td>
+                            <td><div class="palabra" maxlength="1" alt="o"></div></td>
                             <td></td>
                             <td></td>
                             <td></td>
                             <td></td>
                         </tr>
                         <tr>
+                            <td><div class="palabra" maxlength="1" alt="n"></div></td>
+                            <td><div class="palabra" maxlength="1" alt="i"></div></td>
+                            <td><div class="palabra" maxlength="1" alt="ñ"></div></td>
+                            <td><div class="palabra" maxlength="1" alt="a"></div></td>
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td><div class="palabra" maxlength="1" id="21"></div></td>
-                            <td><div class="palabra" maxlength="1" id="22"></div></td>
-                            <td><div class="palabra" maxlength="1" id="23"></div></td>
-                            <td><div class="palabra" maxlength="1" id="24"></div></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><div class="palabra" maxlength="1" alt="l"></div></td>
+                            <td><div class="palabra" maxlength="1" alt="e"></div></td>
+                            <td><div class="palabra" maxlength="1" alt="ñ"></div></td>
+                            <td><div class="palabra" maxlength="1" alt="a"></div></td>
                             <td></td>
                             <td></td>
                         </tr>
@@ -93,10 +93,6 @@
                         <span>5.</span>
                         <img src="<?= $dir ?>/img/5.png" class="responsive-img">
                     </div>
-                    <div class="campo-img">
-                        <span>6.</span>
-                        <img src="<?= $dir ?>/img/6.png" class="responsive-img">
-                    </div>
                     <div class="abecedario"></div>
                 </div>
             </div>
@@ -124,17 +120,13 @@
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
     // Validar
-    function result_tipo_1_4_27() {
+    function result_tipo_1_6_93() {
         var min = $('#Minutos').text();
         var seg = $('#Segundos').text();
         var milseg = $('#Centesimas').text();
         var tiempo = min + ":" + seg + ":" + milseg;
 
-        if ($('#1').text() == 's' && $('#2').text() == 'u' && $('#3').text() == 'e' && $('#4').text() == 'ñ' && $('#5').text() == 'o' && 
-        $('#6').text() == 'p' && $('#7').text() == 'e' && $('#8').text() == 's' && $('#9').text() == 't' && $('#10').text() == 'a' && $('#11').text() == 'ñ' &&
-        $('#12').text() == 'a' && $('#13').text() == 'p' && $('#14').text() == 'a' && $('#15').text() == 'ñ' && $('#16').text() == 'o' &&
-        $('#17').text() == 'n' && $('#18').text() == 'i' && $('#19').text() == 'ñ' && $('#20').text() == 'a' && $('#21').text() == 'l' &&
-        $('#22').text() == 'e' && $('#23').text() == 'ñ' && $('#24').text() == 'a') {
+        if (r == 24) {
             localStorage.setItem("Nota<?=$cod?>", nota);
             localStorage.setItem("Time<?=$cod?>", tiempo);
             correcto();

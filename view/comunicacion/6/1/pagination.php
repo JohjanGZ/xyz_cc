@@ -1,11 +1,11 @@
 <script type="text/javascript">
-    function  Page_90(){
-        start_90();
+    function  Page_1(){
+        start_1();
         inicio();
          count = 3;
     }
-    function  Page_91(){
-        start_91();
+    function  Page_2(){
+        start_2();
         inicio();
          count = 3;
     } 
@@ -15,29 +15,29 @@
     var ruta="../../../exercises/comunicacion/";
     ////////////// 2do 
             // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
-    function start_90(){   
-        $("#ventana").load(ruta+'1-6-90/index.php', 
+    function start_1(){   
+        $("#ventana").load(ruta+'1-6-1/index.php', 
         { 
-        next: "Page_91()", 
-        procesar:"result_tipo_1_6_90()",
+        next: "Page_2()", 
+        procesar:"result_tipo_1_6_1()",
         titulo:"<center><h5><span class='ftitulo'>Selecciona</span> la respuesta correcta. <br> ¿Como se llama el pollito?</h5></center>",
-        restaurar:"start_90()",
+        restaurar:"start_1()",
         dir:ruta,
-        cod: "1-6-90",
+        cod: "1-6-1",
         nota:cal
         }          
         );
         return false;
     };
-    function start_91(){   
-        $("#ventana").load(ruta+'1-6-91/index.php', 
+    function start_2(){   
+        $("#ventana").load(ruta+'1-6-2/index.php', 
         { 
         next: "resultado()", 
-        procesar:"result_tipo_1_6_91()",
+        procesar:"result_tipo_1_6_2()",
         titulo:"<center><h5><span class='ftitulo'>Selecciona</span> la respuesta correcta. <br> ¿A quién buscaba Llito?</h5></center>",
-        restaurar:"start_91()",
+        restaurar:"start_2()",
         dir:ruta,
-        cod: "1-6-91",
+        cod: "1-6-2",
         nota:cal
         }          
         );
