@@ -106,14 +106,14 @@
                 "6":{
                   "ruta":"comunicacion/6",
                   "id":"6",
-                  "nombre": "Unidad 6 - ",
+                  "nombre": "Unidad 6 - Me gusta trabajar en equipo",
                   "temas":{
                           "0": "Ondas Expresivas",
                           "1": "Relaciones temporales",
-                          "2": "Palabras con Ñ - ñ, Palabras con Ch - ch, Palabras con X - x, Palabras con W - w, Palabras con K - k, Palabras con Gü - gü",
-                          "3":"comprension lectora"                        
+                          "2": "Palabras con Ñ - ñ, Palabras con Ch - ch, Palabras con X - x, Palabras con W - w,<br> Palabras con K - k, Palabras con Gü - gü",
+                          "3": "comprension lectora"                      
                           }
-                  }                                
+                }                                
           }
     });
   }
