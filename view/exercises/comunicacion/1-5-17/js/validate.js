@@ -14,7 +14,6 @@ $('.letras span').click(function() {
     $('.letras span').css({ "transform": "scale(1)", "border": "2px solid #37D3F7", "box-shadow": "none", "background": "transparent" });
     $(this).css({ "border": "solid #37D3F7", "box-shadow": "0 0 4px #00000057", "background": "#B6ECFF" });
 
-    console.log(letra)
 });
 
 
@@ -49,8 +48,6 @@ $('.palabra').click(function() {
 
     $(this).text(letra);
 
-    console.log(letra);
 
-    console.log(r);
 
 });

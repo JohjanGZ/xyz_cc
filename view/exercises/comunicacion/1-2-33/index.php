@@ -52,7 +52,7 @@
         var tiempo = min + ":" + seg + ":" + milseg;
 
         var divs = $(".found").toArray().length;
-      
+        console.log(divs);      
         //console.log(divs);
         if (divs == 51) {
             localStorage.setItem("Nota<?=$cod?>", nota);

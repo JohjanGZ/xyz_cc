@@ -20,7 +20,7 @@
                         <span>-</span>    
                     </div>
                 </div>
-                <div class="letra letrax" alt="n">
+                <div class="letra letrax">
                     <span>
                         U
                     </span>
@@ -36,7 +36,7 @@
                         <span>-</span>    
                     </div>
                 </div>
-                <div class="letra letrax" alt="n">
+                <div class="letra letrax">
                     <span>
                         E
                     </span>
@@ -52,7 +52,7 @@
                         <span>-</span>    
                     </div>
                 </div>
-                <div class="letra letrax">
+                <div class="letra letrax" alt="n">
                     <span>
                         A
                     </span>
@@ -84,7 +84,7 @@
                         <span>-</span>    
                     </div>
                 </div>
-                <div class="letra letrax">
+                <div class="letra letrax" alt="n">
                     <span>
                         A
                     </span>
@@ -116,7 +116,7 @@
                         <span>-</span>    
                     </div>
                 </div>
-                <div class="letra letrax">
+                <div class="letra letrax" alt="n">
                     <span>
                         A
                     </span>
@@ -132,7 +132,7 @@
                         <span>-</span>    
                     </div>
                 </div>
-                <div class="letra letrax">
+                <div class="letra letrax" alt="n">
                     <span>
                         E
                     </span>
@@ -172,7 +172,7 @@
                         <span>-</span>    
                     </div>
                 </div>
-                <div class="letra letrax">
+                <div class="letra letrax" alt="n">
                     <span>
                         Z
                     </span>
@@ -180,7 +180,7 @@
                         <span>-</span>    
                     </div>
                 </div>
-                <div class="letra letrax">
+                <div class="letra letrax" alt="n">
                     <span>
                         Y
                     </span>
@@ -256,7 +256,7 @@
                         <span>-</span>    
                     </div>
                 </div>
-                <div class="letra letrax" alt="n">
+                <div class="letra letrax">
                     <span>
                         L
                     </span>
@@ -272,7 +272,7 @@
                         <span>-</span>    
                     </div>
                 </div>
-                <div class="letra letrax" alt="n">
+                <div class="letra letrax">
                     <span>
                         C
                     </span>
@@ -288,7 +288,7 @@
                         <span>-</span>    
                     </div>
                 </div>
-                <div class="letra letrax">
+                <div class="letra letrax" alt="n">
                     <span>
                         A
                     </span>
@@ -336,7 +336,7 @@
                         <span>-</span>    
                     </div>
                 </div>
-                <div class="letra letrax">
+                <div class="letra letrax" alt="n">
                     <span>
                         A
                     </span>
@@ -352,7 +352,7 @@
                         <span>-</span>    
                     </div>
                 </div>
-                <div class="letra letrax">
+                <div class="letra letrax" alt="n">
                     <span>
                         A
                     </span>
@@ -384,7 +384,7 @@
                         <span>-</span>    
                     </div>
                 </div>
-                <div class="letra letrax">
+                <div class="letra letrax" alt="n">
                     <span>
                         A
                     </span>
@@ -408,7 +408,7 @@
                         <span>-</span>    
                     </div>
                 </div>
-                <div class="letra letrax">
+                <div class="letra letrax" alt="n">
                     <span>
                         N
                     </span>
@@ -456,7 +456,7 @@
                         <span>-</span>    
                     </div>
                 </div>
-                <div class="letra letrax">
+                <div class="letra letrax" alt="n">
                     <span>
                         E
                     </span>
@@ -464,7 +464,7 @@
                         <span>-</span>    
                     </div>
                 </div>
-                <div class="letra letrax">
+                <div class="letra letrax" alt="n">
                     <span>
                         Y
                     </span>
@@ -508,7 +508,7 @@
                         <span>-</span>    
                     </div>
                 </div>
-                <div class="letra letrax" alt="n">
+                <div class="letra letrax">
                     <span>
                         O 
                     </span>
@@ -516,7 +516,7 @@
                         <span>-</span>    
                     </div>
                 </div>
-                <div class="letra letrax">
+                <div class="letra letrax" alt="n">
                     <span>
                         S 
                     </span>
@@ -524,7 +524,7 @@
                         <span>-</span>    
                     </div>
                 </div>
-                <div class="letra letrax" alt="n">
+                <div class="letra letrax">
                     <span>
                         P 
                     </span>
@@ -556,7 +556,7 @@
                         <span>-</span>       
                     </div>
                 </div>
-                <div class="letra letrax">
+                <div class="letra letrax" alt="n">
                     <span>
                         S 
                     </span>
@@ -596,7 +596,7 @@
                         <span>-</span>    
                     </div>
                 </div>
-                <div class="letra letrax">
+                <div class="letra letrax" alt="n">
                     <span>
                         N 
                     </span>
@@ -620,7 +620,7 @@
                         <span>-</span>    
                     </div>
                 </div>
-                <div class="letra letrax">
+                <div class="letra letrax" alt="n">
                     <span>
                         S 
                     </span>
@@ -684,7 +684,7 @@
                         <span>-</span>    
                     </div>
                 </div>
-                <div class="letra letrax">
+                <div class="letra letrax" alt="n">
                     <span>
                         S 
                     </span>
@@ -700,7 +700,7 @@
                         <span>-</span>    
                     </div>
                 </div>
-                <div class="letra letrax">
+                <div class="letra letrax" alt="n">
                     <span>
                         E 
                     </span>
@@ -724,7 +724,7 @@
                         <span>-</span>    
                     </div>
                 </div>
-                <div class="letra letrax">
+                <div class="letra letrax" alt="n">
                     <span>
                         S 
                     </span>
@@ -821,13 +821,13 @@
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
     // Validar
-    function result_tipo_1_4_12() {
+    function result_tipo_1_5_18() {
         var min = $('#Minutos').text();
         var seg = $('#Segundos').text();
         var milseg = $('#Centesimas').text();
         var tiempo = min + ":" + seg + ":" + milseg;
 
-        if (r == 2) {
+        if (r == 20) {
             localStorage.setItem("Nota<?=$cod?>", nota);
             localStorage.setItem("Time<?=$cod?>", tiempo);
             correcto();

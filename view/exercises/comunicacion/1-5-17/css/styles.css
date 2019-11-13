@@ -102,6 +102,11 @@ table.crucigrama2 tr td div:hover {
     margin-top: 3vh;
 }
 
+span.span {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
 @media(max-height: 640px) {
     .r-crucigrama {
         display: flex;

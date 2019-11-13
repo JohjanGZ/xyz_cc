@@ -19,6 +19,18 @@
                             <td></td>
                             <td></td>
                             <td></td>
+                            <td></td>
+                            <td><span class="span">5</span></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><span class="span">2</span></td>
+                            <td></td>
                             <td><div class="palabra" maxlength="1" alt="m"></div></td>
                             <td></td>
                             <td></td>
@@ -27,13 +39,15 @@
                             <td></td>
                             <td></td>
                             <td></td>
+                            <td></td>
                             <td><div class="palabra" maxlength="e" alt="m"></div></td>
                             <td></td>
                             <td><div class="palabra" maxlength="e" alt="a"></div></td>
                             <td></td>
-                            <td></td>
+                            <td><span class="span">4</span></td>
                         </tr>
                         <tr>
+                            <td></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -47,6 +61,7 @@
                             <td></td>
                             <td></td>
                             <td></td>
+                            <td></td>
                             <td><div class="palabra" maxlength="e" alt="n"></div></td>
                             <td></td>
                             <td><div class="palabra" maxlength="e" alt="e"></div></td>
@@ -54,6 +69,7 @@
                             <td><div class="palabra" maxlength="e" alt="a"></div></td>
                         </tr>
                         <tr>
+                            <td></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -66,6 +82,7 @@
                         <tr>
                             <td></td>
                             <td></td>
+                            <td><span class="span">1</span></td>
                             <td><div class="palabra" maxlength="1" alt="z"></div></td>
                             <td><div class="palabra" maxlength="1" alt="a"></div></td>
                             <td><div class="palabra" maxlength="1" alt="p"></div></td>
@@ -77,6 +94,7 @@
                             <td></td>
                             <td></td>
                             <td></td>
+                            <td></td>
                             <td><div class="palabra" maxlength="e" alt="n"></div></td>
                             <td></td>
                             <td></td>
@@ -84,6 +102,7 @@
                             <td></td>
                         </tr>
                         <tr>
+                            <td><span class="span">3</span></td>
                             <td><div class="palabra" maxlength="1" alt="t"></div></td>
                             <td><div class="palabra" maxlength="1" alt="e"></div></td>
                             <td><div class="palabra" maxlength="1" alt="n"></div></td>
