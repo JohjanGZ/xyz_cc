@@ -17,10 +17,10 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td><div class="palabra" maxlength="1" id="1"></div></td>
-                            <td><div class="palabra" maxlength="1" id="2"></div></td>
-                            <td><div class="palabra" maxlength="1" id="3"></div></td>
-                            <td><div class="palabra" maxlength="1" id="4"></div></td>
+                            <td><div class="palabra" maxlength="1" alt="h"></div></td>
+                            <td><div class="palabra" maxlength="1" alt="i"></div></td>
+                            <td><div class="palabra" maxlength="1" alt="l"></div></td>
+                            <td><div class="palabra" maxlength="1" alt="o"></div></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -29,19 +29,7 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td><div class="palabra" maxlength="e" id="5"></div></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td><div class="palabra" maxlength="1" id="6"></div></td>
+                            <td><div class="palabra" maxlength="e" alt="e"></div></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -52,20 +40,8 @@
                         <tr>
                             <td></td>
                             <td></td>
-                            <td><div class="palabra" maxlength="1" id="7"></div></td>
-                            <td><div class="palabra" maxlength="1" id="8"></div></td>
-                            <td><div class="palabra" maxlength="1" id="9"></div></td>
-                            <td><div class="palabra" maxlength="1" id="10"></div></td>
                             <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td><div class="palabra" maxlength="1" id="11"></div></td>
+                            <td><div class="palabra" maxlength="1" alt="l"></div></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -76,22 +52,10 @@
                         <tr>
                             <td></td>
                             <td></td>
-                            <td><div class="palabra" maxlength="1" id="12"></div></td>
-                            <td><div class="palabra" maxlength="1" id="13"></div></td>
-                            <td><div class="palabra" maxlength="1" id="14"></div></td>
-                            <td><div class="palabra" maxlength="1" id="15"></div></td>
-                            <td><div class="palabra" maxlength="1" id="16"></div></td>
-                            <td><div class="palabra" maxlength="1" id="17"></div></td>
-                            <td><div class="palabra" maxlength="1" id="18"></div></td>
-                            <td><div class="palabra" maxlength="1" id="19"></div></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td><div class="palabra" maxlength="1" id="20"></div></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td><div class="palabra" maxlength="1" alt="h"></div></td>
+                            <td><div class="palabra" maxlength="1" alt="a"></div></td>
+                            <td><div class="palabra" maxlength="1" alt="d"></div></td>
+                            <td><div class="palabra" maxlength="1" alt="a"></div></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -100,21 +64,9 @@
                         <tr>
                             <td></td>
                             <td></td>
-                            <td><div class="palabra" maxlength="1" id="21"></div></td>
                             <td></td>
+                            <td><div class="palabra" maxlength="1" alt="d"></div></td>
                             <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td><div class="palabra" maxlength="1" id="22"></div></td>
-                            <td><div class="palabra" maxlength="1" id="23"></div></td>
-                            <td><div class="palabra" maxlength="1" id="24"></div></td>
-                            <td><div class="palabra" maxlength="1" id="25"></div></td>
-                            <td><div class="palabra" maxlength="1" id="26"></div></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -124,7 +76,55 @@
                         <tr>
                             <td></td>
                             <td></td>
-                            <td><div class="palabra" maxlength="1" id="27"></div></td>
+                            <td><div class="palabra" maxlength="1" alt="h"></div></td>
+                            <td><div class="palabra" maxlength="1" alt="o"></div></td>
+                            <td><div class="palabra" maxlength="1" alt="s"></div></td>
+                            <td><div class="palabra" maxlength="1" alt="p"></div></td>
+                            <td><div class="palabra" maxlength="1" alt="i"></div></td>
+                            <td><div class="palabra" maxlength="1" alt="t"></div></td>
+                            <td><div class="palabra" maxlength="1" alt="a"></div></td>
+                            <td><div class="palabra" maxlength="1" alt="l"></div></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td><div class="palabra" maxlength="1" alt="o"></div></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td><div class="palabra" maxlength="1" alt="t"></div></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><div class="palabra" maxlength="1" alt="h"></div></td>
+                            <td><div class="palabra" maxlength="1" alt="u"></div></td>
+                            <td><div class="palabra" maxlength="1" alt="e"></div></td>
+                            <td><div class="palabra" maxlength="1" alt="s"></div></td>
+                            <td><div class="palabra" maxlength="1" alt="o"></div></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td><div class="palabra" maxlength="1" alt="l"></div></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -195,11 +195,7 @@
         var milseg = $('#Centesimas').text();
         var tiempo = min + ":" + seg + ":" + milseg;
 
-        if ($('#1').text() == 'h' && $('#2').text() == 'i' && $('#3').text() == 'l' && $('#4').text() == 'o' && $('#5').text() == 'e' && 
-        $('#6').text() == 'l' && $('#7').text() == 'h' && $('#8').text() == 'a' && $('#9').text() == 'd' && $('#10').text() == 'a' && $('#11').text() == 'd' &&
-        $('#12').text() == 'h' && $('#13').text() == 'o' && $('#14').text() == 's' && $('#15').text() == 'p' && $('#16').text() == 'i' &&
-        $('#17').text() == 't' && $('#18').text() == 'a' && $('#19').text() == 'l' && $('#20').text() == 'o' && $('#21').text() == 't' &&
-        $('#22').text() == 'h' && $('#23').text() == 'u' && $('#24').text() == 'e' && $('#25').text() == 's' && $('#26').text() == 'o' && $('#27').text() == 'l') {
+        if (r == 27) {
             localStorage.setItem("Nota<?=$cod?>", nota);
             localStorage.setItem("Time<?=$cod?>", tiempo);
             correcto();

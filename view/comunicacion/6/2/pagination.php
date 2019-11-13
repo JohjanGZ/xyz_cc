@@ -1,6 +1,6 @@
 <script type="text/javascript">   
-    function Page_92(){
-        start_92();
+    function Page_3(){
+        start_3();
         inicio();
         count = 3;
     }
@@ -12,15 +12,15 @@
     var ruta="../../../exercises/comunicacion/";
     ////////////// 2do 
             // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
-    function start_92(){   
-        $("#ventana").load(ruta+'1-6-92/index.php', 
+    function start_3(){   
+        $("#ventana").load(ruta+'1-6-3/index.php', 
         { 
         next: "resultado()", 
-        procesar:"result_tipo_1_6_92()",
+        procesar:"result_tipo_1_6_3()",
         titulo:"<center><h5><span class='ftitulo'>Observa</span> las siguientes imágenes y <span class='ftitulo'>ordénalas</span> según sucedieron los hechos.</h5></center>",
-        restaurar:"start_92()",
+        restaurar:"start_3()",
         dir:ruta,
-        cod: "1-6-92",
+        cod: "1-6-3",
         nota:cal
         }          
         );
