@@ -95,10 +95,25 @@
                           "3": "Discriminación visual",
                           "4": "Lectoescritura: Palabras con J - j",
                           "5": "Lectoescritura: Palabras con Z - z",
-                          "6": "Lectoescritura: Palabras con ce, ci"
-    
+                          "6": "Lectoescritura: Palabras con ce, ci",
+                          "7": "Lectoescritura: Palabras con LL - ll",
+                          "8": "Lectoescritura: Palabras con Y - y",
+                          "9": "Sinónimos y antónimos",
+                          "10": "¿Qué será? Mi oído me ayudará",
+                          "11": "El singular y el plural",
                           }
-                  },                               
+                  },
+                "6":{
+                  "ruta":"comunicacion/6",
+                  "id":"6",
+                  "nombre": "Unidad 6 - ",
+                  "temas":{
+                          "0": "Ondas Expresivas",
+                          "1": "Relaciones temporales",
+                          "2": "Palabras con Ñ - ñ, Palabras con Ch - ch, Palabras con X - x, Palabras con W - w, Palabras con K - k, Palabras con Gü - gü",
+                          "3":"comprension lectora"                        
+                          }
+                  }                                
           }
     });
   }
@@ -125,7 +140,7 @@
                           "4": "ejericio 5 de la unidad 1 matematica 1",
                           "5": "ejericio 6 de la unidad 1 matematica 1",
                           } 
-              },
+                  },
               "1":{
                   "id":"2",
                   "nombre": "unidad 2",  
@@ -136,7 +151,7 @@
                           "3": "ejericio 4 de la unidad 2 matematica 1",
                           "4": "ejericio 5 de la unidad 2 matematica 1",
                           "5": "ejericio 6 de la unidad 2 matematica 1",
-                  }
+                          }
               }
           }
         });
