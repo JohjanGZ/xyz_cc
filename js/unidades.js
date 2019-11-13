@@ -111,9 +111,20 @@
                           "0": "Ondas Expresivas",
                           "1": "Relaciones temporales",
                           "2": "Palabras con Ñ - ñ, Palabras con Ch - ch, Palabras con X - x, Palabras con W - w,<br> Palabras con K - k, Palabras con Gü - gü",
-                          "3": "comprension lectora"                      
+                          "3": "comprensión lectora"                      
                           }
-                }                                
+                },
+                "7":{
+                  "ruta":"comunicacion/7",
+                  "id":"7",
+                  "nombre": "Unidad 7 - Me gusta proteger a los animales y las plantas",
+                  "temas":{
+                          "0": "Comprensión lectora",
+                          "1": "Ubicación espacial",
+                          "2": "¿Qué será? Mi oído me ayudará",
+                          "3": "Palabras con Br-br"                      
+                          }
+                }                              
           }
     });
   }
