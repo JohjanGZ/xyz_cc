@@ -51,6 +51,7 @@
                 <li class="silabas">
                     <h4 class="pieza" alt="fax">fax</h4>
                 </li>
+            </ul>
         </div>
     </div>
 

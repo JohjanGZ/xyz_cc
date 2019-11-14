@@ -93,7 +93,43 @@
         inicio();
         count = 3;
     }
-
+    // Palabras con K
+    function Page_22(){
+        start_22();
+        inicio();
+        count = 3;
+    }
+    function Page_23(){
+        start_23();
+        inicio();
+        count = 3;
+    }
+    function Page_24(){
+        start_24();
+        inicio();
+        count = 3;
+    }
+    // Palabras con GÜ
+    function Page_25(){
+        start_25();
+        inicio();
+        count = 3;
+    }
+    function Page_26(){
+        start_26();
+        inicio();
+        count = 3;
+    }
+    function Page_27(){
+        start_27();
+        inicio();
+        count = 3;
+    }
+    function Page_28(){
+        start_28();
+        inicio();
+        count = 3;
+    }
     var cant=5;
     var cal= 20/20;
     var ruta="../../../exercises/comunicacion/";
@@ -350,6 +386,106 @@
         restaurar:"start_21()",
         dir:ruta,
         cod: "1-6-21",
+        nota:cal
+        }          
+        );
+        return false;
+    };
+    // Palabras con K
+    function start_22(){   
+        $("#ventana").load(ruta+'1-6-22/index.php', 
+        { 
+        next: "Page_23()", 
+        procesar:"result_tipo_1_6_22()",
+        titulo:"<center><h5><span class='ftitulo'>Arrastra</span> el nombre de cada imagen.</h5></center>",
+        restaurar:"start_22()",
+        dir:ruta,
+        cod: "1-6-22",
+        nota:cal
+        }          
+        );
+        return false;
+    };
+    function start_23(){   
+        $("#ventana").load(ruta+'1-6-23/index.php', 
+        { 
+        next: "Page_24()", 
+        procesar:"result_tipo_1_6_23()",
+        titulo:"<center><h5><span class='ftitulo'>Arrastra</span> el nombre de cada imagen.</h5></center>",
+        restaurar:"start_23()",
+        dir:ruta,
+        cod: "1-6-23",
+        nota:cal
+        }          
+        );
+        return false;
+    };
+    function start_24(){   
+        $("#ventana").load(ruta+'1-6-24/index.php', 
+        { 
+        next: "Page_25()", 
+        procesar:"result_tipo_1_6_24()",
+        titulo:"<center><h5><span class='ftitulo'>Ordena</span> las siguientes palabras y <span class='ftitulo'>escribe</span> las oraciones.</h5></center>",
+        restaurar:"start_24()",
+        dir:ruta,
+        cod: "1-6-24",
+        nota:cal
+        }          
+        );
+        return false;
+    };
+    // Palabras con GÜ
+    function start_25(){   
+        $("#ventana").load(ruta+'1-6-25/index.php', 
+        { 
+        next: "Page_26()", 
+        procesar:"result_tipo_1_6_25()",
+        titulo:"<center><h5><span class='ftitulo'>güe - güi</span><br><span class='ftitulo'>escribe</span> el nombre de cada imagen.</h5></center>",
+        restaurar:"start_25()",
+        dir:ruta,
+        cod: "1-6-25",
+        nota:cal
+        }          
+        );
+        return false;
+    };
+    function start_26(){   
+        $("#ventana").load(ruta+'1-6-26/index.php', 
+        { 
+        next: "Page_27()", 
+        procesar:"result_tipo_1_6_26()",
+        titulo:"<center><h5><span class='ftitulo'>Completa</span> según el ejemplo.</h5></center>",
+        restaurar:"start_26()",
+        dir:ruta,
+        cod: "1-6-26",
+        nota:cal
+        }          
+        );
+        return false;
+    };
+    function start_27(){   
+        $("#ventana").load(ruta+'1-6-27/index.php', 
+        { 
+        next: "Page_28()", 
+        procesar:"result_tipo_1_6_27()",
+        titulo:"<center><h5><span class='ftitulo'>Coloca</span> cada palabra donde corresponde.<br> Sabiendo que.<br><span class='ftitulo'>gue - gui</span> la u no suena <br> <span class='ftitulo'>güe - güi</span> la u sí suena</h5></center>",
+        restaurar:"start_27()",
+        dir:ruta,
+        cod: "1-6-27",
+        nota:cal
+        }          
+        );
+        return false;
+    };
+    function start_28(){   
+        $("#ventana").load(ruta+'1-6-28/index.php', 
+        { 
+        next: "resultado()", 
+        procesar:"result_tipo_1_6_28()",
+        titulo:"<center><h5><span class='ftitulo'>Completa.</span></h5></center>",
+        restaurar:"start_28()",
+        dir:ruta,
+        cod: "1-6-28",
         nota:cal
         }          
         );
