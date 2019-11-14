@@ -54,7 +54,7 @@
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
     // Validar
-    function result_tipo_1_6_91() {
+    function result_tipo_1_6_2() {
         var min = $('#Minutos').text();
         var seg = $('#Segundos').text();
         var milseg = $('#Centesimas').text();

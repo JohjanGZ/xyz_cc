@@ -48,7 +48,7 @@
 
         // Formulario - Registrados
 
-          function result_tipo_1_6_96(){               
+          function result_tipo_1_6_7(){               
                   var  min= $('#Minutos').text();
                   var  seg= $('#Segundos').text();
                   var  milseg= $('#Centesimas').text();
