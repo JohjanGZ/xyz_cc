@@ -1,264 +1,259 @@
-   
-///  *********   COMUNICACION 
+   ///  *********   COMUNICACION 
 
-//----- 1ero
+   //----- 1ero
 
-  function comunicacion1(){
-  $("#portada").css("display", "block");
-  $('#cuerpo').load('unidades.php',
-    { 
-          titulo:'Comunicación 1ero', 
-          color:'#8d003c',
-          libros:{
-                  "0":{"title":"Libro 1", "enlace":"com1-1"},
-                  "1":{"title":"Libro 2", "enlace":"com1-2"}
-          }, 
-          data:{
-              "0":{
-                  "ruta":"comunicacion/0",
-                  "id":"0",
-                  "nombre": "Unidad 0 - Aprendiendo en mi escuela",  
-                  "temas":{
-                            "0": "Actividad digital"
-                          }
-                  },
-              "1":{
-                  "ruta":"comunicacion/1",
-                  "id":"0",
-                  "nombre": "Unidad 1 - Voy a leer y a escribir",
-                  "temas":{
-                          "0": "Comprensión lectora: Cuatro letritas",
-                          "1": "Comprensión lectora: Mi colegio",
-                          "2": "Comprensión lectora: Patito travieso",
-                          "3": "Lectoescritura: Palabras con P - p",
-                          "4":"Lectoescritura: Palabras con M - m",
-                          "5":"Lectoescritura: Palabras con L - l",
-                          }
-                  },
-              "2":{
-                  "ruta":"comunicacion/2",
-                  "id":"2",
-                  "nombre": "Unidad 2 - Juego con mis amigos y amigas", 
-                  "temas":{
-                          "0": "Lectoescritura: Palabras con D-d",
-                          "1": "¿Qué será? Mi oído me ayudará",
-                          "2": "Discriminacion visual",
-                          "3": "Lectoescritura: Palabras con T - t",
-                          "4": "Una canción",
-                          "5": "Una revisión media",
-                          "6": "Lectoescritura: Palabras con N-n" ,  
-                          "7": "Lectoescritura: Palabras con F-f" , 
-                          "8": "Familia de palabras", 
-                          "9":  "El sustantivo"
-                          }
-                  },
-              "3":{
-                  "ruta":"comunicacion/3",
-                  "id":"3",
-                  "nombre": "Unidad 3 - Leo en familia",
-                  "temas":{
-                          "0": "Lectura: Ondas Expresivas",
-                          "1": "Un cuento",
-                          "2": "Desplazamiento",
-                          "3": "¿Qué será? Mi oído me ayudará",
-                          "4": "Lectoescritura: Palabras con V-v",
-                          "5": "Lectoescritura: Palabras con R-r",
-                          "6": "Lectoescritura: Palabras con C- c y Q - q",
-                          "7": "Término excluido",
-                          "8": "El adjetivo",
-
-                          }
-                  },  
-               "4":{
-                  "ruta":"comunicacion/4",
-                  "id":"4",
-                  "nombre": "Unidad 4 - Disfruto del medio ambiente porque lo cuido con amor",
-                  "temas":{
-                          "0": "Lectura: Ondas Expresivas",
-                          "1": "Comprensión lectora",
-                          "2": "¿Qué será? Mi oído me ayudará",
-                          "3": "Lectoescritura: Palabras con H - h",
-                          "4": "Palabras con G - g",
-                          "5": "Analogías",
-                          "6": " El género masculino y femenino"
-    
-                          }
-                  },
-                "5":{
-                  "ruta":"comunicacion/5",
-                  "id":"5",
-                  "nombre": "Unidad 5 - Celebramos la fiesta de mi Perú",
-                  "temas":{
-                          "0": "Un cuento",
-                          "1": "Un cuento 2",
-                          "2": "La descripción de un animal",
-                          "3": "Discriminación visual",
-                          "4": "Lectoescritura: Palabras con J - j",
-                          "5": "Lectoescritura: Palabras con Z - z",
-                          "6": "Lectoescritura: Palabras con ce, ci",
-                          "7": "Lectoescritura: Palabras con LL - ll",
-                          "8": "Lectoescritura: Palabras con Y - y",
-                          "9": "Sinónimos y antónimos",
-                          "10": "¿Qué será? Mi oído me ayudará",
-                          "11": "El singular y el plural",
-                          }
-                  },
-                "6":{
-                  "ruta":"comunicacion/6",
-                  "id":"6",
-                  "nombre": "Unidad 6 - Me gusta trabajar en equipo",
-                  "temas":{
-                          "0": "Ondas Expresivas",
-                          "1": "Relaciones temporales",
-                          "2": "Palabras con Ñ - ñ, Palabras con Ch - ch, Palabras con X - x, Palabras con W - w,<br> Palabras con K - k, Palabras con Gü - gü",
-                          "3": "comprensión lectora"                      
-                          }
-                },
-                "7":{
-                  "ruta":"comunicacion/7",
-                  "id":"7",
-                  "nombre": "Unidad 7 - Me gusta proteger a los animales y las plantas",
-                  "temas":{
-                          "0": "Comprensión lectora",
-                          "1": "Ubicación espacial",
-                          "2": "¿Qué será? Mi oído me ayudará",
-                          "3": "Palabras con Br-br"                      
-                          }
-                }                              
-          }
-    });
-  }
-
-///  *********   MATEMATICAS 
-//---- 1ERO
-
-  function matematica1(){
+   function comunicacion1() {
        $("#portada").css("display", "block");
-       $('#cuerpo').load('unidades.php',
-        { 
-          titulo:'Matematica 1ero', 
-          color:'#26c6da',
-          enlace:'mate1', 
-          data:{
-              "0":{
-                "id":"1",
-                "nombre": "unidad 1",  
-                "ejercicios":{
-                          "0": "ejericio 1 de la unidad 1 matematica 1",
-                          "1": "ejericio 2 de la unidad 1 matematica 1",
-                          "2": "ejericio 3 de la unidad 1 matematica 1",
-                          "3": "ejericio 4 de la unidad 1 matematica 1",
-                          "4": "ejericio 5 de la unidad 1 matematica 1",
-                          "5": "ejericio 6 de la unidad 1 matematica 1",
-                          } 
-                  },
-              "1":{
-                  "id":"2",
-                  "nombre": "unidad 2",  
-                  "ejercicios":{
-                          "0": "ejericio 1 de la unidad 2 matematica 1",
-                          "1": "ejericio 2 de la unidad 2 matematica 1",
-                          "2": "ejericio 3 de la unidad 2 matematica 1",
-                          "3": "ejericio 4 de la unidad 2 matematica 1",
-                          "4": "ejericio 5 de la unidad 2 matematica 1",
-                          "5": "ejericio 6 de la unidad 2 matematica 1",
-                          }
-              }
-          }
-        });
-  }
-//---- 2DO
-    function matematica2(){
+       $('#cuerpo').load('unidades.php', {
+           titulo: 'Comunicación 1ero',
+           color: '#8d003c',
+           libros: {
+               "0": { "title": "Libro 1", "enlace": "com1-1" },
+               "1": { "title": "Libro 2", "enlace": "com1-2" }
+           },
+           data: {
+               "0": {
+                   "ruta": "comunicacion/0",
+                   "id": "0",
+                   "nombre": "Unidad 0 - Aprendiendo en mi escuela",
+                   "temas": {
+                       "0": "Actividad digital"
+                   }
+               },
+               "1": {
+                   "ruta": "comunicacion/1",
+                   "id": "0",
+                   "nombre": "Unidad 1 - Voy a leer y a escribir",
+                   "temas": {
+                       "0": "Comprensión lectora: Cuatro letritas",
+                       "1": "Comprensión lectora: Mi colegio",
+                       "2": "Comprensión lectora: Patito travieso",
+                       "3": "Lectoescritura: Palabras con P - p",
+                       "4": "Lectoescritura: Palabras con M - m",
+                       "5": "Lectoescritura: Palabras con L - l",
+                   }
+               },
+               "2": {
+                   "ruta": "comunicacion/2",
+                   "id": "2",
+                   "nombre": "Unidad 2 - Juego con mis amigos y amigas",
+                   "temas": {
+                       "0": "Lectoescritura: Palabras con D-d",
+                       "1": "¿Qué será? Mi oído me ayudará",
+                       "2": "Discriminacion visual",
+                       "3": "Lectoescritura: Palabras con T - t",
+                       "4": "Una canción",
+                       "5": "Una revisión media",
+                       "6": "Lectoescritura: Palabras con N-n",
+                       "7": "Lectoescritura: Palabras con F-f",
+                       "8": "Familia de palabras",
+                       "9": "El sustantivo"
+                   }
+               },
+               "3": {
+                   "ruta": "comunicacion/3",
+                   "id": "3",
+                   "nombre": "Unidad 3 - Leo en familia",
+                   "temas": {
+                       "0": "Lectura: Ondas Expresivas",
+                       "1": "Un cuento",
+                       "2": "Desplazamiento",
+                       "3": "¿Qué será? Mi oído me ayudará",
+                       "4": "Lectoescritura: Palabras con V-v",
+                       "5": "Lectoescritura: Palabras con R-r",
+                       "6": "Lectoescritura: Palabras con C- c y Q - q",
+                       "7": "Término excluido",
+                       "8": "El adjetivo",
+
+                   }
+               },
+               "4": {
+                   "ruta": "comunicacion/4",
+                   "id": "4",
+                   "nombre": "Unidad 4 - Disfruto del medio ambiente porque lo cuido con amor",
+                   "temas": {
+                       "0": "Lectura: Ondas Expresivas",
+                       "1": "Comprensión lectora",
+                       "2": "¿Qué será? Mi oído me ayudará",
+                       "3": "Lectoescritura: Palabras con H - h",
+                       "4": "Palabras con G - g",
+                       "5": "Analogías",
+                       "6": " El género masculino y femenino"
+
+                   }
+               },
+               "5": {
+                   "ruta": "comunicacion/5",
+                   "id": "5",
+                   "nombre": "Unidad 5 - Celebramos la fiesta de mi Perú",
+                   "temas": {
+                       "0": "Un cuento",
+                       "1": "Un cuento 2",
+                       "2": "La descripción de un animal",
+                       "3": "Discriminación visual",
+                       "4": "Lectoescritura: Palabras con J - j",
+                       "5": "Lectoescritura: Palabras con Z - z",
+                       "6": "Lectoescritura: Palabras con ce, ci",
+                       "7": "Lectoescritura: Palabras con LL - ll",
+                       "8": "Lectoescritura: Palabras con Y - y",
+                       "9": "Sinónimos y antónimos",
+                       "10": "¿Qué será? Mi oído me ayudará",
+                       "11": "El singular y el plural",
+                   }
+               },
+               "6": {
+                   "ruta": "comunicacion/6",
+                   "id": "6",
+                   "nombre": "Unidad 6 - Me gusta trabajar en equipo",
+                   "temas": {
+                       "0": "Ondas Expresivas",
+                       "1": "Relaciones temporales",
+                       "2": "Palabras con Ñ - ñ, Palabras con Ch - ch, Palabras con X - x, Palabras con W - w,<br> Palabras con K - k, Palabras con Gü - gü",
+                       "3": "comprensión lectora"
+                   }
+               },
+               "7": {
+                   "ruta": "comunicacion/7",
+                   "id": "7",
+                   "nombre": "Unidad 7 - Me gusta proteger a los animales y las plantas",
+                   "temas": {
+                       "0": "Comprensión lectora",
+                       "1": "Ubicación espacial",
+                       "2": "¿Qué será? Mi oído me ayudará",
+                       "3": "Palabras con Br-br"
+                   }
+               }
+           }
+       });
+   }
+
+   ///  *********   MATEMATICAS 
+   //---- 1ERO
+
+   function matematica1() {
        $("#portada").css("display", "block");
-       $('#cuerpo').load('unidades.php',
-        {
-          titulo:'Matematica 2do', 
-          color:'#ce1916',
-          enlace:'matematica', 
-          data:{
-              "0":{
-                "ruta":"matematica/2/",
-                "id":"1",
-                "nombre": "unidad 1",  
-                "temas": {
-                          "0": "Agrupa los siguientes elementos segun sus caracteristicas",
-                          "1": "ejericio 2 de la unidad 1 matematica 1",
-                          "2": "ejericio 3 de la unidad 1 matematica 1",
-                } 
-              },
-          }
-        });
-      }
-
-///  *********   INICIAL
-
-
-//----- 3AÑOS
-
-    function inicial3(){
+       $('#cuerpo').load('unidades.php', {
+           titulo: 'Matematica 1ero',
+           color: '#26c6da',
+           enlace: 'mate1',
+           data: {
+               "0": {
+                   "id": "1",
+                   "nombre": "unidad 1",
+                   "ejercicios": {
+                       "0": "ejericio 1 de la unidad 1 matematica 1",
+                       "1": "ejericio 2 de la unidad 1 matematica 1",
+                       "2": "ejericio 3 de la unidad 1 matematica 1",
+                       "3": "ejericio 4 de la unidad 1 matematica 1",
+                       "4": "ejericio 5 de la unidad 1 matematica 1",
+                       "5": "ejericio 6 de la unidad 1 matematica 1",
+                   }
+               },
+               "1": {
+                   "id": "2",
+                   "nombre": "unidad 2",
+                   "ejercicios": {
+                       "0": "ejericio 1 de la unidad 2 matematica 1",
+                       "1": "ejericio 2 de la unidad 2 matematica 1",
+                       "2": "ejericio 3 de la unidad 2 matematica 1",
+                       "3": "ejericio 4 de la unidad 2 matematica 1",
+                       "4": "ejericio 5 de la unidad 2 matematica 1",
+                       "5": "ejericio 6 de la unidad 2 matematica 1",
+                   }
+               }
+           }
+       });
+   }
+   //---- 2DO
+   function matematica2() {
        $("#portada").css("display", "block");
-       $('#cuerpo').load('unidades.php',
-        { 
-          titulo:'Inicial 3 años', 
-          color:'#26c6da',
-          enlace:'inicial3', 
-          data:{
-              "0":{
-                "ruta":"inicial/3/1",
-                "id":"1",
-                "nombre": "unidad 1",  
-               "ejercicios":{
-                          "0": "ejericio 1 de la unidad 1",
-                          "1": "ejericio 2 de la unidad 1",
-                          "2": "ejericio 3 de la unidad 1",
-                          "3": "ejericio 4 de la unidad 1",
-                          "4": "ejericio 5 de la unidad 1",
-                          "5": "ejericio 6 de la unidad 1",
-                        } 
-              },
-          }
-        });
-     }
+       $('#cuerpo').load('unidades.php', {
+           titulo: 'Matematica 2do',
+           color: '#ce1916',
+           enlace: 'matematica',
+           data: {
+               "0": {
+                   "ruta": "matematica/2/",
+                   "id": "1",
+                   "nombre": "unidad 1",
+                   "temas": {
+                       "0": "Agrupa los siguientes elementos segun sus caracteristicas",
+                       "1": "ejericio 2 de la unidad 1 matematica 1",
+                       "2": "ejericio 3 de la unidad 1 matematica 1",
+                   }
+               },
+           }
+       });
+   }
 
-//----- 4AÑOS
-            function inicial4(){
+   ///  *********   INICIAL
+
+
+   //----- 3AÑOS
+
+   function inicial3() {
        $("#portada").css("display", "block");
-       $('#cuerpo').load('unidades.php',
-        { 
-          titulo:'Inicial 4 años', 
-          color:'#26c6da',
-          enlace:'inicial/4', 
-          data:{
-              "0":{
-                  "id":"1",
-                  "nombre": "unidad 1",  
-                  "ejercicios":{
-                          "0": "ejericio 1 de la unidad 1",
-                          "1": "ejericio 2 de la unidad 1",
-                          "2": "ejericio 3 de la unidad 1",
-                          "3": "ejericio 4 de la unidad 1",
-                          "4": "ejericio 5 de la unidad 1",
-                          "5": "ejericio 6 de la unidad 1",
-                  } 
-              },
-              "1":{
-                  "id":"2",
-                  "nombre": "unidad 2",  
-                  "ejercicios":{
-                          "0": "ejericio 1 de la unidad 2",
-                          "1": "ejericio 2 de la unidad 2",
-                          "2": "ejericio 3 de la unidad 2",
-                          "3": "ejericio 4 de la unidad 2",
-                          "4": "ejericio 5 de la unidad 2",
-                          "5": "ejericio 6 de la unidad 2",
-                  } 
-              }
-          }
-        });
-}
-    function libros() {
+       $('#cuerpo').load('unidades.php', {
+           titulo: 'Inicial 3 años',
+           color: '#26c6da',
+           enlace: 'inicial3',
+           data: {
+               "0": {
+                   "ruta": "inicial/3/1",
+                   "id": "1",
+                   "nombre": "unidad 1",
+                   "ejercicios": {
+                       "0": "ejericio 1 de la unidad 1",
+                       "1": "ejericio 2 de la unidad 1",
+                       "2": "ejericio 3 de la unidad 1",
+                       "3": "ejericio 4 de la unidad 1",
+                       "4": "ejericio 5 de la unidad 1",
+                       "5": "ejericio 6 de la unidad 1",
+                   }
+               },
+           }
+       });
+   }
+
+   //----- 4AÑOS
+   function inicial4() {
+       $("#portada").css("display", "block");
+       $('#cuerpo').load('unidades.php', {
+           titulo: 'Inicial 4 años',
+           color: '#26c6da',
+           enlace: 'inicial/4',
+           data: {
+               "0": {
+                   "id": "1",
+                   "nombre": "unidad 1",
+                   "ejercicios": {
+                       "0": "ejericio 1 de la unidad 1",
+                       "1": "ejericio 2 de la unidad 1",
+                       "2": "ejericio 3 de la unidad 1",
+                       "3": "ejericio 4 de la unidad 1",
+                       "4": "ejericio 5 de la unidad 1",
+                       "5": "ejericio 6 de la unidad 1",
+                   }
+               },
+               "1": {
+                   "id": "2",
+                   "nombre": "unidad 2",
+                   "ejercicios": {
+                       "0": "ejericio 1 de la unidad 2",
+                       "1": "ejericio 2 de la unidad 2",
+                       "2": "ejericio 3 de la unidad 2",
+                       "3": "ejericio 4 de la unidad 2",
+                       "4": "ejericio 5 de la unidad 2",
+                       "5": "ejericio 6 de la unidad 2",
+                   }
+               }
+           }
+       });
+   }
+
+   function libros() {
        $("#portada").css("display", "block");
        $('#cuerpo').load('view/libros.php');
-    }
+   }
 
-    $("#portada").css("display", "none");
+   $("#portada").css("display", "none");

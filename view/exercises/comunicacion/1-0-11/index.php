@@ -136,7 +136,7 @@ h4 {
   </body>
 
 
-<script src="../../../../js/core.js"></script>
+<script src="../../../../../js/core.js"></script>
 <?php require('../../../tools/botones/botones.php');?>
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">

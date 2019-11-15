@@ -78,6 +78,7 @@ h4 {
 .contenedor-silabas {
     display: inline-flex;
     width: 80%;
+    flex-wrap: wrap;
     margin: 0 auto;
     justify-content: center;
     padding-top: 40px;

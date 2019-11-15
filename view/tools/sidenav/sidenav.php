@@ -12,18 +12,18 @@
       
       <center>
          <li>
-            <a href="../../../../" class="tooltipped " data-position="right" data-tooltip="Ir a Inicio"><i class="material-icons small  icon-modulo">view_module</i>
+            <a href="../../../../../" class="tooltipped " data-position="right" data-tooltip="Ir a Inicio"><i class="material-icons small  icon-modulo">view_module</i>
             </a>
         </li>
       </center>
       <li>
-        <a href="../../php/cerrar.php" class="tooltipped" data-position="right" data-tooltip="Cerrar Plataforma"><i class="material-icons small icon-contenido">power_settings_new</i>
+        <a href="../../../php/cerrar.php" class="tooltipped" data-position="right" data-tooltip="Cerrar Plataforma"><i class="material-icons small icon-contenido">power_settings_new</i>
         </a>
       </li>
   </ul>
 
   
-<a href="#" data-target="slide-out"   class="amber btn-floating btn-menu pink-text pulse sidenav-trigger text-accent-4 tooltipped" data-tooltip="Menu" data-position="right"><i class="small material-icons ">menu</i></a>
+<a href="#" data-target="slide-out" id="btn-flotante" class="amber btn-floating btn-menu pink-text sidenav-trigger text-accent-4 tooltipped" data-tooltip="Menu" data-position="right"><i class="small material-icons ">menu</i></a>
 
 <script>
  
@@ -41,11 +41,10 @@
       $('.unidad-p').each(function(){
 
         for (let index = 0; index < data[i].temas.length; index++) {
-          $(this).children('ul').append('<li class="menu-item-p"><div><a href="../../../'+data[i].ruta+'/'+(index+1)+'">'+data[i].temas[index]+'</a></div></li>');
+          $(this).children('ul').append('<li class="menu-item-p"><div><a href="../../../../'+data[i].ruta+'/'+(index+1)+'">'+data[i].temas[index]+'</a></div></li>');
         }
 
         
-          console.log(i);
           i++;
           if(i==5){
             $( "#menu" ).menu({

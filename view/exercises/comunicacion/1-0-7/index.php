@@ -126,7 +126,7 @@
                   </div>
               </div>
 
-<script src="../../../../js/core.js"></script>
+<script src="../../../../../js/core.js"></script>
 <?php require('../../../tools/botones/botones.php');?>
 <script type="text/javascript">
   var r=0;
