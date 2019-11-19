@@ -1,0 +1,40 @@
+h4 {
+    text-align: center;
+}
+
+.contenedor-ejercicios {
+    width: 80%;
+    padding-top: 40px;
+    margin: auto;
+}
+
+.contenedor-ejercicios .secuencia {
+    width: fit-content;
+    padding-top: 40px;
+    margin: auto;
+}
+
+.contenedor-ejercicios .secuencia span {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 1.7rem;
+    border: 3px solid silver;
+    border-radius: 12px;
+    background-color: white;
+}
+
+.contenedor-ejercicios .secuencia span:hover {
+    border-color: #37D3F7;
+}
+
+.contenedor-ejercicios .secuencia span.respuesta {
+    width: 170px;
+    padding: 8px 10px;
+    margin-left: 20px;
+}
+
+@media(max-height: 640px) {
+    .contenedor-ejercicios .secuencia {
+        padding-top: 20px;
+    }
+}

@@ -17,6 +17,7 @@ $(".palabra").droppable({
         $(this).css("background-color", "rgba(139, 195, 74, 0.14)");
         element2 = $(this).attr("alt");
         elementid.css("background-color", "transparent");
+        elementid.addClass("esconder");
         if (element == element2) {
             r++;
         }
