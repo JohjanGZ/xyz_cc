@@ -231,7 +231,8 @@ url(img/portadas/portada6.png);
 .portada3:hover .iconview, 
 .portada4:hover .iconview,
 .portada5:hover .iconview,
-.portada6:hover .iconview{
+.portada6:hover .iconview,
+.mate1:hover .iconview{
     transform: translate(0px, -200px);
     transition: 0.8s;
 }
@@ -314,11 +315,11 @@ url(img/portadas/portada6.png);
 
     <div class="wrap-mask">
             
-      <!-- <a onclick="matematica1()">-->
-        <div class="mate1 disable" ><center> <i class=" iconview material-icons">visibility</i> </center></div>
+      <a onclick="matematica1()">
+        <div class="mate1" ><center> <i class=" iconview material-icons">visibility</i> </center></div>
         <div class="mask" style="cursor: pointer;">
         </div>
-  <!-- </a>-->
+      </a>
     </div>
   </div>
   <div class=" titulo wrap-info">    

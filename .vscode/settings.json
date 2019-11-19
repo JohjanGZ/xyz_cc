@@ -1,0 +1,4 @@
+{
+    "phpformatter.composer": true,
+    "git.ignoreLimitWarning": true
+}
