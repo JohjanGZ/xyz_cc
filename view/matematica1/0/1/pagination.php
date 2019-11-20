@@ -453,7 +453,7 @@ function start_24() {
     $("#ventana").load(ruta + '1-0-24/index.php', {
         next: "Page_25()",
         procesar: "result_tipo_1_0_24()",
-        titulo: "<center><h5> <span class='ftitulo'>Cuenta</span> y <span class='ftitulo'>Coloca</span> el conjunto de elementos donde corresponde.</h5></center>",
+        titulo: "<center><h5> <span class='ftitulo'>Traza</span> el recorrido de las flechas para que la hormiga llegue a las uvas.</h5></center>",
         restaurar: "start_24()",
         dir: ruta,
         cod: "1-0-24",
@@ -466,7 +466,7 @@ function start_25() {
     $("#ventana").load(ruta + '1-0-25/index.php', {
         next: "resultado()",
         procesar: "result_tipo_1_0_25()",
-        titulo: "<center><h5> <span class='ftitulo'>Cuenta</span> y <span class='ftitulo'>Coloca</span> el conjunto de elementos donde corresponde.</h5></center>",
+        titulo: "<center><h5> <span class='ftitulo'>Observa</span> la cuadrícula y <span class='ftitulo'>traza</span> el recorrido para que el gato atrape al ratón.</h5></center>",
         restaurar: "start_25()",
         dir: ruta,
         cod: "1-0-25",
