@@ -78,7 +78,7 @@ x
                     </p>
                 </div>
                 <div class="col s4" style="text-align:center;">
-                    <img src="<?= $dir ?>/img/1.png" style="width: 150px;margin: auto;text-align: center;" alt="">
+                    <img src="<?= $dir ?>/img/1.png" style="width: 130px;margin: auto;text-align: center;" alt="">
                 </div>
 
             </div>

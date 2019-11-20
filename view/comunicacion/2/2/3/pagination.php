@@ -40,7 +40,7 @@
     function start_3(){
         $("#ventana").load(ruta+'2-2-3/index.php', 
         {
-        next: "resultado()", 
+        next: "Page_4()", 
         procesar:"result_tipo_2_2_3()",
         titulo:"<center><h5><span>Selecciona</span> y <span>une</span> las palabras que tienen significados semejantes.</h5></center>",
         restaurar:"start_3()",
@@ -56,7 +56,7 @@
         {
         next: "Page_5()", 
         procesar:"result_tipo_2_2_4()",
-        titulo:"<center><h5><span>Escribe</span> el sinónimo de la palabra que está destacada. <span>Emplea</span> uno de los términos de las casillas.</h5></center>",
+        titulo:"<center><h5><span>Arrastra</span> el sinónimo de la palabra que está destacada. <span>Emplea</span> uno de los términos de las casillas.</h5></center>",
         restaurar:"start_4()",
         dir:ruta,
         cod: "2-2-4",
@@ -84,7 +84,7 @@
         {
         next: "Page_7()", 
         procesar:"result_tipo_2_2_6()",
-        titulo:"<center><h5><span>Ordena</span> las sílabas de tal manera que formes una pareja de sinónimos, luego <span>escríbelos</span> en los espacios correspondientes.</h5></center>",
+        titulo:"<center><h5><span>Arrastra</span> las sílabas en los espacios correspondientes de tal manera que formes una pareja de sinónimos.</h5></center>",
         restaurar:"start_6()",
         dir:ruta,
         cod: "2-2-6",
@@ -112,7 +112,7 @@
         {
         next: "resultado()", 
         procesar:"result_tipo_2_2_8()",
-        titulo:"<center><h5>De los grupos de palabras sinónimas, hay una que no corresponde. <span>Escríbela</span> en el recuadro.</h5></center>",
+        titulo:"<center><h5>De los grupos de palabras sinónimas, hay una que no corresponde. <span>Arrastrala</span> hasta el recuadro.</h5></center>",
         restaurar:"start_8()",
         dir:ruta,
         cod: "2-2-8",

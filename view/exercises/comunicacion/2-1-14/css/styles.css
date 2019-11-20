@@ -43,11 +43,12 @@ h4 {
     }
     .contenedor-oracion {
         width: 100%;
+        padding: 1px;
+    }
+    .contenedor-oracion span {
+        margin: 7px 1px;
     }
     .contenedor-imagen img {
-        width: 200px;
-        position: absolute;
-        bottom: 0;
-        right: 30px;
+        display: none;
     }
 }

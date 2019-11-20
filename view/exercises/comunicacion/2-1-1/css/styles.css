@@ -53,6 +53,7 @@ h4 {
 @media(max-height: 640px) {
     .contenedor-oraciones {
         width: 86%;
+        padding-top: 0;
     }
     .contenedor-check {
         padding-top: 0;

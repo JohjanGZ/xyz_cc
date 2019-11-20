@@ -111,6 +111,9 @@ span.span {
     .r-crucigrama {
         display: flex;
     }
+    .mt80 {
+        margin-top: 0;
+    }
     .campo {
         padding: 0;
         margin: 0;
