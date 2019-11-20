@@ -1,86 +1,70 @@
 <script type="text/javascript">
-   function Page_18(){
-        start_18();
-        inicio();
-        count = 3;
-    }
-   function  Page_19(){
-        start_19();
+   function Page_9(){
+        start_9();
         inicio();
          count = 3;
     }
-   function Page_20(){
-        start_20();
+   function  Page_10(){
+        start_10();
         inicio();
          count = 3;
     }
-    function  Page_21(){
-        start_21();
+    function Page_11(){
+        start_11();
         inicio();
          count = 3;
     }
 
-    var cant=4;
+    var cant=3;
+
     var cal= 20/20;
     var ruta="../../../../exercises/comunicacion/";
     ////////////// 2do 
             // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
-    function start_18(){
-        $("#ventana").load(ruta+'1-3-18/index.php', 
+   
+    function start_9(){
+        $("#ventana").load(ruta+'2-2-9/index.php', 
         {
-        next: "Page_19()", 
-        procesar:"result_tipo_1_3_18()",
-        titulo:"<center><h5><span class='ftitulo'>Pronuncia</span> en voz alta cada sílaba y <span class='ftitulo'>encierra</span> las sílabas según el código.</h5></center>",
-        restaurar:"start_18()",
+        next: "Page_10()", 
+        procesar:"result_tipo_2_2_9()",
+        titulo:"<center><h5><span>Separa</span> en sílabas los nombres de las siguientes figuras.</h5></center>",
+        restaurar:"start_9()",
         dir:ruta,
-        cod: "1-3-18",
+        cod: "2-2-9",
         nota:cal
         }
         );
         return false;  
     };
-    function start_19(){
-        $("#ventana").load(ruta+'1-3-19/index.php', 
-        { 
-        next: "Page_20()", 
-        procesar:"result_tipo_1_3_19()",
-        titulo:"<center><h5><span class='ftitulo'>Elige</span> el recuadro donde se encuentra la sìlaba <span class='ftitulo'>ra</span> o <span class='ftitulo'>rro</span> en cada caso.</h5></center>",
-        restaurar:"start_19()",
+    function start_10(){
+        $("#ventana").load(ruta+'2-2-10/index.php', 
+        {
+        next: "Page_11()", 
+        procesar:"result_tipo_2_2_10()",
+        titulo:"<center><h5><span>Señala</span> la sílaba tónica.</h5></center>",
+        restaurar:"start_10()",
         dir:ruta,
-        cod: "1-3-19",
+        cod: "2-2-10",
         nota:cal
         }
         );
-        return false;
+        return false;  
     };
-    function start_20(){   
-        $("#ventana").load(ruta+'1-3-20/index.php', 
-        { 
-        next: "Page_21()", 
-        procesar:"result_tipo_1_3_20()",
-        titulo:"<center><h5><span class='ftitulo'>Completa</span> con <span class='ftitulo'>ba, bu, bo, be</span>.</h5></center>",
-        restaurar:"start_20()",
-        dir:ruta,
-        cod: "1-3-20",
-        nota:cal
-        }          
-        );
-        return false;
-    };
-    function start_21(){   
-        $("#ventana").load(ruta+'1-3-21/index.php', 
-        { 
+    function start_11(){
+        $("#ventana").load(ruta+'2-2-11/index.php', 
+        {
         next: "resultado()", 
-        procesar:"result_tipo_1_3_21()",
-        titulo:"<center><h5><span class='ftitulo'>Completa</span> con <span class='ftitulo'>ba, bu, bo, be</span>.</h5></center>",
-        restaurar:"start_21()",
+        procesar:"result_tipo_2_2_11()",
+        titulo:"<center><h5><span>Arrastra</span> las siguientes sílabas en la fila que corresponda tomando en cuenta que las casillas resaltadas corresponden a la sílaba tónica.</h5></center>",
+        restaurar:"start_11()",
         dir:ruta,
-        cod: "1-3-21",
+        cod: "2-2-11",
         nota:cal
-        }          
+        }
         );
-        return false;
+        return false;  
     };
+    
     function resultado(){
         $("#ventana").load('../../../../exercises/resultado/resultado.php');
         return false;

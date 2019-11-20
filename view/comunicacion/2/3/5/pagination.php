@@ -1,217 +1,141 @@
 <script type="text/javascript">
-   function Page_22(){
-        start_22();
+   function Page_12(){
+        start_12();
         inicio();
         count = 3;
     }
-   function  Page_23(){
-        start_23();
+   function  Page_13(){
+        start_13();
         inicio();
          count = 3;
     }
-   function Page_24(){
-        start_24();
-        inicio();
-         count = 3;
-    }
-    function  Page_25(){
-        start_25();
-        inicio();
-         count = 3;
-    }
-    function Page_26(){
-        start_26();
+    function Page_14(){
+        start_14();
         inicio();
         count = 3;
     }
-   function  Page_27(){
-        start_27();
+   function  Page_15(){
+        start_15();
         inicio();
          count = 3;
     }
-   function Page_28(){
-        start_28();
+    function Page_16(){
+        start_16();
+        inicio();
+        count = 3;
+    }
+   function  Page_17(){
+        start_17();
         inicio();
          count = 3;
     }
-    function  Page_29(){
-        start_29();
+    function Page_18(){
+        start_18();
         inicio();
-         count = 3;
+        count = 3;
     }
-    function  Page_30(){
-        start_30();
-        inicio();
-         count = 3;
-    }
-   function Page_31(){
-        start_31();
-        inicio();
-         count = 3;
-    }
-    function  Page_32(){
-        start_32();
-        inicio();
-         count = 3;
-    }
-    var cant=11;
+    var cant=7;
     var cal= 20/20;
     var ruta="../../../../exercises/comunicacion/";
     ////////////// 2do 
             // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
-    function start_22(){
-        $("#ventana").load(ruta+'1-3-22/index.php', 
+    function start_12(){
+        $("#ventana").load(ruta+'2-2-12/index.php', 
         {
-        next: "Page_23()", 
-        procesar:"result_tipo_1_3_22()",
-        titulo:"<center><h5><span class='ftitulo'>Marca</span> la palabra que corresponda a la imagen.</h5></center>",
-        restaurar:"start_22()",
+        next: "Page_13()", 
+        procesar:"result_tipo_2_2_12()",
+        titulo:"<center><h5><span>Observa</span> atentamente el listado de sustantivos, luego <span>arrastra</span> en la tabla aquellos que correspondan.</h5></center>",
+        restaurar:"start_12()",
         dir:ruta,
-        cod: "1-3-22",
+        cod: "2-2-12",
         nota:cal
         }
         );
         return false;  
     };
-    function start_23(){
-        $("#ventana").load(ruta+'1-3-23/index.php', 
-        { 
-        next: "Page_24()", 
-        procesar:"result_tipo_1_3_23()",
-        titulo:"<center><h5><span class='ftitulo'>Marca</span> la palabra que corresponda a la imagen.</h5></center>",
-        restaurar:"start_23()",
+    function start_13(){
+        $("#ventana").load(ruta+'2-2-13/index.php', 
+        {
+        next: "Page_14()", 
+        procesar:"result_tipo_2_2_13()",
+        titulo:"<center><h5><span>Arrastra</span> el sustantivo que corresponde con la imagen.</h5></center>",
+        restaurar:"start_13()",
         dir:ruta,
-        cod: "1-3-23",
+        cod: "2-2-13",
         nota:cal
         }
         );
-        return false;
+        return false;  
     };
-    function start_24(){   
-        $("#ventana").load(ruta+'1-3-24/index.php', 
-        { 
-        next: "Page_25()", 
-        procesar:"result_tipo_1_3_24()",
-        titulo:"<center><h5><span class='ftitulo'>Completa</span> las palabras con <i>va, ve, vi, vo, vu</i>.</h5></center>",
-        restaurar:"start_24()",
+    function start_14(){
+        $("#ventana").load(ruta+'2-2-14/index.php', 
+        {
+        next: "Page_15()", 
+        procesar:"result_tipo_2_2_14()",
+        titulo:"<center><h5><span>Arrastra</span> el nombre de las siguientes imágenes.</h5></center>",
+        restaurar:"start_14()",
         dir:ruta,
-        cod: "1-3-24",
+        cod: "2-2-14",
         nota:cal
-        }          
+        }
         );
-        return false;
+        return false;  
     };
-    function start_25(){   
-        $("#ventana").load(ruta+'1-3-25/index.php', 
-        { 
-        next: "Page_26()", 
-        procesar:"result_tipo_1_3_25()",
-        titulo:"<center><h5><span class='ftitulo'>Completa</span> las palabras con <i>va, ve, vi, vo, vu</i>.</h5></center>",
-        restaurar:"start_25()",
+    function start_15(){
+        $("#ventana").load(ruta+'2-2-15/index.php', 
+        {
+        next: "Page_16()", 
+        procesar:"result_tipo_2_2_15()",
+        titulo:"<center><h5><span>Marca</span> <span>propio</span> o <span>común</span> en los siguientes recuadros, según corresponda a cada sustantivo.</h5></center>",
+        restaurar:"start_15()",
         dir:ruta,
-        cod: "1-3-25",
+        cod: "2-2-15",
         nota:cal
-        }          
+        }
         );
-        return false;
+        return false;  
     };
-    function start_26(){   
-        $("#ventana").load(ruta+'1-3-26/index.php', 
-        { 
-        next: "Page_27()", 
-        procesar:"result_tipo_1_3_26()",
-        titulo:"<center><h5><span class='ftitulo'>Completa</span> las palabras con <i>va, ve, vi, vo, vu</i>.</h5></center>",
-        restaurar:"start_26()",
+    function start_16(){
+        $("#ventana").load(ruta+'2-2-16/index.php', 
+        {
+        next: "Page_17()", 
+        procesar:"result_tipo_2_2_16()",
+        titulo:"<center><h5><span>Arrastra</span> y <span>clasifica</span> cada sustantivo donde corresponde.</h5></center>",
+        restaurar:"start_16()",
         dir:ruta,
-        cod: "1-3-26",
+        cod: "2-2-16",
         nota:cal
-        }          
+        }
         );
-        return false;
+        return false;  
     };
-    function start_27(){   
-        $("#ventana").load(ruta+'1-3-27/index.php', 
-        { 
-        next: "Page_28()", 
-        procesar:"result_tipo_1_3_27()",
-        titulo:"<center><h5><span class='ftitulo'>Ordena</span> las sílabas y forma palabras. <span>Guíate</span> de las imágenes.</h5></center>",
-        restaurar:"start_27()",
+    function start_17(){
+        $("#ventana").load(ruta+'2-2-17/index.php', 
+        {
+        next: "Page_18()", 
+        procesar:"result_tipo_2_2_17()",
+        titulo:"<center><h5><span>Arrastra</span> y <span>clasifica</span> los siguientes sustantivos en comunes o propios.</h5></center>",
+        restaurar:"start_17()",
         dir:ruta,
-        cod: "1-3-27",
+        cod: "2-2-17",
         nota:cal
-        }          
+        }
         );
-        return false;
+        return false;  
     };
-    function start_28(){   
-        $("#ventana").load(ruta+'1-3-28/index.php', 
-        { 
-        next: "Page_29()", 
-        procesar:"result_tipo_1_3_28()",
-        titulo:"<center><h5><span class='ftitulo'>Ordena</span> las sílabas y forma palabras. <span>Guíate</span> de las imágenes.</h5></center>",
-        restaurar:"start_28()",
-        dir:ruta,
-        cod: "1-3-28",
-        nota:cal
-        }          
-        );
-        return false;
-    };
-    function start_29(){   
-        $("#ventana").load(ruta+'1-3-29/index.php', 
-        { 
-        next: "Page_30()", 
-        procesar:"result_tipo_1_3_29()",
-        titulo:"<center><h5><span class='ftitulo'>Forma</span> oraciones con las siguientes palabras.</h5></center>",
-        restaurar:"start_29()",
-        dir:ruta,
-        cod: "1-3-29",
-        nota:cal
-        }          
-        );
-        return false;
-    };
-    function start_30(){   
-        $("#ventana").load(ruta+'1-3-30/index.php', 
-        { 
-        next: "Page_31()", 
-        procesar:"result_tipo_1_3_30()",
-        titulo:"<center><h5><span class='ftitulo'>Señala</span> la palabra que corresponde con la imagen.</h5></center>",
-        restaurar:"start_30()",
-        dir:ruta,
-        cod: "1-3-30",
-        nota:cal
-        }          
-        );
-        return false;
-    };
-    function start_31(){   
-        $("#ventana").load(ruta+'1-3-31/index.php', 
-        { 
-        next: "Page_32()", 
-        procesar:"result_tipo_1_3_31()",
-        titulo:"<center><h5><span class='ftitulo'>Señala</span> la palabra que corresponde con la imagen.</h5></center>",
-        restaurar:"start_31()",
-        dir:ruta,
-        cod: "1-3-31",
-        nota:cal
-        }          
-        );
-        return false;
-    };
-    function start_32(){   
-        $("#ventana").load(ruta+'1-3-32/index.php', 
-        { 
+    function start_18(){
+        $("#ventana").load(ruta+'2-2-18/index.php', 
+        {
         next: "resultado()", 
-        procesar:"result_tipo_1_3_32()",
-        titulo:"<center><h5><span class='ftitulo'>Señala</span> la palabra que corresponde con la imagen.</h5></center>",
-        restaurar:"start_32()",
+        procesar:"result_tipo_2_2_18()",
+        titulo:"<center><h5><span>Arrastra</span> cada sustantivo propio según corresponda.</h5></center>",
+        restaurar:"start_18()",
         dir:ruta,
-        cod: "1-3-32",
+        cod: "2-2-18",
         nota:cal
-        }          
+        }
         );
-        return false;
+        return false;  
     };
     function resultado(){
         $("#ventana").load('../../../../exercises/resultado/resultado.php');

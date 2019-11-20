@@ -55,7 +55,7 @@
         {
         next: "resultado()", 
         procesar:"result_tipo_2_2_11()",
-        titulo:"<center><h5><span>Arrastra</span> las siguientes sílabas en la fila que corresponda tomando en cuenta que las casillas sombreadas corresponden a la sílaba tónica.</h5></center>",
+        titulo:"<center><h5><span>Arrastra</span> las siguientes sílabas en la fila que corresponda tomando en cuenta que las casillas resaltadas corresponden a la sílaba tónica.</h5></center>",
         restaurar:"start_11()",
         dir:ruta,
         cod: "2-2-11",
