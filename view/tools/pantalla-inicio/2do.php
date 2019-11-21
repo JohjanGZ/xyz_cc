@@ -1,4 +1,4 @@
-  <link rel="stylesheet" type="text/css" href="../../../tools/pantalla-inicio/css/pantalla-inicio.css">
+  <link rel="stylesheet" type="text/css" href="../../../../tools/pantalla-inicio/css/pantalla-inicio.css">
         <div id="portada" class="Portada scale-transition">    
 			  <div class="contenedor-top">
           <button class="btn-back btn red"><a href="../../../../../" style="color:inherit!important;"><i class="material-icons mediun">arrow_back</i></a></button>
