@@ -80,7 +80,7 @@
         {
         next: "Page_5()", 
         procesar:"result_tipo_2_3_4()",
-        titulo:"<center><h5><span>Encuentra</span> en la sopa de letras los antónimos de las siguientes palabras:</h5></center>",
+        titulo:"<center><h5><span>Observa</span> atentamente las palabras, <span>haz</span> clic en el botón debajo y <span>selecciona</span> el antónimo que corresponde.</h5></center>",
         restaurar:"start_4()",
         dir:ruta,
         cod: "2-3-4",
@@ -94,7 +94,7 @@
         {
         next: "resultado()", 
         procesar:"result_tipo_2_3_5()",
-        titulo:"<center><h5><span>Observa</span> atentamente las palabras, <span>haz</span> clic en el botón debajo y <span>selecciona</span> el antónimo que corresponde.</h5></center>",
+        titulo:"<center><h5><span>Encuentra</span> en la sopa de letras los antónimos de las siguientes palabras:</h5></center>",
         restaurar:"start_5()",
         dir:ruta,
         cod: "2-3-5",
