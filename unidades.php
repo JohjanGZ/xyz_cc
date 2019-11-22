@@ -102,7 +102,7 @@ console.log(data.titulo);
 					}
 						localStorage.setItem("data", JSON.stringify(unidades)); 
 						localStorage.setItem("color", color);
-						localStorage.setItem("curos", curso);
+						localStorage.setItem("curso", curso);
 						localStorage.setItem("grado", grado);
 						
 
