@@ -80,15 +80,15 @@ console.log(data.titulo);
 </div> 
 </div>
 			<script type='text/javascript'>										
-					var grado = data.grado;
+					 var grado = data.grado;
 					 var unidades = data.unidades;
-					 
+					 var lib=data.libros;
 					 var color = data.color;
 					 var curso=data.curso;
 					 $('h4').html(data.titulo);
 					 $('h4').css("color",color);
 				$('.btn-libros').click(function(){
-					$('#actividades').load('contenido_digitales.php');
+					$('#actividades').load('contenido_digitales.php', {digital:lib});
 					$('#portada').css('display', 'block !important');
 				});
 					function ver_ejercicios(temas,name,i,g){
@@ -105,11 +105,8 @@ console.log(data.titulo);
 						localStorage.setItem("curso", curso);
 						localStorage.setItem("grado", grado);
 						
-
-
-
                         function BackHome() {
                             $('#cuerpo').load('libros.php',{data: libros});
                         }
-                    </script>
+                </script>
  

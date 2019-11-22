@@ -3,7 +3,7 @@
 A jQuery paint plugin for a simple drawing surface that you can easily pop into your pages, similar to the basic windows paint program.
 
 * [View the wPaint demo](http://wpaint.websanova.com)
-* [Download the lastest version of wPaint](https://github.com/websanova/wPaint/tags)
+* [Download the lastest version of wPaint](https://github.com/websanova/w../paint/tags)
 
 
 ## Related Plugins
@@ -85,32 +85,32 @@ $.extend($.fn.wPaint.defaults, {
 To start, you will need to include any dependencies (the paths and versions may differ):
 ```html
 <!-- jQuery -->
-<script type="text/javascript" src="paint/lib/jquery.1.10.2.min.js"></script>
+<script type="text/javascript" src="../paint/lib/jquery.1.10.2.min.js"></script>
 <!-- jQuery UI -->
-<script type="text/javascript" src="paint/lib/jquery.ui.core.1.10.3.min.js"></script>
-<script type="text/javascript" src="paint/lib/jquery.ui.widget.1.10.3.min.js"></script>
-<script type="text/javascript" src="paint/lib/jquery.ui.mouse.1.10.3.min.js"></script>
-<script type="text/javascript" src="paint/lib/jquery.ui.draggable.1.10.3.min.js"></script>
+<script type="text/javascript" src="../paint/lib/jquery.ui.core.1.10.3.min.js"></script>
+<script type="text/javascript" src="../paint/lib/jquery.ui.widget.1.10.3.min.js"></script>
+<script type="text/javascript" src="../paint/lib/jquery.ui.mouse.1.10.3.min.js"></script>
+<script type="text/javascript" src="../paint/lib/jquery.ui.draggable.1.10.3.min.js"></script>
 <!-- wColorPicker -->
-<link rel="Stylesheet" type="text/css" href="paint/lib/wColorPicker.min.css" />
-<script type="text/javascript" src="paint/lib/wColorPicker.min.js"></script>
+<link rel="Stylesheet" type="text/css" href="../paint/lib/wColorPicker.min.css" />
+<script type="text/javascript" src="../paint/lib/wColorPicker.min.js"></script>
 ```
 
 
 
 Then you need to include the wPaint core files:
 ```html
-<link rel="Stylesheet" type="text/css" href="paint/wPaint.min.css" />
-<script type="text/javascript" src="paint/wPaint.min.js"></script>
+<link rel="Stylesheet" type="text/css" href="../paint/wPaint.min.css" />
+<script type="text/javascript" src="../paint/wPaint.min.js"></script>
 ```
 
 From here we will need to include plugin files for whatever menu icons we would like to support.  This can include the plugins provided with the release of this plugin or any additional plugins that you can write on your own.
 
 ```html
-<script type="text/javascript" src="paint/plugins/main/wPaint.menu.main.min.js"></script>
-<script type="text/javascript" src="paint/plugins/text/wPaint.menu.text.min.js"></script>
-<script type="text/javascript" src="paint/plugins/shapes/wPaint.menu.main.shapes.min.js"></script>
-<script type="text/javascript" src="paint/plugins/file/wPaint.menu.main.file.min.js"></script>
+<script type="text/javascript" src="../paint/plugins/main/wPaint.menu.main.min.js"></script>
+<script type="text/javascript" src="../paint/plugins/text/wPaint.menu.text.min.js"></script>
+<script type="text/javascript" src="../paint/plugins/shapes/wPaint.menu.main.shapes.min.js"></script>
+<script type="text/javascript" src="../paint/plugins/file/wPaint.menu.main.file.min.js"></script>
 ```
 
 
@@ -120,7 +120,7 @@ If you are putting wPaint into a path other than root (most likely you will) the
 
 ```js
 $('#wPaint').wPaint({
-  path: 'paint/js/lib/wPaint/'
+  path: '../paint/js/lib/w../paint/'
 });
 ```
 
@@ -185,7 +185,7 @@ Set the image or background with an image or color at any time.
 
 ```js
 $("#wPaint").wPaint({
-  image: 'paint/some/path/imagepreload.png',
+  image: '../paint/some/path/imagepreload.png',
   bg: '#ff0000'
 });
 ```
@@ -226,7 +226,7 @@ With version 2.0 wPaint can now easily be extended by setting all or some of the
 ```js
 // add menu
 $.fn.wPaint.menus.main = {
-  img: 'paint/plugins/main/img/icons-menu-main.png',
+  img: '../paint/plugins/main/img/icons-menu-main.png',
   items: {
     undo: {
       icon: 'generic',
@@ -238,7 +238,7 @@ $.fn.wPaint.menus.main = {
 
 // extend cursors
 $.extend($.fn.wPaint.cursors, {
-  pencil: 'url("paint/plugins/main/img/cursor-pencil.png") 0 11.99, default',
+  pencil: 'url("../paint/plugins/main/img/cursor-pencil.png") 0 11.99, default',
 });
 
 // extend defaults
@@ -323,7 +323,7 @@ undo: {
   title: 'Undo',
   
   // set an alternate image path to use for this icon
-  img: 'paint/som/path.png',
+  img: '../paint/som/path.png',
 
   // Index position in image file starting from 0
   index: 0,
@@ -366,12 +366,12 @@ Images for each plugin should be kept in one file and can be either specificed b
 
 ```js
 $.fn.wPaint.menus.main.items.undo = {
-  img: 'paint/plugins/main/img/icons-menu-main.png',
+  img: '../paint/plugins/main/img/icons-menu-main.png',
   items: {
     undo: {
       icon: 'generic',
       title: 'Undo',
-      img: '/paint/some/other/path.png'
+      img: '/../paint/some/other/path.png'
       index: 0,
       callback: function () { this.undo(); }
     }

@@ -28,10 +28,10 @@
       "url": "https://github.com/websanova/wPaint#license"
     }
   ],
-  "bugs": "https://github.com/websanova/wPaint/issues",
+  "bugs": "https://github.com/websanova/w../paint/issues",
   "homepage": "http://wpaint.websanova.com",
   "docs": "https://github.com/websanova/wPaint#wpaintjs",
-  "download": "https://github.com/websanova/wPaint/tags",
+  "download": "https://github.com/websanova/w../paint/tags",
   "dependencies": {
     "jquery": ">=1.5"
   }

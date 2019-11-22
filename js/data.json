@@ -9,12 +9,16 @@
             "portada": "comunicacion1.jpg",
             "libros": {
                 "0": {
-                    "title": "Libro 1",
-                    "enlace": "com1-1"
+                    "title": "Actividades",
+                    "enlace": "com-act-1"
                 },
                 "1": {
-                    "title": "Libro 2",
-                    "enlace": "com1-2"
+                    "title": "Razonamiento Verbal",
+                    "enlace": "com-rv-1"
+                },
+                "2": {
+                    "title": "Texto",
+                    "enlace": "com-txt-1"
                 }
             },
             "unidades": {
@@ -190,7 +194,7 @@
             "unidades": ""
         },
         "3": {
-            "activo": "1",
+            "activo": "0",
             "titulo": "Comunicación 4",
             "color": "#5f1e76",
             "grado": "4",
@@ -209,7 +213,7 @@
             "unidades": ""
         },
         "4": {
-            "activo": "1",
+            "activo": "0",
             "titulo": "Comunicación 5",
             "color": "#91b715",
             "grado": "5",
@@ -228,7 +232,7 @@
             "unidades": ""
         },
         "5": {
-            "activo": "1",
+            "activo": "0",
             "titulo": "Comunicación 6",
             "color": "#2f1b6d",
             "grado": "6",

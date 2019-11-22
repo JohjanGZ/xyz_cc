@@ -1,4 +1,5 @@
 	<?php
+			$libros=$_POST['digital'];
 			$_POST['id_unidad'];
 			$ejercicios=$_POST['ejercicios'];
 			$_POST['nombre'];
@@ -11,8 +12,17 @@
 			<button type="button" class="btn btn-primary disabled">Contenido</button>
 		</div>
 	</div><br><br>
-<a href="view/digitales/mate1-1/index.php" target="_blank" class="btn green waves-effect waves-light">Actividades parte 1</a>	
-<a href="view/digitales/mate1-2/index.php" target="_blank" class="btn green waves-effect waves-light">Actividades parte 2</a>	
+	<?php
+				$t=0;
+				foreach ($libros as $i){
+					echo 
+					"<center><a href='view/digitales/".$libros[$t]['enlace']."/index.php' target='_blank' class='btn-digitales btn green waves-effect waves-light'>
+					".$libros[$t]['title']."
+					</a></center><br>";
+				    $t++;
+				}
+	?>
+
 </div>
 	<script type="text/javascript">
 		$("#portada").css("display", "none");

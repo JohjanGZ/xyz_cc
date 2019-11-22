@@ -32,7 +32,7 @@
 </head>	
 <body>
 	<div id="notaciones">
-	<?php include('paint/paint.php'); ?>
+	<?php include('../paint/paint.php'); ?>
 	</div>
 
 	   <a style="margin-top:10vh; z-index: 55559999999 !important; position: absolute;" class="btn amber notas">Notas</a>

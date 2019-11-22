@@ -1,5 +1,5 @@
 (function ($) {
-  var img = 'paint/plugins/shapes/img/icons-menu-main-shapes.png';
+  var img = '../paint/plugins/shapes/img/icons-menu-main-shapes.png';
 
   // extend menu
   $.extend(true, $.fn.wPaint.menus.main.items, {

@@ -2,7 +2,7 @@
 
   // setup menu
   $.fn.wPaint.menus.main = {
-    img: 'paint/plugins/main/img/icons-menu-main.png',
+    img: '../paint/plugins/main/img/icons-menu-main.png',
     items: {
       undo: {
         icon: 'generic',
@@ -80,20 +80,20 @@
 
   // extend cursors
   $.extend($.fn.wPaint.cursors, {
-    'default': {path: 'paint/plugins/main/img/cursor-crosshair.png', left: 7, top: 7},
-    dropper:   {path: 'paint/plugins/main/img/cursor-dropper.png', left: 0, top: 12},
-    pencil:    {path: 'paint/plugins/main/img/cursor-pencil.png', left: 0, top: 11.99},
-    bucket:    {path: 'paint/plugins/main/img/cursor-bucket.png', left: 0, top: 10},
-    eraser1:   {path: 'paint/plugins/main/img/cursor-eraser1.png', left: 1, top: 1},
-    eraser2:   {path: 'paint/plugins/main/img/cursor-eraser2.png', left: 2, top: 2},
-    eraser3:   {path: 'paint/plugins/main/img/cursor-eraser3.png', left: 2, top: 2},
-    eraser4:   {path: 'paint/plugins/main/img/cursor-eraser4.png', left: 3, top: 3},
-    eraser5:   {path: 'paint/plugins/main/img/cursor-eraser5.png', left: 3, top: 3},
-    eraser6:   {path: 'paint/plugins/main/img/cursor-eraser6.png', left: 4, top: 4},
-    eraser7:   {path: 'paint/plugins/main/img/cursor-eraser7.png', left: 4, top: 4},
-    eraser8:   {path: 'paint/plugins/main/img/cursor-eraser8.png', left: 5, top: 5 },
-    eraser9:   {path: 'paint/plugins/main/img/cursor-eraser9.png', left: 5, top: 5},
-    eraser10:  {path: 'paint/plugins/main/img/cursor-eraser10.png', left: 6, top: 6}
+    'default': {path: '../paint/plugins/main/img/cursor-crosshair.png', left: 7, top: 7},
+    dropper:   {path: '../paint/plugins/main/img/cursor-dropper.png', left: 0, top: 12},
+    pencil:    {path: '../paint/plugins/main/img/cursor-pencil.png', left: 0, top: 11.99},
+    bucket:    {path: '../paint/plugins/main/img/cursor-bucket.png', left: 0, top: 10},
+    eraser1:   {path: '../paint/plugins/main/img/cursor-eraser1.png', left: 1, top: 1},
+    eraser2:   {path: '../paint/plugins/main/img/cursor-eraser2.png', left: 2, top: 2},
+    eraser3:   {path: '../paint/plugins/main/img/cursor-eraser3.png', left: 2, top: 2},
+    eraser4:   {path: '../paint/plugins/main/img/cursor-eraser4.png', left: 3, top: 3},
+    eraser5:   {path: '../paint/plugins/main/img/cursor-eraser5.png', left: 3, top: 3},
+    eraser6:   {path: '../paint/plugins/main/img/cursor-eraser6.png', left: 4, top: 4},
+    eraser7:   {path: '../paint/plugins/main/img/cursor-eraser7.png', left: 4, top: 4},
+    eraser8:   {path: '../paint/plugins/main/img/cursor-eraser8.png', left: 5, top: 5 },
+    eraser9:   {path: '../paint/plugins/main/img/cursor-eraser9.png', left: 5, top: 5},
+    eraser10:  {path: '../paint/plugins/main/img/cursor-eraser10.png', left: 6, top: 6}
   });
 
   // extend defaults

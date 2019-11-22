@@ -1,6 +1,6 @@
 
 
-    <link rel="Stylesheet" type="text/css" href="paint/demo/demo.css" />
+    <link rel="Stylesheet" type="text/css" href="../paint/demo/demo.css" />
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
  
   <!-- headend -->
@@ -24,22 +24,22 @@
   <div id="paint">
     <div class="">
       <!-- jQuery UI -->
-      <script type="text/javascript" src="paint/lib/jquery.ui.core.1.10.3.min.js"></script>
-      <script type="text/javascript" src="paint/lib/jquery.ui.widget.1.10.3.min.js"></script>
-      <script type="text/javascript" src="paint/lib/jquery.ui.mouse.1.10.3.min.js"></script>
-      <script type="text/javascript" src="paint/lib/jquery.ui.draggable.1.10.3.min.js"></script>
+      <script type="text/javascript" src="../paint/lib/jquery.ui.core.1.10.3.min.js"></script>
+      <script type="text/javascript" src="../paint/lib/jquery.ui.widget.1.10.3.min.js"></script>
+      <script type="text/javascript" src="../paint/lib/jquery.ui.mouse.1.10.3.min.js"></script>
+      <script type="text/javascript" src="../paint/lib/jquery.ui.draggable.1.10.3.min.js"></script>
       
       <!-- wColorPicker -->
-      <link rel="Stylesheet" type="text/css" href="paint/lib/wColorPicker.min.css" />
-      <script type="text/javascript" src="paint/lib/wColorPicker.min.js"></script>
+      <link rel="Stylesheet" type="text/css" href="../paint/lib/wColorPicker.min.css" />
+      <script type="text/javascript" src="../paint/lib/wColorPicker.min.js"></script>
 
       <!-- wPaint -->
-      <link rel="Stylesheet" type="text/css" href="paint/wPaint.min.css" />
-      <script type="text/javascript" src="paint/wPaint.min.js"></script>
-      <script type="text/javascript" src="paint/plugins/main/wPaint.menu.main.min.js"></script>
-      <script type="text/javascript" src="paint/plugins/text/wPaint.menu.text.min.js"></script>
-      <script type="text/javascript" src="paint/plugins/shapes/wPaint.menu.main.shapes.min.js"></script>
-      <script type="text/javascript" src="paint/plugins/file/wPaint.menu.main.file.min.js"></script>
+      <link rel="Stylesheet" type="text/css" href="../paint/wPaint.min.css" />
+      <script type="text/javascript" src="../paint/wPaint.min.js"></script>
+      <script type="text/javascript" src="../paint/plugins/main/wPaint.menu.main.min.js"></script>
+      <script type="text/javascript" src="../paint/plugins/text/wPaint.menu.text.min.js"></script>
+      <script type="text/javascript" src="../paint/plugins/shapes/wPaint.menu.main.shapes.min.js"></script>
+      <script type="text/javascript" src="../paint/plugins/file/wPaint.menu.main.file.min.js"></script>
 
       <div id="wPaint" style="position:absolute; "></div>
 
