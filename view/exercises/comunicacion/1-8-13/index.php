@@ -29,7 +29,7 @@
                         <h4 class="pieza" alt="claro">claro</h4>
                     </li>
                     <li class="silabas">
-                        <h4 class="pieza" alt="ciclista">cicilista</h4>
+                        <h4 class="pieza" alt="ciclista">ciclista</h4>
                     </li>
                 </ul>
                 <div class="contenedor-img">

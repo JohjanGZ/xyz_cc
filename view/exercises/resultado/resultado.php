@@ -80,7 +80,8 @@
             $('#btn-flotante').addClass('pulse');
 
             var aprobado = false;
-            var data = JSON.parse(localStorage.getItem("data"));
+            var data = JSON.parse(localStorage.getItem("data")); 
+            var grado = localStorage.getItem("grado");
             var ruta = window.location.pathname;
             var tema = ruta.substr(-2, 1);
             var unidad = ruta.substr(-4, 1);
@@ -100,7 +101,7 @@
                         '<button class="btn-success"><a href="../../../../../">Salir</a></button>');
                 } else {
                     $(".contenedor-mensaje").append(
-                        '<button class="btn-success"><a href="../../../../../">Salir</a></button><button class="btn-success"><a href="../../' +
+                        '<button class="btn-success"><a href="../../../../../">Salir</a></button><button class="btn-success"><a href="../' +
                         (parseInt(tema) + 1) + '">Siguiente</a></button>');
                 }
 

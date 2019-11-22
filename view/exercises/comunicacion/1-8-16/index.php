@@ -113,13 +113,37 @@
                     <h4 class="pieza" alt="glo">glo</h4>
                 </li>
                 <li class="silabas">
-                    <h4 class="pieza" alt="gra">gra</h4>
+                    <h4 class="pieza" alt="bo">bo</h4>
                 </li>
                 <li class="silabas">
-                    <h4 class="pieza" alt="gri">gri</h4>
+                    <h4 class="pieza" alt="glo">glo</h4>
                 </li>
                 <li class="silabas">
-                    <h4 class="pieza" alt="gre">gre</h4>
+                    <h4 class="pieza" alt="ton">tón</h4>
+                </li>
+                <li class="silabas">
+                    <h4 class="pieza" alt="re">re</h4>
+                </li>
+                <li class="silabas">
+                    <h4 class="pieza" alt="gla">gla</h4>
+                </li>
+                <li class="silabas">
+                    <h4 class="pieza" alt="gla">gla</h4>
+                </li>
+                <li class="silabas">
+                    <h4 class="pieza" alt="dia">dia</h4>
+                </li>
+                <li class="silabas">
+                    <h4 class="pieza" alt="dor">dor</h4>
+                </li>
+                <li class="silabas">
+                    <h4 class="pieza" alt="a">a</h4>
+                </li>
+                <li class="silabas">
+                    <h4 class="pieza" alt="rre">rre</h4>
+                </li>
+                <li class="silabas">
+                    <h4 class="pieza" alt="glar">glar</h4>
                 </li>
         </div>
     </div>
@@ -145,13 +169,13 @@
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
 // Validar
-function result_tipo_1_8_14() {
+function result_tipo_1_8_16() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
-    if (r == 6) {
+    if (r == 14) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();

@@ -65,7 +65,7 @@
 
 
         console.log(divs);
-        if (divs >= 48) {
+        if (divs >= 46) {
             localStorage.setItem("Nota<?=$cod?>", nota);
             localStorage.setItem("Time<?=$cod?>", tiempo);
             correcto();
