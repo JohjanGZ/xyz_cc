@@ -107,8 +107,8 @@
 
         // init wPaint
         $('#wPaint').wPaint({
-          menuOffsetLeft: 5,
-          menuOffsetTop: -20,
+          menuOffsetLeft: 20,
+          menuOffsetTop: 95,
           saveImg: saveImg,
           loadImgBg: loadImgBg,
           loadImgFg: loadImgFg

@@ -99,5 +99,5 @@
     <a class="btn-floating amber notas"><i class="material-icons">create</i></a>
 
     <div id="notaciones">
-        <?php include('../paint/paint.php');?>
+        <?php include('paint/paint.php');?>
     </div>
