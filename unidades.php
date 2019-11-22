@@ -20,19 +20,23 @@
     	width: 80%;
 	}
 </style>
+
 <?php 
-  $grado=$_POST['grado'];
+   $curso=$_POST['curso'];
+   $grado=$_POST['grado'];
+?>
+<script>var data=libros[<?=$curso?>][<?=$grado?>]
+console.log(data.titulo)
+</script>
+<?php
   $titulo=$_POST['titulo'];
   $color=$_POST['color'];
-  $enlace=$_POST['enlace'];
-  $datos= json_encode($_POST['data']);
+
+  $datos= json_encode($_POST['unidades']);
   $libros=json_encode($_POST['libros']);
  ?>
- <script type="text/javascript">
- 	var enlace = <?=$enlace?>;
 
- </script>
-	<style type="text/css">
+<style type="text/css">
 	.TituloGrado{
 		-webkit-text-stroke: 1px #f6c303;
 	    font-size: 50px;
@@ -41,7 +45,6 @@
 	    font-family: sans-serif;
 	    color: <?=$color?>;
 	}
-
 	.btn-libros{
 		background: #019e0d !important;
 		color:white !important;
@@ -52,17 +55,16 @@
 	.btn-libros .title{
 		color:white !important;
 	}
-	</style>
+</style>
   <!-- CSS  -->
 <div class="content-wrapper libro" style="margin-top: 58px;">
-<center><h4 class="TituloGrado"><?=$titulo?></h4></center><br><br>
+<center><h4 class="TituloGrado"></h4></center><br><br>
 <div id="indice" data-id="1499880">
 <div class="wrap-contenido-indice">
 <div class="col-indice col-units" style="margin-left: 0px;">
 	<div class="units" id="wrapper">
 		<ul id="list-units">
-			<li class=' btn-libros'><a class='js-tema' ><span class='number'>2</span><span class='title'>Libros Digitales</span></a></li>
-
+			<li class='btn-libros'><a class='js-tema' ><span class='number'>2</span><span class='title'>Libros Digitales</span></a></li>
 		</ul>
 	</div>
 </div>
@@ -78,20 +80,32 @@
 </div> 
 </div>
 			<script type='text/javascript'>
-				 	var unidades = <?=$datos?>;
-				 	var color = "<?=$color?>";
-					function ver_ejercicios(ejer,n,name){
+					
+					
+					var grado = data.grado;
+				 	var unidades = data.unidades;
+					 var color = data.color;
+					 $('h4').html(data.titulo);
+					 $('h4').css("color",color);
+				$('.btn-libros').click(function(){
+					$('#actividades').load('contenido_digitales.php');
+					$('#portada').css('display', 'block !important');
+				});
+					function ver_ejercicios(ejer,n,name,i,g){
 						 	$('#actividades').load('contenido_unidad.php', 
-								{ejercicios:ejer,nombre:name, link:n});
+								{ejercicios:ejer,nombre:name, link:n,id:i,grado:g});
 						 	$('#portada').css('display', 'block !important');
 					}
-
 					for (let i in unidades){						
 					 $("#list-units").append("<li  id='unidad"+i+"' class='litema js-indice-tema'><a onclick='' class='js-tema' ><span class='number'>2</span><span class='title'>"+unidades[i].nombre+"</span></a></li>");					  
-					 $("#unidad"+i).click(function(){ ver_ejercicios(unidades[i].temas,unidades[i].ruta,unidades[i].nombre) });
+					 $("#unidad"+i).click(function(){ ver_ejercicios(unidades[i].temas,unidades[i].ruta,unidades[i].nombre,i,grado) });
 					}
+						localStorage.setItem("data", JSON.stringify(unidades)); 
+						localStorage.setItem("color", color);
 
-							localStorage.setItem("data", JSON.stringify(unidades)); 
-							localStorage.setItem("color", color);
 
-			</script>
+                        function BackHome() {
+                            $('#cuerpo').load('libros.php',{data: libros});
+                        }
+                    </script>
+ 

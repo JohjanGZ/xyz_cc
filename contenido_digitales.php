@@ -11,11 +11,9 @@
 			<button type="button" class="btn btn-primary disabled">Contenido</button>
 		</div>
 	</div><br><br>
-<a href="view/digitales/mate1-1/index.html" target="_blank" class="btn green waves-effect waves-light">Actividades parte 1</a>	
-<a href="view/digitales/mate1-2/index.html" target="_blank" class="btn green waves-effect waves-light">Actividades parte 2</a>	
+<a href="view/digitales/mate1-1/index.php" target="_blank" class="btn green waves-effect waves-light">Actividades parte 1</a>	
+<a href="view/digitales/mate1-2/index.php" target="_blank" class="btn green waves-effect waves-light">Actividades parte 2</a>	
 </div>
 	<script type="text/javascript">
-
-
 		$("#portada").css("display", "none");
 	</script>

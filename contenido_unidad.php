@@ -1,5 +1,6 @@
 	<?php
-			$_POST['id_unidad'];
+			$grado=$_POST['grado'];
+			$id=$_POST['id'];
 			$ejercicios=$_POST['ejercicios'];
 			$_POST['nombre'];
 			$link=$_POST['link'];
@@ -23,13 +24,12 @@
 			<?php
 				$t=1;
 				foreach ($ejercicios as $i){
-				    echo "<hr><li  class='li-contenido'>- ".$i."</li><a class='btn amber waves-effect waves-light' href='view/".$link."/".$t."'><i class='material-icons'>play_arrow</i></a>";
+				    echo "<hr><li  class='li-contenido'>- ".$i."</li><a class='btn amber waves-effect waves-light' href='view/".$link.$grado.'/'.$id.'/'.$t."'><i class='material-icons'>play_arrow</i></a>";
 				    $t++;
 				}
 			?>
 		</ul>
 </div>
 	<script type="text/javascript">
-
 		$("#portada").css("display", "none");
 	</script>
