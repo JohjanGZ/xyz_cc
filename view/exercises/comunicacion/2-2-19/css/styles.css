@@ -1,0 +1,43 @@
+h4 {
+    text-align: center;
+}
+
+.contenedor-ejercicios {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 40px;
+}
+
+.imagen {
+    width: 50%;
+}
+
+.img-cuadro {
+    width: 220px;
+    height: 250px;
+    border: 3px solid silver;
+    border-radius: 12px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-cuadro:hover {
+    border-color: #37D3F7;
+}
+
+.img-cuadro img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+/**************/
+
+@media(max-height: 640px) {
+    .imagen {
+        width: 33%;
+    }
+}

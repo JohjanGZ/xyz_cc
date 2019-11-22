@@ -1,0 +1,25 @@
+#contenedorpuzzle {
+    width: 590px;
+    margin: 10vh auto;
+}
+
+.item img {
+    width: 250px;
+    margin: 3 20px 0;
+    float: left;
+    border: solid #cdcdcd;
+    border-radius: 20px;
+    padding: 28px 37px;
+}
+
+.item img:hover {
+    border: solid #37D3F7;
+}
+
+h5 {
+    font-size: 200%;
+}
+
+.img-principal {
+    margin: 5vh auto 0;
+}

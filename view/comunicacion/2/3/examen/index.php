@@ -44,7 +44,7 @@
   function IniciarCronometro(){
  
       $("#portada").css("display", "none");
-            npage = Math.floor(Math.random()*40)+1;
+            npage = Math.floor(Math.random()*9)+1;
             Paginas(npage);
            //console.log(npage);
       }

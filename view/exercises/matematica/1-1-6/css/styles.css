@@ -1,0 +1,54 @@
+.container-two {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 100%;
+    padding: 50px;
+}
+.img {
+    width: auto;
+    height: 130px;
+    display: flex;
+    margin: auto;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.grid-item {
+    padding: 6px;
+    font-size: 30px;
+    text-align: center;
+}
+.grid-item img {
+    height: 50px;
+    width: auto;
+}
+.opciones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box-opcion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box-opcion img {
+    width: 15px;
+    height: auto;
+}
+.caja {
+    width: 25px;
+    height: 25px;
+    border: 2px solid silver;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.before {
+    margin-right: 10px;
+}
+.after {
+    margin-left: 5px;
+    margin-right: 10px;
+}

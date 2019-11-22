@@ -1,65 +1,45 @@
 <script type="text/javascript">
-   function Page_12(){
-        start_12();
+   function Page_19(){
+        start_19();
         inicio();
         count = 3;
     }
-   function  Page_13(){
-        start_13();
+   function  Page_20(){
+        start_20();
         inicio();
          count = 3;
     }
-   function Page_14(){
-        start_14();
-        inicio();
-         count = 3;
-    }
-
-    var cant=3;
+    var cant=2;
 
     var cal= 20/20;
     var ruta="../../../../exercises/comunicacion/";
     ////////////// 2do 
             // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
-    function start_12(){
-        $("#ventana").load(ruta+'1-1-12/index.php', 
+    function start_19(){
+        $("#ventana").load(ruta+'2-1-19/index.php', 
         {
-        next: "Page_13()", 
-        procesar:"result_tipo_1_1_12()",
-        titulo:"<center><h5><span class='ftitulo'>Selecciona</span> las palabras que empiezan con <span class='ftitulo'>m</span>.</h5></center>",
-        restaurar:"start_12()",
+        next: "Page_20()", 
+        procesar:"result_tipo_2_1_19()",
+        titulo:"<center><h5><span>Relaciona</span> cada sujeto con el predicado correspondiente.</h5></center>",
+        restaurar:"start_19()",
         dir:ruta,
-        cod: "1-1-12",
+        cod: "2-1-19",
         nota:cal
         }
         );
         return false;  
     };
-    function start_13(){
-        $("#ventana").load(ruta+'1-1-13/index.php', 
-        { 
-        next: "Page_14()", 
-        procesar:"result_tipo_1_1_13()",
-        titulo:"<center><h5><span class='ftitulo'>Selecciona</span> la imagen que falta en la secuencia.</h5></center>",
-        restaurar:"start_13()",
-        dir:ruta,
-        cod: "1-1-13",
-        nota:cal
-        }
-        );
-        return false;
-    };
-    function start_14(){   
-        $("#ventana").load(ruta+'1-1-14/index.php', 
+    function start_20(){
+        $("#ventana").load(ruta+'2-1-20/index.php', 
         { 
         next: "resultado()", 
-        procesar:"result_tipo_1_1_14()",
-        titulo:"<center><h5><span class='ftitulo'>Selecciona</span> la imagen que falta en la secuencia.</h5></center>",
-        restaurar:"start_14()",
+        procesar:"result_tipo_2_1_20()",
+        titulo:"<center><h5><span>Arratra</span> un sujeto para cada predicado.</h5></center>",
+        restaurar:"start_20()",
         dir:ruta,
-        cod: "1-1-14",
+        cod: "2-1-20",
         nota:cal
-        }          
+        }
         );
         return false;
     };

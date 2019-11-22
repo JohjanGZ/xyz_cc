@@ -43,9 +43,9 @@
   $(document).ready(function(){
     $('#resolucion').html(window.innerWidth + " x " + window.innerHeight);
   });
-  function IniciarCronometro(){ 
+  function IniciarCronometro(){
         $("#portada").css("display", "none");
-                Page_33();  
+        Page_lectura_2_2_6_1();  
   }
 </script>
 </body>
