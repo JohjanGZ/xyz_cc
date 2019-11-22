@@ -26,7 +26,7 @@
    $grado=$_POST['grado'];
 ?>
 <script>var data=libros[<?=$curso?>][<?=$grado?>]
-console.log(data.titulo)
+console.log(data.titulo);
 </script>
 <?php
   $titulo=$_POST['titulo'];
@@ -79,28 +79,28 @@ console.log(data.titulo)
 </div> 
 </div> 
 </div>
-			<script type='text/javascript'>
-					
-					
+			<script type='text/javascript'>										
 					var grado = data.grado;
-				 	var unidades = data.unidades;
+					 var u = data.unidades;
+					 console.log(u);
 					 var color = data.color;
+					 var curso=data.curso;
 					 $('h4').html(data.titulo);
 					 $('h4').css("color",color);
 				$('.btn-libros').click(function(){
 					$('#actividades').load('contenido_digitales.php');
 					$('#portada').css('display', 'block !important');
 				});
-					function ver_ejercicios(ejer,n,name,i,g){
+					function ver_ejercicios(temas,name,i,g){
 						 	$('#actividades').load('contenido_unidad.php', 
-								{ejercicios:ejer,nombre:name, link:n,id:i,grado:g});
+								{ejercicios:temas,nombre:name, link:curso,id:i,grado:g});
 						 	$('#portada').css('display', 'block !important');
 					}
-					for (let i in unidades){						
-					 $("#list-units").append("<li  id='unidad"+i+"' class='litema js-indice-tema'><a onclick='' class='js-tema' ><span class='number'>2</span><span class='title'>"+unidades[i].nombre+"</span></a></li>");					  
-					 $("#unidad"+i).click(function(){ ver_ejercicios(unidades[i].temas,unidades[i].ruta,unidades[i].nombre,i,grado) });
+					for (let i in u){						
+					 $("#list-units").append("<li  id='unidad"+i+"' class='litema js-indice-tema'><a onclick='' class='js-tema' ><span class='number'>2</span><span class='title'>"+u[i].nombre+"</span></a></li>");					  
+					 $("#unidad"+i).click(function(){ ver_ejercicios(u[i].temas,u[i].nombre,i,grado) });
 					}
-						localStorage.setItem("data", JSON.stringify(unidades)); 
+						localStorage.setItem("data", JSON.stringify(data)); 
 						localStorage.setItem("color", color);
 
 

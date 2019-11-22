@@ -126,13 +126,35 @@
                         "2": "¿Qué será? Mi oído me ayudará",
                         "3": "Palabras con Br-br"
                     }
+                },
+                "8": {
+                    "ruta": "comunicacion/",
+                    "id": "8",
+                    "nombre": "Unidad 8 - Me gusta proteger a los animales y las plantas",
+                    "temas": {
+                        "0": "Comprensión lectora",
+                        "1": "Ubicación espacial",
+                        "2": "¿Qué será? Mi oído me ayudará",
+                        "3": "Palabras con Br-br"
+                    }
+                },
+                "9": {
+                    "ruta": "comunicacion/",
+                    "id": "9",
+                    "nombre": "Unidad 9 - Me gusta proteger a los animales y las plantas",
+                    "temas": {
+                        "0": "Comprensión lectora",
+                        "1": "Ubicación espacial",
+                        "2": "¿Qué será? Mi oído me ayudará",
+                        "3": "Palabras con Br-br"
+                    }
                 }
             }
         },
         "1": {
-            "activo": "0",
+            "activo": "1",
             "titulo": "Comunicación 2",
-            "color": "#c60059",
+            "color": "#d92f2a",
             "grado": "2",
             "curso": "comunicacion",
             "portada": "comunicacion2.jpg",
@@ -146,12 +168,12 @@
                     "enlace": "com1-2"
                 }
             },
-            "unidades": {}
+            "unidades": ""
         },
         "2": {
             "activo": "0",
             "titulo": "Comunicación 3",
-            "color": "#c60059",
+            "color": "#0099b8",
             "grado": "3",
             "curso": "comunicacion",
             "portada": "comunicacion3.jpg",
@@ -165,12 +187,12 @@
                     "enlace": "com1-2"
                 }
             },
-            "unidades": {}
+            "unidades": ""
         },
         "3": {
-            "activo": "0",
+            "activo": "1",
             "titulo": "Comunicación 4",
-            "color": "#c60059",
+            "color": "#5f1e76",
             "grado": "4",
             "curso": "comunicacion",
             "portada": "comunicacion4.jpg",
@@ -184,12 +206,12 @@
                     "enlace": "com1-2"
                 }
             },
-            "unidades": {}
+            "unidades": ""
         },
         "4": {
-            "activo": "0",
+            "activo": "1",
             "titulo": "Comunicación 5",
-            "color": "#c60059",
+            "color": "#91b715",
             "grado": "5",
             "curso": "comunicacion",
             "portada": "comunicacion5.jpg",
@@ -203,12 +225,12 @@
                     "enlace": "com1-2"
                 }
             },
-            "unidades": {}
+            "unidades": ""
         },
         "5": {
             "activo": "1",
             "titulo": "Comunicación 6",
-            "color": "#c60059",
+            "color": "#2f1b6d",
             "grado": "6",
             "curso": "comunicacion",
             "portada": "comunicacion6.jpg",
@@ -222,7 +244,7 @@
                     "enlace": "com1-2"
                 }
             },
-            "unidades": {}
+            "unidades": ""
         }
     },
     "1": {
@@ -243,7 +265,7 @@
                     "enlace": "com1-2"
                 }
             },
-            "unidades": {}
+            "unidades": ""
         }
     }
 }

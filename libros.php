@@ -280,9 +280,8 @@ ul li {
                                             color: white;
                                         }
 
-                                        <?='#'.$id?>:hover .capa_color {
+                                        <?='#'.$id?>:hover .capa_color{
                                             background-color: <?=$color?>da;
-
                                             transition: 0.8s;
                                         }
 
