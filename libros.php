@@ -8,6 +8,7 @@ ul li {
     top: 300px;
 }
 
+/*
 .com2 {
     background-image: url(img/portadas/comunicacion2.jpg);
     background-size: 160px 220px;
@@ -218,12 +219,7 @@ ul li {
     border: solid 2px #ffb900;
     box-shadow: 2px 3px 8px 0px grey;
 }
-
-
-
-.capa_color {
-    display: none;
-}
+*/
 </style>
 <!--<script type="text/javascript" src="js/data.js"></script>-->
 
@@ -255,11 +251,11 @@ ul li {
                                         $id=$curso.$grado;
                                         $di=$grado.$curso;
                                       
-                                       
+                            if(isset($libros[$t][$w]['titulo']) && isset($libros[$t][$w]['portada'])){
                                   ?>
-                                  
+
                             <li class="menu-libros"><a onclick="abrir(<?=$t?>,<?=$w?>)">
-                           
+
                                     <style type="text/css">
                                     <?='#'.$id?> {
                                         background-image: url(img/portadas/<?=$portada?>);
@@ -271,237 +267,67 @@ ul li {
                                         border: solid 2px #ffc900;
                                     }
 
+                                    .capa_color {
+                                        color: transparent;
+                                        transition: 0.8s;
+                                    }
+
                                     <?php if($activo=='1') {
-                                        ?><?='#'.$id?>:hover .iconview {
+                                        ?><?='#'.$id?>:hover>.capa_color>.iconview {
                                             transform: translate(0px, -200px);
                                             transition: 0.8s;
                                             z-index: 4;
                                             color: white;
                                         }
+
                                         <?='#'.$id?>:hover .capa_color {
                                             background-color: <?=$color?>da;
-                                            display: block !important;
+
+                                            transition: 0.8s;
                                         }
-                                    <?php }else{ ?>
-                                        <?='#'.$id?>{
-  
-                                            opacity:0.3;
-                                        }
-                                    <?php }?>
-                                    
-                                    .capa_color {
-                                        display: none;
+
+                                        <?php
                                     }
+
+                                    else {
+                                        ?><?='#'.$id?> {
+
+                                            opacity: 0.3;
+                                        }
+
+                                        <?php
+                                    }
+
+                                    ?>
                                     </style>
 
                                     <div id="<?=$id?>">
-                                        <div style="background-size:100% 100%;width:156px;height: 216px;position: absolute;" class='capa_color'>
+                                        <div style="background-size:100% 100%;width:156px;height: 216px;position: absolute;"
+                                            class='capa_color'>
+                                            <i class='iconview material-icons'>visibility</i>
                                         </div>
-                                        <i class='iconview material-icons'>visibility</i>
                                     </div>
-                                    </a>
+                                </a>
                                 <div class='wrap-info'>
-                                <span class='titulo data'><?=$titulo?></span>
+                                    <span class='titulo data'><?=$titulo?></span>
                                 </div>
                             </li>
-                            <?php $w++; };?>
+
+                                <?php } $w++; };  ?>
                             <hr>
                             <?php   $t++;}; ?>
-                                    <script>
-                                           function abrir(Curso,Grado){
-                                               console.log(Curso,Grado);
-                                                $("#portada").css("display", "block");
-                                                $('#cuerpo').load('unidades.php',{curso:Curso,grado:Grado});
-                                                
-                                            };
-                                    </script>
-                            <li class="menu-libros">
-                                <!-- <a onclick="primero()"> -->
-                                <div class="com4 disable"> <i class="iconview material-icons">visibility</i></div>
-                                <!-- </a>-->
-                                <div class="wrap-info">
+                            <script>
+                            function abrir(Curso, Grado) {
+                                console.log(Curso, Grado);
+                                $("#portada").css("display", "block");
+                                $('#cuerpo').load('unidades.php', {
+                                    curso: Curso,
+                                    grado: Grado
+                                });
 
-                                    <span class="titulo data" data-titlejs="Ondas Matematicas 1er grado"
-                                        title="Ondas Matematicas 1er grado">
-                                        COMUNICACIÓN 4
-                                    </span>
-                                </div>
-                            </li>
-                            <li class="menu-libros">
-                                <!-- <a onclick="primero()"> -->
-                                <div class="com5 disable"> <i class="iconview material-icons">visibility</i></div>
-                                <!-- </a>-->
-                                <div class="wrap-info">
-                                    <span class="titulo data" data-titlejs="Ondas Matematicas 1er grado"
-                                        title="Ondas Matematicas 1er grado">
-                                        COMUNICACIÓN 5
-                                    </span>
-                                </div>
-                            </li>
-                            <li class="menu-libros">
-                                <!-- <a onclick="primero()"> -->
-                                <div class="com6 disable"> <i class="iconview material-icons">visibility</i></div>
-                                <!-- </a>-->
-                                <div class="wrap-info">
-                                    <span class="titulo data" data-titlejs="Ondas Matematicas 1er grado"
-                                        title="Ondas Matematicas 1er grado">
-                                        COMUNICACIÓN 6
-                                    </span>
-                                </div>
-                            </li>
-                            <hr>
-                            <li class="menu-libros" data-id="" data-fecha-ult-modif="2018-06-15 19:09:38"
-                                data-nombre="Ondas Matematicas 2do grado" data-original-category="2"
-                                data-idschoolyear="51">
-
-                                <div class="wrap-img">
-
-                                    <div class="wrap-mask">
-
-                                        <!-- <a onclick="matematica1()">-->
-                                        <div class="mate1 disable">
-                                            <center> <i class=" iconview material-icons">visibility</i> </center>
-                                        </div>
-                                        <div class="mask" style="cursor: pointer;">
-                                        </div>
-                                        <!-- </a>-->
-                                    </div>
-                                </div>
-                                <div class=" titulo wrap-info">
-                                    <center>MATEMÁTICAS 1</center>
-                                </div>
-                            </li>
-                            <li class="menu-libros" data-id="" data-fecha-ult-modif="2018-06-15 19:09:38"
-                                data-nombre="Ondas Matematicas 2do grado" data-original-category="2"
-                                data-idschoolyear="51">
-
-                                <div class="wrap-img">
-
-                                    <div class="wrap-mask">
-
-                                        <a onclick="matematica2()">
-                                            <div class="portada2">
-                                                <center> <i class=" iconview material-icons">visibility</i> </center>
-                                            </div>
-                                            <div class="mask" style="cursor: pointer;">
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class=" titulo wrap-info">
-                                    <center>MATEMÁTICAS 2</center>
-                                </div>
-                            </li>
-                            <li class="menu-libros" data-id="" data-fecha-ult-modif="2018-06-15 19:09:38"
-                                data-nombre="Ondas Matematicas 2do grado" data-original-category="2"
-                                data-idschoolyear="51">
-                                <div class="wrap-img">
-                                    <div class="wrap-mask">
-
-                                        <!-- <a onclick="segundo()">-->
-                                        <div class="mate3 disable">
-                                            <center> <i class=" iconview material-icons">visibility</i> </center>
-                                        </div>
-                                        <div class="mask" style="cursor: pointer;">
-                                        </div>
-                                        <!--  </a>-->
-                                    </div>
-                                </div>
-                                <div class=" titulo wrap-info">
-                                    <center>MATEMÁTICAS 3</center>
-
-                                </div>
-                            </li>
-                            <li class="menu-libros" data-id="" data-fecha-ult-modif="2018-06-15 19:09:38"
-                                data-nombre="Ondas Matematicas 2do grado" data-original-category="2"
-                                data-idschoolyear="51">
-
-                                <div class="wrap-img">
-
-                                    <div class="wrap-mask">
-
-                                        <!-- <a onclick="segundo()">-->
-                                        <div class="mate4 disable">
-                                            <center> <i class=" iconview material-icons">visibility</i> </center>
-                                        </div>
-                                        <div class="mask" style="cursor: pointer;">
-                                        </div>
-                                        <!--  </a>-->
-                                    </div>
-                                </div>
-                                <div class=" titulo wrap-info">
-                                    <center>MATEMÁTICAS 4</center>
-
-                                </div>
-                            </li>
-                            <li class="menu-libros" data-id="" data-fecha-ult-modif="2018-06-15 19:09:38"
-                                data-nombre="Ondas Matematicas 2do grado" data-original-category="2"
-                                data-idschoolyear="51">
-
-                                <div class="wrap-img">
-
-                                    <div class="wrap-mask">
-
-                                        <!-- <a onclick="segundo()">-->
-                                        <div class="mate5 disable">
-                                            <center> <i class=" iconview material-icons">visibility</i> </center>
-                                        </div>
-                                        <div class="mask" style="cursor: pointer;">
-                                        </div>
-                                        <!--  </a>-->
-                                    </div>
-                                </div>
-                                <div class=" titulo wrap-info">
-                                    <center>MATEMÁTICAS 5</center>
-                                </div>
-                            </li>
-                            <li class="menu-libros" data-id="" data-fecha-ult-modif="2018-06-15 19:09:38"
-                                data-nombre="Ondas Matematicas 2do grado" data-original-category="2"
-                                data-idschoolyear="51">
-                                <div class="wrap-img">
-                                    <div class="wrap-mask">
-                                        <!-- <a onclick="segundo()">-->
-                                        <div class="mate6 disable">
-                                            <center> <i class=" iconview material-icons">visibility</i> </center>
-                                        </div>
-                                        <div class="mask" style="cursor: pointer;">
-                                        </div>
-                                        <!--  </a>-->
-                                    </div>
-                                </div>
-                                <div class=" titulo wrap-info">
-                                    <center>MATEMÁTICAS 6</center>
-                                </div>
-                            </li>
-                            <hr>
-                            <li class="menu-libros" data-id="1499870" data-fecha-ult-modif="2018-06-15 19:09:12"
-                                data-nombre="Ondas Matematicas 3er grado" data-original-category="2"
-                                data-idschoolyear="51">
-                                <div class="wrap-img">
-                                    <div class="wrap-mask">
-                                        <a onclick="inicial3()">
-                                            <div class="portada3"> <i class="iconview material-icons">visibility</i>
-                                            </div>
-                                            <div class="mask" style="cursor: pointer;">
-                                        </a>
-
-                                    </div>
-                                </div>
-
-                                <div class="wrap-info">
-                                    <span class="titulo data" data-titlejs="Ondas Matematicas 3er grado"
-                                        title="Ondas Matematicas 3er grado">
-                                        INICIAL 3 años
-                                    </span>
-                                </div>
-                            </li>
-                            <hr>
-                        </ul>
-                    </center>
-
-                  
-                   <!-- <script type="text/javascript" src="js/unidades.js"></script>-->
-
+                            };
+                            </script>
+                        
                 </div>
             </div>
         </div>

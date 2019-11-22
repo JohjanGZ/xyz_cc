@@ -1,4 +1,4 @@
-var datos = {
+/*var datos = {
   "0": {
 
     "0": {
@@ -129,9 +129,9 @@ var datos = {
             "3": "Palabras con Br-br"
           }
         }
-      } /* <--  fin unidades */ 
+      } 
 
-    }, /* <--  fin libro */
+    }, 
 
     "1":{
       "activo": "0",
@@ -154,7 +154,7 @@ var datos = {
 
       }
      
-    }, /* <-- fin libro */
+    }, 
 
     "2":{
       "activo": "0",
@@ -177,12 +177,12 @@ var datos = {
 
       }
      
-    } /* <-- fin libro */
+    } 
 
     
-  }/* <-- fin curso */
+  }
   
-}/* <-- fin json  */
+}
 
 
 
@@ -243,3 +243,4 @@ var comunicacion = {
 
 };
 
+*/
