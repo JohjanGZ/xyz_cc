@@ -95,25 +95,12 @@ function start_17() {
 
 function start_18() {
     $("#ventana").load(ruta + '1-1-18/index.php', {
-        next: "Page_19()",
+        next: "resultado()",
         procesar: "result_tipo_1_1_18()",
         titulo: "<center><h5><span class='ftitulo'>Escribe</span> el número de puntos que faltan para completar una decena.</h5></center>",
         restaurar: "start_18()",
         dir: ruta,
         cod: "1-1-18",
-        nota: cal
-    });
-    return false;
-};
-
-function start_19() {
-    $("#ventana").load(ruta + '1-1-19/index.php', {
-        next: "Page_20()",
-        procesar: "result_tipo_1_1_19()",
-        titulo: "<center><h5><span class='ftitulo'>Forma</span> grupos de 10.</h5></center>",
-        restaurar: "start_19()",
-        dir: ruta,
-        cod: "1-1-19",
         nota: cal
     });
     return false;
