@@ -81,8 +81,8 @@ console.log(data.titulo);
 </div>
 			<script type='text/javascript'>										
 					var grado = data.grado;
-					 var u = data.unidades;
-					 console.log(u);
+					 var unidades = data.unidades;
+					 
 					 var color = data.color;
 					 var curso=data.curso;
 					 $('h4').html(data.titulo);
@@ -96,12 +96,16 @@ console.log(data.titulo);
 								{ejercicios:temas,nombre:name, link:curso,id:i,grado:g});
 						 	$('#portada').css('display', 'block !important');
 					}
-					for (let i in u){						
-					 $("#list-units").append("<li  id='unidad"+i+"' class='litema js-indice-tema'><a onclick='' class='js-tema' ><span class='number'>2</span><span class='title'>"+u[i].nombre+"</span></a></li>");					  
-					 $("#unidad"+i).click(function(){ ver_ejercicios(u[i].temas,u[i].nombre,i,grado) });
+					for (let i in unidades){						
+					 $("#list-units").append("<li  id='unidad"+i+"' class='litema js-indice-tema'><a onclick='' class='js-tema' ><span class='number'>2</span><span class='title'>"+unidades[i].nombre+"</span></a></li>");					  
+					 $("#unidad"+i).click(function(){ ver_ejercicios(unidades[i].temas,unidades[i].nombre,i,grado) });
 					}
-						localStorage.setItem("data", JSON.stringify(data)); 
+						localStorage.setItem("data", JSON.stringify(unidades)); 
 						localStorage.setItem("color", color);
+						localStorage.setItem("curos", curso);
+						localStorage.setItem("grado", grado);
+						
+
 
 
                         function BackHome() {
