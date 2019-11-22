@@ -20,7 +20,7 @@
                     </li>
                     <li id="obj2" >
                         <div class="box a" alt="n">
-                            <img src="<?= $dir ?>/img/2.png" class="responsive-img">
+                            <img src="<?= $dir ?>/img/2.png" class="responsive-img"> 
                         </div>
                     </li>
                     <li id="obj3" >

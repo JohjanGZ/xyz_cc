@@ -35,20 +35,29 @@
 $(document).ready(function() {
 
     var data = JSON.parse(localStorage.getItem("data"));
+    
     var color = localStorage.getItem("color");
+    var curso = localStorage.getItem("curso");
+    var grado = localStorage.getItem("grado");
+
+console.log("curso: "+curso+grado);
     var i = 0;
 
+    console.log(data);
+    var count = Object.keys(data).length;
 
-    for (let index = 0; index < data.length; index++) {
+
+    for (let index = 0; index < count; index++) {
         $('ul.box-s').append('<li class="menu-item-p unidad-p"><div>' + data[index].nombre +
             '</div><ul class="ul-right"></ul></li>');
     }
 
     $('.unidad-p').each(function() {
+        var count2 = Object.keys(data[i].temas).length;
+        for (let index = 0; index < count2; index++) {
+            // $(this).children('ul').append('<li class="menu-item-p"><div><a href="../../../../' + curso +'/'+grado+'/'+ i+'/' + (index + 1) + '">' + data[i].temas[index] + '</a></div></li>');
 
-        for (let index = 0; index < data[i].temas.length; index++) {
-            $(this).children('ul').append('<li class="menu-item-p"><div><a href="../../../../' + data[i]
-                .ruta + '/' + (index + 1) + '">' + data[i].temas[index] + '</a></div></li>');
+            $(this).children('ul').append('<a href="../../../../' + curso +'/'+grado+'/'+ i+'/' + (index + 1) + '"><li class="menu-item-p"><div>' + data[i].temas[index] + '</div></li></a>');
         }
 
 

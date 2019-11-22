@@ -111,11 +111,14 @@
             } else {
                 $("#contenedor-principal").addClass("desaprobado");
                 $(".display-1").text("Sigue intentando");
-                $(".contenedor-mensaje").append('<button class="btn-success"><a href="../../' + (parseInt(tema)) +
-                    '">Reiniciar tema</a></button>');
+                $(".contenedor-mensaje").append('<button class="btn-success reiniciar-tema"><a href="javascript:location.reload()">Reiniciar tema</a></button>');
 
             }
 
 
         });
+
+        // $(".reiniciar-tema").click(function(){
+
+        // });
     </script>

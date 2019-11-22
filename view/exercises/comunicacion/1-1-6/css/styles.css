@@ -3,19 +3,24 @@ h4 {
 }
 
 #listA {
+    width: 50%;
     display: flex;
     flex-wrap: wrap;
+    margin: auto;
+}
+
+#listA li {
+    width: 33%;
+    text-align: center;
+    margin: auto;
+}
+
+#listA li .box {
+    margin: auto;
 }
 
 #palabras {
     padding: 50px;
-}
-
-#palabras li {
-    width: 100%;
-    margin: auto;
-    margin-bottom: 2vh;
-    margin-right: 1px;
 }
 
 @media (min-width: 600px) {
@@ -29,11 +34,13 @@ h4 {
         width: 28%;
     }
 }
+
 .muestra {
     width: 100px;
     margin: auto;
     margin-top: 30px;
 }
+
 .box {
     height: 200px;
     width: 200px;
@@ -43,8 +50,9 @@ h4 {
     align-items: center;
     justify-content: center;
 }
+
 .box img {
-    width: 50%;
+    width: 75%;
     height: auto;
 }
 
