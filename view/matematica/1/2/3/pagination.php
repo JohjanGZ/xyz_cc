@@ -1,24 +1,21 @@
 <script type="text/javascript">
-function Page_5() {
-    start_5();
+function Page_12() {
+    start_12();
     inicio();
     count = 3;
 }
-
-function Page_6() {
-    start_6();
+function Page_13() {
+    start_13();
     inicio();
     count = 3;
 }
-
-function Page_7() {
-    start_7();
+function Page_14() {
+    start_14();
     inicio();
     count = 3;
 }
-
-function Page_8() {
-    start_8();
+function Page_15() {
+    start_15();
     inicio();
     count = 3;
 }
@@ -27,53 +24,50 @@ var cal = cant / cant;
 console.log(cant);
 var ruta = "../../../../exercises/matematica/";
 ////////////// 2do 
-function start_5() {
-    $("#ventana").load(ruta + '1-1-5/index.php', {
-        next: "Page_6()",
-        procesar: "result_tipo_1_1_5()",
-        titulo: "<center><h5><span class='ftitulo'>Observa</span> los conjuntos y <span class='ftitulo'>selecciona </span><img src="+ruta+"1-1-5/img/pertenece.png> o <img src="+ruta+"1-1-5/img/nopertenece.png> según corresponda.</h5></center>",
-        restaurar: "start_5()",
+function start_12() {
+    $("#ventana").load(ruta + '1-2-12/index.php', {
+        next: "Page_13()",
+        procesar: "result_tipo_1_2_12()",
+        titulo: "<center><h5><span class='ftitulo'>Completa</span> el cuadro.</h5></center>",
+        restaurar: "start_12()",
         dir: ruta,
-        cod: "1-1-5",
+        cod: "1-2-12",
         nota: cal
     });
     return false;
 };
-
-function start_6() {
-    $("#ventana").load(ruta + '1-1-6/index.php', {
-        next: "Page_7()",
-        procesar: "result_tipo_1_1_6()",
-        titulo: "<center><h5><span class='ftitulo'>selecciona</span> los símbolos de <img src="+ruta+"1-1-6/img/pertenece.png> o <img src="+ruta+"1-1-6/img/nopertenece.png> en los siguientes enunciados.</h5></center>",
-        restaurar: "start_6()",
+function start_13() {
+    $("#ventana").load(ruta + '1-2-13/index.php', {
+        next: "Page_14()",
+        procesar: "result_tipo_1_2_13()",
+        titulo: "<center><h5><span class='ftitulo'>Cuenta y escribe</span> el valor de las decenas y unidades.</h5></center>", 
+        restaurar: "start_13()",
         dir: ruta,
-        cod: "1-1-6",
+        cod: "1-2-13",
         nota: cal
     });
     return false;
 };
-
-function start_7() {
-    $("#ventana").load(ruta + '1-1-7/index.php', {
-        next: "Page_8()",
-        procesar: "result_tipo_1_1_7()",
-        titulo: "<center><h5><span class='ftitulo'>Observa</span> el siguiente conjunto y <span class='ftitulo'>Selecciona</span> si <img src="+ruta+"1-1-7/img/pertenece.png> o <img src="+ruta+"1-1-7/img/nopertenece.png> al conjunto V.</h5></center>",
-        restaurar: "start_7()",
+function start_14() {
+    $("#ventana").load(ruta + '1-2-14/index.php', {
+        next: "Page_15()",
+        procesar: "result_tipo_1_2_14()",
+        titulo: "<center><h5>¿Qué número va en el medio de cada trío? <span class='ftitulo'>Escríbelo.</span></h5></center>",
+        restaurar: "start_14()",
         dir: ruta,
-        cod: "1-1-7",
+        cod: "1-2-14",
         nota: cal
     });
     return false;
 };
-
-function start_8() {
-    $("#ventana").load(ruta + '1-1-8/index.php', {
+function start_15() {
+    $("#ventana").load(ruta + '1-2-15/index.php', {
         next: "resultado()",
-        procesar: "result_tipo_1_1_8()",
-        titulo: "<center><h5><span class='ftitulo'>Observa</span> los elementos y <span class='ftitulo'>arrastra</span> aquellos que pertenecen al conjunto de los astros.</h5></center>",
-        restaurar: "start_8()",
+        procesar: "result_tipo_1_2_15()",
+        titulo: "<center><h5><span class='ftitulo'>Realiza</span> la descomposición de los siguientes números en decenas y unidades.</h5></center>",
+        restaurar: "start_15()",
         dir: ruta,
-        cod: "1-1-8",
+        cod: "1-2-15",
         nota: cal
     });
     return false;
