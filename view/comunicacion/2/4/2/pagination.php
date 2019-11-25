@@ -1,144 +1,105 @@
 <script type="text/javascript">
-    function  Page_4(){
+   function Page_3(){
+        start_3();
+        inicio();
+        count = 3;
+    }
+    function Page_4(){
         start_4();
         inicio();
-         count = 3;
+        count = 3;
     }
-   function Page_5(){
+    function Page_5(){
         start_5();
         inicio();
         count = 3;
     }
-    function  Page_6(){
+    function Page_6(){
         start_6();
         inicio();
-         count = 3;
+        count = 3;
     }
-   function Page_lectura4_1(){
-        start_lectura4_1();
+    function Page_7(){
+        start_7();
         inicio();
         count = 3;
     }
-    function  Page_lectura4_2(){
-        start_lectura4_2();
-        inicio();
-         count = 3;
-    }
-   function Page_lectura4_3(){
-        start_lectura4_3();
-        inicio();
-        count = 3;
-    }
-    function Page_lectura4_4(){
-        start_lectura4_4();
-        inicio();
-        count = 3;
-    }
-   
-   
-   
-    var cant=3;
+
+    var cant=5;
     var cal= 20/20;
     var ruta="../../../../exercises/comunicacion/";
     ////////////// 2do 
             // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
-    function start_4(){   
-        $("#ventana").load(ruta+'1-4-4/index.php', 
-        { 
+    
+    function start_3(){
+        $("#ventana").load(ruta+'2-4-3/index.php', 
+        {
+        next: "Page_4()", 
+        procesar:"result_tipo_2_4_3()",
+        titulo:"<center><h5><span>Arrastra</span> y <span>completa</span> la familia de palabras según corresponda.</h5></center>",
+        restaurar:"start_3()",
+        dir:ruta,
+        cod: "2-4-3",
+        nota:cal
+        }
+        );
+        return false;  
+    };
+    function start_4(){
+        $("#ventana").load(ruta+'2-4-4/index.php', 
+        {
         next: "Page_5()", 
-        procesar:"result_tipo_1_4_4()",
-        titulo:"<center><h5><span>Selecciona</span> los personajes principales del cuento.</h5></center>",
+        procesar:"result_tipo_2_4_4()",
+        titulo:"<center><h5><span>Arrastra</span> y <span>clasifica</span> las palabras según la familia a la que le pertenecen.</h5></center>",
         restaurar:"start_4()",
         dir:ruta,
-        cod: "1-4-4",
+        cod: "2-4-4",
         nota:cal
-        }          
+        }
         );
-        return false;
+        return false;  
     };
-    function start_5(){   
-        $("#ventana").load(ruta+'1-4-5/index.php', 
-        { 
+    function start_5(){
+        $("#ventana").load(ruta+'2-4-5/index.php', 
+        {
         next: "Page_6()", 
-        procesar:"result_tipo_1_4_5()",
-        titulo:"<center><h5><span class='ftitulo'>Selecciona</span> la respuesta correcta.</h5></center>",
+        procesar:"result_tipo_2_4_5()",
+        titulo:"<center><h5><span>Selecciona</span> y <span>arrastra</span> cada palabra, hacia el grupo que corresponda.</h5></center>",
         restaurar:"start_5()",
         dir:ruta,
-        cod: "1-4-5",
+        cod: "2-4-5",
         nota:cal
-        }          
+        }
         );
-        return false;
+        return false;  
     };
-    function start_6(){   
-        $("#ventana").load(ruta+'1-4-6/index.php', 
-        { 
-        next: "resultado()", 
-        procesar:"result_tipo_1_4_6()",
-        titulo:"<center><h5><span>Observa</span> las imágenes y coloca los números del 1 al 4 tal como sucedieron los hechos.</h5></center>",
+    function start_6(){
+        $("#ventana").load(ruta+'2-4-6/index.php', 
+        {
+        next: "Page_7()", 
+        procesar:"result_tipo_2_4_6()",
+        titulo:"<center><h5><span>Arrastra</span> y <span>clasifica</span> las palabras de la misma familia.</h5></center>",
         restaurar:"start_6()",
         dir:ruta,
-        cod: "1-4-6",
+        cod: "2-4-6",
         nota:cal
-        }          
+        }
         );
-        return false;
+        return false;  
     };
-    function start_lectura4_1(){   
-        $("#ventana").load(ruta+'lectura1-4-4-1/index.php', 
-        { 
-        next: "Page_lectura4_2()", 
-        procesar:"result_tipo_1_4_16()",
-        titulo:"<center><h5><span class='ftitulo'>Lee</span> atentamente y <span>responde</span> las preguntas.</h5></center>",
-        restaurar:"start_lectura4_1()",
+    function start_7(){
+        $("#ventana").load(ruta+'2-4-7/index.php', 
+        {
+        next: "resultado()", 
+        procesar:"result_tipo_2_4_7()",
+        titulo:"<center><h5><span>Selecciona</span>, en cada caso, la palabra que no corresponde.</h5></center>",
+        restaurar:"start_7()",
         dir:ruta,
-        cod: "lectura1-4-4-1",
+        cod: "2-4-7",
         nota:cal
-        }          
+        }
         );
-        return false;
-    };
-    function start_lectura4_2(){   
-        $("#ventana").load(ruta+'lectura1-4-4-2/index.php', 
-        { 
-        next: "Page_lectura4_3()", 
-        procesar:"result_tipo_1_4_16()",
-        titulo:"<center><h5><span class='ftitulo'>Lee</span> atentamente y <span>responde</span> las preguntas.</h5></center>",
-        restaurar:"start_lectura4_2()",
-        dir:ruta,
-        cod: "lectura1-4-4-2",
-        nota:cal
-        }          
-        );
-        return false;
-    };
-    function start_lectura4_3(){   
-        $("#ventana").load(ruta+'lectura1-4-4-3/index.php', 
-        { 
-        next: "Page_lectura4_4()", 
-        procesar:"result_tipo_1_4_16()",
-        titulo:"<center><h5><span class='ftitulo'>Lee</span> atentamente y <span>responde</span> las preguntas.</h5></center>",
-        restaurar:"start_lectura4_3()",
-        dir:ruta,
-        cod: "lectura1-4-4-3",
-        nota:cal
-        }          
-        );
-        return false;
-    };
-    function start_lectura4_4(){   
-        $("#ventana").load(ruta+'lectura1-4-4-4/index.php', 
-        { 
-        next: "Page_4()", 
-        procesar:"result_tipo_1_4_16()",
-        titulo:"<center><h5><span class='ftitulo'>Lee</span> atentamente y <span>responde</span> las preguntas.</h5></center>",
-        restaurar:"start_lectura4_4()",
-        dir:ruta,
-        cod: "lectura1-4-4-4",
-        nota:cal
-        }          
-        );
-        return false;
+        return false;  
     };
     function resultado(){
         $("#ventana").load('../../../../exercises/resultado/resultado.php');
