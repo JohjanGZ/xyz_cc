@@ -43,7 +43,6 @@ $(document).ready(function() {
 console.log("curso: "+curso+grado);
     var i = 0;
 
-    console.log(data);
     var count = Object.keys(data).length;
 
 

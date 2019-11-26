@@ -13,43 +13,48 @@
 
     <div class="container">
         <div class="row">
-
+            
             <div class="contenedor-ejercicios">
+            <div class="contenedor-imagen">
+                <img src="<?= $dir ?>/img/1.png" alt="">
+            </div>
                 <div class="ejercicio">
                     <div class="imagen-palabra">
-                        <img src="<?= $dir ?>/img/1.png">
+                        <span>Árboles</span>
                     </div>
                     <div class="contenedor-respuesta">
-                        <div class="palabra" alt="uno">
+                        <div class="palabra" alt="arbol">
 
                         </div>
-                        <div class="palabra" alt="uno">
+                        <div class="palabra" alt="arbol">
 
                         </div>
                     </div>
                 </div>
                 <div class="ejercicio">
                     <div class="imagen-palabra">
-                        <img src="<?= $dir ?>/img/2.png">
+                    <span>Edificios</span>
+
                     </div>
                     <div class="contenedor-respuesta">
-                        <div class="palabra" alt="dos">
+                        <div class="palabra" alt="edificio">
 
                         </div>
-                        <div class="palabra" alt="dos">
+                        <div class="palabra" alt="edificio">
 
                         </div>
                     </div>
                 </div>
                 <div class="ejercicio">
                     <div class="imagen-palabra">
-                        <img src="<?= $dir ?>/img/3.png">
+                    <span>Mar</span>
+                        
                     </div>
                     <div class="contenedor-respuesta">
-                        <div class="palabra" alt="tres">
+                        <div class="palabra" alt="mar">
 
                         </div>
-                        <div class="palabra" alt="tres">
+                        <div class="palabra" alt="mar">
 
                         </div>
                     </div>
@@ -58,22 +63,22 @@
             </div>
             <ul class="contenedor-silabas">
                 <li class="silabas">
-                    <h4 class="pieza" alt="uno">fiel</h4>
+                    <h4 class="pieza" alt="arbol">frondoso</h4>
                 </li>
                 <li class="silabas">
-                    <h4 class="pieza" alt="uno">alegre</h4>
+                    <h4 class="pieza" alt="arbol">verde</h4>
                 </li>
                 <li class="silabas">
-                    <h4 class="pieza" alt="dos">grande</h4>
+                    <h4 class="pieza" alt="edificio">alto</h4>
                 </li>
                 <li class="silabas">
-                    <h4 class="pieza" alt="dos">frondoso</h4>
+                    <h4 class="pieza" alt="edificio">rectangular</h4>
                 </li>
                 <li class="silabas">
-                    <h4 class="pieza" alt="tres">saludable</h4>
+                    <h4 class="pieza" alt="mar">extenso</h4>
                 </li>
                 <li class="silabas">
-                    <h4 class="pieza" alt="tres">rica</h4>
+                    <h4 class="pieza" alt="mar">limpio</h4>
                 </li>
         </div>
     </div>
@@ -84,7 +89,7 @@
         <div class="modal-content">
             <h4>Respuesta correcta</h4>
             <center>
-                <img class="materialboxed" width="80%" src="<?= $dir ?>/img/respuesta.jpg">
+                <img class="materialboxed" width="80%" src="<?= $dir ?>/img/respuesta.png">
             </center>
         </div>
         <div class="modal-footer">
@@ -99,7 +104,7 @@
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
 // Validar
-function result_tipo_2_4_13() {
+function result_tipo_2_4_17() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
