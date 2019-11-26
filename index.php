@@ -61,6 +61,11 @@ var libros = (function() {
     });
     return libros;
 })();
+var returnedData = $.grep(libros, function(element) {
+  return element.category === "cat1" && element.id === 3;
+}, false);
+console.log(returnedData);
+
 </script>
 <div id="cuerpo"></div>
 <div class="fixed-action-btn">

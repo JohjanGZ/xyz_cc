@@ -61,10 +61,6 @@
           </div>
           </div>
   <div id="divTxt" ></div>
-
-
-
-        
           <p><a href="#" onClick="addFormField(); return false;">[+] Agregar Iteracion</a></p>
 
                                                <!-- Modal Trigger -->

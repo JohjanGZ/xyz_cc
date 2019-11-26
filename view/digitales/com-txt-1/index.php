@@ -35,7 +35,7 @@
 	<?php include('../paint/paint.php'); ?>
 	</div>
 
-	   <a style="margin-top:10vh; z-index: 55559999999 !important; position: absolute;" class="btn amber notas">Notas</a>
+	   <a style="margin-top: 5px; margin-left: 15px; z-index: 55559999999 !important; position: absolute;" class="btn amber notas">Notas</a>
 	<script src="mobile/javascript/search_config.js"></script><script src="mobile/javascript/bookmark_config.js"></script>
 <script src="mobile/javascript/LoadingJS.js"></script>
 

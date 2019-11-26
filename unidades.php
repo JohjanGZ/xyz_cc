@@ -19,6 +19,7 @@
 	#indice .units ul li {
     	width: 80%;
 	}
+
 </style>
 
 <?php 
@@ -26,11 +27,11 @@
    $grado=$_POST['grado'];
 ?>
 <script>var data=libros[<?=$curso?>][<?=$grado?>]
-console.log(data.titulo);
+
 </script>
 <?php
   $titulo=$_POST['titulo'];
-  $color=$_POST['color'];
+ echo $color=$_POST['color'];
 
   $datos= json_encode($_POST['unidades']);
   $libros=json_encode($_POST['libros']);
@@ -55,6 +56,17 @@ console.log(data.titulo);
 	.btn-libros .title{
 		color:white !important;
 	}
+	.fl {
+    display: flex;
+    align-items: center;
+}
+#indice .units ul li {
+    margin-right: 10px;
+}
+label{
+	display:none;
+}
+
 </style>
   <!-- CSS  -->
 <div class="content-wrapper libro" style="margin-top: 58px;">
@@ -63,14 +75,22 @@ console.log(data.titulo);
 <div class="wrap-contenido-indice">
 <div class="col-indice col-units" style="margin-left: 0px;">
 	<div class="units" id="wrapper">
+	<?=$color?>	
+	<script>
+
+	</script>
+	<form action="#">
 		<ul id="list-units">
 			<li class='btn-libros'><a class='js-tema' ><span class='number'>2</span><span class='title'>Libros Digitales</span></a></li>
 		</ul>
+	</form>
 	</div>
 </div>
 		<div id="contenido" class="col-indice col-main">
 			<div class="card unit-content js-unit-content showFromBottomToTop active" data-id="">
+		
 					<div class="content" id="actividades">
+	
 						Selecciona una Unidad
 						<br><br><br> 
 					</div> 
@@ -87,7 +107,7 @@ console.log(data.titulo);
 					 var curso=data.curso;
 					 $('h4').html(data.titulo);
 					 $('h4').css("color",color);
-				$('.btn-libros').click(function(){
+				$('.btn-libros').click(function(){ 
 					$('#actividades').load('contenido_digitales.php', {digital:lib});
 					$('#portada').css('display', 'block !important');
 				});
@@ -97,8 +117,9 @@ console.log(data.titulo);
 						 	$('#portada').css('display', 'block !important');
 					}
 					for (let i in unidades){						
-					 $("#list-units").append("<li  id='unidad"+i+"' class='litema js-indice-tema'><a onclick='' class='js-tema' ><span class='number'>2</span><span class='title'>"+unidades[i].nombre+"</span></a></li>");					  
-					 $("#unidad"+i).click(function(){ ver_ejercicios(unidades[i].temas,unidades[i].nombre,i,grado) });
+	$("#list-units").append("<div class='fl'><li  id='unidad"+i+"' class='litema js-indice-tema'><a onclick='' class='js-tema' ><span class='number'>2</span><span class='title'>"+unidades[i].nombre+"</span></a></li><label ><input id='id"+i+"'  class='filled-in' type='checkbox' value='"+i+"' /><span></span></label></div>");					  
+	
+	$("#unidad"+i).click(function(){ ver_ejercicios(unidades[i].temas,unidades[i].nombre,i,grado) });
 					}
 						localStorage.setItem("data", JSON.stringify(unidades)); 
 						localStorage.setItem("color", color);
@@ -106,7 +127,33 @@ console.log(data.titulo);
 						localStorage.setItem("grado", grado);
 						
                         function BackHome() {
-                            $('#cuerpo').load('libros.php',{data: libros});
-                        }
-                </script>
+							$('#cuerpo').load('libros.php',{data: libros});
+						}
+$("#list-units").append("<li class='btn-examen pink darken-3'><a class='js-tema' ><center><span class='number'>2</span><span class='title white-text'>Examen</span></center></a></li>");
+
+	
+	$(".filled-in").change(function(){ 
+		
+		if($(this).attr("check")!="on"){
+			$(this).attr("check","on");
+		}
+	else{
+		/*var i = select.indexOf( value );
+    	select.splice( i, 1 );*/
+		$(this).attr("check","off");
+	}
+		
+
+			});
+			
+$(".btn-examen").click(function(){
+
+
+	$('#actividades').load('contenido_construct_examen.php');
+	$("label").css("display","block");
+});          		
+
+
+			
+			    </script>
  

@@ -174,7 +174,7 @@
     function start_1(){
         $("#ventana").load(ruta+'1-0-1/index.php', 
         {
-        next: "Page_"+num_page[0]+"()", 
+        next: "Page_"+numeroAleatorio+"()", 
         procesar:"result_tipo_1_0_1()",
         titulo:"<center><h5><span class='ftitulo'>Selecciona</span> la imagen que falta en la secuencia.</h5></center>",
         restaurar:"start_1()",

@@ -10,30 +10,31 @@
             "libros": {
                 "0": {
                     "title": "Actividades",
-                    "enlace": "com-act-1"
+                    "enlace": "com-act-1",
+                    "portada":"com-act-1.jpg"
                 },
                 "1": {
                     "title": "Razonamiento Verbal",
-                    "enlace": "com-rv-1"
+                    "enlace": "com-rv-1",
+                    "portada":"com-rv-1.jpg"
                 },
                 "2": {
                     "title": "Texto",
-                    "enlace": "com-txt-1"
+                    "enlace": "com-txt-1",
+                    "portada":"com-txt-1.jpg"
                 }
             },
             "unidades": {
                 "0": {
-                    "ruta": "comunicacion/",
                     "id": "0",
-                    "nombre": "Unidad 0 - Aprendiendo en mi escuela",
+                    "nombre": "Unidad 1 - Aprendiendo en mi escuela",
                     "temas": {
                         "0": "Actividad digital"
                     }
                 },
                 "1": {
-                    "ruta": "comunicacion/",
                     "id": "0",
-                    "nombre": "Unidad 1 - Voy a leer y a escribir",
+                    "nombre": "Unidad 2 - Voy a leer y a escribir",
                     "temas": {
                         "0": "Comprensión lectora: Cuatro letritas",
                         "1": "Comprensión lectora: Mi colegio",
@@ -44,9 +45,8 @@
                     }
                 },
                 "2": {
-                    "ruta": "comunicacion/",
                     "id": "2",
-                    "nombre": "Unidad 2 - Juego con mis amigos y amigas",
+                    "nombre": "Unidad 3 - Juego con mis amigos y amigas",
                     "temas": {
                         "0": "Lectoescritura: Palabras con D-d",
                         "1": "¿Qué será? Mi oído me ayudará",
@@ -61,9 +61,9 @@
                     }
                 },
                 "3": {
-                    "ruta": "comunicacion/",
+                   
                     "id": "3",
-                    "nombre": "Unidad 3 - Leo en familia",
+                    "nombre": "Unidad 4 - Leo en familia",
                     "temas": {
                         "0": "Lectura: Ondas Expresivas",
                         "1": "Un cuento",
@@ -77,9 +77,9 @@
                     }
                 },
                 "4": {
-                    "ruta": "comunicacion/",
+                   
                     "id": "4",
-                    "nombre": "Unidad 4 - Disfruto del medio ambiente porque lo cuido con amor",
+                    "nombre": "Unidad 5 - Disfruto del medio ambiente porque lo cuido con amor",
                     "temas": {
                         "0": "Lectura: Ondas Expresivas",
                         "1": "Comprensión lectora",
@@ -91,9 +91,9 @@
                     }
                 },
                 "5": {
-                    "ruta": "comunicacion/",
+                    
                     "id": "5",
-                    "nombre": "Unidad 5 - Celebramos la fiesta de mi Perú",
+                    "nombre": "Unidad 6 - Celebramos la fiesta de mi Perú",
                     "temas": {
                         "0": "Un cuento",
                         "1": "Un cuento 2",
@@ -110,9 +110,9 @@
                     }
                 },
                 "6": {
-                    "ruta": "comunicacion/",
+                    
                     "id": "6",
-                    "nombre": "Unidad 6 - Me gusta trabajar en equipo",
+                    "nombre": "Unidad 7 - Me gusta trabajar en equipo",
                     "temas": {
                         "0": "Ondas Expresivas",
                         "1": "Relaciones temporales",
@@ -121,38 +121,57 @@
                     }
                 },
                 "7": {
-                    "ruta": "comunicacion/",
+                   
                     "id": "7",
-                    "nombre": "Unidad 7 - Me gusta proteger a los animales y las plantas",
-                    "temas": {
-                        "0": "Comprensión lectora",
-                        "1": "Ubicación espacial",
-                        "2": "¿Qué será? Mi oído me ayudará",
-                        "3": "Palabras con Br-br"
-                    }
-                },
-                "8": {
-                    "ruta": "comunicacion/",
-                    "id": "8",
                     "nombre": "Unidad 8 - Me gusta proteger a los animales y las plantas",
                     "temas": {
                         "0": "Comprensión lectora",
                         "1": "Ubicación espacial",
                         "2": "¿Qué será? Mi oído me ayudará",
-                        "3": "Palabras con Br-br"
+                        "3": "Palabras con Br-br",
+                        "4": "Palabras con Bl-bl",
+                        "5": "Palabras con Pr-pr",
+                        "6": "Los signos de interrogación",
+                        "7": " Describe el lugar"
+                       
+                    } 
+                },
+                "8": {
+                    "id": "8",
+                    "nombre": "Unidad 9 - Costumbres, gustos y sabores del Perú",
+                    "temas": {
+                        "0": "Arca de lectura 8 - Comprensión de lectura",
+                        "1": "Un cuento",
+                        "2": "Parte - todo",
+                        "3": "Palabras con Cr - cr",
+                        "4": "Palabras con Cl - cl",
+                        "5": "Palabras con Gr - gr",
+                        "6": "Palabras con Gl - gl",
+                        "7": "Oraciones Incompletas",
+                        "8": "Los signos de exclamación",
+                        "9": "Escribe rimas",
+                        "10": "Arca de lectura 8 - Comprensión lectora"
                     }
                 },
-                "9": {
-                    "ruta": "comunicacion/",
+                "9":{
                     "id": "9",
-                    "nombre": "Unidad 9 - Me gusta proteger a los animales y las plantas",
+                    "nombre": "Unidad 10 - Navidad es compartir con los demás",
                     "temas": {
-                        "0": "Comprensión lectora",
-                        "1": "Ubicación espacial",
-                        "2": "¿Qué será? Mi oído me ayudará",
-                        "3": "Palabras con Br-br"
+                        "0": "Arca de lectura 9 - Comprensión de lectura",
+                        "1": "Un cuento",
+                        "2": "Un poema",
+                        "3": "Una prosa",
+                        "4": "La inferencia",
+                        "5": "¿Qué será? Mi oído me ayudará",
+                        "6": "Palabras con Tr - tr",
+                        "7": "Palabras con Tl - tl",
+                        "8": "Palabras con Dr - dr",
+                        "9": "Palabras con Fr - fr",
+                        "10": "El verbo",
+                        "11": "Escribimos un cuento"                       
                     }
                 }
+
             }
         },
         "1": {
@@ -172,7 +191,34 @@
                     "enlace": "com1-2"
                 }
             },
-            "unidades": ""
+            "unidades":{
+                "0": {
+                    
+                    "id": "0",
+                    "nombre": "Unidad 1 - Me gusta jugar con mis amigos ",
+                    "temas": {
+                        "0": "Un cuento 1",
+                        "1": "Un cuento 2",
+                        "2": "Abecedario",
+                        "3": "Las adivinanzas",
+                        "4": "Narra un cuento",
+                        "5": "La mayúscula y el punto",
+                        "6": "La oración: sujeto y predicado",
+                        "7": "Escribe un cuento",
+                        "8": "La estructura de un texto narrativo",
+                        "9": "Arca de lectura 2 - Comprensión lectora"
+                        
+                    }
+                },
+                "1": {
+                    
+                    "id": "1",
+                    "nombre": "Unidad 0 - Aprendiendo en mi escuela",
+                    "temas": {
+                        "0": "Actividad digital"
+                    }
+                }
+            }
         },
         "2": {
             "activo": "0",
@@ -253,7 +299,7 @@
     },
     "1": {
         "0": {
-            "activo": "1",
+            "activo": "0",
             "titulo": "Matematica 1",
             "color": "#00b3ce",
             "grado": "2",

@@ -16,12 +16,12 @@
         index: 1,
         callback: function (toggle) { this.setFontItalic(toggle); }
       },
-      /*underline: {
+      underline: {
         icon: 'toggle',
         title: 'Undelrine',
         index: 2,
         callback: function (toggle) { this.setFontUnderline(toggle); }
-      },*/
+      },
       fontSize: {
         title: 'Font Size',
         icon: 'select',
@@ -66,7 +66,7 @@
       // make sure clicking on the text-tnput doesn't trigger another textInput
       this.$textInput = $('<textarea class="wPaint-text-input" spellcheck="false"></textarea>')
       .on('mousedown', this._stopPropagation) 
-      .css({position: 'absolute'})
+      .css({position: 'absolute', color:'black'})
       .hide();
       
       $('body').append(this.$textCalc);

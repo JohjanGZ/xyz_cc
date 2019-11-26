@@ -142,7 +142,7 @@
     },
 
     setCursor: function (cursor) {
-      if (cursor === 'eraser') {
+      if (cursor === 'eraser'){
         this.setCursor('eraser' + this.options.lineWidth);
       }
     },

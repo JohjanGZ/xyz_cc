@@ -58,16 +58,14 @@
 
         var images = [
           '/test/uploads/wPaint.png',
-        ];
-
+        ]; 
         function saveImg(image){
           var _this = this;
-
           $.ajax({
             type: 'POST',
             url: '/test/upload.php',
             data: {image: image},
-            success: function (resp) {
+            success: function (resp){
 
               // internal function for displaying status messages in the canvas
               _this._displayStatus('Image saved successfully');
@@ -89,7 +87,7 @@
           });
         }
 
-        function loadImgBg () {
+        function loadImgBg(){
 
           // internal function for displaying background images modal
           // where images is an array of images (base64 or url path)
