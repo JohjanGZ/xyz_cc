@@ -27,8 +27,6 @@
 			transition:0.3s;
 			transform: scale(1.1);
     		z-index: 55;
-			
-			
 		}
 		#list-digitales li:hover img{
 			opacity:1;
@@ -42,8 +40,8 @@
 		}
 		.carousel {
 
-    margin-top: -115px;
-}
+   		 margin-top: -115px;
+		}
 
 	</style>
 	<center>
@@ -58,28 +56,12 @@ echo "<a class='carousel-item' href='view/digitales/".$libros[$t]['enlace']."/in
 	?>
     
   </div>
-
-<!--<ul id="list-digitales">
-	<?php/*
-				$t=0;
-				foreach ($libros as $i){
-
-					echo 
-					"<li>
-					<a href='view/digitales/".$libros[$t]['enlace']."/index.php' target='_blank' class=''>
-					<img src='img/digitales/".$libros[$t]['portada']."'><label>
-					".$libros[$t]['title']."</label>
-					</a></li>";
-				    $t++;
-				}*/
-	?>
-</ul>-->
 </center>
 </div>
 	<script type="text/javascript">
 		$("#portada").css("display", "none");
 		$(document).ready(function(){
-    $('.carousel').carousel({duration:5});
+    	$('.carousel').carousel({duration:5});
   		});
       
 	</script>
