@@ -138,6 +138,7 @@ function incorrecto() {
     return false;
 }
 
+
 $(".modal-close").click(function() {
     $('#incorrecto').css("display", "none");
     $('#correcto').css("display", "none")

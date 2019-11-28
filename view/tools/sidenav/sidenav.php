@@ -69,10 +69,6 @@ console.log("curso: "+curso+grado);
             });
         }
     });
-
-
-
-
     $(".ui-state-active").css("background-color", color + "!important");
     $(".sidenav").css("background-color", color + "!important");
     $(".ui-widget-content .ui-state-active").css("background-color", color + "!important");
