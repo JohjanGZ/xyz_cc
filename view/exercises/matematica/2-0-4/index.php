@@ -26,7 +26,7 @@
                 </div>
                 <div>}</div>
             </div>
-            <div class="col s12 card-panel  light-blue lighten-3 palabras">
+            <div class="col s12 card-panel  light-blue lighten-3 palabras aleatorio">
                 <p class="pieza palabra transporte blue lighten-1" id="transporte">Cruzero</p>
                 <p class="pieza palabra transporte blue lighten-1" id="transporte">Avión</p>
                 <p class="pieza palabra transporte blue lighten-1" id="transporte">Tren</p>
@@ -51,31 +51,32 @@
 </div>
 </body>
 <script src="../../../../../js/core.js"></script>
-<?php require('../../../tools/botones/botones.php');?> <script>$("#next").attr("onclick","<?=$next?>");</script>
+<?php require('../../../tools/botones/botones.php');?>
+<script>$("#next").attr("onclick", "<?=$next?>");</script>
 <script type="text/javascript">
 
     var objeto;
     var conLetraT = 0;
     var conLetraK = 0;
 
-        $(".palabra").draggable({
-            start: function() {
-                objeto=$(this).attr("id");
+    $(".palabra").draggable({
+        start: function () {
+            objeto = $(this).attr("id");
 
-            }
-        });
+        }
+    });
 
-        $(".letraT").droppable({
+    $(".letraT").droppable({
         classes: {
             "ui-droppable-hover": "ui-state-hover"
         },
-        drop: function( event, ui ) {
+        drop: function (event, ui) {
             $(this).css("border", "#333");
-        //$( this ).target.append(event.target);
+            //$( this ).target.append(event.target);
 
-        if(objeto=="transporte"){
-            conLetraT++
-        }
+            if (objeto == "transporte") {
+                conLetraT++
+            }
             objeto.removeClass("pieza");
         }
 
@@ -85,43 +86,52 @@
         classes: {
             "ui-droppable-hover": "ui-state-hover"
         },
-        drop: function( event, ui ) {
+        drop: function (event, ui) {
             $(this).css("border", "#333");
-        //$( this ).target.append(event.target);
+            //$( this ).target.append(event.target);
 
-        if(objeto=="animal"){
-            conLetraK++
-        }
+            if (objeto == "animal") {
+                conLetraK++
+            }
             objeto.removeClass("pieza");
         }
 
     });
-        
+
 
 
     // Formulario - Registrados
 
-    function result_tipo_2_0_4(){
-        var  min= $('#Minutos').text();
-        var  seg= $('#Segundos').text();
-        var  milseg= $('#Centesimas').text();
-        var tiempo=min+":"+seg+":"+milseg;
+    function result_tipo_2_0_4() {
+        var min = $('#Minutos').text();
+        var seg = $('#Segundos').text();
+        var milseg = $('#Centesimas').text();
+        var tiempo = min + ":" + seg + ":" + milseg;
 
-            if( conLetraT == 3 && conLetraK == 4 ){
-                
-                localStorage.setItem("Nota2-0-4","2");
-                localStorage.setItem("Time2-0-4", tiempo);
-                correcto(); 
+        if (conLetraT == 3 && conLetraK == 4) {
 
-            }
+            localStorage.setItem("Nota2-0-4", "2");
+            localStorage.setItem("Time2-0-4", tiempo);
+            correcto();
 
-            else {
+        }
 
-                incorrecto();
-                localStorage.setItem("Nota2-0-4","0");
-                localStorage.setItem("Time2-0-4", tiempo);
-                
-            }    
-    } 
+        else {
 
+            incorrecto();
+            localStorage.setItem("Nota2-0-4", "0");
+            localStorage.setItem("Time2-0-4", tiempo);
+
+        }
+    }
+
+    var cols = document.querySelectorAll('.aleatorio');
+
+    [].forEach.call(cols, (e)=>{
+
+        for (var i = e.children.length; i >= 0; i--) {
+            e.appendChild(e.children[Math.random() * i | 0]);
+        }
+
+    });
 </script>

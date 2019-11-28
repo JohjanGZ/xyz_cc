@@ -49,7 +49,7 @@
       <section id="contenedorpuzzle">
           <div class="row">
               <div id="contenedorPiezas">
-                  <ul>                 
+                  <ul id="ulClass">                 
                       <li class="contenedorimg">
                       <img class="ficha" id="animal" src="img/1-1/perro.png" alt="pieza1" >
                       </li>
@@ -116,7 +116,7 @@
                                       </div>
 
  <script src="../../../../../js/core.js"></script>
- <?php require('../../../tools/botones/botones.php'); ?>
+ <?php require('../../../tools/botones/botones.php'); ?><script>$("#next").attr("onclick","<?=$next?>");</script>
 
 <script type="text/javascript">
     

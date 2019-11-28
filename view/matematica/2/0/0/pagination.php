@@ -221,7 +221,7 @@ function start_6() {
     $("#ventana").load(ruta + '2-0-5/index.php', {
         next: "Page_7()",
         procesar: "result_tipo_2_0_5()",
-        titulo: "<center><h5><span class='ftitulo'>Clasifica</span> cada elemento teniendo en cuenta si pertenece (∈) o no pertenece (∉) al conjunto F.</h5></center>",
+        titulo: "<center><h5><span>Observa</span> el diagrama y <span>coloca</span> verdadero (V) o falso (F) según corresponda.</center>",
         restaurar: "start_6()",
         dir: ruta,
         cod: "2-0-5",
@@ -234,7 +234,7 @@ function start_7() {
     $("#ventana").load(ruta + '2-0-6/index.php', {
         next: "Page_8()",
         procesar: "result_tipo_2_0_6()",
-        titulo: "<center><h5><span class='ftitulo'>Observa</span> la clave y <span class='ftitulo'>Selecciona</span> en los espacios en blanco las figuras que correspondan.</h5></center>",
+        titulo: "<center><h5><span>Lee</span> y <span>clasifica</span> los elementos en el conjunto correspondiente.</h5></center>",
         restaurar: "start_7()",
         dir: ruta,
         cod: "2-0-6",
@@ -247,7 +247,7 @@ function start_8() {
     $("#ventana").load(ruta + '2-0-7/index.php', {
         next: "Page_9()",
         procesar: "result_tipo_2_0_7()",
-        titulo: "<center><h5><span>Lee</span> y <span>clasifica</span> los elementos en el conjunto correspondiente.</h5></center>",
+        titulo: "<center><h5><span>Observa</span> el diagrama y <span>coloca</span> verdadero (V) o falso (F) según corresponda.</h5></center>",
         restaurar: "start_8()",
         dir: ruta,
         cod: "2-0-7",
@@ -260,7 +260,7 @@ function start_9() {
     $("#ventana").load(ruta + '2-0-8/index.php', {
         next: "Page_10()",
         procesar: "result_tipo_2_0_8()",
-        titulo: "<center><h5> <span class='ftitulo'>Selecciona</span> la figura que continúa la serie.</h5></center>",
+        titulo: "<center><h5><span>Escoge</span>  si el conjunto está determinado por extensión o si está determinado por comprensión.</h5></center>",
         restaurar: "start_9()",
         dir: ruta,
         cod: "2-0-8",
@@ -283,13 +283,13 @@ function start_10() {
 };
 
 function start_11() {
-    $("#ventana").load(ruta + '1-0-11/index.php', {
+    $("#ventana").load(ruta + '2-0-10/index.php', {
         next: "Page_12()",
-        procesar: "result_tipo_1_0_11()",
+        procesar: "result_tipo_2_0_10()",
         titulo: "<center><h5> <span class='ftitulo'>Cuenta</span> y <span class='ftitulo'>Coloca</span> el conjunto de elementos donde corresponde.</h5></center>",
         restaurar: "start_11()",
         dir: ruta,
-        cod: "1-0-11",
+        cod: "2-0-10",
         nota: cal
     });
     return false;

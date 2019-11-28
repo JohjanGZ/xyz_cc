@@ -62,13 +62,12 @@ label {
   max-width: 100%;
 }
 
-ul:not(.browser-default) > li {
+.ulClass:not(.browser-default) > li {
   list-style-type: none;
   float: left;
 }
 .caballo {
   height: 156px !important;
-
   margin-top: -10px;
 }
 
@@ -162,7 +161,7 @@ ul:not(.browser-default) > li {
   border-radius: 15px;
 }
 
-ul:not(.browser-default) > li {
+.ulClass:not(.browser-default) > li {
   list-style-type: none;
   float: left;
 }

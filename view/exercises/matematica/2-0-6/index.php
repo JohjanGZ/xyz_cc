@@ -25,7 +25,7 @@
                 </div>
                 <div></div>
             </div>
-            <div class="col s12 lighten-3 palabras">
+            <div class="col s12 lighten-3 palabras aleatorio">
                 <p class="palabra white lighten-1 fruta" id="grupoF"><img src="img/1-6/uvas.gif" alt=""></p>
                 <h4 class="palabra white lighten-1 red-text letra" id="grupoV">a</h4>
                 <p class="palabra white lighten-1 fruta" id="grupoF"><img src="img/1-6/pera.gif" alt=""></p>
@@ -50,79 +50,90 @@
 </body>
 <script src="../../../../../js/core.js"></script>
 <?php require('../../../tools/botones/botones.php');?>
+<script>$("#next").attr("onclick", "<?=$next?>");</script>
 <script type="text/javascript">
 
     var objeto;
     var conGrupoF = 0;
     var conGrupoV = 0;
 
-        $(".palabra").draggable({
-            start: function() {
-                objeto=$(this).attr("id");
-            }
-            
-        });
-        
-        $(".grupoF").droppable({
+    $(".palabra").draggable({
+        start: function () {
+            objeto = $(this).attr("id");
+        }
+
+    });
+
+    $(".grupoF").droppable({
         classes: {
             "ui-droppable-active": "ui-state-active",
             "ui-droppable-hover": "ui-state-hover"
         },
-        drop: function( event, ui ) {
+        drop: function (event, ui) {
             $(this).css("border", "#333");
-        //$( this ).target.append(event.target);
+            //$( this ).target.append(event.target);
 
-        if(objeto=="grupoF"){
-            conGrupoF++;
-        }
-        element.removeClass("pieza");   
+            if (objeto == "grupoF") {
+                conGrupoF++;
+            }
+            element.removeClass("pieza");
         }
 
     });
-        
+
     $(".grupoV").droppable({
         classes: {
             "ui-droppable-active": "ui-state-active",
             "ui-droppable-hover": "ui-state-hover"
         },
-        drop: function( event, ui ) {
+        drop: function (event, ui) {
             $(this).css("border", "#333");
-        //$( this ).target.append(event.target);
+            //$( this ).target.append(event.target);
 
-        if(objeto=="grupoV"){
-            conGrupoV++;
-        }
-        element.removeClass("pieza");   
+            if (objeto == "grupoV") {
+                conGrupoV++;
+            }
+            element.removeClass("pieza");
         }
 
     });
-        
+
 
 
     // Formulario - Registrados
 
-    function result_tipo_2_0_6(){
-        var  min= $('#Minutos').text();
-        var  seg= $('#Segundos').text();
-        var  milseg= $('#Centesimas').text();
-        var tiempo=min+":"+seg+":"+milseg;
+    function result_tipo_2_0_6() {
+        var min = $('#Minutos').text();
+        var seg = $('#Segundos').text();
+        var milseg = $('#Centesimas').text();
+        var tiempo = min + ":" + seg + ":" + milseg;
 
-            if( conGrupoF == 3 && conGrupoV == 3 ){
-                
-                localStorage.setItem("Nota2-0-6","2");
-                localStorage.setItem("Time2-0-6", tiempo);
-                correcto(); 
+        if (conGrupoF == 3 && conGrupoV == 3) {
 
-            }
+            localStorage.setItem("Nota2-0-6", "2");
+            localStorage.setItem("Time2-0-6", tiempo);
+            correcto();
 
-            else {
-                console.log(conGrupoV);
-                console.log(conGrupoF);
-                incorrecto();
-                localStorage.setItem("Nota2-0-6","0");
-                localStorage.setItem("Time2-0-6", tiempo);
-                
-            }    
-    } 
+        }
+
+        else {
+            console.log(conGrupoV);
+            console.log(conGrupoF);
+            incorrecto();
+            localStorage.setItem("Nota2-0-6", "0");
+            localStorage.setItem("Time2-0-6", tiempo);
+
+        }
+    }
+
+    var cols = document.querySelectorAll('.aleatorio');
+
+    [].forEach.call(cols, (e)=>{
+
+        for (var i = e.children.length; i >= 0; i--) {
+            e.appendChild(e.children[Math.random() * i | 0]);
+        }
+
+    });
 
 </script>
