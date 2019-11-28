@@ -1,8 +1,9 @@
 <script type="text/javascript">
+
 function Page_1() {
+    count = 3;
     start_1();
     inicio();
-    count = 3;
 }
 
 function Page_2() {
@@ -43,9 +44,9 @@ function Page_7() {
 }
 
 function Page_8() {
+    count = 3;
     start_8();
     inicio();
-    count = 3;
 }
 
 function Page_9() {
@@ -207,7 +208,7 @@ function start_5() {
     $("#ventana").load(ruta + '2-0-4/index.php', {
         next: "Page_6()",
         procesar: "result_tipo_2_0_4()",
-        titulo: "<center><h5><span class='ftitulo'>Selecciona</span> todas las cucharas.</h5></center>",
+        titulo: "<center><h5><span class='ftitulo'>Observa </span> los siguientes conjuntos y <span>represéntalos</span> por extension, usando el nombre de sus elementos.</h5></center>",
         restaurar: "start_5()",
         dir: ruta,
         cod: "2-0-4",
@@ -220,7 +221,7 @@ function start_6() {
     $("#ventana").load(ruta + '2-0-5/index.php', {
         next: "Page_7()",
         procesar: "result_tipo_2_0_5()",
-        titulo: "<center><h5><span class='ftitulo'>Observa</span> el conjunto que no tiene ningun elemento.</h5></center>",
+        titulo: "<center><h5><span class='ftitulo'>Clasifica</span> cada elemento teniendo en cuenta si pertenece (∈) o no pertenece (∉) al conjunto F.</h5></center>",
         restaurar: "start_6()",
         dir: ruta,
         cod: "2-0-5",
@@ -230,52 +231,52 @@ function start_6() {
 };
 
 function start_7() {
-    $("#ventana").load(ruta + '1-0-7/index.php', {
+    $("#ventana").load(ruta + '2-0-6/index.php', {
         next: "Page_8()",
-        procesar: "result_tipo_1_0_7()",
+        procesar: "result_tipo_2_0_6()",
         titulo: "<center><h5><span class='ftitulo'>Observa</span> la clave y <span class='ftitulo'>Selecciona</span> en los espacios en blanco las figuras que correspondan.</h5></center>",
         restaurar: "start_7()",
         dir: ruta,
-        cod: "1-0-7",
+        cod: "2-0-6",
         nota: cal
     });
     return false;
 };
 
 function start_8() {
-    $("#ventana").load(ruta + '1-0-8/index.php', {
+    $("#ventana").load(ruta + '2-0-7/index.php', {
         next: "Page_9()",
-        procesar: "result_tipo_1_0_8()",
-        titulo: "<center><h5><span class='ftitulo'>Observa</span> y <span class='ftitulo'>Selecciona</span> la figura que continúa en cada serie.</h5></center>",
+        procesar: "result_tipo_2_0_7()",
+        titulo: "<center><h5><span>Lee</span> y <span>clasifica</span> los elementos en el conjunto correspondiente.</h5></center>",
         restaurar: "start_8()",
         dir: ruta,
-        cod: "1-0-8",
+        cod: "2-0-7",
         nota: cal
     });
     return false;
 };
 
 function start_9() {
-    $("#ventana").load(ruta + '1-0-9/index.php', {
+    $("#ventana").load(ruta + '2-0-8/index.php', {
         next: "Page_10()",
-        procesar: "result_tipo_1_0_9()",
+        procesar: "result_tipo_2_0_8()",
         titulo: "<center><h5> <span class='ftitulo'>Selecciona</span> la figura que continúa la serie.</h5></center>",
         restaurar: "start_9()",
         dir: ruta,
-        cod: "1-0-9",
+        cod: "2-0-8",
         nota: cal
     });
     return false;
 };
 
 function start_10() {
-    $("#ventana").load(ruta + '1-0-10/index.php', {
+    $("#ventana").load(ruta + '2-0-9/index.php', {
         next: "Page_11()",
-        procesar: "result_tipo_1_0_10()",
+        procesar: "result_tipo_2_0_9()",
         titulo: "<center><h5> <span class='ftitulo'>Cuenta</span> y <span class='ftitulo'>Coloca</span> el conjunto de elementos donde corresponde.</h5></center>",
         restaurar: "start_10()",
         dir: ruta,
-        cod: "1-0-10",
+        cod: "2-0-9",
         nota: cal
     });
     return false;
