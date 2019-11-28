@@ -20,7 +20,7 @@
         </li>
     </center>
     <li>
-        <a href="../../../php/cerrar.php" class="tooltipped" data-position="right" data-tooltip="Cerrar Plataforma"><i
+        <a href="../../../../../php/cerrar.php" class="tooltipped" data-position="right" data-tooltip="Cerrar Plataforma"><i
                 class="material-icons small icon-contenido">power_settings_new</i>
         </a>
     </li>
