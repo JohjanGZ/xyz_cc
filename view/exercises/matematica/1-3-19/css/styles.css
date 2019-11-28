@@ -28,7 +28,7 @@
 }
 
 .grid-item {
-    border: 1px solid rgb(255, 153, 153);
+    border: 1px solid skyblue;
     padding: 6px;
     text-align: center;
     display: flex;
@@ -38,19 +38,15 @@
 }
 
 .tc {
-    color: rgb(255, 153, 153);
+    background:rgb(208, 237, 244);
     font-size: 24px;
     font-weight: bold;
-}
-.tn {
-    color: #cc3366;
-    font-size: 24px;
-    font-weight: bold;
+    color: #0095DA;
 }
 
 .img {
-    width: 18px;
-    height: auto;
+    height: 60px;
+    width: auto;
     margin-left: 1vh;
 }
 
@@ -96,4 +92,5 @@
 .principal {
     height: auto;
     width: 320px;
+    background: #fff;
 }
