@@ -4,8 +4,8 @@
 <div id="contenedor">
 <?php
  	  require ('../../../../tools/sidenav/sidenav.php');
-    require ('../../../../tools/sound/sound.php');
-    require ('../../../../tools/crono/crono.php');
+   require ('../../../../tools/sound/sound.php');
+   require ('../../../../tools/crono/crono.php');
     require ('../../../../tools/pantalla-inicio/2do.php');   
  ?>
  <div style="transform: translate(0vw, -13vh);
@@ -37,15 +37,20 @@
                                         <input type="hidden" name="" id="nota" value="0">                                     
 
 <div id="ventana"></div>
+<<<<<<< HEAD
+<?php require ('pagination.php');?>
+ <script src="../../../../../js/materialize.min.js"></script>
+=======
 <?php require ('pagination.php');?>  
 <script src="../../../../../js/materialize.min.js"></script>
+>>>>>>> efee035e64eab506657221146a810e284e6209c0
 <script type="text/javascript"> 
   $(document).ready(function(){
     $('#resolucion').html(window.innerWidth + " x " + window.innerHeight);
   });
   function IniciarCronometro(){
         $("#portada").css("display", "none");
-                Page_28(); 
+        Page_9(); 
   }
 </script>
 </body>
