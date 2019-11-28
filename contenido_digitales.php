@@ -55,13 +55,12 @@ echo "<a class='carousel-item' href='view/digitales/".$libros[$t]['enlace']."/in
 				}
 	?>
     
-  </div>
+  	</div>
 </center>
 </div>
 	<script type="text/javascript">
 		$("#portada").css("display", "none");
 		$(document).ready(function(){
     	$('.carousel').carousel({duration:5});
-  		});
-      
+  		});      
 	</script>
