@@ -63,7 +63,7 @@
                   </div>
               </div>
               <script src="../../../../../js/core.js"></script>
-<?php require('../../../tools/botones/botones.php');?>
+<?php require('../../../tools/botones/botones.php');?> <script>$("#next").attr("onclick","<?=$next?>");</script>
 <script type="text/javascript" src="<?= $dir ?>/validate.js"></script>
 
 <script type="text/javascript">

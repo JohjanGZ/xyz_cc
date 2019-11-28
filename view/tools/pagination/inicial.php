@@ -80,8 +80,8 @@
         next: "PageTipo2_1_4()", 
         procesar:"result_tipo_2_1_3()",
         titulo:"<center><h5><span class='ftitulo'>Relaciona</span> Relaciona cada imagen con su sombra.</h5></center>",
-         restaurar:"start2_1_3()",
-         ejercicio:"2-1-3"
+        restaurar:"start2_1_3()",
+        ejercicio:"2-1-3"
         }          
         );
         return false;

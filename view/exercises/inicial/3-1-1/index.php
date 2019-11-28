@@ -83,7 +83,7 @@
                   </div>
               </div>
 <script src="../../../../js/core.js"></script>
-<?php require('../../../tools/botones/botones.php');?>
+<?php require('../../../tools/botones/botones.php');?> <script>$("#next").attr("onclick","<?=$next?>");</script>
 <script type="text/javascript">
   var ul = document.querySelector('.fila2');
   for (var i = ul.children.length; i >= 0; i--) {
