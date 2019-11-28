@@ -1,6 +1,14 @@
 <ul style="width:auto" id="slide-out" class="sidenav">
 
 
+    <center>
+        <li>
+            <a href="../../../../../" class="tooltipped " data-position="right" data-tooltip="Ir a Inicio"><i
+                    class="material-icons small  icon-modulo">view_module</i>
+            </a>
+        </li>
+    </center>
+    
     <ul id="menu">
 
         <li>
@@ -11,20 +19,28 @@
             </ul>
         </li>
     </ul>
-
     <center>
+        <li id="tool" >
+            <a id="" class="tooltipped " data-position="right" data-tooltip="Herramienta de dibujo"><i
+                    class="material-icons small  icon-modulo">edit</i>
+            </a>
+            
+        </li>
+
         <li>
-            <a href="../../../../../" class="tooltipped " data-position="right" data-tooltip="Ir a Inicio"><i
-                    class="material-icons small  icon-modulo">view_module</i>
+            <a id="next" onclick ="<?=$next?>" class="tooltipped " data-position="right" data-tooltip="Siguiente"><i
+                    class="material-icons small  icon-modulo">keyboard_arrow_right</i>
             </a>
         </li>
     </center>
+
     <li>
-        <a href="../../../php/cerrar.php" class="tooltipped" data-position="right" data-tooltip="Cerrar Plataforma"><i
+        <a href="../../../../../php/cerrar.php" class="tooltipped" data-position="right" data-tooltip="Cerrar Plataforma"><i
                 class="material-icons small icon-contenido">power_settings_new</i>
         </a>
     </li>
 </ul>
+<div id="cargarPHP"></div>
 
 
 <a href="#" data-target="slide-out" id="btn-flotante"
@@ -69,9 +85,9 @@ console.log("curso: "+curso+grado);
             });
         }
     });
-
-
-
+    $("#tool").click(function() {
+        $("#cargarPHP").load("../../../../../php/opentool.php")
+});
 
     $(".ui-state-active").css("background-color", color + "!important");
     $(".sidenav").css("background-color", color + "!important");
