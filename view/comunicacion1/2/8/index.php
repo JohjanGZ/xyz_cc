@@ -37,7 +37,7 @@
                                         <input type="hidden" name="" id="nota" value="0">                                     
 
 <div id="ventana"></div>
-<?php require ('pagination.php');?>
+<?php require ('pagination.php');?> <script>$("#next").attr("onclick","<?=$next?>");</script>
 <script src="../../../../js/materialize.min.js"></script>
 <script type="text/javascript"> 
   $(document).ready(function(){
