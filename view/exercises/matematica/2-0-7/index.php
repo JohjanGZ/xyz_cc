@@ -530,7 +530,7 @@
                                         <div class="modal-content">
                                           <h4>Respuesta correcta</h4>
                                           <center>
-                                          <img class="materialboxed"  width="100%" src="img/1-7/respuesta.png">
+                                            <img class="materialboxed"  width="100%" src="img/1-7/respuesta.png">
                                           </center>
                                         </div>
                                         <div class="modal-footer">

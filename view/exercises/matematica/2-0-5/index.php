@@ -530,7 +530,7 @@
                                         <div class="modal-content">
                                           <h4>Respuesta correcta</h4>
                                           <center>
-                                          <img class="materialboxed"  width="100%" src="img/1-5/respuesta.png">
+                                            <img class="materialboxed"  width="100%" src="https://secureservercdn.net/166.62.110.90/igl.698.myftpupload.com/wp-content/uploads/2017/03/Header-Imagev.13.jpg">
                                           </center>
                                         </div>
                                         <div class="modal-footer">
