@@ -52,11 +52,6 @@ h4 {
     cursor: pointer;
 }
 
-#palabras li>span:hover {
-    border: 3px solid #37D3F7;
-    border-radius: 5px;
-}
-
 @media (min-width: 600px) {
     #palabras li {
         width: 200PX;
@@ -64,4 +59,8 @@ h4 {
         margin-bottom: 2vh;
         margin-right: 3vh;
     }
+}
+#palabras .option > span:hover {
+    border: 3px solid #37D3F7;
+    border-radius: 12px;
 }

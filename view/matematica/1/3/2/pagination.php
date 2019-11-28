@@ -1,19 +1,4 @@
 <script type="text/javascript">
-function Page_6() {
-    start_6();
-    inicio();
-    count = 3;
-}
-function Page_7() {
-    start_7();
-    inicio();
-    count = 3;
-}
-function Page_8() {
-    start_8();
-    inicio();
-    count = 3;
-}
 function Page_9() {
     start_9();
     inicio();
@@ -29,80 +14,61 @@ function Page_11() {
     inicio();
     count = 3;
 }
+function Page_12() {
+    start_12();
+    inicio();
+    count = 3;
+}
 var cant = 18;
 var cal = cant / cant;
 console.log(cant);
 var ruta = "../../../../exercises/matematica/";
 ////////////// 2do 
 // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
-function start_6() {
-    $("#ventana").load(ruta + '1-2-6/index.php', {
-        next: "Page_7()",
-        procesar: "result_tipo_1_2_6()",
-        titulo: "<center><h5><span class='ftitulo'>Resuelve</span> los siguientes problemas y <span class='ftitulo'>completa</span> los números en cada recuadro.</h5></center>",
-        restaurar: "start_6()",
-        dir: ruta,
-        cod: "1-2-6",
-        nota: cal
-    });
-    return false;
-};
-function start_7() {
-    $("#ventana").load(ruta + '1-2-7/index.php', {
-        next: "Page_8()",
-        procesar: "result_tipo_1_2_7()",
-        titulo: "<center><h5><span class='ftitulo'>Resuelve</span> los siguientes problemas y <span class='ftitulo'>completa</span> los números en cada recuadro.</h5></center>",
-        restaurar: "start_7()",
-        dir: ruta,
-        cod: "1-2-7",
-        nota: cal
-    });
-    return false;
-};
-function start_8() {
-    $("#ventana").load(ruta + '1-2-8/index.php', {
-        next: "Page_9()",
-        procesar: "result_tipo_1_2_8()",
-        titulo: "<center><h5><span class='ftitulo'>Lee, escribe</span> los datos y <span class='ftitulo'>resuelve</span> la adición en el tablero posicional.</h5></center>",
-        restaurar: "start_8()",
-        dir: ruta,
-        cod: "1-2-8",
-        nota: cal
-    });
-    return false;
-};
 function start_9() {
-    $("#ventana").load(ruta + '1-2-9/index.php', {
+    $("#ventana").load(ruta + '1-3-9/index.php', {
         next: "Page_10()",
-        procesar: "result_tipo_1_2_9()",
-        titulo: "<center><h5><span class='ftitulo'>Lee, escribe</span> los datos y <span class='ftitulo'>resuelve</span> la adición en el tablero posicional.</h5></center>",
+        procesar: "result_tipo_1_3_9()",
+        titulo: "<center><h5><span class='ftitulo'>Completa</span> el cuadro.</h5></center>",
         restaurar: "start_9()",
         dir: ruta,
-        cod: "1-2-9",
+        cod: "1-3-9",
         nota: cal
     });
     return false;
 };
 function start_10() {
-    $("#ventana").load(ruta + '1-2-10/index.php', {
+    $("#ventana").load(ruta + '1-3-10/index.php', {
         next: "Page_11()",
-        procesar: "result_tipo_1_2_10()",
-        titulo: "<center><h5><span class='ftitulo'>Lee, escribe</span> los datos y <span class='ftitulo'>resuelve</span> la adición en el tablero posicional.</h5></center>",
+        procesar: "result_tipo_1_3_10()",
+        titulo: "<center><h5><span class='ftitulo'>Selecciona</span> el avioncito que traslada a 42 pasajeros.</h5></center>",
         restaurar: "start_10()",
         dir: ruta,
-        cod: "1-2-10",
+        cod: "1-3-10",
         nota: cal
     });
     return false;
 };
 function start_11() {
-    $("#ventana").load(ruta + '1-2-11/index.php', {
-        next: "resultado()",
-        procesar: "result_tipo_1_2_11()",
-        titulo: "<center><h5><span class='ftitulo'>Lee, escribe</span> los datos y <span class='ftitulo'>resuelve</span> la adición en el tablero posicional.</h5></center>",
+    $("#ventana").load(ruta + '1-3-11/index.php', {
+        next: "Page_12()",
+        procesar: "result_tipo_1_3_11()",
+        titulo: "<center><h5><span class='ftitulo'>Selecciona</span> el trencito que cuesta 37 soles.</h5></center>",
         restaurar: "start_11()",
         dir: ruta,
-        cod: "1-2-11",
+        cod: "1-3-11",
+        nota: cal
+    });
+    return false;
+};
+function start_12() {
+    $("#ventana").load(ruta + '1-3-12/index.php', {
+        next: "Page_13()",
+        procesar: "result_tipo_1_3_12()",
+        titulo: "<center><h5><span class='ftitulo'>Escribe</span> el número que ha sido representado en el ábaco.</h5></center>",
+        restaurar: "start_12()",
+        dir: ruta,
+        cod: "1-3-12",
         nota: cal
     });
     return false;
