@@ -13,12 +13,19 @@
 .contenedorimg {
     width: 107px;
 }
+
+@media (max-width: 1500px){
+  .recibidor {
+      width: 80%;
+  }
+}
 /*@media (max-width: 1500px){*/
 #contenedorPiezas {
     background: #5561ff00;
     height: 130px;
     float: left;
     margin-top: 79px;
+    padding-top: 30px;
 }
 #contenedorPuzzle img {
     float: left;
@@ -29,6 +36,18 @@
     z-index: 10;
 }
 
+#ulClass li img{
+  width: 60px!important;
+  height: auto!important;
+}
+#ulClass li{
+  width: 100px!important;
+
+}
+.row .col.s4 {
+  display: grid;
+  justify-items: center;
+}
 @media (max-height: 600px){
 #contenedorPiezas{
     background: #5561ff00;
@@ -36,6 +55,10 @@
     float: left;
     margin: 0 12% 0;
 }
+.recibidor{
+  padding-top: 30px;
+}
+
 #uno, #dos, #tres {
     min-height: 2vh !important;
 }

@@ -38,10 +38,9 @@
   }
 
   .seleccion {
-    top: 68px;
     position: relative;
     margin: 0 auto !important;
-    max-width: 1200px;
+    max-width: 1300px;
   }
 
   .imgvfi {
@@ -116,25 +115,29 @@
   @media (max-width: 1200px) {
 
     .seleccion {
-      top: 30px;
+      top: 0px;
+      margin-left: 100px;
       position: relative;
+      width: 53%!important;
+    }
+    .imgvf {
+      margin-left: 70px!important;
     }
   }
 
   @media (max-width: 1300px) {
 
     .imgvf {
-
       background-size: 100%;
       width: 389px;
-      height: 172px;
+      height: 202px;
       margin: 0 auto -45px;
+      margin-left: 50px;
       background-repeat: no-repeat;
     }
 
     .seleccion {
-
-      width: 1110px;
+      width: 800px;
     }
   }
 
@@ -147,7 +150,7 @@
     }
 
     .seleccion {
-      width: 1027px;
+      width: 807px;
       margin: 0 27px;
     }
 
@@ -160,17 +163,17 @@
     .container,
     .content-wrapper {
 
-      margin: 20px auto;
+      margin: 0px auto;
 
     }
   }
 
   @media (max-height:720px) {
     .seleccion {
-      transform: translate(15vw, -37vh);
-      top: 68px;
+      transform: translate(21vw, -37vh);
+      top: 20px;
       position: relative;
-      width: 63%;
+      width: 53%;
     }
 
     .imgvf {
@@ -184,6 +187,7 @@
       background-color: white;
       box-shadow: 0 0 7px 0px #00000033;
       border-radius: 36px;
+      margin-left: 60px;
     }
 
     .Alabel {
@@ -220,6 +224,15 @@
       font-size: 1.2rem;
     }
 
+    @media (max-height: 555px) {
+    .seleccion {
+      transform: translate(21vw, -37vh);
+      top: 40px;
+      position: relative;
+      width: 53%;
+    }
+  }
+    
   }
 </style>
 <script>

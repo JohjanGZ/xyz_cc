@@ -1,0 +1,66 @@
+.container-two {
+  padding-top: 4vh;
+  margin: 0 auto;
+  max-width: 1o00px;
+  width: 90%;
+}
+.cajas {
+  height: auto;
+  display: grid;
+  align-items: center;
+}
+.caja{
+  height: auto;
+}
+.imagenPrincipal img{
+  width: 100%;
+  height: auto;
+}
+.filaUno{
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+  align-items: center;
+  text-align: center;
+}
+.filaDos{
+  display: grid;
+  grid-template-columns: .3fr 1fr .4fr 1fr .4fr 1fr;
+  align-items: center;
+  text-align: center;
+}
+.filaTres{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr  1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  height: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.letStyle{
+  font-size: 24px;
+  color: #4527a0;
+  font-weight: bold;
+}
+.row{
+  margin-bottom: 0;
+}
+
+.card-panel{
+  padding: 24px 20px;
+  margin: 10px 4px;
+}
+.filaTres .card-panel{
+  padding: 4px 20px;
+}
+@media only screen and (max-height: 600px) {
+  
+}
+
+@media only screen and (max-width: 1300px) {
+  center h5{
+    font-size: 22px;
+  }
+
+}

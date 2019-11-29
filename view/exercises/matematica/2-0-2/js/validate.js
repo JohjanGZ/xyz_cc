@@ -7,7 +7,7 @@ $(".letra").draggable({
     revert: false,
     start: function() {
         element=$(this).attr("id");
-
+        $(this).css("background", "#none");
     }
 });
 
@@ -15,10 +15,11 @@ $(".letra").draggable({
 $(".resultado").droppable({
     
     classes: {
+        "ui-droppable-active": "ui-state-active",
         "ui-droppable-hover": "ui-state-hover"
     },
     drop: function( event, ui ) {
-        $(this).css("border", "#333");
+        $(this).css("background", "#none");
     //$( this ).target.append(event.target);
         
     if(element=="y"){

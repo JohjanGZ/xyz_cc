@@ -4,6 +4,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="<?= $dir ?>/css/styles.css">
 </head>
+<style>
+@media (max-width: 1300px) {
+    img.img-principal {
+        max-width: 340px!important;
+        height: auto;
+        margin-top: 2vh;
+    }
+    .cajas {
+        height: 63px;
+    }
+    .caja{
+        height: 70px;
+    }
+    center h5{
+    font-size: 22px;
+  }
+} 
+</style>
 <?=$titulo?>
 <div class="container-two">
     <div class="row">
@@ -13,27 +31,27 @@
         </center>
         <div class="cajas">
             <div class="caja col s6">
-                <div>T={</div>
+                <div class="letStyle">T={</div>
                 <div class="letraT card-panel green">
 
                 </div>
-                <div>}</div>
+                <div class="letStyle">}</div>
             </div>
             <div class="caja col s6">
-                <div>K={</div>
+                <div class="letStyle">K={</div>
                 <div class="letraK card-panel green">
 
                 </div>
-                <div>}</div>
+                <div class="letStyle">}</div>
             </div>
-            <div class="col s12 card-panel  light-blue lighten-3 palabras aleatorio">
-                <p class="pieza palabra transporte blue lighten-1" id="transporte">Cruzero</p>
-                <p class="pieza palabra transporte blue lighten-1" id="transporte">Avión</p>
-                <p class="pieza palabra transporte blue lighten-1" id="transporte">Tren</p>
-                <p class="pieza palabra animal blue lighten-1" id="animal">Pulpo</p>
-                <p class="pieza palabra animal blue lighten-1" id="animal">Ballena</p>
-                <p class="pieza palabra animal blue lighten-1" id="animal">Tortuga</p>
-                <p class="pieza palabra animal blue lighten-1" id="animal">Cangrejo</p>
+            <div class="col s12 card-panel light-blue accent-4 palabras aleatorio">
+                <p class="pieza palabra transporte light-blue accent-3" id="transporte">Cruzero</p>
+                <p class="pieza palabra transporte light-blue accent-3" id="transporte">Avión</p>
+                <p class="pieza palabra transporte light-blue accent-3" id="transporte">Tren</p>
+                <p class="pieza palabra animal light-blue accent-3" id="animal">Pulpo</p>
+                <p class="pieza palabra animal light-blue accent-3" id="animal">Ballena</p>
+                <p class="pieza palabra animal light-blue accent-3" id="animal">Tortuga</p>
+                <p class="pieza palabra animal light-blue accent-3" id="animal">Cangrejo</p>
             </div>
         </div>
     </div>
