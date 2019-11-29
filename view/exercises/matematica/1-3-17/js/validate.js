@@ -1,8 +1,10 @@
-var lb = document.querySelector('.opciones');
-for (var n = lb.children.length; n >= 0; n--) {
-    lb.appendChild(lb.children[Math.random() * n | 0]);
-}
-
+var cols = document.querySelectorAll('.opciones');
+// console.log(cols);
+[].forEach.call(cols, (e)=>{
+    for (var i = e.children.length; i >= 0; i--) {
+        e.appendChild(e.children[Math.random() * i | 0]);
+    }
+});
 var r = 0 ;
 
 $(".pieza").draggable({

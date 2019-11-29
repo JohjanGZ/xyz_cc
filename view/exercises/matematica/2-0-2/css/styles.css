@@ -45,7 +45,9 @@
     border: 3px solid #37D3F7;
     background: #B6ECFF;
 }
-
+.ui-droppable{
+    border: none!important;
+}
 .box img {
     width: 90%;
     height: auto;
@@ -59,7 +61,7 @@
 .resultado{
     width: 200px!important;
     height: 100px!important;
-    border: 1px solid #333;
+    border: none;
 }
 .letras, .letra{
     height: 60px;
@@ -68,4 +70,12 @@
     display: grid;
     align-items: center;
     margin: 10px;
+}
+
+
+@media only screen and (max-width: 1300px) {
+    .imagenPricipal img{
+        padding-top: 30px;
+        width: 600px!important;
+    }
 }

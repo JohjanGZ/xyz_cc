@@ -34,11 +34,7 @@ function Page_7() {
     inicio();
     count = 3;
 }
-function Page_8() {
-    start_8();
-    inicio();
-    count = 3;
-}
+
 var cant = 18;
 var cal = cant / cant;
 console.log(cant);
@@ -119,7 +115,7 @@ function start_6() {
 };
 function start_7() {
     $("#ventana").load(ruta + '1-4-7/index.php', {
-        next: "Page_8()",
+        next: "resultado()",
         procesar: "result_tipo_1_4_7()",
         titulo: "<center><h5><span class='ftitulo'>Relaciona</span> cada número con su correspondiente escritura numérica.</h5></center>",
         restaurar: "start_7()",
@@ -129,18 +125,7 @@ function start_7() {
     });
     return false;
 };
-function start_8() {
-    $("#ventana").load(ruta + '1-4-8/index.php', {
-        next: "resultado()",
-        procesar: "result_tipo_1_4_8()",
-        titulo: "<center><h5><span class='ftitulo'>Observa</span> los siguientes gráficos y <span class='ftitulo'>escribe</span> el número que ha sido representado.</h5></center>",
-        restaurar: "start_8()",
-        dir: ruta,
-        cod: "1-4-8",
-        nota: cal
-    });
-    return false;
-};
+
 function resultado() {
     $("#ventana").load('../../../../exercises/resultado/resultado.php');
     return false;

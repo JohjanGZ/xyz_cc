@@ -6,10 +6,12 @@
 			$link=$_POST['link'];
     ?>
     <style type="text/css">
-
-    	ul .btn{
+    	ul .btn-temas{
     		float: right !important;
     	}
+		.btn-examen-temas{
+			margin:50px auto;	
+		}
     </style>
 <center><h5><?= $_POST['nombre']?></h5></center>						
 							<br><br>							
@@ -24,10 +26,12 @@
 			<?php
 				$t=1;
 				foreach ($ejercicios as $i){
-				    echo "<hr><li  class='li-contenido'>- ".$i."</li><a class='btn amber waves-effect waves-light' href='view/".$link.'/'.$grado.'/'.$id.'/'.$t."'><i class='material-icons'>play_arrow</i></a>";
+				    echo "<hr><li  class='li-contenido'>- ".$i."</li><a class='btn btn-temas amber waves-effect waves-light' href='view/".$link.'/'.$grado.'/'.$id.'/'.$t."'><i class='material-icons'>play_arrow</i></a>";
 				    $t++;
-				}
+				};
+				echo "<br><center><a class='btn btn-examen-temas blue waves-effect waves-light' href='view/".$link."/".$grado."/".$id."/examen'>examen</a></center>";
 			?>
+			
 		</ul>
 </div>
 	<script type="text/javascript">
