@@ -4,8 +4,8 @@
 <div id="contenedor">
 <?php
  	  require ('../../../../tools/sidenav/sidenav.php');
-   require ('../../../../tools/sound/sound.php');
-   require ('../../../../tools/crono/crono.php');
+    require ('../../../../tools/sound/sound.php');
+    require ('../../../../tools/crono/crono.php');
     require ('../../../../tools/pantalla-inicio/2do.php');   
  ?>
  <div style="transform: translate(0vw, -13vh);
