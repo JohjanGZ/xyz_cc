@@ -6072,7 +6072,7 @@ body.keyboard-focused .dropdown-content li:focus {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: #292929;
+  background-color: #292929ab;
   z-index: 1000;
   will-change: opacity;
 }

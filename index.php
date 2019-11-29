@@ -102,6 +102,9 @@ $(".notas").on("click", function() {
 $('#cuerpo').load('libros.php', {
     data: libros
 });
+$('#btn-pizarra').click(function() {
+    $('#cuerpo').load('pizarra.php');
+});
 $(document).ready(function() {
     $('.sidenav').sidenav();
     $('select').formSelect();

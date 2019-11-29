@@ -22,7 +22,7 @@
                     <div class="col cajas verde s5 card-panel"></div>
                     <div class="col cajas rojo s5 card-panel"></div>
                 </div>
-                <div class="row conteCajas">
+                <div class="row conteCajas aleatorio">
                     <div class="col pieza opcion opcRojo s5" id="rojo"><h5 class="white-text">Dos circulos rojos</h5></div>
                     <div class="col pieza opcion opcVerde s5" id="verde"><h5 class="white-text">Cuatro circulos verdes</h5></div>
                 </div>
@@ -46,3 +46,14 @@
 <script src="../../../../../js/core.js"></script>
 <?php require('../../../tools/botones/botones.php');?> <script>$("#next").attr("onclick","<?=$next?>");</script>
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
+<script>
+    var cols = document.querySelectorAll('.aleatorio');
+
+    [].forEach.call(cols, (e)=>{
+
+        for (var i = e.children.length; i >= 0; i--) {
+            e.appendChild(e.children[Math.random() * i | 0]);
+        }
+
+    });
+</script>

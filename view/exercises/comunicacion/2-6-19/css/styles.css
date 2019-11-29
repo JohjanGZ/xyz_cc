@@ -1,0 +1,87 @@
+h4 {
+    text-align: center;
+}
+
+.contenedor-ejercicios {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    padding-top: 50px;
+    margin: auto;
+}
+
+.ejercicio {
+    width: 50%;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.ejercicio .respuesta {
+    width: 190px;
+    height: 170px;
+    border: 3px solid #37D3F7;
+    border-radius: 12px;
+    margin: auto;
+}
+
+.ejercicio .respuesta span {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+
+/************/
+
+.contenedor-imagenes {
+    justify-content: center;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.contenedor-imagenes .imagen {
+    display: inline-flex;
+    width: 180px;
+    height: 150px;
+    align-items: center;
+    border: 3px solid silver;
+    border-radius: 12px;
+    margin: 5px;
+}
+
+.contenedor-imagenes .imagen:hover {
+    border-color: #37D3F7;
+}
+
+.contenedor-imagenes .imagen img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.silabas h4 {
+    display: inline-block;
+    font-size: 1.8rem;
+    background-color: #37D3F7;
+    font-weight: bold;
+    padding: 3px 15px;
+    border-radius: 12px;
+}
+
+.palabrax h4 {
+    margin: 0;
+    padding: 0;
+}
+
+
+/**************/
+
+@media(max-height: 640px) {
+    .row {
+        display: flex;
+        align-items: center;
+    }
+    .contenedor-ejercicios {
+        padding-top: 20px;
+    }
+}
