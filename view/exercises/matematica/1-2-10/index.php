@@ -121,6 +121,6 @@ function result_tipo_1_2_10() {
         localStorage.setItem("Nota<?=$cod?>", "0");
         localStorage.setItem("Time<?=$cod?>", tiempo);
     }
-
+    
 }
 </script>

@@ -19,9 +19,11 @@
             </div>
             <div class="row letras">
                 <!-- <div class="col s4">El nombre del conjunto:</div> -->
-                <div class="col s1 letra card-panel white-text blue letras"  id="g"><h5>G</h5></div>
-                <div class="col s1 letra card-panel white-text blue letras" id="y"><h5>Y</h5></div>
-                <div class="col s1 letra card-panel white-text blue letras"  id="m"><h5>M</h5></div>
+                <div class="aleatorio">
+                    <div class="col s1 letra card-panel white-text blue letras"  id="g"><h5>G</h5></div>
+                    <div class="col s1 letra card-panel white-text blue letras" id="y"><h5>Y</h5></div>
+                    <div class="col s1 letra card-panel white-text blue letras"  id="m"><h5>M</h5></div>
+                </div>
                 <div class="col s4"><h5>El nombre del conjunto es :</h5></div>
                 <div class="col s5 resultado"></div>
             </div>
@@ -42,5 +44,16 @@
 </body>
 
 <script src="../../../../../js/core.js"></script>
-<?php require('../../../tools/botones/botones.php');?> <script>$("#next").attr("onclick","<?=$next?>");</script>
+<?php require('../../../tools/botones/botones.php');?><script>$("#next").attr("onclick","<?=$next?>");</script>
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
+<script>
+    var cols = document.querySelectorAll('.aleatorio');
+
+    [].forEach.call(cols, (e)=>{
+
+        for (var i = e.children.length; i >= 0; i--) {
+            e.appendChild(e.children[Math.random() * i | 0]);
+        }
+
+    });
+</script>
