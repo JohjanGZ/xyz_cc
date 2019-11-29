@@ -13,6 +13,13 @@
 .contenedorimg {
     width: 107px;
 }
+
+
+@media (max-width: 1500px){
+  .recibidor {
+    width: 85%;
+  }
+}
 /*@media (max-width: 1500px){*/
 #contenedorPiezas {
     background: #5561ff00;
@@ -29,12 +36,25 @@
     z-index: 10;
 }
 
+.row .col.s4 {
+  display: grid;
+  justify-items: center;
+}
+
 @media (max-height: 600px){
 #contenedorPiezas{
     background: #5561ff00;
     height: 130px;
     float: left;
-    margin: 0 12% 0;
+    margin: 2% 8% 0;
+}
+.ulClass li img{
+  width: 60px!important;
+  height: auto!important;
+}
+.ulClass li{
+  width: 100px!important;
+
 }
 #uno, #dos, #tres {
     min-height: 2vh !important;

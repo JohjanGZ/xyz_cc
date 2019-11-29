@@ -13,19 +13,19 @@
     <div class="caja-principal">
         <div class="center">
             <div id="contenedorPiezas">
-            <div class="col s12 m6 l2 xl2">
-                    <img src="img/1-2/conjuntos.png" alt="">
+            <div class="col s12 imagenPricipal">
+                    <img src="img/1-2/conjuntos.png" width="1000px" alt="">
                 </div>
             </div>
             <div class="row letras">
+            
                 <!-- <div class="col s4">El nombre del conjunto:</div> -->
                 <div class="aleatorio">
                     <div class="col s1 letra card-panel white-text blue letras"  id="g"><h5>G</h5></div>
                     <div class="col s1 letra card-panel white-text blue letras" id="y"><h5>Y</h5></div>
                     <div class="col s1 letra card-panel white-text blue letras"  id="m"><h5>M</h5></div>
                 </div>
-                <div class="col s4"><h5>El nombre del conjunto es :</h5></div>
-                <div class="col s5 resultado"></div>
+                <div class="col s2  offset-s5 card-panel resultado blue"></div>
             </div>
         </div>
     </div>

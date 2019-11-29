@@ -4,6 +4,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="<?= $dir ?>/css/styles.css">
 </head>
+<style>
+    @media only screen and (max-width: 1200px){
+        .container-two {
+            padding-top: 10vh;
+            margin: 0 auto;
+            max-width: 1100px;
+            width: 81%;
+        }
+    }
+    @media only screen and (max-width: 1100px){
+        .container-two {
+            padding-top: 10vh;
+            margin: 0 auto;
+            max-width: 1100px;
+            width: 90%;
+        }
+    }
+</style>
 <?=$titulo?>
 <div class="container-two">
     <div class="row boxCheck" id="boxCheck">

@@ -296,20 +296,20 @@ function start_11() {
 };
 
 function start_12() {
-    $("#ventana").load(ruta + '1-0-12/index.php', {
+    $("#ventana").load(ruta + '2-0-11/index.php', {
         next: "Page_13()",
-        procesar: "result_tipo_1_0_12()",
+        procesar: "result_tipo_2_0_11()",
         titulo: "<center><h5><span class='ftitulo'>Selecciona</span> las imágenes que tienen las rejas delante de los caballos.</h5></center>",
         restaurar: "start_12()",
         dir: ruta,
-        cod: "1-0-12",
+        cod: "2-0-11",
         nota: cal
     });
     return false;
 };
 
 function start_13() {
-    $("#ventana").load(ruta + '1-0-13/index.php', {
+    $("#ventana").load(ruta + '2-0-12/index.php', {
         next: "Page_14()",
         procesar: "result_tipo_1_0_13()",
         titulo: "<center><h5><span class='ftitulo'>Selecciona</span> el elefante que va delante de su mamá.</h5></center>",

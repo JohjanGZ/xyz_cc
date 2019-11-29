@@ -5,7 +5,7 @@
   width: 90%;
 }
 .cajas {
-  height: 100px;
+  height: 60px;
   display: grid;
   align-items: center;
 }
@@ -17,13 +17,12 @@
   list-style: none;
   display: inline-block;
 }
-.contenedorRow{
-  
-}
 .collect{
   text-align: center;
 }
-
+.card-caja h4{
+  font-size: 20px;
+}
 @media only screen and (max-width: 1200px) {
   
 }

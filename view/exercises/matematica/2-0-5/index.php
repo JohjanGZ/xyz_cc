@@ -38,7 +38,7 @@
   }
 
   .seleccion {
-    top: 68px;
+    top: 45px;
     position: relative;
     margin: 0 auto !important;
     max-width: 1200px;
@@ -119,6 +119,9 @@
       top: 30px;
       position: relative;
     }
+    .imgvf{
+      margin-left: 80px;
+    }
   }
 
   @media (max-width: 1300px) {
@@ -134,7 +137,7 @@
 
     .seleccion {
 
-      width: 1110px;
+      width: 1027px;
     }
   }
 
@@ -160,17 +163,17 @@
     .container,
     .content-wrapper {
 
-      margin: 20px auto;
+      margin: 0px auto;
 
     }
   }
 
   @media (max-height:720px) {
     .seleccion {
-      transform: translate(15vw, -37vh);
-      top: 68px;
+      transform: translate(21vw, -37vh);
+      top: 40px;
       position: relative;
-      width: 63%;
+      width: 53%;
     }
 
     .imgvf {
@@ -184,6 +187,7 @@
       background-color: white;
       box-shadow: 0 0 7px 0px #00000033;
       border-radius: 36px;
+      margin-left: 60px;
     }
 
     .Alabel {
