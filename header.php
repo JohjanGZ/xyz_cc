@@ -113,6 +113,12 @@ width: 40px;
                   <i class="material-icons">video_label</i>
                 </a>
               </li>
+              <li>
+                <a id="btn-home" class="btn-floating  red accent-4" style="opacity: 1; transform: scale(1) translateY(0px) translateX(0px);">
+                  <i class="material-icons">home</i>
+                </a>
+              </li>
+ 
  
             </ul>
           </div>
