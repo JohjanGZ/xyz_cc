@@ -102,6 +102,12 @@ $(".notas").on("click", function() {
 $('#cuerpo').load('libros.php', {
     data: libros
 });
+
+$('#btn-home').click(function() {
+    $('#cuerpo').load('libros.php',{
+    data: libros
+});
+});
 $('#btn-pizarra').click(function() {
     $('#cuerpo').load('pizarra.php');
 });

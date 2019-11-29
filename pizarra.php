@@ -7,7 +7,6 @@
     max-width:100%;
     width: 100%;
 }
-
 #cuadriculado{
     background-size:50px 50px;
     background-image:linear-gradient(#78baff73 1px, rgba(200, 0, 0, 0) 1px, rgba(187, 224, 255, 0)), linear-gradient(90deg, #78baff73 1px, rgba(200, 0, 0, 0) 1px, rgba(200, 0, 0, 0)) !important;
@@ -25,26 +24,28 @@
 .tabs .tab a{
     color: #536dfe;
 }
+.tabs li {
+    width: 165px;
+}
 </style>
 <!--<script type="text/javascript" src="js/data.js"></script>-->
 
-<div id="fullscreen" class="section no-pad-bot" id="index-banner">
-    <div class="container contenedor-libros">
-  
-    <ul id="tabs-swipe-demo" class="tabs">
-        <li class="tab col s3"><a href="#blanco">Blanco</a></li>
-        <li class="tab col s3"><a  href="#linea">Rayado</a></li>
-        <li class="tab col s3"><a  href="#cuadriculado">Cuadriculado</a></li>
-    </ul>
-  <div id="blanco" class=" pizarra col s12 z-depth-1"></div>
-  <div id="linea" class="pizarra col s12 z-depth-1"></div>
-  <div id="cuadriculado" class=" pizarra col s12 z-depth-1"></div>
-    </div>
-    <script>
-
-$(document).ready(function(){
-    $('.tabs').tabs();
-  });
-                           
-    </script>
-                        
+        <div id="fullscreen" class="section no-pad-bot" id="index-banner">
+            <div class="container contenedor-libros">
+            
+                <ul id="tabs-swipe-demo" class="tabs">
+                    <li class="tab col s3"><a href="#blanco">Blanco</a></li>
+                    <li class="tab col s3"><a  href="#linea">Rayado</a></li>
+                    <li class="tab col s3"><a  href="#cuadriculado">Cuadriculado</a></li>
+                </ul>
+                    <div id="blanco" class=" pizarra col s12 z-depth-1"></div>
+                    <div id="linea" class="pizarra col s12 z-depth-1"></div>
+                    <div id="cuadriculado" class=" pizarra col s12 z-depth-1"></div>
+            </div>
+            <script>
+                $(document).ready(function(){
+                    $('.tabs').tabs();
+                });                                
+            </script>
+        </div>
+                                
