@@ -37,13 +37,8 @@
                                         <input type="hidden" name="" id="nota" value="0">                                     
 
 <div id="ventana"></div>
-<<<<<<< HEAD
 <?php require ('pagination.php');?>
  <script src="../../../../../js/materialize.min.js"></script>
-=======
-<?php require ('pagination.php');?>  
-<script src="../../../../../js/materialize.min.js"></script>
->>>>>>> efee035e64eab506657221146a810e284e6209c0
 <script type="text/javascript"> 
   $(document).ready(function(){
     $('#resolucion').html(window.innerWidth + " x " + window.innerHeight);

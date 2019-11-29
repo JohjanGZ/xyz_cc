@@ -1,0 +1,134 @@
+h4 {
+    text-align: center;
+}
+
+h5 {
+    width: 85%;
+}
+
+.container {
+    display: flex;
+    height: 70%;
+    align-items: center;
+}
+
+.container .row {
+    width: 100%;
+}
+
+.contenedor-ejercicios {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    padding-top: 50px;
+    margin: auto;
+}
+
+.ejercicio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ejercicio .contenedor-imagen {
+    width: 50%;
+}
+
+.ejercicio .contenedor-imagen img {
+    max-width: 300px;
+}
+
+.ejercicio .contenedor-respuesta {
+    width: 50%;
+}
+
+.ejercicio .contenedor-respuesta .respuesta {
+    width: 310;
+    height: 140px;
+    margin: 5px;
+    border: 3px solid silver;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.respuesta span {
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+
+/************/
+
+.contenedor-silabas {
+    display: inline-flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+    margin-left: 5%;
+    padding-top: 40px;
+}
+
+.contenedor-silabas .silabas {
+    margin: 0px 5px;
+}
+
+.silabas h4 {
+    display: inline-block;
+    font-size: 1.8rem;
+    background-color: #37D3F7;
+    font-weight: bold;
+    padding: 3px 15px;
+    border-radius: 12px;
+}
+
+.palabrax h4 {
+    margin: 0;
+    padding: 0;
+}
+
+
+/**************/
+
+@media(max-height: 640px) {
+    .row {
+        display: flex;
+        align-items: center;
+        width: 90%;
+    }
+    .contenedor-silabas {
+        width: 30%;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 0;
+    }
+    .silabas {
+        text-align: center;
+    }
+    .silabas h4 {
+        margin: 10px;
+    }
+    .contenedor-ejercicios {
+        width: 60%;
+        padding-top: 25px;
+    }
+    .ejercicio .imagen-palabra {
+        width: 350px;
+    }
+    .contenedor-silabas {
+        padding-top: 16px;
+    }
+    .ejercicio .contenedor-imagen img {
+        max-width: 200px;
+    }
+    .ejercicio .contenedor-respuesta .respuesta {
+        width: 210;
+        height: 110px;
+        margin: 5px;
+        border: 3px solid silver;
+        text-align: center;
+        border-radius: 12px;
+    }
+}
