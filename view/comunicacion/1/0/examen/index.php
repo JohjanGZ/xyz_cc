@@ -4,8 +4,8 @@
 <div id="contenedor">
 <?php
  	  require ('../../../../tools/sidenav/sidenav.php');
-   require ('../../../../tools/sound/sound.php');
-   require ('../../../../tools/crono/crono.php');
+    require ('../../../../tools/sound/sound.php');
+    require ('../../../../tools/crono/crono.php');
     require ('../../../../tools/pantalla-inicio/2do.php');   
  ?>
  <div style="transform: translate(0vw, -13vh);
@@ -39,16 +39,12 @@
  <script src="../../../../../js/materialize.min.js"></script>
  
 <script type="text/javascript"> 
-  $(document).ready(function(){
-    $('#resolucion').html(window.innerWidth + " x " + window.innerHeight);
-  });
   function IniciarCronometro(){
- 
       $("#portada").css("display", "none");
             npage = Math.floor(Math.random()*18)+1;
             Paginas(npage);
-           //console.log(npage);
-      }
+           
+  }
 </script>
 </body>
 </div>
