@@ -1,160 +1,275 @@
-<?php require('../../../tools/var/variables.php'); ?>
+ <?php require('../../../tools/var/variables.php'); ?>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+ <link rel="stylesheet" type="text/css"  href="<?= $dir ?>/css/styles.css">
+ <style type="text/css">
+    .contenedorPieza {
+      min-height: 90px;
+    }
+    .ej1, .ej2 {
+        width: 1200px !important;
+        padding: 5% 0 2%;
+            height: 30vh;
+        margin: 0 auto;
+    }
+    .lpd{
+      font-weight: bold;
+      font-size: 20px;
+      color: #2196f3 ;
+    }
+    .lpd2{
+      margin-left: 60px;
+      font-size: 20px;
+      color: #2196f3;
+      font-weight: bold;
+    }
+    .conj1 {
+        background-size: 100% auto;
+    }
+    .conj2 {
+        background-size: 100% auto;
+    }
+    #contenedorPuzzle img {
+      margin: 0px 10px;
+    }
+    .pieza{
+      min-width: 80px!important;
+    }
+    
+    @media only screen and (max-width: 800px) and (orientation: landscape){
+    h5 {
+        font-size: 100%;
+        line-height: 14px;
+        width: 400px;
+        margin: -71px auto 0;
+        position: absolute;
+        margin-left: 19%;
+    }
+    .container, .content-wrapper {
+        margin: -91px auto;
+        transform: scale(1);
+    }
+    #uno, #dos {
+        box-shadow: inset 0px 1px 3px 0px #7d7c7c;
+        width: 61px;
+        height: 7vh;
+        background-color: #f2f0ff40;
+        margin: 16px auto;
+    }
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="<?= $dir ?>/css/styles.css">
-</head>
-<style>
-  #boxCheck{
-    text-align: center;
-    padding-bottom: 50px;
-  }
-  .infoContainer{
-    border: 1px solid #333;
-    padding: 15px 160px;
-    border-radius: 10px;
-    margin: 0px 10px;
-  }
-  .conjuntosOpciones{
-    display: grid;
-    grid-template-columns: 2fr 2fr 2fr 2fr;
-    justify-items: center;
-    align-items: center;
-  }
-  .conjuntosOpciones p{
-    background: #ffd54f ;
-    padding: 4px 20px;
-    text-align: center;
-    border-radius: 10px;
-  }
-    @media only screen and (max-width: 1200px){
-        .container-two {
-            padding-top: 10vh;
-            margin: 0 auto;
-            max-width: 1100px;
-            width: 81%;
-        }
+    section {
+        margin-top: 20px;
     }
-    @media only screen and (max-width: 1100px){
-        .container-two {
-            padding-top: 10vh;
-            margin: 0 auto;
-            max-width: 1100px;
-            width: 90%;
-        }
     }
-</style>
-<?=$titulo?>
-<div class="container-two">
-    <div class="row boxCheck" id="boxCheck">
-        <div class=" col s12">
-            <h4>• J = {p, q, r, s, t} <span class="spaceStyle"> </span> • K = {m, n, o, p, q, r}  <span class="spaceStyle"> </span>  • L = {m, o, p}</h4>
-        </div>
+    @media only screen and (max-width: 1300px) and (orientation: landscape){
+    .container, .content-wrapper {
+        position: fixed;
+        margin: 0 auto;
+        width: 35%;
+        transform: scale(.9) translate(14vw, -27px);
+    }
+    .pieza{
+      width: 50px!important;
+    }
+
+    }
+
+    @media (max-height: 680px){
+.ej1, .ej2 {
+    width: 800px !important;
+    padding: 0% 0 0%;
+    height: auto;
+    margin: 0 auto;
+}
+ul{ margin-top: 0 }
+.pieza{
+      min-width: 30px!important;
+    }
+    .ej1, .ej2 {
+        width: 1200px !important;
+        padding: 5% 0 2%;
+            height: 5vh;
+        margin: 0 auto;
+    }
+#contenedorPuzzle img {
+        top: -14px;
+    left: -44px;
+}
+#contenedorPuzzle{
+  margin-top: 38px;
+}
+}
+    
+ </style>
+ <?=$titulo?>
+  <div class="container" >
+  <div class="conjuntos" >
+<section  id="contenedorPuzzle">
+<div class="row ej1">
+  <div class="col s4 m4"> 
+          <div class="conj1">    
+          </div>
+  </div>
+
+      <div class="col s8">       
+              <div class="row">
+                <span class="lpd" >P ∩ D = { </span>               
+                <div class="col s4 m6 center">                 
+                  <div class="contenedorPieza" id="uno" ></div>
+                </div>
+                  <span  class="lpd2"> }</span>               
+              </div>
+              <div class="row">
+                <div id="contenedorPiezas">
+                    <ul class=" aleatorio">
+                      <li  class="">
+                      <img  class="pieza" id="muneca" src="img/2-5/muneca.png" alt="muneca" >
+                      </li>
+                      <li  class="">
+                      <img class="pieza" id="tren" src="img/2-5/tren.png" alt="tren" >
+                      </li>
+                      <li  class="">
+                      <img class="pieza" id="oso" src="img/2-5/oso.png" alt="oso" >
+                      </li>
+                      <li  class="">
+                      <img class="pieza" id="pelota" src="img/2-5/pelota.png" alt="pelota" >
+                      </li>
+                      <li  class="">
+                      <img class="pieza" id="cubo" src="img/2-5/cubo.png" alt="cubo" >
+                      </li>
+                      <li  class="">
+                      <img class="pieza" id="avion" src="img/2-5/avion.png" alt="avion" >
+                      </li>
+                    </ul>
+              	</div>
+              </div>
+      </div>
+      </div>   
+
+  <div class="row ej2">
+      <div class="col s4 m4"> 
+    <div class="conj2">        
     </div>
-    <div class="row boxCheck">
-        <div class="cajas col s6">
-            <h4>• J ∪ K = <span class="llavesContainer ">{</span> <span class="infoContainer groupJK"> </span> <span class="llavesContainer">}</span></h4>
+     </div>
+      <div class="col s8">   
+        <div class="row" > 
+                  <span class="lpd" >F ∩ G = {</span>
+                  <div class="col s4 m6 center">
+                  <div class="contenedorPieza" id="dos" > </div>
+                  </div>
+                  <span class="lpd2" >}</span>           
         </div>
-        <div class="cajas col s6">
-            <h4>• K ∪ L = <span class="llavesContainer ">{</span> <span class="infoContainer groupKL"> </span> <span class="llavesContainer ">}</span></h4>
-        </div>
-    </div>
-    <div class="row boxCheck white">
-        <div class="col s12 conjuntosOpciones aleatorio">
-            <p class="obj" data-value="uno">m, n, o, p, q, r, s, t</p>
-            <p class="obj" data-value="dos">m, n, o, p, q, r</p>
-            <p class="obj" data-value="tres">n,o,p,q,r,s</p>
-            <p class="obj" data-value="cuatro">o,p,q,r,s,t</p>
-        </div>
-    </div>
+        <div class="row">
+          <div id="contenedorPiezas">
+            <ul class="aleatorio">
+              <li  class="">
+                <img class="pieza" id="triangulo" src="img/2-5/triangulo.png" alt="triangulo" >
+              </li>
+              <li  class="">
+                <img class="pieza" id="cuadrado" src="img/2-5/cuadrado.png" alt="cuadrado" >
+              </li>
+              <li  class="">
+                <img class="pieza" id="estrella" src="img/2-5/estrella.png" alt="estrella" >
+              </li>
+              <li  class="">
+                <img class="pieza" id="rombo" src="img/2-5/rombo.png" alt="rombo" >
+              </li>
+              <li  class="">
+                <img class="pieza" id="rectangulo" src="img/2-5/rectangulo.png" alt="rectangulo" >
+              </li>
+              <li  class="">
+                <img class="pieza" id="corazon" src="img/2-5/corazon.png" alt="corazon" >
+              </li>
+            </ul>
+      	  </div>
+        </div>    
+      </div>   
+    </div>  
+ </section>
 </div>
-<div id="modal1" class="modal">
-    <div class="modal-content">
-        <h4 class="center">Respuesta correcta</h4>
-        <center>
-            <img class="materialboxed" width="80%" src="img/1-6/respuesta.png">
-        </center>
-    </div>
-    <div class="modal-footer">
-        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Listo!</a>
-    </div>
+                        <div id="modal1" class="modal">
+                            <div class="modal-content">
+                              <h4>Respuesta correcta</h4>
+                              <center>
+                              <img class="materialboxed"  width="70%" src="img/mate5.png">
+                              </center>
+                            </div>
+                            <div class="modal-footer">
+                              <a href="#!" class="modal-close waves-effect waves-green btn-flat">Listo!</a>
+                            </div>
+                        </div>
 </div>
-</body>
 <script src="../../../../../js/core.js"></script>
 <?php require('../../../tools/botones/botones.php');?>
-<script>$("#next").attr("onclick", "<?=$next?>");</script>
+<script>$("#next").attr("onclick","<?=$next?>");</script>
 <script type="text/javascript">
+  var r1 = 0;
+  var r2 = 0;
+  var otro = 0;
 
-    var grupoJK = 0, grupoKL = 0, otros = 0, element;
-
-    $(".obj").draggable({
-        
-        start: function() {
-         element=$(this).attr("data-value"); 
-     }
-    });
-    $( ".groupJK" ).droppable({
+   $(".pieza").draggable({
+         start: function() {
+          element=$(this).attr("alt");
+      }
+   });
+   $( "#uno" ).droppable({
       classes: {
-        "ui-droppable-active": ".blue",
+        "ui-droppable-active": "ui-state-active",
         "ui-droppable-hover": "ui-state-hover"
       },
       drop: function( event, ui ) {
         $(this).css("background-color", "rgba(139, 195, 74, 0.14)");
       //  $( this ).target.append(event.target);
 
-        if(element=="uno"){
-          grupoJK++;
+        if(element=="pelota" || element=="oso"){
+         r1++;
         }else{
-          otros++;
+          otro++;
         }
         element.removeClass("pieza");
       }
     });
-    $( ".groupKL" ).droppable({
+   $( "#dos" ).droppable({ 
       classes: {
-        "ui-droppable-active": ".blue",
+        "ui-droppable-active": "ui-state-active",
         "ui-droppable-hover": "ui-state-hover"
       },
       drop: function( event, ui ) {
         $(this).css("background-color", "rgba(139, 195, 74, 0.14)");
       //  $( this ).target.append(event.target);
 
-        if(element=="dos"){
-          grupoKL++;
+        if(element=="estrella" || element=="corazon"){
+         r2++;
         }else{
-          otros++;
+          otro++;
         }
-        element.removeClass("pieza");
-      }
+        element.removeClass("pieza");         
+    }
     });
-    console.log(grupoJK, grupoKL);
-    // Formulario - Registrados
 
-    function result_tipo_2_0_18() {
-        var min = $('#Minutos').text();
-        var seg = $('#Segundos').text();
-        var milseg = $('#Centesimas').text();
-        var tiempo = min + ":" + seg + ":" + milseg;
+function result_tipo_2_0_13(){
+      var  min= $('#Minutos').text();
+     var  seg= $('#Segundos').text();
+     var  milseg= $('#Centesimas').text();
+     var tiempo=min+":"+seg+":"+milseg;
 
-        if (grupoJK == 1 && grupoKL == 1 && otros == 0) {
+    if(r1==2 && r2==2 && otro == 0)
+       {
+      correcto(); 
+       localStorage.setItem("<Nota2-0></Nota2-0>-13","2");
+       localStorage.setItem("Time2-0-13", tiempo);
+         
 
-            console.log(grupoJK, grupoKL);
-            localStorage.setItem("Nota2-0-18", "2");
-            localStorage.setItem("Time2-0-18", tiempo);
-            correcto();
-
-        }
-
-        else {
-          console.log(grupoJK, grupoKL);
-            incorrecto();
-            localStorage.setItem("Nota2-0-18", "0");
-            localStorage.setItem("Time2-0-18", tiempo);
-
-        }
     }
 
-    var cols = document.querySelectorAll('.aleatorio');
+    else {
+      incorrecto();
+      localStorage.setItem("Nota2-0-13","0");
+      localStorage.setItem("Time2-0-13", tiempo);
+    }
+    
+}
+
+var cols = document.querySelectorAll('.aleatorio');
 
     [].forEach.call(cols, (e)=>{
 
@@ -164,4 +279,6 @@
 
     });
 
+
 </script>
+

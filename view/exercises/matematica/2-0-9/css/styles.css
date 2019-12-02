@@ -1,72 +1,125 @@
 .container-two {
-  padding-top: 4vh;
-  margin: 0 auto;
-  max-width: 1o00px;
-  width: 90%;
-}
-.cajas {
-  height: 100px;
-  display: grid;
-  align-items: center;
-}
-.cajas h4 {
-  margin: 0;
-  font-size: 24px;
-  text-align: center;
-}
-.checkboxMa {
-  margin-top: 30px;
-}
-.checkboxMa label {
-  margin: 0px 10px;
-}
-.row {
-  border: 1px solid #333 !important;
-  margin: 20px !important;
-  border-radius: 10px;
-}
-
-@media only screen and (max-height: 600px) {
-  .cajas{
-    height: 60px;
-  }
-}
-
-@media only screen and (max-width: 1300px) {
-  center h5{
-    font-size: 22px;
-  }
-  .container-two {
-    padding-top: 10vh;
     margin: 0 auto;
-    max-width: 1100px;
+    max-width: 1280px;
     width: 90%;
-  }
-  .cajas {
-    height: 60px;
+}
+img.img-principal {
+    width: 630px;
+    height: auto;
+    margin-top: 2vh;
+}
+.letraConjunto{
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+}
+.cajas{
+    height: 80px;
+}
+.caja{
+    width: 100%;
+    height: 100px;
     display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
     align-items: center;
-  }
-  .cajas h4 {
-    margin: 0;
-    font-size: 20px;
-  }
-  .cajas .checkboxMa {
+    text-align: center;
+    vertical-align: middle;
+}
+.grupoV, .grupoF{
+    height: 90px;
+}
+img.img-principal .uno{
+    margin-right: 200px!important;
+}
+img.img-principal .dos{
+    margin-left: 200px;
+}
+.palabras{
+    height: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr;
     justify-items: center;
     align-items: center;
-  }
-  .checkboxMa {
-    height: 100%;
-    margin: auto;
-  }
-  .checkboxMa label {
-    margin: 0px 10px;
-  }
-  .row {
-    border: 1px solid #333 !important;
-    margin: 20px !important;
-    border-radius: 10px;
-  }
+    margin-top: 40px;
+}
+.palabra{
+    box-shadow: 1px 1px 1px rgba(51, 51, 51, 0.13);
+    padding: 8px 15px;
+    border-radius: 200px;
+    text-align: center;
+    color: white;
+    -moz-user-select: none;
+    margin: 10px;
+}
+
+.pieza:hover{
+    box-shadow: 1px 1px 1px rgba(51, 51, 51, 0.13);
+}
+.palabra img{
+    width: 45px;
+}
+
+
+@media only screen and (max-width: 1300px){
+    .container-two {
+        margin: 0 auto;
+        max-width: 1280px;
+        width: 90%;
+    }
+    img.img-principal {
+        max-width: 430px;
+        height: auto;
+        margin-top: 4vh;
+    }
+    .letraConjunto{
+        font-size: 24px;
+        color: #333;
+        font-weight: bold;
+    }
+    .cajas{
+        height: 80px;
+    }
+    .caja{
+        width: 100%;
+        height: 100px;
+        display: grid;
+        grid-template-columns: 1fr 5fr 1fr;
+        align-items: center;
+        text-align: center;
+        vertical-align: middle;
+    }
+    .grupoV, .grupoF{
+        height: 90px;
+    }
+    img.img-principal .uno{
+        margin-right: 200px!important;
+    }
+    img.img-principal .dos{
+        margin-left: 200px;
+    }
+    .palabras{
+        height: 100%;
+        display: grid;
+        grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        margin-top: 0px;
+    }
+    .palabra{
+        box-shadow: 1px 1px 1px rgba(51, 51, 51, 0.13);
+        padding: 8px 15px;
+        border-radius: 200px;
+        text-align: center;
+        color: white;
+        -moz-user-select: none;
+        margin: 10px;
+    }
+    
+    .pieza:hover{
+        box-shadow: 1px 1px 1px rgba(51, 51, 51, 0.13);
+    }
+    .palabra img{
+        width: 45px;
+    }
+
 }

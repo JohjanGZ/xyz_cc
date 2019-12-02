@@ -46,6 +46,9 @@
     display: grid;
     align-items: center;
   }
+  .blue{
+    background-color: rgba(47, 47, 201, 0.384);
+  }
   .cajas h4 {
     margin: 0;
     font-size: 20px;
