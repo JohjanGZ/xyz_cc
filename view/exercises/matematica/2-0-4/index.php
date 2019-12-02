@@ -4,145 +4,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="<?= $dir ?>/css/styles.css">
 </head>
-<style>
-@media (max-width: 1300px) {
-    img.img-principal {
-        max-width: 340px!important;
+<style type="text/css">
+@media only screen and (max-height: 1200px) {
+    .caja-principal {
+        margin: 0 auto;
+        max-width: 1280px;
+        width: 90%;
+    }
+    .title {
+        font-size: 28px;
+        color: #37D3F7;
+    }
+    
+    .conjuntos{
+        margin-top: 1%;
+        display: grid;
+        padding-top: 50px!important;
+    }
+    .conjuntos img{
+        width: 35vw;
+        height: 42vh;
         height: auto;
-        margin-top: 2vh;
     }
-    .cajas {
-        height: 63px;
+    .conteCajas{
+        width: 80%;
+        text-align: center;
     }
-    .caja{
-        height: 70px;
+    .cajas{
+        margin-top: 20px;
+        margin: 0px 50px;
+        height: 60px;
+        background-color: rgb(219, 219, 219);
+    }
+    .opcion{
+        margin:  0px 50px;
+        background-color: rgb(16, 189, 241);
+        border-radius: 20px;
+        height: 50px;
+    }
+    .opcion h5{
+        font-size: 24px;
+        padding: 10px;
+        min-height: 50px;
+    } 
+    .contenOp{
+        width: 90%;
+        margin-left: 6%;
+    }
+    .aleatorio{
+        height: 60px;
     }
     center h5{
-    font-size: 22px;
-  }
-} 
+            font-size: 22px;
+    }
+}
 </style>
 <?=$titulo?>
-<div class="container-two">
-    <div class="row">
-        <center>
-            <img src="img/1-4/conjuntoUno.png" class="img-principal uno">
-            <img src="img/1-4/conjuntoDos.png" class="img-principal dos">
-        </center>
-        <div class="cajas">
-            <div class="caja col s6">
-                <div class="letStyle">T={</div>
-                <div class="letraT card-panel green">
 
+<body>
+    <div class="caja-principal">
+        <div class="center">
+            <div id="contenedorPiezas">
+                <div class="row conjuntos">
+                    <div class="col s12 imagenConjuntos">
+                        <img src="img/1-3/conjuntos.png" alt="">
+                    </div>
                 </div>
-                <div class="letStyle">}</div>
-            </div>
-            <div class="caja col s6">
-                <div class="letStyle">K={</div>
-                <div class="letraK card-panel green">
-
+                <div class="row conteCajas contenOp">
+                    <div class="col cajas verde s5 card-panel  light-blue accent-3"></div>
+                    <div class="col cajas rojo s5 card-panel  light-blue accent-3"></div>
                 </div>
-                <div class="letStyle">}</div>
-            </div>
-            <div class="col s12 card-panel light-blue accent-4 palabras aleatorio">
-                <p class="pieza palabra transporte light-blue accent-3" id="transporte">Cruzero</p>
-                <p class="pieza palabra transporte light-blue accent-3" id="transporte">Avión</p>
-                <p class="pieza palabra transporte light-blue accent-3" id="transporte">Tren</p>
-                <p class="pieza palabra animal light-blue accent-3" id="animal">Pulpo</p>
-                <p class="pieza palabra animal light-blue accent-3" id="animal">Ballena</p>
-                <p class="pieza palabra animal light-blue accent-3" id="animal">Tortuga</p>
-                <p class="pieza palabra animal light-blue accent-3" id="animal">Cangrejo</p>
+                <div class="row conteCajas aleatorio">
+                    <div class="col pieza opcion opcRojo s5" id="rojo"><h5 class="white-text">Dos circulos rojos</h5></div>
+                    <div class="col pieza opcion opcVerde s5" id="verde"><h5 class="white-text">Cuatro circulos verdes</h5></div>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<div id="modal1" class="modal">
-    <div class="modal-content">
-        <h4 class="center">Respuesta correcta</h4>
-        <center>
-            <img class="materialboxed" width="80%" src="img/1-4/respuesta.png">
-        </center>
+
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4 class="center">Respuesta correcta</h4>
+            <center>
+                <img class="materialboxed" width="80%" src="img/1-3/respuesta.png">
+            </center>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Listo!</a>
+        </div>
     </div>
-    <div class="modal-footer">
-        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Listo!</a>
-    </div>
-</div>
 </body>
+
 <script src="../../../../../js/core.js"></script>
-<?php require('../../../tools/botones/botones.php');?>
-<script>$("#next").attr("onclick", "<?=$next?>");</script>
-<script type="text/javascript">
-
-    var objeto;
-    var conLetraT = 0;
-    var conLetraK = 0;
-
-    $(".palabra").draggable({
-        start: function () {
-            objeto = $(this).attr("id");
-
-        }
-    });
-
-    $(".letraT").droppable({
-        classes: {
-            "ui-droppable-hover": "ui-state-hover"
-        },
-        drop: function (event, ui) {
-            $(this).css("border", "#333");
-            //$( this ).target.append(event.target);
-
-            if (objeto == "transporte") {
-                conLetraT++
-            }
-            objeto.removeClass("pieza");
-        }
-
-    });
-
-    $(".letraK").droppable({
-        classes: {
-            "ui-droppable-hover": "ui-state-hover"
-        },
-        drop: function (event, ui) {
-            $(this).css("border", "#333");
-            //$( this ).target.append(event.target);
-
-            if (objeto == "animal") {
-                conLetraK++
-            }
-            objeto.removeClass("pieza");
-        }
-
-    });
-
-
-
-    // Formulario - Registrados
-
-    function result_tipo_2_0_4() {
-        var min = $('#Minutos').text();
-        var seg = $('#Segundos').text();
-        var milseg = $('#Centesimas').text();
-        var tiempo = min + ":" + seg + ":" + milseg;
-
-        if (conLetraT == 3 && conLetraK == 4) {
-
-            localStorage.setItem("Nota2-0-4", "2");
-            localStorage.setItem("Time2-0-4", tiempo);
-            correcto();
-
-        }
-
-        else {
-
-            incorrecto();
-            localStorage.setItem("Nota2-0-4", "0");
-            localStorage.setItem("Time2-0-4", tiempo);
-
-        }
-    }
-
+<?php require('../../../tools/botones/botones.php');?> <script>$("#next").attr("onclick","<?=$next?>");</script>
+<script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
+<script>
     var cols = document.querySelectorAll('.aleatorio');
 
     [].forEach.call(cols, (e)=>{

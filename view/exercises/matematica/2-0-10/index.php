@@ -5,83 +5,102 @@
     <link rel="stylesheet" type="text/css" href="<?= $dir ?>/css/styles.css">
 </head>
 <style>
-    @media only screen and (max-width: 1200px){
-        .container-two {
-            padding-top: 10vh;
-            margin: 0 auto;
-            max-width: 1100px;
-            width: 81%;
-        }
-    }
-    @media only screen and (max-width: 1100px){
-        .container-two {
-            padding-top: 10vh;
-            margin: 0 auto;
-            max-width: 1100px;
-            width: 90%;
-        }
-    }
+.imagenesPrincipales{
+    border: 1px solid #333;
+    margin: 0px;
+}
+.classMain {
+    margin-top: 30px;
+}
+#principal{
+    min-height: 40px;
+    min-width: 800px;
+    display: grid;
+    padding: 10px 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.cajas{
+    margin-top: 30px;
+}
+#principal img{
+    width: 120px;
+    height: auto;
+    border-radius: 20px;
+    justify-self: center;
+}
+#principal img{
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    margin: 2px;
+    background: #fff;
+}
+.ui-sortable-handle{
+    background: white; 
+}
+#grupoUnitario, #grupoVacio{
+    min-height: 120px;
+}
+#unitario img, #vacio img{
+    width: 100px;
+}
+.row .col .s6 {
+  min-height: 200px!important;
+}
+
 </style>
 <?=$titulo?>
 <div class="container-two">
-        <div class="row">
-            <div class="col s4"></div>
-            <div class="imagenPrincipal col s4 cajas">
-                <img src="img/1-10/conjunto.png" alt="">
+    <div class="row classMain">
+        <div class="col s1"></div>
+        <div class="col s10 card-panel white" >
+            <div id="principal">
+                <img id="unitario" class="objeto" src="img/1-9/a.png" alt="">
+                <img id="vacio" class="objeto" src="img/1-9/b.png" alt="">
+                <img id="unitario" class="objeto" src="img/1-9/c.png" alt="">
+                <img id="unitario" class="objeto" src="img/1-9/d.png" alt="">
+                <img id="vacio"  class="objeto" src="img/1-9/e.png" alt="">
             </div>
-            <div class="col s4"></div>
         </div>
-        <div class="row">
-            <div class="col s2"></div>
-            <div class="filaUno col s8 caja">
-                <div class="letStyle">· G={ </div>
-                <div class="card-panel light-blue lighten-5 dropUno" style="margin-top: 20px;"></div>
-                <div class="letStyle"> } </div>
+        <div class="col s1"></div>
+    <div class="col s6 cajas">
+            <div class="row center">
+                <div class="col s1">
+
+                </div>
+                    <div class="col s10 card-panel card-caja" id="prin">
+                        <h4 class="blue-text">Unitario</h4>
+                        <div class="collect collection1 card-panel blue" id="grupoUnitario">
+                            
+                        </div>
+                    </div>
+                <div class="col s1">
+
+                </div>
+                </div>
             </div>
-            <div class="col s2"></div>
-        </div>
-        <div class="row">
-            <div class="col s2"></div>
-            <div class="filaUno col s8 caja">
-                <div class="letStyle">· M={ </div>
-                <div class="card-panel light-blue lighten-5 dropDos" style="margin-top: 20px;"></div>
-                <div class="letStyle"> } </div>
+        <div class="col s6 cajas">  
+            <div class="row center">
+                <div class="col s1">
+
+                </div>
+                <div class="col s10 card-panel card-caja">
+                    <h4 class="blue-text">Vacio</h4>
+                    <div class="collect collection2 card-panel blue" id="grupoVacio">
+
+                    </div>
+                </div>
+            <div class="col s1">
+
             </div>
-            <div class="col s2"></div>
-        </div>
-        <div class="row">
-            <div class="col s2"></div>
-            <div class="filaDos col s8 caja">
-                <div class="letStyle">·</div>
-                <div class="card-panel light-blue lighten-5 dropTres" style="margin-top: 20px;"></div>
-                <div class="letStyle">es</div>
-                <div class="card-panel light-blue lighten-5 dropCuatro" style="margin-top: 20px;"></div>
-                <div class="letStyle">de</div>
-                <div class="card-panel light-blue lighten-5 dropCinco" style="margin-top: 20px;"></div>
             </div>
-            <div class="col s2"></div>
         </div>
-        <div class="row tresFila">
-            <div class="col s2"></div>
-            <div class="filaTres col s8 aleatorio">
-                <div class="card-panel objeto blue white-text" data-value="gallina">gallina</div>
-                <div class="card-panel objeto blue white-text" data-value="pato">pato</div>
-                <div class="card-panel objeto blue white-text" data-value="gallo">gallo</div>
-                <div class="card-panel objeto blue white-text" data-value="m">M</div>
-                <div class="card-panel objeto blue white-text" data-value="vaca">vaca</div>
-                <div class="card-panel objeto blue white-text" data-value="gato">gato</div>
-                <div class="card-panel objeto blue white-text" data-value="g">G</div>
-                <div class="card-panel objeto blue white-text" data-value="subconjunto">subconjunto</div>
-                <div class="card-panel objeto blue white-text" data-value="oveja">oveja</div>
-            </div>
-            <div class="col s2"></div>
-        </div>
+    </div>
 </div>
 <div id="modal1" class="modal">
     <div class="modal-content">
         <h4 class="center">Respuesta correcta</h4>
         <center>
-            <img class="materialboxed" width="80%" src="img/1-10/respuesta.png">
+            <img class="materialboxed" width="80%" src="img/1-9/respuesta.png">
         </center>
     </div>
     <div class="modal-footer">
@@ -95,137 +114,71 @@
 <script type="text/javascript">
 
 var element;
-var grupo1 = 0;
-var grupo2 = 0;
-var grupo3 = 0;
-var grupo4 = 0;
-var grupo5 = 0;
+var contUnitario209 = 0;
+var contVacio209 = 0;
 
-$(".objeto").draggable({
-    revert: false,
-    start: function() {
-        element=$(this).attr("data-value");
-        $(this).css("background", "none");
-    }
-});
+        $(".objeto").draggable({
+            start: function() {
+                element=$(this).attr("id");
+            }
+        });
 
+        $("#grupoUnitario").droppable({
+        classes: {
+            "ui-droppable-hover": "ui-state-hover"
+        },
+        drop: function( event, ui ) {
+            $(this).css("border", "#333");
+        //$( this ).target.append(event.target);
 
-$(".dropUno").droppable({
-    
-    classes: {
-        "ui-droppable-active": "ui-state-active",
-        "ui-droppable-hover": "ui-state-hover"
-    },
-    drop: function( event, ui ) {
-        $(this).css("background", "none");
-    //$( this ).target.append(event.target);
-        
-    if(element=="pato"){
-        grupo1++;
-    }else if(element=="gallina"){
-        grupo1++;
-    }else if(element == "gallo"){
-        grupo1++;
-    }
-        element.removeClass("pieza");
-    }
+        if(element=="unitario"){
+            contUnitario209++;
+        }
+            element.removeClass("pieza");
+        }
 
-});
-
-$(".dropDos").droppable({
-    
-    classes: {
-        "ui-droppable-active": "ui-state-active",
-        "ui-droppable-hover": "ui-state-hover"
-    },
-    drop: function( event, ui ) {
-        $(this).css("background", "none");
-    //$( this ).target.append(event.target);
-        
-    if(element=="vaca"){
-        grupo2++;
-    }else if(element=="oveja"){
-        grupo2++;
-    }
-        element.removeClass("pieza");
-    }
-
-});
-
-$(".dropTres").droppable({
-    
-    classes: {
-        "ui-droppable-active": "ui-state-active",
-        "ui-droppable-hover": "ui-state-hover"
-    },
-    drop: function( event, ui ) {
-        $(this).css("background", "none");
-    //$( this ).target.append(event.target);
-        
-    if(element=="m"){
-        grupo3++;
-    }
-        element.removeClass("pieza");
-    }
-
-});
+    });
 
 
-$(".dropCuatro").droppable({
-    
-    classes: {
-        "ui-droppable-active": "ui-state-active",
-        "ui-droppable-hover": "ui-state-hover"
-    },
-    drop: function( event, ui ) {
-        $(this).css("background", "none");
-    //$( this ).target.append(event.target);
-        
-    if(element=="subconjunto"){
-        grupo4++;
-    }
-        element.removeClass("pieza");
-    }
+    $("#grupoVacio").droppable({
+        classes: {
+            "ui-droppable-hover": "ui-state-hover"
+        },
+        drop: function( event, ui ) {
+            $(this).css("border", "#333");
+        //$( this ).target.append(event.target);
 
-});
+        if(element=="vacio"){
+            contVacio209++;
+        }
+            element.removeClass("pieza");
+        }
 
-$(".dropCinco").droppable({
-    
-    classes: {
-        "ui-droppable-active": "ui-state-active",
-        "ui-droppable-hover": "ui-state-hover"
-    },
-    drop: function( event, ui ) {
-        $(this).css("background", "none");
-    //$( this ).target.append(event.target);
-        
-    if(element=="g"){
-        grupo5++;
-    }
-        element.removeClass("pieza");
-    }
+    });
 
-});
 
-    // Formulario - Registrados
 
-    function result_tipo_2_0_10() {
+
+    function result_tipo_2_0_9() {
         var min = $('#Minutos').text();
         var seg = $('#Segundos').text();
         var milseg = $('#Centesimas').text();
         var tiempo = min + ":" + seg + ":" + milseg;
 
-        if (grupo1 == 3 && grupo2 == 2 && grupo3 == 1 && grupo4 ==1 && grupo5 == 1 ) {
-            localStorage.setItem("Nota2-0-8", "2");
-            localStorage.setItem("Time2-0-8", tiempo);
+        if ( contVacio209 == 2 && contUnitario209 == 3) {
+
+            console.log(contVacio209, contUnitario209);
+            localStorage.setItem("Nota2-0-9", "2");
+            localStorage.setItem("Time2-0-9", tiempo);
             correcto();
 
         }
 
         else {
+            console.log(contVacio209, contUnitario209);
             incorrecto();
-            localStorage.setItem("Nota2-0-8", "0");
-            localStorage.setItem("Time2-0-8", tiempo);
+            localStorage.setItem("Nota2-0-9", "0");
+            localStorage.setItem("Time2-0-9", tiempo);
 
         }
     }

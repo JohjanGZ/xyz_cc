@@ -1,58 +1,49 @@
 var element;
-var verde = 0;
-var rojo = 0;
+var letraY = 0;
+var letraG = 0;
+var letraM = 0;
 
-$(".opcion").draggable({
+$(".letra").draggable({
     revert: false,
     start: function() {
         element=$(this).attr("id");
-
+        $(this).css("background", "#none");
     }
 });
 
 
-$(".verde").droppable({
-    classes: {
-        "ui-droppable-hover": "ui-state-hover"
-    },
-    drop: function( event, ui ) {
-        $(this).css("border", "#333");
-    //$( this ).target.append(event.target);
-
-    if(element=="verde"){
-        verde++
-    }
-        element.removeClass("pieza");
-    }
-
-});
-$(".rojo").droppable({
+$(".resultado").droppable({
     
     classes: {
+        "ui-droppable-active": "ui-state-active",
         "ui-droppable-hover": "ui-state-hover"
     },
     drop: function( event, ui ) {
-        $(this).css("border", "#333");
+        $(this).css("background", "#none");
     //$( this ).target.append(event.target);
-
-    if(element=="rojo"){
-        rojo++
+        
+    if(element=="y"){
+        letraY++;
+    }else if(element == "g"){
+        letraG++;
+    }else if(element == "m"){
+        letraM++;
     }
         element.removeClass("pieza");
     }
 
 });
 
-function result_tipo_2_0_3(){
+function result_tipo_2_0_2(){
     var  min= $('#Minutos').text();
     var  seg= $('#Segundos').text();
     var  milseg= $('#Centesimas').text();
     var tiempo=min+":"+seg+":"+milseg;
 
-          if( verde == 1 && rojo ==1 ){
+          if( letraY == 1 && letraM == 0 && letraG == 0){
              
-             localStorage.setItem("Nota2-0-3","2");
-             localStorage.setItem("Time2-0-3", tiempo);
+             localStorage.setItem("Nota2-0-2","2");
+             localStorage.setItem("Time2-0-2", tiempo);
               correcto(); 
 
           }
@@ -60,8 +51,8 @@ function result_tipo_2_0_3(){
           else {
 
               incorrecto();
-              localStorage.setItem("Nota2-0-3","0");
-              localStorage.setItem("Time2-0-3", tiempo);
+              localStorage.setItem("Nota2-0-2","0");
+              localStorage.setItem("Time2-0-2", tiempo);
              
           }    
 } 
