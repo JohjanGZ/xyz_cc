@@ -72,7 +72,6 @@ function start_9() {
         next: "Page_10()",
         procesar: "result_tipo_1_5_9()",
         titulo: "<center><h5><span class='ftitulo'>Completa</span> según el valor posicional. <span class='ftitulo'>Guíate</span> del ejemplo.</h5></center>",
-           
         restaurar: "start_9()",
         dir: ruta,
         cod: "1-5-9",
@@ -85,7 +84,6 @@ function start_10() {
         next: "resultado()",
         procesar: "result_tipo_1_5_10()",
         titulo: "<center><h5><span class='ftitulo'>Cuenta</span> las centenas, las decenas y las unidades, <br>y ubícalas en el tablero de valor posicional.</h5></center>",
-          
         restaurar: "start_10()",
         dir: ruta,
         cod: "1-5-10",
