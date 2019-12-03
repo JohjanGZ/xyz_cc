@@ -15,6 +15,9 @@
     border-radius: 10px;
     margin: 0px 10px;
   }
+  .spaceStyle{
+    padding: 0px 40px;
+  }
   .conjuntosOpciones{
     display: grid;
     grid-template-columns: 2fr 2fr 2fr 2fr;
@@ -25,7 +28,9 @@
     background: #ffd54f ;
     padding: 4px 20px;
     text-align: center;
+    font-size: 20px;
     border-radius: 10px;
+    font-weight: bold;
   }
     @media only screen and (max-width: 1200px){
         .container-two {
@@ -72,7 +77,7 @@
     <div class="modal-content">
         <h4 class="center">Respuesta correcta</h4>
         <center>
-            <img class="materialboxed" width="80%" src="img/1-6/respuesta.png">
+            <img class="materialboxed" width="80%" src="img/1-25/respuesta.png">
         </center>
     </div>
     <div class="modal-footer">
@@ -130,7 +135,7 @@
     console.log(grupoJK, grupoKL);
     // Formulario - Registrados
 
-    function result_tipo_2_0_19() {
+    function result_tipo_2_0_25() {
         var min = $('#Minutos').text();
         var seg = $('#Segundos').text();
         var milseg = $('#Centesimas').text();
@@ -139,8 +144,8 @@
         if (grupoJK == 1 && grupoKL == 1 && otros == 0) {
 
             console.log(grupoJK, grupoKL);
-            localStorage.setItem("Nota2-0-19", "2");
-            localStorage.setItem("Time2-0-19", tiempo);
+            localStorage.setItem("Nota2-0-25", "2");
+            localStorage.setItem("Time2-0-25", tiempo);
             correcto();
 
         }
@@ -148,8 +153,8 @@
         else {
           console.log(grupoJK, grupoKL);
             incorrecto();
-            localStorage.setItem("Nota2-0-19", "0");
-            localStorage.setItem("Time2-0-19", tiempo);
+            localStorage.setItem("Nota2-0-25", "0");
+            localStorage.setItem("Time2-0-25", tiempo);
 
         }
     }

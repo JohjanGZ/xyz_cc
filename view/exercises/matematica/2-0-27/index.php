@@ -113,7 +113,7 @@
                   <div class="modal-content">
                   <h4>Respuesta correcta</h4>
                   <center>
-                  <img class="materialboxed"  width="80%" src="<?= $dir ?>/img/respuesta.png">
+                  <img class="materialboxed"  width="80%" src="img/1-27/respuesta.png">
                   </center>
                   </div>
                   <div class="modal-footer">
@@ -198,21 +198,21 @@ $('.a').click(function(){
                     }
     });
 });
-                        function result_tipo_2_0_21(){           
+                        function result_tipo_2_0_27(){           
                               var  min= $('#Minutos').text();
                               var  seg= $('#Segundos').text();
                               var  milseg= $('#Centesimas').text();
                               var tiempo=min+":"+seg+":"+milseg;
 
                           if(r==3){                  
-                              localStorage.setItem("Nota2_0_21","2");
-                              localStorage.setItem("Time2_0_21", tiempo);
+                              localStorage.setItem("Nota2-0-27","2");
+                              localStorage.setItem("Time2-0-27", tiempo);
                               correcto(); 
                           }
                           else{
                               incorrecto();
-                              localStorage.setItem("Nota2_0_21","0");
-                              localStorage.setItem("Time2_0_21", tiempo);
+                              localStorage.setItem("Nota2-0-27","0");
+                              localStorage.setItem("Time2-0-27", tiempo);
                           }    
                         } 
 </script>

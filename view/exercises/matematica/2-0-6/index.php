@@ -28,7 +28,7 @@
   }
     @media only screen and (max-width: 1200px){
         .container-two {
-            padding-top: 10vh;
+            padding-top: 4vh;
             margin: 0 auto;
             max-width: 1100px;
             width: 81%;
@@ -78,7 +78,7 @@
     <div class="modal-content">
         <h4 class="center">Respuesta correcta</h4>
         <center>
-            <img class="materialboxed" width="80%" src="img/1-6/respuesta.png">
+            <img class="materialboxed" width="80%" src="img/1-6/respuesta6.png">
         </center>
     </div>
     <div class="modal-footer">

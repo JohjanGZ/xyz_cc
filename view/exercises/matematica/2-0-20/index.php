@@ -84,7 +84,7 @@
     <div class="modal-content">
         <h4 class="center">Respuesta correcta</h4>
         <center>
-            <img class="materialboxed" width="80%" src="img/1-6/respuesta.png">
+            <img class="materialboxed" width="80%" src="img/1-20/respuesta.png">
         </center>
     </div>
     <div class="modal-footer">
@@ -127,7 +127,7 @@
     console.log(frutas, otros);
     // Formulario - Registrados
 
-    function result_tipo_2_0_14() {
+    function result_tipo_2_0_20() {
         var min = $('#Minutos').text();
         var seg = $('#Segundos').text();
         var milseg = $('#Centesimas').text();
@@ -136,8 +136,8 @@
         if (frutas == 2 && otros == 0) {
 
             console.log(frutas, otros);
-            localStorage.setItem("Nota2-0-14", "2");
-            localStorage.setItem("Time2-0-14", tiempo);
+            localStorage.setItem("Nota2-0-20", "2");
+            localStorage.setItem("Time2-0-20", tiempo);
             correcto();
 
         }
@@ -145,8 +145,8 @@
         else {
             console.log(frutas, otros);
             incorrecto();
-            localStorage.setItem("Nota2-0-14", "0");
-            localStorage.setItem("Time2-0-14", tiempo);
+            localStorage.setItem("Nota2-0-20", "0");
+            localStorage.setItem("Time2-0-20", tiempo);
 
         }
     }

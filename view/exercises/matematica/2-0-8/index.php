@@ -577,7 +577,7 @@
 <?php require('../../../tools/botones/botones.php'); ?>
 <script>$("#next").attr("onclick", "<?=$next?>");</script>
 <script type="text/javascript">
-  function result_tipo_2_0_6() {
+  function result_tipo_2_0_8() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
@@ -611,14 +611,14 @@
       $('input:checkbox[name=camionDos]:checked').val() == "on"
 
     ) {
-      localStorage.setItem("Nota2-0-6", "2");
-      localStorage.setItem("Time2-0-6", tiempo);
+      localStorage.setItem("Nota2-0-8", "2");
+      localStorage.setItem("Time2-0-8", tiempo);
       correcto();
     }
     else {
       incorrecto();
-      localStorage.setItem("Nota2-0-6", "0");
-      localStorage.setItem("Time2-0-6", tiempo);
+      localStorage.setItem("Nota2-0-8", "0");
+      localStorage.setItem("Time2-0-8", tiempo);
     }
   }
 

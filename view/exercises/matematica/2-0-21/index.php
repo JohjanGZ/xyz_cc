@@ -20,6 +20,11 @@
     height: 43px;
         padding: 5px;
 }
+@media screen and (max-width: 1300px) {
+  center h5{
+        font-size: 20px;
+    }
+}
 @media (max-height: 720px){
 
 .imgvf {
@@ -45,9 +50,9 @@
 
             <div class="row">
                   <div class="item3">
-                      <a  onclick="result_tipo_2_0_14(1)"  class="btn btn6 " name="escoba" value="">Z ∩ L= {escoba}</a>
+                      <a  onclick="result_tipo_2_0_21(1)"  class="btn btn6 " name="escoba" value="">Z ∩ L= {escoba}</a>
                          /
-                      <a  id="guantes" onclick="result_tipo_2_0_14(0)"  class="btn btn6" name="guantes"  value="">Z ∩ L= {guantes}</a>
+                      <a  id="guantes" onclick="result_tipo_2_0_21(0)"  class="btn btn6" name="guantes"  value="">Z ∩ L= {guantes}</a>
                   </div>                    
             </div> 
 </section>
@@ -69,7 +74,7 @@
 <script>$("#next").attr("onclick", "<?=$next?>");</script>
 <script type="text/javascript">
 $(".btn-intentos").html("1");
-function result_tipo_2_0_15(r){
+function result_tipo_2_0_21(r){
 
       var  min= $('#Minutos').text();
      var  seg= $('#Segundos').text();
@@ -78,8 +83,8 @@ function result_tipo_2_0_15(r){
 
 
     if (r==1){
-      localStorage.setItem("Nota2-0-15","2");
-      localStorage.setItem("Time2-0-15", tiempo);
+      localStorage.setItem("Nota2-0-21","2");
+      localStorage.setItem("Time2-0-21", tiempo);
       correcto();
 
     }
@@ -87,8 +92,8 @@ function result_tipo_2_0_15(r){
 
     count=1;
     incorrecto();
-    localStorage.setItem("Nota2-0-15","0");
-    localStorage.setItem("Time2-0-15", tiempo);
+    localStorage.setItem("Nota2-0-21","0");
+    localStorage.setItem("Time2-0-21", tiempo);
   }
 }
 </script>

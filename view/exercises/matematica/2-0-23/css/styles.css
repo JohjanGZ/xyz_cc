@@ -25,6 +25,7 @@
   border-radius: 10px;
 }
 
+
 @media only screen and (max-height: 600px) {
   .cajas{
     height: 60px;

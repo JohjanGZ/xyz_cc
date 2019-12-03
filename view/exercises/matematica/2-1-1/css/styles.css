@@ -1,206 +1,67 @@
-
-label {
-
-        font-size: 1.5rem;
-    color: #424141;
-    
+.container-two {
+  padding-top: 2vh;
+  margin: 0 auto;
+  max-width: 1300px;
+  width: 95%;
 }
-#contenedorPuzzle {
+.cajas {
+  height: 120px;
+  display: grid;
+  align-items: center;
+  border: 1px solid rgb(179, 179, 179);
+}
+.cajas h4{
+  font-weight: 600;
+  font-size: 40px;
+  color: rgba(65, 65, 65, 0.933);
+}
+.cajas h6 {
+  margin: 0px;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 500;
+}
+.checkboxMa {
+  margin-top: 30px;
+}
+.checkboxMa label {
+  margin: 0px 10px;
+}
+.row {
+  margin: 15px !important;
+  border-radius: 10px;
+}
 
+
+@media screen and (max-width: 1300px) {
+  center h5{
+    font-size: 20px;
+  }
+  .row{
+    margin: 0px !important;
+  }
+  .cajas{
+    height: 100px;
+  }
+  .infoContainer{
+    border: 1px solid #333;
+    padding:  10px 40px;
     border-radius: 10px;
-    overflow: hidden;
-}
-/* Puzzle */
-#contenedorPiezas {
-    background: #5561ff00;
-    /* width: 652px; */
-    height: 242px;
-    float: left;
-    margin-left: 40px;
-    /* box-shadow: 0px 0px 10px 2px #dadada; */
-    margin-top: 110px;
-}
-#puzzle {
-    background: #d0eb6a00;
-    width: 400px;
-    height: 200px;
-    float: right;
-    margin-right: 192px;
-    /* box-shadow: 0px 0px 10px 2px #dadada; */
-    padding: 20px;
-}
-.contenedorPieza {
-          width: 80px;
-    height: auto;
-    height: 150px;
-    float: left;
-}
-
-                                                 /*---/////////////////////////- Numeros -//////////////////////////---*/
-
-
-/*--------------------------------------uno---------------------------------------------------*/
-
-
-#uno, #dos, #tres {    
-       box-shadow: inset 0px 1px 3px 0px #7d7c7c;
-     /*  border: #25252591 solid 2px;*/
-      width: 100%;
-    /* min-width: 346px; */
-  
-   
-
-}
-
-
-                                                /*---///////////////////////-fin numeros-//////////////////////////---*/
-
-
-.labelC{
-
-position: absolute;
-    padding: 22px;
-    width: 60px;
-}
-
-
-.container, .content-wrapper {
-    position: fixed;
-    margin: 0 auto;
-    width: 100%;
-    /* left: 0; */
-    max-width: 100%;
-}
-
-
-ul:not(.browser-default) > li {
-    list-style-type: none;
-    float: left;
-}
-.caballo{
-    height: 156px !important;
-    
-    margin-top: -10px;
-}
-
-   
-/* Contenedor del puzzle*/
-#contenedorPuzzle {
-        /* margin-top: 0px; */
-   
-   /* background: rgba(255, 255, 255, 0.8);
-    /* box-shadow: 0px 0px 10px 2px #969393; */
-   
-   
+    margin: 0px 6px;
+    background: #B6ECFF;
+    border: 1px solid #ccc !important;
+    color: #333;
+  }
+  .conjuntosOpciones{
+    grid-gap: 0px;
+    grid-row: 0px;
+  }
+  .conjuntosOpciones p{
+    background: #eceff1;
+    border: 1px solid #607d8b;
+    padding: 4px 15px;
+    text-align: center;
     border-radius: 10px;
-    overflow: hidden;
+    font-weight: bold;
+  }
 }
-
-
-/* Puzzle */
-#contenedorPiezas {
-    background: #5561ff00;
-    /* width: 652px; */
-    height: 242px;
-    float: left;
-    margin-left: 40px;
-    /* box-shadow: 0px 0px 10px 2px #dadada; */
-    margin-top: 110px;
-}
-
-.ftitulo{
-    color:#0095DA;
-}
-.contenedorPieza {
-          width: 80px;
-    height: auto;
-    height: 150px;
-    float: left;
-   
-
-
-}
-
-#contenedorPuzzle img {
-           float: left;
-           padding: 43px 10px 40px 10px;
-    width: 80px;
-    height: auto;
-    position: relative;
-    z-index: 10;
-
-}
-
-
-                                                 /*---/////////////////////////- Numeros -//////////////////////////---*/
-
-
-/*--------------------------------------uno---------------------------------------------------*/
-
-
-#uno, #dos, #tres {    
-       box-shadow: inset 0px 1px 3px 0px #7d7c7c;
-     /*  border: #25252591 solid 2px;*/
-    width: 324px;
-    /* min-width: 346px; */
-  
-   
-
-}
-
-
-                                                /*---///////////////////////-fin numeros-//////////////////////////---*/
-#v, #f {
-    box-shadow: inset 0px 1px 3px 0px #7d7c7c;
-    /* border: #25252591 solid 2px; */
-    width: 324px;
-    /* min-width: 346px; */
-    min-width: 346px;
-    /* border: #25252591 solid 2px; */
-    width: 324px;
-    /* min-width: 346px; */
-    min-width: 346px;
-}
-
-
-.labelC{
-
-position: absolute;
-    padding: 22px;
-    width: 60px;
-}
-
-.container, .content-wrapper {
-   
-         position: fixed;
-    margin: 0 auto;
-    width: 100%;
-
-    max-width: 100%;
- 
-   
-}
-
-
-.contenedorimg{
-
-    width: 100px;
-    height: 150px;
-    margin: 5px;
-    border-radius: 15px;
-
-}
-
-ul:not(.browser-default) > li {
-    list-style-type: none;
-    float: left;
-}
-.caballo{
-    height: 156px !important;
-    
-    margin-top: -10px;
-}
-
-
-
-

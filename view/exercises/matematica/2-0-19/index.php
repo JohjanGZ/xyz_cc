@@ -72,6 +72,11 @@
     }
 
     }
+    @media screen and (max-width: 1300px){
+      center h5{
+        font-size: 20px;
+    }
+    }
 
     @media (max-height: 680px){
 .ej1, .ej2 {
@@ -190,7 +195,7 @@ ul{ margin-top: 0 }
                             <div class="modal-content">
                               <h4>Respuesta correcta</h4>
                               <center>
-                              <img class="materialboxed"  width="70%" src="img/mate5.png">
+                              <img class="materialboxed"  width="70%" src="img/1-19/respuesta.png">
                               </center>
                             </div>
                             <div class="modal-footer">
@@ -246,7 +251,7 @@ ul{ margin-top: 0 }
     }
     });
 
-function result_tipo_2_0_13(){
+function result_tipo_2_0_19(){
       var  min= $('#Minutos').text();
      var  seg= $('#Segundos').text();
      var  milseg= $('#Centesimas').text();
@@ -255,16 +260,16 @@ function result_tipo_2_0_13(){
     if(r1==2 && r2==2 && otro == 0)
        {
       correcto(); 
-       localStorage.setItem("<Nota2-0></Nota2-0>-13","2");
-       localStorage.setItem("Time2-0-13", tiempo);
+       localStorage.setItem("<Nota2-0></Nota2-0>-19","2");
+       localStorage.setItem("Time2-0-19", tiempo);
          
 
     }
 
     else {
       incorrecto();
-      localStorage.setItem("Nota2-0-13","0");
-      localStorage.setItem("Time2-0-13", tiempo);
+      localStorage.setItem("Nota2-0-19","0");
+      localStorage.setItem("Time2-0-19", tiempo);
     }
     
 }

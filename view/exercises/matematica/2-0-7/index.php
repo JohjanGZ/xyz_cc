@@ -10,12 +10,12 @@
   }
   .infoContainer{
     border: 1px solid #333;
-    padding: 15px 160px;
+    padding: 12px 160px;
     border-radius: 10px;
     margin: 0px 10px;
   }
   #boxCheck img{
-    width: 200px;
+    width: 300px;
   }
   .conjuntosOpciones{
     display: grid;
@@ -25,21 +25,32 @@
   }
   .conjuntosOpciones p{
     background: #ffd54f ;
-    padding: 4px 20px;
+    padding: 8px 20px;
     text-align: center;
     border-radius: 10px;
+    font-weight: bold;
   }
     @media only screen and (max-width: 1200px){
         .container-two {
-            padding-top: 10vh;
+            padding-top: 2vh;
             margin: 0 auto;
             max-width: 1100px;
             width: 81%;
         }
     }
+
+    @media screen and (min-width: 1350px){
+        .container-two {
+            padding-top: 6vh;
+            margin: 0 auto;
+            max-width: 1200px;
+            width: 91%;
+        }
+    }
+
     @media only screen and (max-width: 1100px){
         .container-two {
-            padding-top: 10vh;
+            padding-top: 2vh;
             margin: 0 auto;
             max-width: 1100px;
             width: 90%;
@@ -50,26 +61,30 @@
 <div class="container-two">
     <div class="row boxCheck" id="boxCheck">
         <div class=" col s6">
-            <img src="img/1-7/conjuntoUno.png" alt="">
+            <img src="img/1-7/conjuntoDos.png" alt="">
         </div>
         <div class=" col s6">
-            <img src="img/1-7/conjuntoDos.png" alt="">
+            <img src="img/1-7/conjuntoUno.png" alt="">
         </div>
     </div>
     <div class="row boxCheck">
         <div class="cajas col s6">
-            <h4>• F ∪ D = <span class="llavesContainer ">{</span> <span class="infoContainer groupFD"> </span> <span class="llavesContainer">}</span></h4>
+            <h4>• M = <span class="llavesContainer ">{</span> <span class="infoContainer groupM"> </span> <span class="llavesContainer">}</span></h4>
         </div>
         <div class="cajas col s6">
-            <h4>• G ∪ R = <span class="llavesContainer ">{</span> <span class="infoContainer groupGR"> </span> <span class="llavesContainer ">}</span></h4>
+            <h4>• S = <span class="llavesContainer ">{</span> <span class="infoContainer groupS"> </span> <span class="llavesContainer ">}</span></h4>
         </div>
     </div>
     <div class="row boxCheck white">
         <div class="col s12 conjuntosOpciones aleatorio">
-            <p class="obj" data-value="uno">a, e, i, u</p>
-            <p class="obj" data-value="dos">a, e, i, o, u</p>
-            <p class="obj" data-value="tres">uvas, manzana, fresa</p>
-            <p class="obj" data-value="cuatro">uvas, naranja, plátano, manzana, fresa</p>
+            <p class="obj" data-value="l">L</p>
+            <p class="obj" data-value="l">I</p>
+            <p class="obj" data-value="l">B</p>
+            <p class="obj" data-value="l">R</p>
+            <p class="obj" data-value="l">O</p>
+            <p class="obj" data-value="n">1</p>
+            <p class="obj" data-value="n">2</p>
+            <p class="obj" data-value="n">3</p>
         </div>
     </div>
 </div>
@@ -77,7 +92,7 @@
     <div class="modal-content">
         <h4 class="center">Respuesta correcta</h4>
         <center>
-            <img class="materialboxed" width="80%" src="img/1-6/respuesta.png">
+            <img class="materialboxed" width="80%" src="img/1-7/respuesta7.png">
         </center>
     </div>
     <div class="modal-footer">
@@ -90,7 +105,7 @@
 <script>$("#next").attr("onclick", "<?=$next?>");</script>
 <script type="text/javascript">
 
-    var grupoFD = 0, grupoGR = 0, otros = 0, element;
+    var grupoM = 0, grupoS = 0, otros = 0, element;
 
     $(".obj").draggable({
         
@@ -98,7 +113,7 @@
          element=$(this).attr("data-value"); 
      }
     });
-    $( ".groupFD" ).droppable({
+    $( ".groupM" ).droppable({
       classes: {
         "ui-droppable-active": ".blue",
         "ui-droppable-hover": "ui-state-hover"
@@ -107,15 +122,15 @@
         $(this).css("background-color", "rgba(139, 195, 74, 0.14)");
       //  $( this ).target.append(event.target);
 
-        if(element=="dos"){
-          grupoFD++;
+        if(element=="l"){
+          grupoM++;
         }else{
           otros++;
         }
         element.removeClass("pieza");
       }
     });
-    $( ".groupGR" ).droppable({
+    $( ".groupS" ).droppable({
       classes: {
         "ui-droppable-active": ".blue",
         "ui-droppable-hover": "ui-state-hover"
@@ -124,37 +139,37 @@
         $(this).css("background-color", "rgba(139, 195, 74, 0.14)");
       //  $( this ).target.append(event.target);
 
-        if(element=="cuatro"){
-          grupoGR++;
+        if(element=="n"){
+          grupoS++;
         }else{
           otros++;
         }
         element.removeClass("pieza");
       }
     });
-    console.log(grupoFD, grupoGR);
+    console.log(grupoM, grupoS);
     // Formulario - Registrados
 
-    function result_tipo_2_0_16() {
+    function result_tipo_2_0_7() {
         var min = $('#Minutos').text();
         var seg = $('#Segundos').text();
         var milseg = $('#Centesimas').text();
         var tiempo = min + ":" + seg + ":" + milseg;
 
-        if (grupoFD == 1 && grupoGR == 1 && otros == 0) {
+        if (grupoM == 5 && grupoS == 3 && otros == 0) {
 
-            console.log(grupoFD, grupoGR);
-            localStorage.setItem("Nota2-0-16", "2");
-            localStorage.setItem("Time2-0-16", tiempo);
+          console.log(grupoM, grupoS);
+            localStorage.setItem("Nota2-0-7", "2");
+            localStorage.setItem("Time2-0-7", tiempo);
             correcto();
 
         }
 
         else {
-          console.log(grupoFD, grupoGR);
+          console.log(grupoM, grupoS);
             incorrecto();
-            localStorage.setItem("Nota2-0-16", "0");
-            localStorage.setItem("Time2-0-16", tiempo);
+            localStorage.setItem("Nota2-0-7", "0");
+            localStorage.setItem("Time2-0-7", tiempo);
 
         }
     }

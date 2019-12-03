@@ -8,8 +8,12 @@
   #boxCheck{
     text-align: center;
   }
+  #boxCheck h4{
+    color: #424242;
+    font-weight: 600;
+  }
   .infoContainer{
-    border: 1px solid #333;
+    border: 1px solid #536dfe ;
     padding: 15px 160px;
     border-radius: 10px;
     margin: 0px 10px;
@@ -25,7 +29,16 @@
     padding: 4px 20px;
     text-align: center;
     border-radius: 10px;
+    font-weight: bold;
+    font-size: 20px;
   }
+  .boxCheck .cajas h4{
+    color: #1565c0;
+    font-weight: 500;
+  }
+  .spaceStyle {
+  padding: 0px 25px;
+}
     @media only screen and (max-width: 1200px){
         .container-two {
             padding-top: 10vh;
@@ -50,7 +63,7 @@
             <h4>• A = {1; 2; 3; 4; 5; 6} <span class="spaceStyle"> </span> • B = {2; 4; 6}  <span class="spaceStyle"> </span>  • C = {1; 3; 5; 7}</h4>
         </div>
     </div>
-    <div class="row boxCheck">
+    <div class="row boxCheck ">
         <div class="cajas col s6">
             <h4>• A ∪ B = <span class="llavesContainer ">{</span> <span class="infoContainer groupAB"> </span> <span class="llavesContainer">}</span></h4>
         </div>
@@ -71,7 +84,7 @@
     <div class="modal-content">
         <h4 class="center">Respuesta correcta</h4>
         <center>
-            <img class="materialboxed" width="80%" src="img/1-6/respuesta.png">
+            <img class="materialboxed" width="80%" src="img/1-23/respuesta.png">
         </center>
     </div>
     <div class="modal-footer">
@@ -129,7 +142,7 @@
     console.log(grupoFD, grupoGR);
     // Formulario - Registrados
 
-    function result_tipo_2_0_17() {
+    function result_tipo_2_0_23() {
         var min = $('#Minutos').text();
         var seg = $('#Segundos').text();
         var milseg = $('#Centesimas').text();
@@ -138,8 +151,8 @@
         if (grupoAB == 1 && grupoAC == 1 && otros == 0) {
 
             console.log(grupoFD, grupoGR);
-            localStorage.setItem("Nota2-0-17", "2");
-            localStorage.setItem("Time2-0-17", tiempo);
+            localStorage.setItem("Nota2-0-23", "2");
+            localStorage.setItem("Time2-0-23", tiempo);
             correcto();
 
         }
@@ -147,8 +160,8 @@
         else {
           console.log(grupoFD, grupoGR);
             incorrecto();
-            localStorage.setItem("Nota2-0-17", "0");
-            localStorage.setItem("Time2-0-17", tiempo);
+            localStorage.setItem("Nota2-0-23", "0");
+            localStorage.setItem("Time2-0-23", tiempo);
 
         }
     }
