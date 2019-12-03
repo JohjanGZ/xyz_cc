@@ -54,10 +54,7 @@ a:hover, a:active, a:focus {
     text-decoration: none;
 }
 
-nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
 
-    text-shadow: black 2px 2px 2px;
-}
 
 .btn-back{
 

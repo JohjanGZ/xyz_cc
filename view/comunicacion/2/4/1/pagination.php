@@ -1,6 +1,6 @@
 <script type="text/javascript">
-    function Page_lectura_2_4_1_1(){
-        start_lectura_2_4_1_1();
+    function Page_lectura_2_5_1_1(){
+        start_lectura_2_5_1_1();
         inicio();
         count = 0;
     }
@@ -14,50 +14,69 @@
         inicio();
         count = 3;
     }
+    function Page_3(){
+        start_3();
+        inicio();
+        count = 3;
+    }
 
 
-    var cant=2;
+    var cant=3;
     var cal= 20/20;
     var ruta="../../../../exercises/comunicacion/";
     ////////////// 2do 
             // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
-    function start_lectura_2_4_1_1(){
-        $("#ventana").load(ruta+'lectura2-4-1-1/index.php', 
+    function start_lectura_2_5_1_1(){
+        $("#ventana").load(ruta+'lectura2-5-1-1/index.php', 
         {
         next: "Page_1()", 
         procesar:"lectura2-2-1-1()",
-        titulo:"<center><h5><span class='ftitulo'>Lee</span> atentamente y contesta las preguntas.</h5></center>",
-        restaurar:"start_lectura_2_4_1_1()",
+        titulo:"<center><h5><span>Lee</span> atentamente y contesta las preguntas.</h5></center>",
+        restaurar:"start_lectura_2_5_1_1()",
         dir:ruta,
-        cod: "lectura2-4-1-1",
+        cod: "lectura2-5-1-1",
         nota:cal
         }
         );
         return false;  
     };
     function start_1(){
-        $("#ventana").load(ruta+'2-4-1/index.php', 
+        $("#ventana").load(ruta+'2-5-1/index.php', 
         {
         next: "Page_2()", 
-        procesar:"result_tipo_2_4_1()",
+        procesar:"result_tipo_2_5_1()",
         titulo:"<center><h5><span>Selecciona</span> la alternativa correcta.</h5></center>",
         restaurar:"start_1()",
         dir:ruta,
-        cod: "2-4-1",
+        cod: "2-5-1",
         nota:cal
         }
         );
         return false;  
     };
     function start_2(){
-        $("#ventana").load(ruta+'2-4-2/index.php', 
+        $("#ventana").load(ruta+'2-5-2/index.php', 
         {
-        next: "resultado()", 
-        procesar:"result_tipo_2_4_2()",
-        titulo:"<center><h5><span>Arrastra</span> las características de cada personaje.</h5></center>",
+        next: "Page_3()", 
+        procesar:"result_tipo_2_5_2()",
+        titulo:"<center><h5><span>Lee</span> atentamente el anunciado y <span>marca</span> si es verdadero o falso.</h5></center>",
         restaurar:"start_2()",
         dir:ruta,
-        cod: "2-4-2",
+        cod: "2-5-2",
+        nota:cal
+        }
+        );
+        return false;  
+    };
+    function start_3(){
+        $("#ventana").load(ruta+'2-5-3/index.php', 
+        {
+        next: "resultado()", 
+        procesar:"result_tipo_2_5_3()",
+        titulo:"<center><h5><span>Marca</span> la respuesta correcta.</h5></center>",
+        restaurar:"start_3()",
+        dir:ruta,
+        cod: "2-5-3",
         nota:cal
         }
         );

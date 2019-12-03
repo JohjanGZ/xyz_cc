@@ -2,6 +2,7 @@
 .pizarra{
     min-height:83vh;
     min-width:75vw;
+    background-color:white;
 }
 .contenedor-libros{
     max-width:100%;
@@ -18,6 +19,9 @@
     background-image: linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px), linear-gradient(#eee .05em, transparent .05em);
     -pie-background: linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px) 0 0 / 100% 1.2em, linear-gradient(#eee .05em, transparent .05em) 0 0 / 100% 1.2em #fff;
 }
+.tabs{
+box-shadow: inset #00000029 0px -1px 3px 0px;
+}
 .tabs .indicator {
     background-color: transparent;
 }
@@ -31,8 +35,7 @@
 <!--<script type="text/javascript" src="js/data.js"></script>-->
 
         <div id="fullscreen" class="section no-pad-bot" id="index-banner">
-            <div class="container contenedor-libros">
-            
+            <div class="container contenedor-libros">            
                 <ul id="tabs-swipe-demo" class="tabs">
                     <li class="tab col s3"><a href="#blanco">Blanco</a></li>
                     <li class="tab col s3"><a  href="#linea">Rayado</a></li>
@@ -45,7 +48,8 @@
             <script>
                 $(document).ready(function(){
                     $('.tabs').tabs();
-                });                                
+                });   
+
             </script>
         </div>
                                 
