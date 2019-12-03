@@ -31,12 +31,10 @@
 </script>
 <?php
   $titulo=$_POST['titulo'];
- echo $color=$_POST['color'];
-
+  $color=$_POST['color'];
   $datos= json_encode($_POST['unidades']);
   $libros=json_encode($_POST['libros']);
  ?>
-
 <style type="text/css">
 	.TituloGrado{
 		-webkit-text-stroke: 1px #f6c303;
@@ -66,7 +64,6 @@
 label{
 	display:none;
 }
-
 </style>
   <!-- CSS  -->
 <div class="content-wrapper libro" style="margin-top: 58px;">
@@ -76,9 +73,6 @@ label{
 <div class="col-indice col-units" style="margin-left: 0px;">
 	<div class="units" id="wrapper">
 	<?=$color?>	
-	<script>
-
-	</script>
 	<form action="#">
 		<ul id="list-units">
 			<li class='btn-libros'><a class='js-tema' ><span class='number'>2</span><span class='title'>Libros Digitales</span></a></li>
@@ -129,7 +123,7 @@ label{
                         function BackHome() {
 							$('#cuerpo').load('libros.php',{data: libros});
 						}
-$("#list-units").append("<li class='btn-examen pink darken-3'><a class='js-tema' ><center><span class='number'>2</span><span class='title white-text'>Examen</span></center></a></li>");
+//$("#list-units").append("<li class='btn-examen pink darken-3'><a class='js-tema' ><center><span class='number'>2</span><span class='title white-text'>Examen</span></center></a></li>");
 
 	
 	$(".filled-in").change(function(){ 

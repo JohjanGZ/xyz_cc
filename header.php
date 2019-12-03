@@ -1,4 +1,4 @@
-<?php include('head.php'); ?>
+
 <title>Arca de Papel</title>
 
 <style type="text/css">
@@ -65,8 +65,7 @@ width: 40px;
 
 }
 #btn-tool{
-    position: fixed; 
-    
+    position: fixed;     
     transform: translate(-45px, -92vh);
 }
 .btn-floating i {
@@ -78,71 +77,38 @@ width: 40px;
     transform: translate(-45px, -86vh);
 }
 }
+#main-nav {
+    background-color: rgba(238, 238, 238, 0.85);
+    font-family: arial !important;
+    z-index:3 !important;
+}
+#main-nav.open {
+    height: 70px;
+    top: 84px;
+    opacity: 1;
+    z-index: 1;
+}
+#main-nav a:before {
+    display: none;
+}
+#main-nav ul li {
+    height: 31px;
+    width: auto;
+    padding: 4px 20px;
+}
+#main-nav ul li a {
+
+    padding: 0px;
+   
+}
+
+#main-nav ul li a:hover {
+
+color:white !important;
+
+}
+.fixed-action-btn.direction-left ul, .fixed-action-btn.direction-right ul {
+    width: 235px;
+}
 
 </style>
-</head>
-
-<body>
-<div id="insert-php"></div>
-    <nav class="indigo accent-2" role="navigation">
-
-        <ul>
-            <li id="logo-header">
-                <div class="nav-wrapper container"><a id="logo-container" href="./" class="brand-logo "><img
-                            class="logoArca" src="LOGO.png"></a>
-            </li>
-
-        </div>
-        <div id="btn-tool" class="fixed-action-btn click-to-toggle direction-top direction-left" >
-            <a class="btn-floating  pink darken-2">
-              <i class="material-icons">menu</i>
-            </a>
-            <ul>
-              <li>
-                <a href="php/cerrar.php" class="btn-floating red" style="opacity: 1; transform: scale(1) translateY(0px) translateX(0px);">
-                    <i class="material-icons">power_settings_new</i> 
-                </a>
-              </li>
-              <li>
-                <a id="btn-paint" class="btn-floating blue darken-1" style="opacity: 1; transform: scale(1) translateY(0px) translateX(0px);">
-                  <i class="material-icons">edit</i>
-                </a>
-              </li>
-              <li>
-                <a id="btn-pizarra" class="btn-floating green" style="opacity: 1; transform: scale(1) translateY(0px) translateX(0px);">
-                  <i class="material-icons">video_label</i>
-                </a>
-              </li>
-              <li>
-                <a id="btn-home" class="btn-floating  red accent-4" style="opacity: 1; transform: scale(1) translateY(0px) translateX(0px);">
-                  <i class="material-icons">home</i>
-                </a>
-              </li>
- 
- 
-            </ul>
-          </div>
-        </ul>
-
-    </nav>
-
-    <!--<a class="btn-floating amber notas"><i class="material-icons">create</i></a>-->
-
-    <div id="notaciones">
-        <?php include('paint/paint.php');?>
-    </div>
-    <script>
-  $(document).ready(function(){
-    
-    $('#btn-paint').click( function (){
-        $('#insert-php').load('php/opentool.php');
-    });
-
-    $('.fixed-action-btn').floatingActionButton({
-        hoverEnabled: false,
-        direction: 'left',
-        toolbarEnabled:false
-    });
-  });
-        
-  </script>
