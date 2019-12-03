@@ -213,7 +213,7 @@ var element;
     });
 
 
-  function result_tipo_2_0_1(){
+  function result_tipo_2_0_2(){
       var  min= $('#Minutos').text();
       var  seg= $('#Segundos').text();
       var  milseg= $('#Centesimas').text();
@@ -221,16 +221,16 @@ var element;
 
             if( nAnimal == 3 && nRegla==3 && nFigura == 3 ){
                
-               localStorage.setItem("Nota2-0-1","2");
-               localStorage.setItem("Time2-0-1", tiempo);
+               localStorage.setItem("Nota2-0-2","2");
+               localStorage.setItem("Time2-0-2", tiempo);
                 correcto(); 
             }
 
             else {
 
                 
-                localStorage.setItem("Nota2-0-1","0");
-                localStorage.setItem("Time2-0-1", tiempo);
+                localStorage.setItem("Nota2-0-2","0");
+                localStorage.setItem("Time2-0-2", tiempo);
                 incorrecto();
             }    
   } 

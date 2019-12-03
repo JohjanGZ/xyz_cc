@@ -1,281 +1,169 @@
- <?php require('../../../tools/var/variables.php'); ?>
+<?php require('../../../tools/var/variables.php'); ?>
 
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="<?= $dir ?>/css/styles.css">
+</head>
 <style>
-.imgvf {
-    background-image: url(img/2-9/a9.gif);
-    background-size: 100% 100%;
-    width: 400px;
-    height: 315px;
-    margin: 0 auto 0;
-    background-repeat: no-repeat;
-}
-
-.contenedorimg {
-    border: solid 1px gainsboro;
-    width: 100px;
-    height: 76px;
-    margin: 5px;
-    border-radius: 15px;
-}
-#contenedorPiezas {
-    background: #5561ff00;
-    /* width: 652px; */
-    height: 100px;
-    float: left;
-    margin-left: 211px;
-    /* box-shadow: 0px 0px 10px 2px #dadada; */
-    margin-top: 80px;
-}
-
-#contenedorPuzzle img {
-    float: left;
-    padding: 0;
-    width: 70px;
-    height: auto;
-    position: relative;
-    z-index: 10;
-}
-
-.seleccion {
-    width: 50%;
-    top: 10%;
-    position: relative;
-}
-
-.imgvfi{
-
-  height: 50px;
-  width:50px;
-}
-.item3{
-
-    float: left;
-    width: 150px;
-    
-    padding: 13px;
-}
-
-.item2{
-      font-size: 24px;
-    margin-top: 15px;
-    width: 71px;
-    float: left;
-    
-    margin-left: 28px;
-    margin-right: 25px;
-}
-.item1{
-  width: 50px;
-    float: left;
- 
-}
-
-.switch label .lever {
-    content: "";
-    display: inline-block;
-    position: relative;
-    width: 36px;
-    height: 14px;
-    background-color: rgba(128, 28, 92, 0.65);
-    border-radius: 15px;
-    margin-right: 10px;
-    -webkit-transition: background 0.3s ease;
-    transition: background 0.3s ease;
-    vertical-align: middle;
-    margin: 0 16px;
-}
-
-.switch label .lever:after {
-    background-color: #861b5f;
-    -webkit-box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
-    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
-}
-
-.switch label input[type=checkbox]:checked + .lever {
-    background-color: #fdcc5359;
-}
-
-.switch label input[type=checkbox]:checked + .lever:after {
-    background-color: #ffd768;
-}
-
-.switch, .switch * {
-    -webkit-tap-highlight-color: transparent;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    margin-bottom: -14px;
-    padding-bottom: -21px;
-}
-
-section {
-
-    margin-top: 15vh;
-    margin-left: 15vw;
-
-}
-
-@media (max-width: 1300px){
-.grafica {
-    height: 320px !important;
-    width: 349px !important;
-}
-.contenedorPieza {
-    min-height: 93px;
-}
-}
-
-.row .col {
-
-    padding: 0 0.0rem;
-
-}
+  #boxCheck{
+    text-align: center;
+  }
+  .infoContainer{
+    border: 1px solid #333;
+    padding: 15px 160px;
+    border-radius: 10px;
+    margin: 0px 10px;
+  }
+  .conjuntosOpciones{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    justify-items: center;
+    align-items: center;
+  }
+  .conjuntosOpciones p{
+    background: #ffd54f ;
+    padding: 4px 20px;
+    text-align: center;
+    border-radius: 10px;
+  }
+    @media only screen and (max-width: 1200px){
+        .container-two {
+            padding-top: 10vh;
+            margin: 0 auto;
+            max-width: 1100px;
+            width: 81%;
+        }
+    }
+    @media only screen and (max-width: 1100px){
+        .container-two {
+            padding-top: 10vh;
+            margin: 0 auto;
+            max-width: 1100px;
+            width: 90%;
+        }
+    }
 </style>
-
-<div class="container">
-  <?=$titulo?>
-    <section id="contenedorPuzzle">
-      <div class="row" >
-<div class="col s5">
-        <div class="imgvf" ></div>
-  </div>
-
-        <form class="col s7  seleccion" method="POST"  id="seleccion">
-
-<!--////////////////////////////////////////////////////////////////FILA///////////////////////////////////////////////////////////////////////  -->
-
-            <div class="row">
-         
-                      <div class="col s5">
-                       <b> - Todas las sillas son iguales</b>
-                        <div class="item3">
-                            <!-- Switch -->
-                              <div class="switch">
-                                <label>
-                                  F
-                                  <input name="1" type="checkbox" checked="checked">
-                                  <span class="lever"></span>
-                                  V
-                                </label>
-                              </div>
-                            </div>
-                       </div> 
-                      </div>   
-              
-
-<!--////////////////////////////////////////////////////////////////FILA///////////////////////////////////////////////////////////////////////  -->
-
-            <div class="row">
-         
-                          <div class="col s5">
-                       <b> - Algunas sillas son de 4 patas</b>
-                        <div class="item3">
-                            <!-- Switch -->
-                              <div class="switch">
-                                <label>
-                                  F
-                                  <input name="2" type="checkbox" checked="checked">
-                                  <span class="lever"></span>
-                                  V
-                                </label>
-                              </div>
-                            </div>
-                       </div> 
-                      </div>   
-
-<!--////////////////////////////////////////////////////////////////FILA///////////////////////////////////////////////////////////////////////  -->
-
-            <div class="row">
-         
-                          <div class="col s5">
-                       <b> - Solo dos sillas tienen 5 ruedas</b>
-                        <div class="item3">
-                            <!-- Switch -->
-                              <div class="switch">
-                                <label>
-                                  F
-                                  <input name="3" type="checkbox" checked="checked">
-                                  <span class="lever"></span>
-                                  V
-                                </label>
-                              </div>
-                            </div>
-                       </div> 
-                      </div>   
-
-<!--////////////////////////////////////////////////////////////////FILA///////////////////////////////////////////////////////////////////////  -->
-
-            <div class="row">
-         
-                      <div class="col s5">
-                       <b> - Ninguna silla tiene dos ruedas</b>
-                        <div class="item3">
-                            <!-- Switch -->
-                              <div class="switch">
-                                <label>
-                                  F
-                                  <input name="4" type="checkbox" checked="checked">
-                                  <span class="lever"></span>
-                                  V
-                                </label>
-                              </div>
-                            </div>
-                       </div> 
-                      </div>   
-
- </form>
- </div>
- </section> 
-
-                                      <div id="modal1" class="modal">
-                                        <div class="modal-content">
-                                          <h4>Respuesta correcta</h4>
-                                          <center>
-                                          <img class="materialboxed"  width="100%" src="img/mate9.png">
-                                          </center>
-                                        </div>
-                                        <div class="modal-footer">
-                                          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Listo!</a>
-                                        </div>
-                                      </div>
-   </div>
-    <script src="../../../js/core.js"></script>
-<?php require_once('../../../tools/botones/botones.php'); ?>
-<script type="text/javascript">
-  function result_tipo_2_1_9(){
-
-    var  min= $('#Minutos').text();
-    var  seg= $('#Segundos').text();
-    var  milseg= $('#Centesimas').text();
-    var  tiempo=min+":"+seg+":"+milseg;
-    
-      if(
-           $('input:checkbox[name=1]:checked').val()==null    
-        &&
-           $('input:checkbox[name=2]:checked').val()=="on"
-        &&
-           $('input:checkbox[name=3]:checked').val()=="on"
-        &&
-           $('input:checkbox[name=4]:checked').val()==null   
-       )
-      {      
-        localStorage.setItem("Nota2-1-9","2");
-        localStorage.setItem("Time2-1-9", tiempo);
-
-         correcto(); 
-      }
-
-    else {
-
-        incorrecto();
-         
-        localStorage.setItem("Nota2-1-9","0");
-        localStorage.setItem("Time2-1-9", tiempo);
-       
-    }  
-}
-</script>
+<?=$titulo?>
+<div class="container-two">
+    <div class="row boxCheck" id="boxCheck">
+        <div class=" col s6">
+            <img src="img/1-15/conjuntoUno.png" alt="">
+        </div>
+        <div class=" col s6">
+            <img src="img/1-15/conjuntoDos.png" alt="">
+        </div>
+    </div>
+    <div class="row boxCheck">
+        <div class="cajas col s6">
+            <h4>• F ∪ D = <span class="llavesContainer ">{</span> <span class="infoContainer groupFD"> </span> <span class="llavesContainer">}</span></h4>
+        </div>
+        <div class="cajas col s6">
+            <h4>• G ∪ R = <span class="llavesContainer ">{</span> <span class="infoContainer groupGR"> </span> <span class="llavesContainer ">}</span></h4>
+        </div>
+    </div>
+    <div class="row boxCheck white">
+        <div class="col s12 conjuntosOpciones aleatorio">
+            <p class="obj" data-value="uno">a, e, i, u</p>
+            <p class="obj" data-value="dos">a, e, i, o, u</p>
+            <p class="obj" data-value="tres">uvas, manzana, fresa</p>
+            <p class="obj" data-value="cuatro">uvas, naranja, plátano, manzana, fresa</p>
+        </div>
+    </div>
+</div>
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <h4 class="center">Respuesta correcta</h4>
+        <center>
+            <img class="materialboxed" width="80%" src="img/1-6/respuesta.png">
+        </center>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Listo!</a>
+    </div>
+</div>
 </body>
+<script src="../../../../../js/core.js"></script>
+<?php require('../../../tools/botones/botones.php');?>
+<script>$("#next").attr("onclick", "<?=$next?>");</script>
+<script type="text/javascript">
 
+    var grupoFD = 0, grupoGR = 0, otros = 0, element;
 
+    $(".obj").draggable({
+        
+        start: function() {
+         element=$(this).attr("data-value"); 
+     }
+    });
+    $( ".groupFD" ).droppable({
+      classes: {
+        "ui-droppable-active": ".blue",
+        "ui-droppable-hover": "ui-state-hover"
+      },
+      drop: function( event, ui ) {
+        $(this).css("background-color", "rgba(139, 195, 74, 0.14)");
+      //  $( this ).target.append(event.target);
+
+        if(element=="dos"){
+          grupoFD++;
+        }else{
+          otros++;
+        }
+        element.removeClass("pieza");
+      }
+    });
+    $( ".groupGR" ).droppable({
+      classes: {
+        "ui-droppable-active": ".blue",
+        "ui-droppable-hover": "ui-state-hover"
+      },
+      drop: function( event, ui ) {
+        $(this).css("background-color", "rgba(139, 195, 74, 0.14)");
+      //  $( this ).target.append(event.target);
+
+        if(element=="cuatro"){
+          grupoGR++;
+        }else{
+          otros++;
+        }
+        element.removeClass("pieza");
+      }
+    });
+    console.log(grupoFD, grupoGR);
+    // Formulario - Registrados
+
+    function result_tipo_2_0_16() {
+        var min = $('#Minutos').text();
+        var seg = $('#Segundos').text();
+        var milseg = $('#Centesimas').text();
+        var tiempo = min + ":" + seg + ":" + milseg;
+
+        if (grupoFD == 1 && grupoGR == 1 && otros == 0) {
+
+            console.log(grupoFD, grupoGR);
+            localStorage.setItem("Nota2-0-16", "2");
+            localStorage.setItem("Time2-0-16", tiempo);
+            correcto();
+
+        }
+
+        else {
+          console.log(grupoFD, grupoGR);
+            incorrecto();
+            localStorage.setItem("Nota2-0-16", "0");
+            localStorage.setItem("Time2-0-16", tiempo);
+
+        }
+    }
+
+    var cols = document.querySelectorAll('.aleatorio');
+
+    [].forEach.call(cols, (e)=>{
+
+        for (var i = e.children.length; i >= 0; i--) {
+            e.appendChild(e.children[Math.random() * i | 0]);
+        }
+
+    });
+
+</script>

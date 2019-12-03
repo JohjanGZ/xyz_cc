@@ -2,7 +2,7 @@
 
 <style>
   .imgvf {
-    background-image: url(img/1-7/conjunto.gif);
+    background-image: url(img/1-5/conjunto.png);
     background-size: 600px 280px;
     width: 600px;
     height: 280px;
@@ -38,9 +38,10 @@
   }
 
   .seleccion {
+    top: 45px;
     position: relative;
     margin: 0 auto !important;
-    max-width: 1300px;
+    max-width: 1200px;
   }
 
   .imgvfi {
@@ -115,29 +116,28 @@
   @media (max-width: 1200px) {
 
     .seleccion {
-      top: 0px;
-      margin-left: 100px;
+      top: 30px;
       position: relative;
-      width: 53%!important;
     }
-    .imgvf {
-      margin-left: 70px!important;
+    .imgvf{
+      margin-left: 80px;
     }
   }
 
   @media (max-width: 1300px) {
 
     .imgvf {
+
       background-size: 100%;
       width: 389px;
-      height: 202px;
+      height: 172px;
       margin: 0 auto -45px;
-      margin-left: 50px;
       background-repeat: no-repeat;
     }
 
     .seleccion {
-      width: 800px;
+
+      width: 1027px;
     }
   }
 
@@ -150,7 +150,7 @@
     }
 
     .seleccion {
-      width: 807px;
+      width: 1027px;
       margin: 0 27px;
     }
 
@@ -171,7 +171,7 @@
   @media (max-height:720px) {
     .seleccion {
       transform: translate(21vw, -37vh);
-      top: 20px;
+      top: 40px;
       position: relative;
       width: 53%;
     }
@@ -224,15 +224,6 @@
       font-size: 1.2rem;
     }
 
-    @media (max-height: 555px) {
-    .seleccion {
-      transform: translate(21vw, -37vh);
-      top: 40px;
-      position: relative;
-      width: 53%;
-    }
-  }
-    
   }
 </style>
 <script>
@@ -255,12 +246,12 @@
       <div class=" row aleatorio">
         <div class="col s4 ">
           <div class="item1">
-            <img class="imgvfi" src="img/1-7/mariposa.gif">
+            <img class="imgvfi" src="img/1-5/avioneta.png">
           </div>
           <div class="item2">
 
             <span style="color:red;">∈ </span>
-            <span class="Alabel">A</span>
+            <span class="Alabel">F</span>
 
           </div>
           <div class="item3">
@@ -268,7 +259,7 @@
             <div class="switch">
               <label>
                 F
-                <input name="mariposa" type="checkbox">
+                <input name="avioneta" type="checkbox">
                 <span class="lever"></span>
                 V
               </label>
@@ -279,13 +270,13 @@
         <div class="col s4 ">
 
           <div class="item1">
-            <img class="imgvfi" src="img/1-7/hanster.png">
+            <img class="imgvfi" src="img/1-5/taxi.png">
           </div>
 
           <div class="item2">
 
             <span style="color:red;">∈</span>
-            <span class="Alabel">A</span>
+            <span class="Alabel">F</span>
 
           </div>
           <div class="item3">
@@ -293,7 +284,7 @@
             <div class="switch">
               <label>
                 F
-                <input name="hanster" type="checkbox">
+                <input name="taxi" type="checkbox">
                 <span class="lever"></span>
                 V
               </label>
@@ -304,13 +295,13 @@
         <div class="col s4 ">
 
           <div class="item1">
-            <img class="imgvfi" src="img/1-7/leon.gif">
+            <img class="imgvfi" src="img/1-5/helicoptero.png">
           </div>
 
           <div class="item2">
 
             <span style="color:red;">∈ </span>
-            <span class="Alabel">A</span>
+            <span class="Alabel">F</span>
 
           </div>
           <div class="item3">
@@ -318,7 +309,7 @@
             <div class="switch">
               <label>
                 F
-                <input name="leon" type="checkbox">
+                <input name="helicoptero" type="checkbox">
                 <span class="lever"></span>
                 V
               </label>
@@ -333,13 +324,13 @@
         <div class="col s4 ">
 
           <div class="item1">
-            <img class="imgvfi" src="img/1-7/pulpo.gif">
+            <img class="imgvfi" src="img/1-5/carro-policia.png">
           </div>
 
           <div class="item2">
 
             <span style="color:red;">∈ </span>
-            <span class="Alabel">A</span>
+            <span class="Alabel">F</span>
 
           </div>
           <div class="item3">
@@ -347,7 +338,7 @@
             <div class="switch">
               <label>
                 F
-                <input name="pulpo" type="checkbox">
+                <input name="policia" type="checkbox">
                 <span class="lever"></span>
                 V
               </label>
@@ -358,13 +349,13 @@
         <div class="col s4 ">
 
           <div class="item1">
-            <img class="imgvfi" src="img/1-7/vaca.gif">
+            <img class="imgvfi" src="img/1-5/camion.png">
           </div>
 
           <div class="item2">
 
             <span style="color:red;">∉</span>
-            <span class="Alabel">A</span>
+            <span class="Alabel">F</span>
 
           </div>
           <div class="item3">
@@ -372,7 +363,7 @@
             <div class="switch">
               <label>
                 F
-                <input name="vaca" type="checkbox">
+                <input name="camion" type="checkbox">
                 <span class="lever"></span>
                 V
               </label>
@@ -383,13 +374,13 @@
         <div class="col s4 ">
 
           <div class="item1">
-            <img class="imgvfi" src="img/1-7/gato.gif">
+            <img class="imgvfi" src="img/1-5/globo.png">
           </div>
 
           <div class="item2">
 
             <span style="color:red;">∈ </span>
-            <span class="Alabel">A</span>
+            <span class="Alabel">F</span>
 
           </div>
           <div class="item3">
@@ -397,87 +388,7 @@
             <div class="switch">
               <label>
                 F
-                <input name="gato" type="checkbox">
-                <span class="lever"></span>
-                V
-              </label>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <!--////////////////////////////////////////////////////////////////FILA///////////////////////////////////////////////////////////////////////  -->
-
-      <div class="row aleatorio">
-        <div class="col s4 ">
-
-          <div class="item1">
-            <img class="imgvfi" src="img/1-7/perro.gif">
-          </div>
-
-          <div class="item2">
-
-            <span style="color:red;">∈ </span>
-            <span class="Alabel">A</span>
-
-          </div>
-          <div class="item3">
-            <!-- Switch -->
-            <div class="switch">
-              <label>
-                F
-                <input name="perro" type="checkbox">
-                <span class="lever"></span>
-                V
-              </label>
-            </div>
-          </div>
-
-        </div>
-        <div class="col s4 ">
-
-          <div class="item1">
-            <img class="imgvfi" src="img/1-7/caracol.gif">
-          </div>
-
-          <div class="item2">
-
-            <span style="color:red;">∈ </span>
-            <span class="Alabel">A</span>
-
-          </div>
-          <div class="item3">
-            <!-- Switch -->
-            <div class="switch">
-              <label>
-                F
-                <input name="caracol" type="checkbox">
-                <span class="lever"></span>
-                V
-              </label>
-            </div>
-          </div>
-
-        </div>
-        <div class="col s4 ">
-
-          <div class="item1">
-            <img class="imgvfi" src="img/1-7/cisne.gif">
-          </div>
-
-          <div class="item2">
-
-            <span style="color:red;">∈ </span>
-            <span class="Alabel">A</span>
-
-          </div>
-          <div class="item3">
-            <!-- Switch -->
-            <div class="switch">
-              <label>
-                F
-                <input name="cisne" type="checkbox">
+                <input name="globo" type="checkbox">
                 <span class="lever"></span>
                 V
               </label>
@@ -493,13 +404,13 @@
         <div class="col s4 ">
 
           <div class="item1">
-            <img class="imgvfi" src="img/1-7/mono.gif">
+            <img class="imgvfi" src="img/1-5/bus.png">
           </div>
 
           <div class="item2">
 
-            <span style="color:red;">∉</span>
-            <span class="Alabel">A</span>
+            <span style="color:red;">∈ </span>
+            <span class="Alabel">F</span>
 
           </div>
           <div class="item3">
@@ -507,7 +418,7 @@
             <div class="switch">
               <label>
                 F
-                <input name="mono" type="checkbox">
+                <input name="bus" type="checkbox">
                 <span class="lever"></span>
                 V
               </label>
@@ -518,13 +429,13 @@
         <div class="col s4 ">
 
           <div class="item1">
-            <img class="imgvfi" src="img/1-7/gato.gif">
+            <img class="imgvfi" src="img/1-5/avioneta.png">
           </div>
 
           <div class="item2">
 
-            <span style="color:red;">∉</span>
-            <span class="Alabel">A</span>
+            <span style="color:red;">∉ </span>
+            <span class="Alabel">F</span>
 
           </div>
           <div class="item3">
@@ -532,7 +443,7 @@
             <div class="switch">
               <label>
                 F
-                <input name="gato2" type="checkbox">
+                <input name="avionetaDos" type="checkbox">
                 <span class="lever"></span>
                 V
               </label>
@@ -543,13 +454,93 @@
         <div class="col s4 ">
 
           <div class="item1">
-            <img class="imgvfi" src="img/1-7/vaca.gif">
+            <img class="imgvfi" src="img/1-5/taxi.png">
+          </div>
+
+          <div class="item2">
+
+            <span style="color:red;">∉</span>
+            <span class="Alabel">F</span>
+
+          </div>
+          <div class="item3">
+            <!-- Switch -->
+            <div class="switch">
+              <label>
+                F
+                <input name="taxiDos" type="checkbox">
+                <span class="lever"></span>
+                V
+              </label>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!--////////////////////////////////////////////////////////////////FILA///////////////////////////////////////////////////////////////////////  -->
+
+      <div class="row aleatorio">
+        <div class="col s4 ">
+
+          <div class="item1">
+            <img class="imgvfi" src="img/1-5/carro-policia.png">
+          </div>
+
+          <div class="item2">
+
+            <span style="color:red;">∉</span>
+            <span class="Alabel">F</span>
+
+          </div>
+          <div class="item3">
+            <!-- Switch -->
+            <div class="switch">
+              <label>
+                F
+                <input name="polciaDos" type="checkbox">
+                <span class="lever"></span>
+                V
+              </label>
+            </div>
+          </div>
+
+        </div>
+        <div class="col s4 ">
+
+          <div class="item1">
+            <img class="imgvfi" src="img/1-5/globo.png">
+          </div>
+
+          <div class="item2">
+
+            <span style="color:red;">∉</span>
+            <span class="Alabel">F</span>
+
+          </div>
+          <div class="item3">
+            <!-- Switch -->
+            <div class="switch">
+              <label>
+                F
+                <input name="globoDos" type="checkbox">
+                <span class="lever"></span>
+                V
+              </label>
+            </div>
+          </div>
+
+        </div>
+        <div class="col s4 ">
+
+          <div class="item1">
+            <img class="imgvfi" src="img/1-5/camion.png">
           </div>
 
           <div class="item2">
 
             <span style="color:red;">∈</span>
-            <span class="Alabel">A</span>
+            <span class="Alabel">F</span>
 
           </div>
           <div class="item3">
@@ -557,8 +548,8 @@
             <div class="switch">
               <label>
                 <span class="trn" data-trn-key="f">F</span>
-                <input name="vaca2" type="checkbox">
-                <span value="vaca2" class="lever"></span>
+                <input name="camionDos" type="checkbox">
+                <span value="camionDos" class="lever"></span>
                 <span class="trn" data-trn-key="v">V</span>
               </label>
             </div>
@@ -567,11 +558,13 @@
         </div>
       </div>
     </form>
+
+
     <div id="modal1" class="modal">
       <div class="modal-content">
         <h4>Respuesta correcta</h4>
         <center>
-          <img class="materialboxed" width="100%" src="img/1-7/respuesta.png">
+          <img class="materialboxed" width="100%" src="img/1-5/respuesta.png">
         </center>
       </div>
       <div class="modal-footer">
@@ -584,7 +577,7 @@
 <?php require('../../../tools/botones/botones.php'); ?>
 <script>$("#next").attr("onclick", "<?=$next?>");</script>
 <script type="text/javascript">
-  function result_tipo_2_0_7() {
+  function result_tipo_2_0_6() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
@@ -592,44 +585,45 @@
 
     if (
 
-      $('input:checkbox[name=mariposa]:checked').val() == null
+      $('input:checkbox[name=avioneta]:checked').val() == "on"
 
       &&
-      $('input:checkbox[name=pulpo]:checked').val() == null
+      $('input:checkbox[name=taxi]:checked').val() == null
       &&
-      $('input:checkbox[name=mono]:checked').val() == null
+      $('input:checkbox[name=helicoptero]:checked').val() == null
       &&
-      $('input:checkbox[name=vaca]:checked').val() == null
+      $('input:checkbox[name=policia]:checked').val() == "on"
       &&
-      $('input:checkbox[name=caracol]:checked').val() == null
+      $('input:checkbox[name=camion]:checked').val() == null
       &&
-      $('input:checkbox[name=gato2]:checked').val() == null
+      $('input:checkbox[name=globo]:checked').val() == "on"
       &&
-      $('input:checkbox[name=cisne]:checked').val() == null
+      $('input:checkbox[name=bus]:checked').val() == "on"
       &&
-      $('input:checkbox[name=gato]:checked').val() == "on"
+      $('input:checkbox[name=avionetaDos]:checked').val() == null
       &&
-      $('input:checkbox[name=perro]:checked').val() == "on"
+      $('input:checkbox[name=taxiDos]:checked').val() == "on"
       &&
-      $('input:checkbox[name=leon]:checked').val() == "on"
+      $('input:checkbox[name=policiaDos]:checked').val() == null
       &&
-      $('input:checkbox[name=vaca2]:checked').val() == "on"
+      $('input:checkbox[name=globoDos]:checked').val() == null
       &&
-      $('input:checkbox[name=hanster]:checked').val() == "on"
+      $('input:checkbox[name=camionDos]:checked').val() == "on"
 
     ) {
-      localStorage.setItem("Nota2-0-7", "2");
-      localStorage.setItem("Time2-0-7", tiempo);
+      localStorage.setItem("Nota2-0-6", "2");
+      localStorage.setItem("Time2-0-6", tiempo);
       correcto();
     }
     else {
       incorrecto();
-      localStorage.setItem("Nota2-0-7", "0");
-      localStorage.setItem("Time2-0-7", tiempo);
+      localStorage.setItem("Nota2-0-6", "0");
+      localStorage.setItem("Time2-0-6", tiempo);
     }
   }
 
-  var cols = document.querySelectorAll('.aleatorio');
+
+    var cols = document.querySelectorAll('.aleatorio');
 
     [].forEach.call(cols, (e)=>{
 

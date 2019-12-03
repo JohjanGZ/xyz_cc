@@ -1,69 +1,34 @@
-let element;
-    let conLetraT = 0;
-    let conLetraK = 0;
+var lb = document.querySelector('.opciones');
+for (var n = lb.children.length; n >= 0; n--) {
+    lb.appendChild(lb.children[Math.random() * n | 0]);
+}
+var la = document.querySelector('.grid-container');
+for (var i = la.children.length; i >= 0; i--) {
+    la.appendChild(la.children[Math.random() * i | 0]);
+}
 
-        $(".palabra").draggable({
-            start: function() {
-                element=$(this).attr("id");
+var r = 0 ;
 
-            }
-        });
+$(".pieza").draggable({
+    start: function() {
+        element = $(this).attr("alt");
+        elementExtra = $(this).attr("data");
+        elementid = $(this);
+        // console.log(elementid);
+    }
+});
 
-        $(".letraT").droppable({
-        classes: {
-            "ui-droppable-hover": "ui-state-hover"
-        },
-        drop: function( event, ui ) {
-            $(this).css("border", "#333");
-        //$( this ).target.append(event.target);
-
-        if(element=="transporte"){
-            conLetraT++
-        }
-            element.removeClass("pieza");
-        }
-
-    });
-
-    $(".letraK").droppable({
-        classes: {
-            "ui-droppable-hover": "ui-state-hover"
-        },
-        drop: function( event, ui ) {
-            $(this).css("border", "#333");
-        //$( this ).target.append(event.target);
-
-        if(element=="animal"){
-            conLetraK++
-        }
-            element.removeClass("pieza");
+$(".caja").droppable({
+    drop: function(event, ui) {
+        $(this).css("background-color", "rgba(255,255,255, 0.14)");
+        $(this).css("box-shadow", "none");
+        element2 = $(this).attr("alt");
+        element2Extra = $(this).attr("data");
+        elementid.css("background-color", "transparent");
+        if (element == element2 || element == element2Extra) {
+            r++;
         }
 
-    });
-        
-
-
-    // Formulario - Registrados
-
-    function result_tipo_2_0_4(){
-        var  min= $('#Minutos').text();
-        var  seg= $('#Segundos').text();
-        var  milseg= $('#Centesimas').text();
-        var tiempo=min+":"+seg+":"+milseg;
-
-            if( conLetraT == 3 && conLetraK == 4 ){
-                
-                localStorage.setItem("Nota2-0-4","2");
-                localStorage.setItem("Time2-0-4", tiempo);
-                correcto(); 
-
-            }
-
-            else {
-
-                incorrecto();
-                localStorage.setItem("Nota2-0-4","0");
-                localStorage.setItem("Time2-0-4", tiempo);
-                
-            }    
-    } 
+        element.removeClass("pieza");
+    }
+});

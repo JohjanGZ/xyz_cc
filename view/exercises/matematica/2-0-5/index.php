@@ -120,7 +120,7 @@
 
     // Formulario - Registrados
 
-    function result_tipo_2_0_6() {
+    function result_tipo_2_0_5() {
         var min = $('#Minutos').text();
         var seg = $('#Segundos').text();
         var milseg = $('#Centesimas').text();
@@ -128,8 +128,8 @@
 
         if (conLetraT == 3 && conLetraK == 4) {
 
-            localStorage.setItem("Nota2-0-6", "2");
-            localStorage.setItem("Time2-0-6", tiempo);
+            localStorage.setItem("Nota2-0-5", "2");
+            localStorage.setItem("Time2-0-5", tiempo);
             correcto();
 
         }
@@ -137,8 +137,8 @@
         else {
 
             incorrecto();
-            localStorage.setItem("Nota2-0-6", "0");
-            localStorage.setItem("Time2-0-6", tiempo);
+            localStorage.setItem("Nota2-0-5", "0");
+            localStorage.setItem("Time2-0-5", tiempo);
 
         }
     }

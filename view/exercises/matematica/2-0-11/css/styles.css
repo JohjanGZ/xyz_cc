@@ -1,67 +1,72 @@
 .container-two {
   padding-top: 4vh;
   margin: 0 auto;
-  max-width: 1100px;
+  max-width: 1o00px;
   width: 90%;
 }
 .cajas {
-  height: auto;
+  height: 100px;
   display: grid;
   align-items: center;
 }
-.caja{
-  height: auto;
-}
-.imagenPrincipal img{
-  width: 100%;
-  height: auto;
-}
-.filaUno{
-  display: grid;
-  grid-template-columns: 1fr 10fr 1fr;
-  align-items: center;
-  text-align: center;
-}
-.filaDos{
-  display: grid;
-  grid-template-columns: .3fr 1fr .4fr 1fr .4fr 1fr;
-  align-items: center;
-  text-align: center;
-}
-.filaTres{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  align-items: center;
-  justify-items: center;
-  width: 100%;
-  text-align: center;
-  height: 10px;
-  font-size: 18px;
-  font-weight: 600;
-}
-.letStyle{
+.cajas h4 {
+  margin: 0;
   font-size: 24px;
-  color: #4527a0;
-  font-weight: bold;
+  text-align: center;
 }
-.row{
-  margin-bottom: 0;
+.checkboxMa {
+  margin-top: 30px;
+}
+.checkboxMa label {
+  margin: 0px 10px;
+}
+.row {
+  border: 1px solid #333 !important;
+  margin: 20px !important;
+  border-radius: 10px;
 }
 
-.card-panel{
-  padding: 24px 20px;
-  margin: 10px 4px;
-}
-.filaTres .card-panel{
-  padding: 4px 20px;
-}
-/* @media only screen and (max-height: 600px) {
-  
+@media only screen and (max-height: 600px) {
+  .cajas{
+    height: 60px;
+  }
 }
 
 @media only screen and (max-width: 1300px) {
   center h5{
     font-size: 22px;
   }
-
-} */
+  .container-two {
+    padding-top: 10vh;
+    margin: 0 auto;
+    max-width: 1100px;
+    width: 90%;
+  }
+  .cajas {
+    height: 60px;
+    display: grid;
+    align-items: center;
+  }
+  .cajas h4 {
+    margin: 0;
+    font-size: 20px;
+  }
+  .cajas .checkboxMa {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+  .checkboxMa {
+    height: 100%;
+    margin: auto;
+  }
+  .checkboxMa label {
+    margin: 0px 10px;
+  }
+  .row {
+    border: 1px solid #333 !important;
+    margin: 20px !important;
+    border-radius: 10px;
+  }
+}

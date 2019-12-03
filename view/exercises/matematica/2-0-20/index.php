@@ -5,36 +5,36 @@
     <link rel="stylesheet" type="text/css" href="<?= $dir ?>/css/styles.css">
 </head>
 <style>
-  #boxCheck{
-    text-align: center;
-    padding-bottom: 10px;
-  }
-  #boxCheck h6{
-    font-weight: bold;
-  }
-  #boxCheck h6 .blueColor{
-    color: blue;
-  }
-  .infoContainer{
-    border: 1px solid #333;
-    padding: 10px 80px;
-    border-radius: 10px;
-    margin: 0px 10px;
-  }
-  .conjuntosOpciones{
-    display: grid;
-    grid-template-columns: 2fr 2fr 2fr;
-    justify-items: center;
-    align-items: center;
-  }
-  .conjuntosOpciones p{
-    background: #ffd54f ;
-    padding: 8px 20px;
-    text-align: center;
-    border-radius: 10px;
-    font-size: 20px;
-    font-weight: bold;
-  }
+
+    .boxInfo{
+        padding: 10px 150px;
+        margin: 10px;
+        border-radius: 20px;
+        border: 2px solid #ffd54f;
+        box-shadow: 1px 2px 1px #ffd64f44;
+    }
+    .llaveRoja{
+        color: #dd2c00;
+        font-weight: bold;
+    }
+    .contentObjt{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        justify-items: center;
+    }
+    .contentObjt .objeto{
+        background: #f9a825;
+        padding: 4px 20px;
+        border-radius: 20px;
+        color: #fff;
+        font-size:18px;
+    }
+    .conjuntoPrin{
+        border-radius: 24px;
+        background: #7e57c2 ; 
+        color: #fff;
+        margin: 10px;
+    }
     @media only screen and (max-width: 1200px){
         .container-two {
             padding-top: 10vh;
@@ -42,25 +42,6 @@
             max-width: 1100px;
             width: 81%;
         }
-    }
-    @media screen and (max-width: 1300px){
-      #boxCheck h6 {
-        font-size: 14px;
-      }
-      .infoContainer{
-        border: 1px solid #333;
-        padding: 6px 60px;
-        border-radius: 10px;
-        margin: 0px 10px;
-      }
-      .conjuntosOpciones p{
-        background: #ffd54f ;
-        padding: 4px 12px;
-        text-align: center;
-        border-radius: 10px;
-        font-size: 18px;
-        font-weight: bold;
-      }
     }
     @media only screen and (max-width: 1100px){
         .container-two {
@@ -74,26 +55,28 @@
 <?=$titulo?>
 <div class="container-two">
     <div class="row boxCheck" id="boxCheck">
-        <div class=" col s12">
-            <h6>• <span class="blueColor">A = {</span> rectángulos azules pequeños <span class="blueColor">}</span> <span class="spaceStyle"> </span> • <span class="blueColor">B = { </span>círculos verdes grandes y pequeños <span class="blueColor">}</span>  <span class="spaceStyle"> </span>  • <span class="blueColor">C = { </span>cuadrado, círculo, triángulo de color rojo <span class="blueColor">}</span></h6>
+        <div class="col s1"></div>
+        <div class="cajas conjuntoPrin col s5">
+            <h4>• A = <span class="llaveRoja">{</span>pera, uva, plátano, manzana<span class="llaveRoja">}</span></h4>
         </div>
+        <div class="cajas conjuntoPrin col s5">
+            <h4>• B = <span class="llaveRoja">{</span>manzana, sandía, piña, pera<span class="llaveRoja">}</span></h4>
+        </div>
+        <div class="col s1"></div>
     </div>
-    <div class="row boxCheck">
+    <div class="row boxCheck white">
         <div class="cajas col s12">
-            <h4>• ​En el conjunto A,  <span class="infoContainer todos"> </span> los elementos tienen el mismo color.</h4>
-        </div>
-        <div class="cajas col s12">
-            <h4>• ​En el conjunto B, <span class="infoContainer tamanio"> </span> elementos son del mismo tamaño. </h4>
-        </div>
-        <div class="cajas col s12">
-            <h4>• ​En el conjunto C, <span class="infoContainer forma"> </span> de los elementos tiene la misma forma.</h4>
+            <h4>A ∩ B = <span class="llaveRoja">{</span> <span class="boxInfo"> </span> <span class="llaveRoja">}</span></h4>
         </div>
     </div>
     <div class="row boxCheck white">
-        <div class="col s12 conjuntosOpciones aleatorio">
-            <p class="obj" data-value="uno">todos</p>
-            <p class="obj" data-value="dos">algunos</p>
-            <p class="obj" data-value="tres">ninguno</p>
+        <div class="cajas contentObjt col s12">
+           <div class="objeto" data-value="pera">pera</div>
+           <div class="objeto" data-value="pera">manzana</div>
+           <div class="objeto" data-value="pera">plátano</div>
+           <div class="objeto" data-value="pera">sandía</div>
+           <div class="objeto" data-value="pera">uva</div>
+           <div class="objeto" data-value="pera">piña</div>
         </div>
     </div>
 </div>
@@ -114,15 +97,16 @@
 <script>$("#next").attr("onclick", "<?=$next?>");</script>
 <script type="text/javascript">
 
-    var todos = 0, tamanio = 0, forma = 0, otros = 0, element;
+    var frutas = 0, otros = 0, element;
 
-    $(".obj").draggable({
+
+    $(".objeto").draggable({
         
-        start: function() {
-         element=$(this).attr("data-value"); 
-     }
-    });
-    $( ".todos" ).droppable({
+         start: function() {
+          element=$(this).attr("data-value"); 
+      }
+   });
+   $( ".boxInfo" ).droppable({
       classes: {
         "ui-droppable-active": ".blue",
         "ui-droppable-hover": "ui-state-hover"
@@ -131,71 +115,38 @@
         $(this).css("background-color", "rgba(139, 195, 74, 0.14)");
       //  $( this ).target.append(event.target);
 
-        if(element=="uno"){
-          todos++;
+        if(element=="pera" || element=="manzana"){
+         frutas++;
         }else{
           otros++;
         }
         element.removeClass("pieza");
       }
     });
-    $( ".tamanio" ).droppable({
-      classes: {
-        "ui-droppable-active": ".blue",
-        "ui-droppable-hover": "ui-state-hover"
-      },
-      drop: function( event, ui ) {
-        $(this).css("background-color", "rgba(139, 195, 74, 0.14)");
-      //  $( this ).target.append(event.target);
 
-        if(element=="dos"){
-          tamanio++;
-        }else{
-          otros++;
-        }
-        element.removeClass("pieza");
-      }
-    });
-    $( ".forma" ).droppable({
-      classes: {
-        "ui-droppable-active": ".blue",
-        "ui-droppable-hover": "ui-state-hover"
-      },
-      drop: function( event, ui ) {
-        $(this).css("background-color", "rgba(139, 195, 74, 0.14)");
-      //  $( this ).target.append(event.target);
-
-        if(element=="tres"){
-          forma++;
-        }else{
-          otros++;
-        }
-        element.removeClass("pieza");
-      }
-    });
-    console.log(forma, tamanio, todos);
+    console.log(frutas, otros);
     // Formulario - Registrados
 
-    function result_tipo_2_0_19() {
+    function result_tipo_2_0_14() {
         var min = $('#Minutos').text();
         var seg = $('#Segundos').text();
         var milseg = $('#Centesimas').text();
         var tiempo = min + ":" + seg + ":" + milseg;
 
-        if (todos == 1 && tamanio == 1 && forma == 1 && otros == 0) {
+        if (frutas == 2 && otros == 0) {
 
-            console.log(grupoJK, grupoKL);
-            localStorage.setItem("Nota2-0-19", "2");
-            localStorage.setItem("Time2-0-19", tiempo);
+            console.log(frutas, otros);
+            localStorage.setItem("Nota2-0-14", "2");
+            localStorage.setItem("Time2-0-14", tiempo);
             correcto();
 
         }
 
         else {
-          console.log(grupoJK, grupoKL);
+            console.log(frutas, otros);
             incorrecto();
-            localStorage.setItem("Nota2-0-19", "0");
-            localStorage.setItem("Time2-0-19", tiempo);
+            localStorage.setItem("Nota2-0-14", "0");
+            localStorage.setItem("Time2-0-14", tiempo);
 
         }
     }
