@@ -146,6 +146,12 @@ console.log(returnedData);
 <!--  Scripts-->
 <script src="js/materialize.min.js"></script>
 <script type="text/javascript">
+function grado(grado){
+$('#cuerpo').load('libros.php', {
+    data: libros,
+    g:grado 
+});
+}
 $('#notaciones').hide();
 $(".notas").on("click", function() {
     var press = $(this).attr("class");
@@ -167,12 +173,8 @@ $(".notas").on("click", function() {
 
     $(this).addClass("on");*/
 });
-function grado(grado){
-$('#cuerpo').load('libros.php', {
-    data: libros,
-    g:grado 
-});
-}
+
+
 
 $('#cuerpo').load('libros.php', {
     data: libros,

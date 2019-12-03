@@ -121,7 +121,7 @@ label{
 						localStorage.setItem("grado", grado);
 						
                         function BackHome() {
-							$('#cuerpo').load('libros.php',{data: libros});
+							$('#cuerpo').load('libros.php',{data: libros,g:'todo'});
 						}
 //$("#list-units").append("<li class='btn-examen pink darken-3'><a class='js-tema' ><center><span class='number'>2</span><span class='title white-text'>Examen</span></center></a></li>");
 

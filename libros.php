@@ -228,6 +228,7 @@ a:hover, a:active, a:focus {
                                         <?='#'.$id?>:hover .capa_color{
                                             background-color: <?=$color?>da;
                                             transition: 0.8s;
+                                            box-shadow: 2px 3px 7px #000000a6;
                                         }
 
                                         <?php
@@ -291,11 +292,13 @@ a:hover, a:active, a:focus {
                                               transition: 0.8s;
                                               z-index: 4;
                                               color: white;
+                                             
                                           }
   
                                           <?='#'.$id?>:hover .capa_color{
                                               background-color: <?=$color?>da;
                                               transition: 0.8s;
+                                              box-shadow: 2px 3px 7px #000000a6;
                                           }
   
                                           <?php
