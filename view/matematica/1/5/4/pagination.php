@@ -1,12 +1,21 @@
 <script type="text/javascript">
-function Page_24() {
-    start_24();
+function Page_17() {
+    start_17();
     inicio();
     count = 3;
 }
-
-function Page_25() {
-    start_25();
+function Page_18() {
+    start_18();
+    inicio();
+    count = 3;
+}
+function Page_19() {
+    start_19();
+    inicio();
+    count = 3;
+}
+function Page_20() {
+    start_20();
     inicio();
     count = 3;
 }
@@ -15,32 +24,54 @@ var cal = cant / cant;
 console.log(cant);
 var ruta = "../../../../exercises/matematica/";
 ////////////// 2do 
-function start_24() {
-    $("#ventana").load(ruta + '1-5-24/index.php', {
-        next: "Page_25()",
-        procesar: "result_tipo_1_5_24()",
-        titulo: "<center><h5><span class='ftitulo'>Observa</span> atentamente el gráfico de barras y luego <span class='ftitulo'>responde</span> las preguntas.</h5></center>", 
-        restaurar: "start_24()",
+function start_17() {
+    $("#ventana").load(ruta + '1-5-17/index.php', {
+        next: "Page_18()",
+        procesar: "result_tipo_1_5_17()",
+        titulo: "<center><h5><span class='ftitulo'>Selecciona</span> los números de tres cifras.</h5></center>", 
+        restaurar: "start_17()",
         dir: ruta,
-        cod: "1-5-24",
+        cod: "1-5-17",
         nota: cal
     });
     return false;
 };
-
-function start_25() {
-    $("#ventana").load(ruta + '1-5-25/index.php', {
+function start_18() {
+    $("#ventana").load(ruta + '1-5-18/index.php', {
+        next: "Page_19()",
+        procesar: "result_tipo_1_5_18()",
+        titulo: "<center><h5><span class='ftitulo'>Selecciona</span> cómo se leen los siguientes números:</h5></center>", 
+        restaurar: "start_18()",
+        dir: ruta,
+        cod: "1-5-18",
+        nota: cal
+    });
+    return false;
+};
+function start_19() {
+    $("#ventana").load(ruta + '1-5-19/index.php', {
+        next: "Page_20()",
+        procesar: "result_tipo_1_5_19()",
+        titulo: "<center><h5><span class='ftitulo'>Selecciona</span> Escribe el número que corresponde a cada representación del ábaco.</h5></center>",  
+        restaurar: "start_19()",
+        dir: ruta,
+        cod: "1-5-19",
+        nota: cal
+    });
+    return false;
+};
+function start_20() {
+    $("#ventana").load(ruta + '1-5-20/index.php', {
         next: "resultado()",
-        procesar: "result_tipo_1_5_25()",
-        titulo: "<center><h5><span class='ftitulo'>Observa</span> atentamente el gráfico de barras y luego <span class='ftitulo'>responde</span> las preguntas.</h5></center>", 
-        restaurar: "start_25()",
+        procesar: "result_tipo_1_5_20()",
+        titulo: "<center><h5><span class='ftitulo'>Selecciona</span> los números formados por:</h5></center>",  
+        restaurar: "start_20()",
         dir: ruta,
-        cod: "1-5-25",
+        cod: "1-5-20",
         nota: cal
     });
     return false;
 };
-
 function resultado() {
     $("#ventana").load('../../../../exercises/resultado/resultado.php');
     return false;
