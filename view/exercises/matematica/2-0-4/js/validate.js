@@ -1,69 +1,67 @@
-let element;
-    let conLetraT = 0;
-    let conLetraK = 0;
+var element;
+var verde = 0;
+var rojo = 0;
 
-        $(".palabra").draggable({
-            start: function() {
-                element=$(this).attr("id");
+$(".opcion").draggable({
+    revert: false,
+    start: function() {
+        element=$(this).attr("id");
 
-            }
-        });
-
-        $(".letraT").droppable({
-        classes: {
-            "ui-droppable-hover": "ui-state-hover"
-        },
-        drop: function( event, ui ) {
-            $(this).css("border", "#333");
-        //$( this ).target.append(event.target);
-
-        if(element=="transporte"){
-            conLetraT++
-        }
-            element.removeClass("pieza");
-        }
-
-    });
-
-    $(".letraK").droppable({
-        classes: {
-            "ui-droppable-hover": "ui-state-hover"
-        },
-        drop: function( event, ui ) {
-            $(this).css("border", "#333");
-        //$( this ).target.append(event.target);
-
-        if(element=="animal"){
-            conLetraK++
-        }
-            element.removeClass("pieza");
-        }
-
-    });
-        
+    }
+});
 
 
-    // Formulario - Registrados
+$(".verde").droppable({
+    classes: {
+        "ui-droppable-hover": "ui-state-hover"
+    },
+    drop: function( event, ui ) {
+        $(this).css("border", "#333");
+    //$( this ).target.append(event.target);
 
-    function result_tipo_2_0_4(){
-        var  min= $('#Minutos').text();
-        var  seg= $('#Segundos').text();
-        var  milseg= $('#Centesimas').text();
-        var tiempo=min+":"+seg+":"+milseg;
+    if(element=="verde"){
+        verde++
+    }
+        element.removeClass("pieza");
+    }
 
-            if( conLetraT == 3 && conLetraK == 4 ){
-                
-                localStorage.setItem("Nota2-0-4","2");
-                localStorage.setItem("Time2-0-4", tiempo);
-                correcto(); 
+});
+$(".rojo").droppable({
+    
+    classes: {
+        "ui-droppable-hover": "ui-state-hover"
+    },
+    drop: function( event, ui ) {
+        $(this).css("border", "#333");
+    //$( this ).target.append(event.target);
 
-            }
+    if(element=="rojo"){
+        rojo++
+    }
+        element.removeClass("pieza");
+    }
 
-            else {
+});
 
-                incorrecto();
-                localStorage.setItem("Nota2-0-4","0");
-                localStorage.setItem("Time2-0-4", tiempo);
-                
-            }    
-    } 
+function result_tipo_2_0_3(){
+    var  min= $('#Minutos').text();
+    var  seg= $('#Segundos').text();
+    var  milseg= $('#Centesimas').text();
+    var tiempo=min+":"+seg+":"+milseg;
+
+          if( verde == 1 && rojo ==1 ){
+             
+             localStorage.setItem("Nota2-0-3","2");
+             localStorage.setItem("Time2-0-3", tiempo);
+              correcto(); 
+
+          }
+
+          else {
+
+              incorrecto();
+              localStorage.setItem("Nota2-0-3","0");
+              localStorage.setItem("Time2-0-3", tiempo);
+             
+          }    
+} 

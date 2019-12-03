@@ -5,94 +5,91 @@
     <link rel="stylesheet" type="text/css" href="<?= $dir ?>/css/styles.css">
 </head>
 <style>
-.imagenesPrincipales{
-    border: 1px solid #333;
-    margin: 0px;
-}
-.classMain {
-    margin-top: 30px;
-}
-#principal{
-    min-height: 40px;
-    min-width: 800px;
-    display: grid;
-    padding: 10px 5px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-}
-.cajas{
-    margin-top: 30px;
-}
-#principal img{
-    width: 120px;
-    height: auto;
-    border-radius: 20px;
-    justify-self: center;
-}
-#principal img{
-    border: 1px solid #ddd;
-    border-radius: 20px;
-    margin: 2px;
-    background: #fff;
-}
-.ui-sortable-handle{
-    background: white; 
-}
-#grupoUnitario, #grupoVacio{
-    min-height: 120px;
-}
-#unitario img, #vacio img{
-    width: 100px;
-}
-.row .col .s6 {
-  min-height: 200px!important;
-}
-
+    @media only screen and (max-width: 1200px){
+        .container-two {
+            padding-top: 10vh;
+            margin: 0 auto;
+            max-width: 1100px;
+            width: 81%;
+        }
+    }
+    @media only screen and (max-width: 1100px){
+        .container-two {
+            padding-top: 10vh;
+            margin: 0 auto;
+            max-width: 1100px;
+            width: 90%;
+        }
+    }
 </style>
 <?=$titulo?>
 <div class="container-two">
-    <div class="row classMain">
-        <div class="col s1"></div>
-        <div class="col s10 card-panel white" >
-            <div id="principal">
-                <img id="unitario" class="objeto" src="img/1-9/a.png" alt="">
-                <img id="vacio" class="objeto" src="img/1-9/b.png" alt="">
-                <img id="unitario" class="objeto" src="img/1-9/c.png" alt="">
-                <img id="unitario" class="objeto" src="img/1-9/d.png" alt="">
-                <img id="vacio"  class="objeto" src="img/1-9/e.png" alt="">
-            </div>
+    <div class="row boxCheck" id="boxCheck">
+        <div class="cajas col s7">
+            <h4>• T = {nombres de mis profesores}</h4>
         </div>
-        <div class="col s1"></div>
-    <div class="col s6 cajas">
-            <div class="row center">
-                <div class="col s1">
-
-                </div>
-                    <div class="col s10 card-panel card-caja" id="prin">
-                        <h4 class="blue-text">Unitario</h4>
-                        <div class="collect collection1 card-panel blue" id="grupoUnitario">
-                            
-                        </div>
-                    </div>
-                <div class="col s1">
-
-                </div>
-                </div>
-            </div>
-        <div class="col s6 cajas">  
-            <div class="row center">
-                <div class="col s1">
-
-                </div>
-                <div class="col s10 card-panel card-caja">
-                    <h4 class="blue-text">Vacio</h4>
-                    <div class="collect collection2 card-panel blue" id="grupoVacio">
-
-                    </div>
-                </div>
-            <div class="col s1">
-
-            </div>
-            </div>
+        <div class="cajas col s5">
+            <p class="checkboxMa aleatorio">
+                <label>
+                    <input type="checkbox" class="filled-in" id="extencionUno" name="group1[]" />
+                    <span>Por extensión</span>
+                </label>
+                <label>
+                    <input type="checkbox" class="filled-in" id="extencionDos" name="group1[]" />
+                    <span>Por comprensión</span>
+                </label>
+            </p>
+        </div>
+    </div>
+    <div class="row boxCheck">
+        <div class="cajas col s7">
+            <h4>• N = {Perú, Ecuador, Colombia, Bolivia, Brasil}</h4>
+        </div>
+        <div class="cajas col s5">
+            <p class="checkboxMa aleatorio">
+                <label>
+                    <input type="checkbox" class="filled-in" id="extencionTres" name="group2[]" />
+                    <span>Por extensión</span>
+                </label>
+                <label>
+                    <input type="checkbox" class="filled-in" id="extencionCuatro" name="group2[]" />
+                    <span>Por comprensión</span>
+                </label>
+            </p>
+        </div>
+    </div>
+    <div class="row boxCheck white">
+        <div class="cajas col s7">
+            <h4>• G = {miembros de la familia}</h4>
+        </div>
+        <div class="cajas col s5">
+            <p class="checkboxMa aleatorio">
+                <label>
+                    <input type="checkbox" class="filled-in" id="extencionCinco" name="group3[]" />
+                    <span>Por extensión</span>
+                </label>
+                <label>
+                    <input type="checkbox" class="filled-in" id="extencionSeis" name="group3[]" />
+                    <span>Por comprensión</span>
+                </label>
+            </p>
+        </div>
+    </div>
+    <div class="row boxCheck white">
+        <div class="cajas col s7">
+            <h4>• P = {perro, gato, conejo, pato}</h4>
+        </div>
+        <div class="cajas col s5">
+            <p class="checkboxMa aleatorio">
+                <label>
+                    <input type="checkbox" class="filled-in" id="extencionSiete" name="group4[]" />
+                    <span>Por extensión</span>
+                </label>
+                <label>
+                    <input type="checkbox" class="filled-in" id="extencionOcho" name="group4[]" />
+                    <span>Por comprensión</span>
+                </label>
+            </p>
         </div>
     </div>
 </div>
@@ -100,7 +97,7 @@
     <div class="modal-content">
         <h4 class="center">Respuesta correcta</h4>
         <center>
-            <img class="materialboxed" width="80%" src="img/1-9/respuesta.png">
+            <img class="materialboxed" width="80%" src="img/1-6/respuesta.png">
         </center>
     </div>
     <div class="modal-footer">
@@ -113,72 +110,53 @@
 <script>$("#next").attr("onclick", "<?=$next?>");</script>
 <script type="text/javascript">
 
-var element;
-var contUnitario209 = 0;
-var contVacio209 = 0;
+    var opc1, opc2, opc3, opc4, opc5, opc6, opc7, opc8;
 
-        $(".objeto").draggable({
-            start: function() {
-                element=$(this).attr("id");
-            }
-        });
+    opc1 = $('#extencionUno').val();
+    opc2 = $('#extencionDos').val();
 
-        $("#grupoUnitario").droppable({
-        classes: {
-            "ui-droppable-hover": "ui-state-hover"
-        },
-        drop: function( event, ui ) {
-            $(this).css("border", "#333");
-        //$( this ).target.append(event.target);
+    opc3 = $('#extencionTres').val();
+    opc4 = $('#extencionCuatro').val();
 
-        if(element=="unitario"){
-            contUnitario209++;
-        }
-            element.removeClass("pieza");
-        }
+    opc5 = $('#extencionCinco').val();
+    opc6 = $('#extencionSeis').val();
 
+    opc7 = $('#extencionSiete').val();
+    opc8 = $('#extencionOcho').val();
+
+    $('input[type="checkbox"]').on('change', function () {
+        $('input[name="' + this.name + '"]').not(this).prop('checked', false);
     });
 
+    console.log(opc2, opc1);
+    // Formulario - Registrados
 
-    $("#grupoVacio").droppable({
-        classes: {
-            "ui-droppable-hover": "ui-state-hover"
-        },
-        drop: function( event, ui ) {
-            $(this).css("border", "#333");
-        //$( this ).target.append(event.target);
-
-        if(element=="vacio"){
-            contVacio209++;
-        }
-            element.removeClass("pieza");
-        }
-
-    });
-
-
-
-
-    function result_tipo_2_0_9() {
+    function result_tipo_2_0_8() {
         var min = $('#Minutos').text();
         var seg = $('#Segundos').text();
         var milseg = $('#Centesimas').text();
         var tiempo = min + ":" + seg + ":" + milseg;
 
-        if ( contVacio209 == 2 && contUnitario209 == 3) {
+        if ($('input:checkbox[id=extencionUno]:checked').val() == null &&
+            $('input:checkbox[id=extencionDos]:checked').val() == "on" &&
+            $('input:checkbox[id=extencionTres]:checked').val() == "on" &&
+            $('input:checkbox[id=extencionCuatro]:checked').val() == null &&
+            $('input:checkbox[id=extencionCinco]:checked').val() == null &&
+            $('input:checkbox[id=extencionSeis]:checked').val() == "on" &&
+            $('input:checkbox[id=extencionSiete]:checked').val() == "on" &&
+            $('input:checkbox[id=extencionOcho]:checked').val() == null) {
 
-            console.log(contVacio209, contUnitario209);
-            localStorage.setItem("Nota2-0-9", "2");
-            localStorage.setItem("Time2-0-9", tiempo);
+            console.log(opc1, opc2, opc3);
+            localStorage.setItem("Nota2-0-8", "2");
+            localStorage.setItem("Time2-0-8", tiempo);
             correcto();
 
         }
 
         else {
-            console.log(contVacio209, contUnitario209);
             incorrecto();
-            localStorage.setItem("Nota2-0-9", "0");
-            localStorage.setItem("Time2-0-9", tiempo);
+            localStorage.setItem("Nota2-0-8", "0");
+            localStorage.setItem("Time2-0-8", tiempo);
 
         }
     }

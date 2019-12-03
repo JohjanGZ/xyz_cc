@@ -3,38 +3,79 @@
     max-width: 1280px;
     width: 90%;
 }
+
+#listA {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.recibidor {
+    display: flex;
+}
+
+.contenedorPieza {
+    height: 180px;
+    width: 180px;
+    border: 3px solid #37D3F7;
+    border-radius: 12px;
+    margin: auto;
+    margin-bottom: 2vh;
+}
+
 .title {
     font-size: 28px;
     color: #37D3F7;
 }
 
-.conjuntos{
-    margin-top: 4%;
-    display: grid;
-}
-.conjuntos img{
-    width: 35vw;
-    height: 42vh;
-    height: auto;
-}
-.conteCajas{
-    width: 80%;
-    text-align: center;
-}
-.cajas{
-    margin-top: 20px;
-    margin: 0px 50px;
-    height: 60px;
-    background-color: rgb(219, 219, 219);
-}
-.opcion{
-    margin:  0px 50px;
-    background-color: rgb(16, 189, 241);
-    border-radius: 20px;
-    height: 50px;
-}
-.opcion h5{
-    font-size: 24px;
-    padding: 10px;
+.box {
+    height: 120px;
+    width: 120px;
+    border: 3px solid silver;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    transition: all .3s;
 }
 
+.box:hover {
+    border: 3px solid #37D3F7;
+    background: #B6ECFF;
+}
+.ui-droppable{
+    border: none!important;
+}
+.box img {
+    width: 90%;
+    height: auto;
+    cursor: pointer;
+    box-shadow: none !important;
+}
+.box img:hover {
+    box-shadow: none !important;
+}
+
+.resultado{
+    width: 200px!important;
+    height: 100px!important;
+    border: none;
+}
+.letras, .letra{
+    height: 60px;
+}
+.letra{
+    display: grid;
+    align-items: center;
+    margin: 10px;
+}
+
+
+@media only screen and (max-width: 1300px) {
+    .imagenPricipal img{
+        padding-top: 30px;
+        width: 600px!important;
+    }
+}
