@@ -1,0 +1,77 @@
+.container-two {
+  padding-top: 2vh;
+  margin: 0 auto;
+  max-width: 1300px;
+  width: 95%;
+}
+.cajas {
+  height: auto;
+  display: grid;
+  align-items: center;
+  border: 1px solid rgb(179, 179, 179);
+  text-align: center;
+}
+tr th, tr td{
+  text-align: center;
+}
+.cajas h4{
+  font-weight: 600;
+  font-size: 40px;
+  color: rgba(65, 65, 65, 0.933);
+}
+.cajas h6 {
+  margin: 0px;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 500;
+}
+.checkboxMa {
+  margin-top: 30px;
+}
+.checkboxMa label {
+  margin: 0px 10px;
+}
+.row {
+  margin: 15px !important;
+  border-radius: 10px;
+}
+.droppable{
+  padding: 10px 40px;
+  margin: 0px 10px;
+  background: rgb(243, 243, 243);
+  border-radius: 10px;
+  border: 1px solid rgb(212, 212, 212);
+}
+
+@media screen and (max-width: 1300px) {
+  center h5{
+    font-size: 20px;
+  }
+  .row{
+    margin: 0px !important;
+  }
+  .cajas{
+    height: auto;
+  }
+  .infoContainer{
+    border: 1px solid #333;
+    padding:  10px 40px;
+    border-radius: 10px;
+    margin: 0px 6px;
+    background: #B6ECFF;
+    border: 1px solid #ccc !important;
+    color: #333;
+  }
+  .conjuntosOpciones{
+    grid-gap: 0px;
+    grid-row: 0px;
+  }
+  .conjuntosOpciones p{
+    background: #eceff1;
+    border: 1px solid #607d8b;
+    padding: 4px 15px;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+  }
+}

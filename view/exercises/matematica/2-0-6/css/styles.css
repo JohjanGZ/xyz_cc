@@ -67,4 +67,11 @@
     margin: 20px !important;
     border-radius: 10px;
   }
+  .infoContainer {
+    border: 1px solid #333;
+    padding: 6px 586px!important;
+    border-radius: 10px;
+    margin: 0px 10px;
+    text-align: center;
+}
 }

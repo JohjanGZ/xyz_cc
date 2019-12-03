@@ -7,7 +7,7 @@
 <style>
     @media only screen and (max-width: 1200px){
         .container-two {
-            padding-top: 10vh;
+            padding-top: 4vh;
             margin: 0 auto;
             max-width: 1100px;
             width: 81%;
@@ -15,7 +15,7 @@
     }
     @media only screen and (max-width: 1100px){
         .container-two {
-            padding-top: 10vh;
+            padding-top: 4vh;
             margin: 0 auto;
             max-width: 1100px;
             width: 90%;
@@ -97,7 +97,7 @@
     <div class="modal-content">
         <h4 class="center">Respuesta correcta</h4>
         <center>
-            <img class="materialboxed" width="80%" src="img/1-6/respuesta.png">
+            <img class="materialboxed" width="80%" src="img/1-11/respuesta11.png">
         </center>
     </div>
     <div class="modal-footer">
@@ -131,7 +131,7 @@
     console.log(opc2, opc1);
     // Formulario - Registrados
 
-    function result_tipo_2_0_9() {
+    function result_tipo_2_0_11() {
         var min = $('#Minutos').text();
         var seg = $('#Segundos').text();
         var milseg = $('#Centesimas').text();
@@ -147,16 +147,16 @@
             $('input:checkbox[id=extencionOcho]:checked').val() == null) {
 
             console.log(opc1, opc2, opc3);
-            localStorage.setItem("Nota2-0-9", "2");
-            localStorage.setItem("Time2-0-9", tiempo);
+            localStorage.setItem("Nota2-0-11", "2");
+            localStorage.setItem("Time2-0-11", tiempo);
             correcto();
 
         }
 
         else {
             incorrecto();
-            localStorage.setItem("Nota2-0-9", "0");
-            localStorage.setItem("Time2-0-9", tiempo);
+            localStorage.setItem("Nota2-0-11", "0");
+            localStorage.setItem("Time2-0-11", tiempo);
 
         }
     }

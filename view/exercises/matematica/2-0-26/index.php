@@ -101,7 +101,7 @@
     <div class="modal-content">
         <h4 class="center">Respuesta correcta</h4>
         <center>
-            <img class="materialboxed" width="80%" src="img/1-6/respuesta.png">
+            <img class="materialboxed" width="80%" src="img/1-26/respuesta.png">
         </center>
     </div>
     <div class="modal-footer">
@@ -176,7 +176,7 @@
     console.log(forma, tamanio, todos);
     // Formulario - Registrados
 
-    function result_tipo_2_0_20() {
+    function result_tipo_2_0_26() {
         var min = $('#Minutos').text();
         var seg = $('#Segundos').text();
         var milseg = $('#Centesimas').text();
@@ -185,8 +185,8 @@
         if (todos == 1 && tamanio == 1 && forma == 1 && otros == 0) {
 
             console.log(grupoJK, grupoKL);
-            localStorage.setItem("Nota2-0-20", "2");
-            localStorage.setItem("Time2-0-20", tiempo);
+            localStorage.setItem("Nota2-0-26", "2");
+            localStorage.setItem("Time2-0-26", tiempo);
             correcto();
 
         }
@@ -194,8 +194,8 @@
         else {
           console.log(grupoJK, grupoKL);
             incorrecto();
-            localStorage.setItem("Nota2-0-20", "0");
-            localStorage.setItem("Time2-0-20", tiempo);
+            localStorage.setItem("Nota2-0-26", "0");
+            localStorage.setItem("Time2-0-26", tiempo);
 
         }
     }

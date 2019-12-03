@@ -1,94 +1,157 @@
- <?php require('../../../tools/var/variables.php'); ?>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+<?php require('../../../tools/var/variables.php'); ?>
 
-     <link rel="stylesheet" type="text/css"  href="responsive/r1-6.css">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="<?= $dir ?>/css/styles.css">
+</head>
+<style type="text/css">
+
+</style>
 <?=$titulo?>
-       <script>
-          var count = 1;  
-      </script>
-  <style type="text/css">
-    .imgvf {
-    background-image: url(img/2-6/a6.gif);
-    background-size: 50vw 40vh;
-    width: 50vw;
-    height: 40vh;
-    margin: 0 auto;
-    background-repeat: no-repeat;
-}
-.item3 a{
-      width: 200px;
-    height: 43px;
-        padding: 5px;
-}
-@media (max-height: 720px){
+<?php $escritura = array('Noventa y tres','Setenta y siete','Setenta y cuatro','Noventa y nueve'); ?>
+<body>
+    <div class="container-two">
+        <div class="grid-container">
+            <div class="grid-item tt"><span></span>Número</div>
+            <div class="grid-item tt"><span></span>Lectura	</div>
+            <div class="grid-item tt"><span></span>C</div>
+            <div class="grid-item tt"><span></span>D</div>
+            <div class="grid-item tt"><span></span>U</div>
+            <div class="grid-item">
+            158
+            </div>
+            <div class="grid-item">
+                <select class="slc" alt="Setenta y cuatro">
+                    <option value="" disabled selected></option>
+                    <?php
+                        for ($i=0; $i < count($escritura); $i++) { 
+                            echo "<option value='$escritura[$i]'>$escritura[$i]</option>";
+                        }
+                    ?>
+                </select>
+            </div>
 
-.imgvf {
+            <div class="grid-item">
+                Cin
+            </div>
+            <div class="grid-item">
+                Cin
+            </div>
+            <div class="grid-item">
+                93
+            </div>
+            <div class="grid-item">
+            562	
+            </div>
+            <div class="grid-item">
+                <select class="slc" alt="Noventa y tres">
+                    <option value="" disabled selected></option>
+                    <?php
+                        for ($i=0; $i < count($escritura); $i++) { 
+                            echo "<option value='$escritura[$i]'>$escritura[$i]</option>";
+                        }
+                    ?>
+                </select>
+            </div>
+            <div class="grid-item">
+                93
+            </div>
+            <div class="grid-item">
+                93
+            </div>
+            <div class="grid-item">
+                93
+            </div>
+            <div class="grid-item">
+            483
+            </div>
+            <div class="grid-item">
+                <select class="slc" alt="Noventa y nueve">
+                    <option value="" disabled selected></option>
+                    <?php
+                        for ($i=0; $i < count($escritura); $i++) { 
+                            echo "<option value='$escritura[$i]'>$escritura[$i]</option>";
+                        }
+                    ?>
+                </select>
+            </div>
+            <div class="grid-item">
+                93
+            </div>
+            <div class="grid-item">
+                93
+            </div>
+            <div class="grid-item">
+                93
+            </div>
+            <div class="grid-item">
+                376
+            </div>
+            <div class="grid-item">
+                <select class="slc" alt="Noventa y nueve">
+                    <option value="" disabled selected></option>
+                    <?php
+                        for ($i=0; $i < count($escritura); $i++) { 
+                            echo "<option value='$escritura[$i]'>$escritura[$i]</option>";
+                        }
+                    ?>
+                </select>
+            </div>
+            <div class="grid-item">
+                <select class="slc" alt="Noventa y nueve">
+                    <option value="" disabled selected></option>
+                    <?php
+                        for ($i=0; $i < count($escritura); $i++) { 
+                            echo "<option value='$escritura[$i]'>$escritura[$i]</option>";
+                        }
+                    ?>
+                </select>
+            </div>
+            <div class="grid-item">
+                93
+            </div>
+            <div class="grid-item">
+                93
+            </div>
+        </div>
+    </div>
+    <!-- Respuesta -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <center>
+                <h4>Respuesta correcta</h4>
+                <img class="materialboxed" width="80%" src="<?= $dir ?>/img/respuesta.png">
+            </center>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Listo!</a>
+        </div>
+    </div>
+</body>
 
-    margin: 0 auto;
 
-}
-.container, .content-wrapper {
-
-    top: 0px;
- 
-}
-}
-
-  </style>
-
-<div class="container" >
-  
-     <div class="imgvf" ></div>
- 
-<form id="form" class="row center seleccion">
-<section id="contenedorPuzzle">
-
-            <div class="row">
-                  <div class="item3">
-                      <a  onclick="result_tipo_2_1_6(1)"  class="btn btn6 " name="escoba" value="">Z ∩ L= {escoba}</a>
-                         /
-                      <a  id="guantes" onclick="result_tipo_2_1_6(0)"  class="btn btn6" name="guantes"  value="">Z ∩ L= {guantes}</a>
-                  </div>                    
-            </div> 
-</section>
-</form>
-
-                                     <div id="modal1" class="modal">
-                                        <div class="modal-content">
-                                          <h4>Respuesta correcta</h4>
-                                          <center>
-                                          <img class="materialboxed"  width="100%" src="img/mate6.png">
-                                          </center>
-                                        </div>
-                                        <div class="modal-footer">
-                                          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Listo!</a>
-                                        </div>
-                                      </div>
- <script src="../../../js/core.js"></script>
-<?php require('../../../tools/botones/botones.php'); ?>
+<script src="../../../../../js/core.js"></script>
+<?php require('../../../tools/botones/botones.php');?><script>
+$("#next").attr("onclick", "<?=$next?>");
+</script>
+<script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
-$(".btn-intentos").html("1");
-function result_tipo_2_1_6(r){
+// Validar
+function result_tipo_1_4_1() {
+    var min = $('#Minutos').text();
+    var seg = $('#Segundos').text();
+    var milseg = $('#Centesimas').text();
+    var tiempo = min + ":" + seg + ":" + milseg;
 
-      var  min= $('#Minutos').text();
-     var  seg= $('#Segundos').text();
-     var  milseg= $('#Centesimas').text();
-     var tiempo=min+":"+seg+":"+milseg;
-
-
-    if (r==1){
-      localStorage.setItem("Nota2-1-6","2");
-      localStorage.setItem("Time2-1-6", tiempo);
-      correcto();
-
+    if (r == 5) {
+        localStorage.setItem("Nota<?=$cod?>", nota);
+        localStorage.setItem("Time<?=$cod?>", tiempo);
+        correcto();
+    } else {
+        incorrecto();
+        localStorage.setItem("Nota<?=$cod?>", "0");
+        localStorage.setItem("Time<?=$cod?>", tiempo);
     }
-    else{
 
-  count=1;
-    incorrecto();
-    localStorage.setItem("Nota2-1-6","0");
-    localStorage.setItem("Time2-1-6", tiempo);
-}
 }
 </script>
- 

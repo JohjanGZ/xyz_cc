@@ -5,7 +5,10 @@
     <link rel="stylesheet" type="text/css" href="<?= $dir ?>/css/styles.css">
 </head>
 <style>
-    @media only screen and (max-width: 1300px){
+    @media screen and (max-width: 1300px){
+        center h5{
+        font-size: 20px;
+    }
         .container-two {
             padding-top: 5vh;
             margin: 0 auto;
@@ -253,23 +256,23 @@ $(".dropCinco").droppable({
 
     // Formulario - Registrados
 
-    function result_tipo_2_0_11() {
+    function result_tipo_2_0_15() {
         var min = $('#Minutos').text();
         var seg = $('#Segundos').text();
         var milseg = $('#Centesimas').text();
         var tiempo = min + ":" + seg + ":" + milseg;
 
         if (grupo1 == 3 && grupo2 == 2 && grupo3 == 1 && grupo4 ==1 && grupo5 == 1 ) {
-            localStorage.setItem("Nota2-0-11", "2");
-            localStorage.setItem("Time2-0-11", tiempo);
+            localStorage.setItem("Nota2-0-15", "2");
+            localStorage.setItem("Time2-0-15", tiempo);
             correcto();
 
         }
 
         else {
             incorrecto();
-            localStorage.setItem("Nota2-0-11", "0");
-            localStorage.setItem("Time2-0-11", tiempo);
+            localStorage.setItem("Nota2-0-15", "0");
+            localStorage.setItem("Time2-0-15", tiempo);
 
         }
     }

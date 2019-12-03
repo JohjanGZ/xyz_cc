@@ -100,7 +100,7 @@
     <div class="modal-content">
         <h4 class="center">Respuesta correcta</h4>
         <center>
-            <img class="materialboxed" width="80%" src="img/1-9/respuesta.png">
+            <img class="materialboxed" width="80%" src="img/1-14/respuesta14.png">
         </center>
     </div>
     <div class="modal-footer">
@@ -159,7 +159,7 @@ var contVacio209 = 0;
 
 
 
-    function result_tipo_2_0_10() {
+    function result_tipo_2_0_14() {
         var min = $('#Minutos').text();
         var seg = $('#Segundos').text();
         var milseg = $('#Centesimas').text();
@@ -168,8 +168,8 @@ var contVacio209 = 0;
         if ( contVacio209 == 2 && contUnitario209 == 3) {
 
             console.log(contVacio209, contUnitario209);
-            localStorage.setItem("Nota2-0-10", "2");
-            localStorage.setItem("Time2-0-10", tiempo);
+            localStorage.setItem("Nota2-0-14", "2");
+            localStorage.setItem("Time2-0-14", tiempo);
             correcto();
 
         }
@@ -177,8 +177,8 @@ var contVacio209 = 0;
         else {
             console.log(contVacio209, contUnitario209);
             incorrecto();
-            localStorage.setItem("Nota2-0-10", "0");
-            localStorage.setItem("Time2-0-10", tiempo);
+            localStorage.setItem("Nota2-0-14", "0");
+            localStorage.setItem("Time2-0-14", tiempo);
 
         }
     }

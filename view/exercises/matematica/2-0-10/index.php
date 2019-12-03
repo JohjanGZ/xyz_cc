@@ -584,7 +584,7 @@
 <?php require('../../../tools/botones/botones.php'); ?>
 <script>$("#next").attr("onclick", "<?=$next?>");</script>
 <script type="text/javascript">
-  function result_tipo_2_0_8() {
+  function result_tipo_2_0_10() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
@@ -618,14 +618,14 @@
       $('input:checkbox[name=hanster]:checked').val() == "on"
 
     ) {
-      localStorage.setItem("Nota2-0-8", "2");
-      localStorage.setItem("Time2-0-8", tiempo);
+      localStorage.setItem("Nota2-0-10", "2");
+      localStorage.setItem("Time2-0-10", tiempo);
       correcto();
     }
     else {
       incorrecto();
-      localStorage.setItem("Nota2-0-8", "0");
-      localStorage.setItem("Time2-0-8", tiempo);
+      localStorage.setItem("Nota2-0-10", "0");
+      localStorage.setItem("Time2-0-10", tiempo);
     }
   }
 
