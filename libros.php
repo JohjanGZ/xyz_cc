@@ -1,6 +1,6 @@
 <style type="text/css">
 .cursos{
-        min-width: 479px;
+        min-git width: 479px;
     margin: 0 auto;
 }
 #Libros li {
@@ -15,7 +15,7 @@
     position:relative;
     margin-top: 18px;
     z-index:2 !important;
-    min-height:87vh;
+    min-height:70vh;
 }
 #caja-menu-grados{
     position: fixed;
