@@ -34,24 +34,18 @@
                                           <a href="#!" class="modal-close waves-effect waves-green btn-flat">Listo!</a>
                                         </div>
                                         </div>
-  <input type="hidden" name="" id="nota" value="0">                                     
-  <script>
-  
-  </script>     
-                                 
+                                        <input type="hidden" name="" id="nota" value="0">                                     
+
 <div id="ventana"></div>
 <?php require ('pagination.php');?>  
  <script src="../../../../../js/materialize.min.js"></script>
 <script type="text/javascript"> 
   $(document).ready(function(){
-  
-
     $('#resolucion').html(window.innerWidth + " x " + window.innerHeight);
   });
   function IniciarCronometro(){
         $("#portada").css("display", "none");
-        Page_6();  
-    
+        Page_3(); 
   }
 </script>
 </body>

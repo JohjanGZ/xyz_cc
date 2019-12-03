@@ -56,7 +56,7 @@ $(document).ready(function() {
     var curso = localStorage.getItem("curso");
     var grado = localStorage.getItem("grado");
 
-console.log("curso: "+curso+grado);
+    console.log("curso: "+curso+grado);
     var i = 0;
 
     var count = Object.keys(data).length;
@@ -64,7 +64,7 @@ console.log("curso: "+curso+grado);
 
     for (let index = 0; index < count; index++) {
         $('ul.box-s').append('<li class="menu-item-p unidad-p"><div>' + data[index].nombre +
-            '</div><ul class="ul-right"></ul></li>');
+            '</div><ul class="ul-right ul-item'+index+'"></ul></li>');
     }
 
     $('.unidad-p').each(function() {
@@ -85,9 +85,12 @@ console.log("curso: "+curso+grado);
             });
         }
     });
+
     $("#tool").click(function() {
         $("#cargarPHP").load("../../../../../php/opentool.php")
-});
+    });
+
+
 
     $(".ui-state-active").css("background-color", color + "!important");
     $(".sidenav").css("background-color", color + "!important");
@@ -96,6 +99,25 @@ console.log("curso: "+curso+grado);
     $(".Portada").css("background-color", color + "!important");
 
 
+    // Darle la posición del al Ul 
+    var cont = 0;
+
+    $("ul.ul-right").each(function(){
+        var altura_ul = ($(this).children().length) * 70;
+        var altura_ventana = $(window).height();
+        var altura_total = altura_ul + (cont * 70);
+        
+        if((altura_ventana) < altura_total){
+
+            var excedente = altura_total - altura_ventana;
+
+            $("head").append("<style> ul.ul-right.ul-item"+cont+"{ top:-"+excedente+"px!important; } </style>");
+            // console.log("khe");
+            // $(this).addClass("salio");
+        }
+        cont++;
+
+    });
 
 });
 </script>

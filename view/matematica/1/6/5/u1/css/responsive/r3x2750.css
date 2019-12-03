@@ -1,0 +1,32 @@
+
+
+@media (max-width: 2750px) {
+h5 {
+    font-size: 1.9rem;
+    margin-bottom: -41px;
+    position: fixed;
+    top: 62px;
+    margin-top: 22px;
+    margin: 0 22% 0;
+}
+.imgvf {
+    background-image: url(../../img/2-3/a3.gif);
+    background-size: 350px 150px;
+    width: 350px;
+    height: 140px;
+    margin: 7% auto 0;
+    background-repeat: no-repeat;
+}
+.seleccion {
+    top: 68px;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+.botones {
+    padding: 50px;
+    position: fixed;
+    top: 685px;
+    margin: 0 24% 0;
+}
+}
