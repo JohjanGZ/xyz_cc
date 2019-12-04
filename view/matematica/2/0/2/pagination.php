@@ -174,7 +174,7 @@ function start_1() {
     $("#ventana").load(ruta + '2-1-1/index.php', {
         next: "Page_2()",
         procesar: "result_tipo_2_1_1()",
-        titulo: "<center><h5><span>Observa</span> los cuadros y luego <span>completa</span>.</h5></center>",
+        titulo: "<center><h5><span>Realiza</span> los desplazamientos indicados para que cada animalito llegue a su alimento.</h5></center>",
         restaurar: "start_1()",
         dir: ruta,
         cod: "2-1-1",
@@ -187,7 +187,7 @@ function start_2() {
     $("#ventana").load(ruta + '2-1-2/index.php', {
         next: "Page_3()",
         procesar: "result_tipo_2_1_2()",
-        titulo: "<center><h5><span>Relaciona</span> el número correcto según corresponda.</h5></center>",
+        titulo: "<center><h5><span>Realiza</span> los desplazamientos indicados para que cada animalito llegue a su alimento.</h5></center>",
         restaurar: "start_2()",
         dir: ruta,
         cod: "2-1-2",
@@ -200,7 +200,7 @@ function start_3() {
     $("#ventana").load(ruta + '2-1-3/index.php', {
         next: "Page_4()",
         procesar: "result_tipo_2_1_3()",
-        titulo: "<center><h5><span>Completa</span> el cuadro.</h5></center>",
+        titulo: "<center><h5><span>Selecciona</span> el recorrido que realizó David,mediante las flechas, para llegar a su auto.</h5></center>",
         restaurar: "start_3()",
         dir: ruta,
         cod: "2-1-3",
@@ -213,7 +213,7 @@ function start_4() {
     $("#ventana").load(ruta + '2-1-4/index.php', {
         next: "Page_5()",
         procesar: "result_tipo_2_1_4()",
-        titulo: " <center><h5><span>Escribe</span>, en el rectángulo, el número que corresponde.</h5></center>",
+        titulo: " <center><h5><span>Toma</span> como punto de inicio la estrella y <span>traza</span> el camino según el código de flechas.</h5></center>",
         restaurar: "start_4()",
         dir: ruta,
         cod: "2-1-4",
@@ -226,7 +226,7 @@ function start_5() {
     $("#ventana").load(ruta + '2-1-5/index.php', {
         next: "Page_6()",
         procesar: "result_tipo_2_1_5()",
-        titulo: "<center><h5><span>Completa</span> en el espacio vacío cómo se leen los siguientes números:</h5></center>",
+        titulo: "<center><h5><span>Observa</span> la imagen y <span>selecciona </span> la ubicación de los elementos en la coordenada que les corresponde.</h5></center>",
         restaurar: "start_5()",
         dir: ruta,
         cod: "2-1-5",
@@ -239,7 +239,7 @@ function start_6() {
     $("#ventana").load(ruta + '2-1-6/index.php', {
         next: "Page_7()",
         procesar: "result_tipo_2_1_6()",
-        titulo: "<center><h5><span>Representa</span> simbólicamente los conjuntos teniendo en cuenta las siguientes indicaciones:</h5></center>",
+        titulo: "<center><h5><span>Observa</span> la cuadrícula, <span>arrastra</span> la letra que corresponde a cada coordenada y hallarás una palabra.</h5></center>",
         restaurar: "start_6()",
         dir: ruta,
         cod: "2-1-6",
@@ -249,13 +249,13 @@ function start_6() {
 };
 
 function start_7() {
-    $("#ventana").load(ruta + '2-0-7/index.php', {
+    $("#ventana").load(ruta + '2-1-7/index.php', {
         next: "Page_8()",
-        procesar: "result_tipo_2_0_7()",
+        procesar: "result_tipo_2_1_7()",
         titulo: "<center><h5><span>Representa</span> por extensión los elementos de cada conjunto.</h5></center>",
         restaurar: "start_7()",
         dir: ruta,
-        cod: "2-0-7",
+        cod: "2-1-7",
         nota: cal
     });
     return false;

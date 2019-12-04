@@ -1,43 +1,28 @@
-let element;
-    let conLetraT = 0;
-    let conLetraK = 0;
+// Validar
+var rpts = 0, otros = 0, element, element2;
 
-        $(".palabra").draggable({
-            start: function() {
-                element=$(this).attr("id");
-
-            }
-        });
-
-        $(".letraT").droppable({
-        classes: {
-            "ui-droppable-hover": "ui-state-hover"
-        },
-        drop: function( event, ui ) {
-            $(this).css("border", "#333");
-        //$( this ).target.append(event.target);
-
-        if(element=="transporte"){
-            conLetraT++
-        }
-            element.removeClass("pieza");
-        }
-
-    });
-
-    $(".letraK").droppable({
-        classes: {
-            "ui-droppable-hover": "ui-state-hover"
-        },
-        drop: function( event, ui ) {
-            $(this).css("border", "#333");
-        //$( this ).target.append(event.target);
-
-        if(element=="animal"){
-            conLetraK++
-        }
-            element.removeClass("pieza");
-        }
-
-    });
-        
+$(".obj").draggable({
+    
+    start: function() {
+     element=$(this).attr("data-value"); 
+ }
+});
+$( ".boContainer" ).droppable({
+  classes: {
+    "ui-droppable-active": ".blue",
+    "ui-droppable-hover": "ui-state-hover"
+  },
+  drop: function( event, ui ) {
+    $(this).css("background-color", "rgb(19, 160, 241)");
+  //  $( this ).target.append(event.target);
+      element2=$(this).attr("data-value");
+    if(element==element2){
+      rpts++;
+    }else{
+      otros++;
+    }
+    element.removeClass("pieza");
+  }
+});
+console.log(rpts, otros);
+    // Formulario - Registrados
