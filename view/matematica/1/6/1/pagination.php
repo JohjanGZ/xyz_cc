@@ -19,6 +19,26 @@ function Page_4() {
     inicio();
     count = 3;
 }
+function Page_5() {
+    start_5();
+    inicio();
+    count = 3;
+}
+function Page_6() {
+    start_6();
+    inicio();
+    count = 3;
+}
+function Page_7() {
+    start_7();
+    inicio();
+    count = 3;
+}
+function Page_8() {
+    start_8();
+    inicio();
+    count = 3;
+}
 
 var cant = 18;
 var cal = cant / cant;
@@ -64,9 +84,9 @@ function start_3() {
 };
 function start_4() {
     $("#ventana").load(ruta + '1-6-4/index.php', {
-        next: "resultado()",
+        next: "Page_5()",
         procesar: "result_tipo_1_6_4()",
-        titulo: "<center><h5><span class='ftitulo'>Relaciona</span> cada mes con el orden que le corresponde en el calendario.</h5></center>", 
+        titulo: "<center><h5><span class='ftitulo'>Observa</span> el calendario y <span class='ftitulo'>marca</span> la respuesta correcta.</h5></center>",
         restaurar: "start_4()",
         dir: ruta,
         cod: "1-6-4",
@@ -74,7 +94,54 @@ function start_4() {
     });
     return false;
 };
-
+function start_5() {
+    $("#ventana").load(ruta + '1-6-5/index.php', {
+        next: "Page_6()",
+        procesar: "result_tipo_1_6_5()",
+        titulo: "<center><h5><span class='ftitulo'>Relaciona</span> cada mes con el orden que le corresponde en el calendario.</h5></center>", 
+        restaurar: "start_5()",
+        dir: ruta,
+        cod: "1-6-5",
+        nota: cal
+    });
+    return false;
+};
+function start_6() {
+    $("#ventana").load(ruta + '1-6-6/index.php', {
+        next: "Page_7()",
+        procesar: "result_tipo_1_6_6()",
+        titulo: "<center><h5><span class='ftitulo'>Relaciona</span> cada mes con el orden que le corresponde en el calendario.</h5></center>", 
+        restaurar: "start_6()",
+        dir: ruta,
+        cod: "1-6-6",
+        nota: cal
+    });
+    return false;
+};
+function start_7() {
+    $("#ventana").load(ruta + '1-6-7/index.php', {
+        next: "Page_8()",
+        procesar: "result_tipo_1_6_7()",
+        titulo: "<center><h5><span class='ftitulo'>Seleciona</span> los días en los que asistes al colegio.</h5></center>",  
+        restaurar: "start_7()",
+        dir: ruta,
+        cod: "1-6-7",
+        nota: cal
+    });
+    return false;
+};
+function start_8() {
+    $("#ventana").load(ruta + '1-6-8/index.php', {
+        next: "resultado()",
+        procesar: "result_tipo_1_6_8()",
+        titulo: "<center><h5><span class='ftitulo'>Seleciona</span> la palabra ‘antes’ o ‘después’ según corresponda.</h5></center>",  
+        restaurar: "start_8()",
+        dir: ruta,
+        cod: "1-6-8",
+        nota: cal
+    });
+    return false;
+};
 function resultado() {
     $("#ventana").load('../../../../exercises/resultado/resultado.php');
     return false;
