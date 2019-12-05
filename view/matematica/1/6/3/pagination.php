@@ -22,7 +22,7 @@ var ruta = "../../../../exercises/matematica/";
 ////////////// 2do 
 function start_12() {
     $("#ventana").load(ruta + '1-6-12/index.php', {
-        next: "Page_12()",
+        next: "Page_13()",
         procesar: "result_tipo_1_6_12()",
         titulo: "<center><h5><span class='ftitulo'>Relaciona</span> la hora con lo que señala cada reloj.</h5></center>",
         restaurar: "start_12()",
