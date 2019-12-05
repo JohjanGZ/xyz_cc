@@ -45,7 +45,7 @@
   });
   function IniciarCronometro(){
         $("#portada").css("display", "none");
-                Page_5();  
+        Page_lectura_3_2_1_1();  
     
   }
 </script>
