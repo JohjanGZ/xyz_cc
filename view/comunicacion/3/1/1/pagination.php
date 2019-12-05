@@ -1,11 +1,6 @@
 <script type="text/javascript">
-   function Page_lectura_2_2_1_1(){
-        start_lectura_2_2_1_1();
-        inicio();
-        count = 0;
-    }
-    function Page_lectura_2_2_1_2(){
-        start_lectura_2_2_1_2();
+   function Page_lectura_3_1_1_1(){
+        start_lectura_3_1_1_1();
         inicio();
         count = 0;
     }
@@ -14,53 +9,58 @@
         inicio();
         count = 3;
     }
+   function  Page_2(){
+        start_2();
+        inicio();
+         count = 3;
+    }
 
     var cant=2;
     var cal= 20/20;
     var ruta="../../../../exercises/comunicacion/";
     ////////////// 2do 
             // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
-    function start_lectura_2_2_1_1(){
-        $("#ventana").load(ruta+'lectura2-2-1-1/index.php', 
-        {
-        next: "Page_lectura_2_2_1_2()", 
-        procesar:"lectura2-2-1-1()",
-        titulo:"<center><h5><span class='ftitulo'>Lee</span> atentamente y contesta las preguntas.</h5></center>",
-        restaurar:"start_lectura_2_2_1_1()",
-        dir:ruta,
-        cod: "lectura2-2-1-1",
-        nota:cal
-        }
-        );
-        return false;  
-    };
-    function start_lectura_2_2_1_2(){
-        $("#ventana").load(ruta+'lectura2-2-1-2/index.php', 
+    function start_lectura_3_1_1_1(){
+        $("#ventana").load(ruta+'lectura3-1-1-1/index.php', 
         {
         next: "Page_1()", 
-        procesar:"lectura2-2-1-2()",
+        procesar:"lectura2-1-1-1()",
         titulo:"<center><h5><span class='ftitulo'>Lee</span> atentamente y contesta las preguntas.</h5></center>",
-        restaurar:"start_lectura_2_2_1_2()",
+        restaurar:"start_lectura_3_1_1_1()",
         dir:ruta,
-        cod: "lectura2-2-1-2",
+        cod: "lectura3-1-1-1",
         nota:cal
         }
         );
         return false;  
     };
     function start_1(){
-        $("#ventana").load(ruta+'2-2-1/index.php', 
+        $("#ventana").load(ruta+'3-1-1/index.php', 
         {
-        next: "resultado()", 
-        procesar:"result_tipo_2_2_1()",
-        titulo:"<center><h5><span>Identifica</span> las siguientes palabras en el cuento, luego <span>selecciona</span> y <span>une</span> cada palabra con su respectivo significado.</h5></center>",
+        next: "Page_2()", 
+        procesar:"result_tipo_3_1_1()",
+        titulo:"<center><h5><span>Lee</span> y <span>selecciona</span> la respuesta correcta.</h5></center>",
         restaurar:"start_1()",
         dir:ruta,
-        cod: "2-2-1",
+        cod: "3-1-1",
         nota:cal
         }
         );
         return false;  
+    };
+    function start_2(){
+        $("#ventana").load(ruta+'3-1-2/index.php', 
+        { 
+        next: "resultado()", 
+        procesar:"result_tipo_3_1_2()",
+        titulo:"<center><h5><span>Relaciona</span> las comparaciones que hace el autor acerca de las características físicas del personaje.</h5></center>",
+        restaurar:"start_2()",
+        dir:ruta,
+        cod: "3-1-2",
+        nota:cal
+        }
+        );
+        return false;
     };
     function resultado(){
         $("#ventana").load('../../../../exercises/resultado/resultado.php');
