@@ -10,11 +10,9 @@
 <body>
     <div class="container-two">
         <div class="row">
-            <div class="col s1"></div>
-            <div class="imageContainer col s10">
+            <div class="imageContainer col s12">
                 <img src="img/2-1-1/conjunto.png" alt="">
             </div>
-            <div class="col s1"></div>
         </div>
         <div class="grid-container">
             <div class="columna">

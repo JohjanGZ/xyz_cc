@@ -5,22 +5,27 @@
     <link rel="stylesheet" type="text/css" href="<?= $dir ?>/css/styles.css">
 </head>
 <?=$titulo?>
-<?php $escritura = array('perro','gato','hámster','canario'); ?>
+<?php 
+
+$escritura = array('El avión', 'El auto', '19 niños'); 
+$numeros = array('7','4','2','5', '1');
+
+?>
 <div class="container-two">
-    <div class="row">
-        <div class="col s5">
-            <img src="img/4/grafico.png" class="img materialboxed">
+    <div class="containerPrincipal">
+        <div class="uno">
+            <img src="img/4/grafico.png" class="img">
         </div>
-        <div class="col s7">
+        <div class="dos">
             <div class="grid-container">
                 <div class="grid-item">
                     <div class="pregunta">
                         En <img src="img/4/bus.gif" alt=""> viajan 
-                        <select class="slc" alt="7">
+                        <select class="slc" alt="4">
                             <option value="" disabled selected></option>
                             <?php
-                                for ($i=1; $i < 101; $i++) { 
-                                    echo "<option value='$i'>$i</option>";
+                                for ($i=0; $i < count($numeros); $i++) { 
+                                    echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
                                 }
                             ?>
                         </select>
@@ -33,8 +38,8 @@
                         <select class="slc" alt="7">
                             <option value="" disabled selected></option>
                             <?php
-                                for ($i=1; $i < 101; $i++) { 
-                                    echo "<option value='$i'>$i</option>";
+                                for ($i=0; $i < count($numeros); $i++) { 
+                                    echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
                                 }
                             ?>
                         </select>
@@ -44,11 +49,11 @@
                 <div class="grid-item">
                     <div class="pregunta">
                         En <img src="img/4/tren.gif" alt=""> viajan 
-                        <select class="slc" alt="7">
+                        <select class="slc" alt="2">
                             <option value="" disabled selected></option>
                             <?php
-                                for ($i=1; $i < 101; $i++) { 
-                                    echo "<option value='$i'>$i</option>";
+                                for ($i=0; $i < count($numeros); $i++) { 
+                                    echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
                                 }
                             ?>
                         </select>
@@ -58,11 +63,11 @@
                 <div class="grid-item">
                     <div class="pregunta">
                         En <img src="img/4/taxi.gif" alt=""> viajan 
-                        <select class="slc" alt="7">
+                        <select class="slc" alt="1">
                             <option value="" disabled selected></option>
                             <?php
-                                for ($i=1; $i < 101; $i++) { 
-                                    echo "<option value='$i'>$i</option>";
+                                for ($i=0; $i < count($numeros); $i++) { 
+                                    echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
                                 }
                             ?>
                         </select>
@@ -71,12 +76,12 @@
                 </div>
                 <div class="grid-item">
                     <div class="pregunta">
-                        En <img src="img/4/barco.gif" alt=""> viajan 
-                        <select class="slc" alt="7">
+                        En <img src="img/4/barco.gif" id="barco" alt=""> viajan 
+                        <select class="slc" alt="5">
                             <option value="" disabled selected></option>
                             <?php
-                                for ($i=1; $i < 101; $i++) { 
-                                    echo "<option value='$i'>$i</option>";
+                                for ($i=0; $i < count($numeros); $i++) { 
+                                    echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
                                 }
                             ?>
                         </select>
@@ -84,6 +89,52 @@
                     </div>
                 </div>
                 
+            </div>
+        </div>
+        <div class="tres">
+            <div class="grid-container">
+                <div class="grid-item titulo">
+                    <h6>•​ Responde.</h6>
+                </div>
+                <div class="grid-item">
+                    <div class="pregunta">
+                    ​ •​ ¿Qué medio de transporte utilizaron más?
+                        <select class="slc" alt="avion">
+                            <option value="" disabled selected></option>
+                            <?php
+                                for ($i=0; $i < count($escritura); $i++) { 
+                                    echo "<option value='$escritura[$i]'>$escritura[$i]</option>";
+                                }
+                            ?>
+                        </select>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="pregunta">
+                    •​ ¿Qué medio de transporte utilizaron menos?
+                        <select class="slc" alt="auto">
+                            <option value="" disabled selected></option>
+                            <?php
+                                for ($i=0; $i < count($escritura); $i++) { 
+                                    echo "<option value='$escritura[$i]'>$escritura[$i]</option>";
+                                }
+                            ?>
+                        </select>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="pregunta">
+                        •​ ¿Cuántos niños fueron encuestados? 
+                        <select class="slc" alt="19">
+                            <option value="" disabled selected></option>
+                            <?php
+                                for ($i=0; $i < count($escritura); $i++) { 
+                                    echo "<option value='$escritura[$i]'>$escritura[$i]</option>";
+                                }
+                            ?>
+                        </select>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -108,13 +159,13 @@ $("#next").attr("onclick", "<?=$next?>");
 <script type="text/javascript">
 // Formulario - Registrados
 
-function result_tipo_1_4_24() {
+function result_tipo_2_2_4() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
-    if (r == 5) {
+    if (r == 8) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();
@@ -126,4 +177,3 @@ function result_tipo_1_4_24() {
 
 }
 </script>
-<script type="text/javascript" src="../../../exercises/comunicacion/1-0-9/js/validate.js"></script>
