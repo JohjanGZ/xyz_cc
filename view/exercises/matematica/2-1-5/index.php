@@ -11,22 +11,22 @@
     <div class="container-two">
         <div class="row container-grid">
             <div class="imagenPrincipal">
-                <img id="imagePrincipal" src="img/2-1-5/image.gif" alt="">
+                <img  class="imageContainer" id="imagePrincipal" src="img/2-1-5/image.gif" alt="">
             </div>
             <div class="opcUno">
-                <h5>La resbaladera está en ( <span class="boContainer" data-value="a"> </span> ; <span class="boContainer" data-value="2"></span> )</h5>
+                <h6>La resbaladera está en ( <span class="boContainer" data-value="a"> </span> ; <span class="boContainer" data-value="2"></span> )</h6>
             </div>
             <div class="opcDos">
-                <h5>El auto está en	( <span class="boContainer" data-value="f"> </span> ; <span class="boContainer" data-value="2"></span> )</h5>
+                <h6>El auto está en	( <span class="boContainer" data-value="f"> </span> ; <span class="boContainer" data-value="2"></span> )</h6>
             </div>
             <div class="opcTres">
-                <h5>La casa está en ( <span class="boContainer" data-value="i"> </span> ; <span class="boContainer" data-value="4"></span> )</h5>
+                <h6>La casa está en ( <span class="boContainer" data-value="i"> </span> ; <span class="boContainer" data-value="4"></span> )</h6>
             </div>
             <div class="opcCuatro">
-                <h5>El semáforo está en ( <span class="boContainer" data-value="d"> </span> ; <span class="boContainer" data-value="1"></span> )</h5>
+                <h6>El semáforo está en ( <span class="boContainer" data-value="d"> </span> ; <span class="boContainer" data-value="1"></span> )</h6>
             </div>
             <div class="opcCinco">
-                <h5>La banca está en ( <span class="boContainer" data-value="c"> </span> ; <span class="boContainer" data-value="4"></span> )</h5>
+                <h6>La banca está en ( <span class="boContainer" data-value="c"> </span> ; <span class="boContainer" data-value="4"></span> )</h6>
             </div>
             <div class="opcSeis">
                 <p class="obj" data-value="a">A</p>

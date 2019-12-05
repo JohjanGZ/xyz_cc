@@ -22,7 +22,9 @@
     justify-content: center;
     cursor: pointer;
 }
-
+.imageContainer{
+    height: 100px;
+}
 .img {
     width: auto;
     height: 110px;
@@ -45,4 +47,25 @@
 .row{
     margin: 0px;
     text-align: center;
+}
+@media screen and (max-width: 1300px){
+    center h5{
+        font-size: 20px;
+    }
+    .imageContainer img {
+        height: 100px;
+    }
+    .grid-item {
+        width: 35px;
+        height: 35px;
+    }
+}
+@media screen and (max-height:650px){
+    .imageContainer img {
+        height: 50px;
+    }
+    .grid-item {
+        width: 30px;
+        height: 30px;
+    }
 }

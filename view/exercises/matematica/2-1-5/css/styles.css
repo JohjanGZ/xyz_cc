@@ -17,18 +17,18 @@
 }
 .container-grid{
     display: grid;
-    grid-template-columns: 4fr 8fr;
+    grid-template-columns: 4fr 2fr 8fr;
     row-gap: 20px;
 }
 .imagenPrincipal{
     grid-column: 1/2;
-    grid-row: 1/6;
+    grid-row: 1/5;
 }
 .opcUno, .opcDos, .opcTres, .opcCuatro, .opcCinco{
-    grid-column: 2/3;
+    grid-column: 2/4;
     margin: 10px;
 }
-.container-grid h5{
+.container-grid h6{
     font-size: 24px;
     font-weight: 400;
 }
@@ -39,7 +39,7 @@
     width: 100%;
     justify-items: center;
     align-items: center;
-    grid-column: 1/3;
+    grid-column: 1/8;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
@@ -86,4 +86,74 @@
 }
 .row .col{
     margin: 10px 0px;
+}
+@media screen and (max-width: 1300px){
+    .container-two {
+        margin: 0 auto;
+        max-width: 1280px;
+        width: 80%;
+        padding-top: 6vh;
+    }
+    
+    .grid-item {
+        border: 1px solid silver;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    .container-grid{
+        display: grid;
+        grid-template-columns: 4fr 2fr 8fr;
+        row-gap: 0px;
+    }
+    .imagenPrincipal{
+        grid-column: 1/2;
+        grid-row: 1/5;
+    }
+    .opcUno, .opcDos, .opcTres, .opcCuatro, .opcCinco{
+        grid-column: 2/4;
+        margin: 10px;
+    }
+    .container-two {
+        margin: 0 auto;
+        max-width: 1280px;
+        width: 85%;
+        padding-top: 6vh;
+    }
+    #imagenPrincipal {
+        width: 100px!important;
+    }
+    .container-grid h6{
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+@media screen and (max-width:750px){
+    .container-two {
+        margin: 0 auto;
+        max-width: 1280px;
+        width: 85%;
+        padding-top: 2vh;
+    }
+    #imagenPrincipal {
+        width: 100px!important;
+    }
+    .container-grid h6{
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .grid-item {
+        border: 1px solid silver;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
 }

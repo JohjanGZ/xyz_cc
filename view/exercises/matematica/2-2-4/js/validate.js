@@ -9,6 +9,13 @@ var r = 0;
 $(".slc").change(function() {
     slcalt = $(this).attr("alt");
     slcval = $(this).val();
+    if(slcval == 'El avión'){
+        slcval = 'avion';
+    } else if(slcval == 'El auto'){
+        slcval = 'auto';
+    } else if( slcval == '19 niños'){
+        slcval = '19';
+    }
     console.log(slcalt);
     console.log(slcval);
     if (slcalt == slcval) {
