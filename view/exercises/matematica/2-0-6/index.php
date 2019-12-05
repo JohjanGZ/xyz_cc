@@ -46,19 +46,13 @@
 <?=$titulo?>
 <div class="container-two">
 <div class="row boxCheck">
-        <div class="cajas col s6">
-            <h4>Ambientes de la casa:</h4>
-        </div>
-        <div class="cajas col s6">
-            <h4>• C = <span class="llavesContainer ">{</span> <span class="infoContainer groupCasa"> </span> <span class="llavesContainer ">}</span></h4>
+        <div class="cajas col s12">
+            <h4>Ambientes de la casa: • C = <span class="llavesContainer ">{</span> <span class="infoContainer groupCasa"> </span> <span class="llavesContainer ">}</span></h4>
         </div>
     </div>
     <div class="row boxCheck">
-        <div class="cajas col s6">
-            <h4> Estaciones del año:</h4>
-        </div>
-        <div class="cajas col s6">
-            <h4>• E = <span class="llavesContainer ">{</span> <span class="infoContainer groupEstacion"> </span> <span class="llavesContainer ">}</span></h4>
+        <div class="cajas col s12">
+            <h4>Estaciones del año:  • E = <span class="llavesContainer ">{</span> <span class="infoContainer groupEstacion"> </span> <span class="llavesContainer ">}</span></h4>
         </div>
     </div>
     <div class="row boxCheck white">

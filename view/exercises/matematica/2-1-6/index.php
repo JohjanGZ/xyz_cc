@@ -8,110 +8,66 @@
 
 </style>
 <?=$titulo?>
-<?php $escritura = array('Noventa y tres','Setenta y siete','Setenta y cuatro','Noventa y nueve'); ?>
+<?php $numbers = array('A','V','D','I'); ?>
 <body>
     <div class="container-two">
+        <div class="row">
+            <div class="col s10">
+                <img id="imagePrincipal" src="img/2-1-6/image.png" alt="">
+            </div>
+        </div>
         <div class="grid-container">
-            <div class="grid-item tt"><span></span>Número</div>
-            <div class="grid-item tt"><span></span>Lectura	</div>
-            <div class="grid-item tt"><span></span>C</div>
-            <div class="grid-item tt"><span></span>D</div>
-            <div class="grid-item tt"><span></span>U</div>
             <div class="grid-item">
-            158
-            </div>
-            <div class="grid-item">
-                <select class="slc" alt="Setenta y cuatro">
+                <select class="slc" alt="V">
                     <option value="" disabled selected></option>
                     <?php
-                        for ($i=0; $i < count($escritura); $i++) { 
-                            echo "<option value='$escritura[$i]'>$escritura[$i]</option>";
-                        }
-                    ?>
-                </select>
-            </div>
-
-            <div class="grid-item">
-                Cin
-            </div>
-            <div class="grid-item">
-                Cin
-            </div>
-            <div class="grid-item">
-                93
-            </div>
-            <div class="grid-item">
-            562	
-            </div>
-            <div class="grid-item">
-                <select class="slc" alt="Noventa y tres">
-                    <option value="" disabled selected></option>
-                    <?php
-                        for ($i=0; $i < count($escritura); $i++) { 
-                            echo "<option value='$escritura[$i]'>$escritura[$i]</option>";
+                        for ($i=0; $i < count($numbers); $i++) { 
+                            echo "<option value='$numbers[$i]'>$numbers[$i]</option>";
                         }
                     ?>
                 </select>
             </div>
             <div class="grid-item">
-                93
-            </div>
-            <div class="grid-item">
-                93
-            </div>
-            <div class="grid-item">
-                93
-            </div>
-            <div class="grid-item">
-            483
-            </div>
-            <div class="grid-item">
-                <select class="slc" alt="Noventa y nueve">
+                <select class="slc" alt="I">
                     <option value="" disabled selected></option>
                     <?php
-                        for ($i=0; $i < count($escritura); $i++) { 
-                            echo "<option value='$escritura[$i]'>$escritura[$i]</option>";
+                        for ($i=0; $i < count($numbers); $i++) { 
+                            echo "<option value='$numbers[$i]'>$numbers[$i]</option>";
                         }
                     ?>
                 </select>
             </div>
             <div class="grid-item">
-                93
-            </div>
-            <div class="grid-item">
-                93
-            </div>
-            <div class="grid-item">
-                93
-            </div>
-            <div class="grid-item">
-                376
-            </div>
-            <div class="grid-item">
-                <select class="slc" alt="Noventa y nueve">
+                <select class="slc" alt="D">
                     <option value="" disabled selected></option>
                     <?php
-                        for ($i=0; $i < count($escritura); $i++) { 
-                            echo "<option value='$escritura[$i]'>$escritura[$i]</option>";
+                        for ($i=0; $i < count($numbers); $i++) { 
+                            echo "<option value='$numbers[$i]'>$numbers[$i]</option>";
                         }
                     ?>
                 </select>
             </div>
             <div class="grid-item">
-                <select class="slc" alt="Noventa y nueve">
+                <select class="slc" alt="A">
                     <option value="" disabled selected></option>
                     <?php
-                        for ($i=0; $i < count($escritura); $i++) { 
-                            echo "<option value='$escritura[$i]'>$escritura[$i]</option>";
+                        for ($i=0; $i < count($numbers); $i++) { 
+                            echo "<option value='$numbers[$i]'>$numbers[$i]</option>";
                         }
                     ?>
                 </select>
             </div>
-            <div class="grid-item">
-                93
+            <div class="grid-item one">
+                <h4>(2;3)</h4>
             </div>
-            <div class="grid-item">
-                93
+            <div class="grid-item two">
+                <h4>(3;6)</h4>
+            </div>
+            <div class="grid-item one">
+                <h4>(6;5)</h4>
+            </div>
+            <div class="grid-item two">
+                <h4>(5;2)</h4>
             </div>
         </div>
     </div>
@@ -120,7 +76,7 @@
         <div class="modal-content">
             <center>
                 <h4>Respuesta correcta</h4>
-                <img class="materialboxed" width="80%" src="<?= $dir ?>/img/respuesta.png">
+                <img class="materialboxed" width="80%" src="img/2-1-6/respuesta.png">
             </center>
         </div>
         <div class="modal-footer">
@@ -137,17 +93,19 @@ $("#next").attr("onclick", "<?=$next?>");
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
 // Validar
-function result_tipo_1_4_1() {
+function result_tipo_2_1_6() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
-    if (r == 5) {
+    if (r == 4 && otros == 0) {
+        console.log("otros: ", otros, "y r: ", r);
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();
     } else {
+        console.log("otros: ", otros, "y r: ", r);
         incorrecto();
         localStorage.setItem("Nota<?=$cod?>", "0");
         localStorage.setItem("Time<?=$cod?>", tiempo);

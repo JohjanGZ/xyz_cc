@@ -1,83 +1,71 @@
-.svg{
-    width: 900px;
+.container-two {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 80%;
 }
-.colores img{
-  width: 50px;
-  margin: 2vh;
-  border-radius: 18%;
-}
-#contenedorpuzzle{
-width: 90%;
-margin: 10vh auto;
-}
-.item img{
-  width: 250px ;
-  margin: 3 20px 0;
-  float: left;
-  border:solid transparent;           
-}
-.item img:hover{
-border:solid;
-} 
-.a, .b{
-    display:grid;
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    padding: 10px;
+    justify-content: center;
     justify-items: center;
-    align-items: center;
-}  
-.a h5, .b h5{
-    font-size: 25px;
-    text-align: center;
-    vertical-align: middle;
-    color: #2979ff;
-    font-weight: 600;
-}
-.img-principal{
-  margin: 5vh auto 0;
-}
-.fila1, .fila2, .fila3{
-  margin: 0 auto 2vh;
-  width: 1160px;
-  box-shadow: 0 0 5px #80808061;
-}
-.container, .content-wrapper{
-    margin: 3vh auto 0;
-}
-.fila1 img{
-  width: 20vw;
-  margin:0 auto;
 }
 
-@media (max-width: 1200px){
-  .container, .content-wrapper{
-    margin: 42px auto 0;
-}
-}
-
-#imgIzquierda li, #imgDerecha li{
-    width: 220px;
-    height: 105px;
+.grid-item {
     border: 1px solid silver;
-    position: relative;
-    padding: 5px 32px;
-    float: left;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
-#imgIzquierda li:hover,  #imgDerecha li:hover{
-    background-color: silver;
+.imageContainer{
+    height: 100px;
 }
-
-#imgIzquierda img, #imgDerecha img{
-     width: 100px;
-      max-height: 95px;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      margin: auto;
- 
-
+.img {
+    width: auto;
+    height: 110px;
 }
-.campo{
-  float: left;
+.bn {
+    border: none;
 }
-ul{
-  margin: 0;
+.br {
+    border-right: 0px solid transparent;
+}
+.bl {
+    border-left: 1px solid transparent;
+}
+.mr {
+    margin-right: 4vh;
+}
+.ml {
+    margin-left: 12vh;
+}
+.row{
+    margin: 0px;
+    text-align: center;
+}
+@media screen and (max-width: 1300px){
+    center h5{
+        font-size: 20px;
+    }
+    .imageContainer img {
+        height: 100px;
+    }
+    .grid-item {
+        width: 35px;
+        height: 35px;
+    }
+}
+@media screen and (max-height:650px){
+    .imageContainer img {
+        height: 50px;
+    }
+    .grid-item {
+        width: 30px;
+        height: 30px;
+    }
 }

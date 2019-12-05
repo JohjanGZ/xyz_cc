@@ -32,46 +32,5 @@
 }
 
 @media only screen and (max-width: 1300px) {
-  center h5{
-    font-size: 22px;
-  }
-  .container-two {
-    padding-top: 10vh;
-    margin: 0 auto;
-    max-width: 1100px;
-    width: 90%;
-  }
-  .cajas {
-    height: 60px;
-    display: grid;
-    align-items: center;
-  }
-  .cajas h4 {
-    margin: 0;
-    font-size: 20px;
-  }
-  .cajas .checkboxMa {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    align-items: center;
-  }
-  .checkboxMa {
-    height: 100%;
-    margin: auto;
-  }
-  .checkboxMa label {
-    margin: 0px 10px;
-  }
-  .row {
-    margin: 20px !important;
-    border-radius: 10px;
-  }
-  .infoContainer {
-    border: 1px solid #333;
-    padding: 6px 586px!important;
-    border-radius: 10px;
-    margin: 0px 10px;
-    text-align: center;
-}
+
 }
