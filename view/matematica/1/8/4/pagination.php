@@ -1,9 +1,4 @@
 <script type="text/javascript">
-function Page_16() {
-    start_16();
-    inicio();
-    count = 3;
-}
 function Page_17() {
     start_17();
     inicio();
@@ -29,30 +24,27 @@ function Page_21() {
     inicio();
     count = 3;
 }
+function Page_22() {
+    start_22();
+    inicio();
+    count = 3;
+}
+function Page_23() {
+    start_23();
+    inicio();
+    count = 3;
+}
 var cant = 18;
 var cal = cant / cant;
 console.log(cant);
 var ruta = "../../../../exercises/matematica/";
 ////////////// 2do 
 // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
-function start_16() {
-    $("#ventana").load(ruta + '1-8-16/index.php', {
-        next: "Page_17()",
-        procesar: "result_tipo_1_8_16()",
-        titulo: "<center><h5><span class='ftitulo'>Relaciona</span> las cantidades con el doble de las mismas. </h5></center>", 
-        
-        restaurar: "start_16()",
-        dir: ruta,
-        cod: "1-8-16",
-        nota: cal
-    });
-    return false;
-};
 function start_17() {
     $("#ventana").load(ruta + '1-8-17/index.php', {
         next: "Page_18()",
         procesar: "result_tipo_1_8_17()",
-        titulo: "<center><h5><span class='ftitulo'>Completa</span> la tabla.</h5></center>",
+        titulo: "<center><h5><span class='ftitulo'>Selecciona</span> la fracción mayor en cada caso.</h5></center>",
         restaurar: "start_17()",
         dir: ruta,
         cod: "1-8-17",
@@ -64,7 +56,7 @@ function start_18() {
     $("#ventana").load(ruta + '1-8-18/index.php', {
         next: "Page_19()",
         procesar: "result_tipo_1_8_18()",
-        titulo: "<center><h5><span class='ftitulo'>Relaciona</span> según corresponda.</h5></center>",
+        titulo: "<center><h5><span class='ftitulo'>Selecciona</span> la fracción mayor en cada caso.</h5></center>",
         restaurar: "start_18()",
         dir: ruta,
         cod: "1-8-18",
@@ -76,7 +68,7 @@ function start_19() {
     $("#ventana").load(ruta + '1-8-19/index.php', {
         next: "Page_20()",
         procesar: "result_tipo_1_8_19()",
-        titulo: "<center><h5><span class='ftitulo'>Selecciona</span> la taza cuyo precio es el doble de 12. </h5></center>",
+        titulo: "<center><h5><span class='ftitulo'>Selecciona</span> la fracción menor en cada caso.</h5></center>",
         restaurar: "start_19()",
         dir: ruta,
         cod: "1-8-19",
@@ -88,7 +80,7 @@ function start_20() {
     $("#ventana").load(ruta + '1-8-20/index.php', {
         next: "Page_21()",
         procesar: "result_tipo_1_8_20()",
-        titulo: "<center><h5><span class='ftitulo'>Selecciona</span> el pantalón cuyo precio es el doble de 25.</h5></center>",
+        titulo: "<center><h5><span class='ftitulo'>Selecciona</span> la fracción menor en cada caso.</h5></center>",
         restaurar: "start_20()",
         dir: ruta,
         cod: "1-8-20",
@@ -98,12 +90,36 @@ function start_20() {
 };
 function start_21() {
     $("#ventana").load(ruta + '1-8-21/index.php', {
-        next: "resultado()",
+        next: "Page_22()",
         procesar: "result_tipo_1_8_21()",
-        titulo: "<center><h5><span class='ftitulo'>Selecciona</span> el número que es el doble de la figura que está en la parte superior.</h5></center>",
+        titulo: "<center><h5><span class='ftitulo'>Completa</span> los espacios en blanco utilizando los símbolos >, < o = según corresponda.</h5></center>",
         restaurar: "start_21()",
         dir: ruta,
         cod: "1-8-21",
+        nota: cal
+    });
+    return false;
+};
+function start_22() {
+    $("#ventana").load(ruta + '1-8-22/index.php', {
+        next: "Page_23()",
+        procesar: "result_tipo_1_8_22()",
+        titulo: "<center><h5><span class='ftitulo'>Completa</span> los espacios en blanco utilizando los símbolos >, < o = según corresponda.</h5></center>",
+        restaurar: "start_22()",
+        dir: ruta,
+        cod: "1-8-22",
+        nota: cal
+    });
+    return false;
+};
+function start_23() {
+    $("#ventana").load(ruta + '1-8-23/index.php', {
+        next: "resultado()",
+        procesar: "result_tipo_1_8_23()",
+        titulo: "<center><h5><span class='ftitulo'>Completa</span> los espacios en blanco utilizando los símbolos >, < o = según corresponda.</h5></center>",
+        restaurar: "start_23()",
+        dir: ruta,
+        cod: "1-8-23",
         nota: cal
     });
     return false;
