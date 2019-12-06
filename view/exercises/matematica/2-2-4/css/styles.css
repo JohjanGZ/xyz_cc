@@ -190,6 +190,9 @@
         min-width: 30px;
         width: 40px;
     }
+    center h5{
+        font-size: 20px;
+    }
     .select-wrapper input.select-dropdown {
         border: 1px solid silver;
         width: 40px;
@@ -205,5 +208,13 @@
     }
     .containerPrincipal{
         margin-top: 5vh;
+    }
+}
+@media screen and (max-height: 600px){
+    .uno img{
+        width: 300px;
+    }
+    .containerPrincipal{
+        margin-top: 2vh;
     }
 }

@@ -12,18 +12,18 @@
 <body>
     <div class="container-two">
         <div class="columnaUno">
-            <div class="">
+            <div class="principalImage">
                 <img src="img/3/imagen.gif" alt="">
             </div>
         </div>
         <div class="columnaDos grid-container">
-            <div class="grid-item">
+            <div class="grid-item hd">
                 <h6>Material</h6>
             </div>
-            <div class="grid-item">
+            <div class="grid-item hd">
                 <h6>Conteo</h6>
             </div>
-            <div class="grid-item">
+            <div class="grid-item hd">
                 <h6>Cantidad</h6>
             </div>
             <div class="grid-item">
@@ -114,7 +114,7 @@
         <div class="modal-content">
             <center>
                 <h4>Respuesta correcta</h4>
-                <img class="materialboxed" width="80%" src="img/2-1-3/respuesta.png">
+                <img class="materialboxed" width="80%" src="img/3/respuesta.png">
             </center>
         </div>
         <div class="modal-footer">

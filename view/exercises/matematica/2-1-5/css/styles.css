@@ -87,7 +87,11 @@
 .row .col{
     margin: 10px 0px;
 }
+
 @media screen and (max-width: 1300px){
+    center h5{
+        font-size: 18px!important;
+    }
     .container-two {
         margin: 0 auto;
         max-width: 1280px;
@@ -132,7 +136,7 @@
         font-weight: 400;
     }
 }
-@media screen and (max-width:750px){
+@media screen and (max-height:750px){
     .container-two {
         margin: 0 auto;
         max-width: 1280px;
@@ -155,5 +159,50 @@
         align-items: center;
         justify-content: center;
         cursor: pointer;
+    }
+}
+@media screen and (max-width: 1250px){
+    .container-two {
+        margin: 0 auto;
+        max-width: 1280px;
+        width: 80%;
+        padding-top: 2vh;
+    }
+    
+}
+@media screen and (max-height: 650px){
+    .container-two {
+        margin: 0 auto;
+        max-width: 1280px;
+        width: 85%;
+        padding-top: 2vh;
+    }
+    #imagenPrincipal {
+        width: 100px!important;
+    }
+    .container-grid h6{
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .grid-item {
+        border: 1px solid silver;
+        width: 25px;
+        height: 25px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    .opcSeis .obj {
+        padding: 2px 19px!important;
+    }
+    .row .container-grid{
+        justify-items: center;
+        align-items: center;
+    }
+    .opcUno, .opcDos, .opcTres, .opcCuatro, .opcCinco {
+        grid-column: 2 / 4;
+        margin: 0px!important;
     }
 }

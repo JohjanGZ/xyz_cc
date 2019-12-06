@@ -171,143 +171,143 @@ var ruta = "../../../../exercises/matematica/";
 ////////////// 2do 
 // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
 function start_1() {
-    $("#ventana").load(ruta + '2-0-1/index.php', {
+    $("#ventana").load(ruta + '2-3-6/index.php', {
         next: "Page_2()",
-        procesar: "result_tipo_2_0_1()",
+        procesar: "result_tipo_2_3_6()",
         titulo: "<center><h5><span class='ftitulo'>Agrupa</span> los siguientes elementos según sus características.</h5></center>",
         restaurar: "start_1()",
         dir: ruta,
-        cod: "2-0-1",
+        cod: "2-3-6",
         nota: cal
     });
     return false;
 };
 
 function start_2() {
-    $("#ventana").load(ruta + '2-0-2/index.php', {
+    $("#ventana").load(ruta + '2-3-7/index.php', {
         next: "Page_3()",
-        procesar: "result_tipo_2_0_2()",
+        procesar: "result_tipo_2_3_7()",
         titulo: "<center><h5><span class='ftitulo'>Agrupa</span> los siguientes elementos según sus características.</h5></center>",
         restaurar: "start_2()",
         dir: ruta,
-        cod: "2-0-2",
+        cod: "2-3-7",
         nota: cal
     });
     return false;
 };
 
 function start_3() {
-    $("#ventana").load(ruta + '2-0-3/index.php', {
+    $("#ventana").load(ruta + '2-3-8/index.php', {
         next: "Page_4()",
-        procesar: "result_tipo_2_0_3()",
+        procesar: "result_tipo_2_3_8()",
         titulo: "<center><h5><span class='ftitulo'>Coloca</span> el nombre del conjunto en donde todos los animales tienen dos patas.</h5></center>",
         restaurar: "start_3()",
         dir: ruta,
-        cod: "2-0-3",
+        cod: "2-3-8",
         nota: cal
     });
     return false;
 };
 
 function start_4() {
-    $("#ventana").load(ruta + '2-0-4/index.php', {
+    $("#ventana").load(ruta + '2-3-9/index.php', {
         next: "Page_5()",
-        procesar: "result_tipo_2_0_4()",
+        procesar: "result_tipo_2_3_9()",
         titulo: " <center><h5><span class='ftitulo'>Representa </span> por comprensión los siguientes conjuntos: </h5></center>",
         restaurar: "start_4()",
         dir: ruta,
-        cod: "2-0-4",
+        cod: "2-3-9",
         nota: cal
     });
     return false;
 };
 
 function start_5() {
-    $("#ventana").load(ruta + '2-0-5/index.php', {
+    $("#ventana").load(ruta + '2-3-10/index.php', {
         next: "Page_6()",
-        procesar: "result_tipo_2_0_5()",
+        procesar: "result_tipo_2_3_10()",
         titulo: "<center><h5><span class='ftitulo'>Observa </span> los siguientes conjuntos y <span>represéntalos</span> por extension, usando el nombre de sus elementos.</h5></center>",
         restaurar: "start_5()",
         dir: ruta,
-        cod: "2-0-5",
+        cod: "2-3-10",
         nota: cal
     });
     return false;
 };
 
 function start_6() {
-    $("#ventana").load(ruta + '2-0-6/index.php', {
+    $("#ventana").load(ruta + '2-3-11/index.php', {
         next: "Page_7()",
-        procesar: "result_tipo_2_0_6()",
+        procesar: "result_tipo_2_3_11()",
         titulo: "<center><h5><span>Representa</span> simbólicamente los conjuntos teniendo en cuenta las siguientes indicaciones:</h5></center>",
         restaurar: "start_6()",
         dir: ruta,
-        cod: "2-0-6",
+        cod: "2-3-11",
         nota: cal
     });
     return false;
 };
 
 function start_7() {
-    $("#ventana").load(ruta + '2-0-7/index.php', {
+    $("#ventana").load(ruta + '2-3-12/index.php', {
         next: "Page_8()",
-        procesar: "result_tipo_2_0_7()",
+        procesar: "result_tipo_2_3_12()",
         titulo: "<center><h5><span>Representa</span> por extensión los elementos de cada conjunto.</h5></center>",
         restaurar: "start_7()",
         dir: ruta,
-        cod: "2-0-7",
+        cod: "2-3-12",
         nota: cal
     });
     return false;
 };
 
 function start_8() {
-    $("#ventana").load(ruta + '2-0-8/index.php', {
+    $("#ventana").load(ruta + '2-3-13/index.php', {
         next: "Page_9()",
-        procesar: "result_tipo_2_0_8()",
+        procesar: "result_tipo_2_3_13()",
         titulo: "<center><h5><span>Clasifica</span> cada elemento teniendo en cuenta si pertenece (∈) o no pertenece (∉) al conjunto F.</h5></center>",
         restaurar: "start_8()",
         dir: ruta,
-        cod: "2-0-8",
+        cod: "2-3-13",
         nota: cal
     });
     return false;
 };
 
 function start_9() {
-    $("#ventana").load(ruta + '2-0-9/index.php', {
+    $("#ventana").load(ruta + '2-3-14/index.php', {
         next: "Page_10()",
-        procesar: "result_tipo_2_0_9()",
+        procesar: "result_tipo_2_3_14()",
         titulo: "<center><h5> <span>Lee</span> y <span>clasifica</span> los elementos en el conjunto correspondiente. </h5></center>",
         restaurar: "start_9()",
         dir: ruta,
-        cod: "2-0-9",
+        cod: "2-3-14",
         nota: cal
     });
     return false;
 };
 
 function start_10() {
-    $("#ventana").load(ruta + '2-0-10/index.php', {
+    $("#ventana").load(ruta + '2-3-15/index.php', {
         next: "Page_11()",
-        procesar: "result_tipo_2_0_10()",
+        procesar: "result_tipo_2_3_15()",
         titulo: "<center><h5>  <span>Observa</span> el diagrama y <span>coloca</span> verdadero (V) o falso (F) según corresponda.</h5></center>",
         restaurar: "start_10()",
         dir: ruta,
-        cod: "2-0-10",
+        cod: "2-3-15",
         nota: cal
     });
     return false;
 };
 
 function start_11() {
-    $("#ventana").load(ruta + '2-0-11/index.php', {
+    $("#ventana").load(ruta + '2-3-16/index.php', {
         next: "Page_12()",
-        procesar: "result_tipo_2_0_11()",
+        procesar: "result_tipo_2_3_16()",
         titulo: "<center><h5> <span>Escoge</span>  si el conjunto está determinado por extensión o si está determinado por comprensión.</h5></center>",
-        restaurar: "start_11()",
+        restaurar: "start_16()",
         dir: ruta,
-        cod: "2-0-11",
+        cod: "2-3-16",
         nota: cal
     });
     return false;

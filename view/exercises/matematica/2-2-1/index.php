@@ -123,8 +123,8 @@
             </div>
             <div></div>
             <div></div>
-            <div class="grid-item">
-                <select class="slc" alt="43">
+            <div class="grid-item ultimo">
+                <select class="slc ulti" alt="43">
                     <option value="" disabled selected></option>
                     <?php
                         for ($i=0; $i < count($numbers); $i++) { 
@@ -140,7 +140,7 @@
         <div class="modal-content">
             <center>
                 <h4>Respuesta correcta</h4>
-                <img class="materialboxed" width="80%" src="img/2-1-3/respuesta.png">
+                <img class="materialboxed" width="80%" src="img/1/respuesta.png">
             </center>
         </div>
         <div class="modal-footer">

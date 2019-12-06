@@ -177,7 +177,7 @@ center h5{
     border-radius: 12px;
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1300px){
     center{
         width: 100%;
         margin: auto;
@@ -186,8 +186,105 @@ center h5{
         text-align: center;
         width: 80%;
         position: relative;
+        font-size: 20px;
     }
     .container-two{
         margin-top: 5vh;
+    }
+}
+@media screen and (max-height: 768px){
+    .container-two{
+        margin-top: 2vh;
+    }
+    .select-wrapper input.select-dropdown {
+        border: 1px solid silver;
+        width: 80%;
+        margin: 2px auto;
+        font-weight: 600;
+        font-size: 24px;
+    }
+    .grid-item {
+        width: 25px;
+        height: 25px;
+    }
+}
+@media screen and (max-height: 678px){
+    .container-two{
+        margin-top: 2vh;
+    }
+    .select-wrapper input.select-dropdown {
+        border: 1px solid silver;
+        width: 80%;
+        margin: 2px auto;
+        font-weight: 600;
+        font-size: 24px;
+    }
+    .grid-item {
+        width: 23px;
+        height: 23px;
+    }
+    .item h6 {
+        font-size: 20px;
+        padding-top: 0;
+        margin: 0px;
+    }
+    .flotanteBajo {
+        font-size: 12px;
+        position: relative;
+        bottom: -34px;
+    }
+    .hd h6{
+        margin: 10px;
+        font-weight: 600;
+        font-size: 23px;
+        padding-bottom: 4px;
+    }
+    .ter{
+        width: 2px;
+        height: 5px;
+        rotate: 90deg;
+        position: relative;
+        bottom: 20px;
+        right: -16px;
+        border: 3px solid rgb(207, 33, 33);
+    }
+    .fan{
+        width: 2px;
+        height: 5px;
+        rotate: 90deg;
+        position: relative;
+        bottom: 20px;
+        right: -22px;
+        border: 3px solid rgb(207, 33, 33);
+    }
+    .rom{
+        width: 6px;
+        height: 5px;
+        rotate: 90deg;
+        position: relative;
+        bottom: 20px;
+        right: -25px;
+        border: 3px solid rgb(207, 33, 33);
+    }
+    .her{
+        width: 2px;
+        height: 2px;
+        rotate: 90deg;
+        position: relative;
+        bottom: 20px;
+        right: -35px;
+        border: 3px solid rgb(207, 33, 33);
+    }
+}
+@media screen and (max-height: 600px) {
+    .container-two{
+        margin-top: 0vh;
+    }
+    .grid-item {
+        width: 21px;
+        height: 21px;
+    }
+    center h5{
+        margin-bottom: 0vh;
     }
 }

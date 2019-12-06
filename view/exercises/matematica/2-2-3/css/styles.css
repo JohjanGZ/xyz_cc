@@ -34,7 +34,7 @@
 }
 
 .grid-item {
-    border: 1px solid silver;
+    border: 1px solid rgb(19, 86, 187);
     padding: 6px;
     text-align: center;
     display: flex;
@@ -115,4 +115,30 @@
         height: 300px;
         width: auto;
     }
+}
+@media screen and (max-width: 1300px){
+
+    center h5{
+        font-size: 20px;
+        width: 100%;
+    }
+    .principalImage img{
+        width: 500px;
+    }
+    .grid-item {
+        border: 1px solid rgb(19, 86, 187);
+        padding: 6px;
+        text-align: center;
+        display: flex;
+        font-size: 18px;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+.hd{
+    background-color: rgb(19, 86, 187);
+    color: #fff;
+    font-weight: 600;
 }

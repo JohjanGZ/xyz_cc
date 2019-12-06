@@ -11,12 +11,12 @@
 <?php $numbers = array('A','V','D','I'); ?>
 <body>
     <div class="container-two">
-        <div class="row">
+        <div class="row column columnUno">
             <div class="col s10">
                 <img id="imagePrincipal" src="img/2-1-6/image.png" alt="">
             </div>
         </div>
-        <div class="grid-container">
+        <div class="column grid-container">
             <div class="grid-item">
                 <select class="slc" alt="V">
                     <option value="" disabled selected></option>
