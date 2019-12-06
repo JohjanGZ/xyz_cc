@@ -1,6 +1,6 @@
 .container-two {
     margin: 0 auto;
-    max-width: 1280px;
+    width: 1280px;
     width: 70%;
     height: 70%;
     display: flex;
