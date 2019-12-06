@@ -66,7 +66,7 @@ function start_4() {
     $("#ventana").load(ruta + '1-8-4/index.php', {
         next: "resultado()",
         procesar: "result_tipo_1_8_4()",
-        titulo: "<center><h5><span class='ftitulo'>Relaciona</span> según corresponda. </h5></center>",
+        titulo: "<center><h5><span class='ftitulo'>Selecciona</span> correctamente el recuadro que indica la mitad de cada número. </h5></center>",
         restaurar: "start_4()",
         dir: ruta,
         cod: "1-8-4",
