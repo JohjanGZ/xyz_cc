@@ -7,7 +7,7 @@
 <div class="container-two">
     <div class="row">
         <center>
-            <img src="<?= $dir ?>/img/principal.png" class="img-principal">
+            <img src="<?= $dir ?>/img/principal.png" class="img-principal materialboxed">
         </center>
         <div class="grid-container">
             <div class="grid-item">5</div>
