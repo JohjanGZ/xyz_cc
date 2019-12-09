@@ -91,6 +91,7 @@ ul.tabs li.indicator {
         width: 30%;
     }
     .lectura p {
+        padding-right: 70px;
         font-size: 1rem;
     }
     .imagen-lectura img {
