@@ -8,7 +8,7 @@
 
 </style>
 <?=$titulo?>
-<?php $escritura = array('4C + 0D + 4U','400+0+4','1C + 6D + 7U','ciento sesenta y siete','3C + 4D + 2U','100+60+7','trescientos cuarenta y dos','300+40+2'); ?>
+<?php $escritura = array('4C + 0D + 4U','400+0+4','1C + 6D + 7U','ciento sesenta y siete','3C + 4D + 2U','100+60+7','trescientos cuarenta y dos','300+40+2','cuatrocientos cuatro'); ?>
 
 <body>
     <div class="container-two">
@@ -33,7 +33,7 @@
                 404
             </div>
             <div class="grid-item">
-                <select class="slc" alt="Noventa y nueve">
+                <select class="slc" alt="4C + 0D + 4U">
                     <option value="" disabled selected></option>
                     <?php
                         for ($i=0; $i < count($escritura); $i++) { 
@@ -43,7 +43,7 @@
                 </select>
             </div>
             <div class="grid-item">
-                <select class="slc" alt="Noventa y tres">
+                <select class="slc" alt="400+0+4">
                     <option value="" disabled selected></option>
                     <?php
                         for ($i=0; $i < count($escritura); $i++) { 
@@ -53,7 +53,7 @@
                 </select>
             </div>
             <div class="grid-item">
-                <select class="slc" alt="Noventa y tres">
+                <select class="slc" alt="cuatrocientos cuatro">
                     <option value="" disabled selected></option>
                     <?php
                         for ($i=0; $i < count($escritura); $i++) { 
@@ -66,7 +66,7 @@
                 167
             </div>
             <div class="grid-item">
-                <select class="slc" alt="Noventa y nueve">
+                <select class="slc" alt="1C + 6D + 7U">
                     <option value="" disabled selected></option>
                     <?php
                         for ($i=0; $i < count($escritura); $i++) { 
@@ -76,7 +76,7 @@
                 </select>
             </div>
             <div class="grid-item">
-                <select class="slc" alt="Noventa y nueve">
+                <select class="slc" alt="100+60+7">
                     <option value="" disabled selected></option>
                     <?php
                         for ($i=0; $i < count($escritura); $i++) { 
@@ -86,7 +86,7 @@
                 </select>
             </div>
             <div class="grid-item">
-                <select class="slc" alt="Noventa y nueve">
+                <select class="slc" alt="ciento sesenta y siete">
                     <option value="" disabled selected></option>
                     <?php
                         for ($i=0; $i < count($escritura); $i++) { 
@@ -99,7 +99,7 @@
                 342
             </div>
             <div class="grid-item">
-                <select class="slc" alt="Noventa y nueve">
+                <select class="slc" alt="3C + 4D + 2U">
                     <option value="" disabled selected></option>
                     <?php
                         for ($i=0; $i < count($escritura); $i++) { 
@@ -109,7 +109,7 @@
                 </select>
             </div>
             <div class="grid-item">
-                <select class="slc" alt="Noventa y nueve">
+                <select class="slc" alt="300+40+2">
                     <option value="" disabled selected></option>
                     <?php
                         for ($i=0; $i < count($escritura); $i++) { 
@@ -119,7 +119,7 @@
                 </select>
             </div>
             <div class="grid-item">
-                <select class="slc" alt="Noventa y nueve">
+                <select class="slc" alt="trescientos cuarenta y dos">
                     <option value="" disabled selected></option>
                     <?php
                         for ($i=0; $i < count($escritura); $i++) { 
@@ -135,7 +135,7 @@
         <div class="modal-content">
             <center>
                 <h4>Respuesta correcta</h4>
-                <img class="materialboxed" width="80%" src="<?= $dir ?>/img/respuesta.png">
+                <img class="materialboxed" width="80%" src="img/7/respuesta.png">
             </center>
         </div>
         <div class="modal-footer">

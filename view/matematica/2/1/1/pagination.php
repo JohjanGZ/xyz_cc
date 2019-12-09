@@ -305,7 +305,7 @@ function start_11() {
         next: "Page_12()",
         procesar: "result_tipo_2_3_16()",
         titulo: "<center><h5> <span>Escoge</span>  si el conjunto está determinado por extensión o si está determinado por comprensión.</h5></center>",
-        restaurar: "start_16()",
+        restaurar: "start_11()",
         dir: ruta,
         cod: "2-3-16",
         nota: cal
@@ -314,104 +314,104 @@ function start_11() {
 };
 
 function start_12() {
-    $("#ventana").load(ruta + '2-0-12/index.php', {
+    $("#ventana").load(ruta + '2-3-17/index.php', {
         next: "Page_13()",
-        procesar: "result_tipo_2_0_12()",
+        procesar: "result_tipo_2_3_17()",
         titulo: "<center><h5><span>Representa</span> los siguientes conjuntos por extensión y por comprensión.</h5></center>",
         restaurar: "start_12()",
         dir: ruta,
-        cod: "2-0-12",
+        cod: "2-3-17",
         nota: cal
     });
     return false;
 };
 
 function start_13() {
-    $("#ventana").load(ruta + '2-0-13/index.php', {
+    $("#ventana").load(ruta + '2-3-18/index.php', {
         next: "Page_14()",
-        procesar: "result_tipo_2_0_13()",
+        procesar: "result_tipo_2_3_18()",
         titulo: "<center><h5><span>Expresa</span> por extensión los siguientes conjuntos:</h5></center>",
         restaurar: "start_13()",
         dir: ruta,
-        cod: "2-0-13",
+        cod: "2-3-18",
         nota: cal
     });
     return false;
 };
 
 function start_14() {
-    $("#ventana").load(ruta + '2-0-14/index.php', {
+    $("#ventana").load(ruta + '2-3-19/index.php', {
         next: "Page_15()",
-        procesar: "result_tipo_2_0_14()",
+        procesar: "result_tipo_2_3_19()",
         titulo: "<center><h5><span>Clasifica</span> cada conjunto según corresponda.</h5></center>",
         restaurar: "start_14()",
         dir: ruta,
-        cod: "2-0-14",
+        cod: "2-3-19",
         nota: cal
     });
     return false;
 };
 
 function start_15() {
-    $("#ventana").load(ruta + '2-0-15/index.php', {
+    $("#ventana").load(ruta + '2-3-20/index.php', {
         next: "Page_16()",
-        procesar: "result_tipo_2_0_15()",
+        procesar: "result_tipo_2_3_20()",
         titulo: "<center><h5><span>Observa</span> el diagrama, <span>completa</span> los elementos de cada conjunto y completa la oración.</h5></center>",
         restaurar: "start_15()",
         dir: ruta,
-        cod: "2-0-15",
+        cod: "2-3-20",
         nota: cal
     });
     return false;
 };
 
 function start_16() {
-    $("#ventana").load(ruta + '2-0-16/index.php', {
+    $("#ventana").load(ruta + '2-3-21/index.php', {
         next: "Page_17()",
-        procesar: "result_tipo_2_0_16()",
+        procesar: "result_tipo_2_3_21()",
         titulo: "<center><h5><span>Observa</span> el diagrama y <span>completa</span> las oraciones.</h5></center>",
         restaurar: "start_16()",
         dir: ruta,
-        cod: "2-0-16",
+        cod: "2-3-21",
         nota: cal
     });
     return false;
 };
 
 function start_17() {
-    $("#ventana").load(ruta + '2-0-17/index.php', {
+    $("#ventana").load(ruta + '2-3-22/index.php', {
         next: "Page_18()",
-        procesar: "result_tipo_2_0_17()",
+        procesar: "result_tipo_2_3_22()",
         titulo: "<center><h5><span>Dibuja</span> los elementos que corresponden según el tipo de conjunto que se indica.</h5></center>",
         restaurar: "start_17()",
         dir: ruta,
-        cod: "2-0-17",
+        cod: "2-3-22",
         nota: cal
     });
     return false;
 };
 
 function start_18() {
-    $("#ventana").load(ruta + '2-0-18/index.php', {
+    $("#ventana").load(ruta + '2-3-23/index.php', {
         next: "Page_19()",
-        procesar: "result_tipo_2_0_18()",
+        procesar: "result_tipo_2_3_23()",
         titulo: "<center><h5><span>Completa</span> la interseción de cada conjunto.</h5></center>",
         restaurar: "start_18()",
         dir: ruta,
-        cod: "2-0-18",
+        cod: "2-3-23",
         nota: cal
     });
     return false;
 };
 
 function start_19() {
-    $("#ventana").load(ruta + '2-0-19/index.php', {
+    $("#ventana").load(ruta + '2-3-24/index.php', {
         next: "Page_20()",
-        procesar: "result_tipo_2_0_19()",
+        procesar: "result_tipo_2_3_23()",
         titulo: "<center><h5><span>Observa</span> los elementos de cada conjunto y <span>completa</span> según en el orden en el que aparecen.</h5></center>",
         restaurar: "start_19()",
         dir: ruta,
-        cod: "2-0-19",
+        cod: "2-3-23",
         nota: cal
     });
     return false;

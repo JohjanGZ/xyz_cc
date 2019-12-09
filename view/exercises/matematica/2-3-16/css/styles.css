@@ -1,0 +1,50 @@
+.container-two {
+  padding-top: 4vh;
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 60%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  grid-column-gap: 20px;
+}
+.item{
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 100%;
+  justify-items: center;
+  align-items: center;
+}
+.numero h5{
+  color : rgb(20, 141, 255);
+  font-weight: 600;
+  padding: 10px 5px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.226);
+  margin: 10px 0px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+.dropable-hover{
+  background-color: rgb(234, 254, 255);
+}
+.item .numero{
+  width: 40%;
+  text-align: center;
+  grid-column: 1/2;
+}
+.item .selector{
+  display: grid;
+  align-items: center;
+  padding-left: 10px;
+  width: 80%;
+  grid-row-gap: 0px;
+  grid-column: 2/4;
+}
+.item .droppable .card-panel{
+  width: 80%;
+}
+#cajas .droppable{
+  height: 60px;
+}
