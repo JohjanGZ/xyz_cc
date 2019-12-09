@@ -1,82 +1,62 @@
 <script type="text/javascript">
-   function Page_13(){
+   function Page_lectura_3_3_4_1(){
+        start_lectura_3_3_4_1();
+        inicio();
+        count = 0;
+    }
+   function Page_12(){
+        start_12();
+        inicio();
+        count = 3;
+    }
+   function  Page_13(){
         start_13();
         inicio();
-        count = 3;
-    }
-    function Page_14(){
-        start_14();
-        inicio();
-        count = 3;
-    }
-    function Page_15(){
-        start_15();
-        inicio();
-        count = 3;
-    }
-    function Page_16(){
-        start_16();
-        inicio();
-        count = 3;
+         count = 3;
     }
 
-    var cant=4;
+    var cant=3;
     var cal= 20/20;
     var ruta="../../../../exercises/comunicacion/";
     ////////////// 2do 
             // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
-    
+    function start_lectura_3_3_4_1(){
+        $("#ventana").load(ruta+'lectura3-3-4-1/index.php', 
+        {
+        next: "Page_12()", 
+        procesar:"lectura3-3-4-1()",
+        titulo:"<center><h5><span>Lee</span> atentamente y contesta las preguntas.</h5></center>",
+        restaurar:"start_lectura_3_3_4_1()",
+        dir:ruta,
+        cod: "lectura3-3-4-1",
+        nota:cal
+        }
+        );
+        return false;  
+    };
+    function start_12(){
+        $("#ventana").load(ruta+'3-3-12/index.php', 
+        {
+        next: "Page_13()", 
+        procesar:"result_tipo_3_3_12()",
+        titulo:"<center><h5><span>Lee</span> y <span>selecciona</span> la respuesta correcta.</h5></center>",
+        restaurar:"start_12()",
+        dir:ruta,
+        cod: "3-3-12",
+        nota:cal
+        }
+        );
+        return false;  
+    };
     function start_13(){
-        $("#ventana").load(ruta+'2-4-13/index.php', 
-        {
-        next: "Page_14()", 
-        procesar:"result_tipo_2_4_13()",
-        titulo:"<center><h5><span>Arrastra</span> 2 adjetivos que concuerden con cada imagen.</h5></center>",
-        restaurar:"start_13()",
-        dir:ruta,
-        cod: "2-4-13",
-        nota:cal
-        }
-        );
-        return false;  
-    };
-    function start_14(){
-        $("#ventana").load(ruta+'2-4-14/index.php', 
-        {
-        next: "Page_15()", 
-        procesar:"result_tipo_2_4_14()",
-        titulo:"<center><h5><span>Observa</span> las imágenes y <span>selecciona</span> la palabra que mejor describa a cada una.</h5></center>",
-        restaurar:"start_14()",
-        dir:ruta,
-        cod: "2-4-14",
-        nota:cal
-        }
-        );
-        return false;  
-    };
-    function start_15(){
-        $("#ventana").load(ruta+'2-4-15/index.php', 
-        {
-        next: "Page_16()", 
-        procesar:"result_tipo_2_4_15()",
-        titulo:"<center><h5><span>Resuelve</span> la sopa de letras.</h5></center>",
-        restaurar:"start_15()",
-        dir:ruta,
-        cod: "2-4-15",
-        nota:cal
-        }
-        );
-        return false;  
-    };
-    function start_16(){
-        $("#ventana").load(ruta+'2-4-16/index.php', 
+        $("#ventana").load(ruta+'3-3-13/index.php', 
         {
         next: "resultado()", 
-        procesar:"result_tipo_2_4_16()",
-        titulo:"<center><h5><span>Observa</span> la imagen y <span>selecciona</span> el adjetivo que corresponde para completar la oración.</h5></center>",
-        restaurar:"start_16()",
+        procesar:"result_tipo_3_3_13()",
+        titulo:"<center><h5><span>Lee</span> y <span>selecciona</span> la respuesta correcta.</h5></center>",
+        restaurar:"start_13()",
         dir:ruta,
-        cod: "2-4-16",
+        cod: "3-3-13",
         nota:cal
         }
         );
