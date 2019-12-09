@@ -4,19 +4,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="<?= $dir ?>/css/styles.css">
 </head>
-<?=$titulo?>
 <?php 
-
-    $numeros = array('470','262','328', '453','380','488');
-
+    $numeros = array('<','>');
 ?>
+<?=$titulo?>
 <div class="container-two aleatorio">
-    <div class="item card-panel">
-        <div class="numero">
-            <h5>469</h5>
+    <div class="fila">
+        <div class="image imageprimary">
+            <img src="img/13/uno.png" alt="">
         </div>
-        <div class="selector">
-            <select class="slc" alt="470">
+        <div class="input">
+            <select class="slc" alt="<">
                 <option value="" disabled selected></option>
                 <?php
                     for ($i=0; $i < count($numeros); $i++) { 
@@ -24,14 +22,17 @@
                     }
                 ?>
             </select>
+        </div>
+        <div class="image">
+            <img src="img/13/dos.png" alt="">
         </div>
     </div>
-    <div class="item card-panel">
-        <div class="numero">
-            <h5>379</h5>
+    <div class="fila">
+        <div class="image">
+            <img src="img/13/tres.png" alt="">
         </div>
-        <div class="selector">
-            <select class="slc" alt="380">
+        <div class="input">
+            <select class="slc" alt=">">
                 <option value="" disabled selected></option>
                 <?php
                     for ($i=0; $i < count($numeros); $i++) { 
@@ -39,14 +40,17 @@
                     }
                 ?>
             </select>
+        </div>
+        <div class="image">
+            <img src="img/13/cuatro.png" alt="">
         </div>
     </div>
-    <div class="item card-panel">
-        <div class="numero">
-            <h5>487</h5>
+    <div class="fila">
+        <div class="image">
+            <img src="img/13/cinco.png" alt="">
         </div>
-        <div class="selector">
-            <select class="slc" alt="488">
+        <div class="input">
+            <select class="slc" alt="<">
                 <option value="" disabled selected></option>
                 <?php
                     for ($i=0; $i < count($numeros); $i++) { 
@@ -55,50 +59,8 @@
                 ?>
             </select>
         </div>
-    </div>
-    <div class="item card-panel">
-        <div class="numero">
-            <h5>452</h5>
-        </div>
-        <div class="selector">
-            <select class="slc" alt="453">
-                <option value="" disabled selected></option>
-                <?php
-                    for ($i=0; $i < count($numeros); $i++) { 
-                        echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
-                    }
-                ?>
-            </select>
-        </div>
-    </div>
-    <div class="item card-panel">
-        <div class="numero">
-            <h5>327</h5>
-        </div>
-        <div class="selector">
-            <select class="slc" alt="328">
-                <option value="" disabled selected></option>
-                <?php
-                    for ($i=0; $i < count($numeros); $i++) { 
-                        echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
-                    }
-                ?>
-            </select>
-        </div>
-    </div>
-    <div class="item card-panel">
-        <div class="numero">
-            <h5>261</h5>
-        </div>
-        <div class="selector">
-            <select class="slc" alt="262">
-                <option value="" disabled selected></option>
-                <?php
-                    for ($i=0; $i < count($numeros); $i++) { 
-                        echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
-                    }
-                ?>
-            </select>
+        <div class="image ultimaimagen">
+            <img src="img/13/seis.png" alt="">
         </div>
     </div>
 </div>
@@ -119,31 +81,38 @@
 <script>$("#next").attr("onclick", "<?=$next?>");</script>
 <script type="text/javascript">
 
-$('select').formSelect();
 
+$('select').formSelect();
+// Random
+// var div = document.querySelector('.grid-container');
+// for (var i = div.children.length; i >= 0; i--) {
+//     div.appendChild(div.children[Math.random() * i | 0]);
+// }
 // Select
 var r = 0;
 $(".slc").change(function() {
     slcalt = $(this).attr("alt");
     slcval = $(this).val();
-
+    console.log(slcalt);
+    console.log(slcval);
     if (slcalt == slcval) {
         r++;
         console.log(r);
     }
 });
+
 // Formulario - Registrados
 
-function result_tipo_2_3_14() {
+function result_tipo_2_3_18() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
-    if (r == 6) {
+    if (r == 3) {
         console.log(r);
-        localStorage.setItem("Nota2-3-14", "2");
-        localStorage.setItem("Time2-3-13", tiempo);
+        localStorage.setItem("Nota2-3-17", "2");
+        localStorage.setItem("Time2-3-17", tiempo);
         correcto();
 
     }
@@ -151,8 +120,8 @@ function result_tipo_2_3_14() {
     else {
         console.log(r);
         incorrecto();
-        localStorage.setItem("Nota2-3-14", "0");
-        localStorage.setItem("Time2-3-14", tiempo);
+        localStorage.setItem("Nota2-3-17", "0");
+        localStorage.setItem("Time2-3-17", tiempo);
 
     }
 }

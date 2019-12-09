@@ -8,38 +8,38 @@
 <div class="container-two">
     <div class="item card-panel blue darken-1">
         <div class="numero aleatorio" >
-            <h5 class="obj" data-value="205">205</h5>
-            <h5 class="obj" data-value="380">380</h5>
-            <h5 class="obj" data-value="165">165</h5>
-            <h5 class="obj" data-value="453">453</h5>
-            <h5 class="obj" data-value="435">435</h5>
-            <h5 class="obj" data-value="256">256</h5>
+            <h5 class="obj" data-value="272">272</h5>
+            <h5 class="obj" data-value="116">116</h5>
+            <h5 class="obj" data-value="358">358</h5>
+            <h5 class="obj" data-value="227">227</h5>
+            <h5 class="obj" data-value="499">499</h5>
+            <h5 class="obj" data-value="126">126</h5>
         </div>
         <div class="selector" id="cajas">
-           <div class="droppable card-panel" data-value="453"></div>
-           <div class="droppable card-panel" data-value="435"></div>
-           <div class="droppable card-panel" data-value="380"></div>
-           <div class="droppable card-panel" data-value="256"></div>
-           <div class="droppable card-panel" data-value="205"></div>
-           <div class="droppable card-panel" data-value="165"></div>
+            <div class="droppable card-panel" data-value="116"></div>
+            <div class="droppable card-panel" data-value="126"></div>
+            <div class="droppable card-panel" data-value="227"></div>
+            <div class="droppable card-panel" data-value="272"></div>
+            <div class="droppable card-panel" data-value="358"></div>
+            <div class="droppable card-panel" data-value="499"></div>
         </div>
     </div>
     <div class="item card-panel blue darken-1">
         <div class="numero aleatorio">
-            <h5 class="obj" data-value="500">500</h5>
-            <h5 class="obj" data-value="312">312</h5>
-            <h5 class="obj" data-value="199">199</h5>
-            <h5 class="obj" data-value="421">421</h5>
-            <h5 class="obj" data-value="478">478</h5>
-            <h5 class="obj" data-value="321">321</h5>
+            <h5 class="obj" data-value="476">476</h5>
+            <h5 class="obj" data-value="118">118</h5>
+            <h5 class="obj" data-value="237">237</h5>
+            <h5 class="obj" data-value="362">362</h5>
+            <h5 class="obj" data-value="263">263</h5>
+            <h5 class="obj" data-value="195">195</h5>
         </div>
         <div class="selector" id="cajas">
-           <div class="droppable card-panel" data-value="500"></div>
-           <div class="droppable card-panel" data-value="478"></div>
-           <div class="droppable card-panel" data-value="421"></div>
-           <div class="droppable card-panel" data-value="321"></div>
-           <div class="droppable card-panel" data-value="312"></div>
-           <div class="droppable card-panel" data-value="199"></div>
+           <div class="droppable card-panel" data-value="118"></div>
+           <div class="droppable card-panel" data-value="195"></div>
+           <div class="droppable card-panel" data-value="237"></div>
+           <div class="droppable card-panel" data-value="263"></div>
+           <div class="droppable card-panel" data-value="362"></div>
+           <div class="droppable card-panel" data-value="476"></div>
         </div>
     </div>
 </div>
@@ -89,12 +89,12 @@ var rpta = 0, otros = 0, element, element2;
         }else{
           otros++;
         }
-        element.remoeClass('pieza');
+        element.removeClass('pieza');
       }
     });
 // Formulario - Registrados
 
-function result_tipo_2_3_16() {
+function result_tipo_2_3_17() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
