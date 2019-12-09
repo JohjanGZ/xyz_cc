@@ -12,7 +12,7 @@
 <body>
     <div class="container-two">
         <center>
-            <img src="<?= $dir ?>/img/principal.png" class="img">
+            <img src="<?= $dir ?>/img/principal.png" class="img materialboxed">
         </center>
         <div class="grid-container">
             <div class="grid-item">

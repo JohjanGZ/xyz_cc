@@ -4,16 +4,12 @@ function Page_21() {
     inicio();
     count = 3;
 }
-function Page_24() {
-    start_24();
+function Page_22() {
+    start_22();
     inicio();
     count = 3;
 }
-function Page_25() {
-    start_25();
-    inicio();
-    count = 3;
-}
+
 var cant = 24;
 var cal = cant / cant;
 console.log(cant);
@@ -24,7 +20,7 @@ function start_21() {
     $("#ventana").load(ruta + '1-9-21/index.php', {
         next: "Page_22()",
         procesar: "result_tipo_1_9_21()",
-        titulo: "<center><h5><span class='ftitulo'>Halla</span> el valor de cada elemento.</h5></center>",
+        titulo: "<center><h5><span class='ftitulo'>Completa</span> los espacios en blanco.<br> Alfredo va al campo para atrapar mariposas y colibrís.</h5></center>",
         restaurar: "start_21()",
         dir: ruta,
         cod: "1-9-21",
@@ -32,26 +28,14 @@ function start_21() {
     });
     return false;
 };
-function start_24() {
-    $("#ventana").load(ruta + '1-9-24/index.php', {
-        next: "Page_25()",
-        procesar: "result_tipo_1_9_24()",
-        titulo: "<center><h5><span class='ftitulo'>Halla</span> el valor de cada elemento.</h5></center>",
-        restaurar: "start_24()",
-        dir: ruta,
-        cod: "1-9-24",
-        nota: cal
-    });
-    return false;
-};
-function start_25() {
-    $("#ventana").load(ruta + '1-9-25/index.php', {
+function start_22() {
+    $("#ventana").load(ruta + '1-9-22/index.php', {
         next: "resultado()",
-        procesar: "result_tipo_1_9_25()",
-        titulo: "<center><h5><span class='ftitulo'>Escribe</span> el valor del corazón en cada caso.  </h5></center>",
-        restaurar: "start_25()",
+        procesar: "result_tipo_1_9_22()",
+        titulo: "<center><h5><span class='ftitulo'>Completa</span> los espacios en blanco.<br> Sofía va al estanque en donde hay truchas y suches. Ella pretende pescar a uno de estos peces para la cena.</h5></center>",
+        restaurar: "start_22()",
         dir: ruta,
-        cod: "1-9-25",
+        cod: "1-9-22",
         nota: cal
     });
     return false;
