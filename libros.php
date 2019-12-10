@@ -1,6 +1,12 @@
 <style type="text/css">
+#comunicacion{
+    transition:2s;
+}
+#matematica{
+    transition:2s;
+}
 .cursos{
-        min-git width: 479px;
+        min-width: 708px;
     margin: 0 auto;
 }
 #Libros li {
@@ -55,6 +61,7 @@
 #menu-grados li{
     width: 60px;
     text-shadow: 0px 0px 4px black;
+    font-family: arial;
 }
 #menu-cursos {
     width: 120px;
@@ -68,6 +75,7 @@
     border-radius: 0;
     margin: 3px 0;
     box-shadow: -3px 1px 5px 0px #0000002e;
+    font-family: arial;
 }
 #menu-cursos li:hover{
     border-bottom-left-radius: 50%;
@@ -80,22 +88,27 @@ a:hover, a:active, a:focus {
     text-shadow:none;
 }
 </style>
+   <?php 
+                        $libros=$_POST['data'];
+                       $g=$_POST['g'];
+                       $nivel=$_POST['nivel'];
+                       
+                        ?>
 <!--<script type="text/javascript" src="js/data.js"></script>-->
 <div id="main-nav" class="text-center no_modo_standalone no_popup open">
 		<ul class="container" role="menu">
-
-		        <li class="li_m_cursos" >
-					<a title="Content" >
+		        <li class="li_m_cursos" id="list-inicial" >
+					<a href="./index.php?n=i" title="Inicial" >
 						INICIAL
 					</a>
 				</li>
-				<li class="li_m_misalumnos active" >
-					<a title="My students" >
+				<li class="li_m_misalumnos" id="list-primaria" >
+					<a  href="./index.php?n=p" title="Primaria" >
 						PRIMARIA
 					</a>
 				</li>
-				<li class="li_m_calificaciones">
-					<a title="Grades" >
+				<li class="li_m_calificaciones" id="list-secundaria">
+					<a  href="./index.php?n=s" title="Secundaria" >
 						SECUNDARIA
 					</a>
 				</li>		
@@ -145,35 +158,37 @@ a:hover, a:active, a:focus {
 
 	
 		</ul>
-
+     
         <div id="flecha-caja"><i class="material-icons gris-claro">chevron_right</i></div>
        </div>
         <div class="card-panel grey lighten-5 z-depth-1">
         <ul id="menu-cursos">
-            <a href="#comunicacion" title="Comunicación" >
-            <li  class="li_m_cursos" >
-                
-                    Comunicación
-                
-            </li>
+      <?php
+      $x=0;
+      foreach ($libros as $c){
+         $list=$libros[$x][0]['curso'];
+         $title=$libros[$x][0]['titulo'];
+         
+
+         ?>
+            <a href="#<?=$list?>" title="<?=substr($title, 0, -2)?>" >
+                <li  class="li_m_cursos" >
+                <?=substr($title, 0, -1)?>
+                </li>
             </a>
-            <a href="#matematica" title="Matemática" >
-            <li  class="li_m_misalumnos active" >
-              
-                    Matemática
-               
-            </li>	
-            </a>
+            <?php $x++;} ?>
+           <!-- <a href="#matematica" title="Matemática" >
+                <li  class="li_m_misalumnos" >
+                        Matemática          
+                </li>	
+            </a>-->
 		</ul>
 
             <br>
             <div class="row valign-wrapper">
                 <div class="items cursos">
                     <center>
-                        <?php 
-                        $libros=$_POST['data'];
-                       $g=$_POST['g'];
-                        ?>
+
                         <ul id="Libros" class="" data-id="2">
 
                             <?php       
@@ -260,16 +275,14 @@ a:hover, a:active, a:focus {
 
                                 <?php }
                             }
-                            else if($grado==$g ){
-                                
+                            else if($grado==$g ){                                
                                     ?>
                                 <style>
                                     .menu-libros{
                                         float:left;
                                     }
                                 </style>
-                              <li class="menu-libros"><a  <?php if($activo=='1') {?> onclick="abrir(<?=$t?>,<?=$w?>)" <?php }?>>
-  
+                              <li class="menu-libros"><a  <?php if($activo=='1') {?> onclick="abrir(<?=$t?>,<?=$w?>)" <?php }?>>  
                                       <style type="text/css">
                                       <?='#'.$id?> {
                                           background-image: url(img/portadas/<?=$portada?>);
@@ -285,37 +298,28 @@ a:hover, a:active, a:focus {
                                           color: transparent;
                                           transition: 0.8s;
                                       }
-  
                                       <?php if($activo=='1') {
                                           ?><?='#'.$id?>:hover>.capa_color>.iconview {
                                               transform: translate(0px, -200px);
                                               transition: 0.8s;
                                               z-index: 4;
-                                              color: white;
-                                             
+                                              color: white;   
                                           }
-  
                                           <?='#'.$id?>:hover .capa_color{
                                               background-color: <?=$color?>da;
                                               transition: 0.8s;
                                               box-shadow: 2px 3px 7px #000000a6;
                                           }
-  
                                           <?php
                                       }
-  
                                       else {
                                           ?><?='#'.$id?> {
-  
                                               opacity: 0.3;
                                           }
-  
                                           <?php
-                                      }
-  
+                                      }  
                                       ?>
                                       </style>
-  
                                       <div id="<?=$id?>">
                                           <div style="background-size:100% 100%;width:156px;height: 216px;position: absolute;"
                                               class='capa_color'>
@@ -327,22 +331,18 @@ a:hover, a:active, a:focus {
                                       <span class='titulo data'><?=$titulo?></span>
                                   </div>
                               </li>
-
                             <?php } 
-                             
                             $w++; }; 
                             if($g=='todo'){echo"<hr>";} ?>
                            </div>
                             <?php   $t++;}; ?>
                             <script>
-                            function abrir(Curso, Grado) {
-                               
+                            function abrir(Curso, Grado) {                               
                                 $("#portada").css("display", "block");
                                 $('#cuerpo').load('unidades.php', {
                                     curso: Curso,
                                     grado: Grado
                                 });
-
                             };
                             </script>
                    </ul>     
