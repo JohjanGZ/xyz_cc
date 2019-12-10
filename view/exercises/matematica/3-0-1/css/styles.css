@@ -1,0 +1,21 @@
+.container-two {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 70%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+::-webkit-scrollbar {
+    -webkit-border-radius: 5px;
+    background-color: transparent;
+    border-radius: 5px;
+    height: 10px;
+    -webkit-transition: background-color .2s linear;
+    -o-transition: background-color .2s linear;
+    transition: background-color .2s linear;
+    width: 0px;
+}
