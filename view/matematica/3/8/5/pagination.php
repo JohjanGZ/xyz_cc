@@ -16,25 +16,25 @@ var ruta = "../../../../exercises/matematica/";
 ////////////// 2do 
 // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
 function start_24() {
-    $("#ventana").load(ruta + '1-8-24/index.php', {
+    $("#ventana").load(ruta + '3-8-24/index.php', {
         next: "Page_25()",
-        procesar: "result_tipo_1_8_24()",
+        procesar: "result_tipo_3_8_24()",
         titulo: "<center><h5><span class='ftitulo'>Halla</span> el valor de cada elemento.</h5></center>",
         restaurar: "start_24()",
         dir: ruta,
-        cod: "1-8-24",
+        cod: "3-8-24",
         nota: cal
     });
     return false;
 };
 function start_25() {
-    $("#ventana").load(ruta + '1-8-25/index.php', {
+    $("#ventana").load(ruta + '3-8-25/index.php', {
         next: "resultado()",
-        procesar: "result_tipo_1_8_25()",
+        procesar: "result_tipo_3_8_25()",
         titulo: "<center><h5><span class='ftitulo'>Escribe</span> el valor del corazón en cada caso.  </h5></center>",
         restaurar: "start_25()",
         dir: ruta,
-        cod: "1-8-25",
+        cod: "3-8-25",
         nota: cal
     });
     return false;

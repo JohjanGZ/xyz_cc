@@ -26,49 +26,49 @@ var ruta = "../../../../exercises/matematica/";
 ////////////// 2do 
 // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
 function start_9() {
-    $("#ventana").load(ruta + '1-3-9/index.php', {
+    $("#ventana").load(ruta + '3-3-9/index.php', {
         next: "Page_10()",
-        procesar: "result_tipo_1_3_9()",
+        procesar: "result_tipo_3_3_9()",
         titulo: "<center><h5><span class='ftitulo'>Completa</span> el cuadro.</h5></center>",
         restaurar: "start_9()",
         dir: ruta,
-        cod: "1-3-9",
+        cod: "3-3-9",
         nota: cal
     });
     return false;
 };
 function start_10() {
-    $("#ventana").load(ruta + '1-3-10/index.php', {
+    $("#ventana").load(ruta + '3-3-10/index.php', {
         next: "Page_11()",
-        procesar: "result_tipo_1_3_10()",
+        procesar: "result_tipo_3_3_10()",
         titulo: "<center><h5><span class='ftitulo'>Selecciona</span> el avioncito que traslada a 42 pasajeros.</h5></center>",
         restaurar: "start_10()",
         dir: ruta,
-        cod: "1-3-10",
+        cod: "3-3-10",
         nota: cal
     });
     return false;
 };
 function start_11() {
-    $("#ventana").load(ruta + '1-3-11/index.php', {
+    $("#ventana").load(ruta + '3-3-11/index.php', {
         next: "Page_12()",
-        procesar: "result_tipo_1_3_11()",
+        procesar: "result_tipo_3_3_11()",
         titulo: "<center><h5><span class='ftitulo'>Selecciona</span> el trencito que cuesta 37 soles.</h5></center>",
         restaurar: "start_11()",
         dir: ruta,
-        cod: "1-3-11",
+        cod: "3-3-11",
         nota: cal
     });
     return false;
 };
 function start_12() {
-    $("#ventana").load(ruta + '1-3-12/index.php', {
+    $("#ventana").load(ruta + '3-3-12/index.php', {
         next: "Page_13()",
-        procesar: "result_tipo_1_3_12()",
+        procesar: "result_tipo_3_3_12()",
         titulo: "<center><h5><span class='ftitulo'>Escribe</span> el número que ha sido representado en el ábaco.</h5></center>",
         restaurar: "start_12()",
         dir: ruta,
-        cod: "1-3-12",
+        cod: "3-3-12",
         nota: cal
     });
     return false;

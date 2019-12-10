@@ -21,37 +21,37 @@ console.log(cant);
 var ruta = "../../../../exercises/matematica/";
 ////////////// 2do 
 function start_12() {
-    $("#ventana").load(ruta + '1-6-12/index.php', {
+    $("#ventana").load(ruta + '3-6-12/index.php', {
         next: "Page_13()",
-        procesar: "result_tipo_1_6_12()",
+        procesar: "result_tipo_3_6_12()",
         titulo: "<center><h5><span class='ftitulo'>Relaciona</span> la hora con lo que señala cada reloj.</h5></center>",
         restaurar: "start_12()",
         dir: ruta,
-        cod: "1-6-12",
+        cod: "3-6-12",
         nota: cal
     });
     return false;
 };
 function start_13() {
-    $("#ventana").load(ruta + '1-6-13/index.php', {
+    $("#ventana").load(ruta + '3-6-13/index.php', {
         next: "Page_14()",
-        procesar: "result_tipo_1_6_13()",
+        procesar: "result_tipo_3_6_13()",
         titulo: "<center><h5><span class='ftitulo'>Lee</span> los siguientes problemas y <span class='ftitulo'>señala</span> la alternativa correcta.</h5></center>",
         restaurar: "start_13()",
         dir: ruta,
-        cod: "1-6-13",
+        cod: "3-6-13",
         nota: cal
     });
     return false;
 };
 function start_14() {
-    $("#ventana").load(ruta + '1-6-14/index.php', {
+    $("#ventana").load(ruta + '3-6-14/index.php', {
         next: "resultado()",
-        procesar: "result_tipo_1_6_14()",
+        procesar: "result_tipo_3_6_14()",
         titulo: "<center><h5><span class='ftitulo'>Lee</span> los siguientes problemas y <span class='ftitulo'>señala</span> la alternativa correcta.</h5></center>",
         restaurar: "start_14()",
         dir: ruta,
-        cod: "1-6-14",
+        cod: "3-6-14",
         nota: cal
     });
     return false;

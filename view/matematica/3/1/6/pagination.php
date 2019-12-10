@@ -17,26 +17,26 @@ var ruta = "../../../../exercises/matematica/";
 ////////////// 2do 
 // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
 function start_19() {
-    $("#ventana").load(ruta + '1-1-19/index.php', {
+    $("#ventana").load(ruta + '3-1-19/index.php', {
         next: "Page_20()",
-        procesar: "result_tipo_1_1_19()",
+        procesar: "result_tipo_3_1_19()",
         titulo: "<center><h5> <span class='ftitulo'>Cuenta</span> las figuras geométricas y <span class='ftitulo'>escribe</span> la cantidad de cada una.</h5></center>",
         restaurar: "start_19()",
         dir: ruta,
-        cod: "1-1-19",
+        cod: "3-1-19",
         nota: cal
     });
     return false;
 };
 
 function start_20() {
-    $("#ventana").load(ruta + '1-1-20/index.php', {
+    $("#ventana").load(ruta + '3-1-20/index.php', {
         next: "resultado()",
-        procesar: "result_tipo_1_1_20()",
+        procesar: "result_tipo_3_1_20()",
         titulo: "<center><h5> <span class='ftitulo'>Selecciona</span> las figuras que están construidas con líneas cerradas.</h5></center>",
         restaurar: "start_20()",
         dir: ruta,
-        cod: "1-1-20",
+        cod: "3-1-20",
         nota: cal
     });
     return false;

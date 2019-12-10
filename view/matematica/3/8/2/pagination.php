@@ -27,49 +27,49 @@ var ruta = "../../../../exercises/matematica/";
 ////////////// 2do 
 // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
 function start_5() {
-    $("#ventana").load(ruta + '1-8-5/index.php', {
+    $("#ventana").load(ruta + '3-8-5/index.php', {
         next: "Page_6()",
-        procesar: "result_tipo_1_8_5()",
+        procesar: "result_tipo_3_8_5()",
         titulo: "<center><h5><span class='ftitulo'>Observa</span> y cuenta las figuras de cada recuadro.<br> <span class='ftitulo'>Escribe</span> la cantidad total y la tercia de las figuras. </h5></center>",
         restaurar: "start_5()",
         dir: ruta,
-        cod: "1-8-5",
+        cod: "3-8-5",
         nota: cal
     });
     return false;
 };
 function start_6() {
-    $("#ventana").load(ruta + '1-8-6/index.php', {
+    $("#ventana").load(ruta + '3-8-6/index.php', {
         next: "Page_7()",
-        procesar: "result_tipo_1_8_6()",
+        procesar: "result_tipo_3_8_6()",
         titulo: "<center><h5><span class='ftitulo'>Observa</span> y cuenta las figuras de cada recuadro.<br> <span class='ftitulo'>Escribe</span> la cantidad total y la tercia de las figuras. </h5></center>",
         restaurar: "start_6()",
         dir: ruta,
-        cod: "1-8-6",
+        cod: "3-8-6",
         nota: cal
     });
     return false;
 };
 function start_7() {
-    $("#ventana").load(ruta + '1-8-7/index.php', {
+    $("#ventana").load(ruta + '3-8-7/index.php', {
         next: "Page_8()",
-        procesar: "result_tipo_1_8_7()",
+        procesar: "result_tipo_3_8_7()",
         titulo: "<center><h5><span class='ftitulo'>Selecciona</span> correctamente el recuadro que indica la tercia de cada número.</h5></center>",
         restaurar: "start_7()",
         dir: ruta,
-        cod: "1-8-7",
+        cod: "3-8-7",
         nota: cal
     });
     return false;
 };
 function start_8() {
-    $("#ventana").load(ruta + '1-8-8/index.php', {
+    $("#ventana").load(ruta + '3-8-8/index.php', {
         next: "resultado()",
-        procesar: "result_tipo_1_8_8()",
+        procesar: "result_tipo_3_8_8()",
         titulo: "<center><h5><span class='ftitulo'>Relaciona</span> según corresponda. </h5></center>",
         restaurar: "start_8()",
         dir: ruta,
-        cod: "1-8-8",
+        cod: "3-8-8",
         nota: cal
     });
     return false;

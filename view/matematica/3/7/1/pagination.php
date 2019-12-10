@@ -27,49 +27,49 @@ var ruta = "../../../../exercises/matematica/";
 ////////////// 2do 
 // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
 function start_1() {
-    $("#ventana").load(ruta + '1-7-1/index.php', {
+    $("#ventana").load(ruta + '3-7-1/index.php', {
         next: "Page_2()",
         procesar: "result_tipo_1_7_1()",
         // titulo: "<center><h5><span class='ftitulo'>Selecciona </h5></center>",
         restaurar: "start_1()",
         dir: ruta,
-        cod: "1-7-1",
+        cod: "3-7-1",
         nota: cal
     });
     return false;
 };
 function start_2() {
-    $("#ventana").load(ruta + '1-7-2/index.php', {
+    $("#ventana").load(ruta + '3-7-2/index.php', {
         next: "Page_3()",
         procesar: "result_tipo_1_7_2()",
         titulo: "<center><h5><span class='ftitulo'>2. Selecciona</span> los números pares de la siguiente sucesión:</h5></center>",
         restaurar: "start_2()",
         dir: ruta,
-        cod: "1-7-2",
+        cod: "3-7-2",
         nota: cal
     });
     return false;
 };
 function start_3() {
-    $("#ventana").load(ruta + '1-7-3/index.php', {
+    $("#ventana").load(ruta + '3-7-3/index.php', {
         next: "Page_4()",
         procesar: "result_tipo_1_7_3()",
         titulo: "<center><h5><span class='ftitulo'>Clasifica</span> según corresponda.</h5></center>",
         restaurar: "start_3()",
         dir: ruta,
-        cod: "1-7-3",
+        cod: "3-7-3",
         nota: cal
     });
     return false;
 };
 function start_4() {
-    $("#ventana").load(ruta + '1-7-4/index.php', {
+    $("#ventana").load(ruta + '3-7-4/index.php', {
         next: "resultado()",
         procesar: "result_tipo_1_7_4()",
         titulo: "<center><h5><span class='ftitulo'>Selecciona</span> la respuesta correcta en cada caso.</h5></center>",
         restaurar: "start_4()",
         dir: ruta,
-        cod: "1-7-4",
+        cod: "3-7-4",
         nota: cal
     });
     return false;

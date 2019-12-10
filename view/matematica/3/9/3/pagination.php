@@ -41,85 +41,85 @@ var ruta = "../../../../exercises/matematica/";
 ////////////// 2do 
 // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
 function start_11() {
-    $("#ventana").load(ruta + '1-9-11/index.php', {
+    $("#ventana").load(ruta + '3-9-11/index.php', {
         next: "Page_12()",
-        procesar: "result_tipo_1_9_11()",
+        procesar: "result_tipo_3_9_11()",
         titulo: "<center><h5><span class='ftitulo'>Selecciona</span> los números que corresponden a los términos de las siguientes sustracciones:</h5></center>", 
         restaurar: "start_11()",
         dir: ruta,
-        cod: "1-9-11",
+        cod: "3-9-11",
         nota: cal
     });
     return false;
 };
 function start_12() {
-    $("#ventana").load(ruta + '1-9-12/index.php', {
+    $("#ventana").load(ruta + '3-9-12/index.php', {
         next: "Page_13()",
-        procesar: "result_tipo_1_9_12()",
+        procesar: "result_tipo_3_9_12()",
         titulo: "<center><h5><span class='ftitulo'>Selecciona</span> los números que corresponden a los términos de las siguientes sustracciones:</h5></center>", 
         restaurar: "start_12()",
         dir: ruta,
-        cod: "1-9-12",
+        cod: "3-9-12",
         nota: cal
     });
     return false;
 };
 function start_13() {
-    $("#ventana").load(ruta + '1-9-13/index.php', {
+    $("#ventana").load(ruta + '3-9-13/index.php', {
         next: "Page_14()",
-        procesar: "result_tipo_1_9_13()",
+        procesar: "result_tipo_3_9_13()",
         titulo: "<center><h5><span class='ftitulo'>Completa</span> los recuadros y <span class='ftitulo'>halla</span> la diferencia.</h5></center>",
         restaurar: "start_13()",
         dir: ruta,
-        cod: "1-9-13",
+        cod: "3-9-13",
         nota: cal
     });
     return false;
 };
 function start_14() {
-    $("#ventana").load(ruta + '1-9-14/index.php', {
+    $("#ventana").load(ruta + '3-9-14/index.php', {
         next: "Page_15()",
-        procesar: "result_tipo_1_9_14()",
+        procesar: "result_tipo_3_9_14()",
         titulo: "<center><h5><span class='ftitulo'>Completa</span> los recuadros y <span class='ftitulo'>halla</span> la diferencia.</h5></center>",
         restaurar: "start_14()",
         dir: ruta,
-        cod: "1-9-14",
+        cod: "3-9-14",
         nota: cal
     });
     return false;
 };
 function start_15() {
-    $("#ventana").load(ruta + '1-9-15/index.php', {
+    $("#ventana").load(ruta + '3-9-15/index.php', {
         next: "Page_16()",
-        procesar: "result_tipo_1_9_15()",
+        procesar: "result_tipo_3_9_15()",
         titulo: "<center><h5><span class='ftitulo'>Completa y verifica</span> los elementos de las siguientes sustracciones:</h5></center>",
         restaurar: "start_15()",
         dir: ruta,
-        cod: "1-9-15",
+        cod: "3-9-15",
         nota: cal
     });
     return false;
 };
 function start_16() {
-    $("#ventana").load(ruta + '1-9-16/index.php', {
+    $("#ventana").load(ruta + '3-9-16/index.php', {
         next: "Page_17()",
-        procesar: "result_tipo_1_9_16()",
+        procesar: "result_tipo_3_9_16()",
         titulo: "<center><h5><span class='ftitulo'>Resuelve</span> las siguientes sustracciones:</h5></center>",
         restaurar: "start_16()",
         dir: ruta,
-        cod: "1-9-16",
+        cod: "3-9-16",
         nota: cal
     });
     return false;
 };
 function start_17() {
-    $("#ventana").load(ruta + '1-9-17/index.php', {
+    $("#ventana").load(ruta + '3-9-17/index.php', {
         next: "resultado()",
-        procesar: "result_tipo_1_9_17()",
+        procesar: "result_tipo_3_9_17()",
         titulo: "<center><h5><span class='ftitulo'>Completa y verifica</span> las siguientes restas:</h5></center>",
         restaurar: "start_17()",
         dir: ruta,
-        cod: "1-9-17",
+        cod: "3-9-17",
         nota: cal
     });
     return false;

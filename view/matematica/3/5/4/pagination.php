@@ -25,49 +25,49 @@ console.log(cant);
 var ruta = "../../../../exercises/matematica/";
 ////////////// 2do 
 function start_17() {
-    $("#ventana").load(ruta + '1-5-17/index.php', {
+    $("#ventana").load(ruta + '3-5-17/index.php', {
         next: "Page_18()",
-        procesar: "result_tipo_1_5_17()",
+        procesar: "result_tipo_3_5_17()",
         titulo: "<center><h5><span class='ftitulo'>Selecciona</span> los números de tres cifras.</h5></center>", 
         restaurar: "start_17()",
         dir: ruta,
-        cod: "1-5-17",
+        cod: "3-5-17",
         nota: cal
     });
     return false;
 };
 function start_18() {
-    $("#ventana").load(ruta + '1-5-18/index.php', {
+    $("#ventana").load(ruta + '3-5-18/index.php', {
         next: "Page_19()",
-        procesar: "result_tipo_1_5_18()",
+        procesar: "result_tipo_3_5_18()",
         titulo: "<center><h5><span class='ftitulo'>Selecciona</span> cómo se leen los siguientes números:</h5></center>", 
         restaurar: "start_18()",
         dir: ruta,
-        cod: "1-5-18",
+        cod: "3-5-18",
         nota: cal
     });
     return false;
 };
 function start_19() {
-    $("#ventana").load(ruta + '1-5-19/index.php', {
+    $("#ventana").load(ruta + '3-5-19/index.php', {
         next: "Page_20()",
-        procesar: "result_tipo_1_5_19()",
+        procesar: "result_tipo_3_5_19()",
         titulo: "<center><h5><span class='ftitulo'>Selecciona</span> Escribe el número que corresponde a cada representación del ábaco.</h5></center>",  
         restaurar: "start_19()",
         dir: ruta,
-        cod: "1-5-19",
+        cod: "3-5-19",
         nota: cal
     });
     return false;
 };
 function start_20() {
-    $("#ventana").load(ruta + '1-5-20/index.php', {
+    $("#ventana").load(ruta + '3-5-20/index.php', {
         next: "resultado()",
-        procesar: "result_tipo_1_5_20()",
+        procesar: "result_tipo_3_5_20()",
         titulo: "<center><h5><span class='ftitulo'>Selecciona</span> los números formados por:</h5></center>",  
         restaurar: "start_20()",
         dir: ruta,
-        cod: "1-5-20",
+        cod: "3-5-20",
         nota: cal
     });
     return false;

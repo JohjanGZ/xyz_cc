@@ -20,37 +20,37 @@ console.log(cant);
 var ruta = "../../../../exercises/matematica/";
 ////////////// 2do 
 function start_21() {
-    $("#ventana").load(ruta + '1-5-21/index.php', {
+    $("#ventana").load(ruta + '3-5-21/index.php', {
         next: "Page_22()",
-        procesar: "result_tipo_1_5_21()",
+        procesar: "result_tipo_3_5_21()",
         titulo: "<center><h5><span class='ftitulo'>Resuelve</span> los siguientes problemas:</h5></center>",
         restaurar: "start_21()",
         dir: ruta,
-        cod: "1-5-21",
+        cod: "3-5-21",
         nota: cal
     });
     return false;
 };
 function start_22() {
-    $("#ventana").load(ruta + '1-5-22/index.php', {
+    $("#ventana").load(ruta + '3-5-22/index.php', {
         next: "Page_23()",
-        procesar: "result_tipo_1_5_22()",
+        procesar: "result_tipo_3_5_22()",
         titulo: "<center><h5><span class='ftitulo'>Resuelve</span> los siguientes problemas:</h5></center>",
         restaurar: "start_22()",
         dir: ruta,
-        cod: "1-5-22",
+        cod: "3-5-22",
         nota: cal
     });
     return false;
 };
 function start_23() {
-    $("#ventana").load(ruta + '1-5-23/index.php', {
+    $("#ventana").load(ruta + '3-5-23/index.php', {
         next: "resultado()",
-        procesar: "result_tipo_1_5_23()",
+        procesar: "result_tipo_3_5_23()",
         titulo: "<center><h5><span class='ftitulo'>Resuelve</span> los siguientes problemas:</h5></center>",
         restaurar: "start_23()",
         dir: ruta,
-        cod: "1-5-23",
+        cod: "3-5-23",
         nota: cal
     });
     return false;

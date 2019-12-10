@@ -18,26 +18,26 @@ var ruta = "../../../../exercises/matematica/";
 ////////////// 2do 
 // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
 function start_1() {
-    $("#ventana").load(ruta + '1-1-1/index.php', {
+    $("#ventana").load(ruta + '3-1-1/index.php', {
         next: "Page_2()",
-        procesar: "result_tipo_1_1_1()",
+        procesar: "result_tipo_3_1_1()",
         titulo: "<center><h5><span class='ftitulo'>Elige</span> los elementos y <span class='ftitulo'>agrupa</span> dos conjuntos.</h5></center>",
         restaurar: "start_1()",
         dir: ruta,
-        cod: "1-1-1",
+        cod: "3-1-1",
         nota: cal
     });
     return false;
 };
 
 function start_2() {
-    $("#ventana").load(ruta + '1-1-2/index.php', {
+    $("#ventana").load(ruta + '3-1-2/index.php', {
         next: "resultado()",
-        procesar: "result_tipo_1_1_2()",
+        procesar: "result_tipo_3_1_2()",
         titulo: "<center><h5><span class='ftitulo'>Observa</span> los elementos y <span class='ftitulo'>forma</span> conjuntos.</h5></center>",
         restaurar: "start_2()",
         dir: ruta,
-        cod: "1-1-2",
+        cod: "3-1-2",
         nota: cal
     });
     return false;
