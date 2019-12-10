@@ -4,22 +4,16 @@ include('header.php');
 include('carga.php');
 echo "<div id='fullscreen' >";   
 
-
-
-
 ?>
 </head>
 <div id='fullscreen' >
 <body>
 <div id="insert-php"></div>
     <nav class="indigo accent-2" role="navigation">
-
         <ul>
             <li id="logo-header">
-                <div class="nav-wrapper container"><a id="logo-container" href="./" class="brand-logo "><img
-                            class="logoArca" src="LOGO.png"></a>
+                <div class="nav-wrapper container"><a id="logo-container" href="./" class="brand-logo "><img class="logoArca" src="LOGO.png"></a>
             </li>
-
         </div>
         <div id="btn-tool" class="fixed-action-btn click-to-toggle direction-top direction-left" >
             <a class="btn-floating  pink darken-2">
@@ -55,11 +49,8 @@ echo "<div id='fullscreen' >";
     </nav>
 
     <!--<a class="btn-floating amber notas"><i class="material-icons">create</i></a>-->
-
-    <div id="notaciones">
-        <?php //include('paint/paint.php');?>
-    </div>
     <script>
+    
       $(document).ready(function(){
         
         $('#btn-paint').click( function (){
@@ -117,26 +108,27 @@ a:hover {
 }
 </style>
 <script>
-var libros = (function() {
-    var libros = null;
+var datos = (function(){
+    var datos = null;
     $.ajax({
         'async': false,
         'global': false,
         'url': "js/data.json",
         'dataType': "json",
-        'success': function(data) {
-            libros = data;
+        'success': function(data){
+            datos = data;
         }
     });
-    return libros;
+    return datos;
 })();
-var returnedData = $.grep(libros, function(element) {
-  return element.category === "cat1" && element.id === 3;
-}, false);
-console.log(returnedData);
 
 </script>
-<div id="cuerpo"></div>
+<div id="inicial">
+</div>
+<div id="cuerpo">
+</div>
+<div id="secundaria">
+</div>
 <div class="fixed-action-btn">
     <a class="btn-floating btn-small orange">
         <i class="requestfullscreen large material-icons">fullscreen</i><i class="exitfullscreen large material-icons"
@@ -146,14 +138,22 @@ console.log(returnedData);
 <!--  Scripts-->
 <script src="js/materialize.min.js"></script>
 <script type="text/javascript">
-function grado(grado){
-$('#cuerpo').load('libros.php', {
+ 
+var libros=datos.Primaria;
+$('#cuerpo').load('libros.php',{ 
     data: libros,
-    g:grado 
+    g:'todo'
 });
+
+function grado(grado,nivel){
+    $('#cuerpo').load('libros.php',{
+        data: datos.Primaria,
+        g:grado
+    });
 }
+/*
 $('#notaciones').hide();
-$(".notas").on("click", function() {
+$(".notas").on("click", function(){
     var press = $(this).attr("class");
     if (press == "btn-floating amber notas on") {
         $('#notaciones').hide();
@@ -168,21 +168,11 @@ $(".notas").on("click", function() {
             "inset rgba(0, 0, 0, 0.37) 2px 2px 3px 0px, 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2)"
         );
     }
-    /*$(this).css("box-shadow","inset 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2)");
-    $('#notaciones').load('../paint/paint.php');
 
-    $(this).addClass("on");*/
-});
-
-
-
-$('#cuerpo').load('libros.php', {
-    data: libros,
-    g:'todo'
-});
+});*/
 
 $('#btn-home').click(function() {
-    $('#cuerpo').load('libros.php',{
+    $('#cuerpo').load('libros.php',{ 
     data: libros,
     g:'todo'
 });
@@ -190,60 +180,54 @@ $('#btn-home').click(function() {
 $('#btn-pizarra').click(function() {
     $('#cuerpo').load('pizarra.php');
 });
-$(document).ready(function() {
+$(document).ready(function(){
     $('.sidenav').sidenav();
     $('select').formSelect();
 });
 </script>
 </body>
-
 </html>
 <script type='text/javascript'>
 function AddUnidad() {
-    $('#cuerpo').load('form_unidad.php')
+    $('#cuerpo').load('form_unidad.php');
 }
-
-
 </script>
 </div>
 <audio id="click" src="asset/cursor/sound/click.mp3"></audio>
 <script type="text/javascript">
-$(document).ready(function() {
-    $("html").mouseup(function() {
+$(document).ready(function(){
+    $("html").mouseup(function(){
         $(this).css({
             "cursor": "url(../asset/cursor/cursor_pointer.png),auto"
-        })
+        });
     });
-
-    $("html").mousedown(function() {
+    $("html").mousedown(function(){
         $(this).css({
             "cursor": "url(../asset/cursor/cursor.png),pointer !important"
-        })
+        });
     });
 });
-$("html").click(function() {
+$("html").click(function(){
     document.getElementById('click').play();
 });
-
 $("#portada").css("display", "none");
-$(function() {
-    // check native support
+$(function(){
+    // support
     $('#support').text($.fullscreen.isNativelySupported() ? 'supports' : 'doesn\'t support');
-    // open in fullscreen
-    $('#fullscreen .requestfullscreen').click(function() {
+    // abrir  fullscreen
+    $('#fullscreen .requestfullscreen').click(function(){
         $('#fullscreen').fullscreen();
         return false;
     });
-    // exit fullscreen
-    $('#fullscreen .exitfullscreen').click(function() {
+    // exit 
+    $('#fullscreen .exitfullscreen').click(function(){
         $.fullscreen.exit();
         return false;
     });
-
-    // document's ev{"adId":"00000001325f6931000000203296ac82"}ent
-    $(document).bind('fscreenchange', function(e, state, elem) {
-        // if we currently in fullscreen mode
-        if ($.fullscreen.isFullScreen()) {
+    
+    $(document).bind('fscreenchange', function(e, state, elem){
+        // si pantalla completa esta activada
+        if ($.fullscreen.isFullScreen()){
             $('#fullscreen .requestfullscreen').hide();
             $('#fullscreen .exitfullscreen').show();
         } else {
