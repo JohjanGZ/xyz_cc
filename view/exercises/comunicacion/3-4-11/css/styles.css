@@ -1,0 +1,55 @@
+h4 {
+    text-align: center;
+}
+
+h5 {
+    width: 85%;
+}
+
+.container {
+    display: flex;
+    height: 70%;
+    align-items: center;
+}
+
+.container .row {
+    width: 100%;
+}
+
+.contenedor-ejercicios {}
+
+.contenedor-ejercicios .ejercicio {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.ejercicio .contenedor-palabras-img {
+    text-align: center;
+}
+
+.ejercicio .contenedor-palabras-img span {
+    display: inline-flex;
+    width: 150px;
+    height: auto;
+    margin: 5px;
+    background-color: cadetblue;
+}
+
+.ejercicio .oracion {
+    width: 70%;
+    padding: 15px;
+    border: 3px solid silver;
+    border-radius: 12px;
+    margin: auto;
+    margin-top: 25px;
+}
+
+
+/************/
+
+
+/**************/
+
+@media(max-height: 640px) {}

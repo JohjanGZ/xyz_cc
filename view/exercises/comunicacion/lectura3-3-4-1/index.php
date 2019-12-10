@@ -74,7 +74,7 @@
             <div id="test-swipe-3" class="col s12 lectura-img">
                 <div class="container-cuento">
                     <div class="lectura">
-                        <h5>La pequeña ardilla</h5>
+                        <h5>El cóndor</h5>
                         <p>
                             Cuando dijo eso, el picaflor voló contento al pueblo, y fue a decir al padre de Juliana: “He
                             descubierto dónde está tu hija. Para sacarla del lugar donde se encuentra, tenemos que
