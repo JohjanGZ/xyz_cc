@@ -1,65 +1,61 @@
 <script type="text/javascript">
-    
-   
-    function Page_16(){
-        start_16();
+    function Page_lectura_3_5_5_1(){
+        start_lectura_3_5_5_1();
         inicio();
-        count = 3;
+        count = 0;
     }
-    function Page_17(){
-        start_17();
+    function  Page_10(){
+        start_10();
         inicio();
-        count = 3;
+         count = 3;
     }
-    function Page_18(){
-        start_18();
+    function  Page_11(){
+        start_11();
         inicio();
-        count = 3;
+         count = 3;
     }
-
-    var cant=3;
+    var cant=2;
     var cal= 20/20;
     var ruta="../../../../exercises/comunicacion/";
     ////////////// 2do 
             // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
-    
-    function start_16(){
-        $("#ventana").load(ruta+'2-6-16/index.php', 
+    function start_lectura_3_5_5_1(){
+        $("#ventana").load(ruta+'lectura3-5-5-1/index.php', 
         {
-        next: "Page_17()", 
-        procesar:"result_tipo_2_6_16()",
-        titulo:"<center><h5><span>Selecciona</span> las oraciones que cumplen con la regla de concordancia.</h5></center>",
-        restaurar:"start_16()",
+        next: "Page_10()", 
+        procesar:"lectura3-5-5-1()",
+        titulo:"<center><h5><span>Lee</span> atentamente y contesta las preguntas.</h5></center>",
+        restaurar:"start_lectura_3_5_5_1()",
         dir:ruta,
-        cod: "2-6-16",
+        cod: "lectura3-5-5-1",
         nota:cal
         }
         );
         return false;  
     };
-    function start_17(){
-        $("#ventana").load(ruta+'2-6-17/index.php', 
+    function start_10(){
+        $("#ventana").load(ruta+'3-5-10/index.php', 
         {
-        next: "Page_18()", 
-        procesar:"result_tipo_2_6_17()",
-        titulo:"<center><h5><span>Arrastra</span> y <span>completa</span> cada frase con los siguientes adjetivos.</h5></center>",
-        restaurar:"start_17()",
+        next: "Page_11()", 
+        procesar:"result_tipo_3_5_10()",
+        titulo:"<center><h5><span>Lee</span> las preguntas y <span>selecciona</span> las respuestas correctas.</h5></center>",
+        restaurar:"start_10()",
         dir:ruta,
-        cod: "2-6-17",
+        cod: "3-5-10",
         nota:cal
         }
         );
         return false;  
     };
-    function start_18(){
-        $("#ventana").load(ruta+'2-6-18/index.php', 
+    function start_11(){
+        $("#ventana").load(ruta+'3-5-11/index.php', 
         {
         next: "resultado()", 
-        procesar:"result_tipo_2_6_18()",
-        titulo:"<center><h5><span>Relaciona</span> cada sustantivo con su adjetivo correspondiente.</h5></center>",
-        restaurar:"start_18()",
+        procesar:"result_tipo_3_5_11()",
+        titulo:"<center><h5><span>Lee</span> las preguntas y <span>selecciona</span> las respuestas correctas.</h5></center>",
+        restaurar:"start_11()",
         dir:ruta,
-        cod: "2-6-18",
+        cod: "3-5-11",
         nota:cal
         }
         );

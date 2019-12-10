@@ -14,13 +14,8 @@
         inicio();
          count = 3;
     }
-    function  Page_17(){
-        start_17();
-        inicio();
-         count = 3;
-    }
 
-    var cant=4;
+    var cant=3;
     var cal= 20/20;
     var ruta="../../../../exercises/comunicacion/";
 ////////////// 2do 
@@ -56,26 +51,12 @@
     function start_16(){
         $("#ventana").load(ruta+'3-4-16/index.php', 
         {
-        next: "Page_17()", 
+        next: "resultado()", 
         procesar:"result_tipo_3_4_16()",
-        titulo:"<center><h5><span><span>Completa</span> el cuadro con los pronombres del texto anterior</span> la respuesta correcta.</h5></center>",
+        titulo:"<center><h5><span>Completa</span> las oraciones con el pronombre personal correspondiente.</h5></center>",
         restaurar:"start_16()",
         dir:ruta,
         cod: "3-4-16",
-        nota:cal
-        }
-        );
-        return false;  
-    };
-    function start_17(){
-        $("#ventana").load(ruta+'3-4-17/index.php', 
-        {
-        next: "resultado()", 
-        procesar:"result_tipo_3_4_17()",
-        titulo:"<center><h5><span>Completa</span> las oraciones con el pronombre personal correspondiente.</h5></center>",
-        restaurar:"start_17()",
-        dir:ruta,
-        cod: "3-4-17",
         nota:cal
         }
         );
