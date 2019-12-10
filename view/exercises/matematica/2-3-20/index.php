@@ -29,7 +29,7 @@
             <div class="red"><h5> < </h5></div>
             <div class="droppable" data-value="424"></div>
             <div class="red"><h5> < </h5></div>
-            <div class="droppable" data-value="320"></div>
+            <div class="droppable" data-value="465"></div>
         </div>
     </div>
     <div class="containerPrincipal">
@@ -88,13 +88,14 @@ $( ".droppable" ).droppable({
   },
   drop: function( event, ui ) {
     $(".obj").css("border", "none");
-    $( this ).target.append(event.target);
+    // $( this ).target.append(event.target);
     element2 = $(this).attr("data-value");
     if(element==element2){
       rpta++;
     }else{
       otros++;
     }
+    element.removeClass("pieza");
   }
 });
 
