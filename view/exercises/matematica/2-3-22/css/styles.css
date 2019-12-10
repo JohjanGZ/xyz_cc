@@ -1,93 +1,78 @@
-.container-two {
-  padding-top: 4vh;
-  margin: 0 auto;
-  max-width: 1300px;
-  width: 75%;
-  display: grid;
-  grid-template-columns: 3fr;
-  align-items: center;
-  justify-items: center;
+.svg{
+    width: 1000px;
 }
-.filaUno{
-  width: 100%;
-  display: grid;
-  grid-template-columns: 4fr 2fr;
-  grid-column: 1/2;
-  grid-row: 1/2;
+.colores img{
+  width: 50px;
+  margin: 2vh;
+  border-radius: 18%;
 }
-.filaUno img{
-  width: 500px;
+#contenedorpuzzle{
+width: 90%;
+margin: 2vh auto;
 }
-.filaUno h5{
-  color: rgb(6, 115, 240);
-  padding-bottom: 20px;
+
+.item img:hover{
+border:solid;
+} 
+.a, .b{
+    display:grid;
+    justify-items: center;
+    align-items: center;
+}  
+.a h5, .b h5{
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    color: #2979ff;
+    font-weight: 600;
 }
-.c,.d,.u{
-  font-weight: 600;
-  font-size: 20px;
+.img-principal{
+  margin: 5vh auto 0;
 }
-.c{
-  color: green;
+.fila1, .fila2, .fila3{
+  margin: 0 auto 2vh;
+  width: 1160px;
+  box-shadow: 0 0 5px #80808061;
 }
-.d{
-  color: red;
+.container, .content-wrapper{
+    margin: 3vh auto 0;
 }
-.u{
-  color: blue;
+.fila1 img{
+  width: 20vw;
+  margin:0 auto;
 }
-hr{
-  border: 2px solid rgb(255, 34, 34);
+
+@media (max-width: 1200px){
+  .container, .content-wrapper{
+    margin: 42px auto 0;
 }
-.minifila, .minifila2, .minifila3, .minifila4{
-  display: grid;
-  grid-template-columns: 2fr 2fr 2fr 1fr;
-  justify-items: center;
-  align-items: center;
-  grid-column-gap: 20px;
-  margin-bottom: 10px;
 }
-.tabla {
-  grid-column: 2/3;
+
+#imgIzquierda li, #imgDerecha li{
+    width: 120px;
+    height: 105px;
+    border: 1px solid silver;
+    position: relative;
+    padding: 5px;
+    float: left;
 }
-.tabla .box {
-  border: 1px solid rgb(182, 182, 182);
-  border-radius: 6px;
-  width: 100%;
-  height: 50px;
+#imgIzquierda li:hover,  #imgDerecha li:hover{
+    background-color: silver;
 }
-.rpta{
-  width: 10px;
-  height: 10px;
-  padding: 14px 60px;
-  border: 1px solid rgb(207, 207, 207);
-  border-radius: 10px;
-  margin: 0px 10px;
+
+#imgIzquierda img, #imgDerecha img{
+     width: 100px;
+      max-height: 95px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+ 
+
 }
-.hover{
-  background-color: rgb(211, 255, 255);
-  transition: all .4s ease-in-out;
+.campo{
+  float: left;
 }
-.pregunta{
-  grid-column: 1/3;
-  grid-row: 2/3;
-}
-.options{
-  padding-top:5vh;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  height: 10px;
-  color: #fff;
-  font-weight: 600;
-  font-size: 23px;
-  text-align: center;
-  grid-column-gap: 20px;
-  grid-column: 1/3;
-}
-.options .obj{
-  width: 60px;
-  height: 40px;
-  padding-top: 2px;
-  border-radius: 10px;
-  text-align: center;
+ul{
+  margin: 0;
 }

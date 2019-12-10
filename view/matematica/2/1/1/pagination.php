@@ -418,114 +418,114 @@ function start_19() {
 };
 
 function start_20() {
-    $("#ventana").load(ruta + '2-0-20/index.php', {
+    $("#ventana").load(ruta + '2-3-25/index.php', {
         next: "Page_21()",
-        procesar: "result_tipo_2_0_20()",
+        procesar: "result_tipo_2_3_25()",
         titulo: "<center><h5> <span>Observa</span> los siguientes conjuntos. Luego <span>completa</span> la intersección.</h5></center>",
         restaurar: "start_20()",
         dir: ruta,
-        cod: "2-0-20",
+        cod: "2-3-25",
         nota: cal
     });
     return false;
 };
 
 function start_21() {
-    $("#ventana").load(ruta + '2-0-21/index.php', {
+    $("#ventana").load(ruta + '2-3-26/index.php', {
         next: "Page_22()",
-        procesar: "result_tipo_2-0-21()",
+        procesar: "result_tipo_2_3_26()",
         titulo: "<center><h5> <span>Observa</span> el diagrama y <span>señala</span> la respuesta correcta.</h5></center>",
         restaurar: "start_21()",
         dir: ruta,
-        cod: "2-0-21",
+        cod: "2-3-26",
         nota: cal
     });
     return false;
 };
 
 function start_22() {
-    $("#ventana").load(ruta + '2-0-22/index.php', {
+    $("#ventana").load(ruta + '2-3-27/index.php', {
         next: "Page_23()",
-        procesar: "result_tipo_2_0_22()",
+        procesar: "result_tipo_2_3_27()",
         titulo: "<center><h5> <span>Representa</span> por extensión la unión de los siguientes conjuntos según se encuentren ubicados sus elementos: </h5></center>",
         restaurar: "start_22()",
         dir: ruta,
-        cod: "2-0-22",
+        cod: "2-3-27",
         nota: cal
     });
     return false;
 };
 
 function start_23() {
-    $("#ventana").load(ruta + '2-0-23/index.php', {
+    $("#ventana").load(ruta + '2-3-28/index.php', {
         next: "Page_24()",
-        procesar: "result_tipo_2_0_23()",
+        procesar: "result_tipo_2_3_28()",
         titulo: "<center><h5><span>Observa</span> los conjuntos. Luego <span>representa</span> de forma simbólica en el orden que aparecen los elementos.</h5></center>",
         restaurar: "start_23()",
         dir: ruta,
-        cod: "2-0-23",
+        cod: "2-3-28",
         nota: cal
     });
     return false;
 };
 
 function start_24() {
-    $("#ventana").load(ruta + '2-0-24/index.php', {
+    $("#ventana").load(ruta + '2-4-1/index.php', {
         next: "Page_25()",
-        procesar: "result_tipo_2_0_24()",
+        procesar: "result_tipo_2_4_1()",
         titulo: "<center><h5><span>Relaciona</span> cada diagrama con la expresión que le corresponde.</h5></center>",
         restaurar: "start_24()",
         dir: ruta,
-        cod: "2-0-24",
+        cod: "2-4-1",
         nota: cal
     });
     return false;
 };
 
 function start_25() {
-    $("#ventana").load(ruta + '2-0-25/index.php', {
+    $("#ventana").load(ruta + '2-4-2/index.php', {
         next: "Page_26()",
-        procesar: "result_tipo_2_0_25()",
+        procesar: "result_tipo_2_4_2()",
         titulo: "<center><h5><span>Observa</span> los siguientes conjuntos. Luego <span>completa</span> la unión de cada uno en orden alfabético.</h5></center>",
         restaurar: "start_25()",
         dir: ruta,
-        cod: "2-0-25",
+        cod: "2-4-2",
         nota: cal
     });
     return false;
 };
 function start_26() {
-    $("#ventana").load(ruta + '2-0-26/index.php', {
+    $("#ventana").load(ruta + '2-4-3/index.php', {
         next: "Page_27()",
-        procesar: "result_tipo_2_0_26()",
+        procesar: "result_tipo_2_4_3()",
         titulo: "<center><h5><span>Completa</span> las siguientes oraciones con las palabras 'todos', 'algunos' o 'ninguno' según corresponda:</h5></center>",
         restaurar: "start_26()",
         dir: ruta,
-        cod: "2-0-26",
+        cod: "2-4-3",
         nota: cal
     });
     return false;
 };
 function start_27() {
-    $("#ventana").load(ruta + '2-0-27/index.php', {
+    $("#ventana").load(ruta + '2-4-4/index.php', {
         next: "Page_28()",
-        procesar: "result_tipo_2_0_27()",
+        procesar: "result_tipo_2_4_4()",
         titulo: "<center><h5><span>Relaciona</span> cada diagrama con la expresión que le corresponde.</h5></center>",
         restaurar: "start_27()",
         dir: ruta,
-        cod: "2-0-27",
+        cod: "2-4-4",
         nota: cal
     });
     return false;
 };
 function start_28() {
-    $("#ventana").load(ruta + '2-0-28/index.php', {
+    $("#ventana").load(ruta + '2-4-5/index.php', {
         next: "resultado()",
-        procesar: "result_tipo_2_0_28()",
+        procesar: "result_tipo_2_4_5()",
         titulo: "<center><h5><span>Observa</span> la imagen y <span>señala</span> verdadero o falso según corresponda.</h5></center>",
         restaurar: "start_28()",
         dir: ruta,
-        cod: "2-0-28",
+        cod: "2-4-5",
         nota: cal
     });
     return false;
