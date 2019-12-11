@@ -1,43 +1,39 @@
-let element;
-    let conLetraT = 0;
-    let conLetraK = 0;
+// var ul = document.querySelector('#contenedorpuzzle div');
+// for (var i = ul.children.length; i >= 0; i--) {
+//     ul.appendChild(ul.children[Math.random() * i | 0]);
+// }
 
-        $(".palabra").draggable({
-            start: function() {
-                element=$(this).attr("id");
+var r = 0;
+var forma = "";
+$('.figura-2 img').click(function() {
+    forma = $(this).attr('alt');
+    img = $(this).attr('src');
+    // Estilos a span
+    $('.figura-2 img').css({ "box-shadow": "none", "background": "transparent" });
+    $(this).css({ "box-shadow": "0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)", "background": "transparent" });
 
+});
+$('.p').click(function() {
+    console.log(img);
+    $(this).css({ "background-image": "url(" + img + ")", "background-size": "contain", "background-repeat": "no-repeat", "background-position": "center" });
+    if ($(this).attr("alt") == forma) {
+        if ($(this).text() == "") {
+            r++;
+        } else {
+            if ($(this).text() != $(this).attr("alt")) {
+                r = r + 2;
             }
-        });
-
-        $(".letraT").droppable({
-        classes: {
-            "ui-droppable-hover": "ui-state-hover"
-        },
-        drop: function( event, ui ) {
-            $(this).css("border", "#333");
-        //$( this ).target.append(event.target);
-
-        if(element=="transporte"){
-            conLetraT++
         }
-            element.removeClass("pieza");
+    } else {
+        if ($(this).text() == "") {
+            r--;
+        } else {
+            if ($(this).text() == $(this).attr("alt")) {
+                r = r - 2;
+            }
         }
-
-    });
-
-    $(".letraK").droppable({
-        classes: {
-            "ui-droppable-hover": "ui-state-hover"
-        },
-        drop: function( event, ui ) {
-            $(this).css("border", "#333");
-        //$( this ).target.append(event.target);
-
-        if(element=="animal"){
-            conLetraK++
-        }
-            element.removeClass("pieza");
-        }
-
-    });
-        
+    }
+    $(this).text(forma);
+    // console.log(letra);
+    console.log(r);
+});

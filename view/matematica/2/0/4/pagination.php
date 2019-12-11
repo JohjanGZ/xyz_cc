@@ -1,33 +1,31 @@
 <script type="text/javascript">
 
-function Page_1() {
-   
-    start_1();
+function Page_21() {
+    start_21();
     inicio();
     count = 3;
 }
 
-function Page_2() {
-    start_2();
+function Page_22() {
+    start_22();
     inicio();
     count = 3;
 }
 
-function Page_3() {
-    start_3();
+function Page_23() {
+    start_23();
     inicio();
     count = 3;
 }
 
-function Page_4() {
-    start_4();
+function Page_24() {
+    count = 3;
+    start_24();
     inicio();
-    count = 3;
 }
-
-function Page_5() {
+function Page_25() {
     count = 3;
-    start_5();
+    start_25();
     inicio();
 }
 
@@ -37,66 +35,66 @@ console.log(cant);
 var ruta = "../../../../exercises/matematica/";
 ////////////// 2do 
 // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
-function start_1() {
-    $("#ventana").load(ruta + '2-3-1/index.php', {
-        next: "Page_2()",
-        procesar: "result_tipo_2_3_1()",
+function start_21() {
+    $("#ventana").load(ruta + '2-0-21/index.php', {
+        next: "Page_22()",
+        procesar: "result_tipo_2_0_21()",
         titulo: "<center><h5><span>Completa</span> las siguientes secuencias gráficas ordenando las figuras y acertar dichas secuencias:</center>",
-        restaurar: "start_1()",
+        restaurar: "start_21()",
         dir: ruta,
-        cod: "2-3-1",
+        cod: "2-0-21",
         nota: cal
     });
     return false;
 };
 
-function start_2() {
-    $("#ventana").load(ruta + '2-3-2/index.php', {
-        next: "Page_3()",
-        procesar: "result_tipo_2_3_2()",
-        titulo: "<center><h5><span>Organiza</span> la siguiente información en la tabla de datos.</h5></center>",
-        restaurar: "start_2()",
+function start_22() {
+    $("#ventana").load(ruta + '2-0-22/index.php', {
+        next: "Page_23()",
+        procesar: "result_tipo_2_0_22()",
+        titulo: "<center><h5><span>Completa</span> las siguientes secuencias gráficas ordenando las figuras y acertar dichas secuencias:</h5></center>",
+        restaurar: "start_22()",
         dir: ruta,
-        cod: "2-3-2",
+        cod: "2-0-22",
         nota: cal
     });
     return false;
 };
 
-function start_3() {
-    $("#ventana").load(ruta + '2-3-3/index.php', {
-        next: "Page_4()",
-        procesar: "result_tipo_2_3_3()",
-        titulo: "<center><h5><span>Observa</span> la imagen y <span>escribe</span> en la tabla de datos cuántos animales hay según el número de patas que tienen.</h5></center>",
-        restaurar: "start_3()",
+function start_23() {
+    $("#ventana").load(ruta + '2-0-23/index.php', {
+        next: "Page_24()",
+        procesar: "result_tipo_2_0_23()",
+        titulo: "<center><h5><span>Completa</span> las siguientes secuencias gráficas ordenando las figuras y acertar dichas secuencias:</h5></center>",
+        restaurar: "start_23()",
         dir: ruta,
-        cod: "2-3-3",
+        cod: "2-0-23",
         nota: cal
     });
     return false;
 };
 
-function start_4() {
-    $("#ventana").load(ruta + '2-3-4/index.php', {
-        next: "Page_5()",
-        procesar: "result_tipo_2_3_4()",
-        titulo: " <center><h5><span>Observa</span> el siguiente diagrama y <span>escribe</span> cuántos niños viajan en cada medio de transporte durante las vacaciones.</h5></center>",
-        restaurar: "start_4()",
+function start_24() {
+    $("#ventana").load(ruta + '2-0-24/index.php', {
+        next: "Page_25()",
+        procesar: "result_tipo_2_0_24()",
+        titulo: " <center><h5><span>Completa</span> las siguientes secuencias gráficas ordenando las figuras y acertar dichas secuencias:</h5></center>",
+        restaurar: "start_24()",
         dir: ruta,
-        cod: "2-3-4",
+        cod: "2-0-24",
         nota: cal
     });
     return false;
 };
 
-function start_5() {
-    $("#ventana").load(ruta + '2-3-5/index.php', {
+function start_25() {
+    $("#ventana").load(ruta + '2-0-25/index.php', {
         next: "resultado()",
-        procesar: "result_tipo_2_3_5()",
-        titulo: "<center><h5><span>Registra</span> con palotes la cantidad de generos favoritos de películas para los niños de segundo grado. Luego, <span>realiza</span> el diagrama de barras según el cuadro.</h5></center>",
-        restaurar: "start_5()",
+        procesar: "result_tipo_2_0_25()",
+        titulo: "<center><h5><span>Completa</span> las siguientes secuencias gráficas ordenando las figuras y acertar dichas secuencias:</h5></center>",
+        restaurar: "start_25()",
         dir: ruta,
-        cod: "2-3-5",
+        cod: "2-0-25",
         nota: cal
     });
     return false;

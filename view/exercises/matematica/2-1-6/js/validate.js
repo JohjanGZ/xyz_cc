@@ -5,19 +5,15 @@
     //     div.appendChild(div.children[Math.random() * i | 0]);
     // }
     // Select
-    var r = 0, otros = 0;
+    var r = 0;
     $(".slc").change(function() {
         slcalt = $(this).attr("alt");
         slcval = $(this).val();
-
         console.log(slcalt);
         console.log(slcval);
         if (slcalt == slcval) {
             r++;
-            //console.log(r);
-        }else{
-            otros++;
+            console.log(r);
         }
-        console.log(r)
     });
   
