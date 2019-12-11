@@ -5,68 +5,134 @@
     <link rel="stylesheet" type="text/css" href="<?= $dir ?>/css/styles.css">
 </head>
 <style type="text/css">
-    @media screen and (max-width: 1300px) {
-        center h5{
-        font-size: 20px;
-    }   
-    }
-    @media only screen and (max-height: 600px) {
-        .container-two{
-            padding-top: 10px;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-        }
-        .principalImage{
-            grid-column: 1/2;
-        }
-        .contenedor-silabas{
-            display: grid;
-            justify-items: center;
-            grid-column: 2/3;
-        }
-        .grid-container{
-            grid-column: 1/3;
-            grid-row: 2/3;
-        }
-    }
+
 </style>
 <?=$titulo?>
-
+<?php $numbers = array('2','II','IIIIIIII','8', '16', 'IIIIIIIIIIIIIIII', '34'); ?>
 <body>
     <div class="container-two">
-        <center class="principalImage">
-            <img src="img/1-11/conjunto.gif" class="img">
-        </center>
-        <div class="grid-container">
-            <div class="grid-item">
-                <div class="flex-box">
-                    <span class="span-before">Sabado y domingo son elementos de</span>
-                    <div class="caja" alt="s" data="t"></div>
-                    <span class="span-after">y también de</span>
-                    <div class="caja" alt="t" data="s"></div>
-                    <span class="span-after">.</span>
-                </div>
+        <div class="columnaUno">
+            <div class="">
+                <img src="img/2/titulo.gif" alt="">
             </div>
-            <div class="grid-item">
-                <div class="flex-box">
-                    <div class="caja" alt="t"></div>
-                    <span class="span-after"> es </span>
-                    <div class="caja" id="subcon" alt="subconjunto"></div>
-                    <span class="span-after"> de </span>
-                    <div class="caja" alt="s"></div>
-                    <span class="span-after"> . </span>
-                </div>
+            <div class="">
+                <img src="img/2/imagen.gif" alt="">
             </div>
         </div>
-
-        <div class="contenedor-silabas">
-            <ul class="opciones">
-                <li id="1" alt="s" class="pieza"><span>S</span></li>
-                <li id="2" alt="t" class="pieza"><span>T</span></li>
-                <li id="3" alt="s" class="pieza"><span>S</span></li>
-                <li id="4" alt="t" class="pieza"><span>T</span></li>
-                <li id="5" alt="subconjunto" class="pieza subcon"><span>subconjunto</span></li>
-            </ul>
+        <div class="columnaDos grid-container">
+            <div class="grid-item">
+                <h6>Material</h6>
+            </div>
+            <div class="grid-item">
+                <h6>Conteo</h6>
+            </div>
+            <div class="grid-item">
+                <h6>Cantidad</h6>
+            </div>
+            <div class="grid-item">
+                <img src="img/2/pez.gif" alt="">
+            </div>
+            <div class="grid-item">
+                <select class="slc" alt="IIIIIIIIIIIIIIII">
+                    <option value="" disabled selected></option>
+                    <?php
+                        for ($i=0; $i < count($numbers); $i++) { 
+                            echo "<option value='$numbers[$i]'>$numbers[$i]</option>";
+                        }
+                    ?>
+                </select>
+            </div>
+            <div class="grid-item">
+                <select class="slc" alt="16">
+                    <option value="" disabled selected></option>
+                    <?php
+                        for ($i=0; $i < count($numbers); $i++) { 
+                            echo "<option value='$numbers[$i]'>$numbers[$i]</option>";
+                        }
+                    ?>
+                </select>
+            </div>
+            <div class="grid-item">
+                <img src="img/2/cangrejo.gif" alt="">
+            </div>
+            <div class="grid-item">
+                <select class="slc" alt="IIIIIIII">
+                    <option value="" disabled selected></option>
+                    <?php
+                        for ($i=0; $i < count($numbers); $i++) { 
+                            echo "<option value='$numbers[$i]'>$numbers[$i]</option>";
+                        }
+                    ?>
+                </select>
+            </div>
+            <div class="grid-item">
+                <select class="slc" alt="8">
+                    <option value="" disabled selected></option>
+                    <?php
+                        for ($i=0; $i < count($numbers); $i++) { 
+                            echo "<option value='$numbers[$i]'>$numbers[$i]</option>";
+                        }
+                    ?>
+                </select>
+            </div>
+            <div class="grid-item">
+                <img src="img/2/estrella.gif" alt="">
+            </div>
+            <div class="grid-item">
+                <select class="slc" alt="IIIIIIII">
+                    <option value="" disabled selected></option>
+                    <?php
+                        for ($i=0; $i < count($numbers); $i++) { 
+                            echo "<option value='$numbers[$i]'>$numbers[$i]</option>";
+                        }
+                    ?>
+                </select>
+            </div>
+            <div class="grid-item">
+                <select class="slc" alt="8">
+                    <option value="" disabled selected></option>
+                    <?php
+                        for ($i=0; $i < count($numbers); $i++) { 
+                            echo "<option value='$numbers[$i]'>$numbers[$i]</option>";
+                        }
+                    ?>
+                </select>
+            </div>
+            <div class="grid-item">
+                <img src="img/2/caracola.gif" alt="">
+            </div>
+            <div class="grid-item">
+                <select class="slc" alt="II">
+                    <option value="" disabled selected></option>
+                    <?php
+                        for ($i=0; $i < count($numbers); $i++) { 
+                            echo "<option value='$numbers[$i]'>$numbers[$i]</option>";
+                        }
+                    ?>
+                </select>
+            </div>
+            <div class="grid-item">
+                <select class="slc" alt="2">
+                    <option value="" disabled selected></option>
+                    <?php
+                        for ($i=0; $i < count($numbers); $i++) { 
+                            echo "<option value='$numbers[$i]'>$numbers[$i]</option>";
+                        }
+                    ?>
+                </select>
+            </div>
+            <div></div>
+            <div></div>
+            <div class="grid-item">
+                <select class="slc" alt="34">
+                    <option value="" disabled selected></option>
+                    <?php
+                        for ($i=0; $i < count($numbers); $i++) { 
+                            echo "<option value='$numbers[$i]'>$numbers[$i]</option>";
+                        }
+                    ?>
+                </select>
+            </div>
         </div>
     </div>
     <!-- Respuesta -->
@@ -74,7 +140,7 @@
         <div class="modal-content">
             <center>
                 <h4>Respuesta correcta</h4>
-                <img class="materialboxed" width="80%" src="img/1-11/respuesta.png">
+                <img class="materialboxed" width="80%" src="img/2/respuesta.png">
             </center>
         </div>
         <div class="modal-footer">
@@ -85,26 +151,29 @@
 
 
 <script src="../../../../../js/core.js"></script>
-<?php require('../../../tools/botones/botones.php');?>
-<script>$("#next").attr("onclick", "<?=$next?>");</script>
+<?php require('../../../tools/botones/botones.php');?><script>
+$("#next").attr("onclick", "<?=$next?>");
+</script>
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
-    // Validar
-    function result_tipo_2_0_16() {
-        var min = $('#Minutos').text();
-        var seg = $('#Segundos').text();
-        var milseg = $('#Centesimas').text();
-        var tiempo = min + ":" + seg + ":" + milseg;
+// Validar
+function result_tipo_2_0_16() {
+    var min = $('#Minutos').text();
+    var seg = $('#Segundos').text();
+    var milseg = $('#Centesimas').text();
+    var tiempo = min + ":" + seg + ":" + milseg;
 
-        if (r == 5) {
-            localStorage.setItem("Nota<?=$cod?>", nota);
-            localStorage.setItem("Time<?=$cod?>", tiempo);
-            correcto();
-        } else {;
-            incorrecto();
-            localStorage.setItem("Nota<?=$cod?>", "0");
-            localStorage.setItem("Time<?=$cod?>", tiempo);
-        }
-
+    if (r == 9 && otros == 0) {
+        console.log("otros: ", otros, "y r: ", r);
+        localStorage.setItem("Nota<?=$cod?>", nota);
+        localStorage.setItem("Time<?=$cod?>", tiempo);
+        correcto();
+    } else {
+        console.log("otros: ", otros, "y r: ", r);
+        incorrecto();
+        localStorage.setItem("Nota<?=$cod?>", "0");
+        localStorage.setItem("Time<?=$cod?>", tiempo);
     }
+
+}
 </script>

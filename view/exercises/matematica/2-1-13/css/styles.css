@@ -1,0 +1,60 @@
+.container-two {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 70%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item {
+    padding: 10px;
+    font-size: 24px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img {
+    border-style: none;
+    height: auto;
+    width: 75%;
+    /* margin-bottom: 4vh;*/
+}
+.img-select {
+    border-style: none;
+    height: auto;
+    width: 50px;
+    /* margin-bottom: 4vh;*/
+}
+.df {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.select-wrapper input.select-dropdown {
+    background: orange !important;
+    color: #ffffff !important;
+    width: 65px;
+    margin-left: 1vh;
+}
+
+/* .box-select {
+    display: flex;
+    justify-content: center;
+} */
+.box-igual {
+    margin-right: 1vh;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+.after {
+    margin-right: 1vh;
+}

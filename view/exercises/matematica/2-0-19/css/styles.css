@@ -1,232 +1,290 @@
-#contenedorPuzzle img {
-  float: left;
-  padding: 0px 0px 0 0;
-  width: 55px;
-  height: auto;
-  position: relative;
-  z-index: 10;
-  top: 5;
+.container-two {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 80%;
 }
-
-.conj1 {
-  background: url(../../../../matematica/2/0/1/img/1-12/conjuntoUno.gif);
-  height: 195px;
-  width: 265px;
-  background-repeat: no-repeat;
-  background-size: 100% 155px;
-  position: absolute;
+center h5{
+    width: 80%;
+    font-size: 25px;
+    padding-bottom: 2vh;
+    line-height: 30px;
 }
-
-.conj2 {
-  background: url(../../../../matematica/2/0/1/img/1-12/conjuntoDos.gif);
-  height: 195px;
-  width: 265px;
-  background-repeat: no-repeat;
-  background-size: 100% 155px;
-  position: absolute;
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
 }
-
-.ej1,
-.ej2 {
-  width: 100%;
-  padding: 8% 25% 2%;
-  height: 36vh;
+.imageContainer img{
+    width: 480px;
 }
-.lpd {
-  position: relative;
-  left: 8px;
-  float: left;
-  top: 20px;
+.grid-item {
+    border: 1px solid silver;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
-.lpd2 {
-  position: relative;
-  left: 19px;
-  top: 20px;
-  float: left;
+.containerPrincipal{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
 }
-
-#uno,
-#dos {
-  box-shadow: inset 0px 1px 3px 0px #7d7c7c;
-
-  width: 120%;
-
-  height: 7vh;
-  background-color: #f2f0ff40;
+.columnaUno{
+    grid-column: 1/2;
+    grid-row: 1/3;
 }
-
-#contenedorPiezas {
-  background: #5561ff00;
-  width: 150%;
-  height: auto;
-  float: left;
-  margin-left: auto;
-
-  margin-top: auto;
+.imageContainer {
+    text-align: center;
+    grid-column: 2/3;
+    grid-row: 1/2;
 }
-
-@media (max-width: 1300px) {
-  .ej1,
-  .ej2 {
-    width: 100%;
-    padding: 8% 0% 2% 21%;
-    height: 36vh;
-  }
-
-  #contenedorPiezas {
-    background: #5561ff00;
-    width: 150%;
-    height: auto;
-    float: left;
-    margin-left: auto;
-
-    margin-top: auto;
-  }
-
-  .lpd2 {
-    left: 14px;
-  }
+.columnaDos {
+    text-align: center;
+    grid-column: 2/3;
+    grid-row: 2/3;
 }
-
-@media only screen and (max-width: 880px) and (orientation: landscape) {
-  ul {
-    margin-top: -12px;
-  }
-
-  .ej1,
-  .ej2 {
-    width: 100%;
-    padding: 8% 16% 0%;
-    height: 24vh;
-  }
-
-  .lpd2 {
+.img {
+    width: auto;
+    height: 100px;
+}
+.bn {
+    border: none;
+    padding: 0;
+}
+.hd{
+    background-color: rgb(0, 140, 255);
+    color: #fff;
+}
+.item h6{
+    font-size: 25px;
+    padding-top: 0;
+    margin: 0;
+}
+.hd h6{
+    margin: 10px;
+    font-weight: 600;
+    font-size: 23px;
+    padding-bottom: 4px;
+}
+.ter{
+    width: 2px;
+    height: 5px;
+    rotate: 90deg;
     position: relative;
-    left: -13px;
-    top: 20px;
-    float: left;
-  }
-
-  .conj1 {
-    background: url(../../../../matematica/2/0/1/img/1-12/conjuntoUno.gif);
-    height: 80px;
-    width: 100px;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    position: absolute;
-  }
-
-  .conj2 {
-    background: url(../../../../matematica/2/0/1/img/1-12/conjuntoDos.gif);
-    height: 80px;
-    width: 100px;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    position: absolute;
-  }
-
-  #contenedorPiezas {
-    background: #5561ff00;
-    width: 150%;
-    height: auto;
-    float: left;
-    margin-left: auto;
-
-    margin-top: auto;
-  }
-
-  #contenedorPuzzle img {
-    float: left;
-    padding: 0px 0px 0 0;
-    width: 27px;
-    height: auto;
+    bottom: 20px;
+    right: -20px;
+    border: 3px solid rgb(207, 33, 33);
+}
+.fan{
+    width: 2px;
+    height: 5px;
+    rotate: 90deg;
     position: relative;
-    z-index: 10;
-    top: 5;
-  }
-
-  #uno,
-  #dos {
-    box-shadow: inset 0px 1px 3px 0px #7d7c7c;
-
-    width: 61px;
-
-    height: 7vh;
-    background-color: #f2f0ff40;
-    margin-top: 23px;
-  }
-
-  .row {
-    margin-bottom: 16px;
-  }
+    bottom: 20px;
+    right: -28px;
+    border: 3px solid rgb(207, 33, 33);
+}
+.rom{
+    width: 6px;
+    height: 5px;
+    rotate: 90deg;
+    position: relative;
+    bottom: 20px;
+    right: -32px;
+    border: 3px solid rgb(207, 33, 33);
+}
+.her{
+    width: 6px;
+    height: 5px;
+    rotate: 90deg;
+    position: relative;
+    bottom: 20px;
+    right: -42px;
+    border: 3px solid rgb(207, 33, 33);
+}
+.flotando{
+    position: relative;
+    bottom: -15px;
+}
+.flotanteBajo{
+    position: relative;
+    bottom: -40px;
+}
+.row{
+    margin: 0px;
+    text-align: center;
 }
 
-@media (max-width: 800px) {
-  .ej1,
-  .ej2 {
-    width: 100%;
-    padding: 8% 0% 2% 9%;
-    height: 36vh;
-  }
+ /*TABLE CONAINER*/
+
+ .table{
+     display: grid;
+     border: 1px solid rgb(9, 144, 255);
+     grid-template-columns: 1fr 1fr;
+ }
+.item{
+    text-align: center;
+    border: 1px solid rgb(9, 144, 255);
+    display: grid;
+    align-items: center;
 }
 
-@media (max-width: 481px) {
-  .ej1,
-  .ej2 {
-    width: 100%;
-    padding: 16% 0 0%;
-    height: 25vh;
-  }
+ /* Select */
+.select-wrapper input.select-dropdown {
+    border: 1px solid silver;
+    width: 80%;
+    margin: 10px auto;
+    font-weight: 600;
+    font-size: 24px;
+}
+.select-wrapper .caret{
+    display: none;
+}
+.select-wrapper input.select-dropdown:focus {
+    border-bottom: 1px solid silver;
+}
 
-  .lpd2 {
-    position: relative;
-    left: 29px;
-    top: 20px;
-    float: left;
-  }
-
-  .conj1 {
-    background: url(../../../../matematica/2/0/1/img/1-12/conjuntoUno.gif);
-    height: 80px;
-    width: 100px;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    position: absolute;
-  }
-
-  .conj2 {
-    background: url(../../../../matematica/2/0/1/img/1-12/conjuntoDos.gif);
-    height: 80px;
-    width: 100px;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    position: absolute;
-  }
-  #contenedorPiezas {
-    background: #5561ff00;
-    width: 150%;
+.select-wrapper ul {
     height: auto;
-    float: left;
-    margin-left: auto;
-    margin-top: auto;
-  }
+}
 
-  #contenedorPuzzle img {
-    float: left;
-    padding: 0px 0px 0 0;
-    width: 27px;
-    height: auto;
+.select-wrapper {
     position: relative;
-    z-index: 10;
-    top: 5;
-  }
+    margin-left: .5vh;
+    margin-right: .5vh;
+}
 
-  #uno,
-  #dos {
-    box-shadow: inset 0px 1px 3px 0px #7d7c7c;
-    width: 52px;
-    height: 5vh;
-    background-color: #f2f0ff40;
-    margin-top: 19px;
-  }
+.dropdown-content {
+    background-color: #fff;
+    margin: 0;
+    display: none;
+    min-width: 20px;
+    overflow-y: auto;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    width: 10px;
+    border-radius: 12px;
+}
+
+@media screen and (max-width: 1300px){
+    center{
+        width: 100%;
+        margin: auto;
+    }
+    center h5{
+        text-align: center;
+        width: 80%;
+        position: relative;
+        font-size: 20px;
+    }
+    .container-two{
+        margin-top: 5vh;
+    }
+}
+@media screen and (max-height: 768px){
+    .container-two{
+        margin-top: 2vh;
+    }
+    .select-wrapper input.select-dropdown {
+        border: 1px solid silver;
+        width: 80%;
+        margin: 2px auto;
+        font-weight: 600;
+        font-size: 24px;
+    }
+    .grid-item {
+        width: 25px;
+        height: 25px;
+    }
+}
+@media screen and (max-height: 678px){
+    .container-two{
+        margin-top: 2vh;
+    }
+    .select-wrapper input.select-dropdown {
+        border: 1px solid silver;
+        width: 80%;
+        margin: 2px auto;
+        font-weight: 600;
+        font-size: 24px;
+    }
+    .grid-item {
+        width: 23px;
+        height: 23px;
+    }
+    .item h6 {
+        font-size: 20px;
+        padding-top: 0;
+        margin: 0px;
+    }
+    .flotanteBajo {
+        font-size: 12px;
+        position: relative;
+        bottom: -34px;
+    }
+    .hd h6{
+        margin: 10px;
+        font-weight: 600;
+        font-size: 23px;
+        padding-bottom: 4px;
+    }
+    .ter{
+        width: 2px;
+        height: 5px;
+        rotate: 90deg;
+        position: relative;
+        bottom: 20px;
+        right: -16px;
+        border: 3px solid rgb(207, 33, 33);
+    }
+    .fan{
+        width: 2px;
+        height: 5px;
+        rotate: 90deg;
+        position: relative;
+        bottom: 20px;
+        right: -22px;
+        border: 3px solid rgb(207, 33, 33);
+    }
+    .rom{
+        width: 6px;
+        height: 5px;
+        rotate: 90deg;
+        position: relative;
+        bottom: 20px;
+        right: -25px;
+        border: 3px solid rgb(207, 33, 33);
+    }
+    .her{
+        width: 2px;
+        height: 2px;
+        rotate: 90deg;
+        position: relative;
+        bottom: 20px;
+        right: -35px;
+        border: 3px solid rgb(207, 33, 33);
+    }
+}
+@media screen and (max-height: 600px) {
+    .container-two{
+        margin-top: 0vh;
+    }
+    .grid-item {
+        width: 21px;
+        height: 21px;
+    }
+    center h5{
+        margin-bottom: 0vh;
+    }
 }

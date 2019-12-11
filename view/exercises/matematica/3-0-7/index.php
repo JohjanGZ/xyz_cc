@@ -7,11 +7,12 @@
 <?=$titulo?>
 <div class="container-two">
     <center>
-    <img src="<?=$dir?>/img/principal.png" class="principal">
+        <img src="<?=$dir?>/img/principal.png" class="principal materialboxed">
     </center>
     <div class="grid-preguntas">
         <div class="grid-pregunta">
             <div class="grid-container">
+                <!-- 1 -->
                 <div class="pregunta">
                     <div class="options">
                         <div class="option">
@@ -24,12 +25,11 @@
                         <div class="option">
                             <label>
                                 <input type="checkbox" class="optn" alt="n" />
-                                <span class="txtopt c1"><img src="<?=$dir?>/img/p.png" class="img"></span>
+                                <span class="txtopt c1"><img src="<?=$dir?>/img/n.png" class="img"></span>
                             </label>
                         </div>
                     </div>
                 </div>
-
                 <div class="pregunta">
                     <div class="options">
                         <div class="option">
@@ -42,12 +42,11 @@
                         <div class="option">
                             <label>
                                 <input type="checkbox" class="optn" alt="" />
-                                <span class="txtopt c1"><img src="<?=$dir?>/img/p.png" class="img"></span>
+                                <span class="txtopt c1"><img src="<?=$dir?>/img/n.png" class="img"></span>
                             </label>
                         </div>
                     </div>
                 </div>
-
                 <div class="pregunta">
                     <div class="options">
                         <div class="option">
@@ -56,11 +55,63 @@
                                 <span class="txtopt c1"><img src="<?=$dir?>/img/p.png" class="img"></span>
                             </label>
                         </div>
-                        <span class="txtopt c1"><img src="<?=$dir?>/img/6.png" class="img">____C</span>
+                        <span class="txtopt c1"><img src="<?=$dir?>/img/3.png" class="img">____C</span>
+                        <div class="option">
+                            <label>
+                                <input type="checkbox" class="optn" alt="n" />
+                                <span class="txtopt c1"><img src="<?=$dir?>/img/n.png" class="img"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="pregunta">
+                    <div class="options">
+                        <div class="option">
+                            <label>
+                                <input type="checkbox" class="optn" alt="" />
+                                <span class="txtopt c1"><img src="<?=$dir?>/img/p.png" class="img"></span>
+                            </label>
+                        </div>
+                        <span class="txtopt c1"><img src="<?=$dir?>/img/4.png" class="img">____B</span>
+                        <div class="option">
+                            <label>
+                                <input type="checkbox" class="optn" alt="n" />
+                                <span class="txtopt c1"><img src="<?=$dir?>/img/n.png" class="img"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="pregunta">
+                    <div class="options">
                         <div class="option">
                             <label>
                                 <input type="checkbox" class="optn" alt="n" />
                                 <span class="txtopt c1"><img src="<?=$dir?>/img/p.png" class="img"></span>
+                            </label>
+                        </div>
+                        <span class="txtopt c1"><img src="<?=$dir?>/img/5.png" class="img">____C</span>
+                        <div class="option">
+                            <label>
+                                <input type="checkbox" class="optn" alt="" />
+                                <span class="txtopt c1"><img src="<?=$dir?>/img/n.png" class="img"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="pregunta">
+                    <div class="options">
+                        <div class="option">
+                            <label>
+                                <input type="checkbox" class="optn" alt="n" />
+                                <span class="txtopt c1"><img src="<?=$dir?>/img/p.png" class="img"></span>
+                            </label>
+                        </div>
+                        <span class="txtopt c1"><img src="<?=$dir?>/img/6.png" class="img">____A</span>
+                        <div class="option">
+                            <label>
+                                <input type="checkbox" class="optn" alt="" />
+                                <span class="txtopt c1"><img src="<?=$dir?>/img/n.png" class="img"></span>
                             </label>
                         </div>
                     </div>
@@ -68,7 +119,7 @@
             </div>
         </div>
 
-     
+
     </div>
 
 </div>
@@ -98,7 +149,7 @@ function result_tipo_3_0_7() {
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
-    if (r == 3) {
+    if (r == 6) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();
