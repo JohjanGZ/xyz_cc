@@ -4,149 +4,150 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="<?= $dir ?>/css/styles.css">
 </head>
-<style>
-  #boxCheck{
-    text-align: center;
-  }
-  .infoContainer{
-    border: 1px solid #333;
-    padding: 15px 160px;
-    border-radius: 10px;
-    margin: 0px 10px;
-  }
-  #boxCheck img{
-    width: 500px;
-  }
-  .conjuntosOpciones{
-    display: grid;
-    grid-template-columns: 2fr 2fr 2fr 2fr;
-    justify-items: center;
-    align-items: center;
-  }
-  .conjuntosOpciones p{
-    background: #ffd54f ;
-    padding: 4px 20px;
-    text-align: center;
-    border-radius: 10px;
-  }
-    @media only screen and (max-width: 1200px){
-        .container-two {
-            padding-top: 2vh;
-            margin: 0 auto;
-            max-width: 1100px;
-            width: 81%;
-        }
-    }
-    @media only screen and (max-width: 1100px){
-        .container-two {
-            padding-top: 2vh;
-            margin: 0 auto;
-            max-width: 1100px;
-            width: 90%;
-        }
-    }
+<style type="text/css">
+
 </style>
 <?=$titulo?>
-<div class="container-two">
-    <div class="row boxCheck" id="boxCheck">
-        <div class=" col s12">
-            <img src="img/1-17/conjuntoVacioUnitario.png" alt="">
+<?php $numbers = array('13','7','IIIIIII','1', 'I', '5', 'IIIII'); ?>
+<body>
+    <div class="container-two">
+        <div class="columnaUno">
+            <div class="principalImage">
+                <img src="img/3/imagen.gif" alt="">
+            </div>
+        </div>
+        <div class="columnaDos grid-container">
+            <div class="grid-item hd">
+                <h6>Material</h6>
+            </div>
+            <div class="grid-item hd">
+                <h6>Conteo</h6>
+            </div>
+            <div class="grid-item hd">
+                <h6>Cantidad</h6>
+            </div>
+            <div class="grid-item">
+                <h6>Con 2 patas	</h6>
+            </div>
+            <div class="grid-item">
+                <select class="slc" alt="IIIII">
+                    <option value="" disabled selected></option>
+                    <?php
+                        for ($i=0; $i < count($numbers); $i++) { 
+                            echo "<option value='$numbers[$i]'>$numbers[$i]</option>";
+                        }
+                    ?>
+                </select>
+            </div>
+            <div class="grid-item">
+                <select class="slc" alt="5">
+                    <option value="" disabled selected></option>
+                    <?php
+                        for ($i=0; $i < count($numbers); $i++) { 
+                            echo "<option value='$numbers[$i]'>$numbers[$i]</option>";
+                        }
+                    ?>
+                </select>
+            </div>
+            <div class="grid-item">
+                <h6>Con 4 patas	</h6>
+            </div>
+            <div class="grid-item">
+                <select class="slc" alt="IIIIIII">
+                    <option value="" disabled selected></option>
+                    <?php
+                        for ($i=0; $i < count($numbers); $i++) { 
+                            echo "<option value='$numbers[$i]'>$numbers[$i]</option>";
+                        }
+                    ?>
+                </select>
+            </div>
+            <div class="grid-item">
+                <select class="slc" alt="7">
+                    <option value="" disabled selected></option>
+                    <?php
+                        for ($i=0; $i < count($numbers); $i++) { 
+                            echo "<option value='$numbers[$i]'>$numbers[$i]</option>";
+                        }
+                    ?>
+                </select>
+            </div>
+            <div class="grid-item">
+                <h6>Sin patas</h6>
+            </div>
+            <div class="grid-item">
+                <select class="slc" alt="I">
+                    <option value="" disabled selected></option>
+                    <?php
+                        for ($i=0; $i < count($numbers); $i++) { 
+                            echo "<option value='$numbers[$i]'>$numbers[$i]</option>";
+                        }
+                    ?>
+                </select>
+            </div>
+            <div class="grid-item">
+                <select class="slc" alt="1">
+                    <option value="" disabled selected></option>
+                    <?php
+                        for ($i=0; $i < count($numbers); $i++) { 
+                            echo "<option value='$numbers[$i]'>$numbers[$i]</option>";
+                        }
+                    ?>
+                </select>
+            </div>
+            <div></div>
+            <div></div>
+            <div class="grid-item">
+                <select class="slc" alt="13">
+                    <option value="" disabled selected></option>
+                    <?php
+                        for ($i=0; $i < count($numbers); $i++) { 
+                            echo "<option value='$numbers[$i]'>$numbers[$i]</option>";
+                        }
+                    ?>
+                </select>
+            </div>
         </div>
     </div>
-    <div class="row boxCheck">
-        <div class="cajas col s6">
-            <h4>• A = <span class="llavesContainer ">{</span> <span class="infoContainer groupM" data-value="u"> </span> <span class="llavesContainer">}</span></h4>
+    <!-- Respuesta -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <center>
+                <h4>Respuesta correcta</h4>
+                <img class="materialboxed" width="80%" src="img/3/respuesta.png">
+            </center>
         </div>
-        <div class="cajas col s6">
-            <h4>• B = <span class="llavesContainer ">{</span> <span class="infoContainer groupS" data-value="v"> </span> <span class="llavesContainer ">}</span></h4>
-        </div>
-    </div>
-    <div class="row boxCheck white">
-        <div class="col s12 conjuntosOpciones aleatorio">
-            <p class="obj" data-value="u">B = { a }</p>
-            <p class="obj" data-value="v">C = { ɸ }</p>
-            <p class="obj" data-value="u">D = { 1 }</p>
-            <p class="obj" data-value="v">T = { }</p>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Listo!</a>
         </div>
     </div>
-</div>
-<div id="modal1" class="modal">
-    <div class="modal-content">
-        <h4 class="center">Respuesta correcta</h4>
-        <center>
-            <img class="materialboxed" width="80%" src="img/1-17/respuesta.png">
-        </center>
-    </div>
-    <div class="modal-footer">
-        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Listo!</a>
-    </div>
-</div>
 </body>
+
+
 <script src="../../../../../js/core.js"></script>
-<?php require('../../../tools/botones/botones.php');?>
-<script>$("#next").attr("onclick", "<?=$next?>");</script>
+<?php require('../../../tools/botones/botones.php');?><script>
+$("#next").attr("onclick", "<?=$next?>");
+</script>
+<script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
+// Validar
+function result_tipo_2_0_17() {
+    var min = $('#Minutos').text();
+    var seg = $('#Segundos').text();
+    var milseg = $('#Centesimas').text();
+    var tiempo = min + ":" + seg + ":" + milseg;
 
-var rpts = 0, otros = 0, element, element2;
-
-$(".obj").draggable({
-    
-    start: function() {
-     element=$(this).attr("data-value"); 
- }
-});
-$( ".infoContainer" ).droppable({
-  classes: {
-    "ui-droppable-active": ".blue",
-    "ui-droppable-hover": "ui-state-hover"
-  },
-  drop: function( event, ui ) {
-    $(this).css("background-color", "rgba(139, 195, 74, 0.14)");
-  //  $( this ).target.append(event.target);
-      element2=$(this).attr("data-value");
-    if(element==element2){
-      rpts++;
-    }else{
-      otros++;
-    }
-    element.removeClass("pieza");
-  }
-});
-console.log(rpts, otros);
-    // Formulario - Registrados
-
-    function result_tipo_2_0_17() {
-        var min = $('#Minutos').text();
-        var seg = $('#Segundos').text();
-        var milseg = $('#Centesimas').text();
-        var tiempo = min + ":" + seg + ":" + milseg;
-
-        if (rpts == 4 && otros == 0) {
-
-          console.log(rpts, otros);
-            localStorage.setItem("Nota2-0-17", "2");
-            localStorage.setItem("Time2-0-17", tiempo);
-            correcto();
-
-        }
-
-        else {
-            console.log(rpts, otros);
-            incorrecto();
-            localStorage.setItem("Nota2-0-17", "0");
-            localStorage.setItem("Time2-0-17", tiempo);
-
-        }
+    if (r == 7 && otros == 0) {
+        console.log("otros: ", otros, "y r: ", r);
+        localStorage.setItem("Nota<?=$cod?>", nota);
+        localStorage.setItem("Time<?=$cod?>", tiempo);
+        correcto();
+    } else {
+        console.log("otros: ", otros, "y r: ", r);
+        incorrecto();
+        localStorage.setItem("Nota<?=$cod?>", "0");
+        localStorage.setItem("Time<?=$cod?>", tiempo);
     }
 
-    var cols = document.querySelectorAll('.aleatorio');
-
-    [].forEach.call(cols, (e)=>{
-
-        for (var i = e.children.length; i >= 0; i--) {
-            e.appendChild(e.children[Math.random() * i | 0]);
-        }
-
-    });
-
+}
 </script>

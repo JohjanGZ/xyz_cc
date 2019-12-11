@@ -1,0 +1,10 @@
+.container-two {
+  padding-top: 4vh;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+}

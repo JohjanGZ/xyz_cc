@@ -5,52 +5,17 @@
     <link rel="stylesheet" type="text/css" href="<?= $dir ?>/css/styles.css">
 </head>
 <style>
-  #boxCheck{
-    text-align: center;
-  }
-  .infoContainer{
-    border: 1px solid #333;
-    padding: 12px 160px;
-    border-radius: 10px;
-    margin: 0px 10px;
-  }
-  #boxCheck img{
-    width: 300px;
-  }
-  .conjuntosOpciones{
-    display: grid;
-    grid-template-columns: 2fr 2fr 2fr 2fr;
-    justify-items: center;
-    align-items: center;
-  }
-  .conjuntosOpciones p{
-    background: #ffd54f ;
-    padding: 8px 20px;
-    text-align: center;
-    border-radius: 10px;
-    font-weight: bold;
-  }
     @media only screen and (max-width: 1200px){
         .container-two {
-            padding-top: 2vh;
+            padding-top: 4vh;
             margin: 0 auto;
             max-width: 1100px;
             width: 81%;
         }
     }
-
-    @media screen and (min-width: 1350px){
-        .container-two {
-            padding-top: 6vh;
-            margin: 0 auto;
-            max-width: 1200px;
-            width: 91%;
-        }
-    }
-
     @media only screen and (max-width: 1100px){
         .container-two {
-            padding-top: 2vh;
+            padding-top: 4vh;
             margin: 0 auto;
             max-width: 1100px;
             width: 90%;
@@ -60,31 +25,71 @@
 <?=$titulo?>
 <div class="container-two">
     <div class="row boxCheck" id="boxCheck">
-        <div class=" col s6">
-            <img src="img/1-7/conjuntoDos.png" alt="">
+        <div class="cajas col s7">
+            <h4>• T = {nombres de mis profesores}</h4>
         </div>
-        <div class=" col s6">
-            <img src="img/1-7/conjuntoUno.png" alt="">
+        <div class="cajas col s5">
+            <p class="checkboxMa aleatorio">
+                <label>
+                    <input type="checkbox" class="filled-in" id="extencionUno" name="group1[]" />
+                    <span>Por extensión</span>
+                </label>
+                <label>
+                    <input type="checkbox" class="filled-in" id="extencionDos" name="group1[]" />
+                    <span>Por comprensión</span>
+                </label>
+            </p>
         </div>
     </div>
     <div class="row boxCheck">
-        <div class="cajas col s6">
-            <h4>• M = <span class="llavesContainer ">{</span> <span class="infoContainer groupM"> </span> <span class="llavesContainer">}</span></h4>
+        <div class="cajas col s7">
+            <h4>• N = {Perú, Ecuador, Colombia, Bolivia, Brasil}</h4>
         </div>
-        <div class="cajas col s6">
-            <h4>• S = <span class="llavesContainer ">{</span> <span class="infoContainer groupS"> </span> <span class="llavesContainer ">}</span></h4>
+        <div class="cajas col s5">
+            <p class="checkboxMa aleatorio">
+                <label>
+                    <input type="checkbox" class="filled-in" id="extencionTres" name="group2[]" />
+                    <span>Por extensión</span>
+                </label>
+                <label>
+                    <input type="checkbox" class="filled-in" id="extencionCuatro" name="group2[]" />
+                    <span>Por comprensión</span>
+                </label>
+            </p>
         </div>
     </div>
     <div class="row boxCheck white">
-        <div class="col s12 conjuntosOpciones aleatorio">
-            <p class="obj" data-value="l">L</p>
-            <p class="obj" data-value="l">I</p>
-            <p class="obj" data-value="l">B</p>
-            <p class="obj" data-value="l">R</p>
-            <p class="obj" data-value="l">O</p>
-            <p class="obj" data-value="n">1</p>
-            <p class="obj" data-value="n">2</p>
-            <p class="obj" data-value="n">3</p>
+        <div class="cajas col s7">
+            <h4>• G = {miembros de la familia}</h4>
+        </div>
+        <div class="cajas col s5">
+            <p class="checkboxMa aleatorio">
+                <label>
+                    <input type="checkbox" class="filled-in" id="extencionCinco" name="group3[]" />
+                    <span>Por extensión</span>
+                </label>
+                <label>
+                    <input type="checkbox" class="filled-in" id="extencionSeis" name="group3[]" />
+                    <span>Por comprensión</span>
+                </label>
+            </p>
+        </div>
+    </div>
+    <div class="row boxCheck white">
+        <div class="cajas col s7">
+            <h4>• P = {perro, gato, conejo, pato}</h4>
+        </div>
+        <div class="cajas col s5">
+            <p class="checkboxMa aleatorio">
+                <label>
+                    <input type="checkbox" class="filled-in" id="extencionSiete" name="group4[]" />
+                    <span>Por extensión</span>
+                </label>
+                <label>
+                    <input type="checkbox" class="filled-in" id="extencionOcho" name="group4[]" />
+                    <span>Por comprensión</span>
+                </label>
+            </p>
         </div>
     </div>
 </div>
@@ -92,7 +97,7 @@
     <div class="modal-content">
         <h4 class="center">Respuesta correcta</h4>
         <center>
-            <img class="materialboxed" width="80%" src="img/1-7/respuesta7.png">
+            <img class="materialboxed" width="80%" src="img/1-11/respuesta11.png">
         </center>
     </div>
     <div class="modal-footer">
@@ -105,49 +110,25 @@
 <script>$("#next").attr("onclick", "<?=$next?>");</script>
 <script type="text/javascript">
 
-    var grupoM = 0, grupoS = 0, otros = 0, element;
+    var opc1, opc2, opc3, opc4, opc5, opc6, opc7, opc8;
 
-    $(".obj").draggable({
-        
-        start: function() {
-         element=$(this).attr("data-value"); 
-     }
-    });
-    $( ".groupM" ).droppable({
-      classes: {
-        "ui-droppable-active": ".blue",
-        "ui-droppable-hover": "ui-state-hover"
-      },
-      drop: function( event, ui ) {
-        $(this).css("background-color", "rgba(139, 195, 74, 0.14)");
-      //  $( this ).target.append(event.target);
+    opc1 = $('#extencionUno').val();
+    opc2 = $('#extencionDos').val();
 
-        if(element=="l"){
-          grupoM++;
-        }else{
-          otros++;
-        }
-        element.removeClass("pieza");
-      }
-    });
-    $( ".groupS" ).droppable({
-      classes: {
-        "ui-droppable-active": ".blue",
-        "ui-droppable-hover": "ui-state-hover"
-      },
-      drop: function( event, ui ) {
-        $(this).css("background-color", "rgba(139, 195, 74, 0.14)");
-      //  $( this ).target.append(event.target);
+    opc3 = $('#extencionTres').val();
+    opc4 = $('#extencionCuatro').val();
 
-        if(element=="n"){
-          grupoS++;
-        }else{
-          otros++;
-        }
-        element.removeClass("pieza");
-      }
+    opc5 = $('#extencionCinco').val();
+    opc6 = $('#extencionSeis').val();
+
+    opc7 = $('#extencionSiete').val();
+    opc8 = $('#extencionOcho').val();
+
+    $('input[type="checkbox"]').on('change', function () {
+        $('input[name="' + this.name + '"]').not(this).prop('checked', false);
     });
-    console.log(grupoM, grupoS);
+
+    console.log(opc2, opc1);
     // Formulario - Registrados
 
     function result_tipo_2_0_7() {
@@ -156,9 +137,16 @@
         var milseg = $('#Centesimas').text();
         var tiempo = min + ":" + seg + ":" + milseg;
 
-        if (grupoM == 5 && grupoS == 3 && otros == 0) {
+        if ($('input:checkbox[id=extencionUno]:checked').val() == null &&
+            $('input:checkbox[id=extencionDos]:checked').val() == "on" &&
+            $('input:checkbox[id=extencionTres]:checked').val() == "on" &&
+            $('input:checkbox[id=extencionCuatro]:checked').val() == null &&
+            $('input:checkbox[id=extencionCinco]:checked').val() == null &&
+            $('input:checkbox[id=extencionSeis]:checked').val() == "on" &&
+            $('input:checkbox[id=extencionSiete]:checked').val() == "on" &&
+            $('input:checkbox[id=extencionOcho]:checked').val() == null) {
 
-          console.log(grupoM, grupoS);
+            console.log(opc1, opc2, opc3);
             localStorage.setItem("Nota2-0-7", "2");
             localStorage.setItem("Time2-0-7", tiempo);
             correcto();
@@ -166,7 +154,6 @@
         }
 
         else {
-          console.log(grupoM, grupoS);
             incorrecto();
             localStorage.setItem("Nota2-0-7", "0");
             localStorage.setItem("Time2-0-7", tiempo);

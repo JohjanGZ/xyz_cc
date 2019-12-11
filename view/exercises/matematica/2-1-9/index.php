@@ -1,281 +1,420 @@
- <?php require('../../../tools/var/variables.php'); ?>
+<?php require('../../../tools/var/variables.php'); ?>
 
-<style>
-.imgvf {
-    background-image: url(img/2-9/a9.gif);
-    background-size: 100% 100%;
-    width: 400px;
-    height: 315px;
-    margin: 0 auto 0;
-    background-repeat: no-repeat;
-}
-
-.contenedorimg {
-    border: solid 1px gainsboro;
-    width: 100px;
-    height: 76px;
-    margin: 5px;
-    border-radius: 15px;
-}
-#contenedorPiezas {
-    background: #5561ff00;
-    /* width: 652px; */
-    height: 100px;
-    float: left;
-    margin-left: 211px;
-    /* box-shadow: 0px 0px 10px 2px #dadada; */
-    margin-top: 80px;
-}
-
-#contenedorPuzzle img {
-    float: left;
-    padding: 0;
-    width: 70px;
-    height: auto;
-    position: relative;
-    z-index: 10;
-}
-
-.seleccion {
-    width: 50%;
-    top: 10%;
-    position: relative;
-}
-
-.imgvfi{
-
-  height: 50px;
-  width:50px;
-}
-.item3{
-
-    float: left;
-    width: 150px;
-    
-    padding: 13px;
-}
-
-.item2{
-      font-size: 24px;
-    margin-top: 15px;
-    width: 71px;
-    float: left;
-    
-    margin-left: 28px;
-    margin-right: 25px;
-}
-.item1{
-  width: 50px;
-    float: left;
- 
-}
-
-.switch label .lever {
-    content: "";
-    display: inline-block;
-    position: relative;
-    width: 36px;
-    height: 14px;
-    background-color: rgba(128, 28, 92, 0.65);
-    border-radius: 15px;
-    margin-right: 10px;
-    -webkit-transition: background 0.3s ease;
-    transition: background 0.3s ease;
-    vertical-align: middle;
-    margin: 0 16px;
-}
-
-.switch label .lever:after {
-    background-color: #861b5f;
-    -webkit-box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
-    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
-}
-
-.switch label input[type=checkbox]:checked + .lever {
-    background-color: #fdcc5359;
-}
-
-.switch label input[type=checkbox]:checked + .lever:after {
-    background-color: #ffd768;
-}
-
-.switch, .switch * {
-    -webkit-tap-highlight-color: transparent;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    margin-bottom: -14px;
-    padding-bottom: -21px;
-}
-
-section {
-
-    margin-top: 15vh;
-    margin-left: 15vw;
-
-}
-
-@media (max-width: 1300px){
-.grafica {
-    height: 320px !important;
-    width: 349px !important;
-}
-.contenedorPieza {
-    min-height: 93px;
-}
-}
-
-.row .col {
-
-    padding: 0 0.0rem;
-
-}
-</style>
-
-<div class="container">
-  <?=$titulo?>
-    <section id="contenedorPuzzle">
-      <div class="row" >
-<div class="col s5">
-        <div class="imgvf" ></div>
-  </div>
-
-        <form class="col s7  seleccion" method="POST"  id="seleccion">
-
-<!--////////////////////////////////////////////////////////////////FILA///////////////////////////////////////////////////////////////////////  -->
-
-            <div class="row">
-         
-                      <div class="col s5">
-                       <b> - Todas las sillas son iguales</b>
-                        <div class="item3">
-                            <!-- Switch -->
-                              <div class="switch">
-                                <label>
-                                  F
-                                  <input name="1" type="checkbox" checked="checked">
-                                  <span class="lever"></span>
-                                  V
-                                </label>
-                              </div>
-                            </div>
-                       </div> 
-                      </div>   
-              
-
-<!--////////////////////////////////////////////////////////////////FILA///////////////////////////////////////////////////////////////////////  -->
-
-            <div class="row">
-         
-                          <div class="col s5">
-                       <b> - Algunas sillas son de 4 patas</b>
-                        <div class="item3">
-                            <!-- Switch -->
-                              <div class="switch">
-                                <label>
-                                  F
-                                  <input name="2" type="checkbox" checked="checked">
-                                  <span class="lever"></span>
-                                  V
-                                </label>
-                              </div>
-                            </div>
-                       </div> 
-                      </div>   
-
-<!--////////////////////////////////////////////////////////////////FILA///////////////////////////////////////////////////////////////////////  -->
-
-            <div class="row">
-         
-                          <div class="col s5">
-                       <b> - Solo dos sillas tienen 5 ruedas</b>
-                        <div class="item3">
-                            <!-- Switch -->
-                              <div class="switch">
-                                <label>
-                                  F
-                                  <input name="3" type="checkbox" checked="checked">
-                                  <span class="lever"></span>
-                                  V
-                                </label>
-                              </div>
-                            </div>
-                       </div> 
-                      </div>   
-
-<!--////////////////////////////////////////////////////////////////FILA///////////////////////////////////////////////////////////////////////  -->
-
-            <div class="row">
-         
-                      <div class="col s5">
-                       <b> - Ninguna silla tiene dos ruedas</b>
-                        <div class="item3">
-                            <!-- Switch -->
-                              <div class="switch">
-                                <label>
-                                  F
-                                  <input name="4" type="checkbox" checked="checked">
-                                  <span class="lever"></span>
-                                  V
-                                </label>
-                              </div>
-                            </div>
-                       </div> 
-                      </div>   
-
- </form>
- </div>
- </section> 
-
-                                      <div id="modal1" class="modal">
-                                        <div class="modal-content">
-                                          <h4>Respuesta correcta</h4>
-                                          <center>
-                                          <img class="materialboxed"  width="100%" src="img/mate9.png">
-                                          </center>
-                                        </div>
-                                        <div class="modal-footer">
-                                          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Listo!</a>
-                                        </div>
-                                      </div>
-   </div>
-    <script src="../../../js/core.js"></script>
-<?php require_once('../../../tools/botones/botones.php'); ?>
-<script type="text/javascript">
-  function result_tipo_2_1_9(){
-
-    var  min= $('#Minutos').text();
-    var  seg= $('#Segundos').text();
-    var  milseg= $('#Centesimas').text();
-    var  tiempo=min+":"+seg+":"+milseg;
-    
-      if(
-           $('input:checkbox[name=1]:checked').val()==null    
-        &&
-           $('input:checkbox[name=2]:checked').val()=="on"
-        &&
-           $('input:checkbox[name=3]:checked').val()=="on"
-        &&
-           $('input:checkbox[name=4]:checked').val()==null   
-       )
-      {      
-        localStorage.setItem("Nota2-1-9","2");
-        localStorage.setItem("Time2-1-9", tiempo);
-
-         correcto(); 
-      }
-
-    else {
-
-        incorrecto();
-         
-        localStorage.setItem("Nota2-1-9","0");
-        localStorage.setItem("Time2-1-9", tiempo);
-       
-    }  
-}
-</script>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="<?= $dir ?>/css/styles.css">
+</head>
+<?php 
+    $numeros = array('0','1','2','3','4','5','6','7','8','9');
+?>
+<?=$titulo?>
+<div class="container-two">
+    <div class="containerPrincipal">
+        <div class="tabla">
+            <div class="fila">
+                <div class="box"></div>
+                <div class="box">4</div>
+                <div class="box">6</div>
+                <div class="box">3</div>
+            </div>
+            <div class="fila">
+                <div class="box">+</div>
+                <div class="box">3</div>
+                <div class="box">2</div>
+                <div class="box">1</div>
+            </div>
+            <hr>
+            <div class="respuesta">
+                <div></div>
+                <select class="slc" alt="7">
+                    <option value="" disabled selected></option>
+                    <?php
+                        for ($i=0; $i < count($numeros); $i++) { 
+                            echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                        }
+                    ?>
+                </select>
+                <select class="slc" alt="8">
+                    <option value="" disabled selected></option>
+                    <?php
+                    for ($i=0; $i < count($numeros); $i++) { 
+                        echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                    }
+                ?>
+                </select>
+                <select class="slc" alt="4">
+                    <option value="" disabled selected></option>
+                    <?php
+                    for ($i=0; $i < count($numeros); $i++) { 
+                        echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                    }
+                ?>
+                </select>
+            </div>
+        </div>
+        <div class="tabla">
+            <div class="fila">
+                <div class="box"></div>
+                <div class="box">3</div>
+                <div class="box">4</div>
+                <div class="box">2</div>
+            </div>
+            <div class="fila">
+                <div class="box">+</div>
+                <div class="box">5</div>
+                <div class="box">2</div>
+                <div class="box">7</div>
+            </div>
+            <hr>
+            <div class="respuesta">
+                <div></div>
+                <select class="slc" alt="8">
+                    <option value="" disabled selected></option>
+                    <?php
+                        for ($i=0; $i < count($numeros); $i++) { 
+                            echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                        }
+                    ?>
+                </select>
+                <select class="slc" alt="6">
+                    <option value="" disabled selected></option>
+                    <?php
+                    for ($i=0; $i < count($numeros); $i++) { 
+                        echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                    }
+                ?>
+                </select>
+                <select class="slc" alt="9">
+                    <option value="" disabled selected></option>
+                    <?php
+                    for ($i=0; $i < count($numeros); $i++) { 
+                        echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                    }
+                ?>
+                </select>
+            </div>
+        </div>
+        <div class="tabla">
+            <div class="fila">
+                <div class="box"></div>
+                <div class="box">1</div>
+                <div class="box">9</div>
+                <div class="box">8</div>
+            </div>
+            <div class="fila">
+                <div class="box">+</div>
+                <div class="box">2</div>
+                <div class="box">0</div>
+                <div class="box">1</div>
+            </div>
+            <hr>
+            <div class="respuesta">
+                <div></div>
+                <select class="slc" alt="3">
+                    <option value="" disabled selected></option>
+                    <?php
+                        for ($i=0; $i < count($numeros); $i++) { 
+                            echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                        }
+                    ?>
+                </select>
+                <select class="slc" alt="9">
+                    <option value="" disabled selected></option>
+                    <?php
+                    for ($i=0; $i < count($numeros); $i++) { 
+                        echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                    }
+                ?>
+                </select>
+                <select class="slc" alt="9">
+                    <option value="" disabled selected></option>
+                    <?php
+                    for ($i=0; $i < count($numeros); $i++) { 
+                        echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                    }
+                ?>
+                </select>
+            </div>
+        </div>
+        <div class="tabla">
+            <div class="fila">
+                <div class="box"></div>
+                <div class="box">2</div>
+                <div class="box">4</div>
+                <div class="box">5</div>
+            </div>
+            <div class="fila">
+                <div class="box">+</div>
+                <div class="box">4</div>
+                <div class="box">3</div>
+                <div class="box">2</div>
+            </div>
+            <hr>
+            <div class="respuesta">
+                <div></div>
+                <select class="slc" alt="6">
+                    <option value="" disabled selected></option>
+                    <?php
+                        for ($i=0; $i < count($numeros); $i++) { 
+                            echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                        }
+                    ?>
+                </select>
+                <select class="slc" alt="7">
+                    <option value="" disabled selected></option>
+                    <?php
+                    for ($i=0; $i < count($numeros); $i++) { 
+                        echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                    }
+                ?>
+                </select>
+                <select class="slc" alt="7">
+                    <option value="" disabled selected></option>
+                    <?php
+                    for ($i=0; $i < count($numeros); $i++) { 
+                        echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                    }
+                ?>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="containerPrincipal">
+    <div class="tabla">
+            <div class="fila">
+                <div class="box"></div>
+                <div class="box">4</div>
+                <div class="box">4</div>
+                <div class="box">6</div>
+            </div>
+            <div class="fila">
+                <div class="box">+</div>
+                <div class="box">1</div>
+                <div class="box">5</div>
+                <div class="box">2</div>
+            </div>
+            <hr>
+            <div class="respuesta">
+                <div></div>
+                <select class="slc" alt="5">
+                    <option value="" disabled selected></option>
+                    <?php
+                        for ($i=0; $i < count($numeros); $i++) { 
+                            echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                        }
+                    ?>
+                </select>
+                <select class="slc" alt="9">
+                    <option value="" disabled selected></option>
+                    <?php
+                    for ($i=0; $i < count($numeros); $i++) { 
+                        echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                    }
+                ?>
+                </select>
+                <select class="slc" alt="8">
+                    <option value="" disabled selected></option>
+                    <?php
+                    for ($i=0; $i < count($numeros); $i++) { 
+                        echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                    }
+                ?>
+                </select>
+            </div>
+        </div>
+        <div class="tabla">
+            <div class="fila">
+                <div class="box"></div>
+                <div class="box">3</div>
+                <div class="box">6</div>
+                <div class="box">2</div>
+            </div>
+            <div class="fila">
+                <div class="box">+</div>
+                <div class="box">2</div>
+                <div class="box">2</div>
+                <div class="box">4</div>
+            </div>
+            <hr>
+            <div class="respuesta">
+                <div></div>
+                <select class="slc" alt="5">
+                    <option value="" disabled selected></option>
+                    <?php
+                        for ($i=0; $i < count($numeros); $i++) { 
+                            echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                        }
+                    ?>
+                </select>
+                <select class="slc" alt="8">
+                    <option value="" disabled selected></option>
+                    <?php
+                    for ($i=0; $i < count($numeros); $i++) { 
+                        echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                    }
+                ?>
+                </select>
+                <select class="slc" alt="6">
+                    <option value="" disabled selected></option>
+                    <?php
+                    for ($i=0; $i < count($numeros); $i++) { 
+                        echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                    }
+                ?>
+                </select>
+            </div>
+        </div>
+        <div class="tabla">
+            <div class="fila">
+                <div class="box"></div>
+                <div class="box">4</div>
+                <div class="box">1</div>
+                <div class="box">2</div>
+            </div>
+            <div class="fila">
+                <div class="box">+</div>
+                <div class="box">2</div>
+                <div class="box">3</div>
+                <div class="box">4</div>
+            </div>
+            <hr>
+            <div class="respuesta">
+                <div></div>
+                <select class="slc" alt="6">
+                    <option value="" disabled selected></option>
+                    <?php
+                        for ($i=0; $i < count($numeros); $i++) { 
+                            echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                        }
+                    ?>
+                </select>
+                <select class="slc" alt="4">
+                    <option value="" disabled selected></option>
+                    <?php
+                    for ($i=0; $i < count($numeros); $i++) { 
+                        echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                    }
+                ?>
+                </select>
+                <select class="slc" alt="6">
+                    <option value="" disabled selected></option>
+                    <?php
+                    for ($i=0; $i < count($numeros); $i++) { 
+                        echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                    }
+                ?>
+                </select>
+            </div>
+        </div>
+        <div class="tabla">
+            <div class="fila">
+                <div class="box"></div>
+                <div class="box">5</div>
+                <div class="box">3</div>
+                <div class="box">6</div>
+            </div>
+            <div class="fila">
+                <div class="box">+</div>
+                <div class="box">2</div>
+                <div class="box">6</div>
+                <div class="box">2</div>
+            </div>
+            <hr>
+            <div class="respuesta">
+                <div></div>
+                <select class="slc" alt="7">
+                    <option value="" disabled selected></option>
+                    <?php
+                        for ($i=0; $i < count($numeros); $i++) { 
+                            echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                        }
+                    ?>
+                </select>
+                <select class="slc" alt="9">
+                    <option value="" disabled selected></option>
+                    <?php
+                    for ($i=0; $i < count($numeros); $i++) { 
+                        echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                    }
+                ?>
+                </select>
+                <select class="slc" alt="8">
+                    <option value="" disabled selected></option>
+                    <?php
+                    for ($i=0; $i < count($numeros); $i++) { 
+                        echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                    }
+                ?>
+                </select>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <h4 class="center">Respuesta correcta</h4>
+        <center>
+            <img class="materialboxed" width="80%" src="img/13-5/respuesta.png">
+        </center>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Listo!</a>
+    </div>
+</div>
 </body>
+<script src="../../../../../js/core.js"></script>
+<?php require('../../../tools/botones/botones.php');?>
+<script>
+$("#next").attr("onclick", "<?=$next?>");
+</script>
+<script type="text/javascript">
+
+$('select').formSelect();
+// Select
+var r = 0;
+$(".slc").change(function() {
+    slcalt = $(this).attr("alt");
+    slcval = $(this).val();
+    console.log(slcalt);
+    console.log(slcval);
+    if (slcalt == slcval) {
+        r++;
+        console.log(r);
+    }
+});
 
 
+
+// Formulario - Registrados
+
+function result_tipo_2_1_9() {
+    var min = $('#Minutos').text();
+    var seg = $('#Segundos').text();
+    var milseg = $('#Centesimas').text();
+    var tiempo = min + ":" + seg + ":" + milseg;
+
+    if (r == 24) {
+        console.log(rpta);
+        localStorage.setItem("Nota2-1-9", "2");
+        localStorage.setItem("Time2-1-9", tiempo);
+        correcto();
+
+    } else {
+        console.log(rpta);
+        incorrecto();
+        localStorage.setItem("Nota2-1-9", "0");
+        localStorage.setItem("Time2-1-9", tiempo);
+
+    }
+}
+
+var cols = document.querySelectorAll('.aleatorio');
+
+[].forEach.call(cols, (e) => {
+
+    for (var i = e.children.length; i >= 0; i--) {
+        e.appendChild(e.children[Math.random() * i | 0]);
+    }
+
+});
+</script>

@@ -1,130 +1,313 @@
 <?php require('../../../tools/var/variables.php'); ?>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="<?= $dir ?>/css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
 </head>
-<style>
-    @media only screen and (max-width: 1200px){
-        .container-two {
-            padding-top: 10vh;
-            margin: 0 auto;
-            max-width: 1100px;
-            width: 81%;
-        }
-    }
-    @media only screen and (max-width: 1100px){
-        .container-two {
-            padding-top: 10vh;
-            margin: 0 auto;
-            max-width: 1100px;
-            width: 90%;
-        }
-    }
-    .cajas span{
-        border: 1px solid #333;
-        padding: 6px 120px;
-        margin: 0px 4px;
-        border-radius: 20px;
-    }
-</style>
 <?=$titulo?>
-<div class="container-two">
-    <div class="row boxCheck" id="boxCheck">
-        <div class="cajas col s5">
-            <h4>• M = {nombres de insectos}</h4>
+<style>
+.container-two {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 80%;
+    padding-top: 6vh;
+}
+
+.grid-item {
+    border: 1px solid silver;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.container-grid{
+    display: grid;
+    grid-template-columns: 4fr 2fr 8fr;
+    row-gap: 20px;
+}
+.imagenPrincipal{
+    grid-column: 1/2;
+    grid-row: 1/5;
+}
+.opcUno, .opcDos, .opcTres, .opcCuatro, .opcCinco{
+    grid-column: 2/4;
+    margin: 10px;
+}
+.container-grid h6{
+    font-size: 24px;
+    font-weight: 400;
+}
+#imagePrincipal{
+    width: 500px;
+}
+.opcSeis{
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+    grid-column: 1/8;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.opcSeis .obj{
+    padding: 6px 20px;
+    background-color: rgb(19, 160, 241);
+    border-radius: 12px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.boContainer{
+    padding: 10px 40px;
+    height: 100%;
+    margin: 10px;
+    width: 200px;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 12px;
+    background: rgb(253, 253, 249);
+}
+.img {
+    width: auto;
+    height: 110px;
+}
+.bn {
+    border: none;
+}
+.br {
+    border-right: 0px solid transparent;
+}
+.bl {
+    border-left: 1px solid transparent;
+}
+.mr {
+    margin-right: 4vh;
+}
+.ml {
+    margin-left: 12vh;
+}
+.row{
+    margin: 0px;
+    text-align: center;
+}
+.row .col{
+    margin: 10px 0px;
+}
+
+@media screen and (max-width: 1300px){
+    center h5{
+        font-size: 18px!important;
+    }
+    .container-two {
+        margin: 0 auto;
+        max-width: 1280px;
+        width: 80%;
+        padding-top: 6vh;
+    }
+    
+    .grid-item {
+        border: 1px solid silver;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    .container-grid{
+        display: grid;
+        grid-template-columns: 4fr 2fr 8fr;
+        row-gap: 0px;
+    }
+    .imagenPrincipal{
+        grid-column: 1/2;
+        grid-row: 1/5;
+    }
+    .opcUno, .opcDos, .opcTres, .opcCuatro, .opcCinco{
+        grid-column: 2/4;
+        margin: 10px;
+    }
+    .container-two {
+        margin: 0 auto;
+        max-width: 1280px;
+        width: 85%;
+        padding-top: 6vh;
+    }
+    #imagenPrincipal {
+        width: 100px!important;
+    }
+    .container-grid h6{
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+@media screen and (max-height:750px){
+    .container-two {
+        margin: 0 auto;
+        max-width: 1280px;
+        width: 85%;
+        padding-top: 2vh;
+    }
+    #imagenPrincipal {
+        width: 100px!important;
+    }
+    .container-grid h6{
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .grid-item {
+        border: 1px solid silver;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+}
+@media screen and (max-width: 1250px){
+    .container-two {
+        margin: 0 auto;
+        max-width: 1280px;
+        width: 80%;
+        padding-top: 2vh;
+    }
+    
+}
+@media screen and (max-height: 650px){
+    .container-two {
+        margin: 0 auto;
+        max-width: 1280px;
+        width: 85%;
+        padding-top: 2vh;
+    }
+    #imagenPrincipal {
+        width: 100px!important;
+    }
+    .container-grid h6{
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .grid-item {
+        border: 1px solid silver;
+        width: 25px;
+        height: 25px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    .opcSeis .obj {
+        padding: 2px 19px!important;
+    }
+    .row .container-grid{
+        justify-items: center;
+        align-items: center;
+    }
+    .opcUno, .opcDos, .opcTres, .opcCuatro, .opcCinco {
+        grid-column: 2 / 4;
+        margin: 0px!important;
+    }
+}
+
+</style>
+<body>
+    <div class="container-two">
+        <div class="row container-grid">
+            <div class="imagenPrincipal">
+                <img  class="imageContainer" id="imagePrincipal" src="img/2-1-5/image.gif" alt="">
+            </div>
+            <div class="opcUno">
+                <h6>La resbaladera está en ( <span class="boContainer" data-value="a"> </span> ; <span class="boContainer" data-value="2"></span> )</h6>
+            </div>
+            <div class="opcDos">
+                <h6>El auto está en	( <span class="boContainer" data-value="f"> </span> ; <span class="boContainer" data-value="2"></span> )</h6>
+            </div>
+            <div class="opcTres">
+                <h6>La casa está en ( <span class="boContainer" data-value="i"> </span> ; <span class="boContainer" data-value="4"></span> )</h6>
+            </div>
+            <div class="opcCuatro">
+                <h6>El semáforo está en ( <span class="boContainer" data-value="d"> </span> ; <span class="boContainer" data-value="1"></span> )</h6>
+            </div>
+            <div class="opcCinco">
+                <h6>La banca está en ( <span class="boContainer" data-value="c"> </span> ; <span class="boContainer" data-value="4"></span> )</h6>
+            </div>
+            <div class="opcSeis">
+                <p class="obj" data-value="a">A</p>
+                <p class="obj" data-value="2">2</p>
+                <p class="obj" data-value="f">F</p>
+                <p class="obj" data-value="2">2</p>
+                <p class="obj" data-value="i">I</p>
+                <p class="obj" data-value="4">4</p>
+                <p class="obj" data-value="d">D</p>
+                <p class="obj" data-value="1">1</p>
+                <p class="obj" data-value="c">C</p>
+                <p class="obj" data-value="4">4</p>
+            </div>
         </div>
-        <div class="cajas col s7">
-            <h4>• M = { <span class="droppable" data-value="insecto"> </span> }</h4>
+        
+    </div>
+    <!-- Respuesta -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <center>
+                <h4>Respuesta correcta</h4>
+                <img class="materialboxed" width="80%" src="img/2-1-5/respuesta.png">
+            </center>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Listo!</a>
         </div>
     </div>
-    <div class="row boxCheck">
-        <div class="cajas col s5">
-            <h4>• V = {las vocales}</h4>
-        </div>
-        <div class="cajas col s7">
-            <h4>• V = { <span class="droppable" data-value="vocales"> </span> }</h4>
-        </div>
-    </div>
-    <div class="row boxCheck white">
-        <div class="cajas col s5">
-            <h4>• L = {letras de la palabra "cuaderno"}</h4>
-        </div>
-        <div class="cajas col s7">
-            <h4>• L = { <span class="droppable" data-value="cuaderno"> </span> }</h4>
-        </div>
-    </div>
-    <div class="row boxCheck white">
-        <div class="cajas col s5">
-            <h4>• R = {números del 0 al 5}</h4>
-        </div>
-        <div class="cajas col s7">
-            <h4>• R = { <span class="droppable" data-value="numeros"> </span> }</h4>
-        </div>
-    </div>
-    <div class="row boxCheck white">
-        <div class="cajas chooserBox col s12 aleatorio">
-            <p class="obj" data-value="insecto">hormiga</p>
-            <p class="obj" data-value="insecto">Mosca</p>
-            <p class="obj" data-value="cuaderno">c,u,a,d,e,r,n,o</p>
-            <p class="obj" data-value="numeros">0;1;2;3;4;5</p>
-            <p class="obj" data-value="insecto">escarabajo</p>
-            <p class="obj" data-value="vocales">a,e,i,o,u</p>
-        </div>
-    </div>
-</div>
-<div id="modal1" class="modal">
-    <div class="modal-content">
-        <h4 class="center">Respuesta correcta</h4>
-        <center>
-            <img class="materialboxed" width="80%" src="img/1-13/respuesta.png">
-        </center>
-    </div>
-    <div class="modal-footer">
-        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Listo!</a>
-    </div>
-</div>
 </body>
+
+
 <script src="../../../../../js/core.js"></script>
-<?php require('../../../tools/botones/botones.php');?>
-<script>$("#next").attr("onclick", "<?=$next?>");</script>
+<?php require('../../../tools/botones/botones.php');?> <script>$("#next").attr("onclick","<?=$next?>");</script>
+<script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
 
-var rpts = 0, otros = 0, element, element2;
+// Validar
+var rpts = 0, otros = 0, element43, element2;
 
 $(".obj").draggable({
     
     start: function() {
-     element=$(this).attr("data-value"); 
+      element43=$(this).attr("data-value"); 
  }
 });
-$( ".droppable" ).droppable({
+$( ".boContainer" ).droppable({
   classes: {
     "ui-droppable-active": ".blue",
     "ui-droppable-hover": "ui-state-hover"
   },
   drop: function( event, ui ) {
-    $(this).css("background-color", "rgba(139, 195, 74, 0.14)");
+    $(this).css("background-color", "rgb(19, 160, 241)");
   //  $( this ).target.append(event.target);
       element2=$(this).attr("data-value");
-    if(element==element2){
+    if(element43==element2){
       rpts++;
     }else{
       otros++;
     }
-    element.removeClass("pieza");
+    element43.removeClass("pieza");
   }
 });
+
 console.log(rpts, otros);
     // Formulario - Registrados
-
-    function result_tipo_2_0_13() {
+function result_tipo_2_0_13() {
         var min = $('#Minutos').text();
         var seg = $('#Segundos').text();
         var milseg = $('#Centesimas').text();
         var tiempo = min + ":" + seg + ":" + milseg;
 
-        if (rpts == 6 && otros == 0) {
+        if (rpts == 10 && otros == 0) {
 
             console.log(rpts, otros);
             localStorage.setItem("Nota2-0-13", "2");
