@@ -52,7 +52,7 @@
         {
         next: "Page_15()", 
         procesar:"result_tipo_3_6_14()",
-        titulo:"<center><h5><span>Arrastra</span> los números según los pasos para preparar ensalada de frutas.</h5></center>",
+        titulo:"<center><h5><span>Completa</span> las palabras con <b><i>b</i></b> o <b><i>v</i></b> .</h5></center>",
         restaurar:"start_14()",
         dir:ruta,
         cod: "3-6-14",
@@ -66,7 +66,7 @@
         {
         next: "Page_16()", 
         procesar:"result_tipo_3_6_15()",
-        titulo:"<center><h5><span>Arrastra</span> los números según los pasos para preparar ensalada de frutas.</h5></center>",
+        titulo:"<center><h5><span>Lee</span> la oración y <span>sustituye</span> la palabra resaltada por un antónimo.</h5></center>",
         restaurar:"start_15()",
         dir:ruta,
         cod: "3-6-15",
@@ -80,7 +80,7 @@
         {
         next: "Page_17()", 
         procesar:"result_tipo_3_6_16()",
-        titulo:"<center><h5><span>Arrastra</span> los números según los pasos para preparar ensalada de frutas.</h5></center>",
+        titulo:"<center><h5><span>Lee</span> la definición y <span>arrastra</span> la palabra que le corresponda.</h5></center>",
         restaurar:"start_16()",
         dir:ruta,
         cod: "3-6-16",
@@ -94,7 +94,7 @@
         {
         next: "resultado()", 
         procesar:"result_tipo_3_6_17()",
-        titulo:"<center><h5><span>Arrastra</span> los números según los pasos para preparar ensalada de frutas.</h5></center>",
+        titulo:"<center><h5><span>Busca</span> las palabras en la sopa de letras.</h5></center>",
         restaurar:"start_17()",
         dir:ruta,
         cod: "3-6-17",
