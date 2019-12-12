@@ -1,71 +1,51 @@
 <script type="text/javascript">
-    
-   
-    function Page_17(){
-        start_17();
+   function Page_lectura_3_6_5_1(){
+        start_lectura_3_6_5_1();
         inicio();
-        count = 3;
+        count = 0;
     }
-    function Page_18(){
+    function  Page_18(){
         start_18();
         inicio();
-        count = 3;
-    }
-    function Page_19(){
-        start_19();
-        inicio();
-        count = 3;
+         count = 3;
     }
 
-    var cant=3;
+    var cant=1;
     var cal= 20/20;
     var ruta="../../../../exercises/comunicacion/";
     ////////////// 2do 
             // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
-
-    
-    function start_17(){
-        $("#ventana").load(ruta+'2-7-17/index.php', 
+   
+    function start_lectura_3_6_5_1(){
+        $("#ventana").load(ruta+'lectura3-6-5-1/index.php', 
         {
         next: "Page_18()", 
-        procesar:"result_tipo_2_7_17()",
-        titulo:"<center><h5><span>Selecciona</span> y <span>arrastra</span> las palabras al recuadro que corresponda.</h5></center>",
-        restaurar:"start_17()",
+        procesar:"lectura3-6-5-1()",
+        titulo:"<center><h5><span>Observa</span> atentamente la receta y <span>contesta</span> las preguntas.</h5></center>",
+        restaurar:"start_lectura_3_6_5_1()",
         dir:ruta,
-        cod: "2-7-17",
+        cod: "lectura3-6-5-1",
         nota:cal
         }
         );
         return false;  
     };
+   
     function start_18(){
-        $("#ventana").load(ruta+'2-7-18/index.php', 
-        {
-        next: "Page_19()", 
-        procesar:"result_tipo_2_7_18()",
-        titulo:"<center><h5><span>Une</span> las siguientes palabras para formar oraciones.</h5></center>",
-        restaurar:"start_18()",
-        dir:ruta,
-        cod: "2-7-18",
-        nota:cal
-        }
-        );
-        return false;  
-    };
-    function start_19(){
-        $("#ventana").load(ruta+'2-7-19/index.php', 
+        $("#ventana").load(ruta+'3-6-18/index.php', 
         {
         next: "resultado()", 
-        procesar:"result_tipo_2_7_19()",
-        titulo:"<center><h5><span>Completa</span> las oraciones <span>arrastrando</span> un pronombre personal.</h5></center>",
-        restaurar:"start_19()",
+        procesar:"result_tipo_3_6_18()",
+        titulo:"<center><h5><span>Observa</span> el caligrama y responde las preguntas.</h5></center>",
+        restaurar:"start_18()",
         dir:ruta,
-        cod: "2-7-19",
+        cod: "3-6-18",
         nota:cal
         }
         );
         return false;  
     };
+
     function resultado(){
         $("#ventana").load('../../../../exercises/resultado/resultado.php');
         return false;
