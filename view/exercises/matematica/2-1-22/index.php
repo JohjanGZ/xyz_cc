@@ -14,7 +14,16 @@
             Silvia pagó 11 soles por el plátano y la fresa, pero ella cree que pagó demás. ¿Puedes decir cuánto debería haber pagado?
         </p>
     </div>
-   
+    <div class="image">
+        <img src="" alt="">
+    </div>
+   <div class="respuesta">
+        <p><b>Respuesta:</b>  
+             <span>
+                 
+             </span>
+        </p>
+   </div>
 </div>
 <div id="modal1" class="modal">
     <div class="modal-content">
