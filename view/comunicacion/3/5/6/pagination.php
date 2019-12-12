@@ -25,7 +25,7 @@
          count = 3;
     }
     function  Page_17(){
-        start_16();
+        start_17();
         inicio();
          count = 3;
     }
@@ -39,7 +39,7 @@
         {
         next: "Page_13()", 
         procesar:"result_tipo_3_5_12()",
-        titulo:"<center><h5><span>Observa</span> las imágenes y seleciona las oraciones que estén en tiempo presente.</h5></center>",
+        titulo:"<center><h5><span>Observa</span> las imágenes y <span>selecciona</span> las oraciones que estén en tiempo presente.</h5></center>",
         restaurar:"start_12()",
         dir:ruta,
         cod: "3-5-12",
@@ -53,7 +53,7 @@
         {
         next: "Page_14()", 
         procesar:"result_tipo_3_5_13()",
-        titulo:"<center><h5><span>Observa</span> las imágenes y seleciona las oraciones que estén en tiempo pasado.</h5></center>",
+        titulo:"<center><h5><span>Observa</span> las imágenes y <span>selecciona</span> las oraciones que estén en tiempo pasado.</h5></center>",
         restaurar:"start_13()",
         dir:ruta,
         cod: "3-5-13",
