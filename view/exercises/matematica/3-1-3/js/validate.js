@@ -12,7 +12,7 @@ var cols = document.querySelectorAll('#sortable');
  */
 $(function () {
     $("#sortable").sortable({
-        revert: true,
+        revert: "invalid",
     });
     $("#draggable").draggable({
         connectToSortable: "#sortable",

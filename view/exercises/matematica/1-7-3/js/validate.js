@@ -8,7 +8,7 @@ var cols = document.querySelectorAll('.grid-options');
 // Droppable
 var r = 0 ;
 $(".pieza").draggable({
-    revert: true,
+    revert: "invalid",
     start: function() {
         element = $(this).attr("alt");
         elementid = $(this);

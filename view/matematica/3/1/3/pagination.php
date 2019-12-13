@@ -22,10 +22,6 @@ function Page_8() {
     inicio();
     count = 3;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> e34c2706ee339cf5f396789f95726a16494fae55
 var cant = 18;
 var cal = cant / cant;
 console.log(cant);
@@ -73,15 +69,9 @@ function start_7() {
 function start_8() {
     $("#ventana").load(ruta + '3-1-8/index.php', {
         next: "resultado()",
-<<<<<<< HEAD
-        procesar: "result_tipo_3_1_13()",
-        titulo: "<center><h5><span class='ftitulo'>Señala</span> el número menor al que se muestra.</h5></center>",
-        restaurar: "start_13()",
-=======
         procesar: "result_tipo_3_1_8()",
         titulo: "<center><h5><span class='ftitulo'>Observa</span> los elementos y <span class='ftitulo'>arrastra</span> aquellos que pertenecen al conjunto de los astros.</h5></center>",
         restaurar: "start_8()",
->>>>>>> e34c2706ee339cf5f396789f95726a16494fae55
         dir: ruta,
         cod: "3-1-8",
         nota: cal
