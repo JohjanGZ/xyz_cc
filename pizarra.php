@@ -53,4 +53,3 @@ box-shadow: inset #00000029 0px -1px 3px 0px;
                 $( "#main-nav" ).hide();
             </script>
         </div>
-                                

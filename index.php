@@ -142,9 +142,7 @@ var datos = (function(){
 				</li>		
 		</ul>
 </div>
-<div id="cuerpo">
-
-</div>
+<div id="cuerpo"></div>
 <div class="fixed-action-btn">
     <a class="btn-floating btn-small orange">
         <i class="requestfullscreen large material-icons">fullscreen</i><i class="exitfullscreen large material-icons"
