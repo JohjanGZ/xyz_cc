@@ -3,11 +3,19 @@
 <div id="vertical"></div>
 <div id="contenedor">
     <?php
+<<<<<<< HEAD
  	    require ('../../../../tools/sidenav/sidenav.php');
         require ('../../../../tools/sound/sound.php');
         require ('../../../../tools/crono/crono.php');
         require ('../../../../tools/pantalla-inicio/2do.php');   
     ?>
+=======
+ 	  require ('../../../../tools/sidenav/sidenav.php');
+    require ('../../../../tools/sound/sound.php');
+    require ('../../../../tools/crono/crono.php');
+    require ('../../../../tools/pantalla-inicio/2do.php');   
+ ?>
+>>>>>>> e34c2706ee339cf5f396789f95726a16494fae55
     <div style="transform: translate(0vw, -13vh);
     color: white;" id="resolucion"></div>
     <img class="logoUnidad" src="img/unidad.png">
@@ -38,7 +46,11 @@
         <input type="hidden" name="" id="nota" value="0">
 
         <div id="ventana"></div>
+<<<<<<< HEAD
         <?php require ('pagination.php');?>
+=======
+        <?php require ('pagination.php');?>   
+>>>>>>> e34c2706ee339cf5f396789f95726a16494fae55
         <script src="../../../../../js/materialize.min.js"></script>
         <script type="text/javascript">
         $(document).ready(function() {
@@ -47,7 +59,11 @@
 
         function IniciarCronometro() {
             $("#portada").css("display", "none");
+<<<<<<< HEAD
             Page_14();
+=======
+            Page_9();
+>>>>>>> e34c2706ee339cf5f396789f95726a16494fae55
         }
         </script>
     </body>

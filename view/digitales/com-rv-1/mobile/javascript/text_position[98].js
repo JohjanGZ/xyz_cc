@@ -1,1 +1,0 @@
-﻿positionForPages[98]={page:98,positions:[{word:"comunicación",left:1.049415,top:0.633025,width:0.037481,height:0.211074},{word:"1",left:1.021359,top:0.026520,width:0.014667,height:0.044523},{word:"Libro de actividades",left:1.044470,top:0.279370,width:0.000489,height:0.195411}]};

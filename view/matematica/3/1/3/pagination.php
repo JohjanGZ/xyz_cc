@@ -1,86 +1,93 @@
 <script type="text/javascript">
-function Page_10() {
-    start_10();
+function Page_5() {
+    start_5();
     inicio();
     count = 3;
 }
 
-function Page_11() {
-    start_11();
+function Page_6() {
+    start_6();
     inicio();
     count = 3;
 }
 
-function Page_12() {
-    start_12();
+function Page_7() {
+    start_7();
     inicio();
     count = 3;
 }
 
-function Page_13() {
-    start_13();
+function Page_8() {
+    start_8();
     inicio();
     count = 3;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> e34c2706ee339cf5f396789f95726a16494fae55
 var cant = 18;
 var cal = cant / cant;
 console.log(cant);
 var ruta = "../../../../exercises/matematica/";
 ////////////// 2do 
-// ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
-function start_10() {
-    $("#ventana").load(ruta + '3-1-10/index.php', {
-        next: "Page_11()",
-        procesar: "result_tipo_3_1_10()",
-        titulo: "<center><h5> <span class='ftitulo'>Selecciona</span> el número mayor en cada caso.</h5></center>",
-        restaurar: "start_10()",
+function start_5() {
+    $("#ventana").load(ruta + '3-1-5/index.php', {
+        next: "Page_6()",
+        procesar: "result_tipo_3_1_5()",
+        titulo: "<center><h5><span class='ftitulo'>Observa</span> los conjuntos y <span class='ftitulo'>selecciona </span><img src="+ruta+"3-1-5/img/pertenece.png> o <img src="+ruta+"3-1-5/img/nopertenece.png> según corresponda.</h5></center>",
+        restaurar: "start_5()",
         dir: ruta,
-        cod: "3-1-10",
+        cod: "3-1-5",
         nota: cal
     });
     return false;
 };
 
-function start_11() {
-    $("#ventana").load(ruta + '3-1-11/index.php', {
-        next: "Page_12()",
-        procesar: "result_tipo_3_1_11()",
-        titulo: "<center><h5> <span class='ftitulo'>Selecciona</span> el número menor en cada caso.</h5></center>",
-        restaurar: "start_11()",
+function start_6() {
+    $("#ventana").load(ruta + '3-1-6/index.php', {
+        next: "Page_7()",
+        procesar: "result_tipo_3_1_6()",
+        titulo: "<center><h5><span class='ftitulo'>selecciona</span> los símbolos de <img src="+ruta+"3-1-6/img/pertenece.png> o <img src="+ruta+"3-1-6/img/nopertenece.png> en los siguientes enunciados.</h5></center>",
+        restaurar: "start_6()",
         dir: ruta,
-        cod: "3-1-11",
+        cod: "3-1-6",
         nota: cal
     });
     return false;
 };
 
-function start_12() {
-    $("#ventana").load(ruta + '3-1-12/index.php', {
-        next: "Page_13()",
-        procesar: "result_tipo_3_1_12()",
-        titulo: "<center><h5><span class='ftitulo'>Completa</span> los espacios en blanco utilizando los símbolos <, > o =.</h5></center>",
-        restaurar: "start_12()",
+function start_7() {
+    $("#ventana").load(ruta + '3-1-7/index.php', {
+        next: "Page_8()",
+        procesar: "result_tipo_3_1_7()",
+        titulo: "<center><h5><span class='ftitulo'>Observa</span> el siguiente conjunto y <span class='ftitulo'>Selecciona</span> si <img src="+ruta+"3-1-7/img/pertenece.png> o <img src="+ruta+"3-1-7/img/nopertenece.png> al conjunto V.</h5></center>",
+        restaurar: "start_7()",
         dir: ruta,
-        cod: "3-1-12",
+        cod: "3-1-7",
         nota: cal
     });
     return false;
 };
 
-function start_13() {
-    $("#ventana").load(ruta + '3-1-13/index.php', {
+function start_8() {
+    $("#ventana").load(ruta + '3-1-8/index.php', {
         next: "resultado()",
+<<<<<<< HEAD
         procesar: "result_tipo_3_1_13()",
         titulo: "<center><h5><span class='ftitulo'>Señala</span> el número menor al que se muestra.</h5></center>",
         restaurar: "start_13()",
+=======
+        procesar: "result_tipo_3_1_8()",
+        titulo: "<center><h5><span class='ftitulo'>Observa</span> los elementos y <span class='ftitulo'>arrastra</span> aquellos que pertenecen al conjunto de los astros.</h5></center>",
+        restaurar: "start_8()",
+>>>>>>> e34c2706ee339cf5f396789f95726a16494fae55
         dir: ruta,
-        cod: "3-1-13",
+        cod: "3-1-8",
         nota: cal
     });
     return false;
 };
-
 function resultado() {
     $("#ventana").load('../../../../exercises/resultado/resultado.php');
     return false;

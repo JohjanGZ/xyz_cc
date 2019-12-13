@@ -1,1 +1,0 @@
-﻿positionForPages[1]={page:1,positions:[{word:"Educación Primaria",left:0.032338,top:0.196393,width:0.506698,height:0.058813},{word:"comunicación",left:0.032371,top:0.113276,width:0.838364,height:0.000197},{word:"Libro de actividades",left:0.037938,top:0.075643,width:0.413106,height:0.000630}]};

@@ -120,15 +120,29 @@ var datos = (function(){
         }
     });
     return datos;
-})();
+})();  
 
 </script>
-<div id="inicial">
+<div id="main-nav" class="text-center no_modo_standalone no_popup open">
+		<ul class="container" role="menu">
+		        <li class="li_m_cursos <?php if ($_GET['n']=='i'){echo 'active';}?> " id="list-inicial" >
+					<a href="./index.php?n=i" title="Inicial" >
+						INICIAL
+					</a>
+				</li>
+				<li class="li_m_misalumnos <?php if ($_GET['n']=='p'){echo 'active';}?>" id="list-primaria" >
+					<a  href="./index.php?n=p" title="Primaria" >
+						PRIMARIA
+					</a>
+				</li>
+				<li class="li_m_calificaciones <?php if ($_GET['n']=='s'){echo 'active';}?>" id="list-secundaria">
+					<a  href="./index.php?n=s" title="Secundaria" >
+						SECUNDARIA
+					</a>
+				</li>		
+		</ul>
 </div>
-<div id="cuerpo">
-</div>
-<div id="secundaria">
-</div>
+<div id="cuerpo"></div>
 <div class="fixed-action-btn">
     <a class="btn-floating btn-small orange">
         <i class="requestfullscreen large material-icons">fullscreen</i><i class="exitfullscreen large material-icons"
@@ -137,45 +151,53 @@ var datos = (function(){
 </div>
 <!--  Scripts-->
 <script src="js/materialize.min.js"></script>
+<?php $_GET['n']; ?>
 <script type="text/javascript">
- 
-var libros=datos.Primaria;
+var nivel='<?=$_GET['n']?>';
+
+ if(nivel=='i' ){
+    var libros=datos.Inicial;
+ }
+ else if(nivel=='p'){
+    var libros=datos.Primaria;
+ }
+ else if(nivel=='s'){
+    var libros=datos.Secundaria;
+ }
+else{
+    var libros=datos.Primaria;
+    var nivel ='p';
+ }
+
 $('#cuerpo').load('libros.php',{ 
     data: libros,
-    g:'todo'
+    g:'todo',
+    nivel:nivel
 });
-
-function grado(grado,nivel){
+function grado(grado){
     $('#cuerpo').load('libros.php',{
         data: datos.Primaria,
-        g:grado
+        g:grado,
+        nivel:nivel   
     });
 }
-/*
-$('#notaciones').hide();
-$(".notas").on("click", function(){
-    var press = $(this).attr("class");
-    if (press == "btn-floating amber notas on") {
-        $('#notaciones').hide();
-        $(this).removeClass("on");
-        $(this).css("box-shadow",
-            "0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2)"
-        );
-    } else {
-        $('#notaciones').show();
-        $(this).addClass("on");
-        $(this).css("box-shadow",
-            "inset rgba(0, 0, 0, 0.37) 2px 2px 3px 0px, 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2)"
-        );
-    }
-
-});*/
+function anio_inicial(grado){
+    $('#cuerpo').load('libros.php',{
+        data: datos.Inicial,
+        g:grado,
+        nivel:nivel 
+    });
+}
+function anio_secundaria(grado){
+    $('#cuerpo').load('libros.php',{
+        data: datos.Secundaria,
+        g:grado,
+        nivel:nivel 
+    });
+}
 
 $('#btn-home').click(function() {
-    $('#cuerpo').load('libros.php',{ 
-    data: libros,
-    g:'todo'
-});
+    location.reload();
 });
 $('#btn-pizarra').click(function() {
     $('#cuerpo').load('pizarra.php');
@@ -187,11 +209,6 @@ $(document).ready(function(){
 </script>
 </body>
 </html>
-<script type='text/javascript'>
-function AddUnidad() {
-    $('#cuerpo').load('form_unidad.php');
-}
-</script>
 </div>
 <audio id="click" src="asset/cursor/sound/click.mp3"></audio>
 <script type="text/javascript">
@@ -211,31 +228,5 @@ $("html").click(function(){
     document.getElementById('click').play();
 });
 $("#portada").css("display", "none");
-$(function(){
-    // support
-    $('#support').text($.fullscreen.isNativelySupported() ? 'supports' : 'doesn\'t support');
-    // abrir  fullscreen
-    $('#fullscreen .requestfullscreen').click(function(){
-        $('#fullscreen').fullscreen();
-        return false;
-    });
-    // exit 
-    $('#fullscreen .exitfullscreen').click(function(){
-        $.fullscreen.exit();
-        return false;
-    });
-    
-    $(document).bind('fscreenchange', function(e, state, elem){
-        // si pantalla completa esta activada
-        if ($.fullscreen.isFullScreen()){
-            $('#fullscreen .requestfullscreen').hide();
-            $('#fullscreen .exitfullscreen').show();
-        } else {
-            $('#fullscreen .requestfullscreen').show();
-            $('#fullscreen .exitfullscreen').hide();
-        }
-        $("#fullscreen").addClass("bg-fullscreen");
-        $('#state').text($.fullscreen.isFullScreen() ? '' : 'not');
-    });
-});
 </script>
+<script src="js/fullscreen.js"></script>
