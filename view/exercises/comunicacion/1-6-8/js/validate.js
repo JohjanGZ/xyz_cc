@@ -24,7 +24,7 @@ $("#1").droppable({
         if (element == "ña") {
             ña++
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -36,7 +36,7 @@ $("#2").droppable({
         if (element == "ño") {
             ño++
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -49,7 +49,7 @@ $("#3").droppable({
         if (element == "ña") {
             ña++
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -62,7 +62,7 @@ $("#4").droppable({
         if (element == "ña") {
             ña++
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -76,7 +76,7 @@ $("#5").droppable({
         if (element == "ño") {
             ño++
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -90,6 +90,6 @@ $("#6").droppable({
         if (element == "ño") {
             ño++
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });

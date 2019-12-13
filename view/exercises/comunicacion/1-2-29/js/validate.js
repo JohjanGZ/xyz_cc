@@ -20,7 +20,7 @@ $("#ann2").droppable({
         if (element == "an2" || element == "an3" || element == "an") {
             r++;
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
         console.log(r);
     }
 });
@@ -32,7 +32,7 @@ $("#ann3").droppable({
         if (element == "an2" || element == "an3" || element == "an") {
             r++;
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
         console.log(r);
     }
 });
@@ -44,7 +44,7 @@ $("#ann").droppable({
         if (element == "an2" || element == "an3" || element == "an") {
             r++;
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
         console.log(r);
     }
 });
@@ -58,7 +58,7 @@ $("#enn2").droppable({
         if (element == "en" || element == "en2") {
             r++;
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
         console.log(r);
     }
 });
@@ -70,7 +70,7 @@ $("#enn").droppable({
         if (element == "en" || element == "en2") {
             r++;
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
         console.log(r);
     }
 });
@@ -82,7 +82,7 @@ $("#inn").droppable({
         if (element == "in" || element == "in2") {
             r++;
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
         console.log(r);
     }
 });
@@ -94,7 +94,7 @@ $("#inn2").droppable({
         if (element == "in" || element == "in2") {
             r++;
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
         console.log(r);
     }
 });
@@ -107,7 +107,7 @@ $("#onn").droppable({
         if (element == "on") {
             r++;
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
         console.log(r);
     }
 });

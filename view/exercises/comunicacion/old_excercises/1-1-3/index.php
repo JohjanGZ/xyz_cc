@@ -104,7 +104,7 @@ for (var i = ul.children.length; i >= 0; i--) {
          r++
       }
       console.log(r);
-        element.removeClass("pieza");    
+        ui.draggable.draggable("disable", 1);    
       }
       });
 

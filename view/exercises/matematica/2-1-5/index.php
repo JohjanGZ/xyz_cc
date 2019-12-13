@@ -119,7 +119,7 @@ $( ".droppable" ).droppable({
     }else{
       otros++;
     }
-    element.removeClass("pieza");
+    ui.draggable.draggable("disable", 1);
   }
 });
 console.log(rpta, otros);

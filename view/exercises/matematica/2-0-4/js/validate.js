@@ -22,7 +22,7 @@ $(".verde").droppable({
     if(element=="verde"){
         verde++
     }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 
 });
@@ -38,7 +38,7 @@ $(".rojo").droppable({
     if(element=="rojo"){
         rojo++
     }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 
 });

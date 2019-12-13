@@ -25,7 +25,8 @@ $(".caja").droppable({
             r++;
         }
         ui.draggable.draggable("disable", 1); //not ui.draggable("disable", 1);
-        // element.removeClass('pieza');
+        // ui.draggable.draggable("disable", 1);
+
         console.log(element);
     }
 });

@@ -24,6 +24,6 @@ $(".palabra").droppable({
         if (element == element2) {
             r++;
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });

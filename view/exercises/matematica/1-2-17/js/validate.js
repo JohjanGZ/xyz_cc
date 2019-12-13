@@ -27,7 +27,7 @@ $("#1").droppable({
             n1++
             // console.log(n1);
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 // dE
@@ -44,6 +44,6 @@ $("#2").droppable({
             n2++
             // console.log(n1);
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });

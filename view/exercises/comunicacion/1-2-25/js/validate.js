@@ -21,7 +21,7 @@ $("#naa").droppable({
         if (element == "na" || element == "naa2" || element == "naa3") {
             r++;
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
         console.log(r);
     }
 });
@@ -34,7 +34,7 @@ $("#naa2").droppable({
         if (element == "na" || element == "na2" || element == "na3") {
             r++;
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
         console.log(r);
 
     }
@@ -47,7 +47,7 @@ $("#naa3").droppable({
         if (element == "na" || element == "na2" || element == "na3") {
             r++;
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
         console.log(r);
 
     }
@@ -60,7 +60,7 @@ $("#noo").droppable({
         if (element == "no" || element == "no2" || element == "no3") {
             r++;
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
         console.log(r);
 
     }
@@ -73,7 +73,7 @@ $("#noo2").droppable({
         if (element == "no" || element == "no2" || element == "no3") {
             r++;
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
         console.log(r);
 
     }
@@ -86,7 +86,7 @@ $("#noo3").droppable({
         if (element == "no" || element == "no2" || element == "no3") {
             r++;
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
         console.log(r);
 
     }
