@@ -213,8 +213,9 @@ a:hover, a:active, a:focus {
       foreach ($libros as $c){
          $list=$libros[$x][0]['curso'];
          $title=$libros[$x][0]['titulo'];
+            
          if($nivel=='p'){
-            $titulo=substr($title, 0, -2);
+                $titulo=substr($title, 0, -2);
             }
             elseif($nivel=='i'){
                 $titulo=substr($title, 0, -7);
@@ -222,6 +223,7 @@ a:hover, a:active, a:focus {
             elseif($nivel=='s'){
                 $titulo=substr($title, 0, -6);
             }
+
          ?>
             <a href="#<?=$list?>" title="<?=$titulo?>" >
                 <li  class="li_m_cursos" >
@@ -331,7 +333,7 @@ a:hover, a:active, a:focus {
                                           color: transparent;
                                           border: solid 2px #ffc900;
                                       }
-  
+                                    
                                       .capa_color {
                                           color: transparent;
                                           transition: 0.8s;
@@ -375,12 +377,11 @@ a:hover, a:active, a:focus {
                            </div>
                             <?php   $t++;}; ?>
                             <script>
-                            function abrir(Curso, Grado) {                               
+                            function abrir(Curso, Grado){                               
                                 $("#portada").css("display", "block");
-                                $('#cuerpo').load('unidades.php', {
+                                $('#cuerpo').load('unidades.php',{
                                     curso: Curso,
-                                    grado: Grado,
-                                   
+                                    grado: Grado
                                 });
                             };
                             var options = {};
