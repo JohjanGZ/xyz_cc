@@ -47,8 +47,8 @@
 
         function IniciarCronometro() {
             $("#portada").css("display", "none");
-            Page_19();
+            Page_21();
         }
         </script>
     </body>
-</div>
+</div>05:55 PM05:55 PM05:55 PM05:55 PM
