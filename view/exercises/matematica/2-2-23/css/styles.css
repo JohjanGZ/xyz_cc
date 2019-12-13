@@ -1,0 +1,87 @@
+.container-two {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 80%;
+    margin-top: 6vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+}
+
+.filaUno{
+  background-image: url("../../../../matematica/2/2/2/img/1/imagenuno.png");
+  width: 300px;
+  height: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+
+}
+.box{
+  border: 1px solid #333;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  grid-column: 2/3;
+  position: relative;
+  left: -8px;
+  top: -13px;
+}
+.filaDos{
+  background-image: url("../../../../matematica/2/2/2/img/1/imagendos.png");
+  width: 300px;
+  height: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  font-weight: 600;
+  font-size: 20px;
+}
+.box2{
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  left: 38px;
+  top: -5px;
+}
+.box3{
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  left: -4px;
+  top: -5px;
+}
+.box4{
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  left: -35px;
+  top: -5px;
+}
+.filaTres{
+  background-image: url("../../../../matematica/2/2/2/img/1/imagentres.png");
+  width: 300px;
+  height: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  font-weight: 600;
+  font-size: 20px;
+}
+.box5{
+  border: 1px solid #333;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  left: -8px;
+  top: ;
+}
