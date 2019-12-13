@@ -25,7 +25,7 @@ $("#1").droppable({
             r++
             //console.log(bo);
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -37,7 +37,7 @@ $("#2").droppable({
             rr++
             //console.log(bo);
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -49,7 +49,7 @@ $("#3").droppable({
             r++
             //console.log(bo);
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -61,7 +61,7 @@ $("#4").droppable({
             r++
             //console.log(bo);
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -73,7 +73,7 @@ $("#5").droppable({
             rr++
             //console.log(bo);
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -85,6 +85,6 @@ $("#6").droppable({
             rm++
             //console.log(bo);
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });

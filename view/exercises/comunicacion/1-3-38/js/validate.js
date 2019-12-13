@@ -32,7 +32,7 @@ $("#1").droppable({
             p1++
             //console.log(bo);
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -45,7 +45,7 @@ $("#2").droppable({
             p2++
             //console.log(bo);
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -57,7 +57,7 @@ $("#3").droppable({
         if (element == "p3") {
             p3++
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -69,7 +69,7 @@ $("#4").droppable({
         if (element == "p4") {
             p4++
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -82,7 +82,7 @@ $("#5").droppable({
             p5++
             //console.log(bo);
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -95,7 +95,7 @@ $("#6").droppable({
             p6++
             //console.log(bo);
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -107,7 +107,7 @@ $("#7").droppable({
         if (element == "p7") {
             p7++
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -119,6 +119,6 @@ $("#8").droppable({
         if (element == "p8") {
             p8++
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });

@@ -24,7 +24,7 @@ $("#r").droppable({
         if (element == "v1" || element == "v2" || element == "v3" || element == "v4" ) {
             nr++
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -41,6 +41,6 @@ $("#rr").droppable({
         if (element == "") {
             nrr++
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });

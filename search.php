@@ -58,13 +58,11 @@ ul li {
                     if(val[count].activo=='1'){ output +='</a>';    
                     count++; 
                     }
-                    
                 });
                 output += '</li>';
             $('#Libros').html(output);
         });
-                            function abrir(Curso, Grado){
-                               
+                            function abrir(Curso, Grado){                              
                                 $("#portada").css("display", "block");
                                 $('#cuerpo').load('unidades.php', {
                                     curso: Curso,
@@ -72,7 +70,7 @@ ul li {
                                 });
 
                             };
-    </script>
+        </script>
                           
                 </div>
             </div>

@@ -20,7 +20,7 @@
         if(element=="transporte"){
             conLetraT++
         }
-            element.removeClass("pieza");
+            ui.draggable.draggable("disable", 1);
         }
 
     });
@@ -36,7 +36,7 @@
         if(element=="animal"){
             conLetraK++
         }
-            element.removeClass("pieza");
+            ui.draggable.draggable("disable", 1);
         }
 
     });

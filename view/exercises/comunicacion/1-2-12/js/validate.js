@@ -19,7 +19,7 @@ $("#ta").droppable({
             r++
         }
 
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -33,7 +33,7 @@ $("#ta2").droppable({
         }
 
 
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -48,7 +48,7 @@ $("#te").droppable({
         }
 
 
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -63,7 +63,7 @@ $("#te2").droppable({
         }
 
 
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -79,7 +79,7 @@ $("#ti").droppable({
         }
 
 
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -95,7 +95,7 @@ $("#ti2").droppable({
         }
 
 
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -111,7 +111,7 @@ $("#pa").droppable({
         }
 
 
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -126,7 +126,7 @@ $("#le").droppable({
         }
 
 
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -141,7 +141,7 @@ $("#vi").droppable({
         }
 
 
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -156,7 +156,7 @@ $("#sor").droppable({
         }
 
 
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -171,7 +171,7 @@ $("#zas").droppable({
         }
 
 
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -186,7 +186,7 @@ $("#ne").droppable({
         }
 
 
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -201,7 +201,7 @@ $("#dor").droppable({
         }
 
 
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -216,7 +216,7 @@ $("#na").droppable({
         }
 
 
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -231,6 +231,6 @@ $("#za").droppable({
         }
 
 
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
