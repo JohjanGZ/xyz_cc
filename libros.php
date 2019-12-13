@@ -12,10 +12,10 @@
 #Libros li {
     width: 180px;
 }
-
+ 
 /*-------------------------------------------------------Portadas----------------------------------------------------------------- */
 .iconview {
-    top: 300px;
+    top: 300px; 
 }
 .card-panel{
     position:relative;
@@ -92,109 +92,153 @@ a:hover, a:active, a:focus {
                         $libros=$_POST['data'];
                        $g=$_POST['g'];
                        $nivel=$_POST['nivel'];
-                       
+                      
+                     
                         ?>
 <!--<script type="text/javascript" src="js/data.js"></script>-->
-<div id="main-nav" class="text-center no_modo_standalone no_popup open">
-		<ul class="container" role="menu">
-		        <li class="li_m_cursos" id="list-inicial" >
-					<a href="./index.php?n=i" title="Inicial" >
-						INICIAL
-					</a>
-				</li>
-				<li class="li_m_misalumnos" id="list-primaria" >
-					<a  href="./index.php?n=p" title="Primaria" >
-						PRIMARIA
-					</a>
-				</li>
-				<li class="li_m_calificaciones" id="list-secundaria">
-					<a  href="./index.php?n=s" title="Secundaria" >
-						SECUNDARIA
-					</a>
-				</li>		
-		</ul>
-</div>
+
 <div id="fullscreen" class="section no-pad-bot" id="index-banner">
     <div class="container contenedor-libros">
         <br>
         <br>
         <div id="caja-menu-grados">
-        <ul id="menu-grados">
+       
+        <?php if($nivel=='p'){?>
+            <ul id="menu-grados">
             <li title="Primer grado" class="li_m_cursos" >
-                <a class="btn-floating blue" onclick="grado(1)" >
+                <a class="btn-floating blue" onclick="grado(1)">
                    1°
                 </a>
             </li>
             <li title="Segundo grado" class="li_m_cursos" >
-                <a class="btn-floating red" onclick="grado(2)" >
+                <a class="btn-floating red" onclick="grado(2)">
                    2°
                 </a>
             </li>
             <li title="Tercer grado" class="li_m_cursos" >
-                <a class="btn-floating yellow accent-4" onclick="grado(3)" >
+                <a class="btn-floating yellow accent-4" onclick="grado(3)">
                    3°
                 </a>
             </li>
             <li title="Cuarto grado" class="li_m_cursos" >
-                <a class="btn-floating purple" onclick="grado(4)" >
+                <a class="btn-floating purple" onclick="grado(4)">
                    4°
                 </a>
             </li>
             <li title="Quinto grado" class="li_m_cursos" >
-                <a class="btn-floating green" onclick="grado(5)" >
+                <a class="btn-floating green" onclick="grado(5)">
                    5°
                 </a>
             </li>
             <li title="Sexto grado" class="li_m_cursos" >
-                <a class="btn-floating orange" onclick="grado(6)" >
+                <a class="btn-floating orange" onclick="grado(6)">
                    6°
                 </a>
             </li>
             <li title="Todos" class="li_m_cursos" >
-                <a class="btn-floating white " onclick="grado('todo')" >
+                <a class="btn-floating white " onclick="grado('todo')">
                 <i class="material-icons black-text">apps</i>
                 </a>
             </li>
-
-	
-		</ul>
+            </ul>
+            <div id="flecha-caja"><i class="material-icons gris-claro">chevron_right</i></div>
+            <?php }
+            else if($nivel=='i') {           
+            ?>
+             <ul id="menu-grados">
+                <center>Años</center>
+                <li title="Tercer grado" class="li_m_cursos" >
+                <a class="btn-floating yellow accent-4" onclick="anio_inicial(3)">
+                   3
+                </a>
+            </li>
+            <li title="Cuarto grado" class="li_m_cursos" >
+                <a class="btn-floating purple" onclick="anio_inicial(4)">
+                   4
+                </a>
+            </li>
+            <li title="Quinto grado" class="li_m_cursos" >
+                <a class="btn-floating green" onclick="anio_inicial(5)">
+                   5
+                </a>
+            </li>
+            </ul>
+            <div style="transform: translate(60px, -108px)" id="flecha-caja"><i class="material-icons gris-claro">chevron_right</i></div>
+            <?php }
+             else if($nivel=='s') {      
+            ?>
+             <ul id="menu-grados">
+             <center>Año</center>
+                            <li title="Primer grado" class="li_m_cursos" >
+                <a class="btn-floating blue" onclick="anio_secundaria(1)">
+                   1
+                </a>
+            </li>
+            <li title="Segundo grado" class="li_m_cursos" >
+                <a class="btn-floating red" onclick="anio_secundaria(2)">
+                   2
+                </a>
+            </li>
+            <li title="Tercer grado" class="li_m_cursos" >
+                <a class="btn-floating yellow accent-4" onclick="anio_secundaria(3)">
+                   3
+                </a>
+            </li>
+            <li title="Cuarto grado" class="li_m_cursos" >
+                <a class="btn-floating purple" onclick="anio_secundaria(4)">
+                   4
+                </a>
+            </li>
+            <li title="Quinto grado" class="li_m_cursos" >
+                <a class="btn-floating green" onclick="anio_secundaria(5)">
+                   5
+                </a>
+            </li>
+            <li title="Todos" class="li_m_cursos" >
+                <a class="btn-floating white " onclick="grado('todo')">
+                <i class="material-icons black-text">apps</i>
+                </a>
+            </li>
+            </ul>
+            <div id="flecha-caja"><i class="material-icons gris-claro">chevron_right</i></div>
+            <?php } ?>
      
-        <div id="flecha-caja"><i class="material-icons gris-claro">chevron_right</i></div>
+        
        </div>
         <div class="card-panel grey lighten-5 z-depth-1">
         <ul id="menu-cursos">
+        
       <?php
+      
       $x=0;
       foreach ($libros as $c){
          $list=$libros[$x][0]['curso'];
          $title=$libros[$x][0]['titulo'];
-         
-
+         if($nivel=='p'){
+            $titulo=substr($title, 0, -2);
+            }
+            elseif($nivel=='i'){
+                $titulo=substr($title, 0, -7);
+            }
+            elseif($nivel=='s'){
+                $titulo=substr($title, 0, -6);
+            }
          ?>
-            <a href="#<?=$list?>" title="<?=substr($title, 0, -2)?>" >
+            <a href="#<?=$list?>" title="<?=$titulo?>" >
                 <li  class="li_m_cursos" >
-                <?=substr($title, 0, -1)?>
+                <?=$titulo?>
                 </li>
             </a>
             <?php $x++;} ?>
-           <!-- <a href="#matematica" title="Matemática" >
-                <li  class="li_m_misalumnos" >
-                        Matemática          
-                </li>	
-            </a>-->
 		</ul>
-
             <br>
             <div class="row valign-wrapper">
-                <div class="items cursos">
+                <div class="items cursos">                
                     <center>
-
                         <ul id="Libros" class="" data-id="2">
-
-                            <?php       
+                            <?php         
                             $t=0;
-                        foreach ($libros as $j){
-                           
+                        foreach ($libros as $j){                           
                              $libros[$t];
                                     $w=0;
                                     echo "<div id='".$libros[$t][0]['curso']."'>"; 
@@ -208,14 +252,10 @@ a:hover, a:active, a:focus {
                                         $activo=$libros[$t][$w]['activo'];
                                         $id=$curso.$grado;
                                         $di=$grado.$curso;
-                        if($g =='todo'){
-                                 
-                            if(isset($libros[$t][$w]['titulo']) && isset($libros[$t][$w]['portada'])){
-                              
+                        if($g =='todo'){                                 
+                            if(isset($libros[$t][$w]['titulo']) && isset($libros[$t][$w]['portada'])){                              
                                   ?>
-
                             <li class="menu-libros"><a  <?php if($activo=='1') {?> onclick="abrir(<?=$t?>,<?=$w?>)" <?php }?>>
-
                                     <style type="text/css">
                                     <?='#'.$id?> {
                                         background-image: url(img/portadas/<?=$portada?>);
@@ -226,7 +266,6 @@ a:hover, a:active, a:focus {
                                         color: transparent;
                                         border: solid 2px #ffc900;
                                     }
-
                                     .capa_color {
                                         color: transparent;
                                         transition: 0.8s;
@@ -333,7 +372,7 @@ a:hover, a:active, a:focus {
                               </li>
                             <?php } 
                             $w++; }; 
-                            if($g=='todo'){echo"<hr>";} ?>
+                            if($g=='todo'){echo"<hr>";}?>
                            </div>
                             <?php   $t++;}; ?>
                             <script>
@@ -341,9 +380,12 @@ a:hover, a:active, a:focus {
                                 $("#portada").css("display", "block");
                                 $('#cuerpo').load('unidades.php', {
                                     curso: Curso,
-                                    grado: Grado
+                                    grado: Grado,
+                                   
                                 });
                             };
+                            var options = {};
+                            $( "#main-nav" ).show();
                             </script>
                    </ul>     
                 </div>

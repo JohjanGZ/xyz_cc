@@ -20,6 +20,7 @@
     -pie-background: linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px) 0 0 / 100% 1.2em, linear-gradient(#eee .05em, transparent .05em) 0 0 / 100% 1.2em #fff;
 }
 .tabs{
+    
 box-shadow: inset #00000029 0px -1px 3px 0px;
 }
 .tabs .indicator {
@@ -49,7 +50,7 @@ box-shadow: inset #00000029 0px -1px 3px 0px;
                 $(document).ready(function(){
                     $('.tabs').tabs();
                 });   
-
+                $( "#main-nav" ).hide();
             </script>
         </div>
                                 

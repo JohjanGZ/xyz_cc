@@ -2,6 +2,8 @@
 <title>Arca de Papel</title>
 
 <style type="text/css">
+html
+}
 #indice .units ul li a .title {
     font-size: 14px !important;
 
@@ -101,7 +103,6 @@ width: 40px;
     padding: 0px;
    
 }
-
 #main-nav ul li a:hover {
 
 color:white !important;
@@ -110,5 +111,9 @@ color:white !important;
 .fixed-action-btn.direction-left ul, .fixed-action-btn.direction-right ul {
     width: 235px;
 }
-
+#main-nav ul li:hover, #main-nav ul li:focus, #main-nav ul li.active {
+    background-color: #90cb51;
+        /*background-color: #7b7b7b;*/
+    box-shadow: inset 0 0 6px 0px #0000004d;
+}
 </style>

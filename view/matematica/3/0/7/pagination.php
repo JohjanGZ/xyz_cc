@@ -33,7 +33,7 @@ function start_25() {
     $("#ventana").load(ruta + '3-0-25/index.php', {
         next: "resultado()",
         procesar: "result_tipo_3_0_25()",
-        titulo: "<center><h5> <span class='ftitulo'>Selecciona</span> las figuras que tienen eje de simetría.</h5></center>",
+        titulo: "<center><h5> <span class='ftitulo'>Observa</span> la cuadrícula y <span class='ftitulo'>traza</span> el recorrido para que el gato atrape al ratón.</h5></center>",
         restaurar: "start_25()",
         dir: ruta,
         cod: "3-0-25",

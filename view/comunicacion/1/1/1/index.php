@@ -22,7 +22,7 @@
                                         </div>
                                         <div class="modal-footer">
                                           <a href="#!" class=" modal-close waves-effect waves-green btn-flat">Listo!</a>
-                                        </div>
+                                          </div>
                                       	</div>
                                        	<div id="incorrecto" class="modal">
                                         <div class="modal-content">  

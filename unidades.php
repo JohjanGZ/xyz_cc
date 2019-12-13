@@ -81,10 +81,8 @@ label{
 	</div>
 </div>
 		<div id="contenido" class="col-indice col-main">
-			<div class="card unit-content js-unit-content showFromBottomToTop active" data-id="">
-		
-					<div class="content" id="actividades">
-	
+			<div class="card unit-content js-unit-content showFromBottomToTop active" >		
+					<div class="content" id="actividades">	
 						Selecciona una Unidad
 						<br><br><br> 
 					</div> 
@@ -94,10 +92,10 @@ label{
 </div> 
 </div>
 			<script type='text/javascript'>										
-					 var grado = data.grado;
-					 var unidades = data.unidades;
+					 var grado=data.grado;
+					 var unidades=data.unidades;
 					 var lib=data.libros;
-					 var color = data.color;
+					 var color=data.color;
 					 var curso=data.curso;
 					 $('h4').html(data.titulo);
 					 $('h4').css("color",color);
@@ -121,7 +119,7 @@ label{
 						localStorage.setItem("grado", grado);
 						
                         function BackHome() {
-							$('#cuerpo').load('libros.php',{data: libros,g:'todo'});
+							location.reload();
 						}
 //$("#list-units").append("<li class='btn-examen pink darken-3'><a class='js-tema' ><center><span class='number'>2</span><span class='title white-text'>Examen</span></center></a></li>");
 
@@ -147,7 +145,7 @@ $(".btn-examen").click(function(){
 	$("label").css("display","block");
 });          		
 
-
+$( "#main-nav" ).hide();
 			
 			    </script>
  
