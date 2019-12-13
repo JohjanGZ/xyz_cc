@@ -65,7 +65,7 @@
         <div class="modal-content">
             <center>
                 <h4>Respuesta correcta</h4>
-                <img class="materialboxed" width="80%" src="img/7/respuesta.png">
+                <img class="materialboxed" width="80%" src="img/3/respuesta.png">
             </center>
         </div>
         <div class="modal-footer">

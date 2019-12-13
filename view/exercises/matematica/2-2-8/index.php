@@ -44,7 +44,7 @@
     <div class="modal-content">
         <h4 class="center">Respuesta correcta</h4>
         <center>
-            <img class="materialboxed" width="80%" src="<?= $dir ?>/img/respuesta.png">
+            <img class="materialboxed" width="80%" src="img/8/respuesta.png">
         </center>
     </div>
     <div class="modal-footer">

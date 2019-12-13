@@ -5,7 +5,7 @@
     <link rel="stylesheet" type="text/css" href="<?= $dir ?>/css/styles.css">
 </head>
 <style>
-    @media only screen and (max-width: 1200px){
+    @media only screen and (max-width: 1300px){
         .container-two {
             padding-top: 4vh;
             margin: 0 auto;
@@ -19,6 +19,20 @@
             margin: 0 auto;
             max-width: 1100px;
             width: 90%;
+        }
+    }
+    @media screen and (max-height: 680px){
+        .container-two {
+            padding-top: 6vh;
+            margin: 0 auto;
+            max-width: 1100px;
+            width: 81%;
+        }
+        center h5{
+            font-size:20px;
+        }
+        .row{
+            margin: 10px!important;
         }
     }
 </style>
@@ -49,7 +63,7 @@
         </div>
     </div>
     <div class="row boxCheck aleatorio" id="boxCheck">
-        <div class="cajas cajaOpciones col s10 aleatorio">
+        <div class="cajas cajaOpciones col s12 aleatorio">
             <p class="obj" data-value="768">768</p>
             <p class="obj" data-value="984">984</p>
             <p class="obj" data-value="523">523</p>

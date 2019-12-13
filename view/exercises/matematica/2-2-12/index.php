@@ -17,7 +17,7 @@
     <div class="container-two">
         <div class="caja">
             <div class="tabla">
-                <div class="grid-container">
+                <div class="grid-container aleatorio">
                     <div class="grid-item">
                         623
                         <select class="slc" id="slc1" alt="<">
@@ -147,7 +147,7 @@
         <div class="modal-content">
             <center>
                 <h4>Respuesta correcta</h4>
-                <img class="materialboxed" width="80%" src="<?= $dir ?>/img/respuesta.png">
+                <img class="materialboxed" width="80%" src="img/12/respuesta.png">
             </center>
         </div>
         <div class="modal-footer">
@@ -191,6 +191,15 @@ function result_tipo_2_2_12() {
         localStorage.setItem("Nota<?=$cod?>", "0");
         localStorage.setItem("Time<?=$cod?>", tiempo);
     }
-
 }
+
+var cols = document.querySelectorAll('.aleatorio');
+
+[].forEach.call(cols, (e) => {
+
+    for (var i = e.children.length; i >= 0; i--) {
+        e.appendChild(e.children[Math.random() * i | 0]);
+    }
+
+});
 </script>

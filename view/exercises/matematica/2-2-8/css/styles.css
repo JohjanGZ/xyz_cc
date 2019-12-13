@@ -68,6 +68,7 @@ h4 {
     border-radius: 12px;
 }
 .pre {
+    margin: 10px;
     font-size: 1.5em;
     text-align: left;
 }
