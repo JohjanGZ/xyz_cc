@@ -20,7 +20,7 @@ $("#familiaa").droppable({
         if (element == "familia") {
             r++;
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
         console.log(r);
     }
 });
@@ -35,7 +35,7 @@ $("#elefantee").droppable({
         if (element == "elefante") {
             r++;
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
         console.log(r);
     }
 });
@@ -50,7 +50,7 @@ $("#finn").droppable({
         if (element == "fin") {
             r++;
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
         console.log(r);
     }
 });
@@ -65,7 +65,7 @@ $("#fabulosoo").droppable({
         if (element == "fabuloso") {
             r++;
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
         console.log(r);
     }
 });

@@ -24,7 +24,7 @@ $("#1").droppable({
         if (element == "2" || element == "5") {
             n1++
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 // dE
@@ -40,7 +40,7 @@ $("#2").droppable({
         if (element == "3" || element == "7" || element == "8") {
             n2++
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -56,6 +56,6 @@ $("#3").droppable({
         if (element == "1" || element == "4" || element == "6") {
             n3++
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });

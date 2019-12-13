@@ -21,7 +21,7 @@ $("#uno").droppable({
         if (element == "a") {
             r++;
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
 
     }
 });
@@ -38,7 +38,7 @@ $("#dos").droppable({
         if (element == "e") {
             r++;
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
 
 
     }
@@ -55,7 +55,7 @@ $("#tres").droppable({
         if (element == "c") {
             r++;
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
 
 
     }
@@ -72,7 +72,7 @@ $("#cuatro").droppable({
         if (element == "b") {
             r++;
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
 
 
     }
@@ -89,7 +89,7 @@ $("#cinco").droppable({
         if (element == "d") {
             r++;
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
 
 
     }

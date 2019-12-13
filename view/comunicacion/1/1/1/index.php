@@ -10,7 +10,7 @@
  ?>
  <div style="transform: translate(0vw, -13vh);
     color: white;" id="resolucion"></div>
-<img class="logoUnidad" src="img/unidad.png">
+<img class="logoUnidad" src="../unidad.png">
 <body  scroll=no class="fnd" >
 <div style="transform: translate(0vw, -11vh);
     color: white;" id="resolucion"></div>
@@ -22,7 +22,7 @@
                                         </div>
                                         <div class="modal-footer">
                                           <a href="#!" class=" modal-close waves-effect waves-green btn-flat">Listo!</a>
-                                        </div>
+                                          </div>
                                       	</div>
                                        	<div id="incorrecto" class="modal">
                                         <div class="modal-content">  

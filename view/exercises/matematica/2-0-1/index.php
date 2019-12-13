@@ -166,7 +166,7 @@ var element;
         if(element=="animal"){
          nAnimal++;
         }
-         element.removeClass("pieza");   
+         ui.draggable.draggable("disable", 1);   
           
       }
     });
@@ -185,7 +185,7 @@ var element;
               if(element=="dulce"){
          nDulce++
         }
-          element.removeClass("pieza");
+          ui.draggable.draggable("disable", 1);
       }
     });
 
@@ -201,7 +201,7 @@ var element;
               if(element=="juguete"){
          nJuguete++
         }
-          element.removeClass("pieza");
+          ui.draggable.draggable("disable", 1);
 
       }
     });

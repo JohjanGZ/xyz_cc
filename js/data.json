@@ -1346,8 +1346,8 @@
     "Secundaria":{
         "0":{
             "0": {
-                "activo": "1",
-                "titulo": "Ingles 4 años",
+                "activo": "0",
+                "titulo": "",
                 "color": "#de0521",
                 "grado": "4",
                 "curso": "ingles",
@@ -1357,22 +1357,6 @@
                         "title": "The Kid's Club",
                         "enlace": "TKC-4",
                         "portada":"TKC-4.jpg"
-                    }                    
-                },
-                "unidades": { }
-            },
-            "1":{
-                "activo": "1",
-                "titulo": "Ingles 5 años",
-                "color": "#6ec5ee",
-                "grado": "5",
-                "curso": "ingles",
-                "portada": "TKC-5.jpg",
-                "libros": {
-                    "0": {
-                        "title": "The Kid's Club",
-                        "enlace": "TKC-5",
-                        "portada":"TKC-5.jpg"
                     }                    
                 },
                 "unidades": { }

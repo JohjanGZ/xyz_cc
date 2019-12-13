@@ -25,7 +25,7 @@ $("#1").droppable({
             rr++
             //console.log(bo);
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -37,7 +37,7 @@ $("#2").droppable({
             r++
             //console.log(bo);
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -49,7 +49,7 @@ $("#3").droppable({
             r++
             //console.log(bo);
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -61,7 +61,7 @@ $("#4").droppable({
             r++
             //console.log(bo);
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -73,7 +73,7 @@ $("#5").droppable({
             r++
             //console.log(bo);
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -85,7 +85,7 @@ $("#6").droppable({
             r++
             //console.log(bo);
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -97,7 +97,7 @@ $("#7").droppable({
             r++
             //console.log(bo);
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -109,7 +109,7 @@ $("#8").droppable({
             r++
             //console.log(bo);
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -121,7 +121,7 @@ $("#9").droppable({
             rr++
             //console.log(bo);
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -133,7 +133,7 @@ $("#10").droppable({
             r++
             //console.log(bo);
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -145,7 +145,7 @@ $("#11").droppable({
             r++
             //console.log(bo);
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -157,7 +157,7 @@ $("#12").droppable({
             rm++
             //console.log(bo);
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -169,7 +169,7 @@ $("#13").droppable({
             r++
             //console.log(bo);
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -181,7 +181,7 @@ $("#14").droppable({
             r++
             //console.log(bo);
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 $("#15").droppable({
@@ -192,6 +192,6 @@ $("#15").droppable({
             rr++
             //console.log(bo);
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });

@@ -58,6 +58,6 @@ $(".palabra").droppable({
 
 
 
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });

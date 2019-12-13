@@ -29,7 +29,7 @@ $(".resultado").droppable({
     }else if(element == "m"){
         letraM++;
     }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 
 });

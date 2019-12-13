@@ -30,7 +30,7 @@ $("#titox").droppable({
         }
 
         console.log(r);
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -45,7 +45,7 @@ $("#tomax").droppable({
 
 
         console.log(r);
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -61,7 +61,7 @@ $("#tilax").droppable({
 
 
         console.log(r);
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -77,7 +77,7 @@ $("#leox").droppable({
 
 
         console.log(r);
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -94,7 +94,7 @@ $("#tomax2").droppable({
 
 
         console.log(r);
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -111,7 +111,7 @@ $("#tex").droppable({
 
 
         console.log(r);
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -128,7 +128,7 @@ $("#tux").droppable({
 
 
         console.log(r);
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -144,7 +144,7 @@ $("#topox").droppable({
 
 
         console.log(r);
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -158,6 +158,6 @@ $("#peleax").droppable({
             r++
         }
         console.log(r);
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });

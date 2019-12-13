@@ -30,7 +30,7 @@ var Animal = 0;
 
       console.log(element);
       console.log(Animal);
-         element.removeClass("pieza");            
+         ui.draggable.draggable("disable", 1);            
       }
     });
    $( "#recibidor2" ).droppable({
@@ -46,7 +46,7 @@ var Animal = 0;
       }
      console.log(element);
       console.log(Animal);
-         element.removeClass("pieza");         
+         ui.draggable.draggable("disable", 1);         
       }
     });
    $( "#recibidor3" ).droppable({
@@ -63,7 +63,7 @@ var Animal = 0;
       }
 
       console.log(Animal);
-         element.removeClass("pieza");             
+         ui.draggable.draggable("disable", 1);             
       }
     });
    $( "#recibidor4" ).droppable({    
@@ -79,7 +79,7 @@ var Animal = 0;
       }
 
       console.log(Animal);
-         element.removeClass("pieza");      
+         ui.draggable.draggable("disable", 1);      
       }
     });
 

@@ -28,7 +28,7 @@ $("#la").droppable({
         if (element == "la") {
             la++
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -44,7 +44,7 @@ $("#le").droppable({
         if (element == "le") {
             le++
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -60,7 +60,7 @@ $("#li").droppable({
         if (element == "li") {
             li++
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -76,7 +76,7 @@ $("#lo").droppable({
         if (element == "lo") {
             lo++
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -94,6 +94,6 @@ $("#lu").droppable({
         if (element == "lu") {
             lu++
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });

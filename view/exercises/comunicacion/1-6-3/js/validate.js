@@ -25,7 +25,7 @@ $("#1").droppable({
         if (element == "v2") {
             n2++
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -43,7 +43,7 @@ $("#2").droppable({
             n3++
             
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -60,7 +60,7 @@ $("#3").droppable({
             n1++
             
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 

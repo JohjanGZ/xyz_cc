@@ -170,7 +170,7 @@ var element;
         if(element=="animal"){
          nAnimal++;
         }
-         element.removeClass("pieza");   
+         ui.draggable.draggable("disable", 1);   
           
       }
     });
@@ -190,7 +190,7 @@ var element;
               if(element=="regla"){
          nRegla++
         }
-          element.removeClass("pieza");
+          ui.draggable.draggable("disable", 1);
       }
     });
 
@@ -207,7 +207,7 @@ var element;
               if(element=="figura"){
          nFigura++
         }
-          element.removeClass("pieza");
+          ui.draggable.draggable("disable", 1);
 
       }
     });

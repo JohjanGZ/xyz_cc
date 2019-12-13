@@ -25,7 +25,7 @@ $("#ta").droppable({
         if (element == "taa") {
             ta++
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -37,7 +37,7 @@ $("#te").droppable({
         if (element == "tee") {
             te++
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -50,7 +50,7 @@ $("#ti").droppable({
         if (element == "tii") {
             ti++
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -63,7 +63,7 @@ $("#to").droppable({
         if (element == "too" || element == "too2") {
             to++
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -77,7 +77,7 @@ $("#to2").droppable({
         if (element == "too" || element == "too2") {
             to2++
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -91,6 +91,6 @@ $("#tu").droppable({
         if (element == "tu") {
             to2++
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });

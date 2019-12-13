@@ -7,7 +7,7 @@ var cols = document.querySelectorAll('.grid-options');
 });
 var r = 0;
 $(".pieza").draggable({
-    revert: true,
+    revert: "invalid",
     start: function() {
         element = $(this).attr("alt");
         elementid = $(this);
@@ -23,6 +23,6 @@ $(".caja").droppable({
         if (element == element2) {
             r++;
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });

@@ -22,7 +22,7 @@ $("#uno").droppable({
         if (element == "d") {
             nU++
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -38,6 +38,6 @@ $("#dos").droppable({
         if (element == "D") {
             nD++
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });

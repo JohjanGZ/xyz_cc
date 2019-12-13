@@ -28,7 +28,7 @@ $("#1").droppable({
         if (element == "1") {
             r++;
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
         
     }
 });
@@ -44,7 +44,7 @@ $("#2").droppable({
         if (element == "2") {
             r++;
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
         
 
     }
@@ -60,7 +60,7 @@ $("#3").droppable({
         if (element == "3") {
             r++;
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
         
 
     }

@@ -24,7 +24,7 @@ $("#1").droppable({
         if (element == "on") {
             r++;
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -39,7 +39,7 @@ $("#2").droppable({
         if (element == "no") {
             r++;
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -54,7 +54,7 @@ $("#3").droppable({
         if (element == "na") {
             r++;
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -71,7 +71,7 @@ $("#4").droppable({
         if (element == "no") {
             r++;
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -86,7 +86,7 @@ $("#5").droppable({
         if (element == "na") {
             r++;
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -101,7 +101,7 @@ $("#6").droppable({
         if (element == "an") {
             r++;
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -116,7 +116,7 @@ $("#7").droppable({
         if (element == "ni") {
             r++;
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -132,7 +132,7 @@ $("#8").droppable({
         if (element == "na") {
             r++;
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -147,6 +147,6 @@ $("#9").droppable({
         if (element == "no") {
             r++;
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });

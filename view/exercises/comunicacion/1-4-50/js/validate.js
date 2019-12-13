@@ -24,7 +24,7 @@ $("#masculino").droppable({
         if (element == "v1" || element == "v2" || element == "v3" || element == "v4" || element == "v5" || element == "v6") {
             nM++
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 
@@ -41,7 +41,7 @@ $("#femenino").droppable({
         if (element == "v7" || element == "v8" || element == "v9" || element == "v10" || element == "v11" || element == "v12") {
             nF++
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 

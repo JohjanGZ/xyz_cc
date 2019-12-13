@@ -32,7 +32,7 @@ $("#uno").droppable({
         if (element == "ma") {
             Nma++
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 // dos
@@ -48,7 +48,7 @@ $("#dos").droppable({
         if (element == "me") {
             Nme++
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 //tres
@@ -65,7 +65,7 @@ $("#tres").droppable({
         if (element == "mu") {
             Nmu++
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 //cuatro
@@ -82,7 +82,7 @@ $("#cuatro").droppable({
         if (element == "mi") {
             Nmi++
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });
 //cinco
@@ -99,6 +99,6 @@ $("#cinco").droppable({
         if (element == "mo") {
             Nmo++
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
     }
 });

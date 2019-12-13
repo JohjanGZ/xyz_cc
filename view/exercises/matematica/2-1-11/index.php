@@ -111,7 +111,7 @@ var rpta = 0, otros = 0, element, element2;
         }else{
           otros++;
         }
-        element.removeClass("pieza");
+        ui.draggable.draggable("disable", 1);
       }
     });
 
