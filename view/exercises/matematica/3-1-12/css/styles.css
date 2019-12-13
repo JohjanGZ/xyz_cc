@@ -78,7 +78,8 @@
     margin: 0;
     font-weight: 600;
     font-size: 30px;
-    background: rgb(182, 236, 255) !important;
+    color: #fff;
+    background: rgb(230, 0, 126) !important;
 }
 
 .select-wrapper input.select-dropdown:focus {
@@ -91,8 +92,8 @@
 
 .select-wrapper {
     position: relative;
-    margin-left: .5vh;
-    margin-right: .5vh;
+    margin-left: 2.5vh;
+    margin-right: 2.5vh;
 }
 
 .dropdown-content {
@@ -112,7 +113,7 @@
     border-radius: 12px;
 }
 
-img.principal {
+.principal {
     width: auto;
     height: 250px;
 }

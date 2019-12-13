@@ -23,12 +23,6 @@ function Page_13() {
     count = 3;
 }
 
-function Page_14() {
-    start_14();
-    inicio();
-    count = 3;
-}
-
 var cant = 18;
 var cal = cant / cant;
 console.log(cant);
@@ -78,7 +72,7 @@ function start_13() {
     $("#ventana").load(ruta + '3-1-13/index.php', {
         next: "resultado()",
         procesar: "result_tipo_3_1_13()",
-        titulo: "<center><h5><span class='ftitulo'>Cuenta</span> las patitas de los escarabajos y <span class='ftitulo'>escribe</span> el número en el recuadro.</h5></center>",
+        titulo: "<center><h5><span class='ftitulo'>Señala</span> el número menor al que se muestra.</h5></center>",
         restaurar: "start_13()",
         dir: ruta,
         cod: "3-1-13",
