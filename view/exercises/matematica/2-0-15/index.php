@@ -13,10 +13,10 @@
     <div class="container-two">
         <div class="columnaUno">
             <div class="">
-                <img src="img/1/titulo.gif" alt="">
+                <img src="<?= $dir ?>/img/titulo.gif" alt="">
             </div>
             <div class="">
-                <img src="img/1/imagen.gif" alt="">
+                <img src="<?= $dir ?>/img/imagen.gif" alt="">
             </div>
         </div>
         <div class="columnaDos grid-container">
@@ -30,7 +30,7 @@
                 <h6>Cantidad</h6>
             </div>
             <div class="grid-item">
-                <img src="img/1/botella.gif" alt="">
+                <img src="<?= $dir ?>/img/botella.gif" alt="">
             </div>
             <div class="grid-item">
                 <select class="slc" alt="IIIIIIIIII">
@@ -53,7 +53,7 @@
                 </select>
             </div>
             <div class="grid-item">
-                <img src="img/1/leche.gif" alt="">
+                <img src="<?= $dir ?>/img/leche.gif" alt="">
             </div>
             <div class="grid-item">
                 <select class="slc" alt="IIIIIIIIIIIIIIII">
@@ -76,7 +76,7 @@
                 </select>
             </div>
             <div class="grid-item">
-                <img src="img/1/vidrio.gif" alt="">
+                <img src="<?= $dir ?>/img/vidrio.gif" alt="">
             </div>
             <div class="grid-item">
                 <select class="slc" alt="IIIIIIII">
@@ -99,7 +99,7 @@
                 </select>
             </div>
             <div class="grid-item">
-                <img src="img/1/lata.gif" alt="">
+                <img src="<?= $dir ?>/img/lata.gif" alt="">
             </div>
             <div class="grid-item">
                 <select class="slc" alt="IIIIIIIIII">
@@ -140,7 +140,7 @@
         <div class="modal-content">
             <center>
                 <h4>Respuesta correcta</h4>
-                <img class="materialboxed" width="80%" src="img/1/respuesta.png">
+                <img class="materialboxed" width="80%" src="<?= $dir ?>/img/respuesta.png">
             </center>
         </div>
         <div class="modal-footer">

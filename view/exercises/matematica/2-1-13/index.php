@@ -160,6 +160,7 @@ function result_tipo_2_1_13() {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();
+        console.log(r);
     } else {
         incorrecto();
         console.log(r);

@@ -7,7 +7,7 @@
 <?=$titulo?>
 <div class="container-two">
     <div class="image">
-        <img src="img/1/imagen.png" alt="">
+        <img src="<?= $dir ?>/img/imagen.png" alt="">
     </div>
     <div class="respuesta">
         <p><b class="blue">Respuesta:</b>
@@ -30,7 +30,7 @@
     <div class="modal-content">
         <h4 class="center">Respuesta correcta</h4>
         <center>
-            <img class="materialboxed" width="80%" src="img/5/respuesta.png">
+            <img class="materialboxed" width="80%" src="<?= $dir ?>/img/respuesta.png">
         </center>
     </div>
     <div class="modal-footer">

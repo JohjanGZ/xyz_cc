@@ -1,7 +1,7 @@
 <?php require('../../../tools/var/variables.php'); ?>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="<?= $dir ?>/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="<?= $di ?>/css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
 </head>
 <?=$titulo?>
@@ -220,7 +220,7 @@
     <div class="container-two">
         <div class="row container-grid">
             <div class="imagenPrincipal">
-                <img  class="imageContainer" id="imagePrincipal" src="img/2-1-5/image.gif" alt="">
+                <img  class="imageContainer" id="imagePrincipal" src="<?= $dir ?>/img/image.gif" alt="">
             </div>
             <div class="opcUno">
                 <h6>La resbaladera está en ( <span class="boContainer" data-value="a"> </span> ; <span class="boContainer" data-value="2"></span> )</h6>
@@ -257,7 +257,7 @@
         <div class="modal-content">
             <center>
                 <h4>Respuesta correcta</h4>
-                <img class="materialboxed" width="80%" src="img/2-1-5/respuesta.png">
+                <img class="materialboxed" width="80%" src="<?= $dir ?>/img/respuesta.png">
             </center>
         </div>
         <div class="modal-footer">

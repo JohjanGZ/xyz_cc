@@ -71,35 +71,35 @@
               <div id="contenedorPiezas">
                   <ul class="ulClass">                 
                       <li class="contenedorimg">
-                      <img class="pieza responsive-img ui-draggable ui-draggable-handle" id="animal" src="img/1-0/cangrejo.png" alt="pieza1" >
+                      <img class="pieza responsive-img ui-draggable ui-draggable-handle" id="animal" src="<?= $dir ?>/img/cangrejo.png" alt="pieza1" >
                       </li>
                       <li class="contenedorimg">
-                      <img class="pieza" id="juguete" src="img/1-0/camion.png" alt="pieza2">
+                      <img class="pieza" id="juguete" src="<?= $dir ?>/img/camion.png" alt="pieza2">
                       </li>
                       <li class="contenedorimg">
-                      <img class="pieza" id="dulce" src="img/1-0/chupeta.png" alt="pieza3" >
+                      <img class="pieza" id="dulce" src="<?= $dir ?>/img/chupeta.png" alt="pieza3" >
                       </li>
                       <li class="contenedorimg">
-                      <img class="pieza" id="animal" src="img/1-0/estrella.png" alt="pieza4" >
+                      <img class="pieza" id="animal" src="<?= $dir ?>/img/estrella.png" alt="pieza4" >
                       </li>
                       <li class="contenedorimg">
-                      <img class="pieza" id="dulce" src="img/1-0/caramelo.png" alt="pieza5">
-                      </li>
-                      <li class="contenedorimg">
-                     
-                      <img class="pieza" id="juguete" src="img/1-0/avion.png" alt="pieza6">
+                      <img class="pieza" id="dulce" src="<?= $dir ?>/img/caramelo.png" alt="pieza5">
                       </li>
                       <li class="contenedorimg">
                      
-                      <img class="pieza" id="dulce" src="img/1-0/pastel.png" alt="pieza7" >
+                      <img class="pieza" id="juguete" src="<?= $dir ?>/img/avion.png" alt="pieza6">
                       </li>
                       <li class="contenedorimg">
                      
-                      <img class="pieza" id="animal" src="img/1-0/pez.png" alt="pieza8" >
+                      <img class="pieza" id="dulce" src="<?= $dir ?>/img/pastel.png" alt="pieza7" >
+                      </li>
+                      <li class="contenedorimg">
+                     
+                      <img class="pieza" id="animal" src="<?= $dir ?>/img/pez.png" alt="pieza8" >
                      </li>
                       <li class="contenedorimg">
                      
-                      <img class="caballo pieza" id="animal" src="img/1-0/caballito.png" alt="pieza9" >                     
+                      <img class="caballo pieza" id="animal" src="<?= $dir ?>/img/caballito.png" alt="pieza9" >                     
                       </li>
 
                   </ul>
@@ -127,7 +127,7 @@
                                         <div class="modal-content">
                                           <h4>Respuesta correcta</h4>
                                           <center>
-                                          <img class="materialboxed"  width="100%" src="img/mate1.png">
+                                          <img class="materialboxed"  width="100%" src="<?= $dir ?>/img/respuesta.png">
                                           </center>
                                         </div>
                                         <div class="modal-footer">

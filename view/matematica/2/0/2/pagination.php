@@ -101,7 +101,7 @@ function start_13() {
         titulo: "<center><h5><span>Observa</span> la imagen y <span>completa</span> la ubicación de los elementos en la coordenada que les corresponde.</h5></center>",
         restaurar: "start_13()",
         dir: ruta,
-        cod: "2-0-5",
+        cod: "2-0-13",
         nota: cal
     });
     return false;

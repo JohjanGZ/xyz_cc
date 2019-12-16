@@ -14,7 +14,7 @@
         <div class="center">
             <div id="contenedorPiezas">
             <div class="col s12 imagenPricipal">
-                    <img src="img/1-2/conjuntos.png" width="1000px" alt="">
+                    <img src="<?= $dir ?>/img/conjuntos.png" width="1000px" alt="">
                 </div>
             </div>
             <div class="row letras">
@@ -34,7 +34,7 @@
         <div class="modal-content">
             <h4 class="center">Respuesta correcta</h4>
             <center>
-                <img class="materialboxed" width="80%" src="img/1-2/respuesta.png">
+                <img class="materialboxed" width="80%" src="<?= $dir ?>/img/respuesta.png">
             </center>
         </div>
         <div class="modal-footer">

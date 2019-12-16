@@ -10,7 +10,7 @@
               margin: 2vh;
               border-radius: 18%;
             }
-            #contenedorpuzzle{
+            #contenedorpuzzle {
             width: 80%;
             margin: 10vh auto;
             }
@@ -86,9 +86,9 @@
             <div class="campo" id="imgIzquierda">
               
               <ul id="listA">
-                <li alt="tb"  class="a" id="obj1"><img src="img/1-17/conjuntoUno.gif"></li>
-                <li alt="ap" class="a" id="obj2"><img src="img/1-17/conjuntoDos.gif"></li>
-                <li alt="ky" class="a" id="obj3"><img src="img/1-17/conjuntoTres.gif"></li>
+                <li alt="tb"  class="a" id="obj1"><img src="<?= $dir ?>/img/conjuntoUno.gif"></li>
+                <li alt="ap" class="a" id="obj2"><img src="<?= $dir ?>/img/conjuntoDos.gif"></li>
+                <li alt="ky" class="a" id="obj3"><img src="<?= $dir ?>/img/conjuntoTres.gif"></li>
               </ul>
           
             </div>
@@ -97,9 +97,9 @@
               </div>
             <div class="campo" id="imgDerecha">
               <ul id="listB">
-                <li alt="tb" class="b" id="obj2"><img src="img/1-17/1.png"></li>
-                <li alt="ap" class="b" id="obj3"><img src="img/1-17/2.png"></li>
-                <li alt="ky" class="b" id="obj4"><img src="img/1-17/3.png"></li>
+                <li alt="tb" class="b" id="obj2"><img src="<?= $dir ?>/img/1.png"></li>
+                <li alt="ap" class="b" id="obj3"><img src="<?= $dir ?>/img/2.png"></li>
+                <li alt="ky" class="b" id="obj4"><img src="<?= $dir ?>/img/3.png"></li>
               </ul>
             </div>
  
@@ -113,7 +113,7 @@
                   <div class="modal-content">
                   <h4>Respuesta correcta</h4>
                   <center>
-                  <img class="materialboxed"  width="80%" src="img/1-24/respuesta.png">
+                  <img class="materialboxed"  width="80%" src="<?= $dir ?>/img/respuesta.png">
                   </center>
                   </div>
                   <div class="modal-footer">

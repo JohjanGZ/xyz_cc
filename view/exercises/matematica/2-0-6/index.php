@@ -2,7 +2,7 @@
 
 <style>
   .imgvf {
-    background-image: url(img/1-7/conjunto.gif);
+    background-image: url(<?= $dir ?>/img/conjunto.gif);
     background-size: 600px 280px;
     width: 600px;
     height: 280px;
@@ -255,7 +255,7 @@
       <div class=" row aleatorio">
         <div class="col s4 ">
           <div class="item1">
-            <img class="imgvfi" src="img/1-7/mariposa.gif">
+            <img class="imgvfi" src="<?= $dir ?>/img/mariposa.gif">
           </div>
           <div class="item2">
 
@@ -279,7 +279,7 @@
         <div class="col s4 ">
 
           <div class="item1">
-            <img class="imgvfi" src="img/1-7/hanster.png">
+            <img class="imgvfi" src="<?= $dir ?>/img/hanster.png">
           </div>
 
           <div class="item2">
@@ -304,7 +304,7 @@
         <div class="col s4 ">
 
           <div class="item1">
-            <img class="imgvfi" src="img/1-7/leon.gif">
+            <img class="imgvfi" src="<?= $dir ?>/img/leon.gif">
           </div>
 
           <div class="item2">
@@ -333,7 +333,7 @@
         <div class="col s4 ">
 
           <div class="item1">
-            <img class="imgvfi" src="img/1-7/pulpo.gif">
+            <img class="imgvfi" src="<?= $dir ?>/img/pulpo.gif">
           </div>
 
           <div class="item2">
@@ -358,7 +358,7 @@
         <div class="col s4 ">
 
           <div class="item1">
-            <img class="imgvfi" src="img/1-7/vaca.gif">
+            <img class="imgvfi" src="<?= $dir ?>/img/vaca.gif">
           </div>
 
           <div class="item2">
@@ -383,7 +383,7 @@
         <div class="col s4 ">
 
           <div class="item1">
-            <img class="imgvfi" src="img/1-7/gato.gif">
+            <img class="imgvfi" src="<?= $dir ?>/img/gato.gif">
           </div>
 
           <div class="item2">
@@ -413,7 +413,7 @@
         <div class="col s4 ">
 
           <div class="item1">
-            <img class="imgvfi" src="img/1-7/perro.gif">
+            <img class="imgvfi" src="<?= $dir ?>/img/perro.gif">
           </div>
 
           <div class="item2">
@@ -438,7 +438,7 @@
         <div class="col s4 ">
 
           <div class="item1">
-            <img class="imgvfi" src="img/1-7/caracol.gif">
+            <img class="imgvfi" src="<?= $dir ?>/img/caracol.gif">
           </div>
 
           <div class="item2">
@@ -463,7 +463,7 @@
         <div class="col s4 ">
 
           <div class="item1">
-            <img class="imgvfi" src="img/1-7/cisne.gif">
+            <img class="imgvfi" src="<?= $dir ?>/img/cisne.gif">
           </div>
 
           <div class="item2">
@@ -493,7 +493,7 @@
         <div class="col s4 ">
 
           <div class="item1">
-            <img class="imgvfi" src="img/1-7/mono.gif">
+            <img class="imgvfi" src="<?= $dir ?>/img/mono.gif">
           </div>
 
           <div class="item2">
@@ -518,7 +518,7 @@
         <div class="col s4 ">
 
           <div class="item1">
-            <img class="imgvfi" src="img/1-7/gato.gif">
+            <img class="imgvfi" src="<?= $dir ?>/img/gato.gif">
           </div>
 
           <div class="item2">
@@ -543,7 +543,7 @@
         <div class="col s4 ">
 
           <div class="item1">
-            <img class="imgvfi" src="img/1-7/vaca.gif">
+            <img class="imgvfi" src="<?= $dir ?>/img/vaca.gif">
           </div>
 
           <div class="item2">
@@ -571,7 +571,7 @@
       <div class="modal-content">
         <h4>Respuesta correcta</h4>
         <center>
-          <img class="materialboxed" width="100%" src="img/1-7/respuesta.png">
+          <img class="materialboxed" width="100%" src="<?= $dir ?>/img/respuesta.png">
         </center>
       </div>
       <div class="modal-footer">

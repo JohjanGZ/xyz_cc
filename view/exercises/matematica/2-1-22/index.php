@@ -13,14 +13,30 @@
         <p>
             Silvia pagó 11 soles por el plátano y la fresa, pero ella cree que pagó demás. ¿Puedes decir cuánto debería haber pagado?
         </p>
+        <div class="image">
+            <img src="<?= $dir ?>/img/imagen.png" alt="">
+        </div>
     </div>
-   
+    <div class="respuesta">
+    <b>Respuesta:</b> Silvia debería haber pagado  
+        <span>
+            <select class="slc" alt="8">
+                <option value="" disabled selected></option>
+                <?php
+                    for ($i=1; $i < 10; $i++) { 
+                        echo "<option value='$i'>$i</option>";
+                    }
+                ?>
+            </select>
+        </span>
+          soles.
+    </div>
 </div>
 <div id="modal1" class="modal">
     <div class="modal-content">
         <h4 class="center">Respuesta correcta</h4>
         <center>
-            <img class="materialboxed" width="80%" src="img/5/respuesta.png">
+            <img class="materialboxed" width="80%" src="<?= $dir ?>/img/respuesta.png">
         </center>
     </div>
     <div class="modal-footer">
@@ -51,13 +67,13 @@ $(".slc").change(function() {
 console.log(r);
 // Formulario - Registrados
 
-function result_tipo_2_1_21() {
+function result_tipo_2_1_22() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
-    if (r == 6) {
+    if (r == 1) {
         console.log(r);
         localStorage.setItem("Nota2-1-21", "2");
         localStorage.setItem("Time2-1-21", tiempo);

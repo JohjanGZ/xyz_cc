@@ -9,54 +9,6 @@
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 20px;
 }
-.item{
-  margin-bottom: 40px;
-  padding-bottom: 50px;
-  border-bottom: 2px solid #333;
-}
-.fila{
-  display:grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  align-items: center;
-  justify-items: center;
-}
-.item1{
-  grid-column: 3/4;
-  border: 2px solid rgb(30, 221, 255);
-}
-.item2{
-  grid-column: 2/3;
-  background-color: rgb(138, 30, 189);
-  color: #fff;
-  font-weight: 600;
-  font-size: 20px;
-  padding: 10px 35px;
-}
-.item3{
-  grid-column: 4/5;
-  background-color: rgb(138, 30, 189);
-  padding: 10px 20px;
-  color: #fff;
-  font-weight: 600;
-  font-size: 20px;
-  padding: 10px 30px;
-}
-.item4{
-  border: 2px solid rgb(30, 221, 255);
-}
-.item5{
-  grid-column: 3/4;
-  background-color: rgb(138, 30, 189);
-  padding: 10px 20px;
-  color: #fff;
-  font-weight: 600;
-  font-size: 20px;
-  padding: 10px 30px;
-}
-.item6{
-  grid-column: 5/6;
-  border: 2px solid rgb(30, 221, 255);
-}
 
 
 

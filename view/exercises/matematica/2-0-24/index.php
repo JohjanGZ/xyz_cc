@@ -10,17 +10,17 @@
         <div class="grid-container-2">
             <div class="grid-item">
                 <div class="figura-2">
-                    <img alt="lo" src="img/4/circulo.gif">
+                    <img alt="lo" src="<?= $dir ?>/img/circulo.gif">
                 </div>
             </div>
             <div class="grid-item">
                 <div class="figura-2">
-                    <img alt="do" src="img/4/cuadrado.gif">
+                    <img alt="do" src="<?= $dir ?>/img/cuadrado.gif">
                 </div>
             </div>
             <div class="grid-item">
                 <div class="figura-2">
-                    <img alt="tan" src="img/4/rectangulo.gif">
+                    <img alt="tan" src="<?= $dir ?>/img/rectangulo.gif">
                 </div>
             </div>
         </div>
@@ -28,7 +28,7 @@
     <section id="contenedorpuzzle">
         <div class="grid-container">
             <div class="grid-item">
-                <img src="img/4/image.png" class="p-img">
+                <img src="<?= $dir ?>/img/image.png" class="p-img">
                 <div class="figura p" alt="lo"></div>
                 <div class="figura p" alt="do"></div>
                 <div class="figura p" alt="lo"></div>

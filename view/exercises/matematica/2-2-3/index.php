@@ -4,25 +4,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="<?= $dir ?>/css/styles.css">
 </head>
+<style type="text/css">
 
+</style>
 <?=$titulo?>
-<?php $escritura = array('9C + 5D + 6U','7C + 0D + 8U','9C + 5D + 5U','6C + 4D + 5U','7C + 9D + 6U'); ?>
-
+<?php 
+    $escritura = array('7C + 0D + 8U','9C + 4D + 6U','9C + 5D + 6U','6C + 4D + 5U','7C + 0D + 4U','6C + 4D + 6U'); 
+?>
 <body>
     <div class="container-two">
         <div class="grid-container">
             <div class="grid-item tt"><span></span>Número</div>
-            <div class="grid-item tt br bl"><span></span>Se descompone: </div>
+            <div class="grid-item tt"><span></span>Lectura	</div>
             <div class="grid-item">
-                879
+            879
             </div>
-            <div class="grid-item">
+            <div class="grid-item grande">
                 8C +7D + 9U
             </div>
             <div class="grid-item">
-                708
+            708	
             </div>
-            <div class="grid-item">
+            <div class="grid-item grande">
                 <select class="slc" alt="7C + 0D + 8U">
                     <option value="" disabled selected></option>
                     <?php
@@ -33,9 +36,9 @@
                 </select>
             </div>
             <div class="grid-item">
-                956
+            956
             </div>
-            <div class="grid-item">
+            <div class="grid-item grande">
                 <select class="slc" alt="9C + 5D + 6U">
                     <option value="" disabled selected></option>
                     <?php
@@ -48,7 +51,7 @@
             <div class="grid-item">
                 645
             </div>
-            <div class="grid-item">
+            <div class="grid-item grande">
                 <select class="slc" alt="6C + 4D + 5U">
                     <option value="" disabled selected></option>
                     <?php
@@ -65,7 +68,7 @@
         <div class="modal-content">
             <center>
                 <h4>Respuesta correcta</h4>
-                <img class="materialboxed" width="80%" src="img/3/respuesta.png">
+                <img class="materialboxed" width="80%" src="<?= $dir ?>/img/respuesta.png">
             </center>
         </div>
         <div class="modal-footer">

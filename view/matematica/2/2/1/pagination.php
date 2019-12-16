@@ -73,58 +73,67 @@ function Page_12() {
    inicio();
    count = 3;
 }
+
 function Page_13() {
    start_13();
    inicio();
    count = 3;
 }
+
 function Page_14() {
    start_14();
    inicio();
    count = 3;
 }
+
 function Page_15() {
    start_15();
    inicio();
    count = 3;
 }
+
 function Page_16() {
-   start_16();
-   inicio();
-   count = 3;
+    count = 3;
+    start_16();
+    inicio();
 }
+
 function Page_17() {
-   start_17();
-   inicio();
-   count = 3;
+    count = 3;
+    start_17();
+    inicio();
+
 }
+
 function Page_18() {
-   start_18();
-   inicio();
-   count = 3;
+    count = 3;
+    start_18();
+    inicio();
 }
+
 function Page_19() {
    start_19();
    inicio();
    count = 3;
 }
+
 function Page_20() {
    start_20();
    inicio();
    count = 3;
 }
+
 function Page_21() {
    start_21();
    inicio();
    count = 3;
 }
+
 function Page_22() {
    start_22();
    inicio();
    count = 3;
 }
-
-
 var cant = 18;
 var cal = cant / cant;
 console.log(cant);
@@ -301,7 +310,7 @@ function start_14() {
     $("#ventana").load(ruta + '2-2-14/index.php', {
         next: "Page_15()",
         procesar: "result_tipo_2_2_14()",
-        titulo: " <center><h5><span>Coloca</span> en cada recuadro el número que corresponde para que se cumplan las comparaciones.</h5></center>",
+        titulo: " <center><h5><span>Colcoa</span> en cada recuadro el número que corresponde para que se cumplan las comparaciones.</h5></center>",
         restaurar: "start_14()",
         dir: ruta,
         cod: "2-2-14",
@@ -313,7 +322,7 @@ function start_15() {
     $("#ventana").load(ruta + '2-2-15/index.php', {
         next: "Page_16()",
         procesar: "result_tipo_2_2_15()",
-        titulo: " <center><h5> <span>Realiza</span> las adiciones y <span>compara</span> los resultados.</h5></center>",
+        titulo: " <center><h5><span>Realiza</span> las adiciones y compara los resultados.</h5></center>",
         restaurar: "start_15()",
         dir: ruta,
         cod: "2-2-15",
@@ -321,6 +330,7 @@ function start_15() {
     });
     return false;
 };
+
 function start_16() {
     $("#ventana").load(ruta + '2-2-16/index.php', {
         next: "Page_17()",
@@ -337,7 +347,7 @@ function start_17() {
     $("#ventana").load(ruta + '2-2-17/index.php', {
         next: "Page_18()",
         procesar: "result_tipo_2_2_17()",
-        titulo: " <center><h5><span>Observa</span> los precios y <span>resuelve</span>.</h5></center>",
+        titulo: " <center><h5><span>Resuelve</span> y <span>compara</span>.</h5></center>",
         restaurar: "start_17()",
         dir: ruta,
         cod: "2-2-17",
@@ -385,7 +395,7 @@ function start_21() {
     $("#ventana").load(ruta + '2-2-21/index.php', {
         next: "Page_22()",
         procesar: "result_tipo_2_2_21()",
-        titulo: " <center><h5><span>Resuelve</span> y <span>compara</span>.</h5></center>",
+        titulo: " <center><h5><span>Observa</span> los precios y <span>resuelve</span>.</h5></center>",
         restaurar: "start_21()",
         dir: ruta,
         cod: "2-2-21",
