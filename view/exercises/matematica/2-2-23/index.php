@@ -9,14 +9,22 @@
 </style>
 <?=$titulo?>
 <?php
-    $numeros = array('>','=','<');
+    $numeros = array('1','2','3','4','5','6','7','8','9');
 ?>
+
 <body>
     <div class="container-two">
-        <div class="container">
+        <div class="contenedor">
             <div class="filaUno">
                 <div class="box">
-
+                    <select class="slc" alt="5">
+                        <option value="" disabled selected></option>
+                        <?php
+                            for ($i=0; $i < count($numeros); $i++) { 
+                                echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                            }
+                        ?>
+                    </select>
                 </div>
             </div>
             <div class="filaDos">
@@ -32,7 +40,177 @@
             </div>
             <div class="filaTres">
                 <div class="box5">
-
+                    <select class="slc" alt="4">
+                        <option value="" disabled selected></option>
+                        <?php
+                            for ($i=0; $i < count($numeros); $i++) { 
+                                echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                            }
+                        ?>
+                    </select>
+                </div>
+                <div class="box6">
+                    2
+                </div>
+                <div class="box7">
+                    <select class="slc" alt="6">
+                        <option value="" disabled selected></option>
+                        <?php
+                            for ($i=0; $i < count($numeros); $i++) { 
+                                echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                            }
+                        ?>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="contenedor">
+            <div class="filaUno">
+                <div class="box">
+                    <select class="slc" alt="1">
+                        <option value="" disabled selected></option>
+                        <?php
+                            for ($i=0; $i < count($numeros); $i++) { 
+                                echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                            }
+                        ?>
+                    </select>
+                </div>
+            </div>
+            <div class="filaDos">
+                <div class="box2">
+                    4
+                </div>
+                <div class="box3">
+                    10
+                </div>
+                <div class="box4">
+                    6
+                </div>
+            </div>
+            <div class="filaTres">
+                <div class="box5">
+                    <select class="slc" alt="5">
+                        <option value="" disabled selected></option>
+                        <?php
+                            for ($i=0; $i < count($numeros); $i++) { 
+                                echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                            }
+                        ?>
+                    </select>
+                </div>
+                <div class="box6">
+                    2
+                </div>
+                <div class="box7">
+                    <select class="slc" alt="3">
+                        <option value="" disabled selected></option>
+                        <?php
+                            for ($i=0; $i < count($numeros); $i++) { 
+                                echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                            }
+                        ?>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="contenedor abajo">
+            <div class="filaUno">
+                <div class="box">
+                    <select class="slc" alt="1">
+                        <option value="" disabled selected></option>
+                        <?php
+                            for ($i=0; $i < count($numeros); $i++) { 
+                                echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                            }
+                        ?>
+                    </select>
+                </div>
+            </div>
+            <div class="filaDos">
+                <div class="box2">
+                    6
+                </div>
+                <div class="box3">
+                    9
+                </div>
+                <div class="box4">
+                    5
+                </div>
+            </div>
+            <div class="filaTres">
+                <div class="box5">
+                    <select class="slc" alt="2">
+                        <option value="" disabled selected></option>
+                        <?php
+                            for ($i=0; $i < count($numeros); $i++) { 
+                                echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                            }
+                        ?>
+                    </select>
+                </div>
+                <div class="box6">
+                    4
+                </div>
+                <div class="box7">
+                    <select class="slc" alt="3">
+                        <option value="" disabled selected></option>
+                        <?php
+                            for ($i=0; $i < count($numeros); $i++) { 
+                                echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                            }
+                        ?>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="contenedor abajo">
+            <div class="filaUno">
+                <div class="box">
+                    <select class="slc" alt="2">
+                        <option value="" disabled selected></option>
+                        <?php
+                            for ($i=0; $i < count($numeros); $i++) { 
+                                echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                            }
+                        ?>
+                    </select>
+                </div>
+            </div>
+            <div class="filaDos">
+                <div class="box2">
+                    5
+                </div>
+                <div class="box3">
+                    11
+                </div>
+                <div class="box4">
+                    3
+                </div>
+            </div>
+            <div class="filaTres">
+                <div class="box5">
+                    <select class="slc" alt="4">
+                        <option value="" disabled selected></option>
+                        <?php
+                            for ($i=0; $i < count($numeros); $i++) { 
+                                echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                            }
+                        ?>
+                    </select>
+                </div>
+                <div class="box6">
+                    1
+                </div>
+                <div class="box7">
+                    <select class="slc" alt="6">
+                        <option value="" disabled selected></option>
+                        <?php
+                            for ($i=0; $i < count($numeros); $i++) { 
+                                echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                            }
+                        ?>
+                    </select>
                 </div>
             </div>
         </div>
@@ -79,13 +257,13 @@ $(".slc").change(function() {
 
 
 // Validar
-function result_tipo_2_2_15() {
+function result_tipo_2_2_23() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
-    if (r == 6) {
+    if (r == 12) {
         console.log(r)
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
@@ -98,4 +276,16 @@ function result_tipo_2_2_15() {
     }
 
 }
+
+
+
+var cols = document.querySelectorAll('.aleatorio');
+
+[].forEach.call(cols, (e) => {
+
+    for (var i = e.children.length; i >= 0; i--) {
+        e.appendChild(e.children[Math.random() * i | 0]);
+    }
+
+});
 </script>
