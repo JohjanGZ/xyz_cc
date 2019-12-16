@@ -48,7 +48,7 @@ h5 {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding-top: 15px;
+    padding-top: 25px;
 }
 
 .ejercicio .contenedor-respuesta span {
@@ -108,7 +108,7 @@ h5 {
         width: 35%;
         flex-wrap: wrap;
         justify-content: center;
-        margin-left: 5%;
+        margin-left: 0%;
     }
     .silabas {
         text-align: center;

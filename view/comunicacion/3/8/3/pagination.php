@@ -54,7 +54,7 @@ function start_10() {
     $("#ventana").load(ruta + '3-8-10/index.php', {
         next: "Page_11()",
         procesar: "result_tipo_3_8_10()",
-        titulo: "<center><h5><span>Completa</span> los espacios en blanco utilizando las letras <i>j</i>y <i>g</i>.</h5></center>",
+        titulo: "<center><h5><span>Completa</span> los espacios en blanco utilizando las letras <i>j</i> y <i>g</i>.</h5></center>",
         restaurar: "start_10()",
         dir: ruta,
         cod: "3-8-10",
@@ -66,7 +66,7 @@ function start_11() {
     $("#ventana").load(ruta + '3-8-11/index.php', {
         next: "resultado()",
         procesar: "result_tipo_3_8_11()",
-        titulo: "<center><h5><span>Busca</span> en la sopa de letras las palabras con <i>j</i>y <i>g</i>.</h5></center>",
+        titulo: "<center><h5><span>Busca</span> en la sopa de letras las palabras con <i>j</i> y <i>g</i>.</h5></center>",
         restaurar: "start_11()",
         dir: ruta,
         cod: "3-8-11",

@@ -18,61 +18,21 @@
                 <div class="ejercicio">
                     
                     <div class="contenedor-respuesta">
-                    <span class="span-after">síla</span>
+                    <span class="span-after">de</span>
 
-                        <div class="palabra" alt="b">
+                        <div class="palabra" alt="j">
 
                         </div>
-                        <span class="span-after">a</span>
+                        <span class="span-after">ar</span>
 
                     </div>
                 </div>
                 <div class="ejercicio">
                     
                     <div class="contenedor-respuesta">
-                    <span class="span-after">primiti</span>
+                    <span class="span-after">ele</span>
 
-                        <div class="palabra" alt="v">
-
-                        </div>
-                        <span class="span-after">o</span>
-                    </div>
-                </div>
-                <div class="ejercicio">
-                    
-                    <div class="contenedor-respuesta">
-                        <span>escla</span>
-                        <div class="palabra" alt="v">
-
-                        </div>
-                        <span class="span-after">a</span>
-                    </div>
-                </div>
-                <div class="ejercicio">
-                    
-                    <div class="contenedor-respuesta">
-                        <span>alusi</span>
-                        <div class="palabra" alt="v">
-
-                        </div>
-                        <span class="span-after">a</span>
-                    </div>
-                </div>
-                <div class="ejercicio">
-                    
-                    <div class="contenedor-respuesta">
-                        <span>asoma</span>
-                        <div class="palabra" alt="b">
-
-                        </div>
-                        <span class="span-after">a</span>
-                    </div>
-                </div>
-                <div class="ejercicio">
-                    
-                    <div class="contenedor-respuesta">
-                        <span>perci</span>
-                        <div class="palabra" alt="b">
+                        <div class="palabra" alt="g">
 
                         </div>
                         <span class="span-after">ir</span>
@@ -81,100 +41,139 @@
                 <div class="ejercicio">
                     
                     <div class="contenedor-respuesta">
-                        <span>efusi</span>
-                        <div class="palabra" alt="v">
+                        <span>co</span>
+                        <div class="palabra" alt="g">
 
                         </div>
-                        <span class="span-after">a</span>
+                        <span class="span-after">er</span>
                     </div>
                 </div>
                 <div class="ejercicio">
                     
                     <div class="contenedor-respuesta">
-                        <span>cauti</span>
-                        <div class="palabra" alt="v">
+                        <span>relo</span>
+                        <div class="palabra" alt="j">
 
                         </div>
-                        <span class="span-after">o</span>
+                        <span class="span-after">ero</span>
                     </div>
                 </div>
                 <div class="ejercicio">
                     
                     <div class="contenedor-respuesta">
-                        <span>vi</span>
-                        <div class="palabra" alt="v">
+                        <span>ru</span>
+                        <div class="palabra" alt="g">
 
                         </div>
-                        <span class="span-after">o</span>
+                        <span class="span-after">ir</span>
                     </div>
                 </div>
                 <div class="ejercicio">
                     
                     <div class="contenedor-respuesta">
-                        <span>nati</span>
-                        <div class="palabra" alt="v">
+                        <span>ma</span>
+                        <div class="palabra" alt="g">
 
                         </div>
-                        <span class="span-after">o</span>
+                        <span class="span-after">ia</span>
                     </div>
                 </div>
                 <div class="ejercicio">
                     
                     <div class="contenedor-respuesta">
-                        <span>juzga</span>
-                        <div class="palabra" alt="b">
+                        <span>traba</span>
+                        <div class="palabra" alt="j">
 
                         </div>
-                        <span class="span-after">a</span>
+                        <span class="span-after">ar</span>
                     </div>
                 </div>
                 <div class="ejercicio">
                     
                     <div class="contenedor-respuesta">
-                        <span>admira</span>
-                        <div class="palabra" alt="b">
+                        <span>in</span>
+                        <div class="palabra" alt="g">
 
                         </div>
-                        <span class="span-after">a</span>
+                        <span class="span-after">enioso</span>
+                    </div>
+                </div>
+                <div class="ejercicio">
+                    
+                    <div class="contenedor-respuesta">
+                        <span>flo</span>
+                        <div class="palabra" alt="j">
+
+                        </div>
+                        <span class="span-after">ear</span>
+                    </div>
+                </div>
+                <div class="ejercicio">
+                    
+                    <div class="contenedor-respuesta">
+                        <span>conse</span>
+                        <div class="palabra" alt="j">
+
+                        </div>
+                        <span class="span-after">ero</span>
+                    </div>
+                </div>
+                <div class="ejercicio">
+                    
+                    <div class="contenedor-respuesta">
+                        <div class="palabra" alt="g">
+
+                        </div>
+                        <span class="span-after">araje</span>
+                    </div>
+                </div>
+                <div class="ejercicio">
+                    
+                    <div class="contenedor-respuesta">
+                        <span>aler</span>
+                        <div class="palabra" alt="g">
+
+                        </div>
+                        <span class="span-after">ia</span>
                     </div>
                 </div>
             </div>
             <ul class="contenedor-silabas">
                 <li class="silabas">
-                    <h4 class="pieza" alt="v">v</h4>
+                    <h4 class="pieza" alt="g">g</h4>
                 </li>
                 <li class="silabas">
-                    <h4 class="pieza" alt="v">v</h4>
+                    <h4 class="pieza" alt="g">g</h4>
                 </li>
                 <li class="silabas">
-                    <h4 class="pieza" alt="v">v</h4>
+                    <h4 class="pieza" alt="g">g</h4>
                 </li>
                 <li class="silabas">
-                    <h4 class="pieza" alt="v">v</h4>
+                    <h4 class="pieza" alt="g">g</h4>
                 </li>
                 <li class="silabas">
-                    <h4 class="pieza" alt="v">v</h4>
+                    <h4 class="pieza" alt="g">g</h4>
                 </li>
                 <li class="silabas">
-                    <h4 class="pieza" alt="v">v</h4>
+                    <h4 class="pieza" alt="g">g</h4>
                 </li>
                 <li class="silabas">
-                    <h4 class="pieza" alt="v">v</h4>
+                    <h4 class="pieza" alt="g">g</h4>
                 </li>
                 <li class="silabas">
-                    <h4 class="pieza" alt="b">b</h4>
+                    <h4 class="pieza" alt="j">j</h4>
                 </li>
                 <li class="silabas">
-                    <h4 class="pieza" alt="b">b</h4>
+                    <h4 class="pieza" alt="j">j</h4>
                 </li>
                 <li class="silabas">
-                    <h4 class="pieza" alt="b">b</h4>
+                    <h4 class="pieza" alt="j">j</h4>
                 </li>
                 <li class="silabas">
-                    <h4 class="pieza" alt="b">b</h4>
+                    <h4 class="pieza" alt="j">j</h4>
                 </li>
                 <li class="silabas">
-                    <h4 class="pieza" alt="b">b</h4>
+                    <h4 class="pieza" alt="j">j</h4>
                 </li>
 
             </ul>
@@ -204,7 +203,7 @@ $("#next").attr("onclick", "<?=$next?>");
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
 // Validar
-function result_tipo_3_6_14() {
+function result_tipo_3_8_10() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();

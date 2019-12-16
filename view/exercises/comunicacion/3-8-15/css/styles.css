@@ -1,0 +1,114 @@
+h4 {
+    text-align: center;
+}
+
+h5 {
+    width: 85%;
+}
+
+.container {
+    display: flex;
+    height: 70%;
+    align-items: center;
+}
+
+.container .row {
+    width: 100%;
+}
+
+.contenedor-imagen {
+    width: 30%;
+    margin: auto;
+    position: relative;
+}
+
+.contenedor-imagen .palabra {
+    position: absolute;
+}
+
+.contenedor-imagen .palabra.globo {
+    top: 15px;
+    right: -240px;
+}
+
+.contenedor-imagen .palabra.vineta {
+    top: 30%;
+    left: -240px;
+}
+
+.contenedor-imagen .palabra.dibujo {
+    bottom: 15px;
+    left: -240px;
+}
+
+.contenedor-imagen .palabra.vineta::after,
+.contenedor-imagen .palabra.dibujo::after {
+    display: block;
+    content: '🠲';
+    font-weight: 700;
+    color: rgb(46, 150, 211);
+    font-size: 3rem;
+    position: absolute;
+    top: -25%;
+    right: -35%;
+}
+
+.contenedor-imagen .palabra.globo::after {
+    display: block;
+    content: '🠰';
+    color: rgb(46, 150, 211);
+    font-weight: 700;
+    font-size: 3rem;
+    position: absolute;
+    top: -25%;
+    left: -35%;
+}
+
+.contenedor-imagen img {
+    max-width: 100%;
+}
+
+span.palabra {
+    display: inline-block;
+    width: 170px;
+    height: 60px;
+    padding: 2px 7px;
+    border: 3px solid silver;
+    border-radius: 12px;
+    margin: 3px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    background-color: white;
+}
+
+span.palabra:hover {
+    border-color: #37D3F7;
+}
+
+span.palabra span {
+    color: tomato;
+}
+
+.contenedor-palabras {
+    width: 70%;
+    margin: auto;
+    padding-top: 40px;
+    text-align: center;
+}
+
+span.palabrax {
+    display: inline-block;
+    padding: 2px 7px;
+    border: 3px solid silver;
+    border-radius: 12px;
+    margin: 3px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    background-color: white;
+}
+
+@media(max-height: 640px) {
+    .contenedor-palabras {
+        padding-top: 20px;
+    }
+}

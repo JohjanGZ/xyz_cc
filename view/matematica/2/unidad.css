@@ -376,10 +376,6 @@ ul li.menu-item-p:hover {
     min-width: 100%;
 }
 
-ul.ul-right {
-    left: 297px!important;
-}
-
 ul li.menu-item-p div a {
     color: white!important;
 }
