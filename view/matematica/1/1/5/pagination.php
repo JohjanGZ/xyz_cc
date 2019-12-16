@@ -29,11 +29,6 @@ function Page_18() {
     count = 3;
 }
 
-function Page_19() {
-    start_19();
-    inicio();
-    count = 3;
-}
 
 var cant = 18;
 var cal = cant / cant;
@@ -82,7 +77,7 @@ function start_16() {
 
 function start_17() {
     $("#ventana").load(ruta + '1-1-17/index.php', {
-        next: "resultado()",
+        next: "Page_18()",
         procesar: "result_tipo_1_1_17()",
         titulo: "<center><h5><span class='ftitulo'>Forma</span> grupos de 10 elementos.</h5></center>",
         restaurar: "start_17()",
