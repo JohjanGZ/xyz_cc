@@ -26,8 +26,8 @@
 <div class="container-two">
     <div class="row">
         <center>
-            <img src="img/1-4/conjuntoUno.png" class="img-principal uno">
-            <img src="img/1-4/conjuntoDos.png" class="img-principal dos">
+            <img src="<?= $dir ?>/img/conjuntoUno.png" class="img-principal uno">
+            <img src="<?= $dir ?>/img/conjuntoDos.png" class="img-principal dos">
         </center>
         <div class="cajas">
             <div class="caja col s6">
@@ -60,7 +60,7 @@
     <div class="modal-content">
         <h4 class="center">Respuesta correcta</h4>
         <center>
-            <img class="materialboxed" width="80%" src="img/1-4/respuesta.png">
+            <img class="materialboxed" width="80%" src="<?= $dir ?>/img/respuesta.png">
         </center>
     </div>
     <div class="modal-footer">

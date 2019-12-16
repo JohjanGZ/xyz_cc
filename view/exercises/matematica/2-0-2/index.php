@@ -74,35 +74,35 @@
               <div id="contenedorPiezas">
                   <ul id="ulClass">                 
                       <li class="contenedorimg">
-                      <img class="ficha" id="animal" src="img/1-1/perro.png" alt="pieza1" >
+                      <img class="ficha" id="animal" src="<?= $dir ?>/img/perro.png" alt="pieza1" >
                       </li>
                       <li class="contenedorimg">
-                      <img class="ficha" id="figura" src="img/1-1/cuadrado.png" alt="pieza2">
+                      <img class="ficha" id="figura" src="<?= $dir ?>/img/cuadrado.png" alt="pieza2">
                       </li>
                       <li class="contenedorimg">
-                      <img class="ficha" id="animal" src="img/1-1/perro-2.png" alt="pieza3" >
+                      <img class="ficha" id="animal" src="<?= $dir ?>/img/perro-2.png" alt="pieza3" >
                       </li>
                       <li class="contenedorimg">
-                      <img class="ficha" id="figura" src="img/1-1/triangulo.png" alt="pieza4" >
+                      <img class="ficha" id="figura" src="<?= $dir ?>/img/triangulo.png" alt="pieza4" >
                       </li>
                       <li class="contenedorimg">
-                      <img class="ficha" id="regla" src="img/1-1/regla-3.png" alt="pieza5">
-                      </li>
-                      <li class="contenedorimg">
-                     
-                      <img class="ficha" id="figura" src="img/1-1/circulo.png" alt="pieza6">
+                      <img class="ficha" id="regla" src="<?= $dir ?>/img/regla-3.png" alt="pieza5">
                       </li>
                       <li class="contenedorimg">
                      
-                      <img class="ficha" id="regla" src="img/1-1/regla.png" alt="pieza7" >
+                      <img class="ficha" id="figura" src="<?= $dir ?>/img/circulo.png" alt="pieza6">
                       </li>
                       <li class="contenedorimg">
                      
-                      <img class="ficha" id="animal" src="img/1-1/perro-3.png" alt="pieza8" >
+                      <img class="ficha" id="regla" src="<?= $dir ?>/img/regla.png" alt="pieza7" >
+                      </li>
+                      <li class="contenedorimg">
+                     
+                      <img class="ficha" id="animal" src="<?= $dir ?>/img/perro-3.png" alt="pieza8" >
                      </li>
                       <li class="contenedorimg">
                      
-                      <img class="ficha" id="regla" src="img/1-1/regla-2.png" alt="pieza9" >                     
+                      <img class="ficha" id="regla" src="<?= $dir ?>/img/regla-2.png" alt="pieza9" >                     
                       </li>
 
                   </ul>
@@ -130,7 +130,7 @@
                                         <div class="modal-content">
                                           <h4>Respuesta correcta</h4>
                                           <center>
-                                          <img class="materialboxed"  width="100%" src="img/1-1/respuesta.png">
+                                          <img class="materialboxed"  width="100%" src="<?= $dir ?>/img/respuesta.png">
                                           </center>
                                         </div>
                                         <div class="modal-footer">

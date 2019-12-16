@@ -14,7 +14,7 @@
     <div class="filaUno">
         <div class="columna">
         <h5>• ¿Cuántas postales tienen Anita y David juntos?</h5>
-            <img src="img/16/image.png" alt="">
+            <img src="<?= $dir ?>/img/image.png" alt="">
         </div>
         <div class="column fila Tabla">
             <div class="minifila">
@@ -65,7 +65,7 @@
     <div class="modal-content">
         <h4 class="center">Respuesta correcta</h4>
         <center>
-            <img class="materialboxed" width="80%" src="img/16/respuesta.png">
+            <img class="materialboxed" width="80%" src="<?= $dir ?>/img/respuesta.png">
         </center>
     </div>
     <div class="modal-footer">

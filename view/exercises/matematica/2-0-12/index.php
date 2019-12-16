@@ -11,7 +11,7 @@
     <div class="container-two">
         <div class="row">
             <div class="col s12">
-                <img class="imageContainer" src="img/2-1-4/image.png" alt="">
+                <img class="imageContainer" src="<?= $dir ?>/img/image.png" alt="">
             </div>
         </div>
         <div class="grid-container">
@@ -81,7 +81,7 @@
             </div>
             <div class="columna">
                 <div class="grid-item indicator"></div>
-                <div class="grid-item indicator" alt="n"><img id="imageCenter"  src="img/2-1-4/estrella.png" class="img mr"></div>
+                <div class="grid-item indicator" alt="n"><img id="imageCenter"  src="<?= $dir ?>/img/estrella.png" class="img mr"></div>
                 <div class="grid-item indicator"></div>
                 <div class="grid-item indicator" alt="n"></div>
                 <div class="grid-item indicator"></div>
@@ -262,7 +262,7 @@
         <div class="modal-content">
             <center>
                 <h4>Respuesta correcta</h4>
-                <img class="materialboxed" width="80%" src="img/2-1-4/respuesta.png">
+                <img class="materialboxed" width="80%" src="<?= $dir ?>/img/respuesta.png">
             </center>
         </div>
         <div class="modal-footer">

@@ -13,7 +13,7 @@
     <div class="container-two">
         <div class="columnaUno">
             <div class="principalImage">
-                <img src="img/3/imagen.gif" alt="">
+                <img src="<?= $dir ?>/img/imagen.gif" alt="">
             </div>
         </div>
         <div class="columnaDos grid-container">
@@ -114,7 +114,7 @@
         <div class="modal-content">
             <center>
                 <h4>Respuesta correcta</h4>
-                <img class="materialboxed" width="80%" src="img/3/respuesta.png">
+                <img class="materialboxed" width="80%" src="<?= $dir ?>/img/respuesta.png">
             </center>
         </div>
         <div class="modal-footer">

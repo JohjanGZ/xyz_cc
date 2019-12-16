@@ -14,7 +14,7 @@
     <div class="filaUno">
         <div class="columna primero">
             <h5> a. Sofía compró una licuadora y una batidora. ¿Cuánto gastó?</h5>
-            <img src="img/18/image.png" alt="">
+            <img src="<?= $dir ?>/img/image.png" alt="">
         </div>
         <div class="tabla">
             <div class="contenedor">
@@ -144,7 +144,7 @@
     <div class="modal-content">
         <h4 class="center">Respuesta correcta</h4>
         <center>
-            <img class="materialboxed" width="80%" src="img/18/respuesta.png">
+            <img class="materialboxed" width="80%" src="<?= $dir ?>/img/respuesta.png">
         </center>
     </div>
     <div class="modal-footer">

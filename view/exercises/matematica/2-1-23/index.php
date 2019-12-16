@@ -1,4 +1,4 @@
-<?php require('../../../tools/var/variables.php'); ?>
+    <?php require('../../../tools/var/variables.php'); ?>
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
@@ -7,7 +7,7 @@
 <?=$titulo?>
 <div class="container-two">
     <div class="image">
-        <img src="img/2/imagen.png" alt="">
+        <img src="<?= $dir ?>/img/imagen.png" alt="">
     </div>
     <div class="respuesta">
         <p><b class="blue">Respuesta:</b>
@@ -30,7 +30,7 @@
     <div class="modal-content">
         <h4 class="center">Respuesta correcta</h4>
         <center>
-            <img class="materialboxed" width="80%" src="img/5/respuesta.png">
+            <img class="materialboxed" width="80%" src="<?= $dir ?>/img/respuesta.png">
         </center>
     </div>
     <div class="modal-footer">
@@ -69,15 +69,15 @@ function result_tipo_2_1_23() {
 
     if (r == 1) {
         console.log(r);
-        localStorage.setItem("Nota2-1-21", "2");
-        localStorage.setItem("Time2-1-21", tiempo);
+        localStorage.setItem("Nota2-1-23", "2");
+        localStorage.setItem("Time2-1-23", tiempo);
         correcto();
 
     } else {
         console.log(r);
         incorrecto();
-        localStorage.setItem("Nota2-1-21", "0");
-        localStorage.setItem("Time2-1-21", tiempo);
+        localStorage.setItem("Nota2-1-23", "0");
+        localStorage.setItem("Time2-1-23", tiempo);
 
     }
 }

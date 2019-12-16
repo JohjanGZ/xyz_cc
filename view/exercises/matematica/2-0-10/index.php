@@ -11,7 +11,7 @@
     <div class="container-two">
         <div class="row">
             <div class="col s12">
-                <img class="imageContainer" src="img/2-1-2/conjunto.png" alt="">
+                <img class="imageContainer" src="<?= $dir ?>/img/conjunto.png" alt="">
             </div>
         </div>
         <div class="grid-container">
@@ -23,7 +23,7 @@
                 <div class="grid-item bn"></div>
                 <div class="grid-item bn"></div>
                 <div class="grid-item bn"></div>
-                <div class="grid-item bn"><img src="img/2-1-2/mono.png" class="img mr"></div>
+                <div class="grid-item bn"><img src="<?= $dir ?>/img/mono.png" class="img mr"></div>
                 <div class="grid-item bn"></div>
                 <div class="grid-item bn"></div>
             </div>
@@ -234,7 +234,7 @@
             <div class="columna">
                 <div class="grid-item bn"></div>
                 <div class="grid-item bn"></div>
-                <div class="grid-item bn"><img src="img/2-1-2/platano.png" class="img ml"></div>
+                <div class="grid-item bn"><img src="<?= $dir ?>/img/platano.png" class="img ml"></div>
                 <div class="grid-item bn"></div>
                 <div class="grid-item bn"></div>
                 <div class="grid-item bn"></div>
@@ -250,7 +250,7 @@
         <div class="modal-content">
             <center>
                 <h4>Respuesta correcta</h4>
-                <img class="materialboxed" width="80%" src="img/2-1-2/respuesta.png">
+                <img class="materialboxed" width="80%" src="<?= $dir ?>/img/respuesta.png">
             </center>
         </div>
         <div class="modal-footer">

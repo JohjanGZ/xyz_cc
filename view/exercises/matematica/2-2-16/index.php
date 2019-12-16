@@ -10,10 +10,10 @@
             <div class="campo" id="imgIzquierda">
               
               <ul id="listA">
-                <li alt="1"  class="a" id="obj1"><img src="img/16/imagen1.png" alt=""></li>
-                <li alt="2" class="a" id="obj2"><img src="img/16/imagen2.png" alt=""></li>
-                <li alt="3" class="a" id="obj3"><img src="img/16/imagen3.png" alt=""></li>
-                <li alt="4" class="a" id="obj4"><img src="img/16/imagen4.png" alt=""></li>
+                <li alt="1"  class="a" id="obj1"><img src="<?= $dir ?>/img/imagenUno.png" alt=""></li>
+                <li alt="2" class="a" id="obj2"><img src="<?= $dir ?>/img/imagendos.png" alt=""></li>
+                <li alt="3" class="a" id="obj3"><img src="<?= $dir ?>/img/imagenTres.png" alt=""></li>
+                <li alt="4" class="a" id="obj4"><img src="<?= $dir ?>/img/imagenCuatro.png" alt=""></li>
               </ul>
           
             </div>
@@ -23,10 +23,10 @@
             <div class="campo" id="imgDerecha">
               <ul id="listB">
                 
-                <li alt="1" class="b" id="obj2"><img src="img/16/res1.png" alt=""></li>
-                <li alt="2" class="b" id="obj3"><img src="img/16/res2.png" alt=""></li>
-                <li alt="3" class="b" id="obj4"><img src="img/16/res3.png" alt=""></li>
-                <li alt="4" class="b" id="obj4"><img src="img/16/res4.png" alt=""></li>
+                <li alt="1" class="b" id="obj2"><img src="<?= $dir ?>/img/res1.png" alt=""></li>
+                <li alt="4" class="b" id="obj3"><img src="<?= $dir ?>/img/res2.png" alt=""></li>
+                <li alt="3" class="b" id="obj4"><img src="<?= $dir ?>/img/res3.png" alt=""></li>
+                <li alt="2" class="b" id="obj4"><img src="<?= $dir ?>/img/res4.png" alt=""></li>
               </ul>
             </div>
  
@@ -40,7 +40,7 @@
                   <div class="modal-content">
                   <h4>Respuesta correcta</h4>
                   <center>
-                  <img class="materialboxed"  width="80%" src="img/16/respuesta.png">
+                  <img class="materialboxed"  width="80%" src="<?= $dir ?>/img/respuesta.png">
                   </center>
                   </div>
                   <div class="modal-footer">

@@ -14,13 +14,13 @@ $numeros = array('7','4','2','5', '1');
 <div class="container-two">
     <div class="containerPrincipal">
         <div class="uno">
-            <img src="img/4/grafico.png" class="img">
+            <img src="<?= $dir ?>/img/grafico.png" class="img">
         </div>
         <div class="dos">
             <div class="grid-container">
                 <div class="grid-item">
                     <div class="pregunta">
-                        En <img src="img/4/bus.gif" alt=""> viajan 
+                        En <img src="<?= $dir ?>/img/bus.gif" alt=""> viajan 
                         <select class="slc" alt="4">
                             <option value="" disabled selected></option>
                             <?php
@@ -34,7 +34,7 @@ $numeros = array('7','4','2','5', '1');
                 </div>
                 <div class="grid-item">
                     <div class="pregunta">
-                        En <img src="img/4/avion.gif" alt=""> viajan 
+                        En <img src="<?= $dir ?>/img/avion.gif" alt=""> viajan 
                         <select class="slc" alt="7">
                             <option value="" disabled selected></option>
                             <?php
@@ -48,7 +48,7 @@ $numeros = array('7','4','2','5', '1');
                 </div>
                 <div class="grid-item">
                     <div class="pregunta">
-                        En <img src="img/4/tren.gif" alt=""> viajan 
+                        En <img src="<?= $dir ?>/img/tren.gif" alt=""> viajan 
                         <select class="slc" alt="2">
                             <option value="" disabled selected></option>
                             <?php
@@ -62,7 +62,7 @@ $numeros = array('7','4','2','5', '1');
                 </div>
                 <div class="grid-item">
                     <div class="pregunta">
-                        En <img src="img/4/taxi.gif" alt=""> viajan 
+                        En <img src="<?= $dir ?>/img/taxi.gif" alt=""> viajan 
                         <select class="slc" alt="1">
                             <option value="" disabled selected></option>
                             <?php
@@ -76,7 +76,7 @@ $numeros = array('7','4','2','5', '1');
                 </div>
                 <div class="grid-item">
                     <div class="pregunta">
-                        En <img src="img/4/barco.gif" id="barco" alt=""> viajan 
+                        En <img src="<?= $dir ?>/img/barco.gif" id="barco" alt=""> viajan 
                         <select class="slc" alt="5">
                             <option value="" disabled selected></option>
                             <?php
@@ -143,7 +143,7 @@ $numeros = array('7','4','2','5', '1');
     <div class="modal-content">
         <h4 class="center">Respuesta correcta</h4>
         <center>
-            <img class="materialboxed" width="80%" src="img/4/respuesta.png">
+            <img class="materialboxed" width="80%" src="<?= $dir ?>/img/respuesta.png">
         </center>
     </div>
     <div class="modal-footer">

@@ -11,32 +11,32 @@
             <ul id="listA">
                 <li class="a" alt="n">
                     <div class="tabla">
-                        <img src="img/10/uno.png" class="img">
+                        <img src="<?= $dir ?>/img/uno.png" class="img">
                     </div>
                 </li>
                 <li class="a" alt="n">
                     <div class="tabla">
-                        <img src="img/10/dos.png" class="img">
+                        <img src="<?= $dir ?>/img/dos.png" class="img">
                     </div>
                 </li>
                 <li class="a">
                     <div class="tabla">
-                        <img src="img/10/tres.png" class="img">
+                        <img src="<?= $dir ?>/img/tres.png" class="img">
                     </div>
                 </li>
                 <li class="a" alt="n">
                     <div class="tabla">
-                        <img src="img/10/cuatro.png" class="img">
+                        <img src="<?= $dir ?>/img/cuatro.png" class="img">
                     </div>
                 </li>
                 <li class="a" alt="n">
                     <div class="tabla">
-                        <img src="img/10/cinco.png" class="img">
+                        <img src="<?= $dir ?>/img/cinco.png" class="img">
                     </div>
                 </li>
                 <li class="a" alt="n">
                     <div class="tabla">
-                        <img src="img/10/seis.png" class="img">
+                        <img src="<?= $dir ?>/img/seis.png" class="img">
                     </div>
                 </li>
             </ul>
@@ -47,7 +47,7 @@
     <div class="modal-content">
         <h4 class="center">Respuesta correcta</h4>
         <center>
-            <img class="materialboxed" width="80%" src="img/respuesta.png">
+            <img class="materialboxed" width="80%" src="<?= $dir ?>/img/respuesta.png">
         </center>
     </div>
     <div class="modal-footer">

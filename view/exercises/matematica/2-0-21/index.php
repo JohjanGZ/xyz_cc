@@ -10,17 +10,17 @@
         <div class="grid-container-2">
             <div class="grid-item">
                 <div class="figura-2">
-                    <img alt="de" src="img/1/verde.png">
+                    <img alt="de" src="<?= $dir ?>/img/verde.png">
                 </div>
             </div>
             <div class="grid-item">
                 <div class="figura-2">
-                    <img alt="ul" src="img/1/azul.png">
+                    <img alt="ul" src="<?= $dir ?>/img/azul.png">
                 </div>
             </div>
             <div class="grid-item">
                 <div class="figura-2">
-                    <img alt="do" src="img/1/anaranjado.png">
+                    <img alt="do" src="<?= $dir ?>/img/anaranjado.png">
                 </div>
             </div>
         </div>
@@ -28,7 +28,7 @@
     <section id="contenedorpuzzle">
         <div class="grid-container">
             <div class="grid-item">
-                <img src="img/1/imagen.png" class="p-img">
+                <img src="<?= $dir ?>/img/imagen.png" class="p-img">
                 <div class="figura p" alt="do"></div>
                 <div class="figura p" alt="de"></div>
                 <div class="figura p" alt="ul"></div>
@@ -43,7 +43,7 @@
     <div class="modal-content">
         <center>
             <h4>Respuesta correcta</h4>
-            <img class="materialboxed" width="80%" src="img/1/respuesta.png">
+            <img class="materialboxed" width="80%" src="<?= $dir ?>/img/respuesta.png">
         </center>
     </div>
     <div class="modal-footer">

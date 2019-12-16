@@ -13,9 +13,9 @@
       <div class="row svg">
             <div class="campo" id="imgIzquierda">
               <ul id="listA">
-                <li alt="uno"  class="a" id="obj1"><center><img src="img/13/uno.png"></center></li>
-                <li alt="dos" class="a" id="obj2"><center><img src="img/13/dos.png"></center></li>
-                <li alt="tres" class="a" id="obj3"><center><img src="img/13/tres.png"></center></li>
+                <li alt="uno"  class="a" id="obj1"><center><img src="<?= $dir ?>/img/uno.png"></center></li>
+                <li alt="dos" class="a" id="obj2"><center><img src="<?= $dir ?>/img/dos.png"></center></li>
+                <li alt="tres" class="a" id="obj3"><center><img src="<?= $dir ?>/img/tres.png"></center></li>
               </ul>
           
             </div>

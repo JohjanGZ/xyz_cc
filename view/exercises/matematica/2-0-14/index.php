@@ -13,7 +13,7 @@
     <div class="container-two">
         <div class="row column columnUno">
             <div class="col s10">
-                <img id="imagePrincipal" src="img/2-1-6/image.png" alt="">
+                <img id="imagePrincipal" src="<?= $dir ?>/img/image.png" alt="">
             </div>
         </div>
         <div class="column grid-container">
@@ -76,7 +76,7 @@
         <div class="modal-content">
             <center>
                 <h4>Respuesta correcta</h4>
-                <img class="materialboxed" width="80%" src="img/2-1-6/respuesta.png">
+                <img class="materialboxed" width="80%" src="<?= $dir ?>/img/respuesta.png">
             </center>
         </div>
         <div class="modal-footer">

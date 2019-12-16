@@ -21,7 +21,7 @@ select2.addEventListener('change', function() {
 });
 select3.addEventListener('change', function() {
     var selected3 = this.options[select3.selectedIndex];
-    if (selected3.value == 4) { r++; }
+    if (selected3.value == 3) { r++; }
 });
 select4.addEventListener('change', function() {
     var selected4 = this.options[select4.selectedIndex];
@@ -29,17 +29,17 @@ select4.addEventListener('change', function() {
 });
 select5.addEventListener('change', function() {
     var selected5 = this.options[select5.selectedIndex];
-    if (selected5.value == 4) { r++; }
+    if (selected5.value == 5) { r++; }
 });
 
 select6.addEventListener('change', function() {
     var selected6 = this.options[select6.selectedIndex];
-    if (selected6.value == 8) { r++; }
+    if (selected6.value == 10) { r++; }
 });
 
 select7.addEventListener('change', function() {
     var selected7 = this.options[select7.selectedIndex];
-    if (selected7.value == 3) { r++; }
+    if (selected7.value == 2) { r++; }
 });
 
 select8.addEventListener('change', function() {

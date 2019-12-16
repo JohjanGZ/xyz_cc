@@ -268,7 +268,7 @@
                 </div>
             </div>
             <div class="imageContainer col s12">
-                <img src="img/5/imagen.gif" alt="">
+                <img src="<?= $dir ?>/img/imagen.gif" alt="">
             </div>
             <div id="columnaDos">
                 <div class="table">
@@ -339,7 +339,7 @@
         <div class="modal-content">
             <center>
                 <h4>Respuesta correcta</h4>
-                <img class="materialboxed" width="80%" src="img/5/respuesta.png">
+                <img class="materialboxed" width="80%" src="<?= $dir ?>/img/respuesta.png">
             </center>
         </div>
         <div class="modal-footer">

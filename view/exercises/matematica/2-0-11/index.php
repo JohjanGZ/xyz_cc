@@ -15,7 +15,7 @@
     <div class="container-two">
         <div class="row">
             <div class="col s10">
-                <img src="img/2-1-3/image.gif" alt="">
+                <img src="<?= $dir ?>/img/image.gif" alt="">
             </div>
         </div>
         <div class="grid-container">
@@ -287,7 +287,7 @@
         <div class="modal-content">
             <center>
                 <h4>Respuesta correcta</h4>
-                <img class="materialboxed" width="80%" src="img/2-1-3/respuesta.png">
+                <img class="materialboxed" width="80%" src="<?= $dir ?>/img/respuesta.png">
             </center>
         </div>
         <div class="modal-footer">

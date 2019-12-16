@@ -10,17 +10,17 @@
         <div class="grid-container-2">
             <div class="grid-item">
                 <div class="figura-2">
-                    <img alt="a" src="img/5/abajo.gif">
+                    <img alt="a" src="<?= $dir ?>/img/abajo.gif">
                 </div>
             </div>
             <div class="grid-item">
                 <div class="figura-2">
-                    <img alt="ia" src="img/5/izq-abajo.gif">
+                    <img alt="ia" src="<?= $dir ?>/img/izq-abajo.gif">
                 </div>
             </div>
             <div class="grid-item">
                 <div class="figura-2">
-                    <img alt="iarr" src="img/5/izq-arriba.gif">
+                    <img alt="iarr" src="<?= $dir ?>/img/izq-arriba.gif">
                 </div>
             </div>
         </div>
@@ -28,7 +28,7 @@
     <section id="contenedorpuzzle">
         <div class="grid-container">
             <div class="grid-item">
-                <img src="img/5/image.png" class="p-img">
+                <img src="<?= $dir ?>/img/image.png" class="p-img">
                 <div class="figura p" alt="a"></div>
                 <div class="figura p" alt="ia"></div>
                 <div class="figura p" alt="iarr"></div>

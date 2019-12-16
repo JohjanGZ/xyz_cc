@@ -11,13 +11,13 @@
     <div class="container-two">
         <div class="row">
             <div class="imageContainer col s12">
-                <img src="img/2-1-1/conjunto.png" alt="">
+                <img src="<?= $dir ?>/img/conjunto.png" alt="">
             </div>
         </div>
         <div class="grid-container">
             <div class="columna">
                 <div class="grid-item bn"></div>
-                <div class="grid-item bn"><img src="img/2-1-1/conejo.png" class="img mr"></div>
+                <div class="grid-item bn"><img src="<?= $dir ?>/img/conejo.png" class="img mr"></div>
                 <div class="grid-item bn"></div>
                 <div class="grid-item bn"></div>
                 <div class="grid-item bn"></div>
@@ -191,7 +191,7 @@
                 <div class="grid-item bn"></div>
                 <div class="grid-item bn"></div>
                 <div class="grid-item bn"></div>
-                <div class="grid-item bn"><img src="img/2-1-1/zanahoria.png" class="img ml"></div>
+                <div class="grid-item bn"><img src="<?= $dir ?>/img/zanahoria.png" class="img ml"></div>
                 <div class="grid-item bn"></div>
                 <div class="grid-item bn"></div>
             </div>
@@ -202,7 +202,7 @@
         <div class="modal-content">
             <center>
                 <h4>Respuesta correcta</h4>
-                <img class="materialboxed" width="80%" src="img/2-1-1/respuesta.png">
+                <img class="materialboxed" width="80%" src="<?= $dir ?>/img/respuesta.png">
             </center>
         </div>
         <div class="modal-footer">
