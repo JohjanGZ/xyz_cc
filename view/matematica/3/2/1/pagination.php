@@ -24,6 +24,11 @@ function Page_5() {
     inicio();
     count = 3;
 }
+function Page_6() {
+    start_6();
+    inicio();
+    count = 3;
+}
 var cant = 18;
 var cal = cant / cant;
 console.log(cant);
@@ -82,10 +87,22 @@ function start_5() {
     $("#ventana").load(ruta + '3-2-5/index.php', {
         next: "resultado()",
         procesar: "result_tipo_3_2_5()",
-        titulo: "<center><h5><span class='ftitulo'>Suma</span> la cantidad que se indica para completar la secuencia.</h5></center>",
+        titulo: "<center><h5><span class='ftitulo'>Descompón</span> los siguientes números teniendo en cuenta la notación desarrollada. <br> <span class='ftitulo'>Guíate</span> del ejemplo. </h5></center>",
         restaurar: "start_5()",
         dir: ruta,
         cod: "3-2-5",
+        nota: cal
+    });
+    return false;
+};
+function start_6() {
+    $("#ventana").load(ruta + '3-2-6/index.php', {
+        next: "resultado()",
+        procesar: "result_tipo_3_2_6()",
+        titulo: "<center><h5><span class='ftitulo'>Relaciona</span> según corresponda.</h5></center>",
+        restaurar: "start_6()",
+        dir: ruta,
+        cod: "3-2-6",
         nota: cal
     });
     return false;
