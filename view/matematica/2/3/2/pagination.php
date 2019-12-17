@@ -1,106 +1,68 @@
 <script type="text/javascript">
 
 
-function Page_13() {
-    start_13();
+function Page_23() {
+    start_23();
     inicio();
     count = 3;
 }
 
-function Page_14() {  
-   start_14();
+function Page_24() {  
+   start_24();
    inicio();
    count = 3;
 }
 
-function Page_15() {
-   start_15();
-   inicio();
-   count = 3;
-}
-
-function Page_16() {
-   start_16();
-   inicio();
-   count = 3;
-}
-
-function Page_17() {
-   start_17();
+function Page_25() {
+   start_25();
    inicio();
    count = 3;
 }
 
 var cant = 18;
-var cal = cant / cant;
+var cal = cant/cant;
 console.log(cant);
 var ruta = "../../../../exercises/matematica/";
 ////////////// 2do 
 // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
 
 
-function start_13() {
-    $("#ventana").load(ruta + '2-1-13/index.php', {
-        next: "Page_14()",
-        procesar: "result_tipo_2_1_13()",
-        titulo: "<center><h5><span>Escribe</span> cuántas figuras hay de cada forma geométrica.</h5></center>",
-        restaurar: "start_13()",
+function start_23() {
+    $("#ventana").load(ruta + '2-2-23/index.php', {
+        next: "Page_24()",
+        procesar: "result_tipo_2_2_23()",
+        titulo: "<center><h5><span>Completa</span> los números que faltan. </h5></center>",
+        restaurar: "start_23()",
         dir: ruta,
-        cod: "2-1-13",
+        cod: "2-2-23",
         nota: cal
     });
     return false;
 };
-function start_14() {
-    $("#ventana").load(ruta + '2-1-14/index.php', {
-        next: "Page_15()",
-        procesar: "result_tipo_2_1_14()",
-        titulo: "<center><h5><span>Selecciona</span> las figuras geométricas que tienen los lados rectos.</h5></center>",
-        restaurar: "start_14()",
+function start_24() {
+    $("#ventana").load(ruta + '2-2-24/index.php', {
+        next: "Page_25()",
+        procesar: "result_tipo_2_2_24()",
+        titulo: "<center><h5><span>Completa</span> los siguientes cuadrados mágicos.</h5></center>",
+        restaurar: "start_24()",
         dir: ruta,
-        cod: "2-1-14",
+        cod: "2-2-24",
         nota: cal
     });
     return false;
 };
-function start_15() {
-    $("#ventana").load(ruta + '2-1-15/index.php', {
-        next: "Page_16()",
-        procesar: "result_tipo_2_1_15()",
-        titulo: "<center><h5><span>Selecciona</span> las figuras geométricas que tienen 3 vértices.</h5></center>",
-        restaurar: "start_15()",
-        dir: ruta,
-        cod: "2-1-15",
-        nota: cal
-    });
-    return false;
-};
-function start_16() {
-    $("#ventana").load(ruta + '2-1-16/index.php', {
-        next: "Page_17()",
-        procesar: "result_tipo_2_1_16()",
-        titulo: "<center><h5><span>Selecciona</span> las figuras geométricas que no tienen vértices.</h5></center>",
-        restaurar: "start_16()",
-        dir: ruta,
-        cod: "2-1-16",
-        nota: cal
-    });
-    return false;
-};
-
-function start_17() {
-    $("#ventana").load(ruta + '2-1-17/index.php', {
+function start_25() {
+    $("#ventana").load(ruta + '2-2-25/index.php', {
         next: "resultado()",
-        procesar: "result_tipo_2_1_17()",
-        titulo: "<center><h5><span>Relaciona</span> cada imagen con su respectivo nombre.</h5></center>",
-        restaurar: "start_17()",
+        procesar: "result_tipo_2_2_25()",
+        titulo: "<center><h5>La suma de los números en los cuadrados es igual al número del rectángulo.</h5></center>",
+        restaurar: "start_25()",
         dir: ruta,
-        cod: "2-1-17",
+        cod: "2-2-25",
         nota: cal
     });
     return false;
 };
-
 
 function resultado() {
     $("#ventana").load('../../../../exercises/resultado/resultado.php');
