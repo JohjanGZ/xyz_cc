@@ -50,7 +50,7 @@ $("#next").attr("onclick", "<?=$next?>");
 </script>
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
-
+var r=0;
 var element;
 
    $(".obj").draggable( {

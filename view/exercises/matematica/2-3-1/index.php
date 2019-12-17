@@ -9,13 +9,224 @@
 </style>
 <?=$titulo?>
 <?php
-    $numeros = array('>','=','<');
+    $numeros = array('1','6','3','1134','100','30','1000','1136');
+    $numerosDos = array('2','2214','1','4','200','2241','40','2000')
 ?>
+
 <body>
     <div class="container-two">
-        <div class="contenedor">
+        <div class="contenedor main__contenedor">
             <div class="image">
-                <img src="" alt="">
+                <img src="<?= $dir ?>/img/imagen.png" class="materialboxed" alt="">
+            </div>
+            <div class="detalles">
+                <span>
+                    <select class="slc" alt="1">
+                        <option value="" disabled selected></option>
+                        <?php
+                        for ($i=0; $i < count($numeros); $i++) { 
+                            echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                        }
+                    ?>
+                    </select>
+                </span>
+                millar
+                <span>
+                    <select class="slc" alt="1">
+                        <option value="" disabled selected></option>
+                        <?php
+                        for ($i=0; $i < count($numeros); $i++) { 
+                            echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                        }
+                    ?>
+                    </select>
+                </span>
+                centena
+                <span>
+                    <select class="slc" alt="3">
+                        <option value="" disabled selected></option>
+                        <?php
+                        for ($i=0; $i < count($numeros); $i++) { 
+                            echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                        }
+                    ?>
+                    </select>
+                </span>
+                decenas
+                <span>
+                    <select class="slc" alt="6">
+                        <option value="" disabled selected></option>
+                        <?php
+                        for ($i=0; $i < count($numeros); $i++) { 
+                            echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                        }
+                    ?>
+                    </select>
+                </span>
+                unidades
+            </div>
+            <div class="detallesDos">
+                <span>
+                    <select class="slc" alt="1000">
+                        <option value="" disabled selected></option>
+                        <?php
+                        for ($i=0; $i < count($numeros); $i++) { 
+                            echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                        }
+                    ?>
+                    </select>
+                </span>
+                +
+                <span>
+                    <select class="slc" alt="100">
+                        <option value="" disabled selected></option>
+                        <?php
+                        for ($i=0; $i < count($numeros); $i++) { 
+                            echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                        }
+                    ?>
+                    </select>
+                </span>
+                +
+                <span>
+                    <select class="slc" alt="30">
+                        <option value="" disabled selected></option>
+                        <?php
+                        for ($i=0; $i < count($numeros); $i++) { 
+                            echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                        }
+                    ?>
+                    </select>
+                </span>
+                +
+                <span>
+                    <select class="slc" alt="6">
+                        <option value="" disabled selected></option>
+                        <?php
+                        for ($i=0; $i < count($numeros); $i++) { 
+                            echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                        }
+                    ?>
+                    </select>
+                </span>
+                =
+                <span>
+                    <select class="slc" alt="1136">
+                        <option value="" disabled selected></option>
+                        <?php
+                        for ($i=0; $i < count($numeros); $i++) { 
+                            echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                        }
+                    ?>
+                    </select>
+                </span>
+            </div>
+        </div>
+        <div class="contenedor second__contenedor">
+            <div class="image">
+                <img src="<?= $dir ?>/img/imagenDos.png" class="materialboxed" alt="">
+            </div>
+            <div class="detalles">
+                <span>
+                    <select class="slc" alt="2">
+                        <option value="" disabled selected></option>
+                        <?php
+                        for ($i=0; $i < count($numerosDos); $i++) { 
+                            echo "<option value='$numerosDos[$i]'>$numerosDos[$i]</option>";
+                        }
+                    ?>
+                    </select>
+                </span>
+                millar
+                <span>
+                    <select class="slc" alt="2">
+                        <option value="" disabled selected></option>
+                        <?php
+                        for ($i=0; $i < count($numerosDos); $i++) { 
+                            echo "<option value='$numerosDos[$i]'>$numerosDos[$i]</option>";
+                        }
+                    ?>
+                    </select>
+                </span>
+                centena
+                <span>
+                    <select class="slc" alt="4">
+                        <option value="" disabled selected></option>
+                        <?php
+                        for ($i=0; $i < count($numerosDos); $i++) { 
+                            echo "<option value='$numerosDos[$i]'>$numerosDos[$i]</option>";
+                        }
+                    ?>
+                    </select>
+                </span>
+                decenas
+                <span>
+                    <select class="slc" alt="1">
+                        <option value="" disabled selected></option>
+                        <?php
+                        for ($i=0; $i < count($numerosDos); $i++) { 
+                            echo "<option value='$numerosDos[$i]'>$numerosDos[$i]</option>";
+                        }
+                    ?>
+                    </select>
+                </span>
+                unidades
+            </div>
+            <div class="detallesDos">
+                <span>
+                    <select class="slc" alt="2000">
+                        <option value="" disabled selected></option>
+                        <?php
+                        for ($i=0; $i < count($numerosDos); $i++) { 
+                            echo "<option value='$numerosDos[$i]'>$numerosDos[$i]</option>";
+                        }
+                    ?>
+                    </select>
+                </span>
+                +
+                <span>
+                    <select class="slc" alt="200">
+                        <option value="" disabled selected></option>
+                        <?php
+                        for ($i=0; $i < count($numerosDos); $i++) { 
+                            echo "<option value='$numerosDos[$i]'>$numerosDos[$i]</option>";
+                        }
+                    ?>
+                    </select>
+                </span>
+                +
+                <span>
+                    <select class="slc" alt="40">
+                        <option value="" disabled selected></option>
+                        <?php
+                        for ($i=0; $i < count($numerosDos); $i++) { 
+                            echo "<option value='$numerosDos[$i]'>$numerosDos[$i]</option>";
+                        }
+                    ?>
+                    </select>
+                </span>
+                +
+                <span>
+                    <select class="slc" alt="1">
+                        <option value="" disabled selected></option>
+                        <?php
+                        for ($i=0; $i < count($numerosDos); $i++) { 
+                            echo "<option value='$numerosDos[$i]'>$numerosDos[$i]</option>";
+                        }
+                    ?>
+                    </select>
+                </span>
+                =
+                <span>
+                    <select class="slc" alt="2241">
+                        <option value="" disabled selected></option>
+                        <?php
+                        for ($i=0; $i < count($numerosDos); $i++) { 
+                            echo "<option value='$numerosDos[$i]'>$numerosDos[$i]</option>";
+                        }
+                    ?>
+                    </select>
+                </span>
             </div>
         </div>
     </div>
@@ -24,7 +235,7 @@
         <div class="modal-content">
             <center>
                 <h4>Respuesta correcta</h4>
-                <img class="materialboxed" width="80%" src="img/15/respuesta.png">
+                <img class="materialboxed" width="80%" src="<?= $dir ?>/img/respuesta.png">
             </center>
         </div>
         <div class="modal-footer">
@@ -61,13 +272,13 @@ $(".slc").change(function() {
 
 
 // Validar
-function result_tipo_2_2_25() {
+function result_tipo_2_3_1() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
-    if (r == 12) {
+    if (r == 19) {
         console.log(r)
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
