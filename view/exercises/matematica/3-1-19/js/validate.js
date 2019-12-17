@@ -15,7 +15,6 @@ $(".pieza").draggable({
         // console.log(elementid);
     }
 });
-
 $(".caja").droppable({
     drop: function(event, ui) { 
         // $(this).css("background-color", "rgba(139, 195, 74, 0.14)");
