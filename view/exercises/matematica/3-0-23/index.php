@@ -103,6 +103,7 @@
 <?php require('../../../tools/botones/botones.php');?><script>
 $("#next").attr("onclick", "<?=$next?>");
 </script>
+<script src="../../../../tools/procesos/script.js"></script>
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
 // Validar

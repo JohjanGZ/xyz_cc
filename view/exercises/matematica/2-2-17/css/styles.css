@@ -135,3 +135,11 @@
     color: red;
     margin-left: 2vh;
 }
+
+
+@media screen and (max-height: 800px){
+    .grid-item{
+      padding: 4px;
+      margin: 3px;
+    }
+  }
