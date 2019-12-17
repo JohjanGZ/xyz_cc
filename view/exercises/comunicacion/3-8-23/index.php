@@ -16,8 +16,8 @@
 
             <div class="contenedor-oraciones">
 
-                <h4>¿Quiénes hacían los zapatos en la noche?</h4>
-                
+                <h4>¿Quiénes son los personajes centrales del texto?</h4>
+
                 <div class="oracion">
                     
                     <div class="contenedor-check">
@@ -99,7 +99,7 @@ $(".img-rpst").click(function() {
 });
 
 
-function result_tipo_3_4_20() {
+function result_tipo_3_8_23() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();

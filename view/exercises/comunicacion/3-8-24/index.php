@@ -16,26 +16,44 @@
 
             <div class="contenedor-oraciones">
 
-                <h4>¿Quiénes hacían los zapatos en la noche?</h4>
-                
+                <h4>¿Quiénes son los personajes centrales del texto?</h4>
+
                 <div class="oracion">
                     
                     <div class="contenedor-check">
                         <div class="respuesta">
-                            <div class="img-rpst">
+                            <div class="img-rpst" alt="n">
                                 <img src="<?= $dir ?>/img/1.png">
                             </div>
                         </div>
                         <div class="respuesta">
                             <div class="img-rpst" alt="n">
                                 <img src="<?= $dir ?>/img/2.png">
-
                             </div>
                         </div>
                         <div class="respuesta">
                             <div class="img-rpst">
                                 <img src="<?= $dir ?>/img/3.png">
-
+                            </div>
+                        </div>
+                        <div class="respuesta">
+                            <div class="img-rpst">
+                                <img src="<?= $dir ?>/img/4.png">
+                            </div>
+                        </div>
+                        <div class="respuesta">
+                            <div class="img-rpst" alt="n">
+                                <img src="<?= $dir ?>/img/5.png">
+                            </div>
+                        </div>
+                        <div class="respuesta">
+                            <div class="img-rpst">
+                                <img src="<?= $dir ?>/img/6.png">
+                            </div>
+                        </div>
+                        <div class="respuesta">
+                            <div class="img-rpst" alt="n">
+                                <img src="<?= $dir ?>/img/7.png">
                             </div>
                         </div>
                        
@@ -99,13 +117,13 @@ $(".img-rpst").click(function() {
 });
 
 
-function result_tipo_3_4_20() {
+function result_tipo_3_8_24() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
-    if (r == 1) {
+    if (r == 4) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();
