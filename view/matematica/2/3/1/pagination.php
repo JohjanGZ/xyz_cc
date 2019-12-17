@@ -170,7 +170,7 @@ function start_3() {
     $("#ventana").load(ruta + '2-3-3/index.php', {
         next: "Page_4()",
         procesar: "result_tipo_2_3_3()",
-        titulo: "<center><h5><span>Escribe</span> la descomposición de los siguientes números en centenas, decenas y unidades.</h5></center>",
+        titulo: "<center><h5><span>Ubica</span> los números en el tablero posicional.</h5></center>",
         restaurar: "start_3()",
         dir: ruta,
         cod: "2-3-3",
@@ -183,7 +183,7 @@ function start_4() {
     $("#ventana").load(ruta + '2-3-4/index.php', {
         next: "Page_5()",
         procesar: "result_tipo_2_3_4()",
-        titulo: " <center><h5> <span>Coloca</span>, en el rectángulo, el número que corresponde.</h5></center>",
+        titulo: " <center><h5> <span>Observa</span> y <span>escribe</span> el número que corresponde en cada recuadro.</h5></center>",
         restaurar: "start_4()",
         dir: ruta,
         cod: "2-3-4",
@@ -193,77 +193,77 @@ function start_4() {
 };
 
 function start_5() {
-    $("#ventana").load(ruta + '2-2-5/index.php', {
+    $("#ventana").load(ruta + '2-3-5/index.php', {
         next: "Page_6()",
-        procesar: "result_tipo_2_2_5()",
-        titulo: "<center><h5><span>Coloca</span> en la línea cómo se leen los siguientes números:</h5></center>",
+        procesar: "result_tipo_2_3_5()",
+        titulo: "<center><h5><span>Lee</span> los números y <span>ubícalos</span> en el tablero posicional.</h5></center>",
         restaurar: "start_5()",
         dir: ruta,
-        cod: "2-2-5",
+        cod: "2-3-5",
         nota: cal
     });
     return false;
 };
 
 function start_6() {
-    $("#ventana").load(ruta + '2-2-6/index.php', {
+    $("#ventana").load(ruta + '2-3-6/index.php', {
         next: "Page_7()",
-        procesar: "result_tipo_2_2_6()",
+        procesar: "result_tipo_2_3_6()",
         titulo: "<center><h5><span>Forma</span> números con las tres cifras y <span>escribe</span> sus nombres.</h5></center>",
         restaurar: "start_6()",
         dir: ruta,
-        cod: "2-2-6",
+        cod: "2-3-6",
         nota: cal
     });
     return false;
 };
 
 function start_7() {
-    $("#ventana").load(ruta + '2-2-7/index.php', {
+    $("#ventana").load(ruta + '2-3-7/index.php', {
         next: "Page_8()",
-        procesar: "result_tipo_2_2_7()",
+        procesar: "result_tipo_2_3_7()",
         titulo: "<center><h5><span>Observa</span> el ejemplo y <span>completa</span> el cuadro.</h5></center>",
         restaurar: "start_7()",
         dir: ruta,
-        cod: "2-2-7",
+        cod: "2-3-7",
         nota: cal
     });
     return false;
 };
 
 function start_8() {
-    $("#ventana").load(ruta + '2-2-8/index.php', {
+    $("#ventana").load(ruta + '2-3-8/index.php', {
         next: "Page_9()",
-        procesar: "result_tipo_2_2_8()",
-        titulo: "<center><h5><span>Selecciona</span> la respuesta correcta.</h5></center>",
+        procesar: "result_tipo_2_3_8()",
+        titulo: "<center><h5><span>Lee</span> y <span>coloca</span> el número correspondiente.</h5></center>",
         restaurar: "start_8()",
         dir: ruta,
-        cod: "2-2-8",
+        cod: "2-3-8",
         nota: cal
     });
     return false;
 };
 function start_9() {
-    $("#ventana").load(ruta + '2-2-9/index.php', {
+    $("#ventana").load(ruta + '2-3-9/index.php', {
         next: "Page_10()",
-        procesar: "result_tipo_2_2_9()",
-        titulo: "<center><h5><span>Escribe</span> el número antecesor y sucesor de los siguientes números:</h5></center>",
+        procesar: "result_tipo_2_3_9()",
+        titulo: "<center><h5><span>Lee</span> y <span>coloca</span> el número correspondiente.</h5></center>",
         restaurar: "start_9()",
         dir: ruta,
-        cod: "2-2-9",
+        cod: "2-3-9",
         nota: cal
     });
     return false;
 };
 
 function start_10() {
-    $("#ventana").load(ruta + '2-2-10/index.php', {
+    $("#ventana").load(ruta + '2-3-10/index.php', {
         next: "Page_11()",
-        procesar: "result_tipo_2_2_10()",
-        titulo: "<center><h5><span>Coloca</span> el número que falta.</h5></center>",
+        procesar: "result_tipo_2_3_10()",
+        titulo: "<center><h5><span>Elige</span> un número del 0 al 9 y <span>completa</span> el espacio en blanco para que se cumplan las siguientes relaciones.</h5></center>",
         restaurar: "start_10()",
         dir: ruta,
-        cod: "2-2-10",
+        cod: "2-3-10",
         nota: cal
     });
     return false;
