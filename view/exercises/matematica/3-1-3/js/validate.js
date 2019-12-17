@@ -10,18 +10,5 @@ var cols = document.querySelectorAll('#sortable');
 /**
  * TODO: Orden
  */
-$(function () {
-    $("#sortable").sortable({
-        revert: "invalid",
-    });
-    $("#draggable").draggable({
-        connectToSortable: "#sortable",
-        helper: "clone",
-        revert: "invalid",
-    });
-    // $("ul, li").disableSelection();
-});
-function sortItems() {
-    var items = $('#sortable .grid-item').get(); items.sort(function (a, b) { return parseInt(a.id) > parseInt(b.id); });
-    
-};
+var r = false;
+ordenar_lista();

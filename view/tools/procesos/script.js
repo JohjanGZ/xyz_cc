@@ -1,3 +1,4 @@
+// Funcion de arrastre
 function arrastre() {
     $(".pieza").draggable({
         revert: "invalid",
@@ -19,6 +20,8 @@ function arrastre() {
         }
     });
 }
+
+// Funcion de seleccion
 function seleccion_click() {
     $('.seleccion').click(function () {
         $(this).css({
@@ -40,6 +43,8 @@ function seleccion_click() {
         }
     });
 }
+
+// Funcion de seleccion
 function seleccion_lista() {
     $(".seleccion").each(function () {
         if ($(this).attr("alt") == $(this).val()) {
@@ -47,6 +52,8 @@ function seleccion_lista() {
         }
     });
 }
+
+// Funcion random
 function listar_random($class) {
     var cols = document.querySelectorAll($class);
     [].forEach.call(cols, (e) => {
@@ -55,32 +62,64 @@ function listar_random($class) {
         }
     });
 }
+
+// Funcion de sorteable
+// Para usar esta funcion se tiene que tener todos los elementos en orden, imagenes, etc.
 function ordenar_lista() {
     $("#sortable").sortable({
-        revert: "invalid",
+        update: function (event, ui) {
+            var itemO = $('#sortable .lista-item').map(function () {
+                return $.trim($(this).attr('id'));
+            }).get();
+            var itemD = $('#sortable .lista-item').map(function () {
+                return $.trim($(this).attr('id'));
+            }).get();
+            itemD.sort();
+            var order = JSON.stringify(itemO);
+            var correct = JSON.stringify(itemD);
+            if (order == correct) {
+                r = true;
+            } else {
+                r = false;
+            }
+        }
     });
-    $("#draggable").draggable({
-        connectToSortable: "#sortable",
-        helper: "clone",
-        revert: "invalid",
-    });
-    // Sortable
-    var items = $('#sortable .grid-item').map(function() {
-        return $.trim($(this).attr('id'));
-    }).get();
-    var itsort = $('#sortable .grid-item').map(function() {
-        return $.trim($(this).attr('id'));
-    }).get();
-    // Desordenar Lista
-    itsort.sort();
-    var itemD = JSON.stringify(items);
-    var itemO = JSON.stringify(itsort);
+    $("#sortable").disableSelection();
 }
+
+// Funcion de crucigrama
 function crucigrama() {
-
-
+    var letra = "";
+    $('.letras span').click(function () {
+        letra = $(this).text();
+        // Estilos a span
+        $('.letras span').css({ "transform": "scale(1)", "border": "2px solid #37D3F7", "box-shadow": "none", "background": "transparent" });
+        $(this).css({ "border": "solid #37D3F7", "box-shadow": "0 0 4px #00000057", "background": "#B6ECFF" });
+    });
+    $('.palabra').click(function () {
+        $(this).css({ "border": "solid #37D3F7", "background": "#B6ECFF" });
+        if ($(this).attr("alt") == letra) {
+            if ($(this).text() == "") {
+                r++;
+            } else {
+                if ($(this).text() != $(this).attr("alt")) {
+                    r = r + 2;
+                }
+            }
+        } else {
+            if ($(this).text() == "") {
+                r--;
+            } else {
+                if ($(this).text() == $(this).attr("alt")) {
+                    r = r - 2;
+                }
+            }
+        }
+        $(this).text(letra);
+    });
 }
+
+// Funcion de colorear
 function colorear() {
-
-
+    // 1-2-5
 }
