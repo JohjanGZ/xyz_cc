@@ -1,12 +1,8 @@
 /* *TODO: select */
 $('select').formSelect();
 /* *TODO: random */
-var cols = document.querySelectorAll('.grid-box');
-[].forEach.call(cols, (e) => {
-    for (var i = e.children.length; i >= 0; i--) {
-        e.appendChild(e.children[Math.random() * i | 0]);
-    }
-});
+var $class='.grid-box';
+listar_random($class);
 /* *TODO: function */
 var r = 0;
 $(".slc").change(function() {
