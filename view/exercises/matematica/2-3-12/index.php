@@ -10,25 +10,25 @@
         <img src="<?= $dir ?>/img/1.png" class="materialboxed" alt="">
     </div>
     <div class="contenedor">
-        <div class="droppable" alt="8937"></div>
-        <div class="droppable" alt="8820"> </div>
-        <div class="droppable" alt="8976"> </div>
+        <div class="droppable" alt="6543"></div>
+        <div class="droppable" alt="6834"> </div>
+        <div class="droppable" alt="6224"> </div>
     </div>
     <p class="parra"> • Ahora, ordena los números de forma ascendente.</p>
     <div class=" ordenar">
-        <div class="droppable" alt="8820"></div>
+        <div class="droppable" alt="6224"></div>
         <div class="rojo"> < </div> 
-        <div class="droppable" alt="8937"></div>
+        <div class="droppable" alt="6543"></div>
         <div class="rojo"> < </div>
-        <div class="droppable" alt="8976"></div>
+        <div class="droppable" alt="6834"></div>
     </div>
     <div class="options aleatorio">
-        <div class="obj" alt="8937">8937</div>
-        <div class="obj" alt="8820">8820</div>
-        <div class="obj" alt="8976">8976</div>
-        <div class="obj" alt="8966">8966</div>
-        <div class="obj" alt="8937">8937</div>
-        <div class="obj" alt="8820">8820</div>
+        <div class="obj" alt="6224">6224</div>
+        <div class="obj" alt="6224">6224</div>
+        <div class="obj" alt="6543">6543</div>
+        <div class="obj" alt="6543">6543</div>
+        <div class="obj" alt="6834">6834</div>
+        <div class="obj" alt="6834">6834</div>
         <div class="obj" alt="8976">8976</div>
     </div>
 </div>
@@ -61,12 +61,7 @@ $(".obj").draggable({
     revert: false,
     start: function() {
         element = $(this).attr("alt");
-        
-    },
-    // finish: function(){
-    //     $(this).css("box-shadow","none");
-    // }
-
+    }
 });
 $(".droppable").droppable({
     classes: {
@@ -75,20 +70,22 @@ $(".droppable").droppable({
     },
     drop: function(event, ui) {
         element2 = $(this).attr("alt");
-        $(this).css("background-color", "rgb(0, 132, 255)");
+        $(this).css("background-color", "rgb(255, 196, 0)");
         //  $( this ).target.append(event.target);    
 
 
         if (element == element2) {
             rpta++;
+            console.log(element, element2)
         } else {
             otros++;
+            console.log(element, element2)
         }
         ui.draggable.draggable("disable", 1);
     }
 });
 
-function result_tipo_2_3_8() {
+function result_tipo_2_3_9() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
@@ -96,15 +93,15 @@ function result_tipo_2_3_8() {
 
     if (rpta == 6) {
         console.log(rpta);
-        localStorage.setItem("Nota2-3-8", "2");
-        localStorage.setItem("Time2-3-8", tiempo);
+        localStorage.setItem("Nota2-3-9", "2");
+        localStorage.setItem("Time2-3-9", tiempo);
         correcto();
 
     } else {
         console.log(rpta);
         incorrecto();
-        localStorage.setItem("Nota2-3-8", "0");
-        localStorage.setItem("Time2-3-8", tiempo);
+        localStorage.setItem("Nota2-3-9", "0");
+        localStorage.setItem("Time2-3-9", tiempo);
 
     }
 }

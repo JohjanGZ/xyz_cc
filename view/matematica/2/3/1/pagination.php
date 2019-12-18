@@ -209,7 +209,7 @@ function start_6() {
     $("#ventana").load(ruta + '2-3-6/index.php', {
         next: "Page_7()",
         procesar: "result_tipo_2_3_6()",
-        titulo: "<center><h5><span>Forma</span> números con las tres cifras y <span>escribe</span> sus nombres.</h5></center>",
+        titulo: "<center><h5> <span>Observa</span> y <span>completa</span> según corresponda.</h5></center>",
         restaurar: "start_6()",
         dir: ruta,
         cod: "2-3-6",
@@ -222,7 +222,7 @@ function start_7() {
     $("#ventana").load(ruta + '2-3-7/index.php', {
         next: "Page_8()",
         procesar: "result_tipo_2_3_7()",
-        titulo: "<center><h5><span>Observa</span> el ejemplo y <span>completa</span> el cuadro.</h5></center>",
+        titulo: "<center><h5><span>Realiza</span> la descomposición aditiva de los siguientes números:</h5></center>",
         restaurar: "start_7()",
         dir: ruta,
         cod: "2-3-7",
@@ -235,7 +235,7 @@ function start_8() {
     $("#ventana").load(ruta + '2-3-8/index.php', {
         next: "Page_9()",
         procesar: "result_tipo_2_3_8()",
-        titulo: "<center><h5><span>Lee</span> y <span>coloca</span> el número correspondiente.</h5></center>",
+        titulo: "<center><h5><span>Escribe</span> el número que corresponde a cada descomposición.</h5></center>",
         restaurar: "start_8()",
         dir: ruta,
         cod: "2-3-8",
@@ -243,6 +243,7 @@ function start_8() {
     });
     return false;
 };
+/**SEPA**/
 function start_9() {
     $("#ventana").load(ruta + '2-3-9/index.php', {
         next: "Page_10()",

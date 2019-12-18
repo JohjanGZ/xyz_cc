@@ -5,31 +5,65 @@
     <link rel="stylesheet" type="text/css" href="<?= $dir ?>/css/styles.css">
 </head>
 <?=$titulo?>
+<?php 
+
+    $numeros = array('120','410','400', '254');
+
+?>
 <div class="container-two">
-    <div class="image">
-        <img src="<?= $dir ?>/img/1.png" class="materialboxed" alt="">
+    <div><h5>Antecesor</h5></div>
+    <div><h5>Número</h5></div>
+    <div><h5>Sucesor</h5></div>
+    <div class="options aleatorio">
+        <div class="obj" data-value="7435">7435</div>
+        <div class="obj" data-value="8218">8218</div>
+        <div class="obj" data-value="5955">5955</div>
+        <div class="obj" data-value="6712">6712</div>
+        <div class="obj" data-value="9588">9588</div>
     </div>
-    <div class="contenedor">
-        <div class="droppable" alt="6543"></div>
-        <div class="droppable" alt="6834"> </div>
-        <div class="droppable" alt="6224"> </div>
-    </div>
-    <p class="parra"> • Ahora, ordena los números de forma ascendente.</p>
-    <div class=" ordenar">
-        <div class="droppable" alt="6224"></div>
-        <div class="rojo"> < </div> 
-        <div class="droppable" alt="6543"></div>
-        <div class="rojo"> < </div>
-        <div class="droppable" alt="6834"></div>
+    <div class="middle aleatorio">
+        <div class="item ">
+            <div class="droppable" data-value="7435"></div>
+            <div class="numero card-pa">
+                <h5>  7 436  </h5>
+            </div>
+            <div class="droppable" data-value="7437"></div>
+        </div>
+        <div class="item">
+            <div class="droppable" data-value="8218"></div>
+            <div class="numero card-pa">
+                <h5>  8 219  </h5>
+            </div>
+            <div class="droppable" data-value="8220"></div>
+        </div>
+        <div class="item">
+            <div class="droppable" data-value="5955"></div>
+            <div class="numero card-pa">
+                <h5> 5 956 </h5>
+            </div>
+            <div class="droppable" data-value="5957"></div>
+        </div>
+        <div class="item">
+            <div class="droppable" data-value="6712"></div>
+            <div class="numero card-pa">
+                <h5> 6 713 </h5>
+            </div>
+            <div class="droppable" data-value="6714"></div>
+        </div>
+        <div class="item">
+            <div class="droppable" data-value="9588"></div>
+            <div class="numero card-pa">
+                <h5> 9 589 </h5>
+            </div>
+            <div class="droppable" data-value="9590"></div>
+        </div>
     </div>
     <div class="options aleatorio">
-        <div class="obj" alt="6224">6224</div>
-        <div class="obj" alt="6224">6224</div>
-        <div class="obj" alt="6543">6543</div>
-        <div class="obj" alt="6543">6543</div>
-        <div class="obj" alt="6834">6834</div>
-        <div class="obj" alt="6834">6834</div>
-        <div class="obj" alt="8976">8976</div>
+        <div class="obj" data-value="7437">7437</div>
+        <div class="obj" data-value="8220">8220</div>
+        <div class="obj" data-value="5957">5957</div>
+        <div class="obj" data-value="6714">6714</div>
+        <div class="obj" data-value="9590">9590</div>
     </div>
 </div>
 <div id="modal1" class="modal">
@@ -53,55 +87,57 @@ $("#next").attr("onclick", "<?=$next?>");
 $('select').formSelect();
 
 
-var rpta = 0,
-    otros = 0,
-    element, element2;
+var rpta = 0, otros = 0, element, element2;
 
-$(".obj").draggable({
-    revert: false,
-    start: function() {
-        element = $(this).attr("alt");
-    }
-});
-$(".droppable").droppable({
-    classes: {
+    $(".obj").draggable({
+        revert:false,
+        start: function() {
+            element=$(this).attr("data-value"); 
+            
+        },
+        // finish: function(){
+        //     $(this).css("box-shadow","none");
+        // }
+        
+    });
+    $( ".droppable" ).droppable({
+      classes: {
         "ui-droppable-active": "",
         "ui-droppable-hover": "dropable-hover"
-    },
-    drop: function(event, ui) {
-        element2 = $(this).attr("alt");
-        $(this).css("background-color", "rgb(255, 196, 0)");
-        //  $( this ).target.append(event.target);    
+      },
+      drop: function( event, ui ) {
+        element2 = $(this).attr("data-value");
+        $(this).css("background-color", "rgb(30, 136, 229)");
+      //  $( this ).target.append(event.target);    
+        
 
-
-        if (element == element2) {
-            rpta++;
-            console.log(element, element2)
-        } else {
-            otros++;
-            console.log(element, element2)
+        if(element == element2 ){
+          rpta++;
+          console.log(element2)
+        }else{
+          otros++;
         }
-        ui.draggable.draggable("disable", 1);
-    }
-});
+        element.removeClass("pieza");
+      }
+    });
 
-function result_tipo_2_3_9() {
+function result_tipo_2_3_6() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
-    if (rpta == 6) {
+    if (rpta == 10) {
         console.log(rpta);
-        localStorage.setItem("Nota2-3-9", "2");
-        localStorage.setItem("Time2-3-9", tiempo);
+        localStorage.setItem("Nota2-3-6", "2");
+        localStorage.setItem("Time2-3-6", tiempo);
         correcto();
 
     } else {
         console.log(rpta);
         incorrecto();
-        localStorage.setItem("Nota2-3-9", "0");
-        localStorage.setItem("Time2-3-9", tiempo);
+        localStorage.setItem("Nota2-3-6", "0");
+        localStorage.setItem("Time2-3-6", tiempo);
 
     }
 }

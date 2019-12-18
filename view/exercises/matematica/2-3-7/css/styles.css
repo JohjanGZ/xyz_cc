@@ -1,81 +1,153 @@
 .container-two {
-  padding-top: 4vh;
-  margin: 0 auto;
-  max-width: 1000px;
-  width: 60%;
-  display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
-  align-items: center;
-  justify-items: center;
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 70%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
-.middle{
-  width: 100%;
-}
-.droppable{
-  background-color: rgb(250, 250, 250);
-  width: 100px;
-  height: 60px;
-  border-radius: 10px;
-  border: 1px solid rgb(236, 236, 236);
-  box-shadow: inset 1px 1px 1px 1px rgba(75, 75, 75, 0.164);
-}
-.obj{
-  padding: 10px;
-  background-color:rgb(253, 168, 57);
-  color: #fff;
-  border-radius: 10px;
-  font-size: 20px;
-  font-weight: 600;
-  margin: 20px 0px;
-}
-.item{
-  border: 1px solid rgb(243, 241, 241);
-  display: grid;
-  grid-template-columns: auto auto auto;
-  width: 100%;
-  align-items: center;
-  justify-items: center;
-  margin: 10px 0px;
-  grid-row-gap: 30px;
-}
-.numero h5{
-  color : #000;
-  font-weight: 600;
 
+::-webkit-scrollbar {
+    -webkit-border-radius: 5px;
+    background-color: transparent;
+    border-radius: 5px;
+    height: 10px;
+    -webkit-transition: background-color .2s linear;
+    -o-transition: background-color .2s linear;
+    transition: background-color .2s linear;
+    width: 0px;
 }
-.item .selector{
-  display: grid;
-  align-items: center;
-  justify-items: center;
-  border-left: 1px solid rgb(175, 175, 175);
-  border-right:  1px solid rgb(175, 175, 175);
-  width: 100%;
 
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    padding: 10px;
+    width: 90%;
 }
-.card-pa{
-  padding: 20px;
-}
-@media screen and (max-width: 1300px){
-  .card-pa {
-    padding: 14px!important;
-  }
-  center h5{
+
+.grid-item {
+    border: 1px solid silver;
+    padding: 6px;
+    text-align: center;
+    display: flex;
     font-size: 24px;
-  }
-  .container-two h5{
-    font-size: 20px;
-  }
-  .droppable {
-    height: 50px;
-    margin: 5px 0px;
-  }
-  .obj{
-    padding: 5px;
-    background-color:rgb(253, 168, 57);
+    align-items: center;
+    justify-content: center;
+}
+
+.tc {
+    background:rgb(208, 237, 244);
+    font-size: 24px;
+    font-weight: bold;
+    color: #0095DA;
+    border:none;
+}
+.tt {
+    background-color: rgb(150, 121, 202);
     color: #fff;
-    border-radius: 10px;
-    font-size: 20px;
+    font-weight: bold;
+}
+.bn {
+    border: none;
+}
+.img {
+    height: 60px;
+    width: auto;
+    margin-left: 1vh;
+}
+
+/* Select */
+
+.select-wrapper input.select-dropdown {
+    border: 1px solid silver;
+    width: 100%;
     font-weight: 600;
-    margin: 20px 0px;
-  }
+    font-size: 20px;
+}
+
+.select-wrapper input.select-dropdown:focus {
+    border-bottom: 1px solid silver;
+    width: 100%;
+}
+
+.select-wrapper ul {
+    width: 100%;
+    height: auto;
+}
+
+.grande .select-wrapper {
+    width: 100%;
+    position: relative;
+    margin-left: .5vh;
+    margin-right: .5vh;
+}
+
+.dropdown-content {
+    background-color: #fff;
+    margin: 0;
+    display: none;
+    min-width: 90px;
+    overflow-y: auto;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    width: 90px;
+    border-radius: 12px;
+}
+/* Smal Select */
+.smal .select-wrapper input.select-dropdown {
+    border: 1px solid silver;
+    width: 60px;
+    margin: 0;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.smal .select-wrapper input.select-dropdown:focus {
+    border-bottom: 1px solid silver;
+}
+
+.smal .select-wrapper ul {
+    height: auto;
+}
+
+.smal .select-wrapper {
+    position: relative;
+    margin-left: .5vh;
+    margin-right: .5vh;
+}
+
+.smal .dropdown-content {
+    background-color: #fff;
+    margin: 0;
+    display: none;
+    min-width: 30px;
+    overflow-y: auto;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    width: 30px;
+    border-radius: 12px;
+}
+
+.principal {
+    height: 240px;
+    width: auto;
+    background: #fff;
+}
+@media (min-width: 1920px) {
+    .principal {
+        height: 300px;
+        width: auto;
+    }
 }
