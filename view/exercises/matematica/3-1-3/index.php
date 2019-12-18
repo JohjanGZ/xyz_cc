@@ -27,11 +27,11 @@
                             <?php for ($i=1; $i < 5; $i++) { 
                                 if ($i == 4) {
                             ?>
-                            <div class="grid-item w" id="<?=$i?>">
+                            <div class="grid-item lista-item w" id="<?=$i?>">
                                 <img src="<?=$dir?>/img/<?=$i?>.png" class="img-a">
                             </div>
                             <?php } else { ?>
-                            <div class="grid-item w" id="<?=$i?>">
+                            <div class="grid-item lista-item w" id="<?=$i?>">
                                 <img src="<?=$dir?>/img/<?=$i?>.png" class="img">
                             </div>
                             <?php } 
@@ -60,6 +60,7 @@
 <?php require('../../../tools/botones/botones.php');?> <script>
 $("#next").attr("onclick", "<?=$next?>");
 </script>
+<script src="../../../../tools/procesos/script.js"></script>
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
 // Formulario - Registrados
@@ -70,19 +71,7 @@ function result_tipo_3_1_3() {
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
-    // Sortable
-    var items = $('#sortable .grid-item').map(function() {
-        return $.trim($(this).attr('id'));
-    }).get();
-    var itsort = $('#sortable .grid-item').map(function() {
-        return $.trim($(this).attr('id'));
-    }).get();
-    itsort.sort();
-    var itemD = JSON.stringify(items);
-    var itemO = JSON.stringify(itsort);
-    // Sortable
-    
-    if (itemD == itemO) {
+    if (r == true) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto()
