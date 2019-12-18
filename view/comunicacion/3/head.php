@@ -5,6 +5,7 @@
 
     <link href="../../../../../icon/icon.css?family=Material+Icons" rel="stylesheet">
     <link href="../../../../../../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="../../../../../../css/core.css" type="text/css" rel="stylesheet"/>
     <link rel="stylesheet" type="text/css" href="../../unidad.css">
     <link rel="stylesheet" type="text/css" href="../../../../../../js/ui/jquery-ui.min.css">
     <script src="../../../../../../js/jquery-3.4.1.min.js"></script>
