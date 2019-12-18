@@ -157,7 +157,7 @@ function start_2() {
     $("#ventana").load(ruta + '2-3-2/index.php', {
         next: "Page_3()",
         procesar: "result_tipo_2_3_2()",
-        titulo: "<center><h5><span>Relaciona</span> el número correcto según corresponda.</h5></center>",
+        titulo: "<center><h5> <span>Relaciona</span> cada representación con la cifra que le corresponde.</h5></center>",
         restaurar: "start_2()",
         dir: ruta,
         cod: "2-3-2",
@@ -270,13 +270,13 @@ function start_10() {
 };
 
 function start_11() {
-    $("#ventana").load(ruta + '2-2-11/index.php', {
+    $("#ventana").load(ruta + '2-3-11/index.php', {
         next: "Page_12()",
-        procesar: "result_tipo_2_2_11()",
+        procesar: "result_tipo_2_3_11()",
         titulo: "<center><h5><span>Completa</span> la serie con los números que faltan.</h5></center>",
         restaurar: "start_11()",
         dir: ruta,
-        cod: "2-2-11",
+        cod: "2-3-11",
         nota: cal
     });
     return false;
