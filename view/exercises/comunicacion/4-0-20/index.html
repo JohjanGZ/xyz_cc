@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>1-1-18</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="js/ui/jquery-ui.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row center">
+            <h4><span>Ordena</span> las siguientes secuencias.</h4>
+            <div class="row recibidor" id="recibidor">
+                <div class="col s12 m6 l6 xl6">
+                    <div class="contenedor-elemento f-right">
+                        <label class="title">1</label>
+                        <div class="contenedorPieza" id="uA"></div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l6 xl6">
+                    <div class="contenedor-elemento f-left">
+                        <label class="title">2</label>
+                        <div class="contenedorPieza" id="dE"></div>
+                    </div>
+
+                </div>
+                <div class="col s12 ">
+                    <div class="contenedor-elemento">
+                        <label class="title">3</label>
+                        <div class="contenedorPieza" id="tI"></div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div id="contenedorPiezas">
+                <ul id="listA">
+                    <li>
+                        <div class="box">
+                            <img class="pieza responsive-img img-x" id="vE" src="img/2.png" alt="pieza2">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <img class="pieza responsive-img img-x" id="vI" src="img/3.png" alt="pieza3">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <img class="pieza responsive-img img-x" id="vA" src="img/1.png" alt="pieza1">
+                        </div>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <a class="btn" id="validar">Validar</a>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/ui/jquery-ui.min.js"></script>
+
+    <script type="text/javascript">
+        var nA = 0;
+        var nE = 0;
+        var nI = 0;
+
+        var ul = document.querySelector('#listA');
+        for (var i = ul.children.length; i >= 0; i--) {
+            ul.appendChild(ul.children[Math.random() * i | 0]);
+        }
+
+        $(".pieza").draggable({
+            start: function() {
+                element = $(this).attr("id");
+            }
+        });
+        // uA
+        $("#uA").droppable({
+            classes: {
+                "ui-droppable-active": "ui-state-active",
+                "ui-droppable-hover": "ui-state-hover"
+            },
+            drop: function(event, ui) {
+                $(this).css("background-color", "rgba(139, 195, 74, 0.14)");
+                //  $( this ).target.append(event.target);
+                if (element == "vA") {
+                    nA++
+                }
+                element.removeClass("pieza");
+            }
+        });
+
+        // dE
+        $("#dE").droppable({
+            classes: {
+                "ui-droppable-active": "ui-state-active",
+                "ui-droppable-hover": "ui-state-hover"
+            },
+            drop: function(event, ui) {
+                $(this).css("background-color", "rgba(139, 195, 74, 0.14)");
+                //  $( this ).target.append(event.target);
+
+                if (element == "vE") {
+                    nE++
+                }
+                element.removeClass("pieza");
+            }
+        });
+
+        //tI
+        $("#tI").droppable({
+            classes: {
+                "ui-droppable-active": "ui-state-active",
+                "ui-droppable-hover": "ui-state-hover"
+            },
+            drop: function(event, ui) {
+                $(this).css("background-color", "rgba(139, 195, 74, 0.14)");
+                //  $( this ).target.append(event.target);
+
+                if (element == "vI") {
+                    nI++
+                }
+                element.removeClass("pieza");
+            }
+        });
+
+
+
+        //validar
+        $('#validar').on('click', function(e) {
+            e.preventDefault();
+            //alert('hola');
+            function result_tipo_1_1_15() {
+                if (nA == 1 && nE == 1 && nI == 1) {
+                    alert('Bien!');
+                } else {
+                    alert('Mal!');
+                }
+
+            }
+            result_tipo_1_1_15();
+        });
+    </script>
+
+</body>
+
+</html>

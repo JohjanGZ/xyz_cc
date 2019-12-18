@@ -4,13 +4,13 @@
 //TODO: ***********************************************************************************************************
 
 //TODO: Click aleatorio
-$("html").click(function () {
+$("html").click(function() {
     document.getElementById('click').play();
 });
 //TODO: Fin  Click aleatorio
 
 //TODO: Sonido y hover
-$(".pieza").hover(function () {
+$(".pieza").hover(function() {
     $(".pieza").css({ "box-shadow": "none" });
     $(this).css({ "box-shadow": "2px 3px 8px 0px grey" });
     document.getElementById('hover').play();
@@ -22,12 +22,15 @@ var centesimas = 0;
 var segundos = 0;
 var minutos = 0;
 var horas = 0;
+
 function inicio() {
     var control = setInterval(cronometro, 10);
 }
+
 function parar() {
     clearInterval(control);
 }
+
 function reinicio() {
     clearInterval(control);
     centesimas = 0;
@@ -39,6 +42,7 @@ function reinicio() {
     Minutos.innerHTML = "00";
     Horas.innerHTML = "00";
 }
+
 function cronometro() {
     if (centesimas < 99) {
         centesimas++;
@@ -94,6 +98,7 @@ function correcto() {
     return true;
 }
 $('#intentos').html(count);
+
 function incorrecto() {
     document.getElementById('fallo').play();
     $('#incorrecto').css("display", "block");
@@ -118,13 +123,13 @@ function incorrecto() {
     }
     return false;
 }
-$(".modal-close").click(function () {
+$(".modal-close").click(function() {
     $('#incorrecto').css("display", "none");
     $('#correcto').css("display", "none")
 });
 //TODO:  Fin correcto e incorrecto 
 
-$(document).ready(function () {
+$(document).ready(function() {
     //TODO: Menu lateral
     $('.sidenav').sidenav();
     //TODO: tooltip comentarios 
@@ -145,15 +150,18 @@ $(document).ready(function () {
 
 //? Funcion de arrastre -> clases a usar .pieza (las opciones), .contenedor (caja donde van las opciones)
 function arrastre() {
+    var element;
+    var elementid;
+    var element2;
     $(".pieza").draggable({
         revert: "invalid",
-        start: function () {
+        start: function() {
             element = $(this).attr("alt");
             elementid = $(this);
         }
     });
     $(".contenedor").droppable({
-        drop: function (event, ui) {
+        drop: function(event, ui) {
             element2 = $(this).attr("alt");
             elementid.css({ "background-color": "transparent", "border": "none" });
             if (element == element2) {
@@ -168,7 +176,7 @@ function arrastre() {
 
 //? Funcion de seleccion -> clases a usar .seleccion
 function seleccion_click() {
-    $('.seleccion').click(function () {
+    $('.seleccion').click(function() {
         $(this).css({
             "border": "2px solid",
             "border-color": "#37D3F7",
@@ -191,7 +199,7 @@ function seleccion_click() {
 
 //? Funcion de seleccion -> clases a usar .seleccion
 function seleccion_lista() {
-    $(".seleccion").each(function () {
+    $(".seleccion").each(function() {
         if ($(this).attr("alt") == $(this).val()) {
             r++;
         }
@@ -213,11 +221,11 @@ function listar_random($class) {
 //? #sortable -> .lista-item -> lista-item debe tener el #id según el orden de la respuesta correcta y si se usan imagenes las imagenes deben estar en orden según la respuesta correcta
 function ordenar_lista() {
     $("#sortable").sortable({
-        update: function (event, ui) {
-            var itemO = $('#sortable .lista-item').map(function () {
+        update: function(event, ui) {
+            var itemO = $('#sortable .lista-item').map(function() {
                 return $.trim($(this).attr('id'));
             }).get();
-            var itemD = $('#sortable .lista-item').map(function () {
+            var itemD = $('#sortable .lista-item').map(function() {
                 return $.trim($(this).attr('id'));
             }).get();
             itemD.sort();
@@ -245,13 +253,13 @@ function abecedario() {
 //? Funcion de crucigrama - Clases -> .letras (abecedario), .palabra (caja de crucigrama)
 function crucigrama() {
     var letra = "";
-    $('.letras').click(function () {
+    $('.letras').click(function() {
         letra = $(this).text();
         // Estilos a span
         $('.letras').css({ "transform": "scale(1)", "border": "2px solid #37D3F7", "box-shadow": "none", "background": "transparent" });
         $(this).css({ "border": "solid #37D3F7", "box-shadow": "0 0 4px #00000057", "background": "#B6ECFF" });
     });
-    $('.palabra').click(function () {
+    $('.palabra').click(function() {
         $(this).css({ "border": "solid #37D3F7", "background": "#B6ECFF" });
         if ($(this).attr("alt") == letra) {
             if ($(this).text() == "") {

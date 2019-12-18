@@ -23,7 +23,7 @@
                             <p>
                                 Comino:
                                 <span>
-                                    <select class="browser-default" alt="n">
+                                    <select class="browser-default seleccion" alt="n">
                                         <option value="" disabled selected>Escoge una opción</option>
                                         <option value="x">1</option>
                                         <option value="n">2</option>
@@ -41,7 +41,7 @@
                             <p>
                                 Izquierda:
                                 <span>
-                                    <select class="browser-default" alt="n">
+                                    <select class="browser-default seleccion" alt="n">
                                         <option value="" disabled selected>Escoge una opción</option>
                                         <option value="x">1</option>
                                         <option value="n">2</option>
@@ -60,7 +60,7 @@
                             <p>
                                 Revuelta:
                                 <span>
-                                    <select class="browser-default" alt="n">
+                                    <select class="browser-default seleccion" alt="n">
                                         <option value="" disabled selected>Escoge una opción</option>
                                         <option value="x">1</option>
                                         <option value="n">2</option>
@@ -77,7 +77,7 @@
                             <p>
                                 Incendio
                                 <span>
-                                    <select class="browser-default" alt="n">
+                                    <select class="browser-default seleccion" alt="n">
                                         <option value="" disabled selected>Escoge una opción</option>
                                         <option value="x">1</option>
                                         <option value="n">2</option>
@@ -94,7 +94,7 @@
                             <p>
                                 Marcha:
                                 <span>
-                                    <select class="browser-default" alt="n">
+                                    <select class="browser-default seleccion" alt="n">
                                         <option value="" disabled selected>Escoge una opción</option>
                                         <option value="n">1</option>
                                         <option value="x">2</option>
@@ -111,7 +111,7 @@
                             <p>
                                 Homófona:
                                 <span>
-                                    <select class="browser-default" alt="n">
+                                    <select class="browser-default seleccion" alt="n">
                                         <option value="" disabled selected>Escoge una opción</option>
                                         <option value="x">1</option>
                                         <option value="x">2</option>
@@ -128,7 +128,7 @@
                             <p>
                                 Ortografía:
                                 <span>
-                                    <select class="browser-default" alt="n">
+                                    <select class="browser-default seleccion" alt="n">
                                         <option value="" disabled selected>Escoge una opción</option>
                                         <option value="x">1</option>
                                         <option value="x">2</option>
@@ -145,7 +145,7 @@
                             <p>
                                 Murciélago:
                                 <span>
-                                    <select class="browser-default" alt="n">
+                                    <select class="browser-default seleccion" alt="n">
                                         <option value="" disabled selected>Escoge una opción</option>
                                         <option value="x">1</option>
                                         <option value="x">2</option>
@@ -187,18 +187,15 @@ $("#next").attr("onclick", "<?=$next?>");
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
 // Validar
-function result_tipo_4_0_11() {
+function result_tipo_4_0_12() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
     r= 0;
-    $("select").each(function() {
-        if ($(this).attr("alt") == $(this).val()) {
-            r++;
-        }
-    });
+    seleccion_lista();
+    console.log(r);
     if (r == 8) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
