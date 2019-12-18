@@ -11,7 +11,7 @@
     <div class="container-two">
         <div class="row">
             <div class="col l6">
-                <table class="crucigrama2 mt80">
+                <table class="crucigrama2">
                     <tbody>
                         <tr>
                             <td></td>
@@ -79,26 +79,26 @@
                 <div class="campo">
                     <div class="campo-img">
                         <span>1.</span>
-                        <img src="<?= $dir ?>/img/1.png" class="responsive-img">
+                        <img src="<?= $dir ?>/img/1.png" class="img materialboxed">
                     </div>
                     <div class="campo-img">
                         <span>2.</span>
-                        <img src="<?= $dir ?>/img/2.png" class="responsive-img">
+                        <img src="<?= $dir ?>/img/2.png" class="img materialboxed">
                     </div>
                     <div class="campo-img">
                         <span>3.</span>
-                        <img src="<?= $dir ?>/img/3.png" class="responsive-img">
+                        <img src="<?= $dir ?>/img/3.png" class="img materialboxed">
                     </div>
                     <div class="campo-img">
                         <span>4.</span>
-                        <img src="<?= $dir ?>/img/4.png" class="responsive-img">
+                        <img src="<?= $dir ?>/img/4.png" class="img materialboxed">
                     </div>
                     <div class="campo-img">
                         <span>5.</span>
-                        <img src="<?= $dir ?>/img/5.png" class="responsive-img">
+                        <img src="<?= $dir ?>/img/5.png" class="img materialboxed">
                     </div>
-                    <div class="abecedario"></div>
                 </div>
+                <div id="abecedario"></div>
             </div>
         </div>
     </div>
@@ -129,7 +129,6 @@
         var seg = $('#Segundos').text();
         var milseg = $('#Centesimas').text();
         var tiempo = min + ":" + seg + ":" + milseg;
-
         if (r == 24) {
             localStorage.setItem("Nota<?=$cod?>", nota);
             localStorage.setItem("Time<?=$cod?>", tiempo);
