@@ -1,105 +1,44 @@
 <script type="text/javascript">
-function Page_6() {
-    start_6();
-    inicio();
-    count = 3;
-}
-function Page_7() {
-    start_7();
-    inicio();
-    count = 3;
-}
-function Page_8() {
-    start_8();
-    inicio();
-    count = 3;
-}
-function Page_9() {
-    start_9();
-    inicio();
-    count = 3;
-}
-function Page_10() {
-    start_10();
-    inicio();
-    count = 3;
-}
 function Page_11() {
     start_11();
     inicio();
     count = 3;
 }
+function Page_12() {
+    start_12();
+    inicio();
+    count = 3;
+}
+function Page_13() {
+    start_13();
+    inicio();
+    count = 3;
+}
+function Page_14() {
+    start_14();
+    inicio();
+    count = 3;
+}
+function Page_15() {
+    start_15();
+    inicio();
+    count = 3;
+}
+function Page_16() {
+    start_16();
+    inicio();
+    count = 3;
+}
 var cant = 18;
 var cal = cant / cant;
-console.log(cant);
 var ruta = "../../../../exercises/matematica/";
 ////////////// 2do 
 // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
-function start_6() {
-    $("#ventana").load(ruta + '3-2-6/index.php', {
-        next: "Page_7()",
-        procesar: "result_tipo_3_2_6()",
-        titulo: "<center><h5><span class='ftitulo'>Resuelve</span> los siguientes problemas y <span class='ftitulo'>completa</span> los números en cada recuadro.</h5></center>",
-        restaurar: "start_6()",
-        dir: ruta,
-        cod: "3-2-6",
-        nota: cal
-    });
-    return false;
-};
-function start_7() {
-    $("#ventana").load(ruta + '3-2-7/index.php', {
-        next: "Page_8()",
-        procesar: "result_tipo_3_2_7()",
-        titulo: "<center><h5><span class='ftitulo'>Resuelve</span> los siguientes problemas y <span class='ftitulo'>completa</span> los números en cada recuadro.</h5></center>",
-        restaurar: "start_7()",
-        dir: ruta,
-        cod: "3-2-7",
-        nota: cal
-    });
-    return false;
-};
-function start_8() {
-    $("#ventana").load(ruta + '3-2-8/index.php', {
-        next: "Page_9()",
-        procesar: "result_tipo_3_2_8()",
-        titulo: "<center><h5><span class='ftitulo'>Lee, escribe</span> los datos y <span class='ftitulo'>resuelve</span> la adición en el tablero posicional.</h5></center>",
-        restaurar: "start_8()",
-        dir: ruta,
-        cod: "3-2-8",
-        nota: cal
-    });
-    return false;
-};
-function start_9() {
-    $("#ventana").load(ruta + '3-2-9/index.php', {
-        next: "Page_10()",
-        procesar: "result_tipo_3_2_9()",
-        titulo: "<center><h5><span class='ftitulo'>Lee, escribe</span> los datos y <span class='ftitulo'>resuelve</span> la adición en el tablero posicional.</h5></center>",
-        restaurar: "start_9()",
-        dir: ruta,
-        cod: "3-2-9",
-        nota: cal
-    });
-    return false;
-};
-function start_10() {
-    $("#ventana").load(ruta + '3-2-10/index.php', {
-        next: "Page_11()",
-        procesar: "result_tipo_3_2_10()",
-        titulo: "<center><h5><span class='ftitulo'>Lee, escribe</span> los datos y <span class='ftitulo'>resuelve</span> la adición en el tablero posicional.</h5></center>",
-        restaurar: "start_10()",
-        dir: ruta,
-        cod: "3-2-10",
-        nota: cal
-    });
-    return false;
-};
 function start_11() {
     $("#ventana").load(ruta + '3-2-11/index.php', {
-        next: "resultado()",
+        next: "Page_12()",
         procesar: "result_tipo_3_2_11()",
-        titulo: "<center><h5><span class='ftitulo'>Lee, escribe</span> los datos y <span class='ftitulo'>resuelve</span> la adición en el tablero posicional.</h5></center>",
+        titulo: "<center><h5><span>Escribe</span> qué propiedad de la adición se aplicó en cada caso.</h5></center>",
         restaurar: "start_11()",
         dir: ruta,
         cod: "3-2-11",
@@ -107,6 +46,67 @@ function start_11() {
     });
     return false;
 };
+function start_12() {
+    $("#ventana").load(ruta + '3-2-12/index.php', {
+        next: "Page_13()",
+        procesar: "result_tipo_3_2_12()",
+        titulo: "<center><h5><span>Completa</span> el esquema y <span>aplica</span> la propiedad conmutativa de la adición</h5></center>",
+        restaurar: "start_12()",
+        dir: ruta,
+        cod: "3-2-12",
+        nota: cal
+    });
+    return false;
+};
+function start_13() {
+    $("#ventana").load(ruta + '3-2-13/index.php', {
+        next: "Page_14()",
+        procesar: "result_tipo_3_2_13()",
+        titulo: "<center><h5><span>Completa</span> el esquema y <span>aplica</span> la propiedad conmutativa de la adición</h5></center>",
+        restaurar: "start_13()",
+        dir: ruta,
+        cod: "3-2-13",
+        nota: cal
+    });
+    return false;
+};
+function start_14() {
+    $("#ventana").load(ruta + '3-2-14/index.php', {
+        next: "Page_15()",
+        procesar: "result_tipo_3_2_14()",
+        titulo: "<center><h5><span class='ftitulo'>Lee, escribe</span> los datos y <span class='ftitulo'>resuelve</span> la adición en el tablero posicional.</h5></center>",
+        restaurar: "start_14()",
+        dir: ruta,
+        cod: "3-2-14",
+        nota: cal
+    });
+    return false;
+};
+function start_15() {
+    $("#ventana").load(ruta + '3-2-15/index.php', {
+        next: "Page_16()",
+        procesar: "result_tipo_3_2_15()",
+        titulo: "<center><h5><span class='ftitulo'>Lee, escribe</span> los datos y <span class='ftitulo'>resuelve</span> la adición en el tablero posicional.</h5></center>",
+        restaurar: "start_15()",
+        dir: ruta,
+        cod: "3-2-15",
+        nota: cal
+    });
+    return false;
+};
+function start_16() {
+    $("#ventana").load(ruta + '3-2-16/index.php', {
+        next: "resultado()",
+        procesar: "result_tipo_3_2_16()",
+        titulo: "<center><h5><span class='ftitulo'>Lee, escribe</span> los datos y <span class='ftitulo'>resuelve</span> la adición en el tablero posicional.</h5></center>",
+        restaurar: "start_16()",
+        dir: ruta,
+        cod: "3-2-16",
+        nota: cal
+    });
+    return false;
+};
+
 function resultado() {
     $("#ventana").load('../../../../exercises/resultado/resultado.php');
     return false;
