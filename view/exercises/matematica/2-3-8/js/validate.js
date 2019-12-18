@@ -5,5 +5,4 @@
     //     div.appendChild(div.children[Math.random() * i | 0]);
     // }
     // Select
-    var r = 0;
-    seleccion_lista();
+   

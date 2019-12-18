@@ -170,10 +170,9 @@ function arrastre() {
 function seleccion_click() {
     $('.seleccion').click(function () {
         $(this).css({
-            "border": "2px solid",
-            "border-color": "#37D3F7",
-            "background": "#B6ECFF",
-            "box-shadow": "grey 2px 3px 8px 0px"
+            "border": "solid",
+         "border-color": "#37D3F7",
+         "background": "#B6ECFF"
         });
         var element = $(this).attr("alt");
         var select = $(this).attr("value");
@@ -191,9 +190,11 @@ function seleccion_click() {
 
 //? Funcion de seleccion -> clases a usar .seleccion
 function seleccion_lista() {
+    
     $(".seleccion").each(function () {
         if ($(this).attr("alt") == $(this).val()) {
             r++;
+            console.log(r)
         }
     });
 }

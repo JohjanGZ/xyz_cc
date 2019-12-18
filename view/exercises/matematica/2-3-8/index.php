@@ -88,17 +88,18 @@
 <script src="../../../../../js/core.js"></script>
 <?php require('../../../tools/botones/botones.php');?>
 <script>$("#next").attr("onclick", "<?=$next?>");</script>
-<script src="../../../../tools/procesos/script.js"></script>
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
 // Validar
+
 
 function result_tipo_2_3_8() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
-
+    r = 0;
+    seleccion_lista();
     if (r == 4) {
         console.log(r)
         localStorage.setItem("Nota<?=$cod?>", nota);

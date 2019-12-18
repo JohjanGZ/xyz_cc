@@ -88,7 +88,7 @@ $(".droppable").droppable({
     }
 });
 
-function result_tipo_2_3_8() {
+function result_tipo_2_3_11() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
@@ -96,15 +96,15 @@ function result_tipo_2_3_8() {
 
     if (rpta == 6) {
         console.log(rpta);
-        localStorage.setItem("Nota2-3-8", "2");
-        localStorage.setItem("Time2-3-8", tiempo);
+        localStorage.setItem("Nota2-3-11", "2");
+        localStorage.setItem("Time2-3-11", tiempo);
         correcto();
 
     } else {
         console.log(rpta);
         incorrecto();
-        localStorage.setItem("Nota2-3-8", "0");
-        localStorage.setItem("Time2-3-8", tiempo);
+        localStorage.setItem("Nota2-3-11", "0");
+        localStorage.setItem("Time2-3-11", tiempo);
 
     }
 }

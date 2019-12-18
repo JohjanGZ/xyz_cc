@@ -117,23 +117,6 @@ function Page_19() {
    count = 3;
 }
 
-function Page_20() {
-   start_20();
-   inicio();
-   count = 3;
-}
-
-function Page_21() {
-   start_21();
-   inicio();
-   count = 3;
-}
-
-function Page_22() {
-   start_22();
-   inicio();
-   count = 3;
-}
 var cant = 18;
 var cal = cant / cant;
 console.log(cant);
@@ -248,7 +231,7 @@ function start_9() {
     $("#ventana").load(ruta + '2-3-9/index.php', {
         next: "Page_10()",
         procesar: "result_tipo_2_3_9()",
-        titulo: "<center><h5><span>Lee</span> y <span>coloca</span> el número correspondiente.</h5></center>",
+        titulo: "<center><h5><span>Escribe</span> el número antecesor y sucesor de los siguientes números:</h5></center>",
         restaurar: "start_9()",
         dir: ruta,
         cod: "2-3-9",
@@ -261,7 +244,7 @@ function start_10() {
     $("#ventana").load(ruta + '2-3-10/index.php', {
         next: "Page_11()",
         procesar: "result_tipo_2_3_10()",
-        titulo: "<center><h5><span>Elige</span> un número del 0 al 9 y <span>completa</span> el espacio en blanco para que se cumplan las siguientes relaciones.</h5></center>",
+        titulo: "<center><h5><span>Observa</span> los números y <span>completa</span> el cuadro.</h5></center>",
         restaurar: "start_10()",
         dir: ruta,
         cod: "2-3-10",
@@ -274,7 +257,7 @@ function start_11() {
     $("#ventana").load(ruta + '2-3-11/index.php', {
         next: "Page_12()",
         procesar: "result_tipo_2_3_11()",
-        titulo: "<center><h5><span>Completa</span> la serie con los números que faltan.</h5></center>",
+        titulo: "<center><h5><span>Lee</span> y <span>completa</span> con el número correspondiente.</h5></center>",
         restaurar: "start_11()",
         dir: ruta,
         cod: "2-3-11",
@@ -284,134 +267,98 @@ function start_11() {
 };
 
 function start_12() {
-    $("#ventana").load(ruta + '2-2-12/index.php', {
+    $("#ventana").load(ruta + '2-3-12/index.php', {
         next: "Page_13()",
-        procesar: "result_tipo_2_2_12()",
+        procesar: "result_tipo_2_3_12()",
         titulo: " <center><h5><span>Compara</span> los siguientes números y <span>coloca</span> los signos <, > o =.</h5></center>",
         restaurar: "start_12()",
         dir: ruta,
-        cod: "2-2-12",
+        cod: "2-3-12",
         nota: cal
     });
     return false;
 };
 function start_13() {
-    $("#ventana").load(ruta + '2-2-13/index.php', {
+    $("#ventana").load(ruta + '2-3-13/index.php', {
         next: "Page_14()",
-        procesar: "result_tipo_2_2_13()",
+        procesar: "result_tipo_2_3_13()",
         titulo: " <center><h5><span>Coloca</span> los números que correspondan.</h5></center>",
         restaurar: "start_13()",
         dir: ruta,
-        cod: "2-2-13",
+        cod: "2-3-13",
         nota: cal
     });
     return false;
 };
 function start_14() {
-    $("#ventana").load(ruta + '2-2-14/index.php', {
+    $("#ventana").load(ruta + '2-3-14/index.php', {
         next: "Page_15()",
-        procesar: "result_tipo_2_2_14()",
-        titulo: " <center><h5><span>Colcoa</span> en cada recuadro el número que corresponde para que se cumplan las comparaciones.</h5></center>",
+        procesar: "result_tipo_2_3_14()",
+        titulo: " <center><h5><span>Marca</span> los números menores que:</h5></center>",
         restaurar: "start_14()",
         dir: ruta,
-        cod: "2-2-14",
+        cod: "2-3-14",
         nota: cal
     });
     return false;
 };
 function start_15() {
-    $("#ventana").load(ruta + '2-2-15/index.php', {
+    $("#ventana").load(ruta + '2-3-15/index.php', {
         next: "Page_16()",
-        procesar: "result_tipo_2_2_15()",
+        procesar: "result_tipo_2_3_15()",
         titulo: " <center><h5><span>Realiza</span> las adiciones y compara los resultados.</h5></center>",
         restaurar: "start_15()",
         dir: ruta,
-        cod: "2-2-15",
+        cod: "2-3-15",
         nota: cal
     });
     return false;
 };
 
 function start_16() {
-    $("#ventana").load(ruta + '2-2-16/index.php', {
+    $("#ventana").load(ruta + '2-3-16/index.php', {
         next: "Page_17()",
-        procesar: "result_tipo_2_2_16()",
-        titulo: " <center><h5><span>Relaciona</span> los tableros de valor posicional con sus respectivas cantidades.</h5></center>",
+        procesar: "result_tipo_2_3_16()",
+        titulo: " <center><h5><span>Observa</span> nuevamente las imágenes y <span>aplica</span> la propiedad asociativa de la adición.</h5></center>",
         restaurar: "start_16()",
         dir: ruta,
-        cod: "2-2-16",
+        cod: "2-3-16",
         nota: cal
     });
     return false;
 };
 function start_17() {
-    $("#ventana").load(ruta + '2-2-17/index.php', {
+    $("#ventana").load(ruta + '2-3-17/index.php', {
         next: "Page_18()",
-        procesar: "result_tipo_2_2_17()",
-        titulo: " <center><h5><span>Resuelve</span> y <span>compara</span>.</h5></center>",
+        procesar: "result_tipo_2_3_17()",
+        titulo: " <center><h5><span>Resuelve</span> las siguientes adiciones en el tablero posicional.</h5></center>",
         restaurar: "start_17()",
         dir: ruta,
-        cod: "2-2-17",
+        cod: "2-3-17",
         nota: cal
     });
     return false;
 };
 function start_18() {
-    $("#ventana").load(ruta + '2-2-18/index.php', {
+    $("#ventana").load(ruta + '2-3-18/index.php', {
         next: "Page_19()",
-        procesar: "result_tipo_2_2_18()",
-        titulo: " <center><h5><span>Ordena</span> los siguientes números de manera ascendente.</h5></center>",
+        procesar: "result_tipo_2_3_18()",
+        titulo: " <center><h5><span>Lee</span> y <span>resuelve</span> el siguiente problema:</h5></center>",
         restaurar: "start_18()",
         dir: ruta,
-        cod: "2-2-18",
+        cod: "2-3-18",
         nota: cal
     });
     return false;
 };
 function start_19() {
-    $("#ventana").load(ruta + '2-2-19/index.php', {
-        next: "Page_20()",
-        procesar: "result_tipo_2_2_19()",
-        titulo: " <center><h5><span>Ordena</span> los siguientes números de manera descendente.</h5></center>",
+    $("#ventana").load(ruta + '2-3-19/index.php', {
+        next: "resultado()",
+        procesar: "result_tipo_2_3_19()",
+        titulo: " <center><h5><span>Resuelve</span> las siguientes sustracciones en el tablero posicional.</h5></center>",
         restaurar: "start_19()",
         dir: ruta,
-        cod: "2-2-19",
-        nota: cal
-    });
-    return false;
-};
-function start_20() {
-    $("#ventana").load(ruta + '2-2-20/index.php', {
-        next: "Page_21()",
-        procesar: "result_tipo_2_2_20()",
-        titulo: " <center><h5><span>Selecciona</span> los números pares.</h5></center>",
-        restaurar: "start_20()",
-        dir: ruta,
-        cod: "2-2-20",
-        nota: cal
-    });
-    return false;
-};
-function start_21() {
-    $("#ventana").load(ruta + '2-2-21/index.php', {
-        next: "Page_22()",
-        procesar: "result_tipo_2_2_21()",
-        titulo: " <center><h5><span>Observa</span> los precios y <span>resuelve</span>.</h5></center>",
-        restaurar: "start_21()",
-        dir: ruta,
-        cod: "2-2-21",
-        nota: cal
-    });
-    return false;
-};
-function start_22() {
-    $("#ventana").load(ruta + '2-2-22/index.php', {
-        next: "resultado()",
-        procesar: "result_tipo_2_2_22()",
-        titulo: " <center><h5><span>Selecciona</span> los números impares.</h5></center>",
-        restaurar: "start_22()",
-        dir: ruta,
-        cod: "2-2-22",
+        cod: "2-3-19",
         nota: cal
     });
     return false;

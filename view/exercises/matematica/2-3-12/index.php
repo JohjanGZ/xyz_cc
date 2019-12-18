@@ -14,7 +14,7 @@
         <div class="droppable" alt="6834"> </div>
         <div class="droppable" alt="6224"> </div>
     </div>
-    <p class="parra"> • Ahora, ordena los números de forma ascendente.</p>
+    <p class="parra"> • Ahora, ordena los números de forma descendente.</p>
     <div class=" ordenar">
         <div class="droppable" alt="6224"></div>
         <div class="rojo"> < </div> 
@@ -85,7 +85,7 @@ $(".droppable").droppable({
     }
 });
 
-function result_tipo_2_3_9() {
+function result_tipo_2_3_12() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
@@ -93,15 +93,15 @@ function result_tipo_2_3_9() {
 
     if (rpta == 6) {
         console.log(rpta);
-        localStorage.setItem("Nota2-3-9", "2");
-        localStorage.setItem("Time2-3-9", tiempo);
+        localStorage.setItem("Nota2-3-12", "2");
+        localStorage.setItem("Time2-3-12", tiempo);
         correcto();
 
     } else {
         console.log(rpta);
         incorrecto();
-        localStorage.setItem("Nota2-3-9", "0");
-        localStorage.setItem("Time2-3-9", tiempo);
+        localStorage.setItem("Nota2-3-12", "0");
+        localStorage.setItem("Time2-3-12", tiempo);
 
     }
 }
