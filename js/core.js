@@ -150,14 +150,11 @@ $(document).ready(function() {
 
 //? Funcion de arrastre -> clases a usar .pieza (las opciones), .contenedor (caja donde van las opciones)
 function arrastre() {
-    var element; <<
-    << << < HEAD
+    var element;
     var elementid;
-    var element2; ===
-    === =
     var element2;
-    var elementid; >>>
-    >>> > 14 dd9063f660aecf2f5c6b96b91c68571ea1a903
+    var element2;
+    var elementid;
     $(".pieza").draggable({
         revert: "invalid",
         start: function() {
