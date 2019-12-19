@@ -13,7 +13,7 @@
         <div class="grid-item">
             <img src="<?=$dir?>/img/2.png" class="img">
         </div>
-        <div class="grid-item" alt="n">
+        <div class="grid-item"">
             <img src="<?=$dir?>/img/3.png" class="img">
         </div>
         <div class="grid-item">
@@ -28,7 +28,7 @@
         <div class="grid-item">
             <img src="<?=$dir?>/img/7.png" class="img">
         </div>
-        <div class="grid-item">
+        <div class="grid-item" alt="n">
             <img src="<?=$dir?>/img/8.png" class="img">
         </div>
         <div class="grid-item">

@@ -1,12 +1,16 @@
 /**? Estilos Abecedario */
 
-#abecedario {
+#abecedario, #numeros {
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto auto auto;
     align-items: center;
     justify-content: center;
 }
-
+#abecedario {
+    grid-template-columns: auto auto auto auto auto auto auto auto auto;
+}
+#numeros {
+    grid-template-columns: auto auto auto auto auto;
+}
 .letras {
     text-transform: capitalize;
     font-size: 25px;
