@@ -16,7 +16,7 @@
             <div class="grid-item">
                 5 216
                 <div class="campo">
-                    <select class="slc" alt=">">
+                    <select class="seleccion" alt=">">
                         <option value="" disabled selected></option>
                         <?php
                             for ($i=0; $i < count($signos); $i++) { 
@@ -30,7 +30,7 @@
             <div class="grid-item">
                 6 487
                 <div class="campo">
-                    <select class="slc" alt=">">
+                    <select class="seleccion" alt=">">
                         <option value="" disabled selected></option>
                         <?php
                             for ($i=0; $i < count($signos); $i++) { 
@@ -44,7 +44,7 @@
             <div class="grid-item">
                 1 768
                 <div class="campo">
-                    <select class="slc" alt="<">
+                    <select class="seleccion" alt="<">
                         <option value="" disabled selected></option>
                         <?php
                             for ($i=0; $i < count($signos); $i++) { 
@@ -58,7 +58,7 @@
             <div class="grid-item">
                 2 754
                 <div class="campo">
-                    <select class="slc" alt="=">
+                    <select class="seleccion" alt="=">
                         <option value="" disabled selected></option>
                         <?php
                             for ($i=0; $i < count($signos); $i++) { 
@@ -72,7 +72,7 @@
             <div class="grid-item">
                 1 736
                 <div class="campo">
-                    <select class="slc" alt="<">
+                    <select class="seleccion" alt="<">
                         <option value="" disabled selected></option>
                         <?php
                             for ($i=0; $i < count($signos); $i++) { 
@@ -87,7 +87,7 @@
             <div class="grid-item">
                 3 030
                 <div class="campo">
-                    <select class="slc" alt="=">
+                    <select class="seleccion" alt="=">
                         <option value="" disabled selected></option>
                         <?php
                             for ($i=0; $i < count($signos); $i++) { 
@@ -101,7 +101,7 @@
             <div class="grid-item">
                 7 423
                 <div class="campo">
-                    <select class="slc" alt=">">
+                    <select class="seleccion" alt=">">
                         <option value="" disabled selected></option>
                         <?php
                             for ($i=0; $i < count($signos); $i++) { 
@@ -115,7 +115,7 @@
             <div class="grid-item">
                 8 056
                 <div class="campo">
-                    <select class="slc" alt=">">
+                    <select class="seleccion" alt=">">
                         <option value="" disabled selected></option>
                         <?php
                             for ($i=0; $i < count($signos); $i++) { 
@@ -155,7 +155,8 @@ function result_tipo_3_1_12() {
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
-
+    r=0;
+    seleccion_lista();
     if (r == 8) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);

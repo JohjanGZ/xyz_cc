@@ -150,9 +150,14 @@ $(document).ready(function() {
 
 //? Funcion de arrastre -> clases a usar .pieza (las opciones), .contenedor (caja donde van las opciones)
 function arrastre() {
-    var element;
+    var element; <<
+    << << < HEAD
     var elementid;
+    var element2; ===
+    === =
     var element2;
+    var elementid; >>>
+    >>> > 14 dd9063f660aecf2f5c6b96b91c68571ea1a903
     $(".pieza").draggable({
         revert: "invalid",
         start: function() {
@@ -166,10 +171,8 @@ function arrastre() {
             elementid.css({ "background-color": "transparent", "border": "none" });
             if (element == element2) {
                 r++;
-                console.log(r);
             }
             ui.draggable.draggable("disable", 1);
-            console.log(element);
         }
     });
 }
@@ -178,10 +181,9 @@ function arrastre() {
 function seleccion_click() {
     $('.seleccion').click(function() {
         $(this).css({
-            "border": "2px solid",
+            "border": "solid",
             "border-color": "#37D3F7",
-            "background": "#B6ECFF",
-            "box-shadow": "grey 2px 3px 8px 0px"
+            "background": "#B6ECFF"
         });
         var element = $(this).attr("alt");
         var select = $(this).attr("value");
@@ -197,17 +199,18 @@ function seleccion_click() {
     });
 }
 
-//? Funcion de seleccion -> clases a usar .seleccion
+//? Funcion de seleccion -> clases a usar .seleccion, esta funcion sera agregada en el result del index
 function seleccion_lista() {
     $(".seleccion").each(function() {
         if ($(this).attr("alt") == $(this).val()) {
             r++;
+            console.log(r)
         }
     });
 }
 
 //? Funcion random -> enviar las clases que var a incorporar el random ejemplo:
-//? lista_random($clases) o lista_random('.clases')
+//? lista_random($clases) o listar_random('.clases')
 function listar_random($class) {
     var cols = document.querySelectorAll($class);
     [].forEach.call(cols, (e) => {
@@ -283,6 +286,35 @@ function crucigrama() {
 }
 
 //? Funcion de colorear
+//? Clases a usar -> .colores (colores de muestra), .lista (lista de opciones)
+//1-2-5
 function colorear() {
-    // 1-2-5
+    var color;
+    var letra;
+    var comparacion;
+    $(".colores").click(function(e) {
+        e.preventDefault();
+        color = $(this).attr("value");
+        letra = $(this).attr("alt");
+        $('.colores').css({
+            "transform": "scale(1)",
+            "border": "none",
+            "box-shadow": "none"
+        });
+        $(this).css({
+            "transform": "scale(1.1)",
+            "border": "solid rgb(254, 206, 87)",
+            "box-shadow": "0 0 4px #00000057"
+        });
+    });
+    $(".lista").click(function(e) {
+        e.preventDefault();
+        $(this).css({
+            "background-color": color
+        });
+        comparacion = $(this).attr("alt");
+        if (letra == comparacion) {
+            r++;
+        }
+    });
 }

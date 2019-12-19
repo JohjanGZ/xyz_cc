@@ -1,23 +1,18 @@
 <script type="text/javascript">
 
 
-function Page_23() {
-    start_23();
+function Page_20() {
+    start_20();
     inicio();
     count = 3;
 }
 
-function Page_24() {  
-   start_24();
+function Page_21() {  
+   start_21();
    inicio();
    count = 3;
 }
 
-function Page_25() {
-   start_25();
-   inicio();
-   count = 3;
-}
 
 var cant = 18;
 var cal = cant/cant;
@@ -27,42 +22,31 @@ var ruta = "../../../../exercises/matematica/";
 // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
 
 
-function start_23() {
-    $("#ventana").load(ruta + '2-2-23/index.php', {
-        next: "Page_24()",
-        procesar: "result_tipo_2_2_23()",
-        titulo: "<center><h5><span>Completa</span> los números que faltan. </h5></center>",
-        restaurar: "start_23()",
+function start_20() {
+    $("#ventana").load(ruta + '2-3-20/index.php', {
+        next: "Page_21()",
+        procesar: "result_tipo_2_3_20()",
+        titulo: "<center><h5><span>Relaciona</span> los pares simetricos de las siguientes figuras: </h5></center>",
+        restaurar: "start_20()",
         dir: ruta,
-        cod: "2-2-23",
+        cod: "2-3-20",
         nota: cal
     });
     return false;
 };
-function start_24() {
-    $("#ventana").load(ruta + '2-2-24/index.php', {
-        next: "Page_25()",
-        procesar: "result_tipo_2_2_24()",
-        titulo: "<center><h5><span>Completa</span> los siguientes cuadrados mágicos.</h5></center>",
-        restaurar: "start_24()",
-        dir: ruta,
-        cod: "2-2-24",
-        nota: cal
-    });
-    return false;
-};
-function start_25() {
-    $("#ventana").load(ruta + '2-2-25/index.php', {
+function start_21() {
+    $("#ventana").load(ruta + '2-3-21/index.php', {
         next: "resultado()",
-        procesar: "result_tipo_2_2_25()",
-        titulo: "<center><h5>La suma de los números en los cuadrados es igual al número del rectángulo.</h5></center>",
-        restaurar: "start_25()",
+        procesar: "result_tipo_2_3_21()",
+        titulo: "<center><h5><span>Selecciona</span> las figuras que no son simétricas.</h5></center>",
+        restaurar: "start_21()",
         dir: ruta,
-        cod: "2-2-25",
+        cod: "2-3-21",
         nota: cal
     });
     return false;
 };
+
 
 function resultado() {
     $("#ventana").load('../../../../exercises/resultado/resultado.php');

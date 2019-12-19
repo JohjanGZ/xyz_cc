@@ -94,6 +94,7 @@
 <script src="../../../../../js/core.js"></script>
 <?php require('../../../tools/botones/botones.php');?>
 <script>$("#next").attr("onclick", "<?=$next?>");</script>
+<script srv="../../../../tools/procesos/script.js"></script>
 <script type="text/javascript">
 
 var rpta = 0, otros = 0, element;

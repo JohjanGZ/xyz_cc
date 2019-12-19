@@ -4,151 +4,206 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="<?= $dir ?>/css/styles.css">
 </head>
+<style type="text/css">
+
+</style>
 <?=$titulo?>
-<?php 
-
-    $numeros = array('120','410','400', '254');
-
+<?php
+    $numbers= array('0','1','2','3','4','5','6','7','8','9');
+    $desco = array ('2 000 + 100 + 50 + 3','6000 + 10 + 5','2 000 + 100 + 60 + 3','6000 + 10 + 4','2 008 + 100 + 60 + 3');
+    $escritura = array('Dos mil ciento sesenta y tres','Seis mil catorce','Dos mil ciento setenta y tres','Seis mil quince');
 ?>
-<div class="container-two">
-    <div><h5>Antecesor</h5></div>
-    <div><h5>Número</h5></div>
-    <div><h5>Sucesor</h5></div>
-    <div class="options aleatorio">
-        <div class="obj" data-value="7435">7435</div>
-        <div class="obj" data-value="8218">8218</div>
-        <div class="obj" data-value="5955">5955</div>
-        <div class="obj" data-value="6712">6712</div>
-        <div class="obj" data-value="9588">9588</div>
-    </div>
-    <div class="middle aleatorio">
-        <div class="item ">
-            <div class="droppable" data-value="7435"></div>
-            <div class="numero card-pa">
-                <h5>  7 436  </h5>
+
+<body>
+    <div class="container-two">
+        <div class="caja">
+            <div class="tabla">
+                <div class="grid-container">
+                    <div class="principalNumber">
+                        <img src="<?= $dir ?>/img/1.png" alt="">
+                    </div>
+                    <div class="grid-item cabe"><span class="o">UM</span></div>
+                    <div class="grid-item cabe"><span class="b">C</span></div>
+                    <div class="grid-item cabe"><span class="r">D</span></div>
+                    <div class="grid-item cabe"><span class="b">U</span></div>
+                    <div class="grid-item" style="position:relative;">
+                        <select class="slc" id="slc2" alt="2">
+                            <option value="" disabled selected></option>
+                            <?php 
+                                foreach($numbers as $n) : ?>
+                            <option value="<?= $n ?>"><?= $n ?></option>
+                            <?php endforeach; ?>
+                        </select>
+                    </div>
+                    <div class="grid-item">
+                        <select class="slc" id="slc2" alt="1">
+                            <option value="" disabled selected></option>
+                            <?php 
+                                foreach($numbers as $n) : ?>
+                            <option value="<?= $n ?>"><?= $n ?></option>
+                            <?php endforeach; ?>
+                        </select>
+                    </div>
+                    <div class="grid-item" style="position:relative;">
+                        <select class="slc" id="slc2" alt="6">
+                            <option value="" disabled selected></option>
+                            <?php 
+                                foreach($numbers as $n) : ?>
+                            <option value="<?= $n ?>"><?= $n ?></option>
+                            <?php endforeach; ?>
+                        </select>
+                    </div>
+                    <div class="grid-item" style="position:relative;">
+                        <select class="slc" id="slc2" alt="3">
+                            <option value="" disabled selected></option>
+                            <?php 
+                                foreach($numbers as $n) : ?>
+                            <option value="<?= $n ?>"><?= $n ?></option>
+                            <?php endforeach; ?>
+                        </select>
+                    </div>
+                    <div class="info1">
+                        <select class="slc" alt="2 000 + 100 + 60 + 3">
+                            <option value="" disabled selected></option>
+                            <?php
+                            for ($i=0; $i < count($desco); $i++) { 
+                                echo "<option value='$desco[$i]'>$desco[$i]</option>";
+                            }
+                        ?>
+                        </select>
+                        <select class="slc" alt="Dos mil ciento sesenta y tres">
+                            <option value="" disabled selected></option>
+                            <?php
+                            for ($i=0; $i < count($escritura); $i++) { 
+                                echo "<option value='$escritura[$i]'>$escritura[$i]</option>";
+                            }
+                        ?>
+                        </select>
+                    </div>
+                </div>
+                <div class="grid-container">
+                    <div class="principalNumber">
+                        <img src="<?= $dir ?>/img/2.png" class="image2" alt="">
+                    </div>
+                    <div class="grid-item cabe"><span class="o">UM</span></div>
+                    <div class="grid-item cabe"><span class="b">C</span></div>
+                    <div class="grid-item cabe"><span class="r">D</span></div>
+                    <div class="grid-item cabe"><span class="b">U</span></div>
+                    <div class="grid-item" style="position:relative;">
+                        <select class="slc" id="slc2" alt="6">
+                            <option value="" disabled selected></option>
+                            <?php 
+                                foreach($numbers as $n) : ?>
+                            <option value="<?= $n ?>"><?= $n ?></option>
+                            <?php endforeach; ?>
+                        </select>
+                    </div>
+                    <div class="grid-item">
+                        <select class="slc" id="slc2" alt="0">
+                            <option value="" disabled selected></option>
+                            <?php 
+                                foreach($numbers as $n) : ?>
+                            <option value="<?= $n ?>"><?= $n ?></option>
+                            <?php endforeach; ?>
+                        </select>
+                    </div>
+                    <div class="grid-item" style="position:relative;">
+                        <select class="slc" id="slc2" alt="1">
+                            <option value="" disabled selected></option>
+                            <?php 
+                                foreach($numbers as $n) : ?>
+                            <option value="<?= $n ?>"><?= $n ?></option>
+                            <?php endforeach; ?>
+                        </select>
+                    </div>
+                    <div class="grid-item" style="position:relative;">
+                        <select class="slc" id="slc2" alt="4">
+                            <option value="" disabled selected></option>
+                            <?php 
+                                foreach($numbers as $n) : ?>
+                            <option value="<?= $n ?>"><?= $n ?></option>
+                            <?php endforeach; ?>
+                        </select>
+                    </div>
+                    <div class="info2">
+                        <select class="slc" alt="6000 + 10 + 4">
+                            <option value="" disabled selected></option>
+                            <?php
+                            for ($i=0; $i < count($desco); $i++) { 
+                                echo "<option value='$desco[$i]'>$desco[$i]</option>";
+                            }
+                        ?>
+                        </select>
+                        <select class="slc" alt="Seis mil catorce">
+                            <option value="" disabled selected></option>
+                            <?php
+                            for ($i=0; $i < count($escritura); $i++) { 
+                                echo "<option value='$escritura[$i]'>$escritura[$i]</option>";
+                            }
+                        ?>
+                        </select>
+                    </div>
+                </div>
             </div>
-            <div class="droppable" data-value="7437"></div>
-        </div>
-        <div class="item">
-            <div class="droppable" data-value="8218"></div>
-            <div class="numero card-pa">
-                <h5>  8 219  </h5>
-            </div>
-            <div class="droppable" data-value="8220"></div>
-        </div>
-        <div class="item">
-            <div class="droppable" data-value="5955"></div>
-            <div class="numero card-pa">
-                <h5> 5 956 </h5>
-            </div>
-            <div class="droppable" data-value="5957"></div>
-        </div>
-        <div class="item">
-            <div class="droppable" data-value="6712"></div>
-            <div class="numero card-pa">
-                <h5> 6 713 </h5>
-            </div>
-            <div class="droppable" data-value="6714"></div>
-        </div>
-        <div class="item">
-            <div class="droppable" data-value="9588"></div>
-            <div class="numero card-pa">
-                <h5> 9 589 </h5>
-            </div>
-            <div class="droppable" data-value="9590"></div>
         </div>
     </div>
-    <div class="options aleatorio">
-        <div class="obj" data-value="7437">7437</div>
-        <div class="obj" data-value="8220">8220</div>
-        <div class="obj" data-value="5957">5957</div>
-        <div class="obj" data-value="6714">6714</div>
-        <div class="obj" data-value="9590">9590</div>
+    <!-- Respuesta -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <center>
+                <h4>Respuesta correcta</h4>
+                <img class="materialboxed" width="80%" src="<?= $dir ?>/img/respuesta.png">
+            </center>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Listo!</a>
+        </div>
     </div>
-</div>
-<div id="modal1" class="modal">
-    <div class="modal-content">
-        <h4 class="center">Respuesta correcta</h4>
-        <center>
-            <img class="materialboxed" width="80%" src="<?= $dir ?>/img/respuesta.png">
-        </center>
-    </div>
-    <div class="modal-footer">
-        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Listo!</a>
-    </div>
-</div>
 </body>
+
+
 <script src="../../../../../js/core.js"></script>
-<?php require('../../../tools/botones/botones.php');?>
-<script>
+<?php require('../../../tools/botones/botones.php');?> <script>
 $("#next").attr("onclick", "<?=$next?>");
 </script>
+<script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
+var r = 0;
 $('select').formSelect();
+//Random
+var div = document.querySelector('.tabla');
+for (var i = div.children.length; i >= 0; i--) {
+    div.appendChild(div.children[Math.random() * i | 0]);
+}
 
-
-var rpta = 0, otros = 0, element, element2;
-
-    $(".obj").draggable({
-        revert:false,
-        start: function() {
-            element=$(this).attr("data-value"); 
-            
-        },
-        // finish: function(){
-        //     $(this).css("box-shadow","none");
-        // }
-        
-    });
-    $( ".droppable" ).droppable({
-      classes: {
-        "ui-droppable-active": "",
-        "ui-droppable-hover": "dropable-hover"
-      },
-      drop: function( event, ui ) {
-        element2 = $(this).attr("data-value");
-        $(this).css("background-color", "rgb(30, 136, 229)");
-      //  $( this ).target.append(event.target);    
-        
-
-        if(element == element2 ){
-          rpta++;
-          console.log(element2)
-        }else{
-          otros++;
-        }
-        element.removeClass("pieza");
-      }
-    });
-
+$(".slc").change(function() {
+    slcalt = $(this).attr("alt");
+    slcval = $(this).val();
+    console.log(slcalt);
+    console.log(slcval);
+    if (slcalt == slcval) {
+        r++;
+        console.log(r);
+    }
+});
+// Validar
 function result_tipo_2_3_6() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
-    if (rpta == 10) {
-        console.log(rpta);
-        localStorage.setItem("Nota2-3-6", "2");
-        localStorage.setItem("Time2-3-6", tiempo);
+    if (r == 12) {
+        console.log(r)
+        localStorage.setItem("Nota<?=$cod?>", nota);
+        localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();
-
     } else {
-        console.log(rpta);
+        console.log(r)
         incorrecto();
-        localStorage.setItem("Nota2-3-6", "0");
-        localStorage.setItem("Time2-3-6", tiempo);
-
+        localStorage.setItem("Nota<?=$cod?>", "0");
+        localStorage.setItem("Time<?=$cod?>", tiempo);
     }
+
 }
-
-var cols = document.querySelectorAll('.aleatorio');
-
-[].forEach.call(cols, (e) => {
-
-    for (var i = e.children.length; i >= 0; i--) {
-        e.appendChild(e.children[Math.random() * i | 0]);
-    }
-
-});
 </script>
