@@ -1,0 +1,57 @@
+h5 {
+    width: 85%;
+}
+
+.container {
+    display: flex;
+    height: 70%;
+    align-items: center;
+}
+
+.container .row {
+    width: 100%;
+}
+
+.contenedor-ejercicio {
+    width: 40%;
+    margin: auto;
+}
+
+.lectura {
+    width: 100%;
+}
+
+.lectura h5 {
+    text-align: center;
+    padding-top: 40px;
+    color: rgb(29, 131, 214);
+}
+
+.lectura p {
+    font-size: 1.5rem;
+}
+
+p.select {
+    font-size: 1.6rem;
+}
+
+p.select span select {
+    color: rgb(29, 131, 214);
+    text-align: center;
+}
+
+p.select span select option {
+    text-align: center;
+}
+
+p.select span {
+    display: inline-flex;
+    width: 300px;
+    margin-top: 15px;
+}
+
+@media(max-height: 640px) {
+    .contenedor-ejercicio {
+        width: 80%;
+    }
+}
