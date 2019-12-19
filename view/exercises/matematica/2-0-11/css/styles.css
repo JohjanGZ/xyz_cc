@@ -98,7 +98,15 @@
     border-radius: 12px;
 }
 
-
+.select-wrapper li img{
+    height: 20px;
+    width: 20px;
+    margin: 15px 15px;
+    float: right;
+}
+.principio{
+    padding: 0px 15px;
+}
 .principal {
     height: 240px;
     width: auto;

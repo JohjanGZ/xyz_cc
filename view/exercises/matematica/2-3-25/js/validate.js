@@ -1,5 +1,5 @@
-
-r = 0;
+$('select').formSelect();
 
 listar_random(".aleatorio");
-seleccion_click()
+
+        
