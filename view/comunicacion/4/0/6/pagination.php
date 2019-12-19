@@ -34,7 +34,7 @@
     function start_lectura_4_0_6_1(){
         $("#ventana").load(ruta+'lectura4-0-6-1/index.php', 
         {
-        next: "Page_23()", 
+        next: "Page_22()", 
         procesar:"lectura2-1-1-1()",
         titulo:"<center><h5><span>Lee</span> atentamente y contesta las preguntas.</h5></center>",
         restaurar:"start_lectura_4_0_6_1()",
@@ -78,7 +78,7 @@
         {
         next: "Page_25()", 
         procesar:"result_tipo_4_0_24()",
-        titulo:"<center><h5><span>Lee</span> la pregunta y <span>selecciona</span> la respuesta correcta.</h5></center>",
+        titulo:"<center><h5><span>Ordena</span> cada una de las promesas del genio según sucedieron.</h5></center>",
         restaurar:"start_24()",
         dir:ruta,
         cod: "4-0-24",
