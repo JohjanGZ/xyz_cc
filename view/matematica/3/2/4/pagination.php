@@ -14,7 +14,11 @@ function Page_22() {
     inicio();
     count = 3;
 }
-
+function Page_23() {
+    start_23();
+    inicio();
+    count = 3;
+}
 var cant = 18;
 var cal = cant / cant;
 var ruta = "../../../../exercises/matematica/";
@@ -36,7 +40,7 @@ function start_21() {
     $("#ventana").load(ruta + '3-2-21/index.php', {
         next: "Page_22()",
         procesar: "result_tipo_3_2_21()",
-        titulo: "<center><h5> <span class='ftitulo'>Selecciona</span> las figuras que se usaron para dibujar la casita y el barquito.</h5></center>",
+        titulo: "<center><h5><span>Observa</span> las figuras 1 y 2 en el plano, luego <span>escribe</span> los pares ordenados de cada figura y el número con el que se multiplicó cada par ordenado de la figura 1 para ser ampliado en la figura 2.</h5></center>",
         restaurar: "start_21()",
         dir: ruta,
         cod: "3-2-21",
@@ -46,9 +50,9 @@ function start_21() {
 };
 function start_22() {
     $("#ventana").load(ruta + '3-2-22/index.php', {
-        next: "resultado()",
+        next: "Page_23()",
         procesar: "result_tipo_3_2_22()",
-        titulo: "<center><h5> <span class='ftitulo'>Encuentra</span> las figuras y <span class='ftitulo'>escribe</span> la cantidad que hay de cada una.</h5></center>",
+        titulo: "<center><h5><span>Observa</span> las figuras 1 y 2 en el plano, luego <span>escribe</span> los pares ordenados de cada figura y el número con el que se multiplicó cada par ordenado de la figura 1 para ser ampliado en la figura 2.</h5></center>",
         restaurar: "start_22()",
         dir: ruta,
         cod: "3-2-22",
@@ -56,7 +60,18 @@ function start_22() {
     });
     return false;
 };
-
+function start_23() {
+    $("#ventana").load(ruta + '3-2-23/index.php', {
+        next: "resultado()",
+        procesar: "result_tipo_3_2_23()",
+        titulo: "<center><h5><span>Observa</span> las figuras 1 y 2 en el plano, luego <span>escribe</span> los pares ordenados de cada figura y el número con el que se multiplicó cada par ordenado de la figura 1 para ser ampliado en la figura 2.</h5></center>",
+        restaurar: "start_23()",
+        dir: ruta,
+        cod: "3-2-23",
+        nota: cal
+    });
+    return false;
+};
 
 function resultado() {
     $("#ventana").load('../../../../exercises/resultado/resultado.php');

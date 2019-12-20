@@ -105,7 +105,9 @@ h5 {
 
 .grid-options {
     /* border: 1px solid silver; */
-    padding: 5px 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    /* padding: 5px 20px; */
     margin-bottom: 2vh;
 }
 
@@ -161,17 +163,20 @@ h5 {
     align-items: center;
     justify-content: center;
 }
+
 .pregunta span {
     margin-right: 1vh;
 }
+
 .rspta {
     color: #0095DA;
     font-weight: 600;
 }
+
 h6.plano {
     text-align: center;
     font-size: 23px;
     font-weight: 700;
-    color: #a45799;
+    color: #c96ea6;
     margin-bottom: 4vh;
 }
