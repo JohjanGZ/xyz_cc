@@ -4,9 +4,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="<?= $dir ?>/css/styles.css">
 </head>
-<?php
-    $numeros = array('2','3','4','5','6','7','8','9','10','11','12');
-?>
 <?=$titulo?>
 <div class="container-two">
         <div class="content">
@@ -82,6 +79,8 @@ $("#next").attr("onclick", "<?=$next?>");
 <script type="text/javascript">
 // Formulario - Registrados
 
+r = 0;
+arrastre();
 
 function result_tipo_2_4_9() {
     var min = $('#Minutos').text();

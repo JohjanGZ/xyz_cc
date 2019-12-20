@@ -101,7 +101,7 @@ function result_tipo_2_4_7() {
     r = 0;
     seleccion_lista();
 
-    if (r == 9) {
+    if (r == 3) {
         console.log(r);
         localStorage.setItem("Nota2-4-7", "2");
         localStorage.setItem("Time2-4-7", tiempo);

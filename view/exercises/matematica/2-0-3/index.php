@@ -13,47 +13,57 @@
     <div class="caja-principal">
         <div class="center">
             <div id="contenedorPiezas">
-            <div class="col s12 imagenPricipal">
+                <div class="col s12 imagenPricipal">
                     <img src="<?= $dir ?>/img/conjuntos.png" width="1000px" alt="">
                 </div>
             </div>
-            <div class="row letras">
-            
-                <!-- <div class="col s4">El nombre del conjunto:</div> -->
-                <div class="aleatorio">
-                    <div class="col s1 letra card-panel white-text blue letras"  id="g"><h5>G</h5></div>
-                    <div class="col s1 letra card-panel white-text blue letras" id="y"><h5>Y</h5></div>
-                    <div class="col s1 letra card-panel white-text blue letras"  id="m"><h5>M</h5></div>
-                </div>
-                <div class="col s2  offset-s5 card-panel resultado blue"></div>
+            <div class="contentRespuesta aleatorio">
+                <div class="item seleccion"><p>G</p></div>
+                <div class="item seleccion" alt="n"><p>Y</p></div>
+                <div class="item seleccion"><p>M</p></div>
             </div>
         </div>
-    </div>
 
-    <div id="modal1" class="modal">
-        <div class="modal-content">
-            <h4 class="center">Respuesta correcta</h4>
-            <center>
-                <img class="materialboxed" width="80%" src="<?= $dir ?>/img/respuesta.png">
-            </center>
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <h4 class="center">Respuesta correcta</h4>
+                <center>
+                    <img class="materialboxed" width="80%" src="<?= $dir ?>/img/respuesta.png">
+                </center>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Listo!</a>
+            </div>
         </div>
-        <div class="modal-footer">
-            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Listo!</a>
-        </div>
-    </div>
 </body>
 
 <script src="../../../../../js/core.js"></script>
-<?php require('../../../tools/botones/botones.php');?><script>$("#next").attr("onclick","<?=$next?>");</script>
+<?php require('../../../tools/botones/botones.php');?><script>
+$("#next").attr("onclick", "<?=$next?>");
+</script>
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script>
-    var cols = document.querySelectorAll('.aleatorio');
 
-    [].forEach.call(cols, (e)=>{
+function result_tipo_2_0_3(){
+    var  min= $('#Minutos').text();
+    var  seg= $('#Segundos').text();
+    var  milseg= $('#Centesimas').text();
+    var tiempo=min+":"+seg+":"+milseg;
 
-        for (var i = e.children.length; i >= 0; i--) {
-            e.appendChild(e.children[Math.random() * i | 0]);
-        }
+          if( r == 1){
+             console.log(r)
+             localStorage.setItem("Nota2-0-3","2");
+             localStorage.setItem("Time2-0-3", tiempo);
+              correcto(); 
 
-    });
+          }
+
+          else {
+                console.log(r)
+              incorrecto();
+              localStorage.setItem("Nota2-0-3","0");
+              localStorage.setItem("Time2-0-3", tiempo);
+             
+          }    
+} 
 </script>

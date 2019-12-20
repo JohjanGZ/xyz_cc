@@ -82,6 +82,8 @@ $("#next").attr("onclick", "<?=$next?>");
 <script type="text/javascript">
 // Formulario - Registrados
 
+r = 0;
+arrastre();
 
 function result_tipo_2_4_3() {
     var min = $('#Minutos').text();
