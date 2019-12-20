@@ -49,7 +49,7 @@ function start_1() {
     $("#ventana").load(ruta + '3-3-1/index.php', {
         next: "Page_2()",
         procesar: "result_tipo_3_3_1()",
-        titulo: "<center><h5><span class='ftitulo'>Relaciona</span> cada número con su escritura correspondiente.</h5></center>",
+        titulo: "<center><h5><span class='ftitulo'>Resuleve</span> las siguientes sustracciones:</h5></center>",
         restaurar: "start_1()",
         dir: ruta,
         cod: "3-3-1",
@@ -61,7 +61,7 @@ function start_2() {
     $("#ventana").load(ruta + '3-3-2/index.php', {
         next: "Page_3()",
         procesar: "result_tipo_3_3_2()",
-        titulo: "<center><h5><span class='ftitulo'>Selecciona</span> cómo se leen los siguientes números:</h5></center>",
+        titulo: "<center><h5><span class='ftitulo'>Resuleve</span> las siguientes sustracciones:</h5></center>",
         restaurar: "start_2()",
         dir: ruta,
         cod: "3-3-2",

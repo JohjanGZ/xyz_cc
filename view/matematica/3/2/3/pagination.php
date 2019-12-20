@@ -1,77 +1,62 @@
 <script type="text/javascript">
-function Page_12() {
-    start_12();
+function Page_17() {
+    start_17();
     inicio();
     count = 3;
 }
-function Page_13() {
-    start_13();
+function Page_18() {
+    start_18();
     inicio();
     count = 3;
 }
-function Page_14() {
-    start_14();
+function Page_19() {
+    start_19();
     inicio();
     count = 3;
 }
-function Page_15() {
-    start_15();
-    inicio();
-    count = 3;
-}
+
 var cant = 18;
 var cal = cant / cant;
 console.log(cant);
 var ruta = "../../../../exercises/matematica/";
 ////////////// 2do 
-function start_12() {
-    $("#ventana").load(ruta + '3-2-12/index.php', {
-        next: "Page_13()",
-        procesar: "result_tipo_3_2_12()",
-        titulo: "<center><h5><span class='ftitulo'>Completa</span> el cuadro.</h5></center>",
-        restaurar: "start_12()",
+function start_17() {
+    $("#ventana").load(ruta + '3-2-17/index.php', {
+        next: "Page_18()",
+        procesar: "result_tipo_3_2_17()",
+        titulo: "<center><h5><span class='ftitulo'>Completa</span> los esquemas y <span>halla</span> el valor en cada caso.</h5></center>",
+        restaurar: "start_17()",
         dir: ruta,
-        cod: "3-2-12",
+        cod: "3-2-17",
         nota: cal
     });
     return false;
 };
-function start_13() {
-    $("#ventana").load(ruta + '3-2-13/index.php', {
-        next: "Page_14()",
-        procesar: "result_tipo_3_2_13()",
-        titulo: "<center><h5><span class='ftitulo'>Cuenta y escribe</span> el valor de las decenas y unidades.</h5></center>", 
-        restaurar: "start_13()",
+function start_18() {
+    $("#ventana").load(ruta + '3-2-18/index.php', {
+        next: "Page_19()",
+        procesar: "result_tipo_3_2_18()",
+        titulo: "<center><h5><span class='ftitulo'>Completa</span> los esquemas y <span>halla</span> el valor en cada caso.</h5></center>",
+        restaurar: "start_18()",
         dir: ruta,
-        cod: "3-2-13",
+        cod: "3-2-18",
         nota: cal
     });
     return false;
 };
-function start_14() {
-    $("#ventana").load(ruta + '3-2-14/index.php', {
-        next: "Page_15()",
-        procesar: "result_tipo_3_2_14()",
-        titulo: "<center><h5>¿Qué número va en el medio de cada trío? <span class='ftitulo'>Escríbelo.</span></h5></center>",
-        restaurar: "start_14()",
-        dir: ruta,
-        cod: "3-2-14",
-        nota: cal
-    });
-    return false;
-};
-function start_15() {
-    $("#ventana").load(ruta + '3-2-15/index.php', {
+function start_19() {
+    $("#ventana").load(ruta + '3-2-19/index.php', {
         next: "resultado()",
-        procesar: "result_tipo_3_2_15()",
-        titulo: "<center><h5><span class='ftitulo'>Realiza</span> la descomposición de los siguientes números en decenas y unidades.</h5></center>",
-        restaurar: "start_15()",
+        procesar: "result_tipo_3_2_19()",
+        titulo: "<center><h5><span>Escríbe</span> el enunciado verbal que corresponde a cada ecuación.</h5></center>",
+        restaurar: "start_19()",
         dir: ruta,
-        cod: "3-2-15",
+        cod: "3-2-19",
         nota: cal
     });
     return false;
 };
+
 function resultado() {
     $("#ventana").load('../../../../exercises/resultado/resultado.php');
     return false;

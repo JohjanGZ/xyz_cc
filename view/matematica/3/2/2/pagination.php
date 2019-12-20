@@ -74,7 +74,7 @@ function start_14() {
     $("#ventana").load(ruta + '3-2-14/index.php', {
         next: "Page_15()",
         procesar: "result_tipo_3_2_14()",
-        titulo: "<center><h5><span class='ftitulo'>Lee, escribe</span> los datos y <span class='ftitulo'>resuelve</span> la adición en el tablero posicional.</h5></center>",
+        titulo: "<center><h5><span>Clasifica</span> cada ejercicio según la propiedad correspondiente.</h5></center>",
         restaurar: "start_14()",
         dir: ruta,
         cod: "3-2-14",
@@ -86,7 +86,7 @@ function start_15() {
     $("#ventana").load(ruta + '3-2-15/index.php', {
         next: "Page_16()",
         procesar: "result_tipo_3_2_15()",
-        titulo: "<center><h5><span class='ftitulo'>Lee, escribe</span> los datos y <span class='ftitulo'>resuelve</span> la adición en el tablero posicional.</h5></center>",
+        titulo: "<center><h5><span>Completa</span> la siguiente tabla:</h5></center>",
         restaurar: "start_15()",
         dir: ruta,
         cod: "3-2-15",
@@ -98,7 +98,7 @@ function start_16() {
     $("#ventana").load(ruta + '3-2-16/index.php', {
         next: "resultado()",
         procesar: "result_tipo_3_2_16()",
-        titulo: "<center><h5><span class='ftitulo'>Lee, escribe</span> los datos y <span class='ftitulo'>resuelve</span> la adición en el tablero posicional.</h5></center>",
+        titulo: "<center><h5><span>Resuelve</span> las sustracciones y <span>completa</span>  el crucinúmeros.</h5></center>",
         restaurar: "start_16()",
         dir: ruta,
         cod: "3-2-16",
