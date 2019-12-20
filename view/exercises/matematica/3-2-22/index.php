@@ -8,8 +8,7 @@
 
 </style>
 <?=$titulo?>
-<?php $respuestas = array('8;4','8;10','2;8','2;2','10;10','10;4','4;4','4;2','4;5','1;4','1;1','5;5','5;2','2;2') ?>
-
+<?php $respuestas = array('2;6','6;10','10;2','10;10','5;1','3;1','6;2','4;5','1;3','1;1','3;5','5;5','2;2') ?>
 <body>
 
     <div class="container-two">
@@ -23,8 +22,8 @@
                     <h6 class="plano">Plano 1</h6>
                     <div class="grid-options">
                         <div class="datos">
-                            Y <span>= {</span>
-                            <select class="seleccion" alt="2;2">
+                            V <span>= {</span>
+                            <select class="seleccion" alt="1;3">
                                 <option value="" disabled selected></option>
                                 <?php foreach ($respuestas as $key => $rspta) {
                                     echo "<option value='$rspta'>$rspta</option>";
@@ -33,8 +32,8 @@
                             <span>}</span>
                         </div>
                         <div class="datos">
-                            T <span>= {</span>
-                            <select class="seleccion" alt="5;2">
+                            M <span>= {</span>
+                            <select class="seleccion" alt="3;5">
                                 <option value="" disabled selected></option>
                                 <?php foreach ($respuestas as $key => $rspta) {
                                     echo "<option value='$rspta'>$rspta</option>";
@@ -43,8 +42,28 @@
                             <span>}</span>
                         </div>
                         <div class="datos">
-                            R <span>= {</span>
+                            D <span>= {</span>
                             <select class="seleccion" alt="5;5">
+                                <option value="" disabled selected></option>
+                                <?php foreach ($respuestas as $key => $rspta) {
+                                    echo "<option value='$rspta'>$rspta</option>";
+                                } ?>
+                            </select>
+                            <span>}</span>
+                        </div>
+                        <div class="datos">
+                            O <span>= {</span>
+                            <select class="seleccion" alt="5;1">
+                                <option value="" disabled selected></option>
+                                <?php foreach ($respuestas as $key => $rspta) {
+                                    echo "<option value='$rspta'>$rspta</option>";
+                                } ?>
+                            </select>
+                            <span>}</span>
+                        </div>
+                        <div class="datos">
+                            J <span>= {</span>
+                            <select class="seleccion" alt="3;1">
                                 <option value="" disabled selected></option>
                                 <?php foreach ($respuestas as $key => $rspta) {
                                     echo "<option value='$rspta'>$rspta</option>";
@@ -68,8 +87,8 @@
                     <h6 class="plano">Plano 2</h6>
                     <div class="grid-options">
                         <div class="datos">
-                            Y <span>= {</span>
-                            <select class="seleccion" alt="4;4">
+                            V <span>= {</span>
+                            <select class="seleccion" alt="2;6">
                                 <option value="" disabled selected></option>
                                 <?php foreach ($respuestas as $key => $rspta) {
                                     echo "<option value='$rspta'>$rspta</option>";
@@ -78,8 +97,8 @@
                             <span>}</span>
                         </div>
                         <div class="datos">
-                            T <span>= {</span>
-                            <select class="seleccion" alt="10;4">
+                            M <span>= {</span>
+                            <select class="seleccion" alt="6;10">
                                 <option value="" disabled selected></option>
                                 <?php foreach ($respuestas as $key => $rspta) {
                                     echo "<option value='$rspta'>$rspta</option>";
@@ -88,8 +107,28 @@
                             <span>}</span>
                         </div>
                         <div class="datos">
-                            R <span>= {</span>
+                            D <span>= {</span>
                             <select class="seleccion" alt="10;10">
+                                <option value="" disabled selected></option>
+                                <?php foreach ($respuestas as $key => $rspta) {
+                                    echo "<option value='$rspta'>$rspta</option>";
+                                } ?>
+                            </select>
+                            <span>}</span>
+                        </div>
+                        <div class="datos">
+                            O <span>= {</span>
+                            <select class="seleccion" alt="10;2">
+                                <option value="" disabled selected></option>
+                                <?php foreach ($respuestas as $key => $rspta) {
+                                    echo "<option value='$rspta'>$rspta</option>";
+                                } ?>
+                            </select>
+                            <span>}</span>
+                        </div>
+                        <div class="datos">
+                            J <span>= {</span>
+                            <select class="seleccion" alt="6;2">
                                 <option value="" disabled selected></option>
                                 <?php foreach ($respuestas as $key => $rspta) {
                                     echo "<option value='$rspta'>$rspta</option>";
@@ -136,14 +175,14 @@ $("#next").attr("onclick", "<?=$next?>");
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
 // Validar
-function result_tipo_3_2_20() {
+function result_tipo_3_2_22() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
     r = 0
     seleccion_lista();
-    if (r == 7) {
+    if (r == 11) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();

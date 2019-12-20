@@ -294,6 +294,39 @@ function crucigrama() {
     });
 }
 
+//? Funcion de opreaciones Suma, resta, multiplicacion, division  - Clases -> .letras (numeros), .total (caja de total)
+//? Declarar siempre la variable r -> var r = 0;
+function operaciones() {
+    var letra = "";
+    $('.letras').click(function () {
+        letra = $(this).text();
+        // Estilos a span
+        $('.letras').css({ "transform": "scale(1)", "border": "2px solid #37D3F7", "box-shadow": "none", "background": "transparent" });
+        $(this).css({ "border": "solid #37D3F7", "box-shadow": "0 0 4px #00000057", "background": "#B6ECFF" });
+    });
+    $('.total').click(function () {
+        $(this).css({ "border": "solid #37D3F7", "background": "#B6ECFF" });
+        if ($(this).attr("alt") == letra) {
+            if ($(this).text() == "") {
+                r++;
+            } else {
+                if ($(this).text() != $(this).attr("alt")) {
+                    r = r + 2;
+                }
+            }
+        } else {
+            if ($(this).text() == "") {
+                r--;
+            } else {
+                if ($(this).text() == $(this).attr("alt")) {
+                    r = r - 2;
+                }
+            }
+        }
+        $(this).text(letra);
+    });
+}
+
 //? Funcion de colorear
 //? Clases a usar -> .colores (colores de muestra), .lista (lista de opciones)
 //? Declarar siempre la variable r -> var r = 0;
