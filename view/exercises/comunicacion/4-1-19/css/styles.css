@@ -13,15 +13,20 @@ h5 {
 }
 
 .contenedor-ejercicio {
-    width: 40%;
+    width: 50%;
     margin: auto;
+    display: flex;
+    align-items: center;
 }
 
-.lectura {
+@media(max-width: 1500px) {
+    .contenedor-ejercicio {
+        width: 80%;
+    }
+}
+
+.lectura h4 {
     width: 100%;
-}
-
-.lectura h5 {
     text-align: center;
     padding-top: 40px;
     color: rgb(29, 131, 214);
@@ -50,8 +55,30 @@ p.select span {
     margin-top: 15px;
 }
 
+.contenedor-ejercicio .lectura {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contenedor-ejercicio .lectura p {
+    width: 48%;
+}
+
+.contenedor-ejercicio .select {
+    width: 30%;
+}
+
 @media(max-height: 640px) {
     .contenedor-ejercicio {
         width: 80%;
+        display: flex;
+    }
+    .lectura p {
+        font-size: 1.4rem;
+        margin: 5px;
+    }
+    .lectura h4 {
+        padding-top: 20px;
     }
 }

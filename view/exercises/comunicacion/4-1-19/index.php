@@ -16,26 +16,50 @@
 
             <div class="contenedor-ejercicio">
                 <div class="lectura">
-                    <h5>
-                        El niño que lo quería todo
-                    </h5>
+                    <h4>
+                    El bastón
+                    </h4>
                     <p>
-                        Había una vez un niño que se llamaba Jorge; su madre, María, y el padre, Juan. En el día de los
-                        Reyes Magos, Jorge pidió más de veinte cosas. Su madre le dijo: <br>
-                        —tú piensa en los otros niños, y no te enfades porque tienes que pedir menos.
-                        Por fin llegó el día tan esperado. Cuando Jorge se levantó y fue a ver los regalos que le habían
-                        traído, se llevó una gran sorpresa. Le habían traído las veinticinco cosas de la lista.
-                        Enseguida despertó a sus padres y les dijo que quería repartir sus juguetes con los niños más
-                        pobres.
+                        El cangrejo más viejito <br>
+                        camina con un bastón <br>
+                        sobre la arena mojada, <br>
+                        sobre la sed que da el sol.
+                    </p>
+                    <p>
+                        Se sostiene una rodilla <br>
+                        y camina con un son <br>
+                        disparejo y cansadito, <br>
+                        como el de su corazón.
+                    </p>
+                    <p>
+                        Dicen que el viejo cangrejo, <br>
+                        antes, tocaba el tambor <br>
+                        para avisar a los peces <br>
+                        si venía un pescador.
+                    </p>
+                    <p>
+                        Ahora, camina lento <br>
+                        y las piedras, con temor, <br>
+                        guardan sus bordes filosos <br>
+                        por no herir su cascarón. <br>
+                        Los peces le juntan luna; <br>
+                        las algas, algo de sol.
                     </p>
                 </div>
                 <p class="select">
-                El género literario de este texto es: <br>
+
+                    <span style="color: rgb(29, 131, 214);">
+                        M.a Cristina Ramos <br>
+                        La luna lleva un silencio <br>
+                        Editorial Anaya-Aique
+                    </span> <br> <br>
+
+                    El género literario de este texto es: <br>
                     <span>
                         <select class="browser-default seleccion" alt="n">
                             <option value="" disabled selected>Escoge una opción</option>
-                            <option value="x">Lírico</option>
-                            <option value="n">Narrativo</option>
+                            <option value="n">Lírico</option>
+                            <option value="x">Narrativo</option>
                             <option value="x">Dramático</option>
                         </select>
                     </span>
@@ -68,7 +92,7 @@ $("#next").attr("onclick", "<?=$next?>");
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
 // Validar
-function result_tipo_4_1_18() {
+function result_tipo_4_1_19() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
