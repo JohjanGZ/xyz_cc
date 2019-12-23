@@ -13,40 +13,44 @@
     <div class="container-two">
         <div class="grid-tabla">
             <div class="grid-container">
+                <h6>Resuelve</h6>
                 <div class="grid-num bb">
-                    <div class="grid-item">5</div>
+                    <span class="ms">-</span>
+                    <div class="grid-item">6</div>
                     <div class="grid-item">2</div>
                     <div class="grid-item">4</div>
-                    <div class="grid-item">9</div>
-                    <div class="grid-item"><span class="ms">-</span>3</div>
                     <div class="grid-item">3</div>
                     <div class="grid-item">2</div>
-                    <div class="grid-item">5</div>
+                    <div class="grid-item">3</div>
+                    <div class="grid-item">4</div>
+                    <div class="grid-item">6</div>
                 </div>
                 <div class="grid-item">
-                    <div class="total" alt="1"></div>
+                    <div class="total" alt="3"></div>
+                    <div class="total" alt="8"></div>
                     <div class="total" alt="9"></div>
-                    <div class="total" alt="2"></div>
-                    <div class="total" alt="4"></div>
+                    <div class="total" alt="7"></div>
                 </div>
             </div>
 
             <div class="grid-container">
+                <h6>Comprueba</h6>
                 <div class="grid-num bb">
-                    <div class="grid-item">4</div>
-                    <div class="grid-item">2</div>
-                    <div class="grid-item">8</div>
-                    <div class="grid-item">6</div>
-                    <div class="grid-item"><span class="ms">-</span>2</div>
-                    <div class="grid-item">3</div>
-                    <div class="grid-item">5</div>
-                    <div class="grid-item">7</div>
+                    <span class="ms">+</span>
+                    <div class="grid-item total" alt="3"></div>
+                    <div class="grid-item total" alt="8"></div>
+                    <div class="grid-item total" alt="9"></div>
+                    <div class="grid-item total" alt="7"></div>
+                    <div class="grid-item total" alt="2"></div>
+                    <div class="grid-item total" alt="3"></div>
+                    <div class="grid-item total" alt="4"></div>
+                    <div class="grid-item total" alt="6"></div>
                 </div>
                 <div class="grid-item">
-                    <div class="total" alt="1"></div>
-                    <div class="total" alt="9"></div>
+                    <div class="total" alt="6"></div>
                     <div class="total" alt="2"></div>
-                    <div class="total" alt="9"></div>
+                    <div class="total" alt="4"></div>
+                    <div class="total" alt="3"></div>
                 </div>
             </div>
         </div>
@@ -74,13 +78,13 @@ $("#next").attr("onclick", "<?=$next?>");
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
 // Validar
-function result_tipo_3_3_2() {
+function result_tipo_3_3_3() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
-    if (r == 8) {
+    if (r == 16) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();
