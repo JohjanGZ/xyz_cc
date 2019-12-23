@@ -161,6 +161,7 @@ function arrastre() {
         start: function() {
             element = $(this).attr("alt");
             elementid = $(this);
+            
         }
     });
     $(".contenedor").droppable({
@@ -168,7 +169,7 @@ function arrastre() {
             element2 = $(this).attr("alt");
             elementid.css({ "background": "transparent", "border-color": "transparent" });
             if (element == element2) {
-                r++;
+                r++;console.log(r);
             }
             ui.draggable.draggable("disable", 1);
         }
