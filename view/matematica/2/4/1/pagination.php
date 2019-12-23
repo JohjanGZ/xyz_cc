@@ -170,7 +170,7 @@ function start_9() {
     $("#ventana").load(ruta + '2-4-9/index.php', {
         next: "resultado()",
         procesar: "result_tipo_2_4_9()",
-        titulo: "<center><h5><span>Escribe</span> el número antecesor y sucesor de los siguientes números:</h5></center>",
+        titulo: "<center><h5><span>Completa</span> la tabla del 3.</h5></center>",
         restaurar: "start_9()",
         dir: ruta,
         cod: "2-4-9",
