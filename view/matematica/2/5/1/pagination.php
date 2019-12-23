@@ -55,6 +55,16 @@ function Page_9() {
    inicio();
    count = 3;
 }
+function Page_10() {
+   start_10();
+   inicio();
+   count = 3;
+}
+function Page_11() {
+   start_11();
+   inicio();
+   count = 3;
+}
 
 var cant = 18;
 var cal = cant / cant;
@@ -154,26 +164,50 @@ function start_7() {
 };
 
 function start_8() {
-    $("#ventana").load(ruta + '2-4-8/index.php', {
+    $("#ventana").load(ruta + '2-5-8/index.php', {
         next: "Page_9()",
-        procesar: "result_tipo_2_4_8()",
-        titulo: "<center><h5><span>Completa</span> la operación que representa cada imagen.</h5></center>",
+        procesar: "result_tipo_2_5_8()",
+        titulo: "<center><h5><span>Observa</span> y <span>completa</span> siguiendo el ejemplo.</h5></center>",
         restaurar: "start_8()",
         dir: ruta,
-        cod: "2-4-8",
+        cod: "2-5-8",
         nota: cal
     });
     return false;
 };
 /**SEPA**/
 function start_9() {
-    $("#ventana").load(ruta + '2-4-9/index.php', {
-        next: "resultado()",
-        procesar: "result_tipo_2_4_9()",
-        titulo: "<center><h5><span>Completa</span> la tabla del 3.</h5></center>",
+    $("#ventana").load(ruta + '2-5-9/index.php', {
+        next: "Page_10()",
+        procesar: "result_tipo_2_5_9()",
+        titulo: "<center><h5><span>Completa</span> escribiendo el dividendo, el divisor y el cociente.</h5></center>",
         restaurar: "start_9()",
         dir: ruta,
-        cod: "2-4-9",
+        cod: "2-5-9",
+        nota: cal
+    });
+    return false;
+};
+function start_10() {
+    $("#ventana").load(ruta + '2-5-10/index.php', {
+        next: "Page_11()",
+        procesar: "result_tipo_2_5_10()",
+        titulo: "<center><h5><span>Completa</span> la familia de operaciones.</h5></center>",
+        restaurar: "start_10()",
+        dir: ruta,
+        cod: "2-5-10",
+        nota: cal
+    });
+    return false;
+};
+function start_11() {
+    $("#ventana").load(ruta + '2-5-11/index.php', {
+        next: "resultado()",
+        procesar: "result_tipo_2_5_11()",
+        titulo: "<center><h5><span>Completa</span> la tabla del 3.</h5></center>",
+        restaurar: "start_11()",
+        dir: ruta,
+        cod: "2-5-11",
         nota: cal
     });
     return false;

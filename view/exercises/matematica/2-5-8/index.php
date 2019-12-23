@@ -6,20 +6,28 @@
 </head>
 <?=$titulo?>
 <?php
-  $numeros= array('1','2','3','4','5','6','7','8','10');
-  $multi  =array('5 x 8 = 40','8 x 6 = 48','7 x 9 = 63','9 x 4 = 36','5 x 7 = 35','5 x 6 = 30','7 x 8 = 56','9 x 3 = 27')
+  $numeros= array('1','2','3','4','5','6','7','8','10','12','13','14','15');
 ?>
 <div class="container">
     <div class="content">
-        <div class="tabla">
-            <div>
-                <span>27 <span class="rojo">÷</span> 3 <span class="rojo">=</span> 9 porque 3 <span
-                        class="rojo">×</span> 9 <span class="rojo">=</span> 27.</span>
+        <div class="item">
+            <div class="image">
+                <img src="<?= $dir ?>/img/1.png" alt="">
             </div>
-            <div>
-                <span>35 <span class="rojo">÷</span> 5 <span class="rojo">=</span>
+        </div>
+        <div class="item">
+            <div class="imagen">
+                <img src="<?= $dir ?>/img/2.png" alt="">
+            </div>
+            <div class="detalle">
+                <span>Dividendo</span>
+                <span>Divisor</span>
+                <span>Cociente</span>
+            </div>
+            <div class="rpta">
+                <span>
                     <span>
-                        <select class="slc seleccion" alt="7">
+                        <select class="slc seleccion" alt="12">
                             <option value="" disabled selected></option>
                             <?php
                                 for ($i=0; $i < count($numeros); $i++) { 
@@ -27,21 +35,23 @@
                                 }
                             ?>
                         </select>
-                    </span> porque
-                    <span class="largo">
-                        <select class="slc seleccion" alt="5 x 7 = 35">
+                    </span>
+                    <span class="rojo">
+                        ÷
+                    </span>
+                    <span>
+                        <select class="slc seleccion" alt="2">
                             <option value="" disabled selected></option>
                             <?php
-                                for ($i=0; $i < count($multi); $i++) { 
-                                    echo "<option value='$multi[$i]'>$multi[$i]</option>";
+                                for ($i=0; $i < count($numeros); $i++) { 
+                                    echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
                                 }
                             ?>
                         </select>
                     </span>
-                    .</span>
-            </div>
-            <div>
-                <span>48 <span class="rojo">÷</span> 8 <span class="rojo">=</span>
+                    <span class="rojo">
+                        =
+                    </span>
                     <span>
                         <select class="slc seleccion" alt="6">
                             <option value="" disabled selected></option>
@@ -51,66 +61,8 @@
                                 }
                             ?>
                         </select>
-                    </span> porque
-                    <span class="largo">
-                        <select class="slc seleccion" alt="8 x 6 = 48">
-                            <option value="" disabled selected></option>
-                            <?php
-                                for ($i=0; $i < count($multi); $i++) { 
-                                    echo "<option value='$multi[$i]'>$multi[$i]</option>";
-                                }
-                            ?>
-                        </select>
                     </span>
-                    .</span>
-            </div>
-            <div>
-                <span>56 <span class="rojo">÷</span> 7 <span class="rojo">=</span>
-                    <span>
-                        <select class="slc seleccion" alt="8">
-                            <option value="" disabled selected></option>
-                            <?php
-                                for ($i=0; $i < count($numeros); $i++) { 
-                                    echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
-                                }
-                            ?>
-                        </select>
-                    </span> porque
-                    <span class="largo">
-                        <select class="slc seleccion" alt="7 x 8 = 56">
-                            <option value="" disabled selected></option>
-                            <?php
-                                for ($i=0; $i < count($multi); $i++) { 
-                                    echo "<option value='$multi[$i]'>$multi[$i]</option>";
-                                }
-                            ?>
-                        </select>
-                    </span>
-                    .</span>
-            </div>
-            <div>
-                <span>36 <span class="rojo">÷</span> 9 <span class="rojo">=</span>
-                    <span>
-                        <select class="slc seleccion" alt="4">
-                            <option value="" disabled selected></option>
-                            <?php
-                                for ($i=0; $i < count($numeros); $i++) { 
-                                    echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
-                                }
-                            ?>
-                        </select>
-                    </span> porque
-                    <span class="largo">
-                        <select class="slc seleccion" alt="9 x 4 = 36">
-                            <option value="" disabled selected></option>
-                            <?php
-                                for ($i=0; $i < count($multi); $i++) { 
-                                    echo "<option value='$multi[$i]'>$multi[$i]</option>";
-                                }
-                            ?>
-                        </select>
-                    </span>
-                    .</span>
+                </span>
             </div>
         </div>
     </div>
@@ -133,14 +85,14 @@
 $("#next").attr("onclick", "<?=$next?>");
 </script>
 <script type="text/javascript">
-function result_tipo_2_5_6() {
+function result_tipo_2_5_8() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
     r = 0;
     seleccion_lista();
-    if (r == 8) {
+    if (r == 3) {
         console.log(r)
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
