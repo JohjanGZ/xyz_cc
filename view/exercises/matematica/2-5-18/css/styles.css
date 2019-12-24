@@ -1,0 +1,100 @@
+.container-two {
+  margin: 0 auto;
+  max-width: 1300px;
+  width: 80%;
+  height: 70%;
+  display: grid;
+  grid-template-columns: 8fr;
+  justify-items: center;
+  align-items: center;
+}
+.image{
+  width: 800px;
+  height: 480px;
+  text-align: center;
+  background-image: url("../img/1.png");
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.box{
+  position: absolute;
+}
+.box1{
+  top: 140px;
+  right: 30px;
+}
+.box2{
+  top: 205px;
+  right: 30px;
+}
+.box3{
+  top: 265px;
+  right: 30px;
+}
+.box4{
+  top: 330px;
+  right: 30px;
+}
+
+
+
+
+
+
+::-webkit-scrollbar {
+  -webkit-border-radius: 5px;
+  background-color: transparent;
+  border-radius: 5px;
+  height: 10px;
+  -webkit-transition: background-color 0.2s linear;
+  -o-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+  width: 0px;
+}
+input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
+  background-color: #ffffff !important;
+  border-radius: 8px !important;
+}
+/* Select */
+.select-wrapper input.select-dropdown {
+  border: 1px solid rgb(194, 194, 194);
+  width: 80px;
+  margin: 0;
+  font-weight: 600;
+  font-size: 20px;
+}
+.select-wrapper .caret{
+  display: none;
+}
+.select-wrapper input.select-dropdown:focus {
+  border-bottom: 1px solid rgb(212, 212, 212);
+}
+
+.select-wrapper ul {
+  height: auto;
+}
+
+.select-wrapper {
+  position: relative;
+  margin-left: 0.5vh;
+  margin-right: 0.5vh;
+}
+
+.dropdown-content {
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  display: none;
+  min-width: 20px;
+  overflow-y: auto;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  width: 10px;
+  border-radius: 12px;
+}
