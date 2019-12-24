@@ -4,49 +4,69 @@ function Page_1() {
     inicio();
     count = 3;
 }
+
 function Page_2() {
     start_2();
     inicio();
     count = 3;
 }
+
 function Page_3() {
     start_3();
     inicio();
     count = 3;
 }
+
 function Page_4() {
     start_4();
     inicio();
     count = 3;
 }
+
 function Page_5() {
     start_5();
     inicio();
     count = 3;
 }
+
 function Page_6() {
     start_6();
     inicio();
     count = 3;
 }
+
 function Page_7() {
     start_7();
     inicio();
     count = 3;
 }
+
 function Page_8() {
     start_8();
     inicio();
     count = 3;
 }
+
 function Page_9() {
     start_9();
     inicio();
     count = 3;
 }
+
+function Page_10() {
+    start_10();
+    inicio();
+    count = 3;
+}
+
+function Page_11() {
+    start_11();
+    inicio();
+    count = 3;
+}
 var cant = 18;
 var cal = cant / cant;
-console.log(cant);
+// console.log(cant);
 var ruta = "../../../../exercises/matematica/";
 ////////////// 2do 
 // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
@@ -62,6 +82,7 @@ function start_1() {
     });
     return false;
 };
+
 function start_2() {
     $("#ventana").load(ruta + '3-3-2/index.php', {
         next: "Page_3()",
@@ -74,6 +95,7 @@ function start_2() {
     });
     return false;
 };
+
 function start_3() {
     $("#ventana").load(ruta + '3-3-3/index.php', {
         next: "Page_4()",
@@ -86,6 +108,7 @@ function start_3() {
     });
     return false;
 };
+
 function start_4() {
     $("#ventana").load(ruta + '3-3-4/index.php', {
         next: "Page_5()",
@@ -98,6 +121,7 @@ function start_4() {
     });
     return false;
 };
+
 function start_5() {
     $("#ventana").load(ruta + '3-3-5/index.php', {
         next: "Page_6()",
@@ -110,6 +134,7 @@ function start_5() {
     });
     return false;
 };
+
 function start_6() {
     $("#ventana").load(ruta + '3-3-6/index.php', {
         next: "Page_7()",
@@ -122,6 +147,7 @@ function start_6() {
     });
     return false;
 };
+
 function start_7() {
     $("#ventana").load(ruta + '3-3-7/index.php', {
         next: "Page_8()",
@@ -134,6 +160,7 @@ function start_7() {
     });
     return false;
 };
+
 function start_8() {
     $("#ventana").load(ruta + '3-3-8/index.php', {
         next: "Page_9()",
@@ -146,6 +173,7 @@ function start_8() {
     });
     return false;
 };
+
 function start_9() {
     $("#ventana").load(ruta + '3-3-9/index.php', {
         next: "Page_10()",
@@ -158,6 +186,33 @@ function start_9() {
     });
     return false;
 };
+
+function start_10() {
+    $("#ventana").load(ruta + '3-3-10/index.php', {
+        next: "Page_11()",
+        procesar: "result_tipo_3_3_10()",
+        titulo: "<center><h5><span>Resuelve</span> las operaciones y <span>aplica</span> la propiedad asociativa.</h5></center>",
+        restaurar: "start_10()",
+        dir: ruta,
+        cod: "3-3-10",
+        nota: cal
+    });
+    return false;
+};
+
+function start_11() {
+    $("#ventana").load(ruta + '3-3-11/index.php', {
+        next: "Page_12()",
+        procesar: "result_tipo_3_3_11()",
+        titulo: "<center><h5><span>Aplica</span> la propiedad conmutativa en las siguientes operaciones:</h5></center>",
+        restaurar: "start_11()",
+        dir: ruta,
+        cod: "3-3-11",
+        nota: cal
+    });
+    return false;
+};
+
 function resultado() {
     $("#ventana").load('../../../../exercises/resultado/resultado.php');
     return false;
