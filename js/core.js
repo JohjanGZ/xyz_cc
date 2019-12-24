@@ -4,13 +4,13 @@
 //TODO: ***********************************************************************************************************
 
 //TODO: Click aleatorio
-$("html").click(function () {
+$("html").click(function() {
     document.getElementById('click').play();
 });
 //TODO: Fin  Click aleatorio
 
 //TODO: Sonido y hover
-$(".pieza").hover(function () {
+$(".pieza").hover(function() {
     $(".pieza").css({ "box-shadow": "none" });
     $(this).css({ "box-shadow": "2px 3px 8px 0px grey" });
     document.getElementById('hover').play();
@@ -123,13 +123,13 @@ function incorrecto() {
     }
     return false;
 }
-$(".modal-close").click(function () {
+$(".modal-close").click(function() {
     $('#incorrecto').css("display", "none");
     $('#correcto').css("display", "none")
 });
 //TODO:  Fin correcto e incorrecto 
 
-$(document).ready(function () {
+$(document).ready(function() {
     //TODO: Menu lateral
     $('.sidenav').sidenav();
     //TODO: tooltip comentarios 
@@ -158,16 +158,16 @@ function arrastre() {
     var elementid;
     $(".pieza").draggable({
         revert: "invalid",
-        start: function () {
+        start: function() {
             element = $(this).attr("alt");
             elementid = $(this);
             
         }
     });
     $(".contenedor").droppable({
-        drop: function (event, ui) {
+        drop: function(event, ui) {
             element2 = $(this).attr("alt");
-            elementid.css({ "background": "transparent", "border": "none" });
+            elementid.css({ "background": "transparent", "border-color": "transparent" });
             if (element == element2) {
                 r++;console.log(r);
             }
@@ -179,7 +179,7 @@ function arrastre() {
 //? Funcion de seleccion -> clases a usar .seleccion
 //? Declarar siempre la variable r -> var r = 0;
 function seleccion_click() {
-    $('.seleccion').click(function () {
+    $('.seleccion').click(function() {
         $(this).css({
             "border": "solid",
             "border-color": "#37D3F7",
@@ -202,7 +202,7 @@ function seleccion_click() {
 //? Funcion de seleccion -> clases a usar .seleccion, esta funcion sera agregada en el result del index
 //? Declarar siempre la variable r -> r = 0;
 function seleccion_lista() {
-    $(".seleccion").each(function () {
+    $(".seleccion").each(function() {
         if ($(this).attr("alt") == $(this).val()) {
             r++;
         }
@@ -225,11 +225,11 @@ function listar_random($class) {
 //? Declarar siempre la variable r -> var r = 0;
 function ordenar_lista() {
     $("#sortable").sortable({
-        update: function (event, ui) {
-            var itemO = $('#sortable .lista-item').map(function () {
+        update: function(event, ui) {
+            var itemO = $('#sortable .lista-item').map(function() {
                 return $.trim($(this).attr('id'));
             }).get();
-            var itemD = $('#sortable .lista-item').map(function () {
+            var itemD = $('#sortable .lista-item').map(function() {
                 return $.trim($(this).attr('id'));
             }).get();
             itemD.sort();
@@ -265,13 +265,13 @@ function numeros() {
 //? Declarar siempre la variable r -> var r = 0;
 function crucigrama() {
     var letra = "";
-    $('.letras').click(function () {
+    $('.letras').click(function() {
         letra = $(this).text();
         // Estilos a span
         $('.letras').css({ "transform": "scale(1)", "border": "2px solid #37D3F7", "box-shadow": "none", "background": "transparent" });
         $(this).css({ "border": "solid #37D3F7", "box-shadow": "0 0 4px #00000057", "background": "#B6ECFF" });
     });
-    $('.palabra').click(function () {
+    $('.palabra').click(function() {
         $(this).css({ "border": "solid #37D3F7", "background": "#B6ECFF" });
         if ($(this).attr("alt") == letra) {
             if ($(this).text() == "") {
@@ -298,13 +298,13 @@ function crucigrama() {
 //? Declarar siempre la variable r -> var r = 0;
 function operaciones() {
     var letra = "";
-    $('.letras').click(function () {
+    $('.letras').click(function() {
         letra = $(this).text();
         // Estilos a span
         $('.letras').css({ "transform": "scale(1)", "border": "2px solid #37D3F7", "box-shadow": "none", "background": "transparent" });
         $(this).css({ "border": "solid #37D3F7", "box-shadow": "0 0 4px #00000057", "background": "#B6ECFF" });
     });
-    $('.total').click(function () {
+    $('.total').click(function() {
         $(this).css({ "border": "solid #37D3F7", "background": "#B6ECFF" });
         if ($(this).attr("alt") == letra) {
             if ($(this).text() == "") {
@@ -335,7 +335,7 @@ function colorear() {
     var color;
     var letra;
     var comparacion;
-    $(".colores").click(function (e) {
+    $(".colores").click(function(e) {
         e.preventDefault();
         color = $(this).attr("value");
         letra = $(this).attr("alt");
@@ -350,7 +350,7 @@ function colorear() {
             "box-shadow": "0 0 4px #00000057"
         });
     });
-    $(".lista").click(function (e) {
+    $(".lista").click(function(e) {
         e.preventDefault();
         $(this).css({
             "background-color": color

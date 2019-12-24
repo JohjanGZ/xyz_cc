@@ -109,6 +109,20 @@ td span.select select {
     font-size: 1.4rem;
 }
 
+
+/********************************************/
+
+table tr td span.respuesta {
+    display: inline-block;
+    width: 160px;
+    height: 60px;
+    border: 3px solid silver;
+    border-radius: 12px;
+}
+
+
+/*****************************************/
+
 @media(max-height: 640px) {
     .row {
         display: flex;
