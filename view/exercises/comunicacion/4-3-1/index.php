@@ -38,7 +38,7 @@
                 
                 <div class="oracion">
                     <h5>
-                        <span>•</span> ¿Qué hacían cada mañana el ratón, el vendao y la paloma??
+                        <span>•</span> ¿Qué hacían cada mañana el ratón, el vendao y la paloma?
                     </h5>
                     <div class="contenedor-check">
                         

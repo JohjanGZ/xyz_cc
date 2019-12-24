@@ -90,8 +90,21 @@ span.palabra:hover {
     border-color: #37D3F7;
 }
 
+td span.select {
+    display: inline-flex;
+    width: 210px;
+}
+
+td span.select select {
+    color: rgb(47, 196, 230);
+    font-size: 1.4rem;
+}
+
 @media(max-height: 640px) {
     .contenedor-ejercicios {
         width: 80%;
+    }
+    table td {
+        padding: 9px 5px;
     }
 }
