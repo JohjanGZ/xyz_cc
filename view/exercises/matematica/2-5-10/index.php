@@ -6,14 +6,15 @@
 </head>
 <?=$titulo?>
 <?php
-    $numeros = array('1','3','6','2','12','4','15','18');
+    $numeros = array('1','2','3','5','7','9','12','4','15','18');
 ?>
 <div class="container-two">
     <div class="content">
         <div class="fila">
             <div class="image">
-                <img src="<?= $dir ?>/img/1.png" alt="">
+                <img src="<?= $dir ?>/img/1.png" class="materialboxed" alt="">
             </div>
+            <div class="problemas">
             <div class="problema">
                 <span>
                             2
@@ -36,11 +37,31 @@
             </div>
             <div class="problema">
                 <span>
+                    7
+                </span>
+                <span>x</span>
+                <span>
+                    <select class="slc seleccion" alt="2">
+                        <option value="" disabled selected></option>
+                        <?php
+                            for ($i=0; $i < count($numeros); $i++) { 
+                                echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                            }
+                        ?>
+                    </select>
+                </span>
+                <span>=</span>
+                <span>
+                    14
+                </span>
+            </div>
+            <div class="problema">
+                <span>
                     14
                 </span>
                 <span>÷</span>
                 <span>
-                    2
+                   2
                 </span>
                 <span>=</span>
                 <span>
@@ -54,14 +75,17 @@
                     </select>
                 </span>
             </div>
-        </div>
-        <div class="fila">
-            <div class="image">
-                <img src="<?= $dir ?>/img/2.png" alt="">
-            </div>
             <div class="problema">
                 <span>
-                    <select class="slc seleccion" alt="3">
+                    14
+                </span>
+                <span>x</span>
+                <span>
+                    7
+                </span>
+                <span>=</span>
+                <span>
+                    <select class="slc seleccion" alt="2">
                         <option value="" disabled selected></option>
                         <?php
                             for ($i=0; $i < count($numeros); $i++) { 
@@ -69,6 +93,45 @@
                             }
                         ?>
                     </select>
+                </span>
+            </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="image">
+                <img src="<?= $dir ?>/img/2.png" class="materialboxed" alt="">
+            </div>
+            <div class="problemas">
+            <div class="problema">
+                <span>
+                            3
+                </span>
+                <span>x</span>
+                <span>
+                    <select class="slc seleccion" alt="5">
+                        <option value="" disabled selected></option>
+                        <?php
+                            for ($i=0; $i < count($numeros); $i++) { 
+                                echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                            }
+                        ?>
+                    </select>
+                </span>
+                <span>=</span>
+                <span>
+                    <select class="slc seleccion" alt="15">
+                        <option value="" disabled selected></option>
+                        <?php
+                            for ($i=0; $i < count($numeros); $i++) { 
+                                echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                            }
+                        ?>
+                    </select>
+                </span>
+            </div>
+            <div class="problema">
+                <span>
+                            5
                 </span>
                 <span>x</span>
                 <span>
@@ -83,7 +146,7 @@
                 </span>
                 <span>=</span>
                 <span>
-                    <select class="slc seleccion" alt="1">
+                    <select class="slc seleccion" alt="15">
                         <option value="" disabled selected></option>
                         <?php
                             for ($i=0; $i < count($numeros); $i++) { 
@@ -93,7 +156,61 @@
                     </select>
                 </span>
             </div>
-            
+            <div class="problema">
+                <span>
+                    <select class="slc seleccion" alt="15">
+                        <option value="" disabled selected></option>
+                        <?php
+                            for ($i=0; $i < count($numeros); $i++) { 
+                                echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                            }
+                        ?>
+                    </select>
+                </span>
+                <span>÷</span>
+                <span>
+                    3
+                </span>
+                <span>=</span>
+                <span>
+                    <select class="slc seleccion" alt="5">
+                        <option value="" disabled selected></option>
+                        <?php
+                            for ($i=0; $i < count($numeros); $i++) { 
+                                echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                            }
+                        ?>
+                    </select>
+                </span>
+            </div>
+            <div class="problema">
+                <span>
+                    <select class="slc seleccion" alt="15">
+                        <option value="" disabled selected></option>
+                        <?php
+                            for ($i=0; $i < count($numeros); $i++) { 
+                                echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                            }
+                        ?>
+                    </select>
+                </span>
+                <span>÷</span>
+                <span>
+                    5
+                </span>
+                <span>=</span>
+                <span>
+                    <select class="slc seleccion" alt="3">
+                        <option value="" disabled selected></option>
+                        <?php
+                            for ($i=0; $i < count($numeros); $i++) { 
+                                echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                            }
+                        ?>
+                    </select>
+                </span>
+            </div>
+            </div>
         </div>
     </div>
 </div>
@@ -127,7 +244,7 @@ function result_tipo_2_5_10() {
     r = 0;
     seleccion_lista();
 
-    if (r == 6) {
+    if (r == 12) {
         console.log(r);
         localStorage.setItem("Nota2-4-8", "2");
         localStorage.setItem("Time2-4-8", tiempo);

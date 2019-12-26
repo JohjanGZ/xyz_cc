@@ -37,13 +37,13 @@ var ruta = "../../../../exercises/matematica/";
 // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
 
 function start_21() {
-    $("#ventana").load(ruta + '2-4-21/index.php', {
+    $("#ventana").load(ruta + '2-5-21/index.php', {
         next: "Page_22()",
-        procesar: "result_tipo_2_4_21()",
-        titulo: "<center><h5><span>Resuelve</span> las multiplicaciones.</h5></center>",
+        procesar: "result_tipo_2_5_21()",
+        titulo: "<center><h5><span>Resuelve</span>.</h5></center>",
         restaurar: "start_21()",
         dir: ruta,
-        cod: "2-4-21",
+        cod: "2-5-21",
         nota: cal
     });
     return false;
