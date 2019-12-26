@@ -157,7 +157,7 @@ function start_8() {
     $("#ventana").load(ruta + '2-6-8/index.php', {
         next: "Page_9()",
         procesar: "result_tipo_2_6_8()",
-        titulo: "<center><h5><span>Observa</span> y <span>completa</span> siguiendo el ejemplo.</h5></center>",
+        titulo: "<center><h5><span>Selecciona</span> las cantidades cuya suma indiquen:</h5></center>",
         restaurar: "start_8()",
         dir: ruta,
         cod: "2-6-8",
@@ -170,7 +170,7 @@ function start_9() {
     $("#ventana").load(ruta + '2-6-9/index.php', {
         next: "resultado()",
         procesar: "result_tipo_2_6_9()",
-        titulo: "<center><h5><span>Completa</span> escribiendo el dividendo, el divisor y el cociente.</h5></center>",
+        titulo: "<center><h5><span>Relaciona</span> los pesos iguales.</h5></center>",
         restaurar: "start_9()",
         dir: ruta,
         cod: "2-6-9",
