@@ -64,6 +64,12 @@ function Page_11() {
     inicio();
     count = 3;
 }
+
+function Page_12() {
+    start_12();
+    inicio();
+    count = 3;
+}
 var cant = 18;
 var cal = cant / cant;
 // console.log(cant);
@@ -212,7 +218,18 @@ function start_11() {
     });
     return false;
 };
-
+function start_12() {
+    $("#ventana").load(ruta + '3-3-12/index.php', {
+        next: "Page_13()",
+        procesar: "result_tipo_3_3_12()",
+        titulo: "<center><h5><span>Aplica</span> la propiedad conmutativa en las siguientes operaciones:</h5></center>",
+        restaurar: "start_12()",
+        dir: ruta,
+        cod: "3-3-12",
+        nota: cal
+    });
+    return false;
+};
 function resultado() {
     $("#ventana").load('../../../../exercises/resultado/resultado.php');
     return false;
