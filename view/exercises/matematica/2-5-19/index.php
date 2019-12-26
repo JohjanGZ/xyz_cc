@@ -23,7 +23,7 @@
                 <h6>Meses</h6>
             </div>
             <div class="grid-item he">
-                <h6>Números de libros</h6>
+                <h6>N.° de días de lluvia</h6>
             </div>
             <div class="grid-item">
                 Junio
