@@ -204,7 +204,7 @@ function start_11() {
     $("#ventana").load(ruta + '2-5-11/index.php', {
         next: "resultado()",
         procesar: "result_tipo_2_5_11()",
-        titulo: "<center><h5><span>Completa</span> la tabla del 3.</h5></center>",
+        titulo: "<center><h5><span>Completa</span> el cuadro.</h5></center>",
         restaurar: "start_11()",
         dir: ruta,
         cod: "2-5-11",

@@ -1,21 +1,26 @@
 <script type="text/javascript">
-function Page_9() {
-    start_9();
+function Page_16() {
+    start_16();
     inicio();
     count = 3;
 }
-function Page_10() {
-    start_10();
+function Page_17() {
+    start_17();
     inicio();
     count = 3;
 }
-function Page_11() {
-    start_11();
+function Page_18() {
+    start_18();
     inicio();
     count = 3;
 }
-function Page_12() {
-    start_12();
+function Page_19() {
+    start_19();
+    inicio();
+    count = 3;
+}
+function Page_20() {
+    start_20();
     inicio();
     count = 3;
 }
@@ -25,50 +30,62 @@ console.log(cant);
 var ruta = "../../../../exercises/matematica/";
 ////////////// 2do 
 // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
-function start_9() {
-    $("#ventana").load(ruta + '3-3-9/index.php', {
-        next: "Page_10()",
-        procesar: "result_tipo_3_3_9()",
-        titulo: "<center><h5><span class='ftitulo'>Completa</span> el cuadro.</h5></center>",
-        restaurar: "start_9()",
+function start_16() {
+    $("#ventana").load(ruta + '3-3-16/index.php', {
+        next: "Page_17()",
+        procesar: "result_tipo_3_3_16()",
+        titulo: "<center><h5><span>1. Observa</span> las figuras 1 y 2 en el plano, luego <span>escribe</span> los pares ordenados de cada figura y si se redujo a la mitad, tercera o cuarta parte. </h5></center>",
+        restaurar: "start_16()",
         dir: ruta,
-        cod: "3-3-9",
+        cod: "3-3-16",
         nota: cal
     });
     return false;
 };
-function start_10() {
-    $("#ventana").load(ruta + '3-3-10/index.php', {
-        next: "Page_11()",
-        procesar: "result_tipo_3_3_10()",
-        titulo: "<center><h5><span class='ftitulo'>Selecciona</span> el avioncito que traslada a 42 pasajeros.</h5></center>",
-        restaurar: "start_10()",
+function start_17() {
+    $("#ventana").load(ruta + '3-3-17/index.php', {
+        next: "Page_18()",
+        procesar: "result_tipo_3_3_17()",
+        titulo: "<center><h5><span>1. Observa</span> las figuras 1 y 2 en el plano, luego <span>escribe</span> los pares ordenados de cada figura y si se redujo a la mitad, tercera o cuarta parte. </h5></center>",
+        restaurar: "start_17()",
         dir: ruta,
-        cod: "3-3-10",
+        cod: "3-3-17",
         nota: cal
     });
     return false;
 };
-function start_11() {
-    $("#ventana").load(ruta + '3-3-11/index.php', {
-        next: "Page_12()",
-        procesar: "result_tipo_3_3_11()",
+function start_18() {
+    $("#ventana").load(ruta + '3-3-18/index.php', {
+        next: "Page_19()",
+        procesar: "result_tipo_3_3_18()",
         titulo: "<center><h5><span class='ftitulo'>Selecciona</span> el trencito que cuesta 37 soles.</h5></center>",
-        restaurar: "start_11()",
+        restaurar: "start_18()",
         dir: ruta,
-        cod: "3-3-11",
+        cod: "3-3-18",
         nota: cal
     });
     return false;
 };
-function start_12() {
-    $("#ventana").load(ruta + '3-3-12/index.php', {
-        next: "Page_13()",
-        procesar: "result_tipo_3_3_12()",
+function start_19() {
+    $("#ventana").load(ruta + '3-3-19/index.php', {
+        next: "Page_20()",
+        procesar: "result_tipo_3_3_19()",
         titulo: "<center><h5><span class='ftitulo'>Escribe</span> el número que ha sido representado en el ábaco.</h5></center>",
-        restaurar: "start_12()",
+        restaurar: "start_19()",
         dir: ruta,
-        cod: "3-3-12",
+        cod: "3-3-19",
+        nota: cal
+    });
+    return false;
+};
+function start_20() {
+    $("#ventana").load(ruta + '3-3-20/index.php', {
+        next: "resultado()",
+        procesar: "result_tipo_3_3_20()",
+        titulo: "<center><h5><span class='ftitulo'>Escribe</span> el número que ha sido representado en el ábaco.</h5></center>",
+        restaurar: "start_20()",
+        dir: ruta,
+        cod: "3-3-20",
         nota: cal
     });
     return false;
