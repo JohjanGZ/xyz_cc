@@ -1,28 +1,18 @@
 <script type="text/javascript">
-function Page_13() {
-    start_13();
+function Page_20() {
+    start_20();
     inicio();
     count = 3;
 }
 
-function Page_14() {
-    start_14();
+function Page_21() {
+    start_21();
     inicio();
     count = 3;
 }
 
-function Page_15() {
-    start_15();
-    inicio();
-    count = 3;
-}
-function Page_16() {
-    start_16();
-    inicio();
-    count = 3;
-}
-function Page_17() {
-    start_17();
+function Page_22() {
+    start_22();
     inicio();
     count = 3;
 }
@@ -32,11 +22,13 @@ function Page_23() {
     inicio();
     count = 3;
 }
+
 function Page_24() {
     start_24();
     inicio();
     count = 3;
 }
+
 function Page_25() {
     start_25();
     inicio();
@@ -44,67 +36,43 @@ function Page_25() {
 }
 var cant = 18;
 var cal = cant / cant;
-console.log(cant);
+// console.log(cant);
 var ruta = "../../../../exercises/matematica/";
 ////////////// 2do 
-function start_13() {
-    $("#ventana").load(ruta + '3-3-13/index.php', {
-        next: "Page_14()",
-        procesar: "result_tipo_3_3_13()",
-        titulo: "<center><h5><span class='ftitulo'>Escribe</span> el número que corresponde a cada conjunto y luego compara las cantidades utilizando los signos <, > o =.</h5></center>",
-        restaurar: "start_13()",
+function start_20() {
+    $("#ventana").load(ruta + '3-3-20/index.php', {
+        next: "Page_21()",
+        procesar: "result_tipo_3_3_20()",
+        titulo: "<center><h5><span>Observa</span> el gráfico, <span>completa</span> el cuadro  y <span>responde</span> las siguientes preguntas:</h5></center>",
+        restaurar: "start_20()",
         dir: ruta,
-        cod: "3-3-13",
+        cod: "3-3-20",
         nota: cal
     });
     return false;
 };
 
-function start_14() {
-    $("#ventana").load(ruta + '3-3-14/index.php', {
-        next: "Page_15()",
-        procesar: "result_tipo_3_3_14()",
-        titulo: "<center><h5><span class='ftitulo'>Escribe</span> el número que corresponde a cada conjunto y luego compara las cantidades utilizando los signos <, > o =.</h5></center>",
-        restaurar: "start_14()",
+function start_21() {
+    $("#ventana").load(ruta + '3-3-21/index.php', {
+        next: "Page_22()",
+        procesar: "result_tipo_3_3_21()",
+        titulo: "<center><h5><span>Observa</span> el pictograma anterior y <span>responde</span> las preguntas.</h5></center>",
+        restaurar: "start_21()",
         dir: ruta,
-        cod: "3-3-14",
+        cod: "3-3-21",
         nota: cal
     });
     return false;
 };
 
-function start_15() {
-    $("#ventana").load(ruta + '3-3-15/index.php', {
-        next: "Page_16()",
-        procesar: "result_tipo_3_3_15()",
-        titulo: "<center><h5><span class='ftitulo'>Escribe</span> el número que corresponde a cada conjunto y luego compara las cantidades utilizando los signos <, > o =.</h5></center>",
-        restaurar: "start_15()",
-        dir: ruta,
-        cod: "3-3-15",
-        nota: cal
-    });
-    return false;
-};
-function start_16() {
-    $("#ventana").load(ruta + '3-3-16/index.php', {
-        next: "Page_17()",
-        procesar: "result_tipo_3_3_16()",
-        titulo: "<center><h5><span class='ftitulo'>Completa</span> los espacios en blanco utilizando los signos <, > o =.</h5></center>", 
-        restaurar: "start_16()",
-        dir: ruta,
-        cod: "3-3-16",
-        nota: cal
-    });
-    return false;
-};
-function start_17() {
-    $("#ventana").load(ruta + '3-3-17/index.php', {
+function start_22() {
+    $("#ventana").load(ruta + '3-3-22/index.php', {
         next: "Page_23()",
-        procesar: "result_tipo_3_3_17()",
-        titulo: "<center><h5><span class='ftitulo'>Ordena</span> los siguientes números de mayor a menor.</h5></center>", 
-        restaurar: "start_17()",
+        procesar: "result_tipo_3_3_22()",
+        titulo: "<center><h5><span>Observa</span> el pictograma anterior y <span>responde</span> las preguntas.</h5></center>",
+        restaurar: "start_22()",
         dir: ruta,
-        cod: "3-3-17",
+        cod: "3-3-22",
         nota: cal
     });
     return false;
@@ -114,7 +82,7 @@ function start_23() {
     $("#ventana").load(ruta + '3-3-23/index.php', {
         next: "Page_24()",
         procesar: "result_tipo_3_3_23()",
-        titulo: "<center><h5><span class='ftitulo'>Resuelve</span> las siguientes adiciones realizando los respectivos canjes.</h5></center>",
+        titulo: "<center><h5><span>Observa</span> el pictograma que representa los kilogramos de frutas consumidas a la hora del almuerzo en los comedores de los distintos colegios. Luego <span>selecciona</span> las respuestas.</h5></center>",
         restaurar: "start_23()",
         dir: ruta,
         cod: "3-3-23",
@@ -122,11 +90,12 @@ function start_23() {
     });
     return false;
 };
+
 function start_24() {
     $("#ventana").load(ruta + '3-3-24/index.php', {
         next: "Page_25()",
         procesar: "result_tipo_3_3_24()",
-        titulo: "<center><h5><span class='ftitulo'>Resuelve</span> las siguientes adiciones realizando los respectivos canjes.</h5></center>",
+        titulo: "<center><h5><span>Observa</span> el pictograma que representa los kilogramos de frutas consumidas a la hora del almuerzo en los comedores de los distintos colegios. Luego <span>selecciona</span> las respuestas.</h5></center>",
         restaurar: "start_24()",
         dir: ruta,
         cod: "3-3-24",
@@ -134,11 +103,12 @@ function start_24() {
     });
     return false;
 };
+
 function start_25() {
     $("#ventana").load(ruta + '3-3-25/index.php', {
         next: "resultado()",
         procesar: "result_tipo_3_3_25()",
-        titulo: "<center><h5><span class='ftitulo'>Relaciona</span> cada adicción con su resultado.</h5></center>",
+        titulo: "<center><h5><span>Observa</span> el pictograma que representa los kilogramos de frutas consumidas a la hora del almuerzo en los comedores de los distintos colegios. Luego <span>selecciona</span> las respuestas.</h5></center>",
         restaurar: "start_25()",
         dir: ruta,
         cod: "3-3-25",
@@ -146,6 +116,7 @@ function start_25() {
     });
     return false;
 };
+
 function resultado() {
     $("#ventana").load('../../../../exercises/resultado/resultado.php');
     return false;
