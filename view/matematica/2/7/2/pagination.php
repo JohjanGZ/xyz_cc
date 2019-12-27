@@ -37,19 +37,6 @@ function Page_16() {
     count = 3;
 }
 
-function Page_17() {
-    start_17();
-    inicio();
-    count = 3;
-}
-
-function Page_18() {
-    start_18();
-    inicio();
-    count = 3;
-}
-
-
 var cant = 18;
 var cal = cant/cant;
 console.log(cant);
@@ -59,116 +46,91 @@ var ruta = "../../../../exercises/matematica/";
 
 
 function start_10() {
-    $("#ventana").load(ruta + '2-6-10/index.php', {
+    $("#ventana").load(ruta + '2-7-10/index.php', {
         next: "Page_11()",
-        procesar: "result_tipo_2_6_10()",
-        titulo: "<center><h5><span>Halla</span> el perímetro de la puerta.</h5></center>",
+        procesar: "result_tipo_2_7_10()",
+        titulo: "<center><h5>¿Cuál de estos objetos es un círculo? <span>Selecciona</span> la alternativa correcta.</h5></center>",
         restaurar: "start_10()",
         dir: ruta,
-        cod: "2-6-10",
+        cod: "2-7-10",
         nota: cal
     });
     return false;
 };
 function start_11() {
-    $("#ventana").load(ruta + '2-6-11/index.php', {
+    $("#ventana").load(ruta + '2-7-11/index.php', {
         next: "Page_12()",
-        procesar: "result_tipo_2_6_11()",
-        titulo: "<center><h5><span>Halla</span> el perímetro de la casa.</h5></center>",
+        procesar: "result_tipo_2_7_11()",
+        titulo: "<center><h5>¿Cuál de estos objetos es una circunferencia? <span>Selecciona</span> la alternativa correcta.</h5></center>",
         restaurar: "start_11()",
         dir: ruta,
-        cod: "2-6-11",
+        cod: "2-7-11",
         nota: cal
     });
     return false;
 };
 function start_12() {
-    $("#ventana").load(ruta + '2-6-12/index.php', {
+    $("#ventana").load(ruta + '2-7-12/index.php', {
         next: "Page_13()",
-        procesar: "result_tipo_2_6_12()",
-        titulo: "<center><h5><span>Halla</span> el perímetro de las figuras, teniendo en cuenta que el lado de cada cuadradito mide 2 cm.</h5></center>",
+        procesar: "result_tipo_2_7_12()",
+        titulo: "<center><h5><span>Observa</span>, y <span>selecciona</span> las alternativas pertenecientes a las figuras ovaladas.</h5></center>",
         restaurar: "start_12()",
         dir: ruta,
-        cod: "2-6-12",
+        cod: "2-7-12",
         nota: cal
     });
     return false;
 };
 function start_13() {
-    $("#ventana").load(ruta + '2-6-13/index.php', {
+    $("#ventana").load(ruta + '2-7-13/index.php', {
         next: "Page_14()",
-        procesar: "result_tipo_2_6_13()",
-        titulo: "<center><h5><span>Halla</span> el área de las figuras, teniendo en cuenta que el área de cada cuadradito es igual a 1 cm2.</center>",
+        procesar: "result_tipo_2_7_13()",
+        titulo: "<center><h5><span>Selecciona</span> la respuesta correcta en cada caso.</h5></center>",
         restaurar: "start_13()",
         dir: ruta,
-        cod: "2-6-13",
+        cod: "2-7-13",
         nota: cal
     });
     return false;
 };
 function start_14() {
-    $("#ventana").load(ruta + '2-6-14/index.php', {
+    $("#ventana").load(ruta + '2-7-14/index.php', {
         next: "Page_15()",
-        procesar: "result_tipo_2_6_14()",
-        titulo: "<center><h5><span>Convierte</span> a centímetros las siguientes medidas:</center>",
+        procesar: "result_tipo_2_7_14()",
+        titulo: "<center><h5><span>Reconoce</span> y <span>relaciona</span> según corresponda.</h5></center>",
         restaurar: "start_14()",
         dir: ruta,
-        cod: "2-6-14",
+        cod: "2-7-14",
         nota: cal
     });
     return false;
 };
 function start_15() {
-    $("#ventana").load(ruta + '2-6-15/index.php', {
+    $("#ventana").load(ruta + '2-7-15/index.php', {
         next: "Page_16()",
-        procesar: "result_tipo_2_6_15()",
-        titulo: "<center><h5>¿Cuánto crees que miden los siguientes objetos? <span>Selecciona</span> en el recuadro correspondiente.</h5></center>",
+        procesar: "result_tipo_2_7_15()",
+        titulo: "<center><h5><span>Selecciona</span> la alternativa correcta de las figuras que son círculos.</h5></center>",
         restaurar: "start_15()",
         dir: ruta,
-        cod: "2-6-15",
+        cod: "2-7-15",
         nota: cal
     });
     return false;
 };
 
 function start_16() {
-    $("#ventana").load(ruta + '2-6-16/index.php', {
-        next: "Page_17()",
-        procesar: "result_tipo_2_6_16()",
-        titulo: "<center><h5><span>Escribe</span> dentro de cada recuadro el número que relaciona a la medida con la figura.</h5></center>",
+    $("#ventana").load(ruta + '2-7-16/index.php', {
+        next: "resultado()",
+        procesar: "result_tipo_2_7_16()",
+        titulo: "<center><h5><span>Observa</span> y <span>cuenta</span> la cantidad de círculos y óvalos de la siguiente figura:</h5></center>",
         restaurar: "start_16()",
         dir: ruta,
-        cod: "2-6-16",
+        cod: "2-7-16",
         nota: cal
     });
     return false;
 };
 
-function start_17() {
-    $("#ventana").load(ruta + '2-6-17/index.php', {
-        next: "Page_18()",
-        procesar: "result_tipo_2_6_17()",
-        titulo: "<center><h5><span>Escribe</span> dentro de cada recuadro el número que relaciona a la medida con la figura.</h5></center>",
-        restaurar: "start_17()",
-        dir: ruta,
-        cod: "2-6-17",
-        nota: cal
-    });
-    return false;
-};
-
-function start_18() {
-    $("#ventana").load(ruta + '2-6-18/index.php', {
-        next: "resultado()",
-        procesar: "result_tipo_2_6_18()",
-        titulo: "<center><h5>Selecciona en la tabla, la unidad de medida que utilizarías para medir las longitudes de estos dibujos:</h5></center>",
-        restaurar: "start_18()",
-        dir: ruta,
-        cod: "2-6-18",
-        nota: cal
-    });
-    return false;
-};
 
 
 function resultado() {

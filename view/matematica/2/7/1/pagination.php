@@ -66,7 +66,7 @@ function start_1() {
     $("#ventana").load(ruta + '2-7-1/index.php', {
         next: "Page_2()",
         procesar: "result_tipo_2_7_1()",
-        titulo: "<center><h5><span>Completa</span> las equivalencias en gramos o kilos según se indica.</h5></center>",
+        titulo: "<center><h5><span>Observa</span> cada reloj y <span>relaciona</span> correctamente.</h5></center>",
         restaurar: "start_1()",
         dir: ruta,
         cod: "2-7-1",
@@ -79,7 +79,7 @@ function start_2() {
     $("#ventana").load(ruta + '2-7-2/index.php', {
         next: "Page_3()",
         procesar: "result_tipo_2_7_2()",
-        titulo: "<center><h5><span>Ordena</span> estos elementos de menor a mayor peso, escribiendo en los recuadros desde el número 1 (para el menor) hasta el 5 (para el mayor).</h5></center>",
+        titulo: "<center><h5><span>Relaciona</span> los siguientes elementos:</h5></center>",
         restaurar: "start_2()",
         dir: ruta,
         cod: "2-7-2",
@@ -92,7 +92,7 @@ function start_3() {
     $("#ventana").load(ruta + '2-7-3/index.php', {
         next: "Page_4()",
         procesar: "result_tipo_2_7_3()",
-        titulo: "<center><h5><span>Selecciona</span> la respuesta correcta.</h5></center>",
+        titulo: "<center><h5><span>Observa</span> las manecillas del reloj y <span>escribe</span> la hora.</h5></center>",
         restaurar: "start_3()",
         dir: ruta,
         cod: "2-7-3",
@@ -105,7 +105,7 @@ function start_4() {
     $("#ventana").load(ruta + '2-7-4/index.php', {
         next: "Page_5()",
         procesar: "result_tipo_2_7_4()",
-        titulo: " <center><h5><span>Ordena</span> estos elementos de menor a mayor peso, escribiendo en los recuadros desde el número 1 (para el menor) hasta el 5 (para el mayor).</h5></center>",
+        titulo: " <center><h5><span>Selecciona</span> el horario correcto según la hora indicada.</h5></center>",
         restaurar: "start_4()",
         dir: ruta,
         cod: "2-7-4",
@@ -118,7 +118,7 @@ function start_5() {
     $("#ventana").load(ruta + '2-7-5/index.php', {
         next: "Page_6()",
         procesar: "result_tipo_2_7_5()",
-        titulo: "<center><h5><span>Selecciona</span> la respuesta correcta.</h5></center>",
+        titulo: "<center><h5><span>Observa</span> los relojes y <span>selecciona</span> la hora correcta.</h5></center>",
         restaurar: "start_5()",
         dir: ruta,
         cod: "2-7-5",
@@ -131,7 +131,7 @@ function start_6() {
     $("#ventana").load(ruta + '2-7-6/index.php', {
         next: "Page_7()",
         procesar: "result_tipo_2_7_6()",
-        titulo: "<center><h5><span>Selecciona</span> la respuesta correcta.</h5></center>",
+        titulo: "<center><h5><span>Relaciona</span> cada reloj con el recuadro que muestra la misma hora.</h5></center>",
         restaurar: "start_6()",
         dir: ruta,
         cod: "2-7-6",
@@ -144,7 +144,7 @@ function start_7() {
     $("#ventana").load(ruta + '2-7-7/index.php', {
         next: "Page_8()",
         procesar: "result_tipo_2_7_7()",
-        titulo: "<center><h5> <span>Selecciona</span> las cantidades cuya suma indiquen:</h5></center>",
+        titulo: "<center><h5><span>Completa</span> el cuadro.</h5></center>",
         restaurar: "start_7()",
         dir: ruta,
         cod: "2-7-7",
@@ -157,7 +157,7 @@ function start_8() {
     $("#ventana").load(ruta + '2-7-8/index.php', {
         next: "Page_9()",
         procesar: "result_tipo_2_7_8()",
-        titulo: "<center><h5><span>Selecciona</span> las cantidades cuya suma indiquen:</h5></center>",
+        titulo: "<center><h5><span>Relaciona</span> los recuadros que equivalen al mismo periodo de tiempo.</h5></center>",
         restaurar: "start_8()",
         dir: ruta,
         cod: "2-7-8",
@@ -170,7 +170,7 @@ function start_9() {
     $("#ventana").load(ruta + '2-7-9/index.php', {
         next: "resultado()",
         procesar: "result_tipo_2_7_9()",
-        titulo: "<center><h5><span>Relaciona</span> los pesos iguales.</h5></center>",
+        titulo: "<center><h5><span>Observa</span> el ejemplo y <span>escribe</span> las fechas en números.</h5></center>",
         restaurar: "start_9()",
         dir: ruta,
         cod: "2-7-9",

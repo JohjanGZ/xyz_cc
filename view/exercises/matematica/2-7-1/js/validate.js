@@ -1,44 +1,63 @@
-    var ul = document.querySelector('.fila1 .row');
-for (var i = ul.children.length; i >= 0; i--) {
-    ul.appendChild(ul.children[Math.random() * i | 0]);
-     ul.appendChild(ul.children[Math.random() * i | 0]);
-}
+var r = 0;
+var canvas = document.getElementById("micanvas");
+var ctx = canvas.getContext("2d");
 
-  var r=0;
-  $('.item img').click(function(){
-    $(this).css({"border":"solid" , "border-color":"#37D3F7","background":"#B6ECFF"});
-     var element=$(this).attr("alt");
-    
-      var select=$(this).attr("value");
-      if(select!="seleccionado"){
+$('.a').click(function(){
+      var obj1=null, obj2=null;
+      var valor= $(this).attr("value");
+        if(valor != 1){
+             var sitio1=$(this).index();
+             $('.a').css({"background-color":"white","border": "solid 1px silver", 
+              "box-shadow": "none", "z-index": "0"});
 
-      if(element=="n"){
-        r++;
-         $(this).attr("value","seleccionado");
-      }
-      else{
-        r--;
-         $(this).attr("value","seleccionado");
-      }
-      console.log(r);
-    }
-  })
+             $(this).css({"background-color":"silver","background-color": "rgba(254, 205, 84, 0.65)","border": "solid white", 
+              "box-shadow": "0 0 3px black","z-index": "1"});
 
-function result_tipo_1_0_6(){               
-                  var  min= $('#Minutos').text();
-                  var  seg= $('#Segundos').text();
-                  var  milseg= $('#Centesimas').text();
-                  var tiempo=min+":"+seg+":"+milseg;
+              obj1= $(this).attr("alt");
+              console.log(obj1);
+              ctx.beginPath();
+              switch(sitio1){
+                case 0:
+                      ctx.moveTo(170, 0); 
+                  break;
+                case 1:
+                      ctx.moveTo(500, 0);
+                  break;
+                case 2:
+                      ctx.moveTo(830, 0);
+                  break;
+        }
+       valor=1;
+     }
+      
+    $('.b').click(function(){
 
-        if(r==4)
-                {
-                    localStorage.setItem("Nota2-1-6","2");
-                    localStorage.setItem("Time2-1-6", tiempo);
-                    correcto(); 
-                }
-                else {
-                    incorrecto();
-                    localStorage.setItem("Nota2-1-6","0");
-                    localStorage.setItem("Time2-1-6", tiempo);  
-                }    
-            } 
+        var sitio2=$(this).index();
+        $('.b').css({"background-color":"white"});
+        $(this).css({"background-color":"silver","background-color": "rgba(254, 205, 84, 0.65)", "border": "solid white","box-shadow": "0 0 3px black","z-index": "1"});
+              var obj2= $(this).attr("alt");
+                console.log(obj2);
+                  switch(sitio2){
+                    case 0:
+                        ctx.lineTo(170, 100);
+                      break;
+                    case 1:
+                        ctx.lineTo(500, 100);
+                      break;
+                    case 2:
+                        ctx.lineTo(830, 100);
+                      break;
+                  }
+                ctx.strokeStyle = "orange";
+                ctx.lineWidth = 5;
+                ctx.stroke();
+               
+ 
+
+
+                    if(obj1==obj2){
+                      r++;
+                      console.log(r);
+                    }
+    });
+});
