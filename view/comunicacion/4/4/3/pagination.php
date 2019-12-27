@@ -115,7 +115,7 @@
     function start_10(){
         $("#ventana").load(ruta+'4-4-10/index.php', 
         {
-        next: "´Page_11()", 
+        next: "Page_11()", 
         procesar:"result_tipo_4_4_10()",
         titulo:"<center><h5><span>Busca</span> los 10 animales de la lista, en la sopa de letras.</h5></center>",
         restaurar:"start_10()",
