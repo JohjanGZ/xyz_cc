@@ -139,7 +139,7 @@
                         <img src="<?= $dir ?>/img/5.png" class="responsive-img">
                     </div>
                 </div>
-                <div class="abecedario"></div>
+                <div id="abecedario"></div>
             </div>
         </div>
     </div>
