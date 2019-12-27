@@ -1,65 +1,69 @@
 <script type="text/javascript">
-    function Page_lectura_3_5_5_1(){
-        start_lectura_3_5_5_1();
-        inicio();
-        count = 0;
-    }
-    function  Page_10(){
-        start_10();
+   
+   
+    function  Page_17(){
+        start_17();
         inicio();
          count = 3;
     }
-    function  Page_11(){
-        start_11();
+    function  Page_18(){
+        start_18();
         inicio();
          count = 3;
     }
-    var cant=2;
+    function  Page_19(){
+        start_19();
+        inicio();
+         count = 3;
+    }
+
+    var cant=3;
     var cal= 20/20;
     var ruta="../../../../exercises/comunicacion/";
     ////////////// 2do 
-            // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
-    function start_lectura_3_5_5_1(){
-        $("#ventana").load(ruta+'lectura3-5-5-1/index.php', 
+    // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
+    
+    function start_17(){
+        $("#ventana").load(ruta+'4-5-17/index.php', 
         {
-        next: "Page_10()", 
-        procesar:"lectura3-5-5-1()",
-        titulo:"<center><h5><span>Lee</span> atentamente y contesta las preguntas.</h5></center>",
-        restaurar:"start_lectura_3_5_5_1()",
+        next: "Page_18()", 
+        procesar:"result_tipo_4_5_17()",
+        titulo:"<center><h5>¿Qué parecen los siguientes objetos? <span>Relaciona.</span></h5></center>",
+        restaurar:"start_17()",
         dir:ruta,
-        cod: "lectura3-5-5-1",
+        cod: "4-5-17",
         nota:cal
         }
         );
         return false;  
     };
-    function start_10(){
-        $("#ventana").load(ruta+'3-5-10/index.php', 
+    function start_18(){
+        $("#ventana").load(ruta+'4-5-18/index.php', 
         {
-        next: "Page_11()", 
-        procesar:"result_tipo_3_5_10()",
-        titulo:"<center><h5><span>Lee</span> las preguntas y <span>selecciona</span> las respuestas correctas.</h5></center>",
-        restaurar:"start_10()",
+        next: "Page_19()", 
+        procesar:"result_tipo_4_5_18()",
+        titulo:"<center><h5><span>Lee</span> las siguientes comparaciones y <span>relacionalos</span> son su imagen.</h5></center>",
+        restaurar:"start_18()",
         dir:ruta,
-        cod: "3-5-10",
+        cod: "4-5-18",
         nota:cal
         }
         );
         return false;  
     };
-    function start_11(){
-        $("#ventana").load(ruta+'3-5-11/index.php', 
-        {
+    function start_19(){
+        $("#ventana").load(ruta+'4-5-19/index.php', 
+        { 
         next: "resultado()", 
-        procesar:"result_tipo_3_5_11()",
-        titulo:"<center><h5><span>Lee</span> las preguntas y <span>selecciona</span> las respuestas correctas.</h5></center>",
-        restaurar:"start_11()",
+        procesar:"result_tipo_4_5_19()",
+        titulo:"<center><h5><span>Lee</span> el siguiente poema y <span>selecciona</span> las respuestas correctas.</h5></center>",
+        restaurar:"start_19()",
         dir:ruta,
-        cod: "3-5-11",
+        cod: "4-5-19",
         nota:cal
         }
         );
-        return false;  
+        return false;
     };
     function resultado(){
         $("#ventana").load('../../../../exercises/resultado/resultado.php');
