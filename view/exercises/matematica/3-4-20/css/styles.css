@@ -1,0 +1,113 @@
+.container-two {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 70%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+/* Select */
+
+.select-wrapper input.select-dropdown {
+    border: 1px solid silver;
+    width: 100%;
+    margin: 0;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.select-wrapper input.select-dropdown:focus {
+    border-bottom: 1px solid silver;
+}
+
+.select-wrapper ul {
+    height: 200px;
+}
+
+.select-wrapper {
+    position: relative;
+}
+
+.dropdown-content {
+    background-color: #fff;
+    margin: 0;
+    display: none;
+    min-width: auto;
+    overflow-y: auto;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    width: 90px;
+    border-radius: 8px;
+}
+
+/* Grid  */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+/* Estilos generales */
+
+.resp {
+    display: flex;
+    align-items: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+.resp span {
+    margin-right: 1vh;
+    margin-left: 1vh;
+}
+
+.img {
+    width: auto;
+    height: 150px;
+}
+
+.principal {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.pregunta {
+    font-size: 1.4rem;
+    margin-bottom: 4vh;
+}
+.pregunta span {
+    color: #0095DA;
+}
+.pregunta-p {
+    font-size: 1.1rem;
+    margin-bottom: 4vh;
+}
+
+.pregunta-p span {
+    color: #0095DA;
+}
+
+h5 {
+    width: 80%;
+    font-size: 144%;
+}
+.slc {
+    width: 140px;
+}
+
+.pre {
+    margin-left: 13vh;
+}

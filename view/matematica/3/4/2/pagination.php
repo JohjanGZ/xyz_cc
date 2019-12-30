@@ -1,19 +1,4 @@
 <script type="text/javascript">
-function Page_8() {
-    start_8();
-    inicio();
-    count = 3;
-}
-function Page_9() {
-    start_9();
-    inicio();
-    count = 3;
-}
-function Page_10() {
-    start_10();
-    inicio();
-    count = 3;
-}
 function Page_11() {
     start_11();
     inicio();
@@ -59,58 +44,17 @@ function Page_19() {
     inicio();
     count = 3;
 }
-function Page_20() {
-    start_20();
-    inicio();
-    count = 3;
-}
 var cant = 18;
 var cal = cant / cant;
 console.log(cant);
 var ruta = "../../../../exercises/matematica/";
 ////////////// 2do 
 // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
-function start_8() {
-    $("#ventana").load(ruta + '3-4-8/index.php', {
-        next: "Page_10()",
-        procesar: "result_tipo_1_4_8()",
-        titulo: "<center><h5><span class='ftitulo'>Selecciona</span> la manzana que tiene el número mayor que 87.</h5></center>",
-        restaurar: "start_8()",
-        dir: ruta,
-        cod: "3-4-8",
-        nota: cal
-    });
-    return false;
-};
-function start_9() {
-    $("#ventana").load(ruta + '3-4-9/index.php', {
-        next: "Page_10()",
-        procesar: "result_tipo_1_4_9()",
-        titulo: "<center><h5><span class='ftitulo'>Selecciona</span> el auto que tiene el número menor que 78</h5></center>",
-        restaurar: "start_9()",
-        dir: ruta,
-        cod: "3-4-9",
-        nota: cal
-    });
-    return false;
-};
-function start_10() {
-    $("#ventana").load(ruta + '3-4-10/index.php', {
-        next: "Page_11()",
-        procesar: "result_tipo_1_4_10()",
-        titulo: "<center><h5><span class='ftitulo'>Selecciona</span> la estrella que tiene el número mayor.</h5></center>",
-        restaurar: "start_10()",
-        dir: ruta,
-        cod: "3-4-10",
-        nota: cal
-    });
-    return false;
-};
 function start_11() {
     $("#ventana").load(ruta + '3-4-11/index.php', {
         next: "Page_12()",
-        procesar: "result_tipo_1_4_11()",
-        titulo: "<center><h5><span class='ftitulo'>Selecciona</span> el globo que tiene al número menor.</h5></center>",
+        procesar: "result_tipo_3_4_11()",
+        titulo: "<center><h5><span class='ftitulo'>Comprueba</span> las siguientes divisiones.</h5></center>",
         restaurar: "start_11()",
         dir: ruta,
         cod: "3-4-11",
@@ -121,8 +65,8 @@ function start_11() {
 function start_12() {
     $("#ventana").load(ruta + '3-4-12/index.php', {
         next: "Page_13()",
-        procesar: "result_tipo_1_4_12()",
-        titulo: "<center><h5><span class='ftitulo'>Completa</span> los espacios en blanco utilizando los símbolos >, < o =.</h5></center>",
+        procesar: "result_tipo_3_4_12()",
+        titulo: "<center><h5><span>Resuelve</span> las divisiones y <span>realiza</span> su comprobación.</h5></center>",
         restaurar: "start_12()",
         dir: ruta,
         cod: "3-4-12",
@@ -133,8 +77,8 @@ function start_12() {
 function start_13() {
     $("#ventana").load(ruta + '3-4-13/index.php', {
         next: "Page_14()",
-        procesar: "result_tipo_1_4_13()",
-        titulo: "<center><h5><span class='ftitulo'>Selecciona</span> los números en los que se cumpla <span class='ftitulo'>es mayor que</span> en cada caso.</h5></center>",
+        procesar: "result_tipo_3_4_13()",
+        titulo: "<center><h5><span>Completa</span> los datos y <span>resuelve</span> los problemas.</h5></center>",
         restaurar: "start_13()",
         dir: ruta,
         cod: "3-4-13",
@@ -145,8 +89,8 @@ function start_13() {
 function start_14() {
     $("#ventana").load(ruta + '3-4-14/index.php', {
         next: "Page_15()",
-        procesar: "result_tipo_1_4_14()",
-        titulo: "<center><h5><span class='ftitulo'>Selecciona</span> los números en los que se cumpla <span class='ftitulo'>es menor que</span> en cada caso.</h5></center>",
+        procesar: "result_tipo_3_4_14()",
+        titulo: "<center><h5><span>Resuelve</span> los siguientes problemas y <span>selecciona</span> la respuesta correcta.</h5></center>",
         restaurar: "start_14()",
         dir: ruta,
         cod: "3-4-14",
@@ -157,8 +101,8 @@ function start_14() {
 function start_15() {
     $("#ventana").load(ruta + '3-4-15/index.php', {
         next: "Page_16()",
-        procesar: "result_tipo_1_4_15()",
-        titulo: "<center><h5><span class='ftitulo'>Selecciona</span> las peras que tienen los números que son mayores que 50.</h5></center>",
+        procesar: "result_tipo_3_4_15()",
+        titulo: "<center><h5><span>Completa</span> la tabla.</h5></center>",
         restaurar: "start_15()",
         dir: ruta,
         cod: "3-4-15",
@@ -169,8 +113,8 @@ function start_15() {
 function start_16() {
     $("#ventana").load(ruta + '3-4-16/index.php', {
         next: "Page_17()",
-        procesar: "result_tipo_1_4_16()",
-        titulo: "<center><h5><span class='ftitulo'>Selecciona</span> los caramelos con números menores que 71.</h5></center>",
+        procesar: "result_tipo_3_4_16()",
+        titulo: "<center><h5><span>Relaciona</span> cada expresión con el valor correspondiente.</h5></center>",
         restaurar: "start_16()",
         dir: ruta,
         cod: "3-4-16",
@@ -181,8 +125,8 @@ function start_16() {
 function start_17() {
     $("#ventana").load(ruta + '3-4-17/index.php', {
         next: "Page_18()",
-        procesar: "result_tipo_1_4_17()",
-        titulo: "<center><h5><span class='ftitulo'>Ordena</span> los siguientes números de mayor a menor.</h5></center>",
+        procesar: "result_tipo_3_4_17()",
+        titulo: "<center><h5><span>Resuelve</span> los siguientes problemas y <span>selecciona</span> la alternativa correcta.</h5></center>",
         restaurar: "start_17()",
         dir: ruta,
         cod: "3-4-17",
@@ -193,8 +137,8 @@ function start_17() {
 function start_18() {
     $("#ventana").load(ruta + '3-4-18/index.php', {
         next: "Page_19()",
-        procesar: "result_tipo_1_4_18()",
-        titulo: "<center><h5><span class='ftitulo'>Ordena</span> los siguientes números de menor a mayor.</h5></center>",
+        procesar: "result_tipo_3_4_18()",
+        titulo: "<center><h5><span>Resuelve.</span></h5></center>",
         restaurar: "start_18()",
         dir: ruta,
         cod: "3-4-18",
@@ -204,9 +148,9 @@ function start_18() {
 };
 function start_19() {
     $("#ventana").load(ruta + '3-4-19/index.php', {
-        next: "Page_20()",
-        procesar: "result_tipo_1_4_19()",
-        titulo: "<center><h5><span class='ftitulo'>Selecciona</span> la hoja que contiene el número anterior a 70.</h5></center>",
+        next: "resultado()",
+        procesar: "result_tipo_3_4_19()",
+        titulo: "<center><h5><span class='ftitulo'>Relaciona</span> las divisiones con su respectivo resultado. </h5></center>",
         restaurar: "start_19()",
         dir: ruta,
         cod: "3-4-19",
@@ -214,18 +158,7 @@ function start_19() {
     });
     return false;
 };
-function start_20() {
-    $("#ventana").load(ruta + '3-4-20/index.php', {
-        next: "resultado()",
-        procesar: "result_tipo_1_4_20()",
-        titulo: "<center><h5><span class='ftitulo'>Selecciona</span> el lápiz que contiene el número posterior a 59.</h5></center>",
-        restaurar: "start_20()",
-        dir: ruta,
-        cod: "3-4-20",
-        nota: cal
-    });
-    return false;
-};
+
 function resultado() {
     $("#ventana").load('../../../../exercises/resultado/resultado.php');
     return false;
