@@ -1,82 +1,44 @@
 <script type="text/javascript">
-
-    function Page_8(){
+   function Page_lectura_4_7_3_1(){
+        start_lectura_4_7_3_1();
+        inicio();
+        count = 0;
+    }
+    function  Page_8(){
         start_8();
         inicio();
-        count = 3;
-    }
-    function Page_9(){
-        start_9();
-        inicio();
-        count = 3;
-    }
-    function  Page_10(){
-        start_10();
-        inicio();
-        count = 3;
-    }
-    function  Page_11(){
-        start_11();
-        inicio();
-        count = 3;
+         count = 3;
     }
 
-    var cant=4;
+    var cant=1;
     var cal= 20/20;
     var ruta="../../../../exercises/comunicacion/";
     ////////////// 2do 
             // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
+    function start_lectura_4_7_3_1(){
+        $("#ventana").load(ruta+'lectura4-7-3-1/index.php', 
+        {
+        next: "Page_8()", 
+        procesar:"lectura1-1-1-1()",
+        titulo:"<center><h5><span>Lee</span> atentamente y <span>contesta</span> las preguntas.</h5></center>",
+        restaurar:"start_lectura_4_7_3_1()",
+        dir:ruta,
+        cod: "lectura4-7-3-1",
+        nota:cal
+        }
+        );
+        return false;  
+    };
+    
     function start_8(){
-        $("#ventana").load(ruta+'3-7-8/index.php', 
-        {
-        next: "Page_9()", 
-        procesar:"result_tipo_3_7_8()",
-        titulo:"<center><h5><span>Arrastra</span> la sílaba que completa cada nombre.</h5></center>",
-        restaurar:"start_8()",
-        dir:ruta,
-        cod: "3-7-8",
-        nota:cal
-        }
-        );
-        return false;  
-    };
-    function start_9(){
-        $("#ventana").load(ruta+'3-7-9/index.php', 
-        {
-        next: "Page_10()", 
-        procesar:"result_tipo_3_7_9()",
-        titulo:"<center><h5><span>Selecciona</span> el plural de las siguientes palabras.</h5></center>",
-        restaurar:"start_9()",
-        dir:ruta,
-        cod: "3-7-9",
-        nota:cal
-        }
-        );
-        return false;  
-    };
-    function start_10(){
-        $("#ventana").load(ruta+'3-7-10/index.php', 
-        {
-        next: "Page_11()", 
-        procesar:"result_tipo_3_7_10()",
-        titulo:"<center><h5><span>Encuentra</span> las palabras en la sopa de letras.</h5></center>",
-        restaurar:"start_10()",
-        dir:ruta,
-        cod: "3-7-10",
-        nota:cal
-        }
-        );
-        return false;  
-    };
-    function start_11(){
-        $("#ventana").load(ruta+'3-7-11/index.php', 
+        $("#ventana").load(ruta+'4-7-8/index.php', 
         {
         next: "resultado()", 
-        procesar:"result_tipo_3_7_11()",
-        titulo:"<center><h5><span>Arrastra</span> las palabras para completar la oración.</h5></center>",
-        restaurar:"start_11()",
+        procesar:"result_tipo_4_7_8()",
+        titulo:"<center><h5><span>Selecciona</span> el significado correcto de las siguientes frases:</h5></center>",
+        restaurar:"start_8()",
         dir:ruta,
-        cod: "3-7-11",
+        cod: "4-7-8",
         nota:cal
         }
         );

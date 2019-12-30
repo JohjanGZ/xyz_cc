@@ -1,7 +1,7 @@
 <script type="text/javascript">
-   
-    function  Page_12(){
-        start_12();
+  
+    function  Page_7(){
+        start_7();
         inicio();
          count = 3;
     }
@@ -11,21 +11,20 @@
     var ruta="../../../../exercises/comunicacion/";
     ////////////// 2do 
             // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
-   
-    
-    function start_12(){
-        $("#ventana").load(ruta+'3-6-12/index.php', 
-        {
+
+    function start_7(){
+        $("#ventana").load(ruta+'4-6-7/index.php', 
+        { 
         next: "resultado()", 
-        procesar:"result_tipo_3_6_12()",
-        titulo:"<center><h5><span>Arrastra</span> los números según los pasos para preparar ensalada de frutas.</h5></center>",
-        restaurar:"start_12()",
+        procesar:"result_tipo_4_6_7()",
+        titulo:"<center><h5><span>Lee</span> atentamente y luego ordena los números del 1 al 6 de acuerdo a los hechos durante una mesa redonda.</h5></center>",
+        restaurar:"start_7()",
         dir:ruta,
-        cod: "3-6-12",
+        cod: "4-6-7",
         nota:cal
         }
         );
-        return false;  
+        return false;
     };
     function resultado(){
         $("#ventana").load('../../../../exercises/resultado/resultado.php');
