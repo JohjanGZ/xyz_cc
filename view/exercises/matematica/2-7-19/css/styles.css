@@ -2,11 +2,15 @@
   padding-top: 4vh;
   margin: 0 auto;
   max-width: 1200px;
-  width: 80%;
+  width: 90%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 3fr;
   justify-items: center;
   align-items: center;
+}
+.image img{
+  width: 390px;
+  margin-top: 5vh;
 }
 hr{
   border: 2px solid red;
@@ -93,7 +97,7 @@ hr{
     height: 30px!important;
   }
   .image img{
-    width: 400px;
+    width: 300px;
   }
   
   .select-wrapper input.select-dropdown:focus {

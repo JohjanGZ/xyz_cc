@@ -19,6 +19,9 @@
   background-color: rgb(193, 251, 255);
   transition: all .3s ease-in-out;
 }
+.letras {
+  width: auto;
+}
 .caja h5 {
   width: 100px;
   text-align: center;
@@ -107,4 +110,39 @@
   height: 50px;
 }
 
+}
+@media screen and (max-height: 650px){
+  .container-two {
+    padding-top: 2vh;
+    margin: 0 auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+  }
+  center h5{
+    font-size: 20px;
+  }
+  .caja h5{
+    font-size: 20px;
+  }
+  .cajaOpciones2, .cajaOpciones{
+    margin-top: 2px;
+  }
+  .separa{
+    margin-top: 3vh;
+  }
+  .cajaOpciones .p, .cajaOpciones2 .p{
+    font-size: 16px;
+    margin: 5px;
+  }
+
+  
+.droppables{
+  display: grid;
+  grid-template-columns: 2fr .2fr 5fr;
+  grid-column-gap: 20px;
+  margin-top: 10px;
+  height: 50px;
+}
 }
