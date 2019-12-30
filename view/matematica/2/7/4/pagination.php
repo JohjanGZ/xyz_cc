@@ -1,4 +1,4 @@
-<script type="text/javascript">
+|<script type="text/javascript">
 
 function Page_20() {
     start_20();
@@ -109,7 +109,7 @@ function start_25() {
     $("#ventana").load(ruta + '2-7-25/index.php', {
         next: "resultado()",
         procesar: "result_tipo_2_7_25()",
-        titulo: "<center><h5><span>Ordena</span> la secuencia para completar la serie modelo.</h5></center>",
+        titulo: "<center><h5><span>Seleciona</span> la figura que continúe la serie.</h5></center>",
         restaurar: "start_25()",
         dir: ruta,
         cod: "2-7-25",
@@ -117,7 +117,6 @@ function start_25() {
     });
     return false;
 };
-
 
 function resultado() {
     $("#ventana").load('../../../../exercises/resultado/resultado.php');
