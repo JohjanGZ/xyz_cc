@@ -79,7 +79,7 @@ function start_24() {
     $("#ventana").load(ruta + '2-6-24/index.php', {
         next: "Page_25()",
         procesar: "result_tipo_2_6_24()",
-        titulo: "<center><h5><span>Selecciona</span> la figura que corresponde.</h5></center>",
+        titulo: "<center><h5><span>Elige</span> la letra de la alternativa correcta para cada secuencia de figuras.</h5></center>",
         restaurar: "start_24()",
         dir: ruta,
         cod: "2-6-24",

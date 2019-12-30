@@ -1,5 +1,5 @@
 .svg{
-    width: 900px;
+    width: 1000px;
 }
 .colores img{
   width: 50px;
@@ -54,8 +54,8 @@ border:solid;
 }
 
 #imgIzquierda li, #imgDerecha li{
-    width: 180px;
-    height: 140px;
+    width: 332px;
+    height: 180px;
     border: 1px solid silver;
     position: relative;
     padding: 5px 32px;
@@ -66,15 +66,15 @@ border:solid;
 }
 
 #imgIzquierda img, #imgDerecha img{
-     width: 100px;
-      max-height: 135px;
+     width: 200px;
+      max-height: 175px;
       position: absolute;
       top: 0;
       bottom: 0;
       margin: 0px 10px;
 }
 #imgDerecha img{
-  width: 100px;
+  width: 250px;
    max-height: 135px;
    position: absolute;
    top: 0;
@@ -86,4 +86,30 @@ border:solid;
 }
 ul{
   margin: 0;
+}
+@media screen and (max-height: 800px){
+  #imgIzquierda li, #imgDerecha li{
+    width: 332px;
+    height: 120px;
+    border: 1px solid silver;
+    position: relative;
+    padding: 5px 32px;
+    float: left;
+}
+  #imgIzquierda img, #imgDerecha img{
+    width: 100px;
+     max-height: 175px;
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     margin: 0px 10px;
+}
+#imgDerecha img{
+ width: 150px;
+  max-height: 135px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 10px;
+}
 }

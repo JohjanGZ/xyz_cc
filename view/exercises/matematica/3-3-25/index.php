@@ -68,4 +68,3 @@ function result_tipo_3_3_25() {
 
 }
 </script>
-<script type="text/javascript" src="../../../exercises/comunicacion/1-0-9/js/validate.js"></script>
