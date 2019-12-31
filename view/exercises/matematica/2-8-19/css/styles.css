@@ -2,11 +2,12 @@
     margin: 0 auto;
     max-width: 1280px;
     width: 80%;
-    height: 70%;
+    height: 50%;
     display: grid;
     align-items: center;
     justify-items: center;
-    grid-template-columns: 1fr 1fr;
+    margin-top: 4vh;
+    grid-template-columns: 1fr;
     grid-column-gap: 20px;
 }
 
@@ -23,14 +24,36 @@
 .o{
   color: orange;
 }
+.cajas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
 .grid-container {
     display: grid;
     grid-template-columns: auto auto;
     padding: 10px;
     justify-content: center;
 }
+.image{
+    width: 600px;
+    height: 400px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+.imagen{
+    width: 300px;
+    height: 300px;
+    background-image: url('../img/1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+}
 .caja{
-    width: 80%;
+    width: 90%;
 }
 .principalNumber{
   border: 1px solid rgb(216, 216, 216);
@@ -44,14 +67,18 @@
 .grid-item {
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgb(102, 204, 102);
-    padding: 8px;
+    padding: 2px;
     font-size: 30px;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
+.boxuno{
+    position: absolute;
+    top: 150px;
+    left: 100px;
+}
 .cabe {
     background-color: rgb(209, 230, 186);
     border-color: rgb(102, 204, 102);
@@ -131,6 +158,17 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
     margin: 4px;
     padding: 10px;
 }
+
+@media screen and (max-height: 768px){
+    .filas, .header{
+        margin: 2px;
+        padding: 2px;
+    }
+    .image{
+        height: 300px;
+    }
+}
+
 .azul{
     color: rgb(0, 60, 255);
 }
@@ -157,6 +195,11 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
 .select-wrapper input.select-dropdown {
     border: 1px solid silver;
     width: 80px;
+    margin: 0;
+}
+.largo .select-wrapper input.select-dropdown {
+    border: 1px solid silver;
+    width: 120px;
     margin: 0;
 }
 
