@@ -1,106 +1,67 @@
 <script type="text/javascript">
-   function Page_7(){
-        start_7();
+   function Page_4(){
+        start_4();
         inicio();
         count = 3;
     }
-   function  Page_8(){
-        start_8();
+   function  Page_5(){
+        start_5();
         inicio();
          count = 3;
     }
-    function  Page_9(){
-        start_9();
-        inicio();
-         count = 3;
-    }
-    function  Page_10(){
-        start_10();
-        inicio();
-         count = 3;
-    }
-    function  Page_11(){
-        start_11();
+    function  Page_6(){
+        start_6();
         inicio();
          count = 3;
     }
 
-    var cant=5;
+    var cant=3;
     var cal= 20/20;
     var ruta="../../../../exercises/comunicacion/";
     ////////////// 2do 
             // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
-   
-    function start_7(){
-        $("#ventana").load(ruta+'3-6-7/index.php', 
+
+    function start_4(){
+        $("#ventana").load(ruta+'4-6-4/index.php', 
         {
-        next: "Page_8()", 
-        procesar:"result_tipo_3_6_7()",
-        titulo:"<center><h5><span>Arrastra</span> el campo semántico correspondiente para cada caso.</h5></center>",
-        restaurar:"start_7()",
+        next: "Page_5()", 
+        procesar:"result_tipo_4_6_4()",
+        titulo:"<center><h5><span>Completa</span> las oraciones con las palabras homófonas del recuadro.</h5></center>",
+        restaurar:"start_4()",
         dir:ruta,
-        cod: "3-6-7",
+        cod: "4-6-4",
         nota:cal
         }
         );
         return false;  
     };
-    function start_8(){
-        $("#ventana").load(ruta+'3-6-8/index.php', 
+    function start_5(){
+        $("#ventana").load(ruta+'4-6-5/index.php', 
         {
-        next: "Page_9()", 
-        procesar:"result_tipo_3_6_8()",
-        titulo:"<center><h5><span>Arrastra</span> las palabras a su campo semántico correspondiente.</h5></center>",
-        restaurar:"start_8()",
+        next: "Page_6()", 
+        procesar:"result_tipo_4_6_5()",
+        titulo:"<center><h5>Completa los espacios en blanco con una de las dos palabras homófonas que aparaceren.</h5></center>",
+        restaurar:"start_5()",
         dir:ruta,
-        cod: "3-6-8",
+        cod: "4-6-5",
         nota:cal
         }
         );
         return false;  
     };
-    
-    function start_9(){
-        $("#ventana").load(ruta+'3-6-9/index.php', 
-        {
-        next: "Page_10()", 
-        procesar:"result_tipo_3_6_9()",
-        titulo:"<center><h5><span>Selecciona</span> el término excluido de cada caso.</h5></center>",
-        restaurar:"start_9()",
-        dir:ruta,
-        cod: "3-6-9",
-        nota:cal
-        }
-        );
-        return false;  
-    };
-    function start_10(){
-        $("#ventana").load(ruta+'3-6-10/index.php', 
-        {
-        next: "Page_11()", 
-        procesar:"result_tipo_3_6_10()",
-        titulo:"<center><h5><span>Selecciona</span> el término excluido de cada caso.</h5></center>",
-        restaurar:"start_10()",
-        dir:ruta,
-        cod: "3-6-10",
-        nota:cal
-        }
-        );
-        return false;  
-    };
-    function start_11(){
-        $("#ventana").load(ruta+'3-6-11/index.php', 
-        {
+    function start_6(){
+        $("#ventana").load(ruta+'4-6-6/index.php', 
+        { 
         next: "resultado()", 
-        procesar:"result_tipo_3_6_11()",
-        titulo:"<center><h5><span>Selecciona</span> la palabra que no corresponda a la serie.</h5></center>",
-        restaurar:"start_11()",
+        procesar:"result_tipo_4_6_6()",
+        titulo:"<center><h5><span>Relaciona</span> según las palabras homófonas que correspondan.</h5></center>",
+        restaurar:"start_6()",
         dir:ruta,
-        cod: "3-6-11",
+        cod: "4-6-6",
         nota:cal
         }
         );
-        return false;  
+        return false;
     };
     function resultado(){
         $("#ventana").load('../../../../exercises/resultado/resultado.php');
