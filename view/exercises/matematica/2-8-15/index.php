@@ -7,10 +7,10 @@
 <?=$titulo?>
 <?php 
 
-    $numeros = array('>','=','<');
+    $numeros = array('>','=','<','3 821','6 253','6 753','4 665','7 273','4 634');
 
 ?>
-<div class="container-two">
+<div class="container-two aleatorio">
 
     <div class="item">
         <div class="one">
@@ -21,7 +21,7 @@
                 <img src="<?= $dir ?>/img/2.png" alt="">
             </div>
             <div class="tres">
-                <select class="slc seleccion" alt="Cuatro mil ochocientos cuatro">
+                <select class="slc seleccion" alt="3 821">
                     <option value="" disabled selected></option>
                     <?php
                                 for ($i=0; $i < count($numeros); $i++) { 
@@ -32,7 +32,7 @@
             </div>
         </div>
         <div class="two">
-            <select class="slc seleccion" alt="Cuatro mil ochocientos cuatro">
+            <select class="slc seleccion" alt="=">
                 <option value="" disabled selected></option>
                 <?php
                     for ($i=0; $i < count($numeros); $i++) { 
@@ -41,26 +41,6 @@
                 ?>
             </select>
         </div>
-        <div class="one">
-            <div class="uno">
-                <img src="<?= $dir ?>/img/1.png" alt="">
-            </div>
-            <div class="dos">
-                <img src="<?= $dir ?>/img/2.png" alt="">
-            </div>
-            <div class="tres">
-                <select class="slc seleccion" alt="Cuatro mil ochocientos cuatro">
-                    <option value="" disabled selected></option>
-                    <?php
-                                for ($i=0; $i < count($numeros); $i++) { 
-                                    echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
-                                }
-                            ?>
-                </select>
-            </div>
-        </div>
-    </div>
-    <div class="item">
         <div class="one">
             <div class="uno">
                 <img src="<?= $dir ?>/img/3.png" alt="">
@@ -69,7 +49,7 @@
                 <img src="<?= $dir ?>/img/2.png" alt="">
             </div>
             <div class="tres">
-                <select class="slc seleccion" alt="Cuatro mil ochocientos cuatro">
+                <select class="slc seleccion" alt="3 821">
                     <option value="" disabled selected></option>
                     <?php
                                 for ($i=0; $i < count($numeros); $i++) { 
@@ -79,16 +59,8 @@
                 </select>
             </div>
         </div>
-        <div class="two">
-            <select class="slc seleccion" alt="Cuatro mil ochocientos cuatro">
-                <option value="" disabled selected></option>
-                <?php
-                    for ($i=0; $i < count($numeros); $i++) { 
-                        echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
-                    }
-                ?>
-            </select>
-        </div>
+    </div>
+    <div class="item">
         <div class="one">
             <div class="uno">
                 <img src="<?= $dir ?>/img/4.png" alt="">
@@ -97,7 +69,7 @@
                 <img src="<?= $dir ?>/img/2.png" alt="">
             </div>
             <div class="tres">
-                <select class="slc seleccion" alt="Cuatro mil ochocientos cuatro">
+                <select class="slc seleccion" alt="6 253">
                     <option value="" disabled selected></option>
                     <?php
                                 for ($i=0; $i < count($numeros); $i++) { 
@@ -107,8 +79,16 @@
                 </select>
             </div>
         </div>
-    </div>
-    <div class="item">
+        <div class="two">
+            <select class="slc seleccion" alt="<">
+                <option value="" disabled selected></option>
+                <?php
+                    for ($i=0; $i < count($numeros); $i++) { 
+                        echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                    }
+                ?>
+            </select>
+        </div>
         <div class="one">
             <div class="uno">
                 <img src="<?= $dir ?>/img/5.png" alt="">
@@ -117,35 +97,7 @@
                 <img src="<?= $dir ?>/img/2.png" alt="">
             </div>
             <div class="tres">
-                <select class="slc seleccion" alt="Cuatro mil ochocientos cuatro">
-                    <option value="" disabled selected></option>
-                    <?php
-                                for ($i=0; $i < count($numeros); $i++) { 
-                                    echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
-                                }
-                            ?>
-                </select>
-            </div>
-        </div>
-        <div class="two">
-            <select class="slc seleccion" alt="Cuatro mil ochocientos cuatro">
-                <option value="" disabled selected></option>
-                <?php
-                    for ($i=0; $i < count($numeros); $i++) { 
-                        echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
-                    }
-                ?>
-            </select>
-        </div>
-        <div class="one">
-            <div class="uno">
-                <img src="<?= $dir ?>/img/6.png" alt="">
-            </div>
-            <div class="dos">
-                <img src="<?= $dir ?>/img/2.png" alt="">
-            </div>
-            <div class="tres">
-                <select class="slc seleccion" alt="Cuatro mil ochocientos cuatro">
+                <select class="slc seleccion" alt="6 753">
                     <option value="" disabled selected></option>
                     <?php
                                 for ($i=0; $i < count($numeros); $i++) { 
@@ -159,13 +111,13 @@
     <div class="item">
         <div class="one">
             <div class="uno">
-                <img src="<?= $dir ?>/img/7.png" alt="">
+                <img src="<?= $dir ?>/img/6.png" alt="">
             </div>
             <div class="dos">
                 <img src="<?= $dir ?>/img/2.png" alt="">
             </div>
             <div class="tres">
-                <select class="slc seleccion" alt="Cuatro mil ochocientos cuatro">
+                <select class="slc seleccion" alt="4 665">
                     <option value="" disabled selected></option>
                     <?php
                                 for ($i=0; $i < count($numeros); $i++) { 
@@ -176,7 +128,7 @@
             </div>
         </div>
         <div class="two">
-            <select class="slc seleccion" alt="Cuatro mil ochocientos cuatro">
+            <select class="slc seleccion" alt="=">
                 <option value="" disabled selected></option>
                 <?php
                     for ($i=0; $i < count($numeros); $i++) { 
@@ -187,19 +139,67 @@
         </div>
         <div class="one">
             <div class="uno">
-                <img src="<?= $dir ?>/img/8.png" alt="">
+                <img src="<?= $dir ?>/img/7.png" alt="">
             </div>
             <div class="dos">
                 <img src="<?= $dir ?>/img/2.png" alt="">
             </div>
             <div class="tres">
-                <select class="slc seleccion" alt="Cuatro mil ochocientos cuatro">
+                <select class="slc seleccion" alt="4 665">
                     <option value="" disabled selected></option>
                     <?php
                                 for ($i=0; $i < count($numeros); $i++) { 
                                     echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
                                 }
                             ?>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="one">
+            <div class="uno">
+                <img src="<?= $dir ?>/img/8.png" alt="">
+            </div>
+            <div class="dos">
+                <img src="<?= $dir ?>/img/2.png" alt="">
+            </div>
+            <div class="tres">
+                <select class="slc seleccion" alt="7 273">
+                    <option value="" disabled selected></option>
+                    <?php
+                                for ($i=0; $i < count($numeros); $i++) { 
+                                    echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                                }
+                            ?>
+                </select>
+            </div>
+        </div>
+        <div class="two">
+            <select class="slc seleccion" alt=">">
+                <option value="" disabled selected></option>
+                <?php
+                    for ($i=0; $i < count($numeros); $i++) { 
+                        echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                    }
+                ?>
+            </select>
+        </div>
+        <div class="one">
+            <div class="uno">
+                <img src="<?= $dir ?>/img/9.png" alt="">
+            </div>
+            <div class="dos">
+                <img src="<?= $dir ?>/img/2.png" alt="">
+            </div>
+            <div class="tres">
+                <select class="slc seleccion" alt="4 634">
+                    <option value="" disabled selected></option>
+                    <?php
+                        for ($i=0; $i < count($numeros); $i++) { 
+                            echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                        }
+                    ?>
                 </select>
             </div>
         </div>
@@ -226,7 +226,7 @@ $("#next").attr("onclick", "<?=$next?>");
 $('select').formSelect();
 
 
-function result_tipo_2_8_14() {
+function result_tipo_2_8_15() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
@@ -234,7 +234,7 @@ function result_tipo_2_8_14() {
     r = 0;
     seleccion_lista();
 
-    if (r == 5) {
+    if (r == 12) {
         console.log(r);
         localStorage.setItem("Nota2-8-14", "2");
         localStorage.setItem("Time2-8-14", tiempo);
