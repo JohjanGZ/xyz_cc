@@ -9,7 +9,7 @@
 </style>
 <?=$titulo?>
 <?php 
-$comprension = array('A={A,E,I,O}','A={U,I,E,A,O}','U={días de la semana}','T={}','L={}','V={}');
+$comprension = array('U={ A,E,I,O }','U={ U,I,E,A,O }','A={ días de la semana }','L={ primavera, verano, otoño, invierno }','T={ 1 < x < 11; x es par }','V={ Sabores }');
 ?>
 
 <body>
@@ -23,7 +23,7 @@ $comprension = array('A={A,E,I,O}','A={U,I,E,A,O}','U={días de la semana}','T={
                 <div class="grid-item wc">A <span class="s">= {</span>lunes, martes, miércoles, jueves, viernes, sábado,
                     domingo<span class="s">}</span></div>
                 <div class="grid-item we">
-                    <select class="slc" alt="<?=$comprension[2]?>">
+                    <select class="slc" alt="A={ días de la semana }">
                         <option value="" disabled selected></option>
                         <?php
                             for ($i=0; $i < count($comprension); $i++) { 
@@ -35,7 +35,7 @@ $comprension = array('A={A,E,I,O}','A={U,I,E,A,O}','U={días de la semana}','T={
             </div>
             <div class="grid-box">
                 <div class="grid-item we">
-                    <select class="slc" alt="<?=$comprension[1]?>">
+                    <select class="slc" alt="U={ U,I,E,A,O }">
                         <option value="" disabled selected></option>
                         <?php
                             for ($i=0; $i < count($comprension); $i++) { 
@@ -50,7 +50,7 @@ $comprension = array('A={A,E,I,O}','A={U,I,E,A,O}','U={días de la semana}','T={
             <div class="grid-box">
                 <div class="grid-item wc">T <span class="s">= {</span>2; 4; 6; 8; 10<span class="s">}</span></div>
                 <div class="grid-item we">
-                    <select class="slc" alt="<?=$comprension[2]?>">
+                    <select class="slc" alt="T={ 1 < x < 11; x es par }">
                         <option value="" disabled selected></option>
                         <?php
                             for ($i=0; $i < count($comprension); $i++) { 
@@ -62,7 +62,7 @@ $comprension = array('A={A,E,I,O}','A={U,I,E,A,O}','U={días de la semana}','T={
             </div>
             <div class="grid-box">
                 <div class="grid-item we">
-                    <select class="slc" alt="<?=$comprension[3]?>">
+                    <select class="slc" alt="L={ primavera, verano, otoño, invierno }">
                         <option value="" disabled selected></option>
                         <?php
                             for ($i=0; $i < count($comprension); $i++) { 
@@ -78,7 +78,7 @@ $comprension = array('A={A,E,I,O}','A={U,I,E,A,O}','U={días de la semana}','T={
                 <div class="grid-item wc">V <span class="s">= {</span>dulce, salado, ácido, amargo<span
                         class="s">}</span></div>
                 <div class="grid-item we">
-                    <select class="slc" alt="<?=$comprension[4]?>">
+                    <select class="slc" alt="V={ Sabores }">
                         <option value="" disabled selected></option>
                         <?php
                             for ($i=0; $i < count($comprension); $i++) { 
@@ -111,7 +111,7 @@ $("#next").attr("onclick", "<?=$next?>");
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
 // Validar
-function result_tipo_3_0_4() {
+function result_tipo_3_0_5() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();

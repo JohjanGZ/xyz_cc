@@ -165,7 +165,8 @@ function arrastre() {
             element2 = $(this).attr("alt");
             elementid.css({ "background": "transparent", "border-color": "transparent" });
             if (element == element2) {
-                r++; console.log(r);
+                r++; 
+                // console.log(r);
             }
             ui.draggable.draggable("disable", 1);
         }

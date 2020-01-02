@@ -1,0 +1,102 @@
+.container-two {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 70%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.row {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    /* flex-direction: column; */
+}
+
+.contenedor-img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.grid-option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* padding: 10px; */
+}
+
+.grid-preguntas {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.img {
+    position: relative;
+    width: 790px;
+    height: auto;
+    margin-bottom: 1vh;
+}
+
+.item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.p1 {
+    position: absolute;
+    bottom: -46px;
+    left: -20px;
+}
+.p2 {
+    position: absolute;
+    bottom: -46px;
+    left: 226px;
+}
+.p3 {
+    position: absolute;
+    bottom: -46px;
+    right: 75px;
+}
+.item span {
+    color: red;
+    margin-right: 2vh;
+}
+
+.contenedor {
+    background: white;
+    border: 1px solid silver;
+    width: 110px;
+    height: 50px;
+    z-index: -1;
+}
+
+.pieza {
+    height: 40px;
+    width: 100px;
+    border: 1px solid #b1dff1;
+    margin: 0.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e2f3fa;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.materialboxed.active {
+    background: white;
+}
