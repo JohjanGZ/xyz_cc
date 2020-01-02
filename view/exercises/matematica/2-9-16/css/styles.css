@@ -1,0 +1,157 @@
+.container-two {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 80%;
+    height: 60%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    padding-top: 2vh;
+    grid-template-columns: repeat(3,1fr);
+}
+
+::-webkit-scrollbar {
+    -webkit-border-radius: 5px;
+    background-color: transparent;
+    border-radius: 5px;
+    height: 10px;
+    -webkit-transition: background-color .2s linear;
+    -o-transition: background-color .2s linear;
+    transition: background-color .2s linear;
+    width: 0px;
+}
+.item{
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.itemuno{
+    background-image: url('../img/1.png');
+}
+.itemdos{
+    background-image: url('../img/2.png');
+}
+.itemtres{
+    background-image: url('../img/3.png');
+}
+.itemcuatro{
+    background-image: url('../img/4.png');
+}
+.itemcinco{
+    background-image: url('../img/5.png');
+}
+.itemseis{
+    background-image: url('../img/6.png');
+}
+
+.box {
+    position: absolute;
+}
+.boxuno{
+    left: 10px;
+    top: 110px;
+}
+.boxdos{
+    left: 110px;
+    top: 110px;
+}
+.boxtres{
+    left: 10px;
+    top: 165px;
+}
+
+/* .grid-container .select-wrapper {
+    margin-right: 1vh;
+    margin-left: 1vh;
+} */
+.select-wrapper ul {
+    height: 300px !important;
+}
+.select-wrapper .caret{
+    display: none;
+}
+.select-wrapper input.select-dropdown {
+    border: 1px solid silver;
+    width: 80px;
+    margin: 0;
+    height: 38px;
+}
+
+.select-wrapper input.select-dropdown:focus {
+    border-bottom: 1px solid silver;
+}
+
+.dropdown-content {
+    background-color: #fff;
+    margin: 0;
+    display: none;
+    min-width: 90px;
+    overflow-y: auto;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    width: 90px;
+    border-radius: 5px;
+}
+
+.pregunta {
+    font-size: 22px;
+}
+
+.tabla {
+    width: 100%;
+}
+
+.tabla {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+    justify-content: center;
+}
+
+.flecha {
+    color: red;
+    margin-left: 2vh;
+}
+@media screen and (max-width: 1350px){
+    .grid-item{
+        font-size: 15px;
+    }
+    .select-wrapper input.select-dropdown {
+        border: 1px solid silver;
+        width: 60px;
+        margin: 0;
+    }
+}
+
+@media screen and (max-height: 650px){
+    .item {
+        width: 160px;
+        height: 180px;
+    }
+    .container-two {
+        margin: 0 auto;
+        max-width: 1280px;
+        width: 80%;
+        height: 40%;
+    }
+    .boxuno{
+        left: 10px;
+        top: 90px;
+    }
+    .boxdos{
+        left: 90px;
+        top: 90px;
+    }
+    .boxtres{
+        left: 10px;
+        top: 145px;
+    }
+}
