@@ -313,7 +313,7 @@ function start_16() {
     $("#ventana").load(ruta + '2-8-16/index.php', {
         next: "Page_17()",
         procesar: "result_tipo_2_8_16()",
-        titulo: "<center><h5><span>Observa</span> y <span>cuenta</span> la cantidad de círculos y óvalos de la siguiente figura:</h5></center>",
+        titulo: "<center><h5><span>Escribe</span> los números que correspondan.</h5></center>",
         restaurar: "start_16()",
         dir: ruta,
         cod: "2-8-16",
@@ -326,7 +326,7 @@ function start_17() {
     $("#ventana").load(ruta + '2-8-17/index.php', {
         next: "Page_18()",
         procesar: "result_tipo_2_8_17()",
-        titulo: "<center><h5><span>Observa</span> el gráfico de barras y <span>responde</span> las preguntas.</h5></center>",
+        titulo: "<center><h5><span>Escribe</span> en cada recuadro el número que corresponde para que se cumplan las comparaciones.</h5></center>",
         restaurar: "start_17()",
         dir: ruta,
         cod: "2-8-17",
@@ -339,7 +339,7 @@ function start_18() {
     $("#ventana").load(ruta + '2-8-18/index.php', {
         next: "Page_19()",
         procesar: "result_tipo_2_8_18()",
-        titulo: "<center><h5><span>Observa</span> el gráfico de barras y <span>responde</span> las preguntas.</h5></center>",
+        titulo: "<center><h5><span>Resuelve</span> las siguientes adiciones y sustracciones en el tablero posicional.</h5></center>",
         restaurar: "start_18()",
         dir: ruta,
         cod: "2-8-18",
@@ -352,7 +352,7 @@ function start_19() {
     $("#ventana").load(ruta + '2-8-19/index.php', {
         next: "Page_20()",
         procesar: "result_tipo_2_8_19()",
-        titulo: "<center><h5><span>Observa</span> el gráfico de barras y <span>responde</span> las preguntas.</h5></center>",
+        titulo: "<center><h5><span>Lee</span> y <span>resuelve</span> los siguientes problemas:</h5></center>",
         restaurar: "start_19()",
         dir: ruta,
         cod: "2-8-19",
