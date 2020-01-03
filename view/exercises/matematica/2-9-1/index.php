@@ -8,7 +8,9 @@
 
 </style>
 <?=$titulo?>
-
+<?php
+    $letras = array('Siete  mil','Ocho mil','Nueve mil', 'Diez mil', 'Once mil');
+?>
 <body>
     <div class="container-two aleatori">
         <div class="content">
@@ -22,7 +24,7 @@
                             <select class="slc seleccion" alt="9">
                                 <option value="" disabled selected></option>
                                 <?php
-                                for ($i=0; $i < 31; $i++) { 
+                                for ($i=0; $i < 10; $i++) { 
                                     echo "<option value='$i'>$i</option>";
                                 }
                             ?>
@@ -46,8 +48,8 @@
                             <select class="slc seleccion" alt="Nueve mil">
                                 <option value="" disabled selected></option>
                                 <?php
-                                for ($i=0; $i < 31; $i++) { 
-                                    echo "<option value='$i'>$i</option>";
+                                for ($i=0; $i < count($letras); $i++) { 
+                                    echo "<option value='$letras[$i]'>$letras[$i]</option>";
                                 }
                             ?>
                             </select>
@@ -65,40 +67,40 @@
                     </div>
                     <div class="fila">
                         <div>
-                            <select class="slc seleccion" alt="10">
+                            <select class="slc seleccion" alt="9">
                                 <option value="" disabled selected></option>
                                 <?php
-                                for ($i=0; $i < 31; $i++) { 
+                                for ($i=0; $i < 10; $i++) { 
                                     echo "<option value='$i'>$i</option>";
                                 }
                             ?>
                             </select>
                         </div>
                         <div>
-                            <select class="slc seleccion" alt="10">
+                            <select class="slc seleccion" alt="0">
                                 <option value="" disabled selected></option>
                                 <?php
-                                for ($i=0; $i < 31; $i++) { 
+                                for ($i=0; $i < 10; $i++) { 
                                     echo "<option value='$i'>$i</option>";
                                 }
                             ?>
                             </select>
                         </div>
                         <div>
-                            <select class="slc seleccion" alt="10">
+                            <select class="slc seleccion" alt="0">
                                 <option value="" disabled selected></option>
                                 <?php
-                                for ($i=0; $i < 31; $i++) { 
+                                for ($i=0; $i < 10; $i++) { 
                                     echo "<option value='$i'>$i</option>";
                                 }
                             ?>
                             </select>
                         </div>
                         <div>
-                            <select class="slc seleccion" alt="10">
+                            <select class="slc seleccion" alt="0">
                                 <option value="" disabled selected></option>
                                 <?php
-                                for ($i=0; $i < 31; $i++) { 
+                                for ($i=0; $i < 10; $i++) { 
                                     echo "<option value='$i'>$i</option>";
                                 }
                             ?>
@@ -114,7 +116,7 @@
         <div class="modal-content">
             <center>
                 <h4>Respuesta correcta</h4>
-                <img class="materialboxed" width="80%" src="img/15/respuesta.png">
+                <img class="materialboxed" width="80%" src="<?= $dir ?>/img/respuesta.png">
             </center>
         </div>
         <div class="modal-footer">
@@ -133,7 +135,7 @@ $("#next").attr("onclick", "<?=$next?>");
 $('select').formSelect();
 
 // Validar
-function result_tipo_2_8_25() {
+function result_tipo_2_9_1() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
@@ -141,7 +143,7 @@ function result_tipo_2_8_25() {
     r = 0;
     seleccion_lista();
 
-    if (r == 16) {
+    if (r == 7) {
         console.log(r)
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
