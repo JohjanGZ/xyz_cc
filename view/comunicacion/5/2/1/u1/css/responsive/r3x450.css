@@ -1,0 +1,147 @@
+
+
+@media (max-width: 450px) {
+
+	label {
+    font-size: 0.7rem;
+    color: #424141;
+}
+
+
+h5 {
+    font-size: 0.7rem;
+    margin-bottom: -41px;
+    position: fixed;
+    top: 62px;
+    margin-top: 22px;
+    margin: 4% 9% 0;
+}
+
+.cronometro {
+    width: 97px;
+    left: 68%;
+    top: 18px;
+    position: fixed;
+}	
+	.logoUnidad {
+    width: 11%;
+    left: 15px;
+    top: 26px;
+    position: fixed;
+}
+.imgvf {
+    background-image: url(../../img/2-3/a3.gif);
+    background-size: 200px 100px;
+    width: 200px;
+    height: 100px;
+    margin: 11% 23% 0;
+    background-repeat: no-repeat;
+}
+.imgvfi {
+    height: 30px;
+    width: 30px;
+}
+.item2 {
+    font-size: 11px;
+    margin-top: 15px;
+    width: 60%;
+    float: left;
+    margin-left: 28px;
+    margin-right: 25px;
+    margin: 0 auto 0;
+}
+.item3 {
+    float: left;
+    width: 100%;
+    padding: 0px 0 0 0;
+    margin: 0 -15px 0;
+}
+.container, .content-wrapper {
+    /* margin-top: 197px; */
+    max-width: 100%;
+    position: fixed;
+    margin: 22% auto;
+    /* left: auto; */
+}
+
+
+.contenedorimg {
+       border: solid 1px #dcdcdc00;
+    width: auto;
+    height: 59px;
+    margin: 5px;
+    border-radius: 15px;
+}
+
+
+#contenedorPiezas {
+    background: #5561ff00;
+    width: auto;
+    height: 242px;
+    margin: 104px 6% 0;
+    float: left;
+    /* margin-left: auto; */
+    /* box-shadow: 0px 0px 10px 2px #dadada; */
+    /* margin-top: 110px; */
+}
+
+#contenedorPuzzle {
+    margin-top: -59px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#contenedorPuzzle img {
+    float: left;
+    padding: 4px 12px 4px 10px;
+    width: 80px;
+    height: auto;
+    position: relative;
+    z-index: 10;
+}
+
+.seleccion {
+    top: 0;
+    position: relative;
+}
+
+
+.botones {
+    padding: 0px;
+    position: fixed;
+    top: 91%;
+    left: 4%;
+    margin: 0 auto;
+    width: 90%;
+}
+.btnEnviar {
+    width: 100px;
+}
+
+.btnCorregir {
+    width: 90px;
+    position: relative;
+}
+
+.btnSiguiente {
+    width: 90px;
+    position: relative;
+}
+
+.switch label .lever {
+    content: "";
+    display: inline-block;
+    position: relative;
+    width: 36px;
+    height: 14px;
+    background-color: rgba(128, 28, 92, 0.65);
+    border-radius: 15px;
+    margin-right: 10px;
+    -webkit-transition: background 0.3s ease;
+    transition: background 0.3s ease;
+    vertical-align: middle;
+    margin: 0 3px;
+}
+
+}
+

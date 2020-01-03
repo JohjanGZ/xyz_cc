@@ -1,0 +1,115 @@
+h4 {
+    text-align: center;
+}
+
+h5 {
+    width: 82%;
+}
+
+.container {
+    display: flex;
+    height: 70%;
+    align-items: center;
+}
+
+.container .row {
+    width: 100%;
+}
+
+.contenedor-ejercicios {
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+
+.contenedor-ejercicios img {
+    width: 80%;
+    margin: auto;
+}
+
+.contenedor-ejercicios .comunicacion {
+    width: 50px;
+    height: 45px;
+    border: 3px solid #37D3F7;
+    background-color: white;
+    border-radius: 12px;
+    position: absolute;
+}
+
+.contenedor-ejercicios .uno {
+    top: 20%;
+    left: 10%;
+}
+
+.contenedor-ejercicios .dos {
+    top: 48%;
+    left: 29%;
+}
+
+.contenedor-ejercicios .tres {
+    top: 33%;
+    right: 43%;
+}
+
+.contenedor-ejercicios .cuatro {
+    bottom: 23%;
+    right: 35%;
+}
+
+
+/************/
+
+.contenedor-silabas {
+    display: inline-flex;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contenedor-silabas .silabas {
+    margin: 0px 5px;
+}
+
+.silabas h4 {
+    display: inline-block;
+    font-size: 1.8rem;
+    background-color: rgb(55, 247, 205);
+    font-weight: bold;
+    padding: 3px 8px;
+    color: tomato;
+    border-radius: 12px;
+}
+
+.palabrax h4 {
+    margin: 0;
+    padding: 0;
+}
+
+.silabas h4 span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 15px;
+    background-color: cornflowerblue;
+    border-radius: 50%;
+}
+
+
+/**************/
+
+@media(max-height: 640px) {
+    .contenedor-ejercicios {
+        padding-top: 0;
+    }
+    .silabas h4 {
+        margin: 10px;
+    }
+    .contenedor-ejercicios img {
+        width: 70%;
+    }
+    .contenedor-ejercicios .uno {
+        left: 13%;
+    }
+}
