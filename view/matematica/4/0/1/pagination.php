@@ -68,7 +68,7 @@ function start_2() {
     $("#ventana").load(ruta + '4-0-2/index.php', {
         next: "Page_3()",
         procesar: "result_tipo_4_0_2()",
-        titulo: "<center><h5><span class='ftitulo'>Agrupa</span> los siguientes elementos según sus características.</h5></center>",
+        titulo: "<center><h5><span>Agrupa</span> los elementos utilizando el diagrama de Venn. <span>Usa</span> el método de arrastre.</h5></center>",
         restaurar: "start_2()",
         dir: ruta,
         cod: "4-0-2",
@@ -81,7 +81,7 @@ function start_3() {
     $("#ventana").load(ruta + '4-0-3/index.php', {
         next: "Page_4()",
         procesar: "result_tipo_4_0_3()",
-        titulo: "<center><h5><span class='ftitulo'>Coloca</span> el nombre del conjunto en donde todos los animales tienen dos patas.</h5></center>",
+        titulo: "<center><h5><span>Observa</span> los conjuntos y <span>completa</span> los recuadros según corresponda.</h5></center>",
         restaurar: "start_3()",
         dir: ruta,
         cod: "4-0-3",
@@ -94,7 +94,7 @@ function start_4() {
     $("#ventana").load(ruta + '4-0-4/index.php', {
         next: "Page_5()",
         procesar: "result_tipo_4_0_4()",
-        titulo: " <center><h5><span class='ftitulo'>Representa </span> por comprensión los siguientes conjuntos: </h5></center>",
+        titulo: " <center><h5>Del conjunto anterior, <span>selecciona</span> verdadero (V) o falso (F) según corresponda.</h5></center>",
         restaurar: "start_4()",
         dir: ruta,
         cod: "4-0-4",
@@ -107,7 +107,7 @@ function start_5() {
     $("#ventana").load(ruta + '4-0-5/index.php', {
         next: "Page_6()",
         procesar: "result_tipo_4_0_5()",
-        titulo: "<center><h5><span class='ftitulo'>Observa </span> los siguientes conjuntos y <span>represéntalos</span> por extension, usando el nombre de sus elementos.</h5></center>",
+        titulo: "<center><h5><span>Observa</span> los siguientes conjuntos y <span>selecciona</span> en los recuadros los símbolos ⊂ (inclusión), ⊄ (no inclusión) o = (igualdad) según corresponda.</h5></center>",
         restaurar: "start_5()",
         dir: ruta,
         cod: "4-0-5",
@@ -131,7 +131,7 @@ function start_7() {
     $("#ventana").load(ruta + '4-0-7/index.php', {
         next: "Page_8()",
         procesar: "result_tipo_4_0_7()",
-        titulo: "<center><h5><span>Escoge</span>  si el conjunto está determinado por extensión o si está determinado por comprensión.</h5></center>",
+        titulo: "<center><h5><span>Determina</span> si cada conjunto es finito, infinito, unitario o vacío.</h5></center>",
         restaurar: "start_7()",
         dir: ruta,
         cod: "4-0-7",

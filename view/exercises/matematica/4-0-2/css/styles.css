@@ -2,61 +2,75 @@
     margin: 0 auto;
     max-width: 1280px;
     width: 80%;
+    padding-top: 4vh;
 }
-@media (min-width: 1920px) {
-    .caja-principal {
-        width: 50%;
+.respuesta{
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+}
+.pieza{
+    text-align: center;
+    border: 2px solid #333;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 4px;
+    
+}
+.image{
+    margin: auto;
+    width: 1100px;
+    height: 400px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('../img/1.png');
+    position: relative;
+    z-index: -999;
+}
+.contenedor{
+    border: 1px solid rgba(51, 51, 51, 0.068);
+    width: 280px;
+    height: 280px;
+    border-radius: 100%;
+    position: absolute;
+    top: 30px;
+}
+.contenedoruno{
+    left: 118px;
+}
+.contenedordos{
+    left: 414px;
+}
+.contenedortres{
+    left:710px;
+}
+@media screen and (max-height: 690px){
+    .image{
+        margin: auto;
+        width: 1100px;
+        height: 310px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url('../img/1.png');
+        position: relative;
+        z-index: -999;
+    } 
+    .contenedor{
+        border: 1px solid rgba(51, 51, 51, 0.068);
+        width: 220px;
+        height: 220px;
+        border-radius: 100%;
+        position: absolute;
+        top: 25px;
+    } 
+    .contenedoruno{
+        left: 212px;
     }
-}
-
-#listA {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.recibidor {
-    display: flex;
-}
-
-.contenedorPieza {
-    height: 252px;
-    width: 100%;
-    border: 3px solid #37D3F7;
-    border-radius: 12px;
-    margin: auto;
-    margin-bottom: 2vh;
-}
-
-.title {
-    font-size: 24px;
-    color: #37D3F7;
-}
-
-.box {
-    height: 120px;
-    width: 120px;
-    border: 3px solid silver;
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    margin-bottom: 15px;
-    margin-right: 10px;
-    transition: all .3s;
-}
-
-.box:hover {
-    border: 3px solid #37D3F7;
-    background: #B6ECFF;
-}
-
-.box img {
-    width: 60%;
-    height: auto;
-    cursor: pointer;
-    box-shadow: none !important;
-}
-.box img:hover {
-    box-shadow: none !important;
+    .contenedordos{
+        left: 444px;
+    }
+    .contenedortres{
+        left: 670px;
+    } 
 }
