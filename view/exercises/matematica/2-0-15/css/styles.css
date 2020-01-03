@@ -14,16 +14,7 @@
 .columnaDos {
   grid-column: 2/3;
 }
-::-webkit-scrollbar {
-  -webkit-border-radius: 5px;
-  background-color: transparent;
-  border-radius: 5px;
-  height: 10px;
-  -webkit-transition: background-color 0.2s linear;
-  -o-transition: background-color 0.2s linear;
-  transition: background-color 0.2s linear;
-  width: 0px;
-}
+
 
 .grid-container {
   display: grid;
@@ -63,6 +54,17 @@
   margin-left: 1vh;
 }
 
+
+::-webkit-scrollbar {
+  -webkit-border-radius: 5px;
+  background-color: transparent;
+  border-radius: 5px;
+  height: 10px;
+  -webkit-transition: background-color 0.2s linear;
+  -o-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+  width: 0px;
+}
 /* Select */
 .select-wrapper input.select-dropdown {
   border: 1px solid silver;
