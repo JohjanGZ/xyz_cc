@@ -83,7 +83,12 @@
   justify-content: center;
   align-items: center;
 }
-
+.grid-item-a img{
+  width: 400px;
+}
+.grid-item-b img{
+  width: 130px;
+}
 .img-a {
   width: 250px;
   height: auto;

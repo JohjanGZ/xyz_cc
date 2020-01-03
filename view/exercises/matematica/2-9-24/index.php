@@ -20,20 +20,24 @@
                 <div class="contenido">
                     <div class="seleccion"></div>
                     <div class="seleccion"></div>
+                    <div class="seleccion" alt="n"></div>
                     <div class="seleccion"></div>
                     <div class="seleccion" alt="n"></div>
                     <div class="seleccion"></div>
-                    <div class="seleccion"></div>
-                    <div class="seleccion"></div>
-                    <div class="seleccion" alt="n"></div>
                     <div class="seleccion" alt="n"></div>
                     <div class="seleccion"></div>
-                    <div class="seleccion"></div>
                     <div class="seleccion" alt="n"></div>
+                    <div class="seleccion"></div>
                     <div class="seleccion" alt="n"></div>
                     <div class="seleccion"></div>
                     <div class="seleccion" alt="n"></div>
                     <div class="seleccion" alt="n"></div>
+                    <div class="seleccion" alt="n"></div>
+                    <div class="seleccion"></div>
+                    <div class="seleccion" alt="n"></div>
+                    <div class="seleccion" alt="n"></div>
+                    <div class="seleccion" alt="n"></div>
+                    <div class="seleccion"></div>
                     <div class="seleccion" alt="n"></div>
                     <div class="seleccion" alt="n"></div>
                     <div class="seleccion" alt="n"></div>
@@ -77,13 +81,13 @@ $("#next").attr("onclick", "<?=$next?>");
 
 <script type="text/javascript">
 // Validar
-function result_tipo_2_9_22() {
+function result_tipo_2_9_24() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
-    if (r == 23) {
+    if (r == 27) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();
@@ -92,7 +96,6 @@ function result_tipo_2_9_22() {
         localStorage.setItem("Nota<?=$cod?>", "0");
         localStorage.setItem("Time<?=$cod?>", tiempo);
     }
-
 }
 </script>
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>

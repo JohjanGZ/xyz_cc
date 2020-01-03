@@ -10,17 +10,12 @@ function Page_23() {
     inicio();
     count = 3;
 }
+
 function Page_24() {
     start_24();
     inicio();
     count = 3;
 }
-function Page_25() {
-    start_25();
-    inicio();
-    count = 3;  
-}
-
 
 
 var cant = 18;
@@ -47,7 +42,7 @@ function start_23() {
     $("#ventana").load(ruta + '2-9-23/index.php', {
         next: "Page_24()",
         procesar: "result_tipo_2_9_23()",
-        titulo: "<center><h5><span>Completa</span> los cuadrados mágicos.</h5></center>",
+        titulo: "<center><h5>Anaís encontró en un cofre un grupo de fichas que tienen diseños distintos. <span>Completa</span> los dos gráficos de barras según su diseño o forma, colocando un aspa (x) en los cuadraditos correspondientes.</h5></center>",
         restaurar: "start_23()",
         dir: ruta,
         cod: "2-9-23",
@@ -58,25 +53,12 @@ function start_23() {
 
 function start_24() {
     $("#ventana").load(ruta + '2-9-24/index.php', {
-        next: "Page_25()",
+        next: "resultado()",
         procesar: "result_tipo_2_9_24()",
-        titulo: "<center><h5><span>Completa</span> los cuadrados mágicos.</h5></center>",
+        titulo: "<center><h5>Gerardo encontró un grupo de cartas con diferentes figuras y diseños. <span>Completa</span> los dos diagramas de barras teniendo en cuenta el diseño de las cartas en uno de ellos y las figuras que estas contienen en el otro.</h5></center>",
         restaurar: "start_24()",
         dir: ruta,
         cod: "2-9-24",
-        nota: cal
-    });
-    return false;
-};
-
-function start_25() {
-    $("#ventana").load(ruta + '2-9-25/index.php', {
-        next: "resultado()",
-        procesar: "result_tipo_2_9_25()",
-        titulo: "<center><h5><span>Completa</span> los cuadrados mágicos.</h5></center>",
-        restaurar: "start_25()",
-        dir: ruta,
-        cod: "2-9-25",
         nota: cal
     });
     return false;

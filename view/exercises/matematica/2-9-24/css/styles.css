@@ -5,7 +5,7 @@
   height: 70%;
   display: grid;
   grid-template-columns: repeat(2,1fr);
-
+  padding-top: 5vh;
   /* flex-direction: column; */
 }
 
@@ -20,7 +20,7 @@
 }
 .imageDos {
   width: 500px;
-  height: 500px;
+  height: 470px;
   background-image: url('../img/2.png');
   background-position: center;
   background-size: contain;
@@ -28,16 +28,16 @@
   position: relative;
 }
 .tabla{
-  top: 40px;
-  left: 68px;
+  top: 45px;
+  left: 103px;
   display: grid;
   align-items: center;
   justify-items: center;
   position: absolute;
 }
 .contenido{
-  width: 360px;
-  height: 400px;
+  width: 310px;
+  height: 380px;
   display: grid;
   align-items: center;
   justify-items: center;
@@ -51,22 +51,22 @@
 }
 @media screen and (max-height: 720px){
   .imageUno{
-    height: 390px;
+    height: 340px;
   }
   .imageDos{
     width: 500px;
-    height: 340px;
+    height: 360px;
   }
   .tabla{
     top: 10px;
-    left: 110px;
+    left: 150px;
     display: grid;
     align-items: center;
     justify-items: center;
     position: absolute;
   }
   .contenido{
-    width: 280px;
+    width: 220px;
     height: 300px;
     display: grid;
     align-items: center;
@@ -78,5 +78,9 @@
     height: 33px;
     border: 1px solid rgb(87, 87, 87);
     border-radius: 5px;
+    margin: 1px auto;
+  }
+  center h5{
+    font-size: 22px;
   }
 }
