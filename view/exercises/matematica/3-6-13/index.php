@@ -15,7 +15,7 @@
         <div class="grid-container">
             <div class="grid-ejercicio">
                 <div class="grid-img">
-                    <img src="<?=$dir?>/img/1.png" class="principal">
+                    <img src="<?=$dir?>/img/1.png" class="principal materialboxed">
                     <select class="seleccion" alt="<">
                         <option value="" disabled selected></option>
                         <?php
@@ -24,7 +24,7 @@
                             }
                         ?>
                     </select>
-                    <img src="<?=$dir?>/img/2.png" class="principal">
+                    <img src="<?=$dir?>/img/2.png" class="principal materialboxed">
                 </div>
                 <div class="grid-resp">
                     <div class="contenedor" alt="0,45"></div>
@@ -42,7 +42,7 @@
 
             <div class="grid-ejercicio">
                 <div class="grid-img">
-                    <img src="<?=$dir?>/img/3.png" class="principal">
+                    <img src="<?=$dir?>/img/3.png" class="principal materialboxed">
                     <select class="seleccion" alt=">">
                         <option value="" disabled selected></option>
                         <?php
@@ -51,7 +51,7 @@
                             }
                         ?>
                     </select>
-                    <img src="<?=$dir?>/img/4.png" class="principal">
+                    <img src="<?=$dir?>/img/4.png" class="principal materialboxed">
                 </div>
                 <div class="grid-resp">
                     <div class="contenedor" alt="0,36"></div>

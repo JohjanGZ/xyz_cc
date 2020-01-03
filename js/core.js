@@ -220,7 +220,7 @@ function listar_random($class) {
 
 //? Funcion de sorteable
 //? #sortable -> .lista-item -> lista-item debe tener el #id según el orden de la respuesta correcta y si se usan imagenes las imagenes deben estar en orden según la respuesta correcta
-//? Declarar siempre la variable r -> var r = 0;
+//? Declarar siempre la variable r -> var r = false;
 function ordenar_lista() {
     $("#sortable").sortable({
         update: function (event, ui) {
