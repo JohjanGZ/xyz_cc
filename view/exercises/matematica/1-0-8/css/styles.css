@@ -1,0 +1,43 @@
+h5 {
+    max-width: 85%;
+}
+
+.container {
+    display: flex;
+    height: 70%;
+    align-items: center;
+}
+
+.container .row {
+    width: 100%;
+}
+
+.contenedor-ejercicio {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contenedor-ejercicio img {
+    box-sizing: border-box;
+    padding: 15px;
+    width: 21%;
+    margin: 5px;
+}
+
+@media(max-height: 640px) {
+    .contenedor-ejercicio {
+        padding-top: 20px;
+    }
+    .dropx.uno {
+        height: 200px;
+    }
+    .dropx.dos {
+        height: 170px;
+    }
+    .contenedor-imagen img {
+        max-width: 90%;
+    }
+}
