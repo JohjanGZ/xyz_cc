@@ -1,51 +1,96 @@
-.container-two {
-    margin: 0 auto;
-    max-width: 1280px;
-    width: 90%;
+h5 {
+    max-width: 85%;
 }
-@media (min-width: 1920px) {
-    .container-two {
-        width: 50%;        
-    }
+
+.container {
+    display: flex;
+    height: 70%;
+    align-items: center;
 }
-h4 {
+
+.container .row {
+    width: 100%;
+}
+
+p {
+    width: 100%;
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin: auto;
     text-align: center;
 }
 
-#listA {
+.contenedor-ejercicio {
     display: flex;
+    width: 80%;
+    margin: auto;
     flex-wrap: wrap;
 }
 
-#palabras {
-    padding: 50px;
-}
-
-#palabras li {
-    width: 100%;
-    margin-bottom: 5px;
+.oraciones {
+    width: 50%;
+    height: auto;
     text-align: center;
 }
-#palabras li > img {
-    /* border: 3px solid silver; */
-    border-radius: 10px;
-    /* padding: 25px; */
-}
-#palabras li > span {
-    font-size: 22px;
-    letter-spacing: 10px;
-    padding-left: 8px;
-    border: 3px solid transparent;
-    cursor: pointer;
-}
-#palabras li > span:hover {
-    border: 3px solid #37D3F7;
+
+.contenedor-rueda {
+    width: 50%;
 }
 
-@media (min-width: 600px) {
-    #palabras li {
-        width: 35%;
-        margin: auto;
-        margin-bottom: 15%;
+.contenedor-imagen {
+    width: 75%;
+    min-width: 450px;
+    position: relative;
+}
+
+.contenedor-imagen img {
+    max-width: 100%;
+}
+
+.dropx {
+    position: absolute;
+    width: 300px;
+    height: 150px;
+    margin: auto;
+}
+
+.dropx.uno {
+    top: 0;
+    height: 300px;
+    left: calc(50% - 150px);
+}
+
+.dropx.dos {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.contenedor-rueda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contenedor-rueda img {
+    max-width: 170px;
+    max-height: 170px;
+    margin: 0 5px;
+    padding: 5px;
+}
+
+@media(max-height: 640px) {
+    .contenedor-ejercicio {
+        padding-top: 20px;
+    }
+    .dropx.uno {
+        height: 200px;
+    }
+    .dropx.dos {
+        height: 170px;
+    }
+    .contenedor-imagen img {
+        max-width: 90%;
     }
 }

@@ -16,7 +16,7 @@ function start_4() {
     $("#ventana").load(ruta + '1-0-4/index.php', {
         next: "resultado()",
         procesar: "result_tipo_1_0_4()",
-        titulo: "<center><h5><span>Selecciona</span> la figura y luego <span>arrástrala</span> al lugar correcto.</h5></center>",
+        titulo: "<center><h5><span>Selecciona</span> la figura y luego <span>arrástrala</span> al lugar correcto según la indicación.</h5></center>",
         restaurar: "start_4()",
         dir: ruta,
         cod: "1-0-4",

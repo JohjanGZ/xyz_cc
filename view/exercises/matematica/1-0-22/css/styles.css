@@ -1,0 +1,59 @@
+h5 {
+    max-width: 85%;
+}
+
+.container {
+    display: flex;
+    height: 70%;
+    align-items: center;
+}
+
+.container .row {
+    width: 100%;
+}
+
+.contenedor-ejercicios {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ejercicio {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.ejercicio .item {
+    width: 140px;
+    height: 140px;
+    border: 2px dashed cornflowerblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+}
+
+.item img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.item ul li {
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 2px 6px;
+}
+
+@media (max-height: 640px) {
+    .contenedor-ejercicios {
+        width: 90%;
+    }
+    .ejercicio .item {
+        width: 100px;
+        height: 115px;
+        margin: 0 3px;
+    }
+}

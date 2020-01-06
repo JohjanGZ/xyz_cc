@@ -17,6 +17,7 @@ h4 {
 #palabras {
     padding: 0 50px;
 }
+
 @media (min-width: 1920px) {
     #palabras {
         padding: 50px;
@@ -57,6 +58,7 @@ h4 {
         margin-bottom: 2vh;
     }
 }
+
 img.img-principal {
     width: auto;
     height: 190px;
@@ -64,23 +66,68 @@ img.img-principal {
 }
 </style>
 <?=$titulo?>
-<div class="container-two">
+<div class="container">
     <div class="row">
-        <center>
-            <img src="<?= $dir ?>/img/principal.gif" class="img-principal">
-        </center>
-        <div class="campo" id="palabras">
-            <ul id="listA">
-                <li>
-                    <img src="<?= $dir ?>/img/3.png" class="responsive-img a">
-                </li>   
-                <li>
-                    <img src="<?= $dir ?>/img/1.png" class="responsive-img a" alt="n">
-                </li>
-                <li>
-                    <img src="<?= $dir ?>/img/2.png" class="responsive-img a">
-                </li>
-            </ul>
+        <div class="contenedor-ejercicio">
+            <div class="oraciones">
+                <p>
+                    Una
+                    <span class="pieza" alt="uno">
+                        <img src="<?= $dir ?>/img/1.png" alt="">
+                    </span>
+                    entre la mano y el auto.
+                </p>
+                <p>
+                    Una
+                    <span class="pieza" alt="dos">
+                        <img src="<?= $dir ?>/img/2.png" alt="">
+                    </span>
+                    entre el martillo y el chupetín.
+                </p>
+                <p>
+                    Un
+                    <span class="pieza" alt="tres">
+                        <img src="<?= $dir ?>/img/3.png" alt="">
+                    </span>
+                    entre el martillo y la maceta.
+                </p>
+            </div>
+            <div class="contenedor-rueda">
+                <div class="rueda">
+                    <div class="rueda-item dropx contenedor uno" alt="dos">
+                    
+                    </div>
+                    <div class="rueda-item dropx contenedor dos" alt="tres">
+                    
+                    </div>
+                    <div class="rueda-item dropx contenedor tres" alt="uno">
+                    
+                    </div>
+                    <div class="rueda-item-imagen cuatro">
+                        <img src="<?= $dir ?>/img/4.png" alt="">
+                    </div>
+                    <div class="rueda-item-imagen cinco">
+                        <img src="<?= $dir ?>/img/5.png" alt="">
+
+                    </div>
+                    <div class="rueda-item-imagen seis">
+                        <img src="<?= $dir ?>/img/6.png" alt="">
+
+                    </div>
+                    <div class="rueda-item-imagen siete">
+                        <img src="<?= $dir ?>/img/7.png" alt="">
+
+                    </div>
+                    <div class="rueda-item-imagen ocho">
+                        <img src="<?= $dir ?>/img/8.png" alt="">
+
+                    </div>
+                    <div class="rueda-item-imagen nueve">
+                        <img src="<?= $dir ?>/img/9.png" alt="">
+
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -97,12 +144,14 @@ img.img-principal {
 </div>
 </body>
 <script src="../../../../../js/core.js"></script>
-<?php require('../../../tools/botones/botones.php');?> <script>$("#next").attr("onclick","<?=$next?>");</script>
+<?php require('../../../tools/botones/botones.php');?> <script>
+$("#next").attr("onclick", "<?=$next?>");
+</script>
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
 // Formulario - Registrados
 
-function result_tipo_1_0_13() {
+function result_tipo_1_0_4() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
@@ -110,7 +159,7 @@ function result_tipo_1_0_13() {
 
 
 
-    if (r == 1) {
+    if (r == 3) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();
