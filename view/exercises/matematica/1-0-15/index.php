@@ -11,123 +11,63 @@
 
 <body>
     <div class="container-two">
+        <center>
+            <img src="<?= $dir ?>/img/principal.gif" class="img">
+        </center>
         <div class="grid-container">
             <div class="grid-item">
-                <img src="<?= $dir ?>/img/principal1.png" class="img">
-                <div class="box-select">
-                    <div class="box-igual">
-                        <img src="<?=$dir?>/img/1.png" class="img-select">
-                        <select id="select1">
-                            <option value="" disabled selected></option>
-                            <?php for ($i=1; $i <= 10; $i++) { ?>
-                            <?php if ($i == 1) { ?>
-                            <option value="<?=$i?>"><?= $i?> </option>
-                            <?php } else { ?>
-                            <option value="<?=$i?>"><?= $i?> </option>
-                            <?php } ?>
-                            <?php } ?>
-                        </select>
-                    </div>
-                    <div class="box-igual">
-                        <img src="<?=$dir?>/img/2.png" class="img-select">
-                        <select id="select2">
-                            <option value="" disabled selected></option>
-                            <?php for ($i=1; $i <= 10; $i++) { ?>
-                            <?php if ($i == 1) { ?>
-                            <option value="<?=$i?>"><?= $i?> </option>
-                            <?php } else { ?>
-                            <option value="<?=$i?>"><?= $i?> </option>
-                            <?php } ?>
-                            <?php } ?>
-                        </select>
-                    </div>
-                    <div class="box-igual">
-                        <img src="<?=$dir?>/img/3.png" class="img-select">
-                        <select id="select3">
-                            <option value="" disabled selected></option>
-                            <?php for ($i=1; $i <= 10; $i++) { ?>
-                            <?php if ($i == 1) { ?>
-                            <option value="<?=$i?>"><?= $i?> </option>
-                            <?php } else { ?>
-                            <option value="<?=$i?>"><?= $i?> </option>
-                            <?php } ?>
-                            <?php } ?>
-                        </select>
-                    </div>
-                    <div class="box-igual">
-                        <img src="<?=$dir?>/img/4.png" class="img-select">
-                        <select id="select4">
-                            <option value="" disabled selected></option>
-                            <?php for ($i=1; $i <= 10; $i++) { ?>
-                            <?php if ($i == 1) { ?>
-                            <option value="<?=$i?>"><?= $i?> </option>
-                            <?php } else { ?>
-                            <option value="<?=$i?>"><?= $i?> </option>
-                            <?php } ?>
-                            <?php } ?>
-                        </select>
-                    </div>
+                <div class="flex-box">
+                    <span class="span-before">Hay</span>
+                    <div class="caja" alt="5"></div>
+                    <span class="span-after">niños y</span>
+                    <div class="caja" alt="2"></div>
+                    <span class="span-after">niñas fuera de la casa.</span>
                 </div>
             </div>
-
             <div class="grid-item">
-                <img src="<?= $dir ?>/img/principal2.png" class="img">
-                <div class="box-select">
-                    <div class="box-igual">
-                        <img src="<?=$dir?>/img/1.png" class="img-select">
-                        <select id="select5">
-                            <option value="" disabled selected></option>
-                            <?php for ($i=1; $i <= 10; $i++) { ?>
-                            <?php if ($i == 1) { ?>
-                            <option value="<?=$i?>"><?= $i?> </option>
-                            <?php } else { ?>
-                            <option value="<?=$i?>"><?= $i?> </option>
-                            <?php } ?>
-                            <?php } ?>
-                        </select>
-                    </div>
-                    <div class="box-igual">
-                        <img src="<?=$dir?>/img/2.png" class="img-select">
-                        <select id="select6">
-                            <option value="" disabled selected></option>
-                            <?php for ($i=1; $i <= 10; $i++) { ?>
-                            <?php if ($i == 1) { ?>
-                            <option value="<?=$i?>"><?= $i?> </option>
-                            <?php } else { ?>
-                            <option value="<?=$i?>"><?= $i?> </option>
-                            <?php } ?>
-                            <?php } ?>
-                        </select>
-                    </div>
-                    <div class="box-igual">
-                        <img src="<?=$dir?>/img/3.png" class="img-select">
-                        <select id="select7">
-                            <option value="" disabled selected></option>
-                            <?php for ($i=1; $i <= 10; $i++) { ?>
-                            <?php if ($i == 1) { ?>
-                            <option value="<?=$i?>"><?= $i?> </option>
-                            <?php } else { ?>
-                            <option value="<?=$i?>"><?= $i?> </option>
-                            <?php } ?>
-                            <?php } ?>
-                        </select>
-                    </div>
-                    <div class="box-igual">
-                        <img src="<?=$dir?>/img/4.png" class="img-select">
-                        <select id="select8">
-                            <option value="" disabled selected></option>
-                            <?php for ($i=1; $i <= 10; $i++) { ?>
-                            <?php if ($i == 1) { ?>
-                            <option value="<?=$i?>"><?= $i?> </option>
-                            <?php } else { ?>
-                            <option value="<?=$i?>"><?= $i?> </option>
-                            <?php } ?>
-                            <?php } ?>
-                        </select>
-                    </div>
+                <div class="flex-box">
+                    <span class="span-before">Hay</span>
+                    <div class="caja" alt="2"></div>
+                    <span class="span-after">niños y</span>
+                    <div class="caja" alt="7"></div>
+                    <span class="span-after">niñas dentro de la casa.</span>
                 </div>
             </div>
+        </div>
 
+        <div class="contenedor-silabas">
+            <ul class="opciones">
+                <li id="1" alt="5" class="pieza">
+                    <span>5</span>
+                </li>
+                <li id="2" alt="2" class="pieza">
+                    <span>2</span>
+                </li>
+                <li id="3" alt="3" class="pieza">
+                    <span>3</span>
+                </li>
+                <li id="4" alt="2" class="pieza">
+                    <span>2</span>
+                </li>
+                <li id="5" alt="5" class="pieza">
+                    <span>5</span>
+                </li>
+                <li id="6" alt="6" class="pieza">
+                    <span>6</span>
+                </li>
+                <li id="7" alt="7" class="pieza">
+                    <span>7</span>
+                </li>
+                <li id="8" alt="8" class="pieza">
+                    <span>8</span>
+                </li>
+                <li id="9" alt="9" class="pieza">
+                    <span>9</span>
+                </li>
+                <li id="10 alt=" 10" class="pieza">
+                    <span>10</span>
+                </li>
+            </ul>
         </div>
     </div>
     <!-- Respuesta -->
@@ -156,13 +96,12 @@ function result_tipo_1_0_15() {
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
-    if (r == 8) {
+    if (r == 4) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();
     } else {
         incorrecto();
-        console.log(r);
         localStorage.setItem("Nota<?=$cod?>", "0");
         localStorage.setItem("Time<?=$cod?>", tiempo);
     }
