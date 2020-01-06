@@ -1,0 +1,56 @@
+h5 {
+    max-width: 80%;
+}
+
+.container {
+    display: flex;
+    height: 70%;
+    align-items: center;
+}
+
+.container .row {
+    width: 100%;
+}
+
+.contenedor-ejercicio {
+    width: 80%;
+    margin: auto;
+}
+
+.contenedor-contenedores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-x {
+    width: 250px;
+    height: 250px;
+    border: 3px solid silver;
+    border-radius: 12px;
+    text-align: center;
+    margin: 0 5px;
+}
+
+.contenedor-x span {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.contenedor-imagenes {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.contenedor-imagenes img {
+    max-width: 120px;
+    max-height: 100px;
+    margin: 5px;
+}
+
+@media(max-height: 640px) {
+    .contenedor-imagenes {
+        padding-top: 10px;
+    }
+}
