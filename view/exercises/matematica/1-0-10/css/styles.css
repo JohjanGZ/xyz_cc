@@ -1,0 +1,18 @@
+h5 {
+    max-width: 85%;
+}
+
+@media(max-height: 640px) {
+    .contenedor-ejercicio {
+        padding-top: 20px;
+    }
+    .dropx.uno {
+        height: 200px;
+    }
+    .dropx.dos {
+        height: 170px;
+    }
+    .contenedor-imagen img {
+        max-width: 90%;
+    }
+}

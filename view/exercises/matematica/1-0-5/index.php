@@ -17,6 +17,7 @@ h4 {
 #palabras {
     padding: 0 50px;
 }
+
 @media (min-width: 1920px) {
     #palabras {
         padding: 50px;
@@ -57,6 +58,7 @@ h4 {
         margin-bottom: 2vh;
     }
 }
+
 img.img-principal {
     width: auto;
     height: 190px;
@@ -64,23 +66,32 @@ img.img-principal {
 }
 </style>
 <?=$titulo?>
-<div class="container-two">
+<div class="container">
     <div class="row">
-        <center>
-            <img src="<?= $dir ?>/img/principal.gif" class="img-principal">
-        </center>
-        <div class="campo" id="palabras">
-            <ul id="listA">
-                <li>
-                    <img src="<?= $dir ?>/img/3.png" class="responsive-img a">
-                </li>   
-                <li>
-                    <img src="<?= $dir ?>/img/1.png" class="responsive-img a" alt="n">
-                </li>
-                <li>
-                    <img src="<?= $dir ?>/img/2.png" class="responsive-img a">
-                </li>
-            </ul>
+
+
+        <div class="contenedor-ejercicio">
+           
+            <div class="oraciones">
+
+                <div class="contenedor-imagen">
+                    <img src="<?= $dir ?>/img/1.png" alt="">
+                    <div class="contenedor dropx uno" alt="uno">
+
+                    </div>
+                    <div class="contenedor dropx dos" alt="dos">
+
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor-rueda">
+            <p>
+                • El mono arriba del árbol. <br>
+                • El perro abajo.
+            </p>
+                <img src="<?= $dir ?>/img/2.png" class="pieza" alt="uno">
+                <img src="<?= $dir ?>/img/3.png" alt="dos" class="pieza">
+            </div>
         </div>
     </div>
 </div>
@@ -97,12 +108,14 @@ img.img-principal {
 </div>
 </body>
 <script src="../../../../../js/core.js"></script>
-<?php require('../../../tools/botones/botones.php');?> <script>$("#next").attr("onclick","<?=$next?>");</script>
+<?php require('../../../tools/botones/botones.php');?> <script>
+$("#next").attr("onclick", "<?=$next?>");
+</script>
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
 // Formulario - Registrados
 
-function result_tipo_1_0_13() {
+function result_tipo_1_0_5() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
@@ -110,7 +123,7 @@ function result_tipo_1_0_13() {
 
 
 
-    if (r == 1) {
+    if (r == 2) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();

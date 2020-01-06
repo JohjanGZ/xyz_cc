@@ -1,51 +1,140 @@
-.container-two {
-    margin: 0 auto;
-    max-width: 1280px;
-    width: 90%;
-}
-@media (min-width: 1920px) {
-    .container-two {
-        width: 50%;        
-    }
-}
-h4 {
-    text-align: center;
+h5 {
+    max-width: 85%;
 }
 
-#listA {
+.container {
     display: flex;
-    flex-wrap: wrap;
+    height: 70%;
+    align-items: center;
 }
 
-#palabras {
-    padding: 50px;
-}
-
-#palabras li {
+.container .row {
     width: 100%;
-    margin-bottom: 5px;
+}
+
+.contenedor-ejercicio {
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+.oraciones {
+    width: 50%;
     text-align: center;
 }
-#palabras li > img {
-    /* border: 3px solid silver; */
-    border-radius: 10px;
-    /* padding: 25px; */
-}
-#palabras li > span {
-    font-size: 22px;
-    letter-spacing: 10px;
-    padding-left: 8px;
-    border: 3px solid transparent;
-    cursor: pointer;
-}
-#palabras li > span:hover {
-    border: 3px solid #37D3F7;
+
+.contenedor-rueda {
+    width: 50%;
 }
 
-@media (min-width: 600px) {
-    #palabras li {
-        width: 35%;
-        margin: auto;
-        margin-bottom: 15%;
-    }
+.rueda {
+    background-color: cornflowerblue;
+    border: 3px solid silver;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    position: relative;
+    margin: auto;
 }
+
+.rueda-item.dropx {
+    width: 100px;
+    height: 0px;
+    border-right: 60px solid transparent;
+    border-left: 60px solid transparent;
+    border-top: 100px solid transparent;
+}
+
+.rueda-item.uno {
+    position: absolute;
+    top: 90;
+    left: 7px;
+    transform: rotate(-79deg);
+}
+
+.rueda-item.dos {
+    position: absolute;
+    bottom: 10px;
+    left: 90px;
+    transform: rotate(180deg);
+}
+
+.rueda-item.tres {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    transform: rotate(57deg);
+}
+
+.rueda-item-imagen {
+    width: 100px;
+    height: 100px;
+}
+
+.rueda-item-imagen img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.rueda-item-imagen.cuatro {
+    position: absolute;
+    top: 10px;
+    right: 65px;
+    transform: rotate(16deg);
+}
+
+.rueda-item-imagen.cinco {
+    position: absolute;
+    top: 18px;
+    left: 60px;
+    transform: rotate(-12deg);
+}
+
+.rueda-item-imagen.seis {
+    position: absolute;
+    top: 175px;
+    left: 30px;
+    transform: rotate(-9deg);
+}
+
+.rueda-item-imagen.siete {
+    position: absolute;
+    top: 188px;
+    right: 38px;
+    transform: rotate(1deg);
+}
+
+.rueda-item-imagen.ocho {
+    position: absolute;
+    top: 125px;
+    right: 5px;
+    transform: rotate(-10deg);
+}
+
+.rueda-item-imagen.nueve {
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+}
+
+.oraciones p {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    font-size: 1.5rem;
+    margin: auto;
+}
+
+.oraciones p span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.oraciones p span img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+@media(max-height: 640px) {}
