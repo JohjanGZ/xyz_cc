@@ -23,6 +23,7 @@
                 <div class="item seleccion"><p>M</p></div>
             </div>
         </div>
+    </div>
 
         <div id="modal1" class="modal">
             <div class="modal-content">

@@ -16,7 +16,7 @@ function start_6() {
     $("#ventana").load(ruta + '1-0-6/index.php', {
         next: "resultado()",
         procesar: "result_tipo_1_0_6()",
-        titulo: "<center><h5><span>Observa</span> las imágenes, luego selecciona y colócalas según las indicaciones.</h5></center>",
+        titulo: "<center><h5><span>Observa</span> las imágenes, luego selecciona y <span>colócalas</span> según las indicaciones.</h5></center>",
         restaurar: "start_6()",
         dir: ruta,
         cod: "1-0-6",

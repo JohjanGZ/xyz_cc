@@ -60,21 +60,21 @@ h4 {
 <div class="container-two">
     <div class="row">
         <div class="campo" id="palabras">
-            <ul id="listA">
+            <ul id="listA" class="aleatorio">
                 <li>
-                    <img src="<?= $dir ?>/img/1.png" class="responsive-img a" alt="n">
+                    <img src="<?= $dir ?>/img/1.png" class="responsive-img a seleccion" alt="n">
                 </li>
                 <li>
-                    <img src="<?= $dir ?>/img/2.png" class="responsive-img a">
+                    <img src="<?= $dir ?>/img/2.png" class="responsive-img a seleccion">
                 </li>
                 <li>
-                    <img src="<?= $dir ?>/img/3.png" class="responsive-img a" alt="n">
+                    <img src="<?= $dir ?>/img/3.png" class="responsive-img a seleccion" alt="n">
                 </li>
                 <li>
-                    <img src="<?= $dir ?>/img/4.png" class="responsive-img a">
+                    <img src="<?= $dir ?>/img/4.png" class="responsive-img a seleccion">
                 </li>        
                 <li>
-                    <img src="<?= $dir ?>/img/1.png" class="responsive-img a" alt="n">
+                    <img src="<?= $dir ?>/img/1.png" class="responsive-img a seleccion" alt="n">
                 </li>
             </ul>
         </div>
@@ -98,12 +98,11 @@ h4 {
 <script type="text/javascript">
 // Formulario - Registrados
 
-function result_tipo_1_0_12() {
+function result_tipo_1_0_1() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
-
 
 
     if (r == 3) {
@@ -118,4 +117,3 @@ function result_tipo_1_0_12() {
 
 }
 </script>
-<script type="text/javascript" src="../../../exercises/comunicacion/1-0-9/js/validate.js"></script>

@@ -5,83 +5,25 @@
     <link rel="stylesheet" type="text/css" href="<?= $dir ?>/css/styles.css">
 </head>
 <style type="text/css">
-h4 {
-    text-align: center;
-}
-
-#listA {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#palabras {
-    padding: 0 50px;
-}
-@media (min-width: 1920px) {
-    #palabras {
-        padding: 50px;
-    }
-}
-
-#palabras li {
-    width: 100%;
-    margin-bottom: 5px;
-    text-align: center;
-}
-
-#palabras li>img {
-    border: 3px solid silver;
-    border-radius: 10px;
-    padding: 10px;
-    width: auto;
-    height: 160px;
-}
-
-#palabras li>span {
-    font-size: 22px;
-    letter-spacing: 10px;
-    padding-left: 8px;
-    border: 3px solid transparent;
-    cursor: pointer;
-}
-
-#palabras li>span:hover {
-    border: 3px solid #37D3F7;
-    border-radius: 5px;
-}
-
-@media (min-width: 600px) {
-    #palabras li {
-        width: 200PX;
-        margin: auto;
-        margin-bottom: 2vh;
-    }
-}
-img.img-principal {
-    width: auto;
-    height: 190px;
-    margin-top: 5vh;
-}
 </style>
 <?=$titulo?>
 <div class="container-two">
-    <div class="row">
-        <center>
-            <img src="<?= $dir ?>/img/principal.gif" class="img-principal">
-        </center>
-        <div class="campo" id="palabras">
-            <ul id="listA">
-                <li>
-                    <img src="<?= $dir ?>/img/3.png" class="responsive-img a">
-                </li>   
-                <li>
-                    <img src="<?= $dir ?>/img/1.png" class="responsive-img a" alt="n">
-                </li>
-                <li>
-                    <img src="<?= $dir ?>/img/2.png" class="responsive-img a">
-                </li>
-            </ul>
+    <div class="info aleatorio">
+        <div class="item itemuno">
+            <span>El <div><img class="pieza" src="<?= $dir ?>/img/2.png" alt="2"></div> está encima  de la silla</span>
         </div>
+        <div class="item itemdos">
+            <span>El <div><img class="pieza" src="<?= $dir ?>/img/3.png" alt="1"></div> está encima  de la mesa</span>
+        </div>
+        <div class="item itemtres">
+            <span>La <div><img class="pieza" src="<?= $dir ?>/img/4.png" alt="3"></div> está debajo  de la mesa</span>
+        </div>
+    </div>
+    <div class="image">
+        <div class="contenedor box1" alt="1"></div>
+        <div class="contenedor box2" alt="2"></div>
+        <div class="contenedor box3" alt="2"></div>
+        <div class="contenedor box4" alt="3"></div>
     </div>
 </div>
 <div id="modal1" class="modal">
@@ -102,15 +44,13 @@ img.img-principal {
 <script type="text/javascript">
 // Formulario - Registrados
 
-function result_tipo_1_0_13() {
+function result_tipo_1_0_6() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
-
-
-    if (r == 1) {
+    if (r == 3) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();
@@ -122,4 +62,3 @@ function result_tipo_1_0_13() {
 
 }
 </script>
-<script type="text/javascript" src="../../../exercises/comunicacion/1-0-9/js/validate.js"></script>

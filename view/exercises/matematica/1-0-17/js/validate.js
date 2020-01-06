@@ -1,49 +1,26 @@
-var n1 = 0;
-var n2 = 0;
-var n3 = 0;
-
-var ul = document.querySelector('#listA');
-for (var i = ul.children.length; i >= 0; i--) {
-    ul.appendChild(ul.children[Math.random() * i | 0]);
-}
-
-$(".pieza").draggable({
-    start: function() {
-        element = $(this).attr("alt");
-        elementid = $(this);
-        // console.log(elementid);
+    $('select').formSelect();
+    // Random
+    var div = document.querySelector('.grid-container');
+    for (var i = div.children.length; i >= 0; i--) {
+        div.appendChild(div.children[Math.random() * i | 0]);
     }
-});
-
-$("#1").droppable({
-    classes: {
-        "ui-droppable-active": "ui-state-active",
-        "ui-droppable-hover": "ui-state-hover"
-    },
-    drop: function(event, ui) {
-        $(this).css("background-color", "rgba(139, 195, 74, 0.14)");
-        //  $( this ).target.append(event.target);
-        if (element == "1" || element == "5"  || element == "6" || element == "7"  || element == "8"  || element == "9"  || element == "10") {
-            n1++
-            // console.log(n1);
-        }
-        ui.draggable.draggable("disable", 1);
-    }
-});
-// dE
-$("#2").droppable({
-    classes: {
-        "ui-droppable-active": "ui-state-active",
-        "ui-droppable-hover": "ui-state-hover"
-    },
-    drop: function(event, ui) {
-        $(this).css("background-color", "rgba(139, 195, 74, 0.14)");
-        //  $( this ).target.append(event.target);
-
-        if (element == "2" || element == "3" || element == "4"  || element == "11") {
-            n2++
-            // console.log(n1);
-        }
-        ui.draggable.draggable("disable", 1);
-    }
-});
+    // Select
+    var r = 0;
+    $("#slc1").change(function() { if ($(this).val() == 4) { r++; } });
+    $("#slc2").change(function() { if ($(this).val() == 5) { r++; } });
+    $("#slc3").change(function() { if ($(this).val() == 4) { r++; } });
+    $("#slc4").change(function() { if ($(this).val() == 2) { r++; } });
+    // $("#slc5").change(function() { if ($(this).val() == 18) { r++; } });
+    // $("#slc6").change(function() { if ($(this).val() == 14) { r++; } });
+    // $("#slc7").change(function() { if ($(this).val() == 1) { r++; } });
+    // $("#slc8").change(function() { if ($(this).val() == 4) { r++; } });
+    // $("#slc9").change(function() { if ($(this).val() == 5) { r++; } });
+    // $("#slc10").change(function() { if ($(this).val() == 2) { r++; } });
+    // $("#slc11").change(function() { if ($(this).val() == 6) { r++; } });
+    // $("#slc12").change(function() { if ($(this).val() == 8) { r++; } });
+    // $("#slc13").change(function() { if ($(this).val() == 3) { r++; } });
+    // $("#slc14").change(function() { if ($(this).val() == 3) { r++; } });
+    // $("#slc15").change(function() { if ($(this).val() == 6) { r++; } });
+    // $("#slc16").change(function() { if ($(this).val() == 5) { r++; } });
+    // $("#slc17").change(function() { if ($(this).val() == 4) { r++; } });
+    // $("#slc18").change(function() { if ($(this).val() == 9) { r++; } });

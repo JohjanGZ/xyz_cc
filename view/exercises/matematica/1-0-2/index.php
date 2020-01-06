@@ -67,29 +67,29 @@ h4 {
 <div class="container-two">
     <div class="row">
         <div class="campo" id="palabras">
-            <ul id="listA">
+            <ul id="listA" class="aleatorio">
                 <li>
-                    <div class="box-img a">
+                    <div class="box-img a seleccion">
                         <img src="<?= $dir ?>/img/1.png" class="responsive-img">
                     </div>
                 </li>
                 <li>
-                    <div class="box-img a"  alt="n">
+                    <div class="box-img a seleccion"  alt="n">
                         <img src="<?= $dir ?>/img/2.png" class="responsive-img">
                     </div>
                 </li>
                 <li>
-                    <div class="box-img a">
+                    <div class="box-img a seleccion">
                         <img src="<?= $dir ?>/img/3.png" class="responsive-img">
                     </div>
                 </li>
                 <li>
-                    <div class="box-img a"  alt="n">
+                    <div class="box-img a seleccion"  alt="n">
                         <img src="<?= $dir ?>/img/4.png" class="responsive-img">
                     </div>
                 </li>
                 <li>
-                    <div class="box-img a"  alt="n">
+                    <div class="box-img a seleccion"  alt="n">
                         <img src="<?= $dir ?>/img/5.png" class="responsive-img">
                     </div>
                 </li>
@@ -115,13 +115,11 @@ h4 {
 <script type="text/javascript">
 // Formulario - Registrados
 
-function result_tipo_1_0_14() {
+function result_tipo_1_0_2() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
-
-
 
     if (r == 3) {
         localStorage.setItem("Nota<?=$cod?>", nota);

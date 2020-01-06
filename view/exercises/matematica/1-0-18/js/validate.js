@@ -1,26 +1,95 @@
-    $('select').formSelect();
-    // Random
-    var div = document.querySelector('.grid-container');
-    for (var i = div.children.length; i >= 0; i--) {
-        div.appendChild(div.children[Math.random() * i | 0]);
+var r = 0;
+
+var ul = document.querySelector('#listA');
+for (var i = ul.children.length; i >= 0; i--) {
+    ul.appendChild(ul.children[Math.random() * i | 0]);
+}
+var ul = document.querySelector('#listB');
+for (var i = ul.children.length; i >= 0; i--) {
+    ul.appendChild(ul.children[Math.random() * i | 0]);
+}
+
+var canvas = document.getElementById("micanvas");
+var ctx = canvas.getContext("2d");
+
+$('.a').click(function() {
+    var obj1 = null;
+    var obj2 = null;
+    var valor = $(this).attr("value");
+    if (valor != 1) {
+        var sitio1 = $(this).index();
+        $('.a').css({
+            "background-color": "white",
+            "border": "solid 1px silver",
+            "box-shadow": "none",
+            "z-index": "0"
+        });
+
+        $(this).css({
+            "background-color": "silver",
+            "background-color": "rgba(254, 205, 84, 0.65)",
+            "border": "solid white",
+            "box-shadow": "0 0 3px black",
+            "z-index": "1"
+        });
+
+        obj1 = $(this).attr("alt");
+        console.log(obj1);
+        ctx.beginPath();
+        switch (sitio1) {
+            case 0:
+                ctx.moveTo(85, 0);
+                break;
+            case 1:
+                ctx.moveTo(255, 0);
+                break;
+            case 2:
+                ctx.moveTo(425, 0);
+                break;
+            case 3:
+                ctx.moveTo(595, 0);
+                break;
+            case 4:
+                ctx.moveTo(765, 0);
+                break;
+        }
+        valor = 1;
     }
-    // Select
-    var r = 0;
-    $("#slc1").change(function() { if ($(this).val() == 4) { r++; } });
-    $("#slc2").change(function() { if ($(this).val() == 5) { r++; } });
-    $("#slc3").change(function() { if ($(this).val() == 4) { r++; } });
-    $("#slc4").change(function() { if ($(this).val() == 2) { r++; } });
-    // $("#slc5").change(function() { if ($(this).val() == 18) { r++; } });
-    // $("#slc6").change(function() { if ($(this).val() == 14) { r++; } });
-    // $("#slc7").change(function() { if ($(this).val() == 1) { r++; } });
-    // $("#slc8").change(function() { if ($(this).val() == 4) { r++; } });
-    // $("#slc9").change(function() { if ($(this).val() == 5) { r++; } });
-    // $("#slc10").change(function() { if ($(this).val() == 2) { r++; } });
-    // $("#slc11").change(function() { if ($(this).val() == 6) { r++; } });
-    // $("#slc12").change(function() { if ($(this).val() == 8) { r++; } });
-    // $("#slc13").change(function() { if ($(this).val() == 3) { r++; } });
-    // $("#slc14").change(function() { if ($(this).val() == 3) { r++; } });
-    // $("#slc15").change(function() { if ($(this).val() == 6) { r++; } });
-    // $("#slc16").change(function() { if ($(this).val() == 5) { r++; } });
-    // $("#slc17").change(function() { if ($(this).val() == 4) { r++; } });
-    // $("#slc18").change(function() { if ($(this).val() == 9) { r++; } });
+
+    $('.b').click(function() {
+
+        var sitio2 = $(this).index();
+        $('.b').css({ "background-color": "white" });
+        $(this).css({ "background-color": "silver", "background-color": "rgba(254, 205, 84, 0.65)", "border": "solid white", "box-shadow": "0 0 3px black", "z-index": "1" });
+        var obj2 = $(this).attr("alt");
+        console.log(obj2);
+        switch (sitio2) {
+            case 0:
+                ctx.lineTo(85, 100);
+                break;
+            case 1:
+                ctx.lineTo(255, 100);
+                break;
+            case 2:
+                ctx.lineTo(425, 100);
+                break;
+            case 3:
+                ctx.lineTo(595, 100);
+                break;
+            case 4:
+                ctx.lineTo(765, 100);
+                break;
+        }
+        ctx.strokeStyle = "orange";
+        ctx.lineWidth = 5;
+        ctx.stroke();
+
+
+
+
+        if (obj1 == obj2) {
+            r++;
+            console.log(r);
+        }
+    });
+});

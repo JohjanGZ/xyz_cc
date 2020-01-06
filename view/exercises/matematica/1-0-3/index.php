@@ -102,7 +102,7 @@ img.img-principal {
 <script type="text/javascript">
 // Formulario - Registrados
 
-function result_tipo_1_0_13() {
+function result_tipo_1_0_3() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();

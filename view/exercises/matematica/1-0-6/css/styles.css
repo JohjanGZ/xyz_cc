@@ -1,51 +1,85 @@
 .container-two {
     margin: 0 auto;
-    max-width: 1280px;
-    width: 90%;
-}
-@media (min-width: 1920px) {
-    .container-two {
-        width: 50%;        
-    }
-}
-h4 {
-    text-align: center;
+    max-width: 1080px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
 }
 
-#listA {
-    display: flex;
-    flex-wrap: wrap;
+.item div, .item span{
+    display: inline-block;
+}
+.item{
+    margin: 10px auto;
+}
+.info img{
+    height: 90px;
+}
+.itemtres img{
+    height: 60px;
+}
+.image{
+    width: 500px;
+    height: 500px;
+    background-image: url('../img/1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    z-index: -99;
+}
+.pieza:hover{
+    box-shadow: none;
 }
 
-#palabras {
-    padding: 50px;
+.box1{
+    position: absolute;
+    top: 168px;
+    left: 110px;
+    width: 280px;
+    height: 80px;
+    border-right: 60px solid transparent;
+    border-left: 60px solid transparent;
+    border-bottom: 40px solid #00000000;
+}
+.box2{
+    position: absolute;
+    top: 224px;
+    left: 30px;
+    width: 100px;
+    height: 70px;
+    border-right: 20px solid transparent;
+    border-left: 40px solid transparent;
+    border-bottom: 40px solid #c5363600;
+    transform: rotateZ(20deg);
 }
 
-#palabras li {
-    width: 100%;
-    margin-bottom: 5px;
-    text-align: center;
+.box3{
+    position: absolute;
+    top: 224px;
+    left: 380px;
+    width: 100px;
+    height: 70px;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-bottom: 40px solid #c5363600;
+    transform: rotateZ(20deg);
 }
-#palabras li > img {
-    /* border: 3px solid silver; */
-    border-radius: 10px;
-    /* padding: 25px; */
+.box4{
+    position: absolute;
+    top: 298px;
+    left: 110px;
+    width: 280px;
+    height: 70px;
+    border-right: 60px solid transparent;
+    border-left: 60px solid transparent;
+    border-bottom: 40px solid #97484800;
 }
-#palabras li > span {
-    font-size: 22px;
-    letter-spacing: 10px;
-    padding-left: 8px;
-    border: 3px solid transparent;
-    cursor: pointer;
-}
-#palabras li > span:hover {
-    border: 3px solid #37D3F7;
-}
-
-@media (min-width: 600px) {
-    #palabras li {
-        width: 35%;
-        margin: auto;
-        margin-bottom: 15%;
+@media screen and (max-height: 800px){
+    .image{
+        width: 500px;
+        height: 400px;
     }
 }

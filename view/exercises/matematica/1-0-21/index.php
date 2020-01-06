@@ -89,7 +89,7 @@
 <script type="text/javascript">
 // Validar
 
-function result_tipo_1_1_2() {
+function result_tipo_1_0_21() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
