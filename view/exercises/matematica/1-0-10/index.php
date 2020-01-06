@@ -522,7 +522,6 @@ function result_tipo_1_0_10() {
     var tiempo = min + ":" + seg + ":" + milseg;
 
 
-
     if (r == 3) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
