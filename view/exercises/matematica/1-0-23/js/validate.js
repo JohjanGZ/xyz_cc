@@ -1,16 +1,17 @@
-var r = 0;
+var ul = document.querySelector('.grid-container');
+for (var i = ul.children.length; i >= 0; i--) {
+    ul.appendChild(ul.children[Math.random() * i | 0]);
+}
 
-$('.indicator').click(function () {
+var r = 0;
+$('.caja').click(function() {
     $(this).css({
-        "border": "6px solid",
-        "border-color": "transparent",
-        "background": "transparent",
-        "background-image": "url(../../../exercises/matematica/1-0-23/img/sombra.png)",
-        "background-size": "contain",
-        "background-repeat": "no-repeat",
-        "background-color": "#B6ECFF"
+        "border": "solid",
+        "border-color": "#37D3F7",
+        "background": "#B6ECFF"
     });
     var element = $(this).attr("alt");
+
     var select = $(this).attr("value");
     if (select != "seleccionado") {
         if (element == "n") {
@@ -20,6 +21,6 @@ $('.indicator').click(function () {
             r--;
             $(this).attr("value", "seleccionado");
         }
+        console.log(r);
     }
-    // console.log(r);
 })

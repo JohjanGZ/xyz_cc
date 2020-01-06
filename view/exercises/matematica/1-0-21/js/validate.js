@@ -1,29 +1,60 @@
-var lb = document.querySelector('.opciones');
-for (var n = lb.children.length; n >= 0; n--) {
-    lb.appendChild(lb.children[Math.random() * n | 0]);
-}
-var la = document.querySelector('.grid-container');
-for (var i = la.children.length; i >= 0; i--) {
-    la.appendChild(la.children[Math.random() * i | 0]);
-}
+var n1 = 0;
+var n2 = 0;
+var n3 = 0;
 
-var r = 0 ;
+var ul = document.querySelector('#listA');
+for (var i = ul.children.length; i >= 0; i--) {
+    ul.appendChild(ul.children[Math.random() * i | 0]);
+}
 
 $(".pieza").draggable({
     start: function() {
         element = $(this).attr("alt");
-        elementid = $(this);
-        // console.log(elementid);
     }
 });
 
-$(".caja").droppable({
+$("#1").droppable({
+    classes: {
+        "ui-droppable-active": "ui-state-active",
+        "ui-droppable-hover": "ui-state-hover"
+    },
     drop: function(event, ui) {
         $(this).css("background-color", "rgba(139, 195, 74, 0.14)");
-        element2 = $(this).attr("alt");
-        elementid.css("background-color", "transparent");
-        if (element == element2) {
-            r++;
+        //  $( this ).target.append(event.target);
+        if (element == "2" || element == "5") {
+            n1++
+        }
+        ui.draggable.draggable("disable", 1);
+    }
+});
+// dE
+$("#2").droppable({
+    classes: {
+        "ui-droppable-active": "ui-state-active",
+        "ui-droppable-hover": "ui-state-hover"
+    },
+    drop: function(event, ui) {
+        $(this).css("background-color", "rgba(139, 195, 74, 0.14)");
+        //  $( this ).target.append(event.target);
+
+        if (element == "3" || element == "7" || element == "8") {
+            n2++
+        }
+        ui.draggable.draggable("disable", 1);
+    }
+});
+
+$("#3").droppable({
+    classes: {
+        "ui-droppable-active": "ui-state-active",
+        "ui-droppable-hover": "ui-state-hover"
+    },
+    drop: function(event, ui) {
+        $(this).css("background-color", "rgba(139, 195, 74, 0.14)");
+        //  $( this ).target.append(event.target);
+
+        if (element == "1" || element == "4" || element == "6") {
+            n3++
         }
         ui.draggable.draggable("disable", 1);
     }

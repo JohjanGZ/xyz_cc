@@ -1,27 +1,19 @@
-
-        var r = 0;
-        var ul = document.querySelector('#listA');
-        for (var i = ul.children.length; i >= 0; i--) {
-            ul.appendChild(ul.children[Math.random() * i | 0]);
+    $('select').formSelect();
+    // Random
+    // var div = document.querySelector('.grid-container');
+    // for (var i = div.children.length; i >= 0; i--) {
+    //     div.appendChild(div.children[Math.random() * i | 0]);
+    // }
+    // Select
+    var r = 0;
+    $(".slc").change(function() {
+        slcalt = $(this).attr("alt");
+        slcval = $(this).val();
+        console.log(slcalt);
+        console.log(slcval);
+        if (slcalt == slcval) {
+            r++;
+            console.log(r);
         }
-
-        $('.a').click(function () {
-            $(this).css({
-                "border": "3px solid",
-                "border-color": "#37D3F7",
-                "background": "#B6ECFF"
-            });
-            var element = $(this).attr("alt");
-            var select = $(this).attr("value");
-            if (select != "seleccionado") {
-
-                if (element == "n") {
-                    r++;
-                    $(this).attr("value", "seleccionado");
-                } else {
-                    r--;
-                    $(this).attr("value", "seleccionado");
-                }
-                console.log(r);
-            }
-        })
+    });
+  

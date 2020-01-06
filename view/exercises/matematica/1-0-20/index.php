@@ -10,85 +10,57 @@
 <?=$titulo?>
 
 <body>
-    <div class="container-two">
-        <center>
-            <img src="<?= $dir ?>/img/principal.png" class="img">
-        </center>
-        <div class="grid-container">
-            <div class="grid-item">
-                <div class="flex-box">
-                    <span class="span-before">¿Cuántas</span>
-                    <img src="<?= $dir ?>/img/1.png">
-                    <span class="span-after">tiene?</span>
-                    <div class="caja" alt="3"></div>
+    <div class="caja-principal">
+        <div class="center">
+            <div id="contenedorPiezas">
+                <ul id="listA">
+                    <li>
+                        <div class="box">
+                            <img class="pieza responsive-img" alt="1" src="<?= $dir ?>/img/1.png" alt="pieza1">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <img class="pieza responsive-img" alt="2" src="<?= $dir ?>/img/2.png" alt="pieza2">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <img class="pieza responsive-img" alt="3" src="<?= $dir ?>/img/3.png" alt="pieza3">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <img class="pieza responsive-img" alt="4" src="<?= $dir ?>/img/4.png" alt="pieza4">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <img class="pieza responsive-img" alt="5" src="<?= $dir ?>/img/5.png" alt="pieza5">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <img class="pieza responsive-img" alt="6" src="<?= $dir ?>/img/6.png" alt="pieza6">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="row recibidor" id="recibidor">
+                <div class="col s12 m6 l6 xl6">
+                    <div class="contenedorPieza" id="1"><label class="title">Animales</label></div>
+                </div>
+                <div class="col s12 m6 l6 xl6">
+                    <div class="contenedorPieza" id="2"><label class="title">Plantas</label></div>
                 </div>
             </div>
-            <div class="grid-item">
-                <div class="flex-box">
-                    <span class="span-before">¿Cuántos</span>
-                    <img src="<?= $dir ?>/img/2.png">
-                    <span class="span-after">tiene?</span>
-                    <div class="caja" alt="7"></div>
-                </div>
-            </div>
-            <div class="grid-item">
-                <div class="flex-box">
-                    <span class="span-before">¿Cuántas</span>
-                    <img src="<?= $dir ?>/img/3.png">
-                    <span class="span-after">tiene?</span>
-                    <div class="caja" alt="5"></div>
-                </div>
-            </div>
-            <div class="grid-item">
-                <div class="flex-box">
-                    <span class="span-before">¿Cuántas</span>
-                    <img src="<?= $dir ?>/img/4.png">
-                    <span class="span-after">tiene</span>
-                    <div class="caja" alt="1"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="contenedor-silabas">
-            <ul class="opciones">
-                <li id="1" alt="1" class="pieza">
-                    <span>1</span>
-                </li>
-                <li id="2" alt="2" class="pieza">
-                    <span>2</span>
-                </li>
-                <li id="3" alt="3" class="pieza">
-                    <span>3</span>
-                </li>
-                <li id="4" alt="4" class="pieza">
-                    <span>4</span>
-                </li>
-                <li id="5" alt="5" class="pieza">
-                    <span>5</span>
-                </li>
-                <li id="6" alt="6" class="pieza">
-                    <span>6</span>
-                </li>
-                <li id="7" alt="7" class="pieza">
-                    <span>7</span>
-                </li>
-                <li id="8" alt="8" class="pieza">
-                    <span>8</span>
-                </li>
-                <li id="9" alt="9" class="pieza">
-                    <span>9</span>
-                </li>
-                <li id="10" alt=" 10" class="pieza">
-                    <span>10</span>
-                </li>
-            </ul>
         </div>
     </div>
-    <!-- Respuesta -->
+
     <div id="modal1" class="modal">
         <div class="modal-content">
+            <h4 class="center">Respuesta correcta</h4>
             <center>
-                <h4>Respuesta correcta</h4>
                 <img class="materialboxed" width="80%" src="<?= $dir ?>/img/respuesta.png">
             </center>
         </div>
@@ -98,19 +70,21 @@
     </div>
 </body>
 
-
 <script src="../../../../../js/core.js"></script>
 <?php require('../../../tools/botones/botones.php');?> <script>$("#next").attr("onclick","<?=$next?>");</script>
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
 // Validar
-function result_tipo_1_0_20() {
+
+function result_tipo_1_1_1() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
-    if (r == 4) {
+
+
+    if (n1 == 4 && n2 == 2) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();

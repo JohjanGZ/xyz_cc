@@ -1,54 +1,88 @@
-.container-two {
+.caja-principal {
     margin: 0 auto;
     max-width: 1280px;
     width: 90%;
 }
 
-img.img-principal {
-    margin-top: 2vh;
-    width: auto;
-    height: 130px;
-}
-
 @media (min-width: 1920px) {
-    img.img-principal {
-        margin-top: 2vh;
-        width: auto;
-        height: 208px;
+    .caja-principal {
+        width: 60%;
     }
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
-    padding: 10px;
+#listA {
+    display: flex;
+    /* flex-wrap: wrap; */
     justify-content: center;
 }
 
-.grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid silver;
-    font-size: 20px;
-    text-align: center;
-    width: 100px;
-    height: 40px;
+.recibidor {
+    display: flex;
+}
+
+.contenedorPieza {
+    height: 252px;
+    width: 100%;
+    border: 3px solid #37D3F7;
+    border-radius: 12px;
+    margin: auto;
+    margin-bottom: 2vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #0095DA;
+    flex-direction: column;
 }
 
-.img {
-    padding: 5px;
-    border-style: none;
-    width: 100%;
+.title {
+    font-size: 24px;
+    color: #37D3F7;
+}
+
+.box {
+    height: 80px;
+    width: 80px;
+    border: 3px solid silver;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    transition: all .3s;
+}
+
+@media (min-width: 1920px) {
+    .box {
+        height: 120px;
+        width: 120px;
+    }
+}
+
+.box:hover {
+    border: 3px solid #37D3F7;
+    background: #B6ECFF;
+}
+
+.box img {
     height: auto;
+    width: 48px;
+    cursor: pointer;
+    box-shadow: none !important;
 }
 
-.caja {
-    width: 25px;
-    height: 25px;
-    border: 2px solid silver;
-    border-radius: 3px;
-    cursor: pointer;
+@media (min-width: 1920px) {
+    .box img {
+        width: auto;
+        height: 50px;
+    }
+}
+
+.box img:hover {
+    box-shadow: none !important;
+}
+
+.contenedorPieza img {
+    width: auto;
+    height: 200px;
 }

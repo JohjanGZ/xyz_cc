@@ -11,82 +11,145 @@
 
 <body>
     <div class="container-two">
+        <div class="row">
+            <div class="col s12">
+                <img src="<?= $dir ?>/img/principal.png" class="img">
+            </div>
+        </div>
         <div class="grid-container">
-            <div class="columna">
-                <div class="grid-item bn"></div>
-                <div class="grid-item bn"></div>
-                <div class="grid-item bn"></div>
-                <div class="grid-item bn"><img src="<?= $dir ?>/img/1.png" class="img mr"></div>
-                <div class="grid-item bn"></div>
-                <div class="grid-item bn"></div>
+            <div class="grid-item">
+                <img src="<?= $dir ?>/img/1.png">
+                <div class="opciones">
+                    <div class="box-opcion">
+                        <img src="<?= $dir ?>/img/pertenece.png">
+                        <div class="caja after"></div>
+                    </div>
+                    <div class="box-opcion">
+                        <img src="<?= $dir ?>/img/nopertenece.png">
+                        <div class="caja after" alt="n"></div>
+                    </div>
+                </div>
             </div>
-            <div class="columna">
-                <div class="grid-item indicator"></div>
-                <div class="grid-item indicator" alt="n"></div>
-                <div class="grid-item indicator" alt="n"></div>
-                <div class="grid-item indicator bl" alt="n"></div>
-                <div class="grid-item indicator"></div>
-                <div class="grid-item indicator"></div>
+            <div class="grid-item">
+                <img src="<?= $dir ?>/img/2.png">
+                <div class="opciones">
+                    <div class="box-opcion">
+                        <img src="<?= $dir ?>/img/pertenece.png">
+                        <div class="caja after" alt="n"></div>
+                    </div>
+                    <div class="box-opcion">
+                        <img src="<?= $dir ?>/img/nopertenece.png">
+                        <div class="caja after"></div>
+                    </div>
+                </div>
             </div>
-            <div class="columna">
-                <div class="grid-item indicator"></div>
-                <div class="grid-item indicator" alt="n"></div>
-                <div class="grid-item indicator" alt="n"></div>
-                <div class="grid-item indicator" alt="n"></div>
-                <div class="grid-item indicator"></div>
-                <div class="grid-item indicator"></div>
+            <div class="grid-item">
+                <img src="<?= $dir ?>/img/3.png">
+                <div class="opciones">
+                    <div class="box-opcion">
+                        <img src="<?= $dir ?>/img/pertenece.png">
+                        <div class="caja after"></div>
+                    </div>
+                    <div class="box-opcion">
+                        <img src="<?= $dir ?>/img/nopertenece.png">
+                        <div class="caja after" alt="n"></div>
+                    </div>
+                </div>
             </div>
-            <div class="columna">
-                <div class="grid-item indicator"></div>
-                <div class="grid-item indicator" alt="n"></div>
-                <div class="grid-item indicator" alt="n"></div>
-                <div class="grid-item indicator" alt="n"></div>
-                <div class="grid-item indicator"></div>
-                <div class="grid-item indicator"></div>
+            <div class="grid-item">
+                <img src="<?= $dir ?>/img/4.png">
+                <div class="opciones">
+                    <div class="box-opcion">
+                        <img src="<?= $dir ?>/img/pertenece.png">
+                        <div class="caja after" alt="n"></div>
+                    </div>
+                    <div class="box-opcion">
+                        <img src="<?= $dir ?>/img/nopertenece.png">
+                        <div class="caja after"></div>
+                    </div>
+                </div>
             </div>
-            <div class="columna">
-                <div class="grid-item indicator"></div>
-                <div class="grid-item indicator" alt="n"></div>
-                <div class="grid-item indicator" alt="n"></div>
-                <div class="grid-item indicator" alt="n"></div>
-                <div class="grid-item indicator"></div>
-                <div class="grid-item indicator"></div>
+            <div class="grid-item">
+                <img src="<?= $dir ?>/img/5.png">
+                <div class="opciones">
+                    <div class="box-opcion">
+                        <img src="<?= $dir ?>/img/pertenece.png">
+                        <div class="caja after" alt="n"></div>
+                    </div>
+                    <div class="box-opcion">
+                        <img src="<?= $dir ?>/img/nopertenece.png">
+                        <div class="caja after"></div>
+                    </div>
+                </div>
             </div>
-            <div class="columna">
-                <div class="grid-item indicator"></div>
-                <div class="grid-item indicator" alt="n"></div>
-                <div class="grid-item indicator" alt="n"></div>
-                <div class="grid-item indicator" alt="n"></div>
-                <div class="grid-item indicator"></div>
-                <div class="grid-item indicator"></div>
+            <div class="grid-item">
+                <img src="<?= $dir ?>/img/6.png">
+                <div class="opciones">
+                    <div class="box-opcion">
+                        <img src="<?= $dir ?>/img/pertenece.png">
+                        <div class="caja after"></div>
+                    </div>
+                    <div class="box-opcion">
+                        <img src="<?= $dir ?>/img/nopertenece.png">
+                        <div class="caja after" alt="n"></div>
+                    </div>
+                </div>
             </div>
-            <div class="columna">
-                <div class="grid-item indicator"></div>
-                <div class="grid-item indicator" alt="n"></div>
-                <div class="grid-item indicator" alt="n"></div>
-                <div class="grid-item indicator" alt="n"></div>
-                <div class="grid-item indicator"></div>
-                <div class="grid-item indicator"></div>
+            <div class="grid-item">
+                <img src="<?= $dir ?>/img/7.png">
+                <div class="opciones">
+                    <div class="box-opcion">
+                        <img src="<?= $dir ?>/img/pertenece.png">
+                        <div class="caja after" alt="n"></div>
+                    </div>
+                    <div class="box-opcion">
+                        <img src="<?= $dir ?>/img/nopertenece.png">
+                        <div class="caja after"></div>
+                    </div>
+                </div>
             </div>
-            <div class="columna">
-                <div class="grid-item indicator"></div>
-                <div class="grid-item indicator" alt="n"></div>
-                <div class="grid-item indicator br" alt="n"></div>
-                <div class="grid-item indicator" alt="n"></div>
-                <div class="grid-item indicator"></div>
-                <div class="grid-item indicator"></div>
+            <div class="grid-item">
+                <img src="<?= $dir ?>/img/8.png">
+                <div class="opciones">
+                    <div class="box-opcion">
+                        <img src="<?= $dir ?>/img/pertenece.png">
+                        <div class="caja after"></div>
+                    </div>
+                    <div class="box-opcion">
+                        <img src="<?= $dir ?>/img/nopertenece.png">
+                        <div class="caja after" alt="n"></div>
+                    </div>
+                </div>
             </div>
-            <div class="columna">
-                <div class="grid-item bn"></div>
-                <div class="grid-item bn"></div>
-                <div class="grid-item bn"><img src="<?= $dir ?>/img/2.png" class="img ml"></div>
-                <div class="grid-item bn"></div>
-                <div class="grid-item bn"></div>
-                <div class="grid-item bn"></div>
+            <div class="grid-item">
+                <img src="<?= $dir ?>/img/9.png">
+                <div class="opciones">
+                    <div class="box-opcion">
+                        <img src="<?= $dir ?>/img/pertenece.png">
+                        <div class="caja after"></div>
+                    </div>
+                    <div class="box-opcion">
+                        <img src="<?= $dir ?>/img/nopertenece.png">
+                        <div class="caja after" alt="n"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="<?= $dir ?>/img/10.png">
+                <div class="opciones">
+                    <div class="box-opcion">
+                        <img src="<?= $dir ?>/img/pertenece.png">
+                        <div class="caja after" alt="n"></div>
+                    </div>
+                    <div class="box-opcion">
+                        <img src="<?= $dir ?>/img/nopertenece.png">
+                        <div class="caja after"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <!-- Respuesta -->
+
     <div id="modal1" class="modal">
         <div class="modal-content">
             <center>
@@ -106,19 +169,18 @@
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
 // Validar
-function result_tipo_1_0_23() {
+function result_tipo_1_1_5() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
-    if (r == 8) {
+    if (r == 10) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();
     } else {
         incorrecto();
-        console.log(r);
         localStorage.setItem("Nota<?=$cod?>", "0");
         localStorage.setItem("Time<?=$cod?>", tiempo);
     }

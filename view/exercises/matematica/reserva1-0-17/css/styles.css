@@ -1,0 +1,54 @@
+.container-two {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 90%;
+}
+
+img.img-principal {
+    margin-top: 2vh;
+    width: auto;
+    height: 130px;
+}
+
+@media (min-width: 1920px) {
+    img.img-principal {
+        margin-top: 2vh;
+        width: auto;
+        height: 208px;
+    }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    padding: 10px;
+    justify-content: center;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid silver;
+    font-size: 20px;
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0095DA;
+}
+
+.img {
+    padding: 5px;
+    border-style: none;
+    width: 100%;
+    height: auto;
+}
+
+.caja {
+    width: 25px;
+    height: 25px;
+    border: 2px solid silver;
+    border-radius: 3px;
+    cursor: pointer;
+}

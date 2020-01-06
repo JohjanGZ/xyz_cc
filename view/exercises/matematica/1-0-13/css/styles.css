@@ -1,51 +1,96 @@
 .container-two {
     margin: 0 auto;
     max-width: 1280px;
-    width: 90%;
-}
-@media (min-width: 1920px) {
-    .container-two {
-        width: 50%;        
-    }
-}
-h4 {
-    text-align: center;
-}
-
-#listA {
+    width: 70%;
+    height: 70%;
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-#palabras {
-    padding: 50px;
+::-webkit-scrollbar {
+    -webkit-border-radius: 5px;
+    background-color: transparent;
+    border-radius: 5px;
+    height: 10px;
+    -webkit-transition: background-color .2s linear;
+    -o-transition: background-color .2s linear;
+    transition: background-color .2s linear;
+    width: 0px;
 }
 
-#palabras li {
-    width: 100%;
-    margin-bottom: 5px;
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 10px;
+    width: 80%;
+}
+
+.grid-item {
+    border: 1px solid skyblue;
+    padding: 6px;
     text-align: center;
-}
-#palabras li > img {
-    /* border: 3px solid silver; */
-    border-radius: 10px;
-    /* padding: 25px; */
-}
-#palabras li > span {
-    font-size: 22px;
-    letter-spacing: 10px;
-    padding-left: 8px;
-    border: 3px solid transparent;
-    cursor: pointer;
-}
-#palabras li > span:hover {
-    border: 3px solid #37D3F7;
+    display: flex;
+    font-size: 24px;
+    align-items: center;
+    justify-content: center;
 }
 
-@media (min-width: 600px) {
-    #palabras li {
-        width: 35%;
-        margin: auto;
-        margin-bottom: 15%;
-    }
+.tc {
+    background:rgb(208, 237, 244);
+    font-size: 24px;
+    font-weight: bold;
+    color: #0095DA;
+}
+
+.img {
+    height: 60px;
+    width: auto;
+    margin-left: 1vh;
+}
+
+/* Select */
+.select-wrapper input.select-dropdown {
+    border: 1px solid silver;
+    width: 90px;
+    margin: 0;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.select-wrapper input.select-dropdown:focus {
+    border-bottom: 1px solid silver;
+}
+
+.select-wrapper ul {
+    height: 300px !important;
+}
+
+.select-wrapper {
+    position: relative;
+    margin-left: .5vh;
+    margin-right: .5vh;
+}
+
+.dropdown-content {
+    background-color: #fff;
+    margin: 0;
+    display: none;
+    min-width: 90px;
+    overflow-y: auto;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    width: 90px;
+    border-radius: 12px;
+}
+.principal {
+    height: auto;
+    width: 320px;
+    background: #fff;
 }
