@@ -8,115 +8,100 @@
 
 </style>
 <?=$titulo?>
-<?php
-$numeros = array(
-    "seis",
-    "siete",
-    "ocho",
-    "nueve",
-    "diez",
-    "once",
-    "doce",
-    "trece",
-    "catorce",
-    "quince"
-); 
-?>
 
 <body>
     <div class="container-two">
         <div class="grid-container">
+            <div class="grid-item"><span class="tn">Número</span></div>
+            <div class="grid-item"><span class="tc">Decenas</span><img src="<?=$dir?>/img/1.png" class="img"></div>
+            <div class="grid-item"><span class="tc">Unidades</span><img src="<?=$dir?>/img/2.png" class="img"></div>
+
+            <div class="grid-item">35</div>
             <div class="grid-item">
-                <div class="campo">
-                    <img src="<?=$dir?>/img/6.png" class="img">
-                    <select class="slc" alt="seis">
-                        <option value="" disabled selected></option>
-                        <?php for ($i=0; $i < 10; $i++) { ?><option  value="<?= $numeros[$i] ?>"><?= $numeros[$i] ?></option><?php } ?>
-                    </select>
-                </div>
+                <select class="slc" alt="3">
+                    <option value="" disabled selected></option>
+                    <?php
+                        for ($i=0; $i < 101; $i++) { 
+                            echo "<option value='$i'>$i</option>";
+                        }
+                    ?>
+                </select>
             </div>
             <div class="grid-item">
-                <div class="campo">
-                    <img src="<?=$dir?>/img/7.png" class="img">
-                    <select class="slc" alt="siete">
-                        <option value="" disabled selected></option>
-                        <?php for ($i=0; $i < 10; $i++) { ?><option  value="<?= $numeros[$i] ?>"><?= $numeros[$i] ?></option><?php } ?>
-                    </select>
-                </div>
+                <select class="slc" alt="5">
+                    <option value="" disabled selected></option>
+                    <?php
+                        for ($i=0; $i < 101; $i++) { 
+                            echo "<option value='$i'>$i</option>";
+                        }
+                    ?>
+                </select>
             </div>
 
+            <div class="grid-item">47</div>
             <div class="grid-item">
-                <div class="campo">
-                    <img src="<?=$dir?>/img/8.png" class="img">
-                    <select class="slc" alt="ocho">
-                        <option value="" disabled selected></option>
-                        <?php for ($i=0; $i < 10; $i++) { ?><option  value="<?= $numeros[$i] ?>"><?= $numeros[$i] ?></option><?php } ?>
-                    </select>
-                </div>
+                <select class="slc" alt="4">
+                    <option value="" disabled selected></option>
+                    <?php
+                        for ($i=0; $i < 101; $i++) { 
+                            echo "<option value='$i'>$i</option>";
+                        }
+                    ?>
+                </select>
             </div>
             <div class="grid-item">
-                <div class="campo">
-                    <img src="<?=$dir?>/img/9.png" class="img">
-                    <select class="slc" alt="nueve">
-                        <option value="" disabled selected></option>
-                        <?php for ($i=0; $i < 10; $i++) { ?><option  value="<?= $numeros[$i] ?>"><?= $numeros[$i] ?></option><?php } ?>
-                    </select>
-                </div>
+                <select class="slc" alt="7">
+                    <option value="" disabled selected></option>
+                    <?php
+                        for ($i=0; $i < 101; $i++) { 
+                            echo "<option value='$i'>$i</option>";
+                        }
+                    ?>
+                </select>
             </div>
 
+            <div class="grid-item">16</div>
             <div class="grid-item">
-                <div class="campo">
-                    <img src="<?=$dir?>/img/10.png" class="img">
-                    <select class="slc" alt="diez">
-                        <option value="" disabled selected></option>
-                        <?php for ($i=0; $i < 10; $i++) { ?><option  value="<?= $numeros[$i] ?>"><?= $numeros[$i] ?></option><?php } ?>
-                    </select>
-                </div>
+                <select class="slc" alt="1">
+                    <option value="" disabled selected></option>
+                    <?php
+                        for ($i=0; $i < 101; $i++) { 
+                            echo "<option value='$i'>$i</option>";
+                        }
+                    ?>
+                </select>
             </div>
             <div class="grid-item">
-                <div class="campo">
-                    <img src="<?=$dir?>/img/11.png" class="img">
-                    <select class="slc"  alt="once">
-                        <option value="" disabled selected></option>
-                        <?php for ($i=0; $i < 10; $i++) { ?><option value="<?= $numeros[$i] ?>"><?= $numeros[$i] ?></option><?php } ?>
-                    </select>
-                </div>
+                <select class="slc" alt="6">
+                    <option value="" disabled selected></option>
+                    <?php
+                        for ($i=0; $i < 101; $i++) { 
+                            echo "<option value='$i'>$i</option>";
+                        }
+                    ?>
+                </select>
+            </div>
+
+            <div class="grid-item">29</div>
+            <div class="grid-item">
+                <select class="slc" alt="2">
+                    <option value="" disabled selected></option>
+                    <?php
+                        for ($i=0; $i < 101; $i++) { 
+                            echo "<option value='$i'>$i</option>";
+                        }
+                    ?>
+                </select>
             </div>
             <div class="grid-item">
-                <div class="campo">
-                    <img src="<?=$dir?>/img/12.png" class="img">
-                    <select class="slc" alt="doce">
-                        <option value="" disabled selected></option>
-                        <?php for ($i=0; $i < 10; $i++) { ?><option  value="<?= $numeros[$i] ?>"><?= $numeros[$i] ?></option><?php } ?>
-                    </select>
-                </div>
-            </div>
-            <div class="grid-item">
-                <div class="campo">
-                    <img src="<?=$dir?>/img/13.png" class="img">
-                    <select class="slc"  alt="trece">
-                        <option value="" disabled selected></option>
-                        <?php for ($i=0; $i < 10; $i++) { ?><option value="<?= $numeros[$i] ?>"><?= $numeros[$i] ?></option><?php } ?>
-                    </select>
-                </div>
-            </div>
-            <div class="grid-item">
-                <div class="campo">
-                    <img src="<?=$dir?>/img/14.png" class="img">
-                    <select class="slc"  alt="catorce">
-                        <option value="" disabled selected></option>
-                        <?php for ($i=0; $i < 10; $i++) { ?><option value="<?= $numeros[$i] ?>"><?= $numeros[$i] ?></option><?php } ?>
-                    </select>
-                </div>
-            </div>
-            <div class="grid-item">
-                <div class="campo">
-                    <img src="<?=$dir?>/img/15.png" class="img">
-                    <select class="slc" alt="quince">
-                        <option value="" disabled selected></option>
-                        <?php for ($i=0; $i < 10; $i++) { ?><option  value="<?= $numeros[$i] ?>"><?= $numeros[$i] ?></option><?php } ?>
-                    </select>
-                </div>
+                <select class="slc" alt="9">
+                    <option value="" disabled selected></option>
+                    <?php
+                        for ($i=0; $i < 101; $i++) { 
+                            echo "<option value='$i'>$i</option>";
+                        }
+                    ?>
+                </select>
             </div>
         </div>
     </div>
@@ -136,7 +121,7 @@ $numeros = array(
 
 
 <script src="../../../../../js/core.js"></script>
-<?php require('../../../tools/botones/botones.php');?> <script>$("#next").attr("onclick","<?=$next?>");</script>
+<?php require('../../../tools/botones/botones.php');?><script>$("#next").attr("onclick","<?=$next?>");</script>
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
 // Validar
@@ -146,7 +131,7 @@ function result_tipo_1_3_2() {
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
-    if (r == 10) {
+    if (r == 8) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();

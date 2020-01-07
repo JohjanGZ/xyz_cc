@@ -4,30 +4,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="<?= $dir ?>/css/styles.css">
 </head>
-<style type="text/css">
-
-</style>
 <?=$titulo?>
 <div class="container-two">
     <div class="row">
         <div class="campo" id="palabras">
             <ul id="listA">
-                <li>
-                    <img src="<?= $dir ?>/img/1.png" class="responsive-img">
-                    <div class="option">
-                        <span class="a" alt="">Quince</span>/
-                        <span class="a" alt="n">Trece</span>/
-                        <span class="a" alt="">Catorce</span>/
-                        <span class="a" alt="">Dieciocho</span>
+                <li class="a" alt="n">
+                    <div class="tabla">
+                        <img src="<?= $dir ?>/img/1.png" class="img">
+                    </div>
+                    <div class="tabla h">
+                        4<span class="d" >D</span>, 2<span class="u">U</span>
                     </div>
                 </li>
-                <li>
-                    <img src="<?= $dir ?>/img/2.png" class="responsive-img">
-                    <div class="option">
-                        <span class="a" alt="">Quince</span>/
-                        <span class="a" alt="">Trece</span>/
-                        <span class="a" alt="">Catorce</span>/
-                        <span class="a" alt="n">Dieciocho</span>
+                <li class="a">
+                    <div class="tabla">
+                        <img src="<?= $dir ?>/img/2.png" class="img">
+                    </div>
+                    <div class="tabla h">
+                        2<span class="d">D</span>, 4<span class="u">U</span>
+                    </div>
+                </li>
+                <li class="a">
+                    <div class="tabla">
+                        <img src="<?= $dir ?>/img/3.png" class="img">
+                    </div>
+                    <div class="tabla h">
+                        2<span class="d">D</span>, 2<span class="u">U</span>
                     </div>
                 </li>
             </ul>
@@ -60,7 +63,7 @@ function result_tipo_1_3_3() {
 
 
 
-    if (r == 2) {
+    if (r == 1) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();

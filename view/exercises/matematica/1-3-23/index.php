@@ -8,130 +8,59 @@
 
 </style>
 <?=$titulo?>
-
-<body>
-    <div class="container-two">
-        <div class="caja">
-            <div class="tabla">
-                <div class="grid-container">
-                    <div class="grid-item cabe"><span class="r">D</span></div>
-                    <div class="grid-item cabe"><span class="b">U</span></div>
-                    <div class="grid-item">
-                        1
+<div class="container-two">
+    <div class="row">
+        <div class="campo" id="palabras">
+            <ul id="listA">
+                <li>
+                    <img src="<?= $dir ?>/img/1.png" class="responsive-img">
+                    <div class="option">
+                        <span class="a" alt="">Quince</span>/
+                        <span class="a" alt="n">Trece</span>/
+                        <span class="a" alt="">Catorce</span>/
+                        <span class="a" alt="">Dieciocho</span>
                     </div>
-                    <div class="grid-item" style="position:relative;">
-                        7
-                        <span class="mas">+</span>
+                </li>
+                <li>
+                    <img src="<?= $dir ?>/img/2.png" class="responsive-img">
+                    <div class="option">
+                        <span class="a" alt="">Quince</span>/
+                        <span class="a" alt="">Trece</span>/
+                        <span class="a" alt="">Catorce</span>/
+                        <span class="a" alt="n">Dieciocho</span>
                     </div>
-                    <div class="grid-item bre">
-                        
-                    </div>
-                    <div class="grid-item bre">
-                        8
-                    </div>
-                    <div class="grid-item">
-                        <select class="slc"  alt="2">
-                            <option value="" disabled selected></option>
-                            <?php for ($i=0; $i < 101; $i++) { ?><option value="<?= $i ?>"><?= $i ?></option><?php } ?>
-                        </select>
-                    </div>
-                    <div class="grid-item">
-                        <select class="slc"  alt="5">
-                            <option value="" disabled selected></option>
-                            <?php for ($i=0; $i < 101; $i++) { ?><option value="<?= $i ?>"><?= $i ?></option><?php } ?>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="grid-container">
-                    <div class="grid-item cabe"><span class="r">D</span></div>
-                    <div class="grid-item cabe"><span class="b">U</span></div>
-                    <div class="grid-item">
-                        2
-                    </div>
-                    <div class="grid-item" style="position:relative;">
-                        4
-                        <span class="mas">+</span>
-                    </div>
-                    <div class="grid-item bre">
-                        
-                    </div>
-                    <div class="grid-item bre">
-                        6
-                    </div>
-                    <div class="grid-item">
-                        <select class="slc" alt="3">
-                            <option value="" disabled selected></option>
-                            <?php for ($i=0; $i < 101; $i++) { ?><option value="<?= $i ?>"><?= $i ?></option><?php } ?>
-                        </select>
-                    </div>
-                    <div class="grid-item">
-                        <select class="slc" alt="0">
-                            <option value="" disabled selected></option>
-                            <?php for ($i=0; $i < 101; $i++) { ?><option value="<?= $i ?>"><?= $i ?></option><?php } ?>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="grid-container">
-                    <div class="grid-item cabe"><span class="r">D</span></div>
-                    <div class="grid-item cabe"><span class="b">U</span></div>
-                    <div class="grid-item">
-                        3
-                    </div>
-                    <div class="grid-item" style="position:relative;">
-                        5
-                        <span class="mas">+</span>
-                    </div>
-                    <div class="grid-item bre">
-                        
-                    </div>
-                    <div class="grid-item bre">
-                        7
-                    </div>
-                    <div class="grid-item">
-                        <select class="slc" alt="4">
-                            <option value="" disabled selected></option>
-                            <?php for ($i=0; $i < 101; $i++) { ?><option value="<?= $i ?>"><?= $i ?></option><?php } ?>
-                        </select>
-                    </div>
-                    <div class="grid-item">
-                        <select class="slc" alt="2">
-                            <option value="" disabled selected></option>
-                            <?php for ($i=0; $i < 101; $i++) { ?><option value="<?= $i ?>"><?= $i ?></option><?php } ?>
-                        </select>
-                    </div>
-                </div>
-            </div>
+                </li>
+            </ul>
         </div>
     </div>
-    <!-- Respuesta -->
-    <div id="modal1" class="modal">
-        <div class="modal-content">
-            <center>
-                <h4>Respuesta correcta</h4>
-                <img class="materialboxed" width="80%" src="<?= $dir ?>/img/respuesta.png">
-            </center>
-        </div>
-        <div class="modal-footer">
-            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Listo!</a>
-        </div>
+</div>
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <h4 class="center">Respuesta correcta</h4>
+        <center>
+            <img class="materialboxed" width="80%" src="<?= $dir ?>/img/respuesta.png">
+        </center>
     </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Listo!</a>
+    </div>
+</div>
 </body>
-
-
 <script src="../../../../../js/core.js"></script>
 <?php require('../../../tools/botones/botones.php');?> <script>$("#next").attr("onclick","<?=$next?>");</script>
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
-// Validar
+// Formulario - Registrados
+
 function result_tipo_1_3_23() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
-    if (r == 6) {
+
+
+    if (r == 2) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();
@@ -143,3 +72,4 @@ function result_tipo_1_3_23() {
 
 }
 </script>
+<script type="text/javascript" src="../../../exercises/comunicacion/1-0-9/js/validate.js"></script>

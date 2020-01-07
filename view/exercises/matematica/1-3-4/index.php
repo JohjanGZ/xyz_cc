@@ -11,17 +11,14 @@
 
 <body>
     <div class="container-two">
-        <center>
-            <img src="<?=$dir?>/img/1.png" class="principal">
-        </center>
         <div class="grid-container">
             <div class="grid-item">
                 <div class="campo">
-                    <label class="label">¿Cuantos grupos de 10 hay?</label>
-                    <select class="slc" alt="4">
+                    <img src="<?=$dir?>/img/1.png" class="img materialboxed">
+                    <select class="slc" alt="41">
                         <option value="" disabled selected></option>
                         <?php
-                            for ($i=0; $i < 101; $i++) { 
+                            for ($i=1; $i < 101; $i++) { 
                                 echo "<option value='$i'>$i</option>";
                             }
                         ?>
@@ -30,18 +27,69 @@
             </div>
             <div class="grid-item">
                 <div class="campo">
-                    <label class="label">Cantidad total de objetos</label>
-                    <select class="slc" alt="44">
+                    <img src="<?=$dir?>/img/2.png" class="img materialboxed">
+                    <select class="slc" alt="36">
                         <option value="" disabled selected></option>
                         <?php
-                            for ($i=0; $i < 101; $i++) { 
+                            for ($i=1; $i < 101; $i++) { 
                                 echo "<option value='$i'>$i</option>";
                             }
                         ?>
                     </select>
                 </div>
             </div>
-
+            <div class="grid-item">
+                <div class="campo">
+                    <img src="<?=$dir?>/img/3.png" class="img materialboxed">
+                    <select class="slc" alt="28">
+                        <option value="" disabled selected></option>
+                        <?php
+                            for ($i=1; $i < 101; $i++) { 
+                                echo "<option value='$i'>$i</option>";
+                            }
+                        ?>
+                    </select>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="campo">
+                    <img src="<?=$dir?>/img/4.png" class="img materialboxed">
+                    <select class="slc" alt="34">
+                        <option value="" disabled selected></option>
+                        <?php
+                            for ($i=1; $i < 101; $i++) { 
+                                echo "<option value='$i'>$i</option>";
+                            }
+                        ?>
+                    </select>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="campo">
+                    <img src="<?=$dir?>/img/5.png" class="img materialboxed">
+                    <select class="slc" alt="52">
+                        <option value="" disabled selected></option>
+                        <?php
+                            for ($i=1; $i < 101; $i++) { 
+                                echo "<option value='$i'>$i</option>";
+                            }
+                        ?>
+                    </select>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="campo">
+                    <img src="<?=$dir?>/img/6.png" class="img materialboxed">
+                    <select class="slc" alt="17">
+                        <option value="" disabled selected></option>
+                        <?php
+                            for ($i=1; $i < 101; $i++) { 
+                                echo "<option value='$i'>$i</option>";
+                            }
+                        ?>
+                    </select>
+                </div>
+            </div>
         </div>
     </div>
     <!-- Respuesta -->
@@ -60,7 +108,7 @@
 
 
 <script src="../../../../../js/core.js"></script>
-<?php require('../../../tools/botones/botones.php');?> <script>$("#next").attr("onclick","<?=$next?>");</script>
+<?php require('../../../tools/botones/botones.php');?><script>$("#next").attr("onclick","<?=$next?>");</script>
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
 // Validar
@@ -70,7 +118,7 @@ function result_tipo_1_3_4() {
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
-    if (r == 2) {
+    if (r == 6) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();
