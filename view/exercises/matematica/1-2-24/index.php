@@ -12,46 +12,75 @@
 <body>
 
     <div class="container-two">
-        <center>
-            <img src="<?=$dir?>/img/principal.png" class="principal">
-        </center>
-        <div class="row">
-            <div class="campo" id="palabras">
-                <ul id="listA">
-                    <li id="obj1">
-                        <center>
-                            <p><span class='ftitulo'>b.</span> El objeto que tiene menos elementos es:</p>
-                        </center>
-                        <div class="opciones">
-                            <div class="op">
-                                <div class="box a"></div>
-                                <img src="<?=$dir?>/img/1.png" class="img">
-                            </div>
-                            <div class="op">
-                                <div class="box a" alt="n"></div>
-                                <img src="<?=$dir?>/img/2.png" class="img">
-                            </div>
-                            <div class="op">
-                                <div class="box a"></div>
-                                <img src="<?=$dir?>/img/3.png" class="img">
-                            </div>
-                            <div class="op">
-                                <div class="box a"></div>
-                                <img src="<?=$dir?>/img/4.png" class="img">
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+        <div class="grid-container">
+            <div class="grid-options">
+                <!-- 234 -->
+                <div class="grid-option">
+                    <img src="<?=$dir?>/img/1.png" class="img">
+                    <span class="ms">+</span>
+                    8
+                    <span class="ms">=</span>
+                    15
+                    <span class="ms">→</span>
+                    <img src="<?=$dir?>/img/1.png" class="img">
+                    <span class="ms">=</span>
+                    <select class="slc" alt="7">
+                        <option value="" disabled selected></option>
+                        <?php
+                        for ($i=0; $i < 101; $i++) { 
+                            echo "<option value='$i'>$i</option>";
+                        }
+                    ?>
+                    </select>
+                </div>
+                <!-- 513 -->
+                <div class="grid-option">
+                    7
+                    <span class="ms">+</span>
+                    <img src="<?=$dir?>/img/2.png" class="img">
+                    <span class="ms">=</span>
+                    21
+                    <span class="ms">→</span>
+                    <img src="<?=$dir?>/img/2.png" class="img">
+                    <span class="ms">=</span>
+                    <select class="slc" alt="14">
+                        <option value="" disabled selected></option>
+                        <?php
+                        for ($i=0; $i < 101; $i++) { 
+                            echo "<option value='$i'>$i</option>";
+                        }
+                    ?>
+                    </select>
+                </div>
+                <!-- 673 -->
+                <div class="grid-option">
+                    <img src="<?=$dir?>/img/3.png" class="img">
+                    <span class="ms">-</span>
+                    7
+                    <span class="ms">=</span>
+                    10
+                    <span class="ms">→</span>
+                    <img src="<?=$dir?>/img/3.png" class="img">
+                    <span class="ms">=</span>
+                    <select class="slc" alt="17">
+                        <option value="" disabled selected></option>
+                        <?php
+                        for ($i=0; $i < 101; $i++) { 
+                            echo "<option value='$i'>$i</option>";
+                        }
+                    ?>
+                    </select>
+                </div>
             </div>
         </div>
-    </div>
 
+    </div>
 
     <!-- Respuesta -->
     <div id="modal1" class="modal">
         <div class="modal-content">
-            <h4>Respuesta correcta</h4>
             <center>
+                <h4>Respuesta correcta</h4>
                 <img class="materialboxed" width="80%" src="<?= $dir ?>/img/respuesta.png">
             </center>
         </div>
@@ -63,7 +92,9 @@
 
 
 <script src="../../../../../js/core.js"></script>
-<?php require('../../../tools/botones/botones.php');?> <script>$("#next").attr("onclick","<?=$next?>");</script>
+<?php require('../../../tools/botones/botones.php');?> <script>
+$("#next").attr("onclick", "<?=$next?>");
+</script>
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
 // Validar
@@ -73,12 +104,13 @@ function result_tipo_1_2_24() {
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
-    if (r == 1) {
+    if (r == 3) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();
     } else {
         incorrecto();
+        // console.log(r);
         localStorage.setItem("Nota<?=$cod?>", "0");
         localStorage.setItem("Time<?=$cod?>", tiempo);
     }

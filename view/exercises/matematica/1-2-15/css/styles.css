@@ -20,78 +20,16 @@
     width: 0px;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 10px;
-    justify-content: center;
-}
-
-.grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgb(102, 204, 102);
-    padding: 8px;
-    font-size: 30px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.cabe {
-    background-color: rgb(209, 230, 186);
-    border-color: rgb(102, 204, 102);
-    padding: 0;
-}
-.bn {
-    border: none;
-}
-.bre {
-    border-bottom: 3px solid red;
-}
-.r {
-    color: red;
-}
-.mas {
-    position: absolute;
-    top: 5px;
-    right: -31px;
-    color: red;
-    /* bottom: 0; */
-}
-.b {
-    color: blue;
-}
-.img {
-    width: 90px;
-    height: auto;
-}
-
-.campo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.mg {
-    margin-right: 10px;
-    margin-left: 10px;
-    color: red;
-}
-
-/* .grid-container .select-wrapper {
-    margin-right: 1vh;
-    margin-left: 1vh;
-} */
 .select-wrapper ul {
     height: 300px !important;
 }
 
 .select-wrapper input.select-dropdown {
     border: 1px solid silver;
-    width: 90px;
+    width: 80px;
     margin: 0;
+    font-weight: 600;
+    font-size: 24px;
 }
 
 .select-wrapper input.select-dropdown:focus {
@@ -115,22 +53,65 @@
     border-radius: 12px;
 }
 
-.pregunta {
-    font-size: 22px;
+.grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 10px;
+    margin: 4vh;
 }
 
-.tabla {
-    width: 100%;
-}
-
-.tabla {
+.grid-num {
     display: grid;
     grid-template-columns: auto auto auto;
     padding: 10px;
-    justify-content: center;
 }
 
-.flecha {
+.grid-item {
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
+    padding: 20px;
+    font-size: 24px;
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.grid-tabla {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.c {
+    color: #66cc33;
+    font-weight: bold;
+}
+
+.d {
+    color: #FF0000;
+    font-weight: bold;
+}
+
+.u {
+    color: #3366cc;
+    font-weight: bold;
+}
+
+.bb {
+    border-bottom: 3px solid #FF0000;
+    margin-bottom: 2vh;
+}
+
+.ms {
     color: red;
-    margin-left: 2vh;
+    font-weight: bold;
+}
+
+.img {
+    width: auto;
+    height: 120px;
+    margin-bottom: 6vh;
 }

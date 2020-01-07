@@ -11,123 +11,123 @@
 
 <body>
     <div class="container-two">
-        <center>
-            <p class="pregunta"><span class='ftitulo'>d.</span> En el estuche de Marita hay 24 crayolas y 15 plumones.
-                ¿Cuántos útiles escolares tiene en total?</p>
-        </center>
-        <div class="caja">
-
-            <div class="tabla">
-                <div class="grid-container">
-                    <div class="grid-item cabe"><span>Número</span></div>
-                    <div class="grid-item cabe"><span>Descomposición aditiva</span></div>
-                    <div class="grid-item cabe"><span>Valor posicional</span></div>
-                    <div class="grid-item cabe"><span>Se escribe</span></div>
-                    <!-- 1 -->
+        <div class="grid-tabla">
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="<?=$dir?>/img/1.png" class="img">
+                </div>
+                <div class="grid-num bb">
                     <div class="grid-item">
-                        24
-                    </div>
-                    <div class="grid-item">
-                        <select id="slc1">
+                        <select class="slc" alt="5">
                             <option value="" disabled selected></option>
-                            <?php for ($i=1; $i < 101; $i++) { ?><option value="<?= $i ?>"><?= $i ?></option><?php } ?>
-                        </select>
-                        +
-                        <select id="slc2">
-                            <option value="" disabled selected></option>
-                            <?php for ($i=1; $i < 101; $i++) { ?><option value="<?= $i ?>"><?= $i ?></option><?php } ?>
+                            <?php
+                            for ($i=1; $i < 1001; $i++) { 
+                                echo "<option value='$i'>$i</option>";
+                            }
+                        ?>
                         </select>
                     </div>
+                    <div class="grid-item"><span class="ms">+</span></div>
                     <div class="grid-item">
-                        <select id="slc3">
+                        <select class="slc" alt="6">
                             <option value="" disabled selected></option>
-                            <?php for ($i=1; $i < 101; $i++) { ?><option value="<?= $i ?>"><?= $i ?>D</option><?php } ?>
-                        </select>
-                        +
-                        <select id="slc4">
-                            <option value="" disabled selected></option>
-                            <?php for ($i=1; $i < 101; $i++) { ?><option value="<?= $i ?>"><?= $i ?>U</option><?php } ?>
-                        </select>
-                    </div>
-                    <div class="grid-item">
-                        veinticuatro
-                    </div>
-                    <!-- 2 -->
-                    <div class="grid-item">
-                        <select id="slc5">
-                            <option value="" disabled selected></option>
-                            <?php for ($i=1; $i < 101; $i++) { ?><option value="<?= $i ?>"><?= $i ?></option><?php } ?>
+                            <?php
+                            for ($i=1; $i < 1001; $i++) { 
+                                echo "<option value='$i'>$i</option>";
+                            }
+                        ?>
                         </select>
                     </div>
+                </div>
+                <div class="grid-item">
+                    <select class="slc" alt="11">
+                        <option value="" disabled selected></option>
+                        <?php
+                            for ($i=1; $i < 1001; $i++) { 
+                                echo "<option value='$i'>$i</option>";
+                            }
+                        ?>
+                    </select>
+                </div>
+            </div>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="<?=$dir?>/img/2.png" class="img">
+                </div>
+                <div class="grid-num bb">
                     <div class="grid-item">
-                        30 + 6
-                    </div>
-                    <div class="grid-item">
-                        <select id="slc6">
+                        <select class="slc" alt="8">
                             <option value="" disabled selected></option>
-                            <?php for ($i=1; $i < 101; $i++) { ?><option value="<?= $i ?>"><?= $i ?>D</option><?php } ?>
-                        </select>
-                        +
-                        <select id="slc7">
-                            <option value="" disabled selected></option>
-                            <?php for ($i=1; $i < 101; $i++) { ?><option value="<?= $i ?>"><?= $i ?>U</option><?php } ?>
-                        </select>
-                    </div>
-                    <div class="grid-item">
-                        treinta y seis
-                    </div>
-                    <!-- 3 -->
-                    <div class="grid-item">
-                        <select id="slc8">
-                            <option value="" disabled selected></option>
-                            <?php for ($i=1; $i < 101; $i++) { ?><option value="<?= $i ?>"><?= $i ?></option><?php } ?>
-                        </select>
-                    </div>
-                    <div class="grid-item">
-                        <select id="slc9">
-                            <option value="" disabled selected></option>
-                            <?php for ($i=1; $i < 101; $i++) { ?><option value="<?= $i ?>"><?= $i ?></option><?php } ?>
-                        </select>
-                        +
-                        <select id="slc10">
-                            <option value="" disabled selected></option>
-                            <?php for ($i=1; $i < 101; $i++) { ?><option value="<?= $i ?>"><?= $i ?></option><?php } ?>
+                            <?php
+                            for ($i=1; $i < 1001; $i++) { 
+                                echo "<option value='$i'>$i</option>";
+                            }
+                        ?>
                         </select>
                     </div>
+                    <div class="grid-item"><span class="ms">+</span></div>
                     <div class="grid-item">
-                        4D + 7U
-                    </div>
-                    <div class="grid-item">
-                        cuarenta y siete
-                    </div>
-                    <!-- 4 -->
-                    <div class="grid-item">
-                        <select id="slc11">
+                        <select class="slc" alt="4">
                             <option value="" disabled selected></option>
-                            <?php for ($i=1; $i < 101; $i++) { ?><option value="<?= $i ?>"><?= $i ?></option><?php } ?>
+                            <?php
+                            for ($i=1; $i < 1001; $i++) { 
+                                echo "<option value='$i'>$i</option>";
+                            }
+                        ?>
                         </select>
                     </div>
+                </div>
+                <div class="grid-item">
+                    <select class="slc" alt="12">
+                        <option value="" disabled selected></option>
+                        <?php
+                            for ($i=1; $i < 1001; $i++) { 
+                                echo "<option value='$i'>$i</option>";
+                            }
+                        ?>
+                    </select>
+                </div>
+            </div>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="<?=$dir?>/img/3.png" class="img">
+                </div>
+                <div class="grid-num bb">
                     <div class="grid-item">
-                        10 + 5
-                    </div>
-                    <div class="grid-item">
-                        <select id="slc12">
+                        <select class="slc" alt="7">
                             <option value="" disabled selected></option>
-                            <?php for ($i=1; $i < 101; $i++) { ?><option value="<?= $i ?>"><?= $i ?>D</option><?php } ?>
-                        </select>
-                        +
-                        <select id="slc13">
-                            <option value="" disabled selected></option>
-                            <?php for ($i=1; $i < 101; $i++) { ?><option value="<?= $i ?>"><?= $i ?>U</option><?php } ?>
+                            <?php
+                            for ($i=1; $i < 1001; $i++) { 
+                                echo "<option value='$i'>$i</option>";
+                            }
+                        ?>
                         </select>
                     </div>
+                    <div class="grid-item"><span class="ms">+</span></div>
                     <div class="grid-item">
-                        quince
+                        <select class="slc" alt="3">
+                            <option value="" disabled selected></option>
+                            <?php
+                            for ($i=1; $i < 1001; $i++) { 
+                                echo "<option value='$i'>$i</option>";
+                            }
+                        ?>
+                        </select>
                     </div>
-
+                </div>
+                <div class="grid-item">
+                    <select class="slc" alt="10">
+                        <option value="" disabled selected></option>
+                        <?php
+                            for ($i=1; $i < 1001; $i++) { 
+                                echo "<option value='$i'>$i</option>";
+                            }
+                        ?>
+                    </select>
                 </div>
             </div>
         </div>
+
     </div>
     <!-- Respuesta -->
     <div id="modal1" class="modal">
@@ -145,7 +145,9 @@
 
 
 <script src="../../../../../js/core.js"></script>
-<?php require('../../../tools/botones/botones.php');?> <script>$("#next").attr("onclick","<?=$next?>");</script>
+<?php require('../../../tools/botones/botones.php');?> <script>
+$("#next").attr("onclick", "<?=$next?>");
+</script>
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
 // Validar
@@ -155,12 +157,13 @@ function result_tipo_1_2_12() {
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
-    if (r == 13) {
+    if (r == 9) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();
     } else {
         incorrecto();
+        console.log(r);
         localStorage.setItem("Nota<?=$cod?>", "0");
         localStorage.setItem("Time<?=$cod?>", tiempo);
     }

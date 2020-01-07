@@ -1,19 +1,19 @@
     $('select').formSelect();
     // Random
-    // var div = document.querySelector('.grid-container');
-    // for (var i = div.children.length; i >= 0; i--) {
-    //     div.appendChild(div.children[Math.random() * i | 0]);
-    // }
+    var div = document.querySelector('.grid-container');
+    for (var i = div.children.length; i >= 0; i--) {
+        div.appendChild(div.children[Math.random() * i | 0]);
+    }
     // Select
     var r = 0;
-    $("#slc1").change(function() { if ($(this).val() == 24) { r++; } });
-    $("#slc2").change(function() { if ($(this).val() == 15) { r++; } });
-    $("#slc3").change(function() { if ($(this).val() == 2) { r++; } });
-    $("#slc4").change(function() { if ($(this).val() == 4) { r++; } });
-    $("#slc5").change(function() { if ($(this).val() == 1) { r++; } });
-    $("#slc6").change(function() { if ($(this).val() == 5) { r++; } });
-    $("#slc7").change(function() { if ($(this).val() == 3) { r++; } });
-    $("#slc8").change(function() { if ($(this).val() == 9) { r++; } });
+    $("#slc1").change(function() { if ($(this).val() == 13) { r++; } });
+    $("#slc2").change(function() { if ($(this).val() == 14) { r++; } });
+    $("#slc3").change(function() { if ($(this).val() == 15) { r++; } });
+    $("#slc4").change(function() { if ($(this).val() == 12) { r++; } });
+    $("#slc5").change(function() { if ($(this).val() == 18) { r++; } });
+    $("#slc6").change(function() { if ($(this).val() == 14) { r++; } });
+    // $("#slc7").change(function() { if ($(this).val() == 1) { r++; } });
+    // $("#slc8").change(function() { if ($(this).val() == 4) { r++; } });
     // $("#slc9").change(function() { if ($(this).val() == 5) { r++; } });
     // $("#slc10").change(function() { if ($(this).val() == 2) { r++; } });
     // $("#slc11").change(function() { if ($(this).val() == 6) { r++; } });

@@ -22,58 +22,38 @@
 
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto auto auto auto;
     padding: 10px;
     justify-content: center;
+    align-items: center;
 }
-.grid-container-2 {
-    display: grid;
-    grid-template-columns: auto;
-    padding: 10px;
-    justify-content: center;
+
+@media (min-width: 1920px) {
+    .grid-container {
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgb(102, 204, 102);
-    padding: 8px;
-    font-size: 30px;
+    /* border: 1px solid silver; */
+    /* padding: 0 0 12px 0; */
+    margin: 2vh;
+    font-size: 24px;
     text-align: center;
 }
-.grid-item-2 {
-    padding: 8px;
-    font-size: 24px;
+
+.campo-img {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.cabe {
-    background-color: rgb(209, 230, 186);
-    border-color: rgb(102, 204, 102);
-    padding: 0;
-}
-.bn {
-    border: none;
-}
-.bre {
-    border-bottom: 3px solid red;
-}
-.r {
-    color: red;
-}
-.mas {
-    position: absolute;
-    top: 5px;
-    right: -31px;
-    color: red;
-    /* bottom: 0; */
-}
-.b {
-    color: blue;
-}
+
 .img {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 200px;
+    margin-bottom: 1vh;
 }
 
 .campo {
@@ -89,22 +69,26 @@
     color: red;
 }
 
-.grid-container-2 .select-wrapper {
-    margin-right: 1vh;
-    margin-left: 1vh;
-}
-.select-wrapper ul {
-    height: 300px !important;
-}
-
 .select-wrapper input.select-dropdown {
     border: 1px solid silver;
     width: 90px;
     margin: 0;
+    font-weight: 600;
+    font-size: 30px;
 }
 
 .select-wrapper input.select-dropdown:focus {
     border-bottom: 1px solid silver;
+}
+
+.select-wrapper ul {
+    height: auto;
+}
+
+.select-wrapper {
+    position: relative;
+    margin-left: .5vh;
+    margin-right: .5vh;
 }
 
 .dropdown-content {
@@ -124,21 +108,11 @@
     border-radius: 12px;
 }
 
-.pregunta {
-    font-size: 22px;
+img.principal {
+    width: auto;
+    height: 250px;
 }
 
-.tabla {
-    width: 100%;
-}
-
-.caja {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.flecha {
-    color: red;
-    margin-left: 2vh;
+.label {
+    font-size: 20px;
 }

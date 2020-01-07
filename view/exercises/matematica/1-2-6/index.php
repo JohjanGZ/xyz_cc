@@ -11,26 +11,37 @@
 
 <body>
     <div class="container-two">
+        <center>
+            <img src="<?=$dir?>/img/1.png" class="principal">
+        </center>
         <div class="grid-container">
-            <p class="pregunta"><span class='ftitulo'>a.</span> Mateo tiene un tren con 5 vagones y le regalaron 7 vagones más. ¿Cuántos vagones tiene ahora?</p>
-            <div class="grid-item"><img src="<?=$dir?>/img/1.png" class="img">
-                <div class="campo bo">
-                    <select id="slc1">
+            <div class="grid-item">
+                <div class="campo">
+                    <label class="label">¿Cuantos grupos de 10 hay?</label>
+                    <select class="slc" alt="3">
                         <option value="" disabled selected></option>
-                        <?php for ($i=1; $i < 41; $i++) { ?><option value="<?= $i ?>"><?= $i ?></option><?php } ?>
-                    </select>
-                    <span class="mg">+</span>
-                    <select id="slc2">
-                        <option value="" disabled selected></option>
-                        <?php for ($i=1; $i < 41; $i++) { ?><option value="<?= $i ?>"><?= $i ?></option><?php } ?>
-                    </select>
-                    <span class="mg">=</span>
-                    <select id="slc3">
-                        <option value="" disabled selected></option>
-                        <?php for ($i=1; $i < 41; $i++) { ?><option value="<?= $i ?>"><?= $i ?></option><?php } ?>
+                        <?php
+                            for ($i=0; $i < 101; $i++) { 
+                                echo "<option value='$i'>$i</option>";
+                            }
+                        ?>
                     </select>
                 </div>
             </div>
+            <div class="grid-item">
+                <div class="campo">
+                    <label class="label">Cantidad total de objetos</label>
+                    <select class="slc" alt="30">
+                        <option value="" disabled selected></option>
+                        <?php
+                            for ($i=0; $i < 101; $i++) { 
+                                echo "<option value='$i'>$i</option>";
+                            }
+                        ?>
+                    </select>
+                </div>
+            </div>
+
         </div>
     </div>
     <!-- Respuesta -->
@@ -59,7 +70,7 @@ function result_tipo_1_2_6() {
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
-    if (r == 3) {
+    if (r == 2) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();

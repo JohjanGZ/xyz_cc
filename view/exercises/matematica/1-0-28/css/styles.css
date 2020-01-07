@@ -51,4 +51,5 @@ img.img-principal {
     border: 2px solid silver;
     border-radius: 3px;
     cursor: pointer;
+    line-height: 1;
 }
