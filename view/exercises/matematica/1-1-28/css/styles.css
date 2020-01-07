@@ -1,0 +1,59 @@
+.container-two {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 90%;
+    display: flex;
+    height: 70%;
+    align-items: center;
+}
+
+h5 {
+    max-width: 80%;
+}
+
+.contenedor-ejercicio {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.contenedor-imagen {
+    width: 45%;
+}
+
+.contenedor-imagen img {
+    max-width: 100%;
+}
+
+.contenedor-oraciones {
+    width: 45%;
+}
+
+.contenedor-oraciones p {
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+}
+
+p span {
+    display: inline-flex;
+    width: 80px;
+    margin: 0 7px;
+}
+
+select#select2 {
+    border-radius: 12px;
+}
+
+.select-wrapper input.select-dropdown {
+    background: #0095DA !important;
+    color: #ffffff !important;
+    font-weight: 600;
+}
+
+@media(max-height: 640px) {
+    .contenedor-ejercicio {
+        width: 90%;
+    }
+}

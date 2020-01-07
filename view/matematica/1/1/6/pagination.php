@@ -1,42 +1,25 @@
 <script type="text/javascript">
-function Page_19() {
-    start_19();
-    inicio();
-    count = 3;
-}
-function Page_20() {
-    start_20();
+
+function Page_12() {
+    start_12();
     inicio();
     count = 3;
 }
 
-var cant = 18;
+var cant = 1;
 var cal = cant / cant;
 console.log(cant);
 var ruta = "../../../../exercises/matematica/";
 ////////////// 2do 
 // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
-function start_19() {
-    $("#ventana").load(ruta + '1-1-19/index.php', {
-        next: "Page_20()",
-        procesar: "result_tipo_1_1_19()",
-        titulo: "<center><h5> <span class='ftitulo'>Cuenta</span> las figuras geométricas y <span class='ftitulo'>escribe</span> la cantidad de cada una.</h5></center>",
-        restaurar: "start_19()",
-        dir: ruta,
-        cod: "1-1-19",
-        nota: cal
-    });
-    return false;
-};
-
-function start_20() {
-    $("#ventana").load(ruta + '1-1-20/index.php', {
+function start_12() {
+    $("#ventana").load(ruta + '1-1-12/index.php', {
         next: "resultado()",
-        procesar: "result_tipo_1_1_20()",
-        titulo: "<center><h5> <span class='ftitulo'>Selecciona</span> las figuras que están construidas con líneas cerradas.</h5></center>",
-        restaurar: "start_20()",
+        procesar: "result_tipo_1_1_12()",
+        titulo: "<center><h5><span>Cuenta</span> y <span>coloca</span> el conjunto de elementos donde corresponde.</h5></center>",
+        restaurar: "start_12()",
         dir: ruta,
-        cod: "1-1-20",
+        cod: "1-1-12",
         nota: cal
     });
     return false;

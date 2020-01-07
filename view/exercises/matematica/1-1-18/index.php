@@ -13,98 +13,43 @@
     <div class="container-two">
         <div class="grid-container">
             <div class="grid-item">
-                <div class="br-img">
-                    <img src="<?= $dir ?>/img/1.png" class="img">
-                </div>
-                <div class="br-img">
-                    <div class="box-select">
-                        <select id="select1">
-                            <option value="" disabled selected>Decenas</option>
-                            <?php for ($i=1; $i <= 10; $i++) { ?>
-                            <option value="<?=$i?>"><?= $i?></option>
-                            <?php } ?>
+                <div class="campo">
+                    <img src="<?=$dir?>/img/1.png" class="img materialboxed">
+                    <div class="grid-body">
+                        8
+                        <span class="mg">+</span>
+                        3
+                        <span class="mg">=</span>
+                        <select class="slc" alt="11">
+                            <option value="" disabled selected></option>
+                            <?php
+                            for ($i=1; $i < 101; $i++) { 
+                                echo "<option value='$i'>$i</option>";
+                            }
+                        ?>
                         </select>
                     </div>
                 </div>
             </div>
             <div class="grid-item">
-                <div class="br-img">
-                    <img src="<?= $dir ?>/img/2.png" class="img">
-                </div>
-                <div class="br-img">
-                    <div class="box-select">
-                        <select id="select2">
-                            <option value="" disabled selected>Decenas</option>
-                            <?php for ($i=1; $i <= 10; $i++) { ?>
-                            <option value="<?=$i?>"><?= $i?></option>
-                            <?php } ?>
+                <div class="campo">
+                    <img src="<?=$dir?>/img/2.png" class="img materialboxed">
+                    <div class="grid-body">
+                        5
+                        <span class="mg">+</span>
+                        4
+                        <span class="mg">=</span>
+                        <select class="slc" alt="9">
+                            <option value="" disabled selected></option>
+                            <?php
+                            for ($i=1; $i < 101; $i++) { 
+                                echo "<option value='$i'>$i</option>";
+                            }
+                        ?>
                         </select>
                     </div>
                 </div>
             </div>
-
-            <div class="grid-item">
-                <div class="br-img">
-                    <img src="<?= $dir ?>/img/3.png" class="img">
-                </div>
-                <div class="br-img">
-                    <div class="box-select">
-                        <select id="select3">
-                            <option value="" disabled selected>Decenas</option>
-                            <?php for ($i=1; $i <= 10; $i++) { ?>
-                            <option value="<?=$i?>"><?= $i?></option>
-                            <?php } ?>
-                        </select>
-                    </div>
-                </div>
-            </div>
-            <div class="grid-item">
-                <div class="br-img">
-                    <img src="<?= $dir ?>/img/4.png" class="img">
-                </div>
-                <div class="br-img">
-                    <div class="box-select">
-                        <select id="select4">
-                            <option value="" disabled selected>Decenas</option>
-                            <?php for ($i=1; $i <= 10; $i++) { ?>
-                            <option value="<?=$i?>"><?= $i?></option>
-                            <?php } ?>
-                        </select>
-                    </div>
-                </div>
-            </div>
-
-            <div class="grid-item">
-                <div class="br-img">
-                    <img src="<?= $dir ?>/img/5.png" class="img">
-                </div>
-                <div class="br-img">
-                    <div class="box-select">
-                        <select id="select5">
-                            <option value="" disabled selected>Decenas</option>
-                            <?php for ($i=1; $i <= 10; $i++) { ?>
-                            <option value="<?=$i?>"><?= $i?></option>
-                            <?php } ?>
-                        </select>
-                    </div>
-                </div>
-            </div>
-            <div class="grid-item">
-                <div class="br-img">
-                    <img src="<?= $dir ?>/img/6.png" class="img">
-                </div>
-                <div class="br-img">
-                    <div class="box-select">
-                        <select id="select6">
-                            <option value="" disabled selected>Decenas</option>
-                            <?php for ($i=1; $i <= 10; $i++) { ?>
-                            <option value="<?=$i?>"><?= $i?></option>
-                            <?php } ?>
-                        </select>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </div>
     <!-- Respuesta -->
@@ -123,7 +68,9 @@
 
 
 <script src="../../../../../js/core.js"></script>
-<?php require('../../../tools/botones/botones.php');?> <script>$("#next").attr("onclick","<?=$next?>");</script>
+<?php require('../../../tools/botones/botones.php');?><script>
+$("#next").attr("onclick", "<?=$next?>");
+</script>
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
 // Validar
@@ -133,13 +80,12 @@ function result_tipo_1_1_18() {
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
-    if (r == 6) {
+    if (r == 2) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();
     } else {
         incorrecto();
-        console.log(r);
         localStorage.setItem("Nota<?=$cod?>", "0");
         localStorage.setItem("Time<?=$cod?>", tiempo);
     }

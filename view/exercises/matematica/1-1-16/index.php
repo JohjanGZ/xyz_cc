@@ -13,63 +13,49 @@
     <div class="container-two">
         <div class="grid-container">
             <div class="grid-item">
-                <img src="<?= $dir ?>/img/1.png" class="img">
-                <div class="box-select">
-                    <div class="box-igual">
-                        <select id="select1">
-                            <option value="" disabled selected>Decenas</option>
-                            <?php for ($i=1; $i <= 10; $i++) { ?>
-                            <?php if ($i == 1) { ?>
-                            <option value="<?=$i?>"><?= $i?> decena</option>
-                            <?php } else { ?>
-                            <option value="<?=$i?>"><?= $i?> decenas</option>
-                            <?php } ?>
-                            <?php } ?>
-                        </select>
-                    </div>
-                    <span class="after">=</span>
-                    <div class="box-igual">
-                        <select id="select2">
-                            <option value="" disabled selected>Unidades</option>
-                            <?php for ($i=1; $i <= 10; $i++) { ?>
-                            <?php if ($i == 1) { ?>
-                            <option value="<?=$i?>"><?= $i?> unidad</option>
-                            <?php } else { ?>
-                            <option value="<?=$i?>"><?= $i?> unidades</option>
-                            <?php } ?>
-                            <?php } ?>
-                        </select>
-                    </div>
+                <div class="campo-img">
+                    <img src="<?=$dir?>/img/1-1.png" class="img">
+                    <img src="<?=$dir?>/img/1-2.png" class="img">
+                    <img src="<?=$dir?>/img/1-3.png" class="img">
+                </div>
+                <div class="campo">
+                    <select id="slc1">
+                        <option value="" disabled selected></option>
+                        <?php for ($i=1; $i < 11; $i++) { ?><option value="<?= $i ?>"><?= $i ?></option><?php } ?>
+                    </select>
+                    <span class="mg">+</span>
+                    <select id="slc2">
+                        <option value="" disabled selected></option>
+                        <?php for ($i=1; $i < 11; $i++) { ?><option value="<?= $i ?>"><?= $i ?></option><?php } ?>
+                    </select>
+                    <span class="mg">=</span>
+                    <select id="slc3">
+                        <option value="" disabled selected></option>
+                        <?php for ($i=1; $i < 11; $i++) { ?><option value="<?= $i ?>"><?= $i ?></option><?php } ?>
+                    </select>
                 </div>
             </div>
             <div class="grid-item">
-                <img src="<?= $dir ?>/img/2.png" class="img">
-                <div class="box-select">
-                    <div class="box-igual">
-                        <select id="select3">
-                            <option value="" disabled selected>Decenas</option>
-                            <?php for ($i=1; $i <= 10; $i++) { ?>
-                            <?php if ($i == 1) { ?>
-                            <option value="<?=$i?>"><?= $i?> decena</option>
-                            <?php } else { ?>
-                            <option value="<?=$i?>"><?= $i?> decenas</option>
-                            <?php } ?>
-                            <?php } ?>
-                        </select>
-                    </div>
-                    <span class="after">=</span>
-                    <div class="box-igual">
-                        <select id="select4">
-                            <option value="" disabled selected>Unidades</option>
-                            <?php for ($i=1; $i <= 10; $i++) { ?>
-                            <?php if ($i == 1) { ?>
-                            <option value="<?=$i?>"><?= $i?> unidad</option>
-                            <?php } else { ?>
-                            <option value="<?=$i?>"><?= $i?> unidades</option>
-                            <?php } ?>
-                            <?php } ?>
-                        </select>
-                    </div>
+                <div class="campo-img">
+                    <img src="<?=$dir?>/img/2-1.png" class="img">
+                    <img src="<?=$dir?>/img/2-2.png" class="img">
+                    <img src="<?=$dir?>/img/2-3.png" class="img">
+                </div>
+                <div class="campo">
+                    <select id="slc4">
+                        <option value="" disabled selected></option>
+                        <?php for ($i=1; $i < 11; $i++) { ?><option value="<?= $i ?>"><?= $i ?></option><?php } ?>
+                    </select>
+                    <span class="mg">+</span>
+                    <select id="slc5">
+                        <option value="" disabled selected></option>
+                        <?php for ($i=1; $i < 11; $i++) { ?><option value="<?= $i ?>"><?= $i ?></option><?php } ?>
+                    </select>
+                    <span class="mg">=</span>
+                    <select id="slc6">
+                        <option value="" disabled selected></option>
+                        <?php for ($i=1; $i < 11; $i++) { ?><option value="<?= $i ?>"><?= $i ?></option><?php } ?>
+                    </select>
                 </div>
             </div>
         </div>
@@ -100,13 +86,12 @@ function result_tipo_1_1_16() {
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
-    if (r == 4) {
+    if (r == 6) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();
     } else {
         incorrecto();
-        console.log(r);
         localStorage.setItem("Nota<?=$cod?>", "0");
         localStorage.setItem("Time<?=$cod?>", tiempo);
     }
