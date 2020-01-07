@@ -7,7 +7,7 @@
 <?=$titulo?>
 <div class="container">
     <center>
-        <div class="img-principal">
+        <div class="img-principal aleatorio">
             <img src="<?= $dir ?>/img/1.png" class="p-img">
             <img src="<?= $dir ?>/img/1.png" class="p-img">
             <img src="<?= $dir ?>/img/1.png" class="p-img">
@@ -15,14 +15,14 @@
         </div>
     </center>
     <section id="contenedorpuzzle">
-        <div class="row">
-            <div><div class="item" id="item1">1</div></div>
+        <div class="row aleatorio">
+            <div><div class="item seleccion" id="item1" alt="n">1</div></div>
             <div><div class="item" id="item2">2</div></div>
-            <div><div class="item" id="item1" alt="n">3</div></div>
-            <div><div class="item" id="item2">4</div></div>
-            <div><div class="item" id="item1">5</div></div>
-            <div><div class="item" id="item2">6</div></div>
-            <div><div class="item" id="item2">7</div></div>
+            <div><div class="item seleccion" id="item1">3</div></div>
+            <div><div class="item seleccion" id="item2">4</div></div>
+            <div><div class="item seleccion" id="item1">5</div></div>
+            <div><div class="item seleccion" id="item2">6</div></div>
+            <div><div class="item seleccion" id="item2">7</div></div>
         </div>
         <div class="row center recibidor" id="recibidor">
         </div>

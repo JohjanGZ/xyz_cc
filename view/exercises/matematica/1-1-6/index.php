@@ -18,31 +18,31 @@
             <div class="grid-item">
                 <div class="flex-box">
                     <img src="<?= $dir ?>/img/1.png">
-                    <div class="caja" alt="1"></div>
+                    <div class="caja contenedor" alt="1"></div>
                 </div>
             </div>
             <div class="grid-item">
                 <div class="flex-box">
                     <img src="<?= $dir ?>/img/2.png">
-                    <div class="caja" alt="8"></div>
+                    <div class="caja contenedor" alt="8"></div>
                 </div>
             </div>
             <div class="grid-item">
                 <div class="flex-box">
                     <img src="<?= $dir ?>/img/3.png">
-                    <div class="caja" alt="7"></div>
+                    <div class="caja contenedor" alt="7"></div>
                 </div>
             </div>
             <div class="grid-item">
                 <div class="flex-box">
                     <img src="<?= $dir ?>/img/4.png">
-                    <div class="caja" alt="5"></div>
+                    <div class="caja contenedor" alt="5"></div>
                 </div>
             </div>
         </div>
 
         <div class="contenedor-silabas">
-            <ul class="opciones">
+            <ul class="opciones aleatorio">
                 <li id="1" alt="1" class="pieza">
                     <span>1</span>
                 </li>

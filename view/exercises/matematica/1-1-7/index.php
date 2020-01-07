@@ -48,22 +48,22 @@
             </div>
             <div class="row recibidor" id="recibidor">
                 <div class="col s12 m4 l4 xl4">
-                    <div class="contenedorPieza" id="4"><label class="title">4</label></div>
+                    <div class="contenedorPieza contenedor" alt="4"><label class="title">4</label></div>
                 </div>
                 <div class="col s12 m4 l4 xl4">
-                    <div class="contenedorPieza" id="5"><label class="title">5</label></div>
+                    <div class="contenedorPieza contenedor" alt="5"><label class="title">5</label></div>
                 </div>
                 <div class="col s12 m4 l4 xl4">
-                    <div class="contenedorPieza" id="6"><label class="title">6</label></div>
+                    <div class="contenedorPieza contenedor" alt="6"><label class="title">6</label></div>
                 </div>
                 <div class="col s12 m4 l4 xl4">
-                    <div class="contenedorPieza" id="7"><label class="title">7</label></div>
+                    <div class="contenedorPieza contenedor" alt="7"><label class="title">7</label></div>
                 </div>
                 <div class="col s12 m4 l4 xl4">
-                    <div class="contenedorPieza" id="8"><label class="title">8</label></div>
+                    <div class="contenedorPieza contenedor" alt="8"><label class="title">8</label></div>
                 </div>
                 <div class="col s12 m4 l4 xl4">
-                    <div class="contenedorPieza" id="9"><label class="title">9</label></div>
+                    <div class="contenedorPieza contenedor" alt="9"><label class="title">9</label></div>
                 </div>
             </div>
         </div>
@@ -96,7 +96,7 @@ function result_tipo_1_1_7() {
 
 
 
-    if (n4 == 1 && n5 == 1 && n6 == 1 && n7 == 1 && n8 == 1 && n9 == 1) {
+    if (r == 6) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();

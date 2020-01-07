@@ -55,49 +55,49 @@ h4 {
 <div class="container-two">
     <div class="row">
         <div class="campo" id="palabras">
-            <ul id="listA">
+            <ul id="listA" class="aleatorio">
                 <li>
                     <img src="<?= $dir ?>/img/1.png" class="responsive-img">
-                    <span class="a" alt="">9</span>/
-                    <span class="a" alt="n">1</span>/
-                    <span class="a" alt="">3</span>
+                    <span class="a seleccion" alt="">9</span>/
+                    <span class="a seleccion" alt="n">1</span>/
+                    <span class="a seleccion" alt="">3</span>
                 </li>
                 <li>
                     <img src="<?= $dir ?>/img/2.png" class="responsive-img">
-                    <span class="a" alt="n">2</span>/
-                    <span class="a" alt="">7</span>/
-                    <span class="a" alt="">8</span>
+                    <span class="a seleccion" alt="n">2</span>/
+                    <span class="a seleccion" alt="">7</span>/
+                    <span class="a seleccion" alt="">8</span>
                 </li>
                 <li>
                     <img src="<?= $dir ?>/img/3.png" class="responsive-img">
-                    <span class="a" alt="n">3</span>/
-                    <span class="a" alt="">9</span>/
-                    <span class="a" alt="">1</span>
+                    <span class="a seleccion" alt="n">3</span>/
+                    <span class="a seleccion" alt="">9</span>/
+                    <span class="a seleccion" alt="">1</span>
                 </li>
                 <li>
                     <img src="<?= $dir ?>/img/4.png" class="responsive-img">
-                    <span class="a" alt="">7</span>/
-                    <span class="a" alt="n">4</span>/
-                    <span class="a" alt="">5</span>
+                    <span class="a seleccion" alt="">7</span>/
+                    <span class="a seleccion" alt="n">4</span>/
+                    <span class="a seleccion" alt="">5</span>
                 </li>
                 
                 <li>
                     <img src="<?= $dir ?>/img/5.png" class="responsive-img">
-                    <span class="a" alt="">9</span>/
-                    <span class="a" alt="">1</span>/
-                    <span class="a" alt="n">8</span>
+                    <span class="a seleccion" alt="">9</span>/
+                    <span class="a seleccion" alt="">1</span>/
+                    <span class="a seleccion" alt="n">8</span>
                 </li>
                 <li>
                     <img src="<?= $dir ?>/img/7.png" class="responsive-img">
-                    <span class="a" alt="">3</span>/
-                    <span class="a" alt="n">9</span>/
-                    <span class="a" alt="">1</span>
+                    <span class="a seleccion" alt="">3</span>/
+                    <span class="a seleccion" alt="n">9</span>/
+                    <span class="a seleccion" alt="">1</span>
                 </li>
                 <li>
                     <img src="<?= $dir ?>/img/8.png" class="responsive-img">
-                    <span class="a" alt="">7</span>/
-                    <span class="a" alt="n">6</span>/
-                    <span class="a" alt="">5</span>
+                    <span class="a seleccion" alt="">7</span>/
+                    <span class="a seleccion" alt="n">6</span>/
+                    <span class="a seleccion" alt="">5</span>
                 </li>
             </ul>
         </div>

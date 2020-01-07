@@ -7,47 +7,47 @@
 <?=$titulo?>
 <div class="container">
     <section id="contenedorpuzzle">
-        <div class="grid-container">
-            <div class="grid-item">
+        <div class="grid-container aleatorio">
+            <div class="grid-item seleccion">
                 <img src="<?= $dir ?>/img/1.png" class="p-img">
             </div>
-            <div class="grid-item" alt="n">
+            <div class="grid-item seleccion" alt="n">
                 <img src="<?= $dir ?>/img/2.png" class="p-img">
             </div>
-            <div class="grid-item">
+            <div class="grid-item seleccion">
                 <img src="<?= $dir ?>/img/3.png" class="p-img">
             </div>  
-            <div class="grid-item">
+            <div class="grid-item seleccion">
                 <img src="<?= $dir ?>/img/4.png" class="p-img">
             </div>
-            <div class="grid-item" alt="n">
+            <div class="grid-item seleccion" alt="n">
                 <img src="<?= $dir ?>/img/2.png" class="p-img">
             </div>
-            <div class="grid-item">
+            <div class="grid-item seleccion">
                 <img src="<?= $dir ?>/img/5.png" class="p-img">
             </div>
-            <div class="grid-item" alt="n">
+            <div class="grid-item seleccion" alt="n">
                 <img src="<?= $dir ?>/img/2.png" class="p-img">
             </div>  
-            <div class="grid-item" alt="n">
+            <div class="grid-item seleccion" alt="n">
                 <img src="<?= $dir ?>/img/2.png" class="p-img">
             </div>  
-            <div class="grid-item">
+            <div class="grid-item seleccion">
                 <img src="<?= $dir ?>/img/6.png" class="p-img">
             </div>  
-            <div class="grid-item" alt="n">
+            <div class="grid-item seleccion" alt="n">
                 <img src="<?= $dir ?>/img/2.png" class="p-img">
             </div> 
-            <div class="grid-item">
+            <div class="grid-item seleccion">
                 <img src="<?= $dir ?>/img/7.png" class="p-img">
             </div> 
-            <div class="grid-item" alt="n">
+            <div class="grid-item seleccion" alt="n">
                 <img src="<?= $dir ?>/img/2.png" class="p-img">
             </div>
-            <div class="grid-item">
+            <div class="grid-item seleccion">
                 <img src="<?= $dir ?>/img/8.png" class="p-img">
             </div>
-            <div class="grid-item" alt="n">
+            <div class="grid-item seleccion" alt="n">
                 <img src="<?= $dir ?>/img/2.png" class="p-img">
             </div> 
         </div>

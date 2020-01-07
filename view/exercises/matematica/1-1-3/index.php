@@ -8,40 +8,40 @@
 <div class="container">
     <section id="contenedorpuzzle">
         <div class="grid-container">
-            <div class="grid-item">
+            <div class="grid-item seleccion">
                 <img src="<?= $dir ?>/img/2.gif" class="p-img">
             </div>
-            <div class="grid-item" alt="n">
+            <div class="grid-item seleccion" alt="n">
                 <img src="<?= $dir ?>/img/1.png" class="p-img">
             </div>
-            <div class="grid-item">
+            <div class="grid-item seleccion">
                 <img src="<?= $dir ?>/img/2.gif" class="p-img">
             </div>  
-            <div class="grid-item">
-                <img src="<?= $dir ?>/img/2.gif" class="p-img">
-            </div>
-            <div class="grid-item" alt="n">
-                <img src="<?= $dir ?>/img/1.png" class="p-img">
-            </div>
-            <div class="grid-item">
+            <div class="grid-item seleccion">
                 <img src="<?= $dir ?>/img/2.gif" class="p-img">
             </div>
-            <div class="grid-item" alt="n">
+            <div class="grid-item seleccion" alt="n">
+                <img src="<?= $dir ?>/img/1.png" class="p-img">
+            </div>
+            <div class="grid-item seleccion">
+                <img src="<?= $dir ?>/img/2.gif" class="p-img">
+            </div>
+            <div class="grid-item seleccion" alt="n">
                 <img src="<?= $dir ?>/img/1.png" class="p-img">
             </div>  
-            <div class="grid-item" alt="n">
+            <div class="grid-item seleccion" alt="n">
                 <img src="<?= $dir ?>/img/1.png" class="p-img">
             </div>  
-            <div class="grid-item">
+            <div class="grid-item seleccion">
                 <img src="<?= $dir ?>/img/2.gif" class="p-img">
             </div>  
-            <div class="grid-item" alt="n">
+            <div class="grid-item seleccion" alt="n">
                 <img src="<?= $dir ?>/img/1.png" class="p-img">
             </div> 
-            <div class="grid-item">
+            <div class="grid-item seleccion">
                 <img src="<?= $dir ?>/img/2.gif" class="p-img">
             </div> 
-            <div class="grid-item" alt="n">
+            <div class="grid-item seleccion" alt="n">
                 <img src="<?= $dir ?>/img/1.png" class="p-img">
             </div>
         </div>
@@ -63,6 +63,7 @@
 </div>
 <script src="../../../../../js/core.js"></script>
 <?php require('../../../tools/botones/botones.php');?> <script>$("#next").attr("onclick","<?=$next?>");</script>
+<script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
 function result_tipo_1_1_3() {
 
@@ -84,4 +85,3 @@ function result_tipo_1_1_3() {
     }
 }
 </script>
-<script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
