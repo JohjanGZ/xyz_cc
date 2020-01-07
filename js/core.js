@@ -157,15 +157,15 @@ function arrastre() {
         start: function () {
             element = $(this).attr("alt");
             elementid = $(this);
-
         }
     });
     $(".contenedor").droppable({
         drop: function (event, ui) {
             element2 = $(this).attr("alt");
+            $(this).css("background-color", "rgba(139, 195, 74, 0.14)");
             elementid.css({ "background": "transparent", "border-color": "transparent" });
             if (element == element2) {
-                r++; 
+                r++;
                 // console.log(r);
             }
             ui.draggable.draggable("disable", 1);

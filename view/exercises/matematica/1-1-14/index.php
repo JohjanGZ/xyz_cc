@@ -8,39 +8,46 @@
 
 </style>
 <?=$titulo?>
+<?php $signos = array('<','>','='); ?>
 
 <body>
     <div class="container-two">
         <div class="grid-container">
-            <div class="grid-item">
+            <div class="grid-item c1">
                 <img src="<?= $dir ?>/img/1.png" class="img">
                 <div class="box-select">
-                    <select id="select1">
-                        <option value="" disabled selected>Decenas</option>
-                        <?php for ($i=1; $i <= 10; $i++) { ?>
-                        <?php if ($i == 1) { ?>
-                        <option value="<?=$i?>"><?= $i?> decena</option>
-                        <?php } else { ?>
-                        <option value="<?=$i?>"><?= $i?> decenas</option>
-                        <?php } ?>
+                    <select class="seleccion" alt="<">
+                        <option value="" disabled selected></option>
+                        <?php for ($i=0; $i < 3; $i++) { ?>
+                        <option value="<?= $signos[$i]?>"><?= $signos[$i]?></option>
                         <?php } ?>
                     </select>
                 </div>
-            </div>
-            <div class="grid-item">
                 <img src="<?= $dir ?>/img/2.png" class="img">
+            </div>
+            <div class="grid-item c2">
+                <img src="<?= $dir ?>/img/3.png" class="img">
                 <div class="box-select">
-                    <select id="select2">
-                        <option value="" disabled selected>Decenas</option>
-                        <?php for ($i=1; $i <= 10; $i++) { ?>
-                        <?php if ($i == 1) { ?>
-                        <option value="<?=$i?>"><?= $i?> decena</option>
-                        <?php } else { ?>
-                        <option value="<?=$i?>"><?= $i?> decenas</option>
-                        <?php } ?>
+                    <select class="seleccion" alt=">">
+                        <option value="" disabled selected></option>
+                        <?php for ($i=0; $i < 3; $i++) { ?>
+                        <option value="<?= $signos[$i]?>"><?= $signos[$i]?></option>
                         <?php } ?>
                     </select>
                 </div>
+                <img src="<?= $dir ?>/img/4.png" class="img">
+            </div>
+            <div class="grid-item c3">
+                <img src="<?= $dir ?>/img/5.png" class="img">
+                <div class="box-select">
+                    <select class="seleccion" alt="=">
+                        <option value="" disabled selected></option>
+                        <?php for ($i=0; $i < 3; $i++) { ?>
+                        <option value="<?= $signos[$i]?>"><?= $signos[$i]?></option>
+                        <?php } ?>
+                    </select>
+                </div>
+                <img src="<?= $dir ?>/img/6.png" class="img">
             </div>
         </div>
     </div>
@@ -60,7 +67,9 @@
 
 
 <script src="../../../../../js/core.js"></script>
-<?php require('../../../tools/botones/botones.php');?> <script>$("#next").attr("onclick","<?=$next?>");</script>
+<?php require('../../../tools/botones/botones.php');?> <script>
+$("#next").attr("onclick", "<?=$next?>");
+</script>
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
 // Validar
@@ -69,8 +78,9 @@ function result_tipo_1_1_14() {
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
-
-    if (r == 2) {
+    r = 0;
+    seleccion_lista();
+    if (r == 3) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();

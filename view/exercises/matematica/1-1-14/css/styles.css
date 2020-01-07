@@ -2,11 +2,34 @@
     margin: 0 auto;
     max-width: 1280px;
     width: 70%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Seleccion */
+
+.select-wrapper input.select-dropdown {
+    font-size: 24px;
+}
+.select-wrapper {
+    position: relative;
+    width: 100px;
+    margin-left: 2vh;
+    margin-right: 2vh;
+}
+
+/* Estilos Generales */
+
+h5 {
+    width: 80%;
+    font-size: 26px;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
     padding: 10px;
     justify-content: center;
     align-items: center;
@@ -16,15 +39,31 @@
     padding: 10px;
     font-size: 24px;
     margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .img {
     border-style: none;
-    height: 300px;
+    height: 109px;
     width: auto;
-    margin-bottom: 4vh;
 }
-.select-wrapper input.select-dropdown {
-    background: orange !important;
-    color: #ffffff !important;
+@media (min-width: 1920px) {
+    .img {
+        border-style: none;
+        height: 143px;
+        width: auto;
+    }
+}
+
+
+.c1 {
+    background: rgb(226, 235, 184);
+}
+.c2 {
+    background: rgb(218, 197, 222);
+}
+.c3 {
+    background: rgb(252, 223, 189);
 }

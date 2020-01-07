@@ -5,77 +5,57 @@
     <link rel="stylesheet" type="text/css" href="<?= $dir ?>/css/styles.css">
 </head>
 <?=$titulo?>
+<?php $signos = array('18','14','7','12','11'); ?>
 <div class="container-two">
     <div class="row">
-        <center>
-            <img src="<?= $dir ?>/img/principal.png" class="img-principal">
-        </center>
         <div class="grid-container">
-            <div class="grid-item"><img src="<?= $dir ?>/img/1.png" class="img"></div>
-            <div class="grid-item"><div class="caja"></div></div>
-            <div class="grid-item"><div class="caja"></div></div>
-            <div class="grid-item"><div class="caja"></div></div>
-            <div class="grid-item"><div class="caja"></div></div>
-            <div class="grid-item"><div class="caja" alt="n"></div></div>
-            <div class="grid-item"><div class="caja"></div></div>
-            <div class="grid-item"><div class="caja"></div></div>
-            <div class="grid-item"><div class="caja"></div></div>
-            <div class="grid-item"><div class="caja"></div></div>
+            <div class="grid-item">
+                <div class="item">
+                    <img src="<?=$dir?>/img/1.png" class="img">
+                </div>
+                <div class="item">
+                    <span>=</span>
+                    1
+                    <span>+</span>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="item">
+                    <img src="<?=$dir?>/img/1.png" class="img">
+                    <img src="<?=$dir?>/img/1.png" class="img">
+                </div>
+                <div class="item">
+                    <span>=</span>
+                    2
+                    <span>+</span>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="item">
+                    <img src="<?=$dir?>/img/1.png" class="img">
+                    <img src="<?=$dir?>/img/1.png" class="img">
+                    <img src="<?=$dir?>/img/1.png" class="img">
+                    <img src="<?=$dir?>/img/1.png" class="img">
+                </div>
+                <div class="item">
+                    <span>=</span>
+                    4
+                    <span>+</span>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="item">
 
-            <div class="grid-item"><img src="<?= $dir ?>/img/2.png" class="img"></div>
-            <div class="grid-item"><div class="caja"></div></div>
-            <div class="grid-item"><div class="caja"></div></div>
-            <div class="grid-item"><div class="caja"></div></div>
-            <div class="grid-item"><div class="caja"></div></div>
-            <div class="grid-item"><div class="caja"></div></div>
-            <div class="grid-item"><div class="caja"></div></div>
-            <div class="grid-item"><div class="caja"></div></div>
-            <div class="grid-item"><div class="caja" alt="n"></div></div>
-            <div class="grid-item"><div class="caja"></div></div>
-
-            <div class="grid-item"><img src="<?= $dir ?>/img/3.png" class="img"></div>
-            <div class="grid-item"><div class="caja"></div></div>
-            <div class="grid-item"><div class="caja"></div></div>
-            <div class="grid-item"><div class="caja"></div></div>
-            <div class="grid-item"><div class="caja"></div></div>
-            <div class="grid-item"><div class="caja"></div></div>
-            <div class="grid-item"><div class="caja"></div></div>
-            <div class="grid-item"><div class="caja" alt="n"></div></div>
-            <div class="grid-item"><div class="caja"></div></div>
-            <div class="grid-item"><div class="caja"></div></div>
-
-            <div class="grid-item"><img src="<?= $dir ?>/img/4.png" class="img"></div>
-            <div class="grid-item"><div class="caja"></div></div>
-            <div class="grid-item"><div class="caja"></div></div>
-            <div class="grid-item"><div class="caja"></div></div>
-            <div class="grid-item"><div class="caja"></div></div>
-            <div class="grid-item"><div class="caja"></div></div>
-            <div class="grid-item"><div class="caja" alt="n"></div></div>
-            <div class="grid-item"><div class="caja"></div></div>
-            <div class="grid-item"><div class="caja"></div></div>
-            <div class="grid-item"><div class="caja"></div></div>
-
-            <div class="grid-item"><img src="<?= $dir ?>/img/5.png" class="img"></div>
-            <div class="grid-item"><div class="caja"></div></div>
-            <div class="grid-item"><div class="caja"></div></div>
-            <div class="grid-item"><div class="caja"></div></div>
-            <div class="grid-item"><div class="caja" alt="n"></div></div>
-            <div class="grid-item"><div class="caja"></div></div>
-            <div class="grid-item"><div class="caja"></div></div>
-            <div class="grid-item"><div class="caja"></div></div>
-            <div class="grid-item"><div class="caja"></div></div>
-            <div class="grid-item"><div class="caja"></div></div>
-
-            <div class="grid-item"></div>
-            <div class="grid-item">1</div>
-            <div class="grid-item">2</div>
-            <div class="grid-item">3</div>
-            <div class="grid-item">4</div>
-            <div class="grid-item">5</div>
-            <div class="grid-item">6</div>
-            <div class="grid-item">7</div>
-            <div class="grid-item">8</div>
-            <div class="grid-item">9</div>
+                </div>
+                <div class="item">
+                    <select class="seleccion" alt="7">
+                        <option value="" disabled selected></option>
+                        <?php for ($i=0; $i < count($signos); $i++) { ?>
+                        <option value="<?= $signos[$i]?>"><?= $signos[$i]?></option>
+                        <?php } ?>
+                    </select>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -92,7 +72,9 @@
 </div>
 </body>
 <script src="../../../../../js/core.js"></script>
-<?php require('../../../tools/botones/botones.php');?> <script>$("#next").attr("onclick","<?=$next?>");</script>
+<?php require('../../../tools/botones/botones.php');?> <script>
+$("#next").attr("onclick", "<?=$next?>");
+</script>
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
 // Formulario - Registrados
@@ -102,10 +84,9 @@ function result_tipo_1_1_21() {
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
-
-
-
-    if (r == 5) {
+    r = 0;
+    seleccion_lista();
+    if (r == 1) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();
