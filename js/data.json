@@ -757,162 +757,104 @@
             "unidades": {
                 "0":{
                     "id": "0",
-                    "nombre": "Unidad 1 -  ",
+                    "nombre": "Unidad 1 - Descubrimos nuestros talentos",
                     "temas": {
-                        "0": "tema 1",
-                        "1": "tema 2",
-                        "2": "tema 3",
-                        "3": "tema 4",
-                        "4": "tema 5",
-                        "5": "tema 6",
-                        "6": "tema 7",
-                        "7": "tema 8",
-                        "8": "tema 9",
-                        "9": "tema 10"
+                        "0": "Aritmética - Conjuntos",
+                        "1": "Aritmética - Representación de conjuntos",
+                        "2": "Aritmética - Relación de pertenencia",
+                        "3": "Aritmética - Cantidades hasta el 9",
+                        "4": "Aritmética - La decena",
+                        "5": "Figuras geométricas",
+                        "6": "Conteo de figuras"
                     }
                 },
                 "1":{
                     "id": "1",
-                    "nombre": "Unidad 2 -  ",
+                    "nombre": "Unidad 2 - Ayudamos a mamá en las compras",
                     "temas": {
-                        "0": "tema 1",
-                        "1": "tema 2",
-                        "2": "tema 3",
-                        "3": "tema 4",
-                        "4": "tema 5",
-                        "5": "tema 6",
-                        "6": "tema 7",
-                        "7": "tema 8",
-                        "8": "tema 9",
-                        "9": "tema 10"
+                        "0": "Aritmética - La adición",
+                        "1": "Aritmética - Problemas con adición",
+                        "2": "Aritmética - Números hasta el 49",
+                        "3": "Geometría - Figuras geométricas",
+                        "4": "Estadística - Registro de datos y gráfico de barras"
                     }
                 },
                 "2":{
                     "id": "2",
-                    "nombre": "Unidad 3 -  ",
+                    "nombre": "Unidad 3 - Somos pequeños agricultores",
                     "temas": {
-                        "0": "tema 1",
-                        "1": "tema 2",
-                        "2": "tema 3",
-                        "3": "tema 4",
-                        "4": "tema 5",
-                        "5": "tema 6",
-                        "6": "tema 7",
-                        "7": "tema 8",
-                        "8": "tema 9",
-                        "9": "tema 10"
+                        "0": "Aritmética - Lectura y escritura de números",
+                        "1": "Aritmética - Descomposición de números",
+                        "2": "Aritmética - Comparación de números",
+                        "3": "Geometría - Figuras geométricas",
+                        "4": "Razonamiento matemático - Sucesiones crecientes y decrecientes"
                     }
                 },
                 "3":{
                     "id": "3",
-                    "nombre": "Unidad 4 -  ",
+                    "nombre": "Unidad 4 - Peruanito soy y con orgullo",
                     "temas": {
-                        "0": "tema 1",
-                        "1": "tema 2",
-                        "2": "tema 3",
-                        "3": "tema 4",
-                        "4": "tema 5",
-                        "5": "tema 6",
-                        "6": "tema 7",
-                        "7": "tema 8",
-                        "8": "tema 9",
-                        "9": "tema 10"
+                        "0": "Aritmética - Lectura y escritura de números hasta el 99",
+                        "1": "Aritmética - Comparación de números",
+                        "2": "Aritmética - Descomposición aditiva",
+                        "3": "Estadística - Gráficos de barras"
                     }
                 },
                 "4":{
                     "id": "4",
-                    "nombre": "Unidad 5 -  ",
+                    "nombre": "Unidad 5 - Las maravillas de la naturaleza",
                     "temas": {
-                        "0": "tema 1",
-                        "1": "tema 2",
-                        "2": "tema 3",
-                        "3": "tema 4",
-                        "4": "tema 5",
-                        "5": "tema 6",
-                        "6": "tema 7",
-                        "7": "tema 8",
-                        "8": "tema 9",
-                        "9": "tema 10"
+                        "0": "Aritmética - La centena",
+                        "1": "Aritmética - La centena en el tablero de valor posicional",
+                        "2": "Aritmética - Descomponemos las centenas",
+                        "3": "Aritmética - Lectura y escritura de números de tres cifras",
+                        "4": "Aritmética - Problemas con centenas",
+                        "5": "Aritmética - Propiedad conmutativa"
                     }
                 },
                 "5":{
                     "id": "5",
-                    "nombre": "Unidad 6 -  ",
+                    "nombre": "Unidad 6 - Aprendemos a ahorrar para comprar lo que necesitamos",
                     "temas": {
-                        "0": "tema 1",
-                        "1": "tema 2",
-                        "2": "tema 3",
-                        "3": "tema 4",
-                        "4": "tema 5",
-                        "5": "tema 6",
-                        "6": "tema 7",
-                        "7": "tema 8",
-                        "8": "tema 9",
-                        "9": "tema 10"
+                        "0": "Aritmética - Los meses del año y los días de la semana",
+                        "1": "Aritmética - La hora",
+                        "2": "Aritmética - Aritmética - La media hora",
+                        "3": "Aritmética - Medidas de peso o masa el kilogramo",
+                        "4": "Aritmética - Monedas y billetes del Perú"
                     }
                 },
                 "6":{
                     "id": "6",
-                    "nombre": "Unidad 7 -  ",
+                    "nombre": "Unidad 7 - ¡Qué alegría... llegaron las olimpiadas!",
                     "temas": {
-                        "0": "tema 1",
-                        "1": "tema 2",
-                        "2": "tema 3",
-                        "3": "tema 4",
-                        "4": "tema 5",
-                        "5": "tema 6",
-                        "6": "tema 7",
-                        "7": "tema 8",
-                        "8": "tema 9",
-                        "9": "tema 10"
+                        "0": "Aritmética - Números pares e impares",
+                        "1": "Aritmética - Aritmética - Adición de centenas llevando",
+                        "2": "Aritmética - Sustracción de centenas prestando",
+                        "3": "Aritmética - El doble de un número",
+                        "4": "Aritmética - Problemas con el doble"
                     }
                 },
                 "7":{
                     "id": "7",
-                    "nombre": "Unidad 8 -  ",
+                    "nombre": "Unidad 8 - Juntos respetamos los derechos de todos los niños y las niñas",
                     "temas": {
-                        "0": "tema 1",
-                        "1": "tema 2",
-                        "2": "tema 3",
-                        "3": "tema 4",
-                        "4": "tema 5",
-                        "5": "tema 6",
-                        "6": "tema 7",
-                        "7": "tema 8",
-                        "8": "tema 9",
-                        "9": "tema 10"
+                        "0": "Aritmética - La mitad",
+                        "1": "Aritmética - La tercia",
+                        "2": "Aritmética - Noción de fracción",
+                        "3": "Aritmética - Comparación de fracciones",
+                        "4": "Aritmética - Ecuaciones"
                     }
                 },
                 "8":{
                     "id": "8",
-                    "nombre": "Unidad 9 -  ",
+                    "nombre": "Unidad 9 - La alegría de la navidad está en nuestros corazones",
                     "temas": {
-                        "0": "tema 1",
-                        "1": "tema 2",
-                        "2": "tema 3",
-                        "3": "tema 4",
-                        "4": "tema 5",
-                        "5": "tema 6",
-                        "6": "tema 7",
-                        "7": "tema 8",
-                        "8": "tema 9",
-                        "9": "tema 10"
-                    }
-                },
-                "9":{
-                    "id": "9",
-                    "nombre": "Unidad 10 -  ",
-                    "temas": {
-                        "0": "tema 1",
-                        "1": "tema 2",
-                        "2": "tema 3",
-                        "3": "tema 4",
-                        "4": "tema 5",
-                        "5": "tema 6",
-                        "6": "tema 7",
-                        "7": "tema 8",
-                        "8": "tema 9",
-                        "9": "tema 10"
+                        "0": "Aritmética - Términos de la adición",
+                        "1": "Aritmética - Comparación de la adición",
+                        "2": "Aritmética - Términos de la sustracción",
+                        "3": "Aritmética - Números ordinales",
+                        "4": "Estadística - Probabilidades",
+                        "5": "Estadística - Diagrama del árbol"
                     }
                 }
             }
@@ -1117,41 +1059,34 @@
             "unidades": {
                 "0":{
                     "id": "0",
-                    "nombre": "Unidad 1 -  ",
+                    "nombre": "Unidad 1 -  Organizamos nuestro ambiente escolar",
                     "temas": {
-                        "0": "tema 1",
-                        "1": "tema 2",
-                        "2": "tema 3",
-                        "3": "tema 4",
-                        "4": "tema 5",
-                        "5": "tema 6",
-                        "6": "tema 7",
-                        "7": "tema 8",
-                        "8": "tema 9",
-                        "9": "tema 10"
+                        "0": "Aritmética - Determinación de conjuntos",
+                        "1": "Aritmética - Pertenencia y no pertenencia",
+                        "2": "Aritmética - Unión e intersección de conjuntos",
+                        "3": "Geometría - Desplazamiento en la cuadrícula",
+                        "4": "Geometría - Puntos en el plano",
+                        "5": "Geometría - Simetría"
                     }
                 },
                 "1":{
                     "id": "1",
-                    "nombre": "Unidad 2 -  ",
+                    "nombre": "Unidad 2 - Trabajamos en equipo responsablemente",
                     "temas": {
-                        "0": "tema 1",
-                        "1": "tema 2",
-                        "2": "tema 3",
-                        "3": "tema 4",
-                        "4": "tema 5",
-                        "5": "tema 6",
-                        "6": "tema 7",
-                        "7": "tema 8",
-                        "8": "tema 9",
-                        "9": "tema 10"
+                        "0": "Aritmética - Números hasta la unidad de millar",
+                        "1": "Aritmética - Descomposición de números",
+                        "2": "Aritmética - Comparación de números",
+                        "3": "Aritmética - Aproximación de números",
+                        "4": "Aritmética - Adición",
+                        "5": "stadística - Diagrama de barras horizontales y verticales",
+                        "6": "Razonamiento Matemático - Sucesiones numéricas"
                     }
                 },
                 "2":{
                     "id": "2",
-                    "nombre": "Unidad 3 -  ",
+                    "nombre": "Unidad 3 - Cuido mi salud con una buena alimentación",
                     "temas": {
-                        "0": "tema 1",
+                        "0": "La decena de millar, Descomposición de números ,Comparación y aproximación de números,\n Números ordinales, Números romanos, La adición",
                         "1": "tema 2",
                         "2": "tema 3",
                         "3": "tema 4",
