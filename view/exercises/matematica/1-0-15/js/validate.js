@@ -1,30 +1,48 @@
-var lb = document.querySelector('.opciones');
-for (var n = lb.children.length; n >= 0; n--) {
-    lb.appendChild(lb.children[Math.random() * n | 0]);
-}
-var la = document.querySelector('.grid-container');
-for (var i = la.children.length; i >= 0; i--) {
-    la.appendChild(la.children[Math.random() * i | 0]);
-}
+var r = 0;
+// Select Materialize
+$('select').formSelect();
+// Select
+var select1 = document.getElementById('select1');
+var select2 = document.getElementById('select2');
+var select3 = document.getElementById('select3');
+var select4 = document.getElementById('select4');
+var select5 = document.getElementById('select5');
+var select6 = document.getElementById('select6');
+var select7 = document.getElementById('select7');
+var select8 = document.getElementById('select8');
 
-var r = 0 ;
-
-$(".pieza").draggable({
-    start: function() {
-        element = $(this).attr("alt");
-        elementid = $(this);
-        // console.log(elementid);
-    }
+select1.addEventListener('change', function() {
+    var selected1 = this.options[select1.selectedIndex];
+    if (selected1.value == 2) { r++; }
+});
+select2.addEventListener('change', function() {
+    var selected2 = this.options[select2.selectedIndex];
+    if (selected2.value == 9) { r++; }
+});
+select3.addEventListener('change', function() {
+    var selected3 = this.options[select3.selectedIndex];
+    if (selected3.value == 3) { r++; }
+});
+select4.addEventListener('change', function() {
+    var selected4 = this.options[select4.selectedIndex];
+    if (selected4.value == 8) { r++; }
+});
+select5.addEventListener('change', function() {
+    var selected5 = this.options[select5.selectedIndex];
+    if (selected5.value == 5) { r++; }
 });
 
-$(".caja").droppable({
-    drop: function(event, ui) {
-        $(this).css("background-color", "rgba(139, 195, 74, 0.14)");
-        element2 = $(this).attr("alt");
-        elementid.css("background-color", "transparent");
-        if (element == element2) {
-            r++;
-        }
-        ui.draggable.draggable("disable", 1);
-    }
+select6.addEventListener('change', function() {
+    var selected6 = this.options[select6.selectedIndex];
+    if (selected6.value == 10) { r++; }
+});
+
+select7.addEventListener('change', function() {
+    var selected7 = this.options[select7.selectedIndex];
+    if (selected7.value == 2) { r++; }
+});
+
+select8.addEventListener('change', function() {
+    var selected8 = this.options[select8.selectedIndex];
+    if (selected8.value == 7) { r++; }
 });

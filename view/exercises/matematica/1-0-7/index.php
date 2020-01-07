@@ -4,149 +4,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="<?= $dir ?>/css/styles.css">
 </head>
+<style type="text/css">
+
+</style>
 <?=$titulo?>
-<div class="container">
-    <center>
+
+<body>
+    <div class="container-two">
+        <center>
+            <img src="<?= $dir ?>/img/principal.gif" class="img materialboxed">
+        </center>
         <div class="grid-container">
             <div class="grid-item">
-                <img src="<?= $dir ?>/img/1.png" class="p-img">
-                <div class="figura">
-                    <img alt="1" src="<?= $dir ?>/img/triangulo.png" class="">
+                <div class="flex-box">
+                    <span class="span-before">Hy</span>
+                    <div class="caja" alt="5"></div>
+                    <span class="span-after">niños y</span>
+                    <div class="caja" alt="2"></div>
+                    <span class="span-after">niñas fuera de la casa.</span>
                 </div>
             </div>
             <div class="grid-item">
-                <img src="<?= $dir ?>/img/2.png" class="p-img">
-                <div class="figura">
-                    <img alt="2" src="<?= $dir ?>/img/cuadrado.png" class="">
-                </div>
-            </div>
-            <div class="grid-item">
-                <img src="<?= $dir ?>/img/3.png" class="p-img">
-                <div class="figura">
-                    <img alt="3" src="<?= $dir ?>/img/circulo.png" class="">
-                </div>
-            </div>
-            <div class="grid-item">
-                <img src="<?= $dir ?>/img/4.png" class="p-img">
-                <div class="figura">
-                    <img alt="4" src="<?= $dir ?>/img/rombo.png" class="">
-                </div>
-            </div>
-        </div>
-    </center>
-    <section id="contenedorpuzzle">
-        <div class="grid-container">
-            <div class="grid-item">
-                <img src="<?= $dir ?>/img/2.png" class="p-img">
-                <div class="figura p">
-                    <div class="img" alt="2" style="width: 100%; height: 100%;"></div>
-                </div>
-            </div>
-            <div class="grid-item">
-                <img src="<?= $dir ?>/img/3.png" class="p-img">
-                <div class="figura p">
-                    <div class="img" alt="3" style="width: 100%; height: 100%;"></div>
-                </div>
-            </div>
-            <div class="grid-item">
-                <img src="<?= $dir ?>/img/4.png" class="p-img">
-                <div class="figura p">
-                    <div class="img" alt="4" style="width: 100%; height: 100%;"></div>
-                </div>
-            </div>
-            <div class="grid-item">
-                <img src="<?= $dir ?>/img/1.png" class="p-img">
-                <div class="figura p">
-                    <div class="img" alt="1" style="width: 100%; height: 100%;"></div>
-                </div>
-            </div>
-            <div class="grid-item">
-                <img src="<?= $dir ?>/img/2.png" class="p-img">
-                <div class="figura p">
-                    <div class="img" alt="2" style="width: 100%; height: 100%;"></div>
-                </div>
-            </div>
-            <div class="grid-item">
-                <img src="<?= $dir ?>/img/4.png" class="p-img">
-                <div class="figura p">
-                    <div class="img" alt="4" style="width: 100%; height: 100%;"></div>
-                </div>
-            </div>
-            <div class="grid-item">
-                <img src="<?= $dir ?>/img/1.png" class="p-img">
-                <div class="figura p">
-                    <div class="img" alt="1" style="width: 100%; height: 100%;"></div>
-                </div>
-            </div>
-            <div class="grid-item">
-                <img src="<?= $dir ?>/img/4.png" class="p-img">
-                <div class="figura p">
-                    <div class="img" alt="4" style="width: 100%; height: 100%;"></div>
-                </div>
-            </div>
-            <div class="grid-item">
-                <img src="<?= $dir ?>/img/2.png" class="p-img">
-                <div class="figura p">
-                    <div class="img" alt="2" style="width: 100%; height: 100%;"></div>
-                </div>
-            </div>
-            <div class="grid-item">
-                <img src="<?= $dir ?>/img/3.png" class="p-img">
-                <div class="figura p">
-                    <div class="img" alt="3" style="width: 100%; height: 100%;"></div>
-                </div>
-            </div>
-            <div class="grid-item">
-                <img src="<?= $dir ?>/img/1.png" class="p-img">
-                <div class="figura p">
-                    <div class="img" alt="1" style="width: 100%; height: 100%;"></div>
-                </div>
-            </div>
-            <div class="grid-item">
-                <img src="<?= $dir ?>/img/4.png" class="p-img">
-                <div class="figura p">
-                    <div class="img" alt="4" style="width: 100%; height: 100%;"></div>
+                <div class="flex-box">
+                    <span class="span-before">Hay</span>
+                    <div class="caja" alt="2"></div>
+                    <span class="span-after">niños y</span>
+                    <div class="caja" alt="7"></div>
+                    <span class="span-after">niñas dentro de la casa.</span>
                 </div>
             </div>
         </div>
 
-        <div class="row center recibidor" id="recibidor">
+        <div class="contenedor-silabas">
+            <ul class="opciones">
+                <li id="1" alt="5" class="pieza">
+                    <span>5</span>
+                </li>
+                <li id="2" alt="2" class="pieza">
+                    <span>2</span>
+                </li>
+                <li id="3" alt="3" class="pieza">
+                    <span>3</span>
+                </li>
+                <li id="4" alt="2" class="pieza">
+                    <span>2</span>
+                </li>
+                <li id="5" alt="5" class="pieza">
+                    <span>5</span>
+                </li>
+                <li id="6" alt="6" class="pieza">
+                    <span>6</span>
+                </li>
+                <li id="7" alt="7" class="pieza">
+                    <span>7</span>
+                </li>
+                <li id="8" alt="8" class="pieza">
+                    <span>8</span>
+                </li>
+                <li id="9" alt="9" class="pieza">
+                    <span>9</span>
+                </li>
+                <li id="10 alt=" 10" class="pieza">
+                    <span>10</span>
+                </li>
+            </ul>
         </div>
-    </section>
-</div>
-<div id="modal1" class="modal">
-    <div class="modal-content">
-        <center>
-            <h4>Respuesta correcta</h4>
-            <img class="materialboxed" width="80%" src="<?= $dir ?>/img/respuesta.png">
-        </center>
     </div>
-    <div class="modal-footer">
-        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Listo!</a>
+    <!-- Respuesta -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <center>
+                <h4>Respuesta correcta</h4>
+                <img class="materialboxed" width="80%" src="<?= $dir ?>/img/respuesta.png">
+            </center>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Listo!</a>
+        </div>
     </div>
-</div>
+</body>
+
+
 <script src="../../../../../js/core.js"></script>
 <?php require('../../../tools/botones/botones.php');?> <script>$("#next").attr("onclick","<?=$next?>");</script>
+<script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
+// Validar
 function result_tipo_1_0_7() {
-
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
-    if (r == 12) {
+    if (r == 4) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();
-        console.log(r)
     } else {
-        console.log(r)
         incorrecto();
         localStorage.setItem("Nota<?=$cod?>", "0");
         localStorage.setItem("Time<?=$cod?>", tiempo);
-
     }
+
 }
 </script>
-<script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
