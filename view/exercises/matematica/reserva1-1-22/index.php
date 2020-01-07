@@ -7,8 +7,26 @@
 <?=$titulo?>
 <div class="container-two">
     <div class="row">
+<<<<<<< HEAD
+        <center>
+            <img src="<?= $dir ?>/img/principal.png" class="img-principal">
+        </center>
+        <div class="grid-container">
+            <div class="grid-item"><img src="<?= $dir ?>/img/1.png" class="img"></div>
+            <div class="grid-item"><div class="caja"></div></div>
+            <div class="grid-item"><div class="caja"></div></div>
+            <div class="grid-item"><div class="caja"></div></div>
+            <div class="grid-item"><div class="caja"></div></div>
+            <div class="grid-item"><div class="caja" alt="n"></div></div>
+            <div class="grid-item"><div class="caja"></div></div>
+            <div class="grid-item"><div class="caja"></div></div>
+            <div class="grid-item"><div class="caja"></div></div>
+            <div class="grid-item"><div class="caja"></div></div>
+
+=======
 
 <<<<<<< HEAD:view/exercises/matematica/reserva1-1-22/index.php
+>>>>>>> a62b8f102345509f10fe5fa0dc2b4abe60cd7fd7
             <div class="grid-item"><img src="<?= $dir ?>/img/2.png" class="img"></div>
             <div class="grid-item"><div class="caja" alt="n"></div></div>
             <div class="grid-item"><div class="caja"></div></div>
@@ -41,6 +59,19 @@
             <div class="grid-item"><div class="caja"></div></div>
             <div class="grid-item"><div class="caja"></div></div>
             <div class="grid-item"><div class="caja"></div></div>
+<<<<<<< HEAD
+
+            <div class="grid-item"></div>
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>
+            <div class="grid-item">7</div>
+            <div class="grid-item">8</div>
+            <div class="grid-item">9</div>
+=======
 =======
         <div class="grid-container">
             <div class="grid-item"></div>
@@ -85,6 +116,7 @@
             </div>
             <div class="grid-item"></div>
 
+>>>>>>> a62b8f102345509f10fe5fa0dc2b4abe60cd7fd7
         </div>
     </div>
 </div>
@@ -101,9 +133,13 @@
 </div>
 </body>
 <script src="../../../../../js/core.js"></script>
+<<<<<<< HEAD
+<?php require('../../../tools/botones/botones.php');?> <script>$("#next").attr("onclick","<?=$next?>");</script>
+=======
 <?php require('../../../tools/botones/botones.php');?> <script>
 $("#next").attr("onclick", "<?=$next?>");
 </script>
+>>>>>>> a62b8f102345509f10fe5fa0dc2b4abe60cd7fd7
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
 // Formulario - Registrados
@@ -114,6 +150,11 @@ function result_tipo_1_1_22() {
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
+<<<<<<< HEAD
+
+
+    if (r == 4) {
+=======
     r = 0;
     seleccion_lista();
     console.log(r);
@@ -124,6 +165,7 @@ function result_tipo_1_1_22() {
 =======
     if (r == 1) {
 >>>>>>> ac79aedd147ee74124c88689f260d84033bcb3f7:view/exercises/matematica/1-1-21/index.php
+>>>>>>> a62b8f102345509f10fe5fa0dc2b4abe60cd7fd7
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();
