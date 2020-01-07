@@ -11,69 +11,73 @@
 
 <body>
     <div class="container-two">
-        <center>
-            <img src="<?= $dir ?>/img/principal.png" class="img">
-        </center>
         <div class="grid-container">
             <div class="grid-item">
-                <div class="flex-box">
-                    <span class="span-before">El</span>
-                    <img src="<?=$dir?>/img/1.png" class="img-p">
-                    <span class="span-after">está en el número</span>
-                    <div class="caja" alt="4"></div>
+                <div class="campo">
+                    <img src="<?=$dir?>/img/1.png" class="img materialboxed">
+                    <div class="grid-body">
+                        <select class="slc" alt="6">
+                            <option value="" disabled selected></option>
+                            <?php
+                            for ($i=1; $i < 101; $i++) { 
+                                echo "<option value='$i'>$i</option>";
+                            }
+                        ?>
+                        </select>
+                        <span class="mg">-</span>
+                        <select class="slc" alt="2">
+                            <option value="" disabled selected></option>
+                            <?php
+                            for ($i=1; $i < 101; $i++) { 
+                                echo "<option value='$i'>$i</option>";
+                            }
+                        ?>
+                        </select>
+                        <span class="mg">=</span>
+                        <select class="slc" alt="4">
+                            <option value="" disabled selected></option>
+                            <?php
+                            for ($i=1; $i < 101; $i++) { 
+                                echo "<option value='$i'>$i</option>";
+                            }
+                        ?>
+                        </select>
+                    </div>
                 </div>
             </div>
             <div class="grid-item">
-                <div class="flex-box">
-                    <span class="span-before">El</span>
-                    <img src="<?=$dir?>/img/2.png" class="img-p">
-                    <span class="span-after">está en el número</span>
-                    <div class="caja" alt="1"></div>
+                <div class="campo">
+                    <img src="<?=$dir?>/img/2.png" class="img materialboxed">
+                    <div class="grid-body">
+                        <select class="slc" alt="7">
+                            <option value="" disabled selected></option>
+                            <?php
+                            for ($i=1; $i < 101; $i++) { 
+                                echo "<option value='$i'>$i</option>";
+                            }
+                        ?>
+                        </select>
+                        <span class="mg">-</span>
+                        <select class="slc" alt="5">
+                            <option value="" disabled selected></option>
+                            <?php
+                            for ($i=1; $i < 101; $i++) { 
+                                echo "<option value='$i'>$i</option>";
+                            }
+                        ?>
+                        </select>
+                        <span class="mg">=</span>
+                        <select class="slc" alt="2">
+                            <option value="" disabled selected></option>
+                            <?php
+                            for ($i=1; $i < 101; $i++) { 
+                                echo "<option value='$i'>$i</option>";
+                            }
+                        ?>
+                        </select>
+                    </div>
                 </div>
             </div>
-            <div class="grid-item">
-                <div class="flex-box">
-                    <span class="span-before">El</span>
-                    <img src="<?=$dir?>/img/3.png" class="img-p">
-                    <span class="span-after">está en el número</span>
-                    <div class="caja" alt="8"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="contenedor-silabas">
-            <ul class="opciones">
-                <li id="1" alt="1" class="pieza">
-                    <span>1</span>
-                </li>
-                <li id="2" alt="2" class="pieza">
-                    <span>2</span>
-                </li>
-                <li id="3" alt="3" class="pieza">
-                    <span>3</span>
-                </li>
-                <li id="4" alt="4" class="pieza">
-                    <span>4</span>
-                </li>
-                <li id="5" alt="5" class="pieza">
-                    <span>5</span>
-                </li>
-                <li id="6" alt="6" class="pieza">
-                    <span>6</span>
-                </li>
-                <li id="7" alt="7" class="pieza">
-                    <span>7</span>
-                </li>
-                <li id="8" alt="8" class="pieza">
-                    <span>8</span>
-                </li>
-                <li id="9" alt="9" class="pieza">
-                    <span>9</span>
-                </li>
-                <li id="10" alt="10" class="pieza">
-                    <span>10</span>
-                </li>
-            </ul>
         </div>
     </div>
     <!-- Respuesta -->
@@ -92,17 +96,19 @@
 
 
 <script src="../../../../../js/core.js"></script>
-<?php require('../../../tools/botones/botones.php');?> <script>$("#next").attr("onclick","<?=$next?>");</script>
+<?php require('../../../tools/botones/botones.php');?><script>
+$("#next").attr("onclick", "<?=$next?>");
+</script>
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
 // Validar
-function result_tipo_1_1_25() {
+function result_tipo_1_9_14() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
-    if (r == 3) {
+    if (r == 6) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();
