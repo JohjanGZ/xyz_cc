@@ -16,7 +16,7 @@ function start_4() {
     $("#ventana").load(ruta + '1-1-4/index.php', {
         next: "resultado()",
         procesar: "result_tipo_1_1_4()",
-        titulo: "<center><h5><span class='ftitulo'>Observa</span> los conjuntos y <span class='ftitulo'>arrastra</span> la representación correcta.</h5></center>",
+        titulo: "<center><h5>¿Cuántos vestidos menos que niñas hay?</h5></center>",
         restaurar: "start_4()",
         dir: ruta,
         cod: "1-1-4",

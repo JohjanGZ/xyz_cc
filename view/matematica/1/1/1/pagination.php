@@ -11,7 +11,7 @@ function Page_2() {
     count = 3;
 }
 function Page_3() {
-    start_2();
+    start_3();
     inicio();
     count = 3;
 }
@@ -26,7 +26,7 @@ function start_1() {
     $("#ventana").load(ruta + '1-1-1/index.php', {
         next: "Page_2()",
         procesar: "result_tipo_1_1_1()",
-        titulo: "<center><h5><span class='ftitulo'>Observa</span> los floreros y <span class='ftitulo'>selecciona si</span> o <span class='ftitulo'>no</span>, según corresponda en cada oración.</h5></h5></center>",
+        titulo: "<center><h5><span>Observa</span> los floreros y <span>selecciona si</span> o <span>no</span>, según corresponda en cada oración.</h5></h5></center>",
         restaurar: "start_1()",
         dir: ruta,
         cod: "1-1-1",

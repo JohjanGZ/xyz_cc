@@ -31,12 +31,12 @@
     padding: 10px;
     margin: .2vh;
     font-size: 30px;
-    text-align: center;
+    text-align: left;
 }
 
 .img {
     width: auto;
-    height: 100px;
+    height: 110px;
 }
 
 .campo {

@@ -121,7 +121,7 @@ h4 {
 <script type="text/javascript">
 // Formulario - Registrados
 
-function result_tipo_1_0_11() {
+function result_tipo_1_1_5() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();

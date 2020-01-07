@@ -42,7 +42,7 @@ function start_16() {
     $("#ventana").load(ruta + '1-1-16/index.php', {
         next: "Page_17()",
         procesar: "result_tipo_1_1_16()",
-        titulo: "<center><h5><span>Cuenta</span> los dedos de cada mano y <span>unela con su número</span>.</h5></center>",
+        titulo: "<center><h5><span>Cuenta</span> las chimeneas  en cada barco y <span>escribe</span> los números correspondientes en cada casillero.</h5></center>",
         restaurar: "start_16()",
         dir: ruta,
         cod: "1-1-16",
@@ -54,7 +54,7 @@ function start_17() {
     $("#ventana").load(ruta + '1-1-17/index.php', {
         next: "Page_18()",
         procesar: "result_tipo_1_1_17()",
-        titulo: "<center><h5><span>Escribe</span> el números de elementos.</h5></center>",
+        titulo: "<center><h5><span>Coompleta</span> los recuadros con los sumandos y la suma total según corresponda.</h5></center>",
         restaurar: "start_17()",
         dir: ruta,
         cod: "1-1-17",
@@ -66,7 +66,7 @@ function start_18() {
     $("#ventana").load(ruta + '1-1-18/index.php', {
         next: "resultado()",
         procesar: "result_tipo_1_1_18()",
-        titulo: "<center><h5><span>Cuenta</span> las patitas  de los escarabajos y <span>escribe</span> el número en el recuadro.</h5></center>",
+        titulo: "<center><h5><span>Completa</span> y <span>comprueba</span> las siguientes sumas:</h5></center>",
         restaurar: "start_18()",
         dir: ruta,
         cod: "1-1-18",

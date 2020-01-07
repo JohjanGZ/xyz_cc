@@ -123,3 +123,15 @@ img.principal {
 .label {
     font-size: 20px;
 }
+
+
+@media screen and (max-width: 1450px){
+    .grid-item .campo .img{
+        height: 205px;
+    }
+}
+@media screen and (max-width: 1250px){
+    .grid-item .campo .img{
+        height: 175px;
+    }
+}

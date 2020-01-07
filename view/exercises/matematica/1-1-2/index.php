@@ -70,7 +70,7 @@
 <script src="../../../../../js/core.js"></script>
 <?php require('../../../tools/botones/botones.php');?> <script>$("#next").attr("onclick","<?=$next?>");</script>
 <script type="text/javascript">
-function result_tipo_1_0_4() {
+function result_tipo_1_1_2() {
 
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();

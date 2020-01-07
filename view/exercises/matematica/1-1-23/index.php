@@ -81,7 +81,7 @@ $("#next").attr("onclick", "<?=$next?>");
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
 // Validar
-function result_tipo_1_9_11() {
+function result_tipo_1_1_23() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
