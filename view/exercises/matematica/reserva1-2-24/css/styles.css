@@ -1,0 +1,90 @@
+.container-two {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 70%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h4 {
+    text-align: center;
+}
+
+#listA p{
+    /* display: flex;
+    flex-wrap: wrap; */
+    font-size: 1.4rem;
+}
+
+#palabras {
+    padding: 20px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+#palabras li {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 2vh;
+    margin-right: 1px;
+}
+
+/* @media (min-width: 600px) {
+    #palabras li {
+        width: 40%;
+    }
+} */
+/* 
+@media (min-width: 1024px) {
+    #palabras li {
+        width: 33.3%;
+    }
+} */
+.opciones {
+    display: flex;
+    align-items: center;
+}
+.opciones span {
+    margin-right: 1vh;
+    font-size: 1.4rem;
+}
+.muestra {
+    width: 100px;
+    margin: auto;
+    margin-top: 30px;
+}
+.box {
+    height: 25px;
+    width: 25px;
+    border: 3px solid silver;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1vh;
+}
+.img {
+    width: auto;
+    height: 70px;
+}
+
+.box:hover {
+    cursor: pointer;
+    border: 3px solid #37D3F7;
+}
+
+.principal {
+    width: 324px;
+    height: auto;
+}
+.op {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 3vh;
+    margin-left: 3vh;
+}
