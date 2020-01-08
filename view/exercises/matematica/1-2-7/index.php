@@ -11,30 +11,25 @@
 
 <body>
     <div class="container-two">
+        <center>
+            <img src="<?=$dir?>/img/1.png" class="principal">
+        </center>
         <div class="grid-container">
-            <center>
-                <p class="pregunta"><span class='ftitulo'>b.</span> Camila plantó en su jardín 11 rosas, su mamá le dió
-                    5
-                    más. ¿Cuántas rosas tiene ahora en su jardín?</p>
-            </center>
-            <div class="grid-item"><img src="<?=$dir?>/img/2.png" class="img">
+            <div class="grid-item">
                 <div class="campo">
-                    <select id="slc4">
+                    <label class="label">¿Cuantos grupos de 10 hay?</label>
+                    <select class="slc" alt="4">
                         <option value="" disabled selected></option>
-                        <?php for ($i=1; $i < 41; $i++) { ?><option value="<?= $i ?>"><?= $i ?></option><?php } ?>
-                    </select>
-                    <span class="mg">+</span>
-                    <select id="slc5">
-                        <option value="" disabled selected></option>
-                        <?php for ($i=1; $i < 41; $i++) { ?><option value="<?= $i ?>"><?= $i ?></option><?php } ?>
-                    </select>
-                    <span class="mg">=</span>
-                    <select id="slc6">
-                        <option value="" disabled selected></option>
-                        <?php for ($i=1; $i < 41; $i++) { ?><option value="<?= $i ?>"><?= $i ?></option><?php } ?>
+                        <?php
+                            for ($i=0; $i < 101; $i++) { 
+                                echo "<option value='$i'>$i</option>";
+                            }
+                        ?>
                     </select>
                 </div>
             </div>
+          
+
         </div>
     </div>
     <!-- Respuesta -->
@@ -63,7 +58,7 @@ function result_tipo_1_2_7() {
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
-    if (r == 3) {
+    if (r == 1) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();
