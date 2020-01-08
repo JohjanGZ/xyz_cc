@@ -16,7 +16,7 @@
                 <img src="<?=$dir?>/img/principal.png" class="img materialboxed">
                 <div class="campo">
                     <div class="grid-body">
-                        1.°
+                        1.er
                         <select class="slc" alt="<?=$nombre[0]?>">
                             <option value="" disabled selected></option>
                             <?php
@@ -34,7 +34,7 @@
                             }
                         ?>
                         </select>
-                        3.°
+                        3.er
                         <select class="slc" alt="<?=$nombre[2]?>">
                             <option value="" disabled selected></option>
                             <?php
@@ -88,7 +88,7 @@ $("#next").attr("onclick", "<?=$next?>");
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
 // Validar
-function result_tipo_1_9_20() {
+function result_tipo_1_4_3() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
