@@ -45,13 +45,9 @@ h5 {
     width: 70px;
     height: 40px;
     border: 2px solid silver;
-<<<<<<< HEAD:view/exercises/matematica/1-1-13/css/styles.css
     border-radius: 8px;
     margin-right: 2vh;
     margin-left: 2vh;
-=======
-    border-radius: 12px;
->>>>>>> a62b8f102345509f10fe5fa0dc2b4abe60cd7fd7:view/exercises/matematica/1-1-6/css/styles.css
 }
 .span-before {
     margin-right: 10px;
@@ -81,12 +77,6 @@ li.pieza {
     font-weight: 500;
 }
 .flex-box img {
-<<<<<<< HEAD:view/exercises/matematica/1-1-13/css/styles.css
     width: auto;
     height: 80px;
-=======
-    margin-right: 2vh;
-    width: auto;
-    height: 50px;
->>>>>>> a62b8f102345509f10fe5fa0dc2b4abe60cd7fd7:view/exercises/matematica/1-1-6/css/styles.css
 }
