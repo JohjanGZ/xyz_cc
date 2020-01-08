@@ -5,13 +5,12 @@
 
 var r = 0;
 
-$('.caja').click(function() {
+$('.caja').click(function () {
     $(this).css({
         "border": "3px solid",
         "border-color": "#37D3F7",
         "background": "#B6ECFF"
     });
-    $(this).append('✔');
     var element = $(this).attr("alt");
     var select = $(this).attr("value");
     if (select != "seleccionado") {

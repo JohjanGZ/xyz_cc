@@ -1,21 +1,26 @@
-    $('select').formSelect();
-    // Random
-    var cols = document.querySelectorAll('.grid-container');
-    // console.log(cols);
-    [].forEach.call(cols, (e) => {
-        for (var i = e.children.length; i >= 0; i--) {
-            e.appendChild(e.children[Math.random() * i | 0]);
-        }
+// var ul = document.querySelector('.grid-container');
+// for (var i = ul.children.length; i >= 0; i--) {
+//     ul.appendChild(ul.children[Math.random() * i | 0]);
+// }
+
+var r = 0;
+
+$('.caja').click(function () {
+    $(this).css({
+        "border": "3px solid",
+        "border-color": "#37D3F7",
+        "background": "#B6ECFF"
     });
-    // Select
-    var r = 0;
-    $(".slc").change(function() {
-        slcalt = $(this).attr("alt");
-        slcval = $(this).val();
-        // console.log(slcalt);
-        // console.log(slcval);
-        if (slcalt == slcval) {
+    var element = $(this).attr("alt");
+    var select = $(this).attr("value");
+    if (select != "seleccionado") {
+        if (element == "n") {
             r++;
-            console.log(r);
+            $(this).attr("value", "seleccionado");
+        } else {
+            r--;
+            $(this).attr("value", "seleccionado");
         }
-    });
+    }
+    // console.log(r);
+})
