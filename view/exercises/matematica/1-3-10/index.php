@@ -6,34 +6,33 @@
 </head>
 <?=$titulo?>
 <div class="container-two">
-    <div class="row">
-        <div class="campo" id="palabras">
-            <ul id="listA">
-                <li class="a" alt="n">
-                    <div class="tabla">
-                        <img src="<?= $dir ?>/img/1.png" class="img">
-                    </div>
-                    <div class="tabla h">
-                        4<span class="d" >D</span>, 2<span class="u">U</span>
-                    </div>
-                </li>
-                <li class="a">
-                    <div class="tabla">
-                        <img src="<?= $dir ?>/img/2.png" class="img">
-                    </div>
-                    <div class="tabla h">
-                        2<span class="d">D</span>, 4<span class="u">U</span>
-                    </div>
-                </li>
-                <li class="a">
-                    <div class="tabla">
-                        <img src="<?= $dir ?>/img/3.png" class="img">
-                    </div>
-                    <div class="tabla h">
-                        2<span class="d">D</span>, 2<span class="u">U</span>
-                    </div>
-                </li>
-            </ul>
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="<?=$dir?>/img/1.png" class="img">
+        </div>
+        <div class="grid-item">
+            <img src="<?=$dir?>/img/2.png" class="img">
+        </div>
+        <div class="grid-item" alt="n">
+            <img src="<?=$dir?>/img/3.png" class="img">
+        </div>
+        <div class="grid-item">
+            <img src="<?=$dir?>/img/4.png" class="img">
+        </div>
+        <div class="grid-item">
+            <img src="<?=$dir?>/img/5.png" class="img">
+        </div>
+        <div class="grid-item">
+            <img src="<?=$dir?>/img/6.png" class="img">
+        </div>
+        <div class="grid-item">
+            <img src="<?=$dir?>/img/7.png" class="img">
+        </div>
+        <div class="grid-item">
+            <img src="<?=$dir?>/img/8.png" class="img">
+        </div>
+        <div class="grid-item">
+            <img src="<?=$dir?>/img/9.png" class="img">
         </div>
     </div>
 </div>
@@ -50,7 +49,9 @@
 </div>
 </body>
 <script src="../../../../../js/core.js"></script>
-<?php require('../../../tools/botones/botones.php');?> <script>$("#next").attr("onclick","<?=$next?>");</script>
+<?php require('../../../tools/botones/botones.php');?> <script>
+$("#next").attr("onclick", "<?=$next?>");
+</script>
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
 // Formulario - Registrados
@@ -60,8 +61,6 @@ function result_tipo_1_3_10() {
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
-
-
 
     if (r == 1) {
         localStorage.setItem("Nota<?=$cod?>", nota);

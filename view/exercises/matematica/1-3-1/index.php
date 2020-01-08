@@ -1,80 +1,176 @@
 <?php require('../../../tools/var/variables.php'); ?>
-  <head>     
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="<?= $dir ?>/css/styles.css">
-  </head>
-  <style type="text/css">
+</head>
+<style type="text/css">
 
-  </style>
-  <?=$titulo?>
-  <body>
+</style>
+<?=$titulo?>
 
-  <div class="container-two">
-      <div class="row svg">
-         
-            <div class="campo" id="imgIzquierda">
-              
-              <ul id="listA">
-                <li alt="1"  class="a" id="obj1"><center><img src="<?= $dir ?>/img/1.png"></center></li>
-                <li alt="2" class="a" id="obj2"><center><img src="<?= $dir ?>/img/2.png"></center></li>
-                <li alt="3" class="a" id="obj3"><center><img src="<?= $dir ?>/img/3.png"></center></li>
-                <li alt="4"  class="a" id="obj1"><center><img src="<?= $dir ?>/img/4.png"></center></li>
-                <li alt="5" class="a" id="obj2"><center><img src="<?= $dir ?>/img/5.png"></center></li>
-              </ul>
-          
+<body>
+    <div class="container-two">
+        <div class="caja">
+            <div class="tabla">
+                <div class="grid-container">
+                    <div class="grid-item cabe"><span class="b"></span></div>
+                    <div class="grid-item cabe"><span class="r">D</span></div>
+                    <div class="grid-item cabe"><span class="b">U</span></div>
+                    <div class="grid-item">
+                        <img src="<?=$dir?>/img/1.png" class="img">
+                    </div>
+                    <div class="grid-item">
+                        <select id="slc1">
+                            <option value="" disabled selected></option>
+                            <?php for ($i=1; $i < 41; $i++) { ?><option value="<?= $i ?>"><?= $i ?></option><?php } ?>
+                        </select>
+                    </div>
+                    <div class="grid-item" style="position:relative;">
+                        <select id="slc2">
+                            <option value="" disabled selected></option>
+                            <?php for ($i=1; $i < 41; $i++) { ?><option value="<?= $i ?>"><?= $i ?></option><?php } ?>
+                        </select>
+                    </div>
+                </div>
+                <div class="grid-container">
+                    <div class="grid-item cabe"><span class="b"></span></div>
+                    <div class="grid-item cabe"><span class="r">D</span></div>
+                    <div class="grid-item cabe"><span class="b">U</span></div>
+                    <div class="grid-item">
+                        <img src="<?=$dir?>/img/2.png" class="img">
+                    </div>
+                    <div class="grid-item">
+                        <select id="slc3">
+                            <option value="" disabled selected></option>
+                            <?php for ($i=1; $i < 41; $i++) { ?><option value="<?= $i ?>"><?= $i ?></option><?php } ?>
+                        </select>
+                    </div>
+                    <div class="grid-item" style="position:relative;">
+                        <select id="slc4">
+                            <option value="" disabled selected></option>
+                            <?php for ($i=1; $i < 41; $i++) { ?><option value="<?= $i ?>"><?= $i ?></option><?php } ?>
+                        </select>
+                    </div>
+                </div>
+                <div class="grid-container">
+                    <div class="grid-item cabe"><span class="b"></span></div>
+                    <div class="grid-item cabe"><span class="r">D</span></div>
+                    <div class="grid-item cabe"><span class="b">U</span></div>
+                    <div class="grid-item">
+                        <img src="<?=$dir?>/img/3.png" class="img">
+                    </div>
+                    <div class="grid-item">
+                        <select id="slc5">
+                            <option value="" disabled selected></option>
+                            <?php for ($i=1; $i < 41; $i++) { ?><option value="<?= $i ?>"><?= $i ?></option><?php } ?>
+                        </select>
+                    </div>
+                    <div class="grid-item" style="position:relative;">
+                        <select id="slc6">
+                            <option value="" disabled selected></option>
+                            <?php for ($i=1; $i < 41; $i++) { ?><option value="<?= $i ?>"><?= $i ?></option><?php } ?>
+                        </select>
+                    </div>
+                </div>
+                <div class="grid-container">
+                    <div class="grid-item cabe"><span class="b"></span></div>
+                    <div class="grid-item cabe"><span class="r">D</span></div>
+                    <div class="grid-item cabe"><span class="b">U</span></div>
+                    <div class="grid-item">
+                        <img src="<?=$dir?>/img/4.png" class="img">
+                    </div>
+                    <div class="grid-item">
+                        <select id="slc7">
+                            <option value="" disabled selected></option>
+                            <?php for ($i=1; $i < 41; $i++) { ?><option value="<?= $i ?>"><?= $i ?></option><?php } ?>
+                        </select>
+                    </div>
+                    <div class="grid-item" style="position:relative;">
+                        <select id="slc8">
+                            <option value="" disabled selected></option>
+                            <?php for ($i=1; $i < 41; $i++) { ?><option value="<?= $i ?>"><?= $i ?></option><?php } ?>
+                        </select>
+                    </div>
+                </div>
+                <div class="grid-container">
+                    <div class="grid-item cabe"><span class="b"></span></div>
+                    <div class="grid-item cabe"><span class="r">D</span></div>
+                    <div class="grid-item cabe"><span class="b">U</span></div>
+                    <div class="grid-item">
+                        <img src="<?=$dir?>/img/5.png" class="img">
+                    </div>
+                    <div class="grid-item">
+                        <select id="slc9">
+                            <option value="" disabled selected></option>
+                            <?php for ($i=1; $i < 41; $i++) { ?><option value="<?= $i ?>"><?= $i ?></option><?php } ?>
+                        </select>
+                    </div>
+                    <div class="grid-item" style="position:relative;">
+                        <select id="slc10">
+                            <option value="" disabled selected></option>
+                            <?php for ($i=1; $i < 41; $i++) { ?><option value="<?= $i ?>"><?= $i ?></option><?php } ?>
+                        </select>
+                    </div>
+                </div>
+                <div class="grid-container">
+                    <div class="grid-item cabe"><span class="b"></span></div>
+                    <div class="grid-item cabe"><span class="r">D</span></div>
+                    <div class="grid-item cabe"><span class="b">U</span></div>
+                    <div class="grid-item">
+                        <img src="<?=$dir?>/img/6.png" class="img">
+                    </div>
+                    <div class="grid-item">
+                        <select id="slc11">
+                            <option value="" disabled selected></option>
+                            <?php for ($i=1; $i < 41; $i++) { ?><option value="<?= $i ?>"><?= $i ?></option><?php } ?>
+                        </select>
+                    </div>
+                    <div class="grid-item" style="position:relative;">
+                        <select id="slc12">
+                            <option value="" disabled selected></option>
+                            <?php for ($i=1; $i < 41; $i++) { ?><option value="<?= $i ?>"><?= $i ?></option><?php } ?>
+                        </select>
+                    </div>
+                </div>
             </div>
-            <div class="campo" id="centro">
-              <canvas height="105px" width="850px" id="micanvas"></canvas> 
-              </div>
-            <div class="campo" id="imgDerecha">
-              <ul id="listB">         
-                <li alt="1" class="b" id="obj6"><center><img src="<?= $dir ?>/img/1-1.png"></center></li>
-                <li alt="2" class="b" id="obj7"><center><img src="<?= $dir ?>/img/2-2.png"></center></li>
-                <li alt="3" class="b" id="obj8"><center><img src="<?= $dir ?>/img/3-3.png"></center></li>
-                <li alt="4" class="b" id="obj6"><center><img src="<?= $dir ?>/img/4-4.png"></center></li>
-                <li alt="5" class="b" id="obj7"><center><img src="<?= $dir ?>/img/5-5.png"></center></li>
-              </ul>
-            </div>
- 
-      </div>
-   
-</div>
-
+        </div>
+    </div>
     <!-- Respuesta -->
     <div id="modal1" class="modal">
         <div class="modal-content">
-            <h4>Respuesta correcta</h4>
             <center>
-              <img class="materialboxed"  width="80%" src="<?= $dir ?>/img/respuesta.png">
+                <h4>Respuesta correcta</h4>
+                <img class="materialboxed" width="80%" src="<?= $dir ?>/img/respuesta.png">
             </center>
         </div>
         <div class="modal-footer">
             <a href="#!" class="modal-close waves-effect waves-green btn-flat">Listo!</a>
         </div>
     </div>
-  </body>
+</body>
 
 
 <script src="../../../../../js/core.js"></script>
 <?php require('../../../tools/botones/botones.php');?> <script>$("#next").attr("onclick","<?=$next?>");</script>
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
-    // Validar
-    function result_tipo_1_3_1() {
-        var min = $('#Minutos').text();
-        var seg = $('#Segundos').text();
-        var milseg = $('#Centesimas').text();
-        var tiempo = min + ":" + seg + ":" + milseg;
+// Validar
+function result_tipo_1_3_1() {
+    var min = $('#Minutos').text();
+    var seg = $('#Segundos').text();
+    var milseg = $('#Centesimas').text();
+    var tiempo = min + ":" + seg + ":" + milseg;
 
-        if (r == 5) {
-            localStorage.setItem("Nota<?=$cod?>", nota);
-            localStorage.setItem("Time<?=$cod?>", tiempo);
-            correcto();
-        } else {
-            incorrecto();
-            localStorage.setItem("Nota<?=$cod?>", "0");
-            localStorage.setItem("Time<?=$cod?>", tiempo);
-        }
-
+    if (r == 12) {
+        localStorage.setItem("Nota<?=$cod?>", nota);
+        localStorage.setItem("Time<?=$cod?>", tiempo);
+        correcto();
+    } else {
+        incorrecto();
+        localStorage.setItem("Nota<?=$cod?>", "0");
+        localStorage.setItem("Time<?=$cod?>", tiempo);
     }
+
+}
 </script>

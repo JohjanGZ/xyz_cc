@@ -1,135 +1,80 @@
 <?php require('../../../tools/var/variables.php'); ?>
-
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <head>     
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
     <link rel="stylesheet" type="text/css" href="<?= $dir ?>/css/styles.css">
-</head>
-<style type="text/css">
+  </head>
+  <style type="text/css">
 
-</style>
-<?=$titulo?>
-<?php $sucesiones = array('creciente','decreciente'); ?>
+  </style>
+  <?=$titulo?>
+  <body>
 
-<body>
-    <div class="container-two">
-        <div class="grid-container">
-            <div class="grid-item">
-                <div class="campo">
-                    <img src="<?=$dir?>/img/1.png" class="img">
-                    <select class="slc" alt="creciente">
-                        <option value="" disabled selected></option>
-                        <?php
-                            for ($i=0; $i < count($sucesiones); $i++) { 
-                                echo "<option value='$sucesiones[$i]'>$sucesiones[$i]</option>";
-                            }
-                        ?>
-                    </select>
-                </div>
+  <div class="container-two">
+      <div class="row svg">
+         
+            <div class="campo" id="imgIzquierda">
+              
+              <ul id="listA">
+                <li alt="1"  class="a" id="obj1"><center><img src="<?= $dir ?>/img/1.png"></center></li>
+                <li alt="2" class="a" id="obj2"><center><img src="<?= $dir ?>/img/2.png"></center></li>
+                <li alt="3" class="a" id="obj3"><center><img src="<?= $dir ?>/img/3.png"></center></li>
+                <li alt="4"  class="a" id="obj1"><center><img src="<?= $dir ?>/img/4.png"></center></li>
+                <li alt="5" class="a" id="obj2"><center><img src="<?= $dir ?>/img/5.png"></center></li>
+              </ul>
+          
             </div>
-            <div class="grid-item">
-                <div class="campo">
-                    <img src="<?=$dir?>/img/2.png" class="img">
-                    <select class="slc" alt="decreciente">
-                        <option value="" disabled selected></option>
-                        <?php
-                             for ($i=0; $i < count($sucesiones); $i++) { 
-                                echo "<option value='$sucesiones[$i]'>$sucesiones[$i]</option>";
-                            }
-                        ?>
-                    </select>
-                </div>
+            <div class="campo" id="centro">
+              <canvas height="105px" width="850px" id="micanvas"></canvas> 
+              </div>
+            <div class="campo" id="imgDerecha">
+              <ul id="listB">         
+                <li alt="1" class="b" id="obj6"><center><img src="<?= $dir ?>/img/1-1.png"></center></li>
+                <li alt="2" class="b" id="obj7"><center><img src="<?= $dir ?>/img/2-2.png"></center></li>
+                <li alt="3" class="b" id="obj8"><center><img src="<?= $dir ?>/img/3-3.png"></center></li>
+                <li alt="4" class="b" id="obj6"><center><img src="<?= $dir ?>/img/4-4.png"></center></li>
+                <li alt="5" class="b" id="obj7"><center><img src="<?= $dir ?>/img/5-5.png"></center></li>
+              </ul>
             </div>
-            <div class="grid-item">
-                <div class="campo">
-                    <img src="<?=$dir?>/img/3.png" class="img">
-                    <select class="slc" alt="decreciente">
-                        <option value="" disabled selected></option>
-                        <?php
-                            for ($i=0; $i < count($sucesiones); $i++) { 
-                                echo "<option value='$sucesiones[$i]'>$sucesiones[$i]</option>";
-                            }
-                        ?>
-                    </select>
-                </div>
-            </div>
-            <div class="grid-item">
-                <div class="campo">
-                    <img src="<?=$dir?>/img/4.png" class="img">
-                    <select class="slc" alt="creciente">
-                        <option value="" disabled selected></option>
-                        <?php
-                             for ($i=0; $i < count($sucesiones); $i++) { 
-                                echo "<option value='$sucesiones[$i]'>$sucesiones[$i]</option>";
-                            }
-                        ?>
-                    </select>
-                </div>
-            </div>
-            <div class="grid-item">
-                <div class="campo">
-                    <img src="<?=$dir?>/img/5.png" class="img">
-                    <select class="slc" alt="decreciente">
-                        <option value="" disabled selected></option>
-                        <?php
-                             for ($i=0; $i < count($sucesiones); $i++) { 
-                                echo "<option value='$sucesiones[$i]'>$sucesiones[$i]</option>";
-                            }
-                        ?>
-                    </select>
-                </div>
-            </div>
-            <div class="grid-item">
-                <div class="campo">
-                    <img src="<?=$dir?>/img/6.png" class="img">
-                    <select class="slc" alt="creciente">
-                        <option value="" disabled selected></option>
-                        <?php
-                             for ($i=0; $i < count($sucesiones); $i++) { 
-                                echo "<option value='$sucesiones[$i]'>$sucesiones[$i]</option>";
-                            }
-                        ?>
-                    </select>
-                </div>
-            </div>
-        </div>
-    </div>
+ 
+      </div>
+   
+</div>
+
     <!-- Respuesta -->
     <div id="modal1" class="modal">
         <div class="modal-content">
+            <h4>Respuesta correcta</h4>
             <center>
-                <h4>Respuesta correcta</h4>
-                <img class="materialboxed" width="80%" src="<?= $dir ?>/img/respuesta.png">
+              <img class="materialboxed"  width="80%" src="<?= $dir ?>/img/respuesta.png">
             </center>
         </div>
         <div class="modal-footer">
             <a href="#!" class="modal-close waves-effect waves-green btn-flat">Listo!</a>
         </div>
     </div>
-</body>
+  </body>
 
 
 <script src="../../../../../js/core.js"></script>
-<?php require('../../../tools/botones/botones.php');?><script>
-$("#next").attr("onclick", "<?=$next?>");
-</script>
+<?php require('../../../tools/botones/botones.php');?> <script>$("#next").attr("onclick","<?=$next?>");</script>
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
-// Validar
-function result_tipo_1_3_21() {
-    var min = $('#Minutos').text();
-    var seg = $('#Segundos').text();
-    var milseg = $('#Centesimas').text();
-    var tiempo = min + ":" + seg + ":" + milseg;
+    // Validar
+    function result_tipo_1_3_21() {
+        var min = $('#Minutos').text();
+        var seg = $('#Segundos').text();
+        var milseg = $('#Centesimas').text();
+        var tiempo = min + ":" + seg + ":" + milseg;
 
-    if (r == 6) {
-        localStorage.setItem("Nota<?=$cod?>", nota);
-        localStorage.setItem("Time<?=$cod?>", tiempo);
-        correcto();
-    } else {
-        incorrecto();
-        localStorage.setItem("Nota<?=$cod?>", "0");
-        localStorage.setItem("Time<?=$cod?>", tiempo);
+        if (r == 5) {
+            localStorage.setItem("Nota<?=$cod?>", nota);
+            localStorage.setItem("Time<?=$cod?>", tiempo);
+            correcto();
+        } else {
+            incorrecto();
+            localStorage.setItem("Nota<?=$cod?>", "0");
+            localStorage.setItem("Time<?=$cod?>", tiempo);
+        }
+
     }
-
-}
 </script>
