@@ -21,23 +21,50 @@
 
 .grid-container {
     display: grid;
+<<<<<<< HEAD:view/exercises/matematica/reserva1-2-6/css/styles.css
     grid-template-columns: auto;
+=======
+    grid-template-columns: auto auto;
+>>>>>>> 2d3a9ce57621caf19b26524197821367e720313d:view/exercises/matematica/1-3-6/css/styles.css
     padding: 10px;
-    justify-content: center;
+    width: 80%;
 }
 
 .grid-item {
+<<<<<<< HEAD:view/exercises/matematica/reserva1-2-6/css/styles.css
     align-items: center;
     /* border: 1px solid silver; */
     padding: 10px;
     margin: .2vh;
     font-size: 30px;
     display: flex;
+=======
+    border: 1px solid silver;
+    padding: 6px;
+    text-align: center;
+    display: flex;
+    font-size: 24px;
+    align-items: center;
+>>>>>>> 2d3a9ce57621caf19b26524197821367e720313d:view/exercises/matematica/1-3-6/css/styles.css
     justify-content: center;
     flex-direction: column;
 }
 
+.tc {
+    background:rgb(243, 223, 166);
+    font-size: 24px;
+    border-color: orange;
+}
+.tt {
+    background-color: rgb(255, 153, 51);
+    border-color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+.bn {
+    border: none;
+}
 .img {
+<<<<<<< HEAD:view/exercises/matematica/reserva1-2-6/css/styles.css
     width: 60%;
     height: auto;
 }
@@ -59,16 +86,48 @@
 }
 
 
+=======
+    height: 50px;
+    width: auto;
+    margin-left: 1vh;
+    background: #fff;
+}
+@media (min-width: 1920px) {
+    .img {
+        height: 110px;
+    }
+}
+
+/* Select */
+>>>>>>> 2d3a9ce57621caf19b26524197821367e720313d:view/exercises/matematica/1-3-6/css/styles.css
 .select-wrapper input.select-dropdown {
-    border: 1px solid #0095DA;
+    border: 1px solid silver;
     width: 90px;
     margin: 0;
+<<<<<<< HEAD:view/exercises/matematica/reserva1-2-6/css/styles.css
+=======
+    font-weight: 600;
+    font-size: 24px;
+>>>>>>> 2d3a9ce57621caf19b26524197821367e720313d:view/exercises/matematica/1-3-6/css/styles.css
 }
 
 .select-wrapper input.select-dropdown:focus {
-    border-bottom: 1px solid #0095DA;
+    border-bottom: 1px solid silver;
 }
 
+<<<<<<< HEAD:view/exercises/matematica/reserva1-2-6/css/styles.css
+=======
+.select-wrapper ul {
+    height: 300px;
+}
+
+.select-wrapper {
+    position: relative;
+    margin-left: .5vh;
+    margin-right: .5vh;
+}
+
+>>>>>>> 2d3a9ce57621caf19b26524197821367e720313d:view/exercises/matematica/1-3-6/css/styles.css
 .dropdown-content {
     background-color: #fff;
     margin: 0;
@@ -85,8 +144,21 @@
     width: 90px;
     border-radius: 12px;
 }
+<<<<<<< HEAD:view/exercises/matematica/reserva1-2-6/css/styles.css
 
 
 .pregunta {
     font-size: 22px;
+=======
+.principal {
+    height: 240px;
+    width: auto;
+    background: #fff;
+}
+@media (min-width: 1920px) {
+    .principal {
+        height: 300px;
+        width: auto;
+    }
+>>>>>>> 2d3a9ce57621caf19b26524197821367e720313d:view/exercises/matematica/1-3-6/css/styles.css
 }

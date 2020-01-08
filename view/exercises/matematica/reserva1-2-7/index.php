@@ -19,6 +19,7 @@
             </center>
             <div class="grid-item"><img src="<?=$dir?>/img/2.png" class="img">
                 <div class="campo">
+<<<<<<< HEAD:view/exercises/matematica/reserva1-2-7/index.php
                     <select id="slc4">
                         <option value="" disabled selected></option>
                         <?php for ($i=1; $i < 41; $i++) { ?><option value="<?= $i ?>"><?= $i ?></option><?php } ?>
@@ -32,6 +33,81 @@
                     <select id="slc6">
                         <option value="" disabled selected></option>
                         <?php for ($i=1; $i < 41; $i++) { ?><option value="<?= $i ?>"><?= $i ?></option><?php } ?>
+=======
+                    <img src="<?=$dir?>/img/1.png" class="img materialboxed">
+                    <select class="slc" alt="41">
+                        <option value="" disabled selected></option>
+                        <?php
+                            for ($i=1; $i < 101; $i++) { 
+                                echo "<option value='$i'>$i</option>";
+                            }
+                        ?>
+                    </select>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="campo">
+                    <img src="<?=$dir?>/img/2.png" class="img materialboxed">
+                    <select class="slc" alt="36">
+                        <option value="" disabled selected></option>
+                        <?php
+                            for ($i=1; $i < 101; $i++) { 
+                                echo "<option value='$i'>$i</option>";
+                            }
+                        ?>
+                    </select>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="campo">
+                    <img src="<?=$dir?>/img/3.png" class="img materialboxed">
+                    <select class="slc" alt="28">
+                        <option value="" disabled selected></option>
+                        <?php
+                            for ($i=1; $i < 101; $i++) { 
+                                echo "<option value='$i'>$i</option>";
+                            }
+                        ?>
+                    </select>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="campo">
+                    <img src="<?=$dir?>/img/4.png" class="img materialboxed">
+                    <select class="slc" alt="34">
+                        <option value="" disabled selected></option>
+                        <?php
+                            for ($i=1; $i < 101; $i++) { 
+                                echo "<option value='$i'>$i</option>";
+                            }
+                        ?>
+                    </select>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="campo">
+                    <img src="<?=$dir?>/img/5.png" class="img materialboxed">
+                    <select class="slc" alt="52">
+                        <option value="" disabled selected></option>
+                        <?php
+                            for ($i=1; $i < 101; $i++) { 
+                                echo "<option value='$i'>$i</option>";
+                            }
+                        ?>
+                    </select>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="campo">
+                    <img src="<?=$dir?>/img/6.png" class="img materialboxed">
+                    <select class="slc" alt="17">
+                        <option value="" disabled selected></option>
+                        <?php
+                            for ($i=1; $i < 101; $i++) { 
+                                echo "<option value='$i'>$i</option>";
+                            }
+                        ?>
+>>>>>>> 2d3a9ce57621caf19b26524197821367e720313d:view/exercises/matematica/1-3-4/index.php
                     </select>
                 </div>
             </div>
@@ -53,7 +129,7 @@
 
 
 <script src="../../../../../js/core.js"></script>
-<?php require('../../../tools/botones/botones.php');?> <script>$("#next").attr("onclick","<?=$next?>");</script>
+<?php require('../../../tools/botones/botones.php');?><script>$("#next").attr("onclick","<?=$next?>");</script>
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
 // Validar
@@ -63,7 +139,11 @@ function result_tipo_1_2_7() {
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
+<<<<<<< HEAD:view/exercises/matematica/reserva1-2-7/index.php
     if (r == 3) {
+=======
+    if (r == 6) {
+>>>>>>> 2d3a9ce57621caf19b26524197821367e720313d:view/exercises/matematica/1-3-4/index.php
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();

@@ -16,7 +16,7 @@
 }
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto;
     padding: 10px;
     margin-top: 2vh;
     justify-content: center;
@@ -69,5 +69,5 @@ li.pieza {
 .flex-box img {
     margin-right: 2vh;
     width: auto;
-    height: 50px;
+    height: 66px;
 }

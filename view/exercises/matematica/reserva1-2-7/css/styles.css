@@ -21,11 +21,19 @@
 
 .grid-container {
     display: grid;
+<<<<<<< HEAD:view/exercises/matematica/reserva1-2-7/css/styles.css
     grid-template-columns: auto;
+=======
+    grid-template-columns: auto auto auto auto auto auto;
+>>>>>>> 2d3a9ce57621caf19b26524197821367e720313d:view/exercises/matematica/1-3-4/css/styles.css
     padding: 10px;
     justify-content: center;
 }
-
+@media (min-width: 1920px){
+    .grid-container {
+        grid-template-columns: auto auto auto;
+    }
+}
 .grid-item {
     align-items: center;
     /* border: 1px solid silver; */
@@ -38,14 +46,24 @@
 }
 
 .img {
+<<<<<<< HEAD:view/exercises/matematica/reserva1-2-7/css/styles.css
     width: 60%;
     height: auto;
+=======
+    width: auto;
+    height: 150px;
+    margin-bottom: 1vh;
+>>>>>>> 2d3a9ce57621caf19b26524197821367e720313d:view/exercises/matematica/1-3-4/css/styles.css
 }
 
 .campo {
     display: flex;
     align-items: center;
     justify-content: center;
+<<<<<<< HEAD:view/exercises/matematica/reserva1-2-7/css/styles.css
+=======
+    flex-direction: column;
+>>>>>>> 2d3a9ce57621caf19b26524197821367e720313d:view/exercises/matematica/1-3-4/css/styles.css
 }
 
 .mg {

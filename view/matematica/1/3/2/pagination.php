@@ -1,78 +1,45 @@
 <script type="text/javascript">
-function Page_9() {
-    start_9();
+function Page_7() {
+    start_7();
     inicio();
     count = 3;
 }
-function Page_10() {
-    start_10();
+function Page_8() {
+    start_8();
     inicio();
     count = 3;
 }
-function Page_11() {
-    start_11();
-    inicio();
-    count = 3;
-}
-function Page_12() {
-    start_12();
-    inicio();
-    count = 3;
-}
-var cant = 18;
+var cant = 2;
 var cal = cant / cant;
 console.log(cant);
 var ruta = "../../../../exercises/matematica/";
 ////////////// 2do 
 // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
-function start_9() {
-    $("#ventana").load(ruta + '1-3-9/index.php', {
-        next: "Page_10()",
-        procesar: "result_tipo_1_3_9()",
-        titulo: "<center><h5><span class='ftitulo'>Completa</span> el cuadro.</h5></center>",
-        restaurar: "start_9()",
+function start_7() {
+    $("#ventana").load(ruta + '1-3-7/index.php', {
+        next: "Page_8()",
+        procesar: "result_tipo_1_3_7()",
+        titulo: "<center><h5><span>Cuenta</span> y <span>escribe</span> el número.</h5></center>",
+        restaurar: "start_7()",
         dir: ruta,
-        cod: "1-3-9",
+        cod: "1-3-7",
         nota: cal
     });
     return false;
 };
-function start_10() {
-    $("#ventana").load(ruta + '1-3-10/index.php', {
-        next: "Page_11()",
-        procesar: "result_tipo_1_3_10()",
-        titulo: "<center><h5><span class='ftitulo'>Selecciona</span> el avioncito que traslada a 42 pasajeros.</h5></center>",
-        restaurar: "start_10()",
+function start_8() {
+    $("#ventana").load(ruta + '1-3-8/index.php', {
+        next: "resultado()",
+        procesar: "result_tipo_1_3_8()",
+        titulo: "<center><h5><span>Cuenta</span> y <span>escribe</span> el número.</h5></center>",
+        restaurar: "start_8()",
         dir: ruta,
-        cod: "1-3-10",
+        cod: "1-3-8",
         nota: cal
     });
     return false;
 };
-function start_11() {
-    $("#ventana").load(ruta + '1-3-11/index.php', {
-        next: "Page_12()",
-        procesar: "result_tipo_1_3_11()",
-        titulo: "<center><h5><span class='ftitulo'>Selecciona</span> el trencito que cuesta 37 soles.</h5></center>",
-        restaurar: "start_11()",
-        dir: ruta,
-        cod: "1-3-11",
-        nota: cal
-    });
-    return false;
-};
-function start_12() {
-    $("#ventana").load(ruta + '1-3-12/index.php', {
-        next: "Page_13()",
-        procesar: "result_tipo_1_3_12()",
-        titulo: "<center><h5><span class='ftitulo'>Escribe</span> el número que ha sido representado en el ábaco.</h5></center>",
-        restaurar: "start_12()",
-        dir: ruta,
-        cod: "1-3-12",
-        nota: cal
-    });
-    return false;
-};
+
 function resultado() {
     $("#ventana").load('../../../../exercises/resultado/resultado.php');
     return false;

@@ -8,87 +8,150 @@
 
 </style>
 <?=$titulo?>
+<?php $signos = array('<','>','='); ?>
 
 <body>
     <div class="container-two">
         <div class="grid-container">
             <div class="grid-item">
+                40
                 <div class="campo">
-                    <img src="<?=$dir?>/img/1.png" class="img materialboxed">
-                    <select class="slc" alt="41">
+                    <select class="slc" alt="<">
                         <option value="" disabled selected></option>
                         <?php
-                            for ($i=1; $i < 101; $i++) { 
-                                echo "<option value='$i'>$i</option>";
+                            for ($i=0; $i < count($signos); $i++) { 
+                                echo "<option value='$signos[$i]'>$signos[$i]</option>";
                             }
                         ?>
                     </select>
                 </div>
+                47
             </div>
             <div class="grid-item">
+                67
                 <div class="campo">
-                    <img src="<?=$dir?>/img/2.png" class="img materialboxed">
-                    <select class="slc" alt="36">
+                    <select class="slc" alt="=">
                         <option value="" disabled selected></option>
                         <?php
-                            for ($i=1; $i < 101; $i++) { 
-                                echo "<option value='$i'>$i</option>";
+                            for ($i=0; $i < count($signos); $i++) { 
+                                echo "<option value='$signos[$i]'>$signos[$i]</option>";
                             }
                         ?>
                     </select>
                 </div>
+                67
             </div>
             <div class="grid-item">
+                75
                 <div class="campo">
-                    <img src="<?=$dir?>/img/3.png" class="img materialboxed">
-                    <select class="slc" alt="28">
+                    <select class="slc" alt=">">
                         <option value="" disabled selected></option>
                         <?php
-                            for ($i=1; $i < 101; $i++) { 
-                                echo "<option value='$i'>$i</option>";
+                            for ($i=0; $i < count($signos); $i++) { 
+                                echo "<option value='$signos[$i]'>$signos[$i]</option>";
                             }
                         ?>
                     </select>
                 </div>
+                54
             </div>
             <div class="grid-item">
+                35
                 <div class="campo">
-                    <img src="<?=$dir?>/img/4.png" class="img materialboxed">
-                    <select class="slc" alt="34">
+                    <select class="slc" alt="<">
                         <option value="" disabled selected></option>
                         <?php
-                            for ($i=1; $i < 101; $i++) { 
-                                echo "<option value='$i'>$i</option>";
+                            for ($i=0; $i < count($signos); $i++) { 
+                                echo "<option value='$signos[$i]'>$signos[$i]</option>";
                             }
                         ?>
                     </select>
                 </div>
+                37
             </div>
             <div class="grid-item">
+                25
                 <div class="campo">
-                    <img src="<?=$dir?>/img/5.png" class="img materialboxed">
-                    <select class="slc" alt="52">
+                    <select class="slc" alt="=">
                         <option value="" disabled selected></option>
                         <?php
-                            for ($i=1; $i < 101; $i++) { 
-                                echo "<option value='$i'>$i</option>";
+                            for ($i=0; $i < count($signos); $i++) { 
+                                echo "<option value='$signos[$i]'>$signos[$i]</option>";
                             }
                         ?>
                     </select>
                 </div>
+                25
             </div>
             <div class="grid-item">
+                30
                 <div class="campo">
-                    <img src="<?=$dir?>/img/6.png" class="img materialboxed">
-                    <select class="slc" alt="17">
+                    <select class="slc" alt="<">
                         <option value="" disabled selected></option>
                         <?php
-                            for ($i=1; $i < 101; $i++) { 
-                                echo "<option value='$i'>$i</option>";
+                            for ($i=0; $i < count($signos); $i++) { 
+                                echo "<option value='$signos[$i]'>$signos[$i]</option>";
                             }
                         ?>
                     </select>
                 </div>
+                50
+            </div>
+            <div class="grid-item">
+                90
+                <div class="campo">
+                    <select class="slc" alt="<">
+                        <option value="" disabled selected></option>
+                        <?php
+                            for ($i=0; $i < count($signos); $i++) { 
+                                echo "<option value='$signos[$i]'>$signos[$i]</option>";
+                            }
+                        ?>
+                    </select>
+                </div>
+                98
+            </div>
+            <div class="grid-item">
+                67
+                <div class="campo">
+                    <select class="slc" alt=">">
+                        <option value="" disabled selected></option>
+                        <?php
+                            for ($i=0; $i < count($signos); $i++) { 
+                                echo "<option value='$signos[$i]'>$signos[$i]</option>";
+                            }
+                        ?>
+                    </select>
+                </div>
+                65
+            </div>
+            <div class="grid-item">
+                45
+                <div class="campo">
+                    <select class="slc" alt=">">
+                        <option value="" disabled selected></option>
+                        <?php
+                            for ($i=0; $i < count($signos); $i++) { 
+                                echo "<option value='$signos[$i]'>$signos[$i]</option>";
+                            }
+                        ?>
+                    </select>
+                </div>
+                39
+            </div>
+            <div class="grid-item">
+                76
+                <div class="campo">
+                    <select class="slc" alt=">">
+                        <option value="" disabled selected></option>
+                        <?php
+                            for ($i=0; $i < count($signos); $i++) { 
+                                echo "<option value='$signos[$i]'>$signos[$i]</option>";
+                            }
+                        ?>
+                    </select>
+                </div>
+                45
             </div>
         </div>
     </div>
@@ -108,7 +171,9 @@
 
 
 <script src="../../../../../js/core.js"></script>
-<?php require('../../../tools/botones/botones.php');?><script>$("#next").attr("onclick","<?=$next?>");</script>
+<?php require('../../../tools/botones/botones.php');?><script>
+$("#next").attr("onclick", "<?=$next?>");
+</script>
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
 // Validar
@@ -118,7 +183,7 @@ function result_tipo_1_3_12() {
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
-    if (r == 6) {
+    if (r == 10) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();

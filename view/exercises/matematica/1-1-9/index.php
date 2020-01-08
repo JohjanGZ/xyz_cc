@@ -11,32 +11,47 @@
 
 <body>
     <div class="container-two">
-        <center>
-            <img src="<?= $dir ?>/img/principal.png" class="img">
-        </center>
         <div class="grid-container">
             <div class="grid-item">
                 <div class="flex-box">
-                    <img src="<?= $dir ?>/img/1.png">
-                    <div class="caja" alt="1"></div>
-                </div>
-            </div>
-            <div class="grid-item">
-                <div class="flex-box">
-                    <img src="<?= $dir ?>/img/2.png">
-                    <div class="caja" alt="8"></div>
-                </div>
-            </div>
-            <div class="grid-item">
-                <div class="flex-box">
                     <img src="<?= $dir ?>/img/3.png">
-                    <div class="caja" alt="7"></div>
+                    <div class="caja" alt="3"></div>
                 </div>
             </div>
             <div class="grid-item">
                 <div class="flex-box">
                     <img src="<?= $dir ?>/img/4.png">
+                    <div class="caja" alt="4"></div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="flex-box">
+                    <img src="<?= $dir ?>/img/5.png">
                     <div class="caja" alt="5"></div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="flex-box">
+                    <img src="<?= $dir ?>/img/6.png">
+                    <div class="caja" alt="6"></div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="flex-box">
+                    <img src="<?= $dir ?>/img/7.png">
+                    <div class="caja" alt="7"></div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="flex-box">
+                    <img src="<?= $dir ?>/img/8.png">
+                    <div class="caja" alt="8"></div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="flex-box">
+                    <img src="<?= $dir ?>/img/9.png">
+                    <div class="caja" alt="9"></div>
                 </div>
             </div>
         </div>
@@ -102,7 +117,7 @@ function result_tipo_1_1_9() {
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
-    if (r == 4) {
+    if (r == 7) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();

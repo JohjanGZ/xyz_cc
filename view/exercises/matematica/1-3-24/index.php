@@ -1,145 +1,80 @@
 <?php require('../../../tools/var/variables.php'); ?>
-
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <head>     
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
     <link rel="stylesheet" type="text/css" href="<?= $dir ?>/css/styles.css">
-</head>
-<style type="text/css">
+  </head>
+  <style type="text/css">
 
-</style>
-<?=$titulo?>
+  </style>
+  <?=$titulo?>
+  <body>
 
-<body>
-    <div class="container-two">
-        <div class="caja">
-            <div class="tabla">
-                <div class="grid-container">
-                    <div class="grid-item cabe"><span class="r">D</span></div>
-                    <div class="grid-item cabe"><span class="b">U</span></div>
-                    <div class="grid-item">
-                        2
-                    </div>
-                    <div class="grid-item" style="position:relative;">
-                        6
-                        <span class="mas">+</span>
-                    </div>
-                    <div class="grid-item bre">
-                        
-                    </div>
-                    <div class="grid-item bre">
-                        8
-                    </div>
-                    <div class="grid-item">
-                        <select class="slc"  alt="3">
-                            <option value="" disabled selected></option>
-                            <?php for ($i=0; $i < 101; $i++) { ?><option value="<?= $i ?>"><?= $i ?></option><?php } ?>
-                        </select>
-                    </div>
-                    <div class="grid-item">
-                        <select class="slc"  alt="4">
-                            <option value="" disabled selected></option>
-                            <?php for ($i=0; $i < 101; $i++) { ?><option value="<?= $i ?>"><?= $i ?></option><?php } ?>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="grid-container">
-                    <div class="grid-item cabe"><span class="r">D</span></div>
-                    <div class="grid-item cabe"><span class="b">U</span></div>
-                    <div class="grid-item">
-                        3
-                    </div>
-                    <div class="grid-item" style="position:relative;">
-                        7
-                        <span class="mas">+</span>
-                    </div>
-                    <div class="grid-item bre">
-                        
-                    </div>
-                    <div class="grid-item bre">
-                        9
-                    </div>
-                    <div class="grid-item">
-                        <select class="slc" alt="4">
-                            <option value="" disabled selected></option>
-                            <?php for ($i=0; $i < 101; $i++) { ?><option value="<?= $i ?>"><?= $i ?></option><?php } ?>
-                        </select>
-                    </div>
-                    <div class="grid-item">
-                        <select class="slc" alt="6">
-                            <option value="" disabled selected></option>
-                            <?php for ($i=0; $i < 101; $i++) { ?><option value="<?= $i ?>"><?= $i ?></option><?php } ?>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="grid-container">
-                    <div class="grid-item cabe"><span class="r">D</span></div>
-                    <div class="grid-item cabe"><span class="b">U</span></div>
-                    <div class="grid-item">
-                        1
-                    </div>
-                    <div class="grid-item" style="position:relative;">
-                        4
-                        <span class="mas">+</span>
-                    </div>
-                    <div class="grid-item bre">
-                        
-                    </div>
-                    <div class="grid-item bre">
-                        8
-                    </div>
-                    <div class="grid-item">
-                        <select class="slc" alt="2">
-                            <option value="" disabled selected></option>
-                            <?php for ($i=0; $i < 101; $i++) { ?><option value="<?= $i ?>"><?= $i ?></option><?php } ?>
-                        </select>
-                    </div>
-                    <div class="grid-item">
-                        <select class="slc" alt="2">
-                            <option value="" disabled selected></option>
-                            <?php for ($i=0; $i < 101; $i++) { ?><option value="<?= $i ?>"><?= $i ?></option><?php } ?>
-                        </select>
-                    </div>
-                </div>
+  <div class="container-two">
+      <div class="row svg">
+         
+            <div class="campo" id="imgIzquierda">
+              
+              <ul id="listA">
+                <li alt="1"  class="a" id="obj1"><center><img src="<?= $dir ?>/img/17.png"></center></li>
+                <li alt="2" class="a" id="obj2"><center><img src="<?= $dir ?>/img/19.png"></center></li>
+                <li alt="3" class="a" id="obj3"><center><img src="<?= $dir ?>/img/24.png"></center></li>
+                <li alt="4"  class="a" id="obj1"><center><img src="<?= $dir ?>/img/32.png"></center></li>
+                <li alt="5" class="a" id="obj2"><center><img src="<?= $dir ?>/img/44.png"></center></li>
+              </ul>
+          
             </div>
-        </div>
-    </div>
+            <div class="campo" id="centro">
+              <canvas height="105px" width="850px" id="micanvas"></canvas> 
+              </div>
+            <div class="campo" id="imgDerecha">
+              <ul id="listB">         
+                <li alt="1" class="b" id="obj6"><center><img src="<?= $dir ?>/img/17-17.png"></center></li>
+                <li alt="2" class="b" id="obj7"><center><img src="<?= $dir ?>/img/19-19.png"></center></li>
+                <li alt="3" class="b" id="obj8"><center><img src="<?= $dir ?>/img/24-24.png"></center></li>
+                <li alt="4" class="b" id="obj6"><center><img src="<?= $dir ?>/img/32-32.png"></center></li>
+                <li alt="5" class="b" id="obj7"><center><img src="<?= $dir ?>/img/44-44.png"></center></li>
+              </ul>
+            </div>
+ 
+      </div>
+   
+</div>
+
     <!-- Respuesta -->
     <div id="modal1" class="modal">
         <div class="modal-content">
+            <h4>Respuesta correcta</h4>
             <center>
-                <h4>Respuesta correcta</h4>
-                <img class="materialboxed" width="80%" src="<?= $dir ?>/img/respuesta.png">
+              <img class="materialboxed"  width="80%" src="<?= $dir ?>/img/respuesta.png">
             </center>
         </div>
         <div class="modal-footer">
             <a href="#!" class="modal-close waves-effect waves-green btn-flat">Listo!</a>
         </div>
     </div>
-</body>
+  </body>
 
 
 <script src="../../../../../js/core.js"></script>
 <?php require('../../../tools/botones/botones.php');?> <script>$("#next").attr("onclick","<?=$next?>");</script>
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
-// Validar
-function result_tipo_1_3_24() {
-    var min = $('#Minutos').text();
-    var seg = $('#Segundos').text();
-    var milseg = $('#Centesimas').text();
-    var tiempo = min + ":" + seg + ":" + milseg;
+    // Validar
+    function result_tipo_1_3_24() {
+        var min = $('#Minutos').text();
+        var seg = $('#Segundos').text();
+        var milseg = $('#Centesimas').text();
+        var tiempo = min + ":" + seg + ":" + milseg;
 
-    if (r == 6) {
-        localStorage.setItem("Nota<?=$cod?>", nota);
-        localStorage.setItem("Time<?=$cod?>", tiempo);
-        correcto();
-    } else {
-        incorrecto();
-        localStorage.setItem("Nota<?=$cod?>", "0");
-        localStorage.setItem("Time<?=$cod?>", tiempo);
+        if (r == 5) {
+            localStorage.setItem("Nota<?=$cod?>", nota);
+            localStorage.setItem("Time<?=$cod?>", tiempo);
+            correcto();
+        } else {
+            incorrecto();
+            localStorage.setItem("Nota<?=$cod?>", "0");
+            localStorage.setItem("Time<?=$cod?>", tiempo);
+        }
+
     }
-
-}
 </script>

@@ -22,21 +22,29 @@
 
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-columns: auto auto; 
     padding: 10px;
     justify-content: center;
+    align-items: center;
 }
-@media (min-width: 1920px){
+
+@media (min-width: 1920px) {
     .grid-container {
-        grid-template-columns: auto auto auto;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        align-items: center;
     }
 }
+
 .grid-item {
     /* border: 1px solid silver; */
     /* padding: 0 0 12px 0; */
     margin: 2vh;
     font-size: 24px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .campo-img {
@@ -47,7 +55,7 @@
 
 .img {
     width: auto;
-    height: 150px;
+    height: 200px;
     margin-bottom: 1vh;
 }
 
@@ -65,19 +73,20 @@
 }
 
 .select-wrapper input.select-dropdown {
-    border: 1px solid #0095DA;
+    border: 1px solid silver;
     width: 90px;
     margin: 0;
     font-weight: 600;
     font-size: 30px;
+    background: rgb(182, 236, 255) !important;
 }
 
 .select-wrapper input.select-dropdown:focus {
-    border-bottom: 1px solid #0095DA;
+    border-bottom: 1px solid silver;
 }
 
 .select-wrapper ul {
-    height: 300px !important;
+    height: auto;
 }
 
 .select-wrapper {

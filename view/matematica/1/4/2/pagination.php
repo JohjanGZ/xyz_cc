@@ -59,8 +59,8 @@ function Page_19() {
     inicio();
     count = 3;
 }
-function Page_20() {
-    start_20();
+function Page_31() {
+    start_31();
     inicio();
     count = 3;
 }
@@ -214,14 +214,14 @@ function start_19() {
     });
     return false;
 };
-function start_20() {
-    $("#ventana").load(ruta + '1-4-20/index.php', {
+function start_31() {
+    $("#ventana").load(ruta + '1-3-31/index.php', {
         next: "resultado()",
-        procesar: "result_tipo_1_4_20()",
+        procesar: "result_tipo_1_3_31()",
         titulo: "<center><h5><span class='ftitulo'>Selecciona</span> el lápiz que contiene el número posterior a 59.</h5></center>",
-        restaurar: "start_20()",
+        restaurar: "star3_31()",
         dir: ruta,
-        cod: "1-4-20",
+        cod: "1-3-31",
         nota: cal
     });
     return false;

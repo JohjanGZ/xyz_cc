@@ -9,8 +9,7 @@
             $(this).css({
                 "border": "3px solid",
                 "border-color": "#37D3F7",
-                "background": "#B6ECFF",
-                "border-radius": "12px"
+                "background": "#B6ECFF"
             });
             var element = $(this).attr("alt");
             var select = $(this).attr("value");

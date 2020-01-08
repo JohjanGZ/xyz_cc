@@ -1,63 +1,74 @@
-.caja-principal {
+.container-two {
     margin: 0 auto;
     max-width: 1280px;
-    width: 90%;
+    width: 70%;
+}
+.img {
+    width: auto;
+    height: 228px;
+    margin-top: 2vh;
 }
 @media (min-width: 1920px) {
-    .caja-principal {
-        width: 60%;
+    .img {
+        width: auto;
+        height: 400px;
     }
 }
-
-#listA {
-    display: flex;
-    flex-wrap: wrap;
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+    margin-top: 2vh;
     justify-content: center;
 }
-.recibidor {
-    display: flex;
+
+.grid-item {
+    padding: 5px;
+    font-size: 18px;
+    text-align: center;
 }
 
-.contenedorPieza {
-    height: 165px;
-    min-height: 165px;
-    width: 100%;
-    border: 3px solid #37D3F7;
-    border-radius: 12px;
-    margin: auto;
-    margin-bottom: 2vh;
-}
-
-.title {
-    font-size: 24px;
-    color: #37D3F7;
-}
-
-.box {
-    height: 120px;
-    width: 120px;
-    border: 3px solid silver;
-    border-radius: 12px;
+.flex-box {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: auto;
-    margin-bottom: 15px;
+}
+.caja {
+    width: 50px;
+    height: 50px;
+    border: 2px solid silver;
+    border-radius: 12px;
+    margin-right: 2vh;
+}
+.span-before {
     margin-right: 10px;
-    transition: all .3s;
+}
+.span-after {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
-.box:hover {
-    border: 3px solid #37D3F7;
-    background: #B6ECFF;
+ul.opciones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
-.box img {
-    width: 74%;
-    height: auto;
-    cursor: pointer;
-    box-shadow: none !important;
+li.pieza {
+    background: orange;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    margin-right: 1vh;
 }
-.box img:hover {
-    box-shadow: none !important;
+.pieza span {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+.flex-box img {
+    margin-right: 1vh;
+    width: auto;
+    height: 120px;
 }
