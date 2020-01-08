@@ -2,38 +2,30 @@
     margin: 0 auto;
     max-width: 1280px;
     width: 70%;
-    height: 70%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
-
-/* Estilos Generales */
-h5 {
-    width: 80%;
-    font-size: 24px;
+.img {
+    width: auto;
+    height: 228px;
+    margin-top: 2vh;
 }
-
+@media (min-width: 1920px) {
+    .img {
+        width: auto;
+        height: 400px;
+    }
+}
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto;
     padding: 10px;
     margin-top: 2vh;
     justify-content: center;
 }
 
 .grid-item {
-    border: 1px solid silver;
-    margin: 0.2vh;
     padding: 5px;
     font-size: 18px;
     text-align: center;
-    width: 300px;
-    height: 105px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .flex-box {
@@ -41,13 +33,11 @@ h5 {
     align-items: center;
     justify-content: center;
 }
-.contenedor {
-    width: 70px;
-    height: 40px;
+.caja {
+    width: 50px;
+    height: 50px;
     border: 2px solid silver;
-    border-radius: 8px;
-    margin-right: 2vh;
-    margin-left: 2vh;
+    border-radius: 12px;
 }
 .span-before {
     margin-right: 10px;
@@ -64,12 +54,12 @@ ul.opciones {
 }
 li.pieza {
     background: orange;
-    width: 60px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 8px;
+    border-radius: 12px;
     margin-right: 1vh;
 }
 .pieza span {
@@ -77,6 +67,7 @@ li.pieza {
     font-weight: 500;
 }
 .flex-box img {
+    margin-right: 2vh;
     width: auto;
-    height: 80px;
+    height: 50px;
 }
