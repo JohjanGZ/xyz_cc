@@ -1,56 +1,40 @@
 <script type="text/javascript">
-function Page_21() {
-    start_21();
+function Page_18() {
+    start_18();
     inicio();
     count = 3;
 }
-function Page_22() {
-    start_22();
+function Page_19() {
+    start_19();
     inicio();
     count = 3;
 }
-function Page_23() {
-    start_23();
-    inicio();
-    count = 3;
-}
-var cant = 22;
+
+var cant = 2;
 var cal = cant / cant;
 console.log(cant);
 var ruta = "../../../../exercises/matematica/";
 ////////////// 2do 
-function start_21() {
-    $("#ventana").load(ruta + '1-5-21/index.php', {
-        next: "Page_22()",
-        procesar: "result_tipo_1_5_21()",
-        titulo: "<center><h5><span class='ftitulo'>Resuelve</span> los siguientes problemas:</h5></center>",
-        restaurar: "start_21()",
+function start_18() {
+    $("#ventana").load(ruta + '1-5-18/index.php', {
+        next: "Page_19()",
+        procesar: "result_tipo_1_5_18()",
+        titulo: "<center><h5><span>Observa</span> el calendario y <span>marca</span> la respuesta correcta.</h5></center>", 
+        restaurar: "start_18()",
         dir: ruta,
-        cod: "1-5-21",
+        cod: "1-5-18",
         nota: cal
     });
     return false;
 };
-function start_22() {
-    $("#ventana").load(ruta + '1-5-22/index.php', {
-        next: "Page_23()",
-        procesar: "result_tipo_1_5_22()",
-        titulo: "<center><h5><span class='ftitulo'>Resuelve</span> los siguientes problemas:</h5></center>",
-        restaurar: "start_22()",
-        dir: ruta,
-        cod: "1-5-22",
-        nota: cal
-    });
-    return false;
-};
-function start_23() {
-    $("#ventana").load(ruta + '1-5-23/index.php', {
+function start_19() {
+    $("#ventana").load(ruta + '1-5-19/index.php', {
         next: "resultado()",
-        procesar: "result_tipo_1_5_23()",
-        titulo: "<center><h5><span class='ftitulo'>Resuelve</span> los siguientes problemas:</h5></center>",
-        restaurar: "start_23()",
+        procesar: "result_tipo_1_5_19()",
+        titulo: "<center><h5><span>Observa</span> el calendario y <span>marca</span> la respuesta correcta.</h5></center>", 
+        restaurar: "start_19()",
         dir: ruta,
-        cod: "1-5-23",
+        cod: "1-5-19",
         nota: cal
     });
     return false;
