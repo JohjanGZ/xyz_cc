@@ -167,7 +167,6 @@ function arrastre() {
         start: function() {
             element = $(this).attr('alt');
             elementid = $(this);
-<<<<<<< HEAD
         }
     });
     $(".contenedor").droppable({
@@ -175,17 +174,6 @@ function arrastre() {
             element2 = $(this).attr("alt");
             $(this).css("background-color", "rgba(139, 195, 74, 0.14)");
             elementid.css({ "background": "transparent", "border-color": "transparent" });
-=======
-        },
-    });
-    $('.contenedor').droppable({
-        drop: function(event, ui) {
-            element2 = $(this).attr('alt');
-            elementid.css({
-                background: 'transparent',
-                'border-color': 'transparent',
-            });
->>>>>>> a62b8f102345509f10fe5fa0dc2b4abe60cd7fd7
             if (element == element2) {
                 r++;
                 // console.log(r);
