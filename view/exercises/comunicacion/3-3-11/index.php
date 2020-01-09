@@ -133,10 +133,10 @@
                     <h4 class="pieza" alt="uno">Ezequiel</h4>
                 </li>
                 <li class="silabas">
-                    <h4 class="pieza" alt="uno">Jhon</h4>
+                    <h4 class="pieza" alt="uno">Paolo</h4>
                 </li>
                 <li class="silabas">
-                    <h4 class="pieza" alt="uno">Ingrid</h4>
+                    <h4 class="pieza" alt="uno">Rubi</h4>
                 </li>
                 <li class="silabas">
                     <h4 class="pieza" alt="uno">Fido</h4>
