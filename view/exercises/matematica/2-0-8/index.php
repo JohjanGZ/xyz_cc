@@ -1,0 +1,157 @@
+<?php require('../../../tools/var/variables.php'); ?>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="<?= $dir ?>/css/styles.css">
+</head>
+<style>
+@media (max-width: 1300px) {
+    img.img-principal {
+        max-width: 340px !important;
+        height: auto;
+        margin-top: 2vh;
+    }
+
+    .cajas {
+        height: 63px;
+    }
+
+    .caja {
+        height: 70px;
+    }
+
+    center h5 {
+        font-size: 22px;
+    }
+}
+</style>
+<?=$titulo?>
+<div class="container-two">
+    <div class="row">
+        <center>
+            <img src="<?= $dir ?>/img/conjuntoUno.png" class="img-principal uno">
+            <img src="<?= $dir ?>/img/conjuntoDos.png" class="img-principal dos">
+        </center>
+        <div class="cajas">
+            <div class="caja col s6">
+                <div class="letStyle">T={</div>
+                <div class="letraT card-panel green">
+
+                </div>
+                <div class="letStyle">}</div>
+            </div>
+            <div class="caja col s6">
+                <div class="letStyle">K={</div>
+                <div class="letraK card-panel green">
+
+                </div>
+                <div class="letStyle">}</div>
+            </div>
+            <div class="col s12 card-panel light-blue accent-4 palabras aleatorio">
+                <p class="pieza palabra transporte light-blue accent-3" id="transporte">Cruzero</p>
+                <p class="pieza palabra transporte light-blue accent-3" id="transporte">Avión</p>
+                <p class="pieza palabra transporte light-blue accent-3" id="transporte">Tren</p>
+                <p class="pieza palabra animal light-blue accent-3" id="animal">Pulpo</p>
+                <p class="pieza palabra animal light-blue accent-3" id="animal">Ballena</p>
+                <p class="pieza palabra animal light-blue accent-3" id="animal">Tortuga</p>
+                <p class="pieza palabra animal light-blue accent-3" id="animal">Cangrejo</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <h4 class="center">Respuesta correcta</h4>
+        <center>
+            <img class="materialboxed" width="80%" src="<?= $dir ?>/img/respuesta.png">
+        </center>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Listo!</a>
+    </div>
+</div>
+</body>
+<script src="../../../../../js/core.js"></script>
+<?php require('../../../tools/botones/botones.php');?>
+<script>
+$("#next").attr("onclick", "<?=$next?>");
+</script>
+<script type="text/javascript">
+var objeto;
+var conLetraT = 0;
+var conLetraK = 0;
+
+$(".palabra").draggable({
+    start: function() {
+        objeto = $(this).attr("id");
+
+    }
+});
+
+$(".letraT").droppable({
+    classes: {
+        "ui-droppable-hover": "ui-state-hover"
+    },
+    drop: function(event, ui) {
+        $(this).css("border", "#333");
+        //$( this ).target.append(event.target);
+
+        if (objeto == "transporte") {
+            conLetraT++
+        }
+        objeto.removeClass("pieza");
+    }
+
+});
+
+$(".letraK").droppable({
+    classes: {
+        "ui-droppable-hover": "ui-state-hover"
+    },
+    drop: function(event, ui) {
+        $(this).css("border", "#333");
+        //$( this ).target.append(event.target);
+
+        if (objeto == "animal") {
+            conLetraK++
+        }
+        objeto.removeClass("pieza");
+    }
+
+});
+
+
+
+// Formulario - Registrados
+
+function result_tipo_2_0_8() {
+    var min = $('#Minutos').text();
+    var seg = $('#Segundos').text();
+    var milseg = $('#Centesimas').text();
+    var tiempo = min + ":" + seg + ":" + milseg;
+
+    if (conLetraT == 3 && conLetraK == 4) {
+
+        localStorage.setItem("Nota2-0-5", "2");
+        localStorage.setItem("Time2-0-5", tiempo);
+        correcto();
+
+    } else {
+
+        incorrecto();
+        localStorage.setItem("Nota2-0-5", "0");
+        localStorage.setItem("Time2-0-5", tiempo);
+
+    }
+}
+
+var cols = document.querySelectorAll('.aleatorio');
+
+[].forEach.call(cols, (e) => {
+
+    for (var i = e.children.length; i >= 0; i--) {
+        e.appendChild(e.children[Math.random() * i | 0]);
+    }
+
+});
+</script>
