@@ -1,0 +1,172 @@
+label {
+  font-size: 1.5rem;
+  color: #424141;
+}
+#contenedorPuzzle {
+  border-radius: 10px;
+  overflow: hidden;
+}
+/* Puzzle */
+#contenedorPiezas {
+  background: #5561ff00;
+  /* width: 652px; */
+  height: 242px;
+  float: left;
+  margin-left: 40px;
+  /* box-shadow: 0px 0px 10px 2px #dadada; */
+  margin-top: 110px;
+}
+#puzzle {
+  background: #d0eb6a00;
+  width: 200px;
+  height: 200px;
+  float: right;
+  margin-right: 192px;
+  /* box-shadow: 0px 0px 10px 2px #dadada; */
+  padding: 20px;
+}
+.contenedorPieza {
+  width: 80px;
+  height: auto;
+  height: 150px;
+  float: left;
+}
+
+/*---/////////////////////////- Numeros -//////////////////////////---*/
+
+/*--------------------------------------uno---------------------------------------------------*/
+
+#uno,
+#dos,
+#tres {
+  box-shadow: inset 0px 1px 3px 0px #7d7c7c;
+  /*  border: #25252591 solid 2px;*/
+  width: 100%;
+  /* min-width: 346px; */
+}
+
+/*---///////////////////////-fin numeros-//////////////////////////---*/
+
+.labelC {
+  position: absolute;
+  padding: 22px;
+  width: 60px;
+}
+
+.container,
+.content-wrapper {
+  position: fixed;
+  margin: 0 auto;
+  width: 100%;
+  /* left: 0; */
+  max-width: 100%;
+}
+
+.ulClass:not(.browser-default) > li {
+  list-style-type: none;
+  float: left;
+}
+.caballo {
+  height: 156px !important;
+  margin-top: -10px;
+}
+
+/* Contenedor del puzzle*/
+#contenedorPuzzle {
+  /* margin-top: 0px; */
+
+  /* background: rgba(255, 255, 255, 0.8);
+    /* box-shadow: 0px 0px 10px 2px #969393; */
+
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Puzzle */
+#contenedorPiezas {
+  background: #5561ff00;
+  /* width: 652px; */
+  height: 242px;
+  float: left;
+  margin-left: 40px;
+  /* box-shadow: 0px 0px 10px 2px #dadada; */
+  margin-top: 110px;
+}
+
+.ftitulo {
+  color: #0095da;
+}
+.contenedorPieza {
+  width: 80px;
+  height: auto;
+  height: 150px;
+  float: left;
+}
+
+#contenedorPuzzle img {
+  float: left;
+  padding: 43px 10px 40px 10px;
+  width: 80px;
+  height: auto;
+  position: relative;
+  z-index: 10;
+}
+
+/*---/////////////////////////- Numeros -//////////////////////////---*/
+
+/*--------------------------------------uno---------------------------------------------------*/
+
+#uno,
+#dos,
+#tres {
+  box-shadow: inset 0px 1px 3px 0px #7d7c7c;
+  /*  border: #25252591 solid 2px;*/
+  width: 324px;
+  /* min-width: 346px; */
+}
+
+/*---///////////////////////-fin numeros-//////////////////////////---*/
+#v,
+#f {
+  box-shadow: inset 0px 1px 3px 0px #7d7c7c;
+  /* border: #25252591 solid 2px; */
+  width: 324px;
+  /* min-width: 346px; */
+  min-width: 346px;
+  /* border: #25252591 solid 2px; */
+  width: 324px;
+  /* min-width: 346px; */
+  min-width: 346px;
+}
+
+.labelC {
+  position: absolute;
+  padding: 22px;
+  width: 60px;
+}
+
+.container,
+.content-wrapper {
+  position: fixed;
+  margin: 0 auto;
+  width: 100%;
+
+  max-width: 100%;
+}
+
+.contenedorimg {
+  width: 100px;
+  height: 150px;
+  margin: 5px;
+  border-radius: 15px;
+}
+
+.ulClass:not(.browser-default) > li {
+  list-style-type: none;
+  float: left;
+}
+.caballo {
+  height: 156px !important;
+
+  margin-top: -10px;
+}
