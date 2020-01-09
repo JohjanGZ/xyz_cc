@@ -1,32 +1,21 @@
 <script type="text/javascript">
 
-function Page_21() {
-    start_21();
+function Page_10() {
+    start_10();
     inicio();
     count = 3;
 }
 
-function Page_22() {
-    start_22();
+function Page_11() {
+    start_11();
     inicio();
     count = 3;
 }
 
-function Page_23() {
-    start_23();
+function Page_12() {
+    start_12();
     inicio();
     count = 3;
-}
-
-function Page_24() {
-    count = 3;
-    start_24();
-    inicio();
-}
-function Page_25() {
-    count = 3;
-    start_25();
-    inicio();
 }
 
 var cant = 18;
@@ -35,71 +24,44 @@ console.log(cant);
 var ruta = "../../../../exercises/matematica/";
 ////////////// 2do 
 // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
-function start_21() {
-    $("#ventana").load(ruta + '2-0-21/index.php', {
-        next: "Page_22()",
-        procesar: "result_tipo_2_0_21()",
-        titulo: "<center><h5><span>Completa</span> las siguientes secuencias gráficas ordenando las figuras y acertar dichas secuencias:</center>",
-        restaurar: "start_21()",
+function start_10() {
+    $("#ventana").load(ruta + '2-0-10/index.php', {
+        next: "Page_11()",
+        procesar: "result_tipo_2_0_10()",
+        titulo: "<center><h5><span>Observa</span> la imagen y <span>completa</span> la ubicación de los elementos en la coordenada que les corresponde.</h5></center>",
+        restaurar: "start_10()",
         dir: ruta,
-        cod: "2-0-21",
+        cod: "2-0-10",
         nota: cal
     });
     return false;
 };
 
-function start_22() {
-    $("#ventana").load(ruta + '2-0-22/index.php', {
-        next: "Page_23()",
-        procesar: "result_tipo_2_0_22()",
-        titulo: "<center><h5><span>Completa</span> las siguientes secuencias gráficas ordenando las figuras y acertar dichas secuencias:</h5></center>",
-        restaurar: "start_22()",
+function start_11() {
+    $("#ventana").load(ruta + '2-0-11/index.php', {
+        next: "Page_12()",
+        procesar: "result_tipo_2_0_11()",
+        titulo: "<center><h5><span>Observa</span> la cuadrícula, <span>coloca</span> la letra que corresponde a cada coordenada y hallarás una palabra.</h5></center>",
+        restaurar: "start_11()",
         dir: ruta,
-        cod: "2-0-22",
+        cod: "2-0-11",
         nota: cal
     });
     return false;
 };
 
-function start_23() {
-    $("#ventana").load(ruta + '2-0-23/index.php', {
-        next: "Page_24()",
-        procesar: "result_tipo_2_0_23()",
-        titulo: "<center><h5><span>Completa</span> las siguientes secuencias gráficas ordenando las figuras y acertar dichas secuencias:</h5></center>",
-        restaurar: "start_23()",
-        dir: ruta,
-        cod: "2-0-23",
-        nota: cal
-    });
-    return false;
-};
-
-function start_24() {
-    $("#ventana").load(ruta + '2-0-24/index.php', {
-        next: "Page_25()",
-        procesar: "result_tipo_2_0_24()",
-        titulo: " <center><h5><span>Completa</span> las siguientes secuencias gráficas ordenando las figuras y acertar dichas secuencias:</h5></center>",
-        restaurar: "start_24()",
-        dir: ruta,
-        cod: "2-0-24",
-        nota: cal
-    });
-    return false;
-};
-
-function start_25() {
-    $("#ventana").load(ruta + '2-0-25/index.php', {
+function start_12() {
+    $("#ventana").load(ruta + '2-0-12/index.php', {
         next: "resultado()",
-        procesar: "result_tipo_2_0_25()",
-        titulo: "<center><h5><span>Completa</span> las siguientes secuencias gráficas ordenando las figuras y acertar dichas secuencias:</h5></center>",
-        restaurar: "start_25()",
+        procesar: "result_tipo_2_0_12()",
+        titulo: "<center><h5><span>Observa</span> la ubicación de los siguientes juguetes en la cuadrícula y <span>asocia</span> cada uno de ellos con un número en la parte horizontal y  una letra en la parte vertical de dicha cuadrícula. <span>Completa</span> en los espacios en blanco con el número y la letra que corresponden a la ubicación de cada juguete.</h5></center>",
+        restaurar: "start_12()",
         dir: ruta,
-        cod: "2-0-25",
+        cod: "2-0-12",
         nota: cal
     });
     return false;
 };
-
 
 function resultado() {
     $("#ventana").load('../../../../exercises/resultado/resultado.php');
