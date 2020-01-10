@@ -172,23 +172,21 @@ $(".slc").change(function() {
     }
 });
 
-function result_tipo_2_1_12() {
+function result_tipo_2_2_20() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
     if (r == 10) {
-        console.log(rpta);
-        localStorage.setItem("Nota2-3-25", "2");
-        localStorage.setItem("Time2-3-25", tiempo);
+        localStorage.setItem("Nota2-2-20", "2");
+        localStorage.setItem("Time2-2-20", tiempo);
         correcto();
 
     } else {
-        console.log(rpta);
         incorrecto();
-        localStorage.setItem("Nota2-3-25", "0");
-        localStorage.setItem("Time2-3-25", tiempo);
+        localStorage.setItem("Nota2-2-20", "0");
+        localStorage.setItem("Time2-2-20", tiempo);
 
     }
 }

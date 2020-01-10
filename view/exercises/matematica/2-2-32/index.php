@@ -113,21 +113,21 @@ $('select').formSelect();
 
 
 
-function result_tipo_2_1_20() {
+function result_tipo_2_2_32() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
     if (r == 5) {
-        localStorage.setItem("Nota2-1-20", "2");
-        localStorage.setItem("Time2-1-20", tiempo);
+        localStorage.setItem("Nota2-2-32", "2");
+        localStorage.setItem("Time2-2-32", tiempo);
         correcto();
 
     } else {
         incorrecto();
-        localStorage.setItem("Nota2-1-20", "0");
-        localStorage.setItem("Time2-1-20", tiempo);
+        localStorage.setItem("Nota2-2-32", "0");
+        localStorage.setItem("Time2-2-32", tiempo);
 
     }
 }

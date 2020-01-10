@@ -170,7 +170,7 @@ $(".slc").change(function() {
 
 
 // Validar
-function result_tipo_2_2_13() {
+function result_tipo_2_2_17() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();

@@ -116,7 +116,7 @@ $('select').formSelect();
 
 
 
-function result_tipo_2_1_18() {
+function result_tipo_2_2_30() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
