@@ -119,7 +119,7 @@ $( ".droppable" ).droppable({
 console.log(rpta, otros);
 // Formulario - Registrados
 
-function result_tipo_2_2_4() {
+function result_tipo_2_2_11() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
@@ -127,8 +127,8 @@ function result_tipo_2_2_4() {
 
     if (rpta == 4 && otros == 0) {
         console.log(rpta, otros);
-        localStorage.setItem("Nota2-2-4", "2");
-        localStorage.setItem("Time2-2-4", tiempo);
+        localStorage.setItem("Nota2-2-11", "2");
+        localStorage.setItem("Time2-2-11", tiempo);
         correcto();
 
     }
@@ -136,8 +136,8 @@ function result_tipo_2_2_4() {
     else {
         console.log(rpta, otros);
         incorrecto();
-        localStorage.setItem("Nota2-2-4", "0");
-        localStorage.setItem("Time2-2-4", tiempo);
+        localStorage.setItem("Nota2-2-11", "0");
+        localStorage.setItem("Time2-2-11", tiempo);
 
     }
 }

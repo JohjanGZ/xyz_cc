@@ -5,7 +5,7 @@
     <link rel="stylesheet" type="text/css" href="<?= $dir ?>/css/styles.css">
 </head>
 <?php
-    $numeros = array('vacas','ovejas','400','300','1300','2500');
+    $numeros = array('vacas','ovejas','400','300','1 300','2 500');
 ?>
 <?=$titulo?>
 <div class="container-two">
@@ -70,7 +70,7 @@
             <div class="pregunta">
              ¿Cuántos animales de 2 patas hay en la granja?
                 <span>
-                    <select class="slc" alt="1300">
+                    <select class="slc" alt="1 300">
                         <option value="" disabled selected></option>
                         <?php
                         for ($i=0; $i < count($numeros); $i++) { 
@@ -83,7 +83,7 @@
             <div class="pregunta">
              ¿Cuántos animales de 4 patas hay en la granja?
                 <span>
-                    <select class="slc" alt="2500">
+                    <select class="slc" alt="2 500">
                         <option value="" disabled selected></option>
                         <?php
                         for ($i=0; $i < count($numeros); $i++) { 
@@ -131,7 +131,7 @@ $(".slc").change(function() {
 console.log(r);
 // Formulario - Registrados
 
-function result_tipo_2_7_17() {
+function result_tipo_2_2_35() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
@@ -139,15 +139,15 @@ function result_tipo_2_7_17() {
 
     if (r == 5 ) {
         console.log(r);
-        localStorage.setItem("Nota2-1-19", "2");
-        localStorage.setItem("Time2-1-19", tiempo);
+        localStorage.setItem("Nota2-2-35", "2");
+        localStorage.setItem("Time2-2-35", tiempo);
         correcto();
 
     } else {
         console.log(r);
         incorrecto();
-        localStorage.setItem("Nota2-1-19", "0");
-        localStorage.setItem("Time2-1-19", tiempo);
+        localStorage.setItem("Nota2-2-35", "0");
+        localStorage.setItem("Time2-2-35", tiempo);
 
     }
 }

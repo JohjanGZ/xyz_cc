@@ -71,7 +71,7 @@ $("#next").attr("onclick", "<?=$next?>");
 // Validar
 
 
-function result_tipo_2_4_13() {
+function result_tipo_2_2_27() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();

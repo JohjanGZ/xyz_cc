@@ -119,7 +119,7 @@ $( ".droppable" ).droppable({
 console.log(rpta, otros);
 // Formulario - Registrados
 
-function result_tipo_2_2_4() {
+function result_tipo_2_2_12() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();

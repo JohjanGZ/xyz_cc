@@ -5,7 +5,7 @@
     <link rel="stylesheet" type="text/css" href="<?= $dir ?>/css/styles.css">
 </head>
 <?php
-    $numeros = array('David','Fabiana','100','150','1300','700');
+    $numeros = array('David','Fabiana','100','150','1 300','700');
 ?>
 <?=$titulo?>
 <div class="container-two">
@@ -70,7 +70,7 @@
             <div class="pregunta">
             ¿Cuántos stickers tienen Sofía, David y Paola?
                 <span>
-                    <select class="slc" alt="1300">
+                    <select class="slc" alt="1 300">
                         <option value="" disabled selected></option>
                         <?php
                             for ($i=0; $i < count($numeros); $i++) { 
@@ -131,7 +131,7 @@ $(".slc").change(function() {
 console.log(r);
 // Formulario - Registrados
 
-function result_tipo_2_7_18() {
+function result_tipo_2_2_36() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
