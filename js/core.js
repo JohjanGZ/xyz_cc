@@ -418,6 +418,8 @@ function colorear() {
         $(this).css({
             'background-color': color,
         });
+        $(this).text(letra);
+        console.log(letra);
         comparacion = $(this).attr('alt');
         if (letra == comparacion) {
             r++;

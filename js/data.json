@@ -1,1250 +1,1242 @@
-{"Primaria":{
-    "0": {
+{
+    "Primaria": {
         "0": {
-            "activo": "1",
-            "titulo": "Comunicación 1",
-            "color": "#c60059",
-            "grado": "1",
-            "curso": "comunicacion",
-            "portada": "comunicacion1.jpg",
-            "libros": {
-                "0": {
-                    "title": "Actividades",
-                    "enlace": "com-act-1",
-                    "portada":"com-act-1.jpg"
+            "0": {
+                "activo": "1",
+                "titulo": "Comunicación 1",
+                "color": "#c60059",
+                "grado": "1",
+                "curso": "comunicacion",
+                "portada": "comunicacion1.jpg",
+                "libros": {
+                    "0": {
+                        "title": "Actividades",
+                        "enlace": "com-act-1",
+                        "portada": "com-act-1.jpg"
+                    },
+                    "1": {
+                        "title": "Razonamiento Verbal",
+                        "enlace": "com-rv-1",
+                        "portada": "com-rv-1.jpg"
+                    },
+                    "2": {
+                        "title": "Texto",
+                        "enlace": "com-txt-1",
+                        "portada": "com-txt-1.jpg"
+                    }
                 },
-                "1": {
-                    "title": "Razonamiento Verbal",
-                    "enlace": "com-rv-1",
-                    "portada":"com-rv-1.jpg"
-                },
-                "2": {
-                    "title": "Texto",
-                    "enlace": "com-txt-1",
-                    "portada":"com-txt-1.jpg"
+                "unidades": {
+                    "0": {
+                        "id": "0",
+                        "nombre": "Unidad 1 - Aprendiendo en mi escuela",
+                        "temas": {
+                            "0": "Actividad digital"
+                        }
+                    },
+                    "1": {
+                        "id": "1",
+                        "nombre": "Unidad 2 - Voy a leer y a escribir",
+                        "temas": {
+                            "0": "Comprensión lectora: Cuatro letritas",
+                            "1": "Comprensión lectora: Mi colegio",
+                            "2": "Comprensión lectora: Patito travieso",
+                            "3": "Lectoescritura: Palabras con P - p",
+                            "4": "Lectoescritura: Palabras con M - m",
+                            "5": "Lectoescritura: Palabras con L - l"
+                        }
+                    },
+                    "2": {
+                        "id": "2",
+                        "nombre": "Unidad 3 - Juego con mis amigos y amigas",
+                        "temas": {
+                            "0": "Lectoescritura: Palabras con D-d",
+                            "1": "¿Qué será? Mi oído me ayudará",
+                            "2": "Discriminacion visual",
+                            "3": "Lectoescritura: Palabras con T - t",
+                            "4": "Una canción",
+                            "5": "Una revisión media",
+                            "6": "Lectoescritura: Palabras con N-n",
+                            "7": "Lectoescritura: Palabras con F-f",
+                            "8": "Familia de palabras",
+                            "9": "El sustantivo"
+                        }
+                    },
+                    "3": {
+                        "id": "3",
+                        "nombre": "Unidad 4 - Leo en familia",
+                        "temas": {
+                            "0": "Lectura: Ondas Expresivas",
+                            "1": "Un cuento",
+                            "2": "Desplazamiento",
+                            "3": "¿Qué será? Mi oído me ayudará",
+                            "4": "Lectoescritura: Palabras con V-v",
+                            "5": "Lectoescritura: Palabras con R-r",
+                            "6": "Lectoescritura: Palabras con C- c y Q - q",
+                            "7": "Término excluido",
+                            "8": "El adjetivo"
+                        }
+                    },
+                    "4": {
+                        "id": "4",
+                        "nombre": "Unidad 5 - Disfruto del medio ambiente porque lo cuido con amor",
+                        "temas": {
+                            "0": "Lectura: Ondas Expresivas",
+                            "1": "Comprensión lectora",
+                            "2": "¿Qué será? Mi oído me ayudará",
+                            "3": "Lectoescritura: Palabras con H - h",
+                            "4": "Palabras con G - g",
+                            "5": "Analogías",
+                            "6": " El género masculino y femenino"
+                        }
+                    },
+                    "5": {
+                        "id": "5",
+                        "nombre": "Unidad 6 - Celebramos la fiesta de mi Perú",
+                        "temas": {
+                            "0": "Un cuento",
+                            "1": "Un cuento 2",
+                            "2": "La descripción de un animal",
+                            "3": "Discriminación visual",
+                            "4": "Lectoescritura: Palabras con J - j",
+                            "5": "Lectoescritura: Palabras con Z - z",
+                            "6": "Lectoescritura: Palabras con ce, ci",
+                            "7": "Lectoescritura: Palabras con LL - ll",
+                            "8": "Lectoescritura: Palabras con Y - y",
+                            "9": "Sinónimos y antónimos",
+                            "10": "¿Qué será? Mi oído me ayudará",
+                            "11": "El singular y el plural"
+                        }
+                    },
+                    "6": {
+                        "id": "6",
+                        "nombre": "Unidad 7 - Me gusta trabajar en equipo",
+                        "temas": {
+                            "0": "Ondas Expresivas",
+                            "1": "Relaciones temporales",
+                            "2": "Palabras con Ñ - ñ, Palabras con Ch - ch, Palabras con X - x, Palabras con W - w,<br> Palabras con K - k, Palabras con Gü - gü",
+                            "3": "comprensión lectora"
+                        }
+                    },
+                    "7": {
+                        "id": "7",
+                        "nombre": "Unidad 8 - Me gusta proteger a los animales y las plantas",
+                        "temas": {
+                            "0": "Comprensión lectora",
+                            "1": "Ubicación espacial",
+                            "2": "¿Qué será? Mi oído me ayudará",
+                            "3": "Palabras con Br-br",
+                            "4": "Palabras con Bl-bl",
+                            "5": "Palabras con Pr-pr",
+                            "6": "Los signos de interrogación",
+                            "7": " Describe el lugar"
+                        }
+                    },
+                    "8": {
+                        "id": "8",
+                        "nombre": "Unidad 9 - Costumbres, gustos y sabores del Perú",
+                        "temas": {
+                            "0": "Arca de lectura 8 - Comprensión de lectura",
+                            "1": "Un cuento",
+                            "2": "Parte - todo",
+                            "3": "Palabras con Cr - cr",
+                            "4": "Palabras con Cl - cl",
+                            "5": "Palabras con Gr - gr",
+                            "6": "Palabras con Gl - gl",
+                            "7": "Oraciones Incompletas",
+                            "8": "Los signos de exclamación",
+                            "9": "Escribe rimas",
+                            "10": "Arca de lectura 8 - Comprensión lectora"
+                        }
+                    },
+                    "9": {
+                        "id": "9",
+                        "nombre": "Unidad 10 - Navidad es compartir con los demás",
+                        "temas": {
+                            "0": "Arca de lectura 9 - Comprensión de lectura",
+                            "1": "Un cuento",
+                            "2": "Un poema",
+                            "3": "Una prosa",
+                            "4": "La inferencia",
+                            "5": "¿Qué será? Mi oído me ayudará",
+                            "6": "Palabras con Tr - tr",
+                            "7": "Palabras con Tl - tl",
+                            "8": "Palabras con Dr - dr",
+                            "9": "Palabras con Fr - fr",
+                            "10": "El verbo",
+                            "11": "Escribimos un cuento"
+                        }
+                    }
                 }
             },
-            "unidades": {
-                "0": {
-                    "id": "0",
-                    "nombre": "Unidad 1 - Aprendiendo en mi escuela",
-                    "temas": {
-                        "0": "Actividad digital"
+            "1": {
+                "activo": "1",
+                "titulo": "Comunicación 2",
+                "color": "#d92f2a",
+                "grado": "2",
+                "curso": "comunicacion",
+                "portada": "comunicacion2.jpg",
+                "libros": {
+                    "0": {
+                        "title": "Libro 1",
+                        "enlace": "com1-1"
+                    },
+                    "1": {
+                        "title": "Libro 2",
+                        "enlace": "com1-2"
                     }
                 },
-                "1": {
-                    "id": "1",
-                    "nombre": "Unidad 2 - Voy a leer y a escribir",
-                    "temas": {
-                        "0": "Comprensión lectora: Cuatro letritas",
-                        "1": "Comprensión lectora: Mi colegio",
-                        "2": "Comprensión lectora: Patito travieso",
-                        "3": "Lectoescritura: Palabras con P - p",
-                        "4": "Lectoescritura: Palabras con M - m",
-                        "5": "Lectoescritura: Palabras con L - l"
-                    }
-                },
-                "2": {
-                    "id": "2",
-                    "nombre": "Unidad 3 - Juego con mis amigos y amigas",
-                    "temas": {
-                        "0": "Lectoescritura: Palabras con D-d",
-                        "1": "¿Qué será? Mi oído me ayudará",
-                        "2": "Discriminacion visual",
-                        "3": "Lectoescritura: Palabras con T - t",
-                        "4": "Una canción",
-                        "5": "Una revisión media",
-                        "6": "Lectoescritura: Palabras con N-n",
-                        "7": "Lectoescritura: Palabras con F-f",
-                        "8": "Familia de palabras",
-                        "9": "El sustantivo"
-                    }
-                },
-                "3": {                   
-                    "id": "3",
-                    "nombre": "Unidad 4 - Leo en familia",
-                    "temas": {
-                        "0": "Lectura: Ondas Expresivas",
-                        "1": "Un cuento",
-                        "2": "Desplazamiento",
-                        "3": "¿Qué será? Mi oído me ayudará",
-                        "4": "Lectoescritura: Palabras con V-v",
-                        "5": "Lectoescritura: Palabras con R-r",
-                        "6": "Lectoescritura: Palabras con C- c y Q - q",
-                        "7": "Término excluido",
-                        "8": "El adjetivo"
-                    }
-                },
-                "4": {
-                   
-                    "id": "4",
-                    "nombre": "Unidad 5 - Disfruto del medio ambiente porque lo cuido con amor",
-                    "temas": {
-                        "0": "Lectura: Ondas Expresivas",
-                        "1": "Comprensión lectora",
-                        "2": "¿Qué será? Mi oído me ayudará",
-                        "3": "Lectoescritura: Palabras con H - h",
-                        "4": "Palabras con G - g",
-                        "5": "Analogías",
-                        "6": " El género masculino y femenino"
-                    }
-                },
-                "5": {
-                    
-                    "id": "5",
-                    "nombre": "Unidad 6 - Celebramos la fiesta de mi Perú",
-                    "temas": {
-                        "0": "Un cuento",
-                        "1": "Un cuento 2",
-                        "2": "La descripción de un animal",
-                        "3": "Discriminación visual",
-                        "4": "Lectoescritura: Palabras con J - j",
-                        "5": "Lectoescritura: Palabras con Z - z",
-                        "6": "Lectoescritura: Palabras con ce, ci",
-                        "7": "Lectoescritura: Palabras con LL - ll",
-                        "8": "Lectoescritura: Palabras con Y - y",
-                        "9": "Sinónimos y antónimos",
-                        "10": "¿Qué será? Mi oído me ayudará",
-                        "11": "El singular y el plural"
-                    }
-                },
-                "6": {
-                    
-                    "id": "6",
-                    "nombre": "Unidad 7 - Me gusta trabajar en equipo",
-                    "temas": {
-                        "0": "Ondas Expresivas",
-                        "1": "Relaciones temporales",
-                        "2": "Palabras con Ñ - ñ, Palabras con Ch - ch, Palabras con X - x, Palabras con W - w,<br> Palabras con K - k, Palabras con Gü - gü",
-                        "3": "comprensión lectora"
-                    }
-                },
-                "7": {
-                    "id": "7",
-                    "nombre": "Unidad 8 - Me gusta proteger a los animales y las plantas",
-                    "temas": {
-                        "0": "Comprensión lectora",
-                        "1": "Ubicación espacial",
-                        "2": "¿Qué será? Mi oído me ayudará",
-                        "3": "Palabras con Br-br",
-                        "4": "Palabras con Bl-bl",
-                        "5": "Palabras con Pr-pr",
-                        "6": "Los signos de interrogación",
-                        "7": " Describe el lugar"
-                       
-                    } 
-                },
-                "8": {
-                    "id": "8",
-                    "nombre": "Unidad 9 - Costumbres, gustos y sabores del Perú",
-                    "temas": {
-                        "0": "Arca de lectura 8 - Comprensión de lectura",
-                        "1": "Un cuento",
-                        "2": "Parte - todo",
-                        "3": "Palabras con Cr - cr",
-                        "4": "Palabras con Cl - cl",
-                        "5": "Palabras con Gr - gr",
-                        "6": "Palabras con Gl - gl",
-                        "7": "Oraciones Incompletas",
-                        "8": "Los signos de exclamación",
-                        "9": "Escribe rimas",
-                        "10": "Arca de lectura 8 - Comprensión lectora"
-                    }
-                },
-                "9":{
-                    "id": "9",
-                    "nombre": "Unidad 10 - Navidad es compartir con los demás",
-                    "temas": {
-                        "0": "Arca de lectura 9 - Comprensión de lectura",
-                        "1": "Un cuento",
-                        "2": "Un poema",
-                        "3": "Una prosa",
-                        "4": "La inferencia",
-                        "5": "¿Qué será? Mi oído me ayudará",
-                        "6": "Palabras con Tr - tr",
-                        "7": "Palabras con Tl - tl",
-                        "8": "Palabras con Dr - dr",
-                        "9": "Palabras con Fr - fr",
-                        "10": "El verbo",
-                        "11": "Escribimos un cuento"                       
+                "unidades": {
+                    "0": {
+                        "id": "0",
+                        "nombre": "Unidad 1 - Me gusta jugar con mis amigos ",
+                        "temas": {
+                            "0": "Un cuento 1",
+                            "1": "Un cuento 2",
+                            "2": "Abecedario",
+                            "3": "Las adivinanzas",
+                            "4": "Narra un cuento",
+                            "5": "La mayúscula y el punto",
+                            "6": "La oración: sujeto y predicado",
+                            "7": "Escribe un cuento",
+                            "8": "La estructura de un texto narrativo",
+                            "9": "Arca de lectura 2 - Comprensión lectora"
+                        }
+                    },
+                    "1": {
+                        "id": "1",
+                        "nombre": "Unidad 2 - Aprendiendo en mi escuela",
+                        "temas": {
+                            "0": "Actividad digital"
+                        }
+                    },
+                    "2": {
+                        "id": "2",
+                        "nombre": "Unidad 3 -  ",
+                        "temas": {
+                            "0": "tema 1",
+                            "1": "tema 2",
+                            "2": "tema 3",
+                            "3": "tema 4",
+                            "4": "tema 5",
+                            "5": "tema 6",
+                            "6": "tema 7",
+                            "7": "tema 8",
+                            "8": "tema 9",
+                            "9": "tema 10"
+                        }
+                    },
+                    "3": {
+                        "id": "3",
+                        "nombre": "Unidad 4 -  ",
+                        "temas": {
+                            "0": "tema 1",
+                            "1": "tema 2",
+                            "2": "tema 3",
+                            "3": "tema 4",
+                            "4": "tema 5",
+                            "5": "tema 6",
+                            "6": "tema 7",
+                            "7": "tema 8",
+                            "8": "tema 9",
+                            "9": "tema 10"
+                        }
+                    },
+                    "4": {
+                        "id": "4",
+                        "nombre": "Unidad 5 -  ",
+                        "temas": {
+                            "0": "tema 1",
+                            "1": "tema 2",
+                            "2": "tema 3",
+                            "3": "tema 4",
+                            "4": "tema 5",
+                            "5": "tema 6",
+                            "6": "tema 7",
+                            "7": "tema 8",
+                            "8": "tema 9",
+                            "9": "tema 10"
+                        }
+                    },
+                    "5": {
+                        "id": "5",
+                        "nombre": "Unidad 6 -  ",
+                        "temas": {
+                            "0": "tema 1",
+                            "1": "tema 2",
+                            "2": "tema 3",
+                            "3": "tema 4",
+                            "4": "tema 5",
+                            "5": "tema 6",
+                            "6": "tema 7",
+                            "7": "tema 8",
+                            "8": "tema 9",
+                            "9": "tema 10"
+                        }
+                    },
+                    "6": {
+                        "id": "6",
+                        "nombre": "Unidad 7 -  ",
+                        "temas": {
+                            "0": "tema 1",
+                            "1": "tema 2",
+                            "2": "tema 3",
+                            "3": "tema 4",
+                            "4": "tema 5",
+                            "5": "tema 6",
+                            "6": "tema 7",
+                            "7": "tema 8",
+                            "8": "tema 9",
+                            "9": "tema 10"
+                        }
+                    },
+                    "7": {
+                        "id": "7",
+                        "nombre": "Unidad 8 -  ",
+                        "temas": {
+                            "0": "tema 1",
+                            "1": "tema 2",
+                            "2": "tema 3",
+                            "3": "tema 4",
+                            "4": "tema 5",
+                            "5": "tema 6",
+                            "6": "tema 7",
+                            "7": "tema 8",
+                            "8": "tema 9",
+                            "9": "tema 10"
+                        }
+                    },
+                    "8": {
+                        "id": "8",
+                        "nombre": "Unidad 9 -  ",
+                        "temas": {
+                            "0": "tema 1",
+                            "1": "tema 2",
+                            "2": "tema 3",
+                            "3": "tema 4",
+                            "4": "tema 5",
+                            "5": "tema 6",
+                            "6": "tema 7",
+                            "7": "tema 8",
+                            "8": "tema 9",
+                            "9": "tema 10"
+                        }
+                    },
+                    "9": {
+                        "id": "9",
+                        "nombre": "Unidad 10 -  ",
+                        "temas": {
+                            "0": "tema 1",
+                            "1": "tema 2",
+                            "2": "tema 3",
+                            "3": "tema 4",
+                            "4": "tema 5",
+                            "5": "tema 6",
+                            "6": "tema 7",
+                            "7": "tema 8",
+                            "8": "tema 9",
+                            "9": "tema 10"
+                        }
                     }
                 }
-
+            },
+            "2": {
+                "activo": "1",
+                "titulo": "Comunicación 3",
+                "color": "#0099b8",
+                "grado": "3",
+                "curso": "comunicacion",
+                "portada": "comunicacion3.jpg",
+                "libros": {
+                    "0": {
+                        "title": "Libro 1",
+                        "enlace": "com1-1"
+                    },
+                    "1": {
+                        "title": "Libro 2",
+                        "enlace": "com1-2"
+                    }
+                },
+                "unidades": {
+                    "0": {
+                        "id": "0",
+                        "nombre": "Unidad 1 -  ",
+                        "temas": {
+                            "0": "tema 1",
+                            "1": "tema 2",
+                            "2": "tema 3",
+                            "3": "tema 4",
+                            "4": "tema 5",
+                            "5": "tema 6",
+                            "6": "tema 7",
+                            "7": "tema 8",
+                            "8": "tema 9",
+                            "9": "tema 10"
+                        }
+                    },
+                    "1": {
+                        "id": "1",
+                        "nombre": "Unidad 2 -  ",
+                        "temas": {
+                            "0": "tema 1",
+                            "1": "tema 2",
+                            "2": "tema 3",
+                            "3": "tema 4",
+                            "4": "tema 5",
+                            "5": "tema 6",
+                            "6": "tema 7",
+                            "7": "tema 8",
+                            "8": "tema 9",
+                            "9": "tema 10"
+                        }
+                    },
+                    "2": {
+                        "id": "2",
+                        "nombre": "Unidad 3 -  ",
+                        "temas": {
+                            "0": "tema 1",
+                            "1": "tema 2",
+                            "2": "tema 3",
+                            "3": "tema 4",
+                            "4": "tema 5",
+                            "5": "tema 6",
+                            "6": "tema 7",
+                            "7": "tema 8",
+                            "8": "tema 9",
+                            "9": "tema 10"
+                        }
+                    },
+                    "3": {
+                        "id": "3",
+                        "nombre": "Unidad 4 -  ",
+                        "temas": {
+                            "0": "tema 1",
+                            "1": "tema 2",
+                            "2": "tema 3",
+                            "3": "tema 4",
+                            "4": "tema 5",
+                            "5": "tema 6",
+                            "6": "tema 7",
+                            "7": "tema 8",
+                            "8": "tema 9",
+                            "9": "tema 10"
+                        }
+                    },
+                    "4": {
+                        "id": "4",
+                        "nombre": "Unidad 5 -  ",
+                        "temas": {
+                            "0": "tema 1",
+                            "1": "tema 2",
+                            "2": "tema 3",
+                            "3": "tema 4",
+                            "4": "tema 5",
+                            "5": "tema 6",
+                            "6": "tema 7",
+                            "7": "tema 8",
+                            "8": "tema 9",
+                            "9": "tema 10"
+                        }
+                    },
+                    "5": {
+                        "id": "5",
+                        "nombre": "Unidad 6 -  ",
+                        "temas": {
+                            "0": "tema 1",
+                            "1": "tema 2",
+                            "2": "tema 3",
+                            "3": "tema 4",
+                            "4": "tema 5",
+                            "5": "tema 6",
+                            "6": "tema 7",
+                            "7": "tema 8",
+                            "8": "tema 9",
+                            "9": "tema 10"
+                        }
+                    },
+                    "6": {
+                        "id": "6",
+                        "nombre": "Unidad 7 -  ",
+                        "temas": {
+                            "0": "tema 1",
+                            "1": "tema 2",
+                            "2": "tema 3",
+                            "3": "tema 4",
+                            "4": "tema 5",
+                            "5": "tema 6",
+                            "6": "tema 7",
+                            "7": "tema 8",
+                            "8": "tema 9",
+                            "9": "tema 10"
+                        }
+                    },
+                    "7": {
+                        "id": "7",
+                        "nombre": "Unidad 8 -  ",
+                        "temas": {
+                            "0": "tema 1",
+                            "1": "tema 2",
+                            "2": "tema 3",
+                            "3": "tema 4",
+                            "4": "tema 5",
+                            "5": "tema 6",
+                            "6": "tema 7",
+                            "7": "tema 8",
+                            "8": "tema 9",
+                            "9": "tema 10"
+                        }
+                    },
+                    "8": {
+                        "id": "8",
+                        "nombre": "Unidad 9 -  ",
+                        "temas": {
+                            "0": "tema 1",
+                            "1": "tema 2",
+                            "2": "tema 3",
+                            "3": "tema 4",
+                            "4": "tema 5",
+                            "5": "tema 6",
+                            "6": "tema 7",
+                            "7": "tema 8",
+                            "8": "tema 9",
+                            "9": "tema 10"
+                        }
+                    },
+                    "9": {
+                        "id": "9",
+                        "nombre": "Unidad 10 -  ",
+                        "temas": {
+                            "0": "tema 1",
+                            "1": "tema 2",
+                            "2": "tema 3",
+                            "3": "tema 4",
+                            "4": "tema 5",
+                            "5": "tema 6",
+                            "6": "tema 7",
+                            "7": "tema 8",
+                            "8": "tema 9",
+                            "9": "tema 10"
+                        }
+                    }
+                }
+            },
+            "3": {
+                "activo": "0",
+                "titulo": "Comunicación 4",
+                "color": "#5f1e76",
+                "grado": "4",
+                "curso": "comunicacion",
+                "portada": "comunicacion4.jpg",
+                "libros": {
+                    "0": {
+                        "title": "Libro 1",
+                        "enlace": "com1-1"
+                    },
+                    "1": {
+                        "title": "Libro 2",
+                        "enlace": "com1-2"
+                    }
+                },
+                "unidades": {
+                    "0": {
+                        "id": "0",
+                        "nombre": "Unidad 1 - Me gusta jugar con mis amigos ",
+                        "temas": {
+                            "0": "Un cuento 1",
+                            "1": "Un cuento 2",
+                            "2": "Abecedario",
+                            "3": "Las adivinanzas",
+                            "4": "Narra un cuento",
+                            "5": "La mayúscula y el punto",
+                            "6": "La oración: sujeto y predicado",
+                            "7": "Escribe un cuento",
+                            "8": "La estructura de un texto narrativo",
+                            "9": "Arca de lectura 2 - Comprensión lectora"
+                        }
+                    },
+                    "1": {
+                        "id": "1",
+                        "nombre": "Unidad 2 - Aprendiendo en mi escuela",
+                        "temas": {
+                            "0": "Actividad digital"
+                        }
+                    },
+                    "2": {
+                        "id": "2",
+                        "nombre": "Unidad 3 -  ",
+                        "temas": {
+                            "0": "tema 1",
+                            "1": "tema 2",
+                            "2": "tema 3",
+                            "3": "tema 4",
+                            "4": "tema 5",
+                            "5": "tema 6",
+                            "6": "tema 7",
+                            "7": "tema 8",
+                            "8": "tema 9",
+                            "9": "tema 10"
+                        }
+                    },
+                    "3": {
+                        "id": "3",
+                        "nombre": "Unidad 4 -  ",
+                        "temas": {
+                            "0": "tema 1",
+                            "1": "tema 2",
+                            "2": "tema 3",
+                            "3": "tema 4",
+                            "4": "tema 5",
+                            "5": "tema 6",
+                            "6": "tema 7",
+                            "7": "tema 8",
+                            "8": "tema 9",
+                            "9": "tema 10"
+                        }
+                    },
+                    "4": {
+                        "id": "4",
+                        "nombre": "Unidad 5 -  ",
+                        "temas": {
+                            "0": "tema 1",
+                            "1": "tema 2",
+                            "2": "tema 3",
+                            "3": "tema 4",
+                            "4": "tema 5",
+                            "5": "tema 6",
+                            "6": "tema 7",
+                            "7": "tema 8",
+                            "8": "tema 9",
+                            "9": "tema 10"
+                        }
+                    },
+                    "5": {
+                        "id": "5",
+                        "nombre": "Unidad 6 -  ",
+                        "temas": {
+                            "0": "tema 1",
+                            "1": "tema 2",
+                            "2": "tema 3",
+                            "3": "tema 4",
+                            "4": "tema 5",
+                            "5": "tema 6",
+                            "6": "tema 7",
+                            "7": "tema 8",
+                            "8": "tema 9",
+                            "9": "tema 10"
+                        }
+                    },
+                    "6": {
+                        "id": "6",
+                        "nombre": "Unidad 7 -  ",
+                        "temas": {
+                            "0": "tema 1",
+                            "1": "tema 2",
+                            "2": "tema 3",
+                            "3": "tema 4",
+                            "4": "tema 5",
+                            "5": "tema 6",
+                            "6": "tema 7",
+                            "7": "tema 8",
+                            "8": "tema 9",
+                            "9": "tema 10"
+                        }
+                    },
+                    "7": {
+                        "id": "7",
+                        "nombre": "Unidad 8 -  ",
+                        "temas": {
+                            "0": "tema 1",
+                            "1": "tema 2",
+                            "2": "tema 3",
+                            "3": "tema 4",
+                            "4": "tema 5",
+                            "5": "tema 6",
+                            "6": "tema 7",
+                            "7": "tema 8",
+                            "8": "tema 9",
+                            "9": "tema 10"
+                        }
+                    },
+                    "8": {
+                        "id": "8",
+                        "nombre": "Unidad 9 -  ",
+                        "temas": {
+                            "0": "tema 1",
+                            "1": "tema 2",
+                            "2": "tema 3",
+                            "3": "tema 4",
+                            "4": "tema 5",
+                            "5": "tema 6",
+                            "6": "tema 7",
+                            "7": "tema 8",
+                            "8": "tema 9",
+                            "9": "tema 10"
+                        }
+                    },
+                    "9": {
+                        "id": "9",
+                        "nombre": "Unidad 10 -  ",
+                        "temas": {
+                            "0": "tema 1",
+                            "1": "tema 2",
+                            "2": "tema 3",
+                            "3": "tema 4",
+                            "4": "tema 5",
+                            "5": "tema 6",
+                            "6": "tema 7",
+                            "7": "tema 8",
+                            "8": "tema 9",
+                            "9": "tema 10"
+                        }
+                    }
+                }
+            },
+            "4": {
+                "activo": "0",
+                "titulo": "Comunicación 5",
+                "color": "#91b715",
+                "grado": "5",
+                "curso": "comunicacion",
+                "portada": "comunicacion5.jpg",
+                "libros": {
+                    "0": {
+                        "title": "Libro 1",
+                        "enlace": "com1-1"
+                    },
+                    "1": {
+                        "title": "Libro 2",
+                        "enlace": "com1-2"
+                    }
+                },
+                "unidades": ""
+            },
+            "5": {
+                "activo": "0",
+                "titulo": "Comunicación 6",
+                "color": "#2f1b6d",
+                "grado": "6",
+                "curso": "comunicacion",
+                "portada": "comunicacion6.jpg",
+                "libros": {
+                    "0": {
+                        "title": "Libro 1",
+                        "enlace": "com1-1"
+                    },
+                    "1": {
+                        "title": "Libro 2",
+                        "enlace": "com1-2"
+                    }
+                },
+                "unidades": ""
             }
         },
         "1": {
-            "activo": "1",
-            "titulo": "Comunicación 2",
-            "color": "#d92f2a",
-            "grado": "2",
-            "curso": "comunicacion",
-            "portada": "comunicacion2.jpg",
-            "libros": {
-                "0": {
-                    "title": "Libro 1",
-                    "enlace": "com1-1"
+            "0": {
+                "activo": "1",
+                "titulo": "Matemática 1",
+                "color": "#00b3ce",
+                "grado": "1",
+                "curso": "matematica",
+                "portada": "matematica1.jpg",
+                "libros": {
+                    "0": {
+                        "title": "Libro 1",
+                        "enlace": "com1-1"
+                    },
+                    "1": {
+                        "title": "Libro 2",
+                        "enlace": "com1-2"
+                    }
                 },
-                "1": {
-                    "title": "Libro 2",
-                    "enlace": "com1-2"
+                "unidades": {
+                    "0": {
+                        "id": "0",
+                        "nombre": "Unidad 1 - Descubrimos nuestros talentos",
+                        "temas": {
+                            "0": "Aritmética - Conjuntos",
+                            "1": "Aritmética - Representación de conjuntos",
+                            "2": "Aritmética - Relación de pertenencia",
+                            "3": "Aritmética - Cantidades hasta el 9",
+                            "4": "Aritmética - La decena",
+                            "5": "Figuras geométricas",
+                            "6": "Conteo de figuras"
+                        }
+                    },
+                    "1": {
+                        "id": "1",
+                        "nombre": "Unidad 2 - Ayudamos a mamá en las compras",
+                        "temas": {
+                            "0": "Aritmética - La adición",
+                            "1": "Aritmética - Problemas con adición",
+                            "2": "Aritmética - Números hasta el 49",
+                            "3": "Geometría - Figuras geométricas",
+                            "4": "Estadística - Registro de datos y gráfico de barras"
+                        }
+                    },
+                    "2": {
+                        "id": "2",
+                        "nombre": "Unidad 3 - Somos pequeños agricultores",
+                        "temas": {
+                            "0": "Aritmética - Lectura y escritura de números",
+                            "1": "Aritmética - Descomposición de números",
+                            "2": "Aritmética - Comparación de números",
+                            "3": "Geometría - Figuras geométricas",
+                            "4": "Razonamiento matemático - Sucesiones crecientes y decrecientes"
+                        }
+                    },
+                    "3": {
+                        "id": "3",
+                        "nombre": "Unidad 4 - Peruanito soy y con orgullo",
+                        "temas": {
+                            "0": "Aritmética - Lectura y escritura de números hasta el 99",
+                            "1": "Aritmética - Comparación de números",
+                            "2": "Aritmética - Descomposición aditiva",
+                            "3": "Estadística - Gráficos de barras"
+                        }
+                    },
+                    "4": {
+                        "id": "4",
+                        "nombre": "Unidad 5 - Las maravillas de la naturaleza",
+                        "temas": {
+                            "0": "Aritmética - La centena",
+                            "1": "Aritmética - La centena en el tablero de valor posicional",
+                            "2": "Aritmética - Descomponemos las centenas",
+                            "3": "Aritmética - Lectura y escritura de números de tres cifras",
+                            "4": "Aritmética - Problemas con centenas",
+                            "5": "Aritmética - Propiedad conmutativa"
+                        }
+                    },
+                    "5": {
+                        "id": "5",
+                        "nombre": "Unidad 6 - Aprendemos a ahorrar para comprar lo que necesitamos",
+                        "temas": {
+                            "0": "Aritmética - Los meses del año y los días de la semana",
+                            "1": "Aritmética - La hora",
+                            "2": "Aritmética - Aritmética - La media hora",
+                            "3": "Aritmética - Medidas de peso o masa el kilogramo",
+                            "4": "Aritmética - Monedas y billetes del Perú"
+                        }
+                    },
+                    "6": {
+                        "id": "6",
+                        "nombre": "Unidad 7 - ¡Qué alegría... llegaron las olimpiadas!",
+                        "temas": {
+                            "0": "Aritmética - Números pares e impares",
+                            "1": "Aritmética - Aritmética - Adición de centenas llevando",
+                            "2": "Aritmética - Sustracción de centenas prestando",
+                            "3": "Aritmética - El doble de un número",
+                            "4": "Aritmética - Problemas con el doble"
+                        }
+                    },
+                    "7": {
+                        "id": "7",
+                        "nombre": "Unidad 8 - Juntos respetamos los derechos de todos los niños y las niñas",
+                        "temas": {
+                            "0": "Aritmética - La mitad",
+                            "1": "Aritmética - La tercia",
+                            "2": "Aritmética - Noción de fracción",
+                            "3": "Aritmética - Comparación de fracciones",
+                            "4": "Aritmética - Ecuaciones"
+                        }
+                    },
+                    "8": {
+                        "id": "8",
+                        "nombre": "Unidad 9 - La alegría de la navidad está en nuestros corazones",
+                        "temas": {
+                            "0": "Aritmética - Términos de la adición",
+                            "1": "Aritmética - Comparación de la adición",
+                            "2": "Aritmética - Términos de la sustracción",
+                            "3": "Aritmética - Números ordinales",
+                            "4": "Estadística - Probabilidades",
+                            "5": "Estadística - Diagrama del árbol"
+                        }
+                    }
                 }
             },
-            "unidades":{
-                "0":{
-                    "id": "0",
-                    "nombre": "Unidad 1 - Me gusta jugar con mis amigos ",
-                    "temas": {
-                        "0": "Un cuento 1",
-                        "1": "Un cuento 2",
-                        "2": "Abecedario",
-                        "3": "Las adivinanzas",
-                        "4": "Narra un cuento",
-                        "5": "La mayúscula y el punto",
-                        "6": "La oración: sujeto y predicado",
-                        "7": "Escribe un cuento",
-                        "8": "La estructura de un texto narrativo",
-                        "9": "Arca de lectura 2 - Comprensión lectora"
+            "1": {
+                "activo": "1",
+                "titulo": "Matemática 2",
+                "color": "#cf1a16",
+                "grado": "2",
+                "curso": "matematica",
+                "portada": "matematica2.jpg",
+                "libros": {
+                    "0": {
+                        "title": "Libro 1",
+                        "enlace": "com1-1"
+                    },
+                    "1": {
+                        "title": "Libro 2",
+                        "enlace": "com1-2"
                     }
                 },
-                "1": {
-                    
-                    "id": "1",
-                    "nombre": "Unidad 2 - Aprendiendo en mi escuela",
-                    "temas": {
-                        "0": "Actividad digital"
+                "unidades": {
+                    "0": {
+                        "id": "0",
+                        "nombre": "Unidad 1 -  ",
+                        "temas": {
+                            "0": "tema 1",
+                            "1": "tema 2",
+                            "2": "tema 3",
+                            "3": "tema 4",
+                            "4": "tema 5",
+                            "5": "tema 6",
+                            "6": "tema 7",
+                            "7": "tema 8",
+                            "8": "tema 9",
+                            "9": "tema 10"
+                        }
+                    },
+                    "1": {
+                        "id": "1",
+                        "nombre": "Unidad 2 -  ",
+                        "temas": {
+                            "0": "tema 1",
+                            "1": "tema 2",
+                            "2": "tema 3",
+                            "3": "tema 4",
+                            "4": "tema 5",
+                            "5": "tema 6",
+                            "6": "tema 7",
+                            "7": "tema 8",
+                            "8": "tema 9",
+                            "9": "tema 10"
+                        }
+                    },
+                    "2": {
+                        "id": "2",
+                        "nombre": "Unidad 3 -  ",
+                        "temas": {
+                            "0": "tema 1",
+                            "1": "tema 2",
+                            "2": "tema 3",
+                            "3": "tema 4",
+                            "4": "tema 5",
+                            "5": "tema 6",
+                            "6": "tema 7",
+                            "7": "tema 8",
+                            "8": "tema 9",
+                            "9": "tema 10"
+                        }
+                    },
+                    "3": {
+                        "id": "3",
+                        "nombre": "Unidad 4 -  ",
+                        "temas": {
+                            "0": "tema 1",
+                            "1": "tema 2",
+                            "2": "tema 3",
+                            "3": "tema 4",
+                            "4": "tema 5",
+                            "5": "tema 6",
+                            "6": "tema 7",
+                            "7": "tema 8",
+                            "8": "tema 9",
+                            "9": "tema 10"
+                        }
+                    },
+                    "4": {
+                        "id": "4",
+                        "nombre": "Unidad 5 -  ",
+                        "temas": {
+                            "0": "tema 1",
+                            "1": "tema 2",
+                            "2": "tema 3",
+                            "3": "tema 4",
+                            "4": "tema 5",
+                            "5": "tema 6",
+                            "6": "tema 7",
+                            "7": "tema 8",
+                            "8": "tema 9",
+                            "9": "tema 10"
+                        }
+                    },
+                    "5": {
+                        "id": "5",
+                        "nombre": "Unidad 6 -  ",
+                        "temas": {
+                            "0": "tema 1",
+                            "1": "tema 2",
+                            "2": "tema 3",
+                            "3": "tema 4",
+                            "4": "tema 5",
+                            "5": "tema 6",
+                            "6": "tema 7",
+                            "7": "tema 8",
+                            "8": "tema 9",
+                            "9": "tema 10"
+                        }
+                    },
+                    "6": {
+                        "id": "6",
+                        "nombre": "Unidad 7 -  ",
+                        "temas": {
+                            "0": "tema 1",
+                            "1": "tema 2",
+                            "2": "tema 3",
+                            "3": "tema 4",
+                            "4": "tema 5",
+                            "5": "tema 6",
+                            "6": "tema 7",
+                            "7": "tema 8",
+                            "8": "tema 9",
+                            "9": "tema 10"
+                        }
+                    },
+                    "7": {
+                        "id": "7",
+                        "nombre": "Unidad 8 -  ",
+                        "temas": {
+                            "0": "tema 1",
+                            "1": "tema 2",
+                            "2": "tema 3",
+                            "3": "tema 4",
+                            "4": "tema 5",
+                            "5": "tema 6",
+                            "6": "tema 7",
+                            "7": "tema 8",
+                            "8": "tema 9",
+                            "9": "tema 10"
+                        }
+                    },
+                    "8": {
+                        "id": "8",
+                        "nombre": "Unidad 9 -  ",
+                        "temas": {
+                            "0": "tema 1",
+                            "1": "tema 2",
+                            "2": "tema 3",
+                            "3": "tema 4",
+                            "4": "tema 5",
+                            "5": "tema 6",
+                            "6": "tema 7",
+                            "7": "tema 8",
+                            "8": "tema 9",
+                            "9": "tema 10"
+                        }
+                    },
+                    "9": {
+                        "id": "9",
+                        "nombre": "Unidad 10 -  ",
+                        "temas": {
+                            "0": "tema 1",
+                            "1": "tema 2",
+                            "2": "tema 3",
+                            "3": "tema 4",
+                            "4": "tema 5",
+                            "5": "tema 6",
+                            "6": "tema 7",
+                            "7": "tema 8",
+                            "8": "tema 9",
+                            "9": "tema 10"
+                        }
+                    }
+                }
+            },
+            "2": {
+                "activo": "1",
+                "titulo": "Matemática 3",
+                "color": "#fcbf00",
+                "grado": "3",
+                "curso": "matematica",
+                "portada": "matematica3.jpg",
+                "libros": {
+                    "0": {
+                        "title": "Libro 1",
+                        "enlace": "com1-1"
+                    },
+                    "1": {
+                        "title": "Libro 2",
+                        "enlace": "com1-2"
                     }
                 },
-                "2":{
-                    "id": "2",
-                    "nombre": "Unidad 3 -  ",
-                    "temas": {
-                        "0": "tema 1",
-                        "1": "tema 2",
-                        "2": "tema 3",
-                        "3": "tema 4",
-                        "4": "tema 5",
-                        "5": "tema 6",
-                        "6": "tema 7",
-                        "7": "tema 8",
-                        "8": "tema 9",
-                        "9": "tema 10"
-                    }
-                },
-                "3":{
-                    "id": "3",
-                    "nombre": "Unidad 4 -  ",
-                    "temas": {
-                        "0": "tema 1",
-                        "1": "tema 2",
-                        "2": "tema 3",
-                        "3": "tema 4",
-                        "4": "tema 5",
-                        "5": "tema 6",
-                        "6": "tema 7",
-                        "7": "tema 8",
-                        "8": "tema 9",
-                        "9": "tema 10"
-                    }
-                },
-                "4":{
-                    "id": "4",
-                    "nombre": "Unidad 5 -  ",
-                    "temas": {
-                        "0": "tema 1",
-                        "1": "tema 2",
-                        "2": "tema 3",
-                        "3": "tema 4",
-                        "4": "tema 5",
-                        "5": "tema 6",
-                        "6": "tema 7",
-                        "7": "tema 8",
-                        "8": "tema 9",
-                        "9": "tema 10"
-                    }
-                },
-                "5":{
-                    "id": "5",
-                    "nombre": "Unidad 6 -  ",
-                    "temas": {
-                        "0": "tema 1",
-                        "1": "tema 2",
-                        "2": "tema 3",
-                        "3": "tema 4",
-                        "4": "tema 5",
-                        "5": "tema 6",
-                        "6": "tema 7",
-                        "7": "tema 8",
-                        "8": "tema 9",
-                        "9": "tema 10"
-                    }
-                },
-                "6":{
-                    "id": "6",
-                    "nombre": "Unidad 7 -  ",
-                    "temas": {
-                        "0": "tema 1",
-                        "1": "tema 2",
-                        "2": "tema 3",
-                        "3": "tema 4",
-                        "4": "tema 5",
-                        "5": "tema 6",
-                        "6": "tema 7",
-                        "7": "tema 8",
-                        "8": "tema 9",
-                        "9": "tema 10"
-                    }
-                },
-                "7":{
-                    "id": "7",
-                    "nombre": "Unidad 8 -  ",
-                    "temas": {
-                        "0": "tema 1",
-                        "1": "tema 2",
-                        "2": "tema 3",
-                        "3": "tema 4",
-                        "4": "tema 5",
-                        "5": "tema 6",
-                        "6": "tema 7",
-                        "7": "tema 8",
-                        "8": "tema 9",
-                        "9": "tema 10"
-                    }
-                },
-                "8":{
-                    "id": "8",
-                    "nombre": "Unidad 9 -  ",
-                    "temas": {
-                        "0": "tema 1",
-                        "1": "tema 2",
-                        "2": "tema 3",
-                        "3": "tema 4",
-                        "4": "tema 5",
-                        "5": "tema 6",
-                        "6": "tema 7",
-                        "7": "tema 8",
-                        "8": "tema 9",
-                        "9": "tema 10"
-                    }
-                },
-                "9":{
-                    "id": "9",
-                    "nombre": "Unidad 10 -  ",
-                    "temas": {
-                        "0": "tema 1",
-                        "1": "tema 2",
-                        "2": "tema 3",
-                        "3": "tema 4",
-                        "4": "tema 5",
-                        "5": "tema 6",
-                        "6": "tema 7",
-                        "7": "tema 8",
-                        "8": "tema 9",
-                        "9": "tema 10"
+                "unidades": {
+                    "0": {
+                        "id": "0",
+                        "nombre": "Unidad 1 -  Organizamos nuestro ambiente escolar",
+                        "temas": {
+                            "0": "Aritmética - Determinación de conjuntos",
+                            "1": "Aritmética - Pertenencia y no pertenencia",
+                            "2": "Aritmética - Unión e intersección de conjuntos",
+                            "3": "Geometría - Desplazamiento en la cuadrícula",
+                            "4": "Geometría - Puntos en el plano",
+                            "5": "Geometría - Simetría"
+                        }
+                    },
+                    "1": {
+                        "id": "1",
+                        "nombre": "Unidad 2 - Trabajamos en equipo responsablemente",
+                        "temas": {
+                            "0": "Aritmética - Números hasta la unidad de millar",
+                            "1": "Aritmética - Descomposición de números",
+                            "2": "Aritmética - Comparación de números",
+                            "3": "Aritmética - Aproximación de números",
+                            "4": "Aritmética - Adición",
+                            "5": "stadística - Diagrama de barras horizontales y verticales",
+                            "6": "Razonamiento Matemático - Sucesiones numéricas"
+                        }
+                    },
+                    "2": {
+                        "id": "2",
+                        "nombre": "Unidad 3 - Cuido mi salud con una buena alimentación",
+                        "temas": {
+                            "0": "La decena de millar, Descomposición de números ,Comparación y aproximación de números,\n Números ordinales, Números romanos, La adición",
+                            "1": "tema 2",
+                            "2": "tema 3",
+                            "3": "tema 4",
+                            "4": "tema 5",
+                            "5": "tema 6",
+                            "6": "tema 7",
+                            "7": "tema 8",
+                            "8": "tema 9",
+                            "9": "tema 10"
+                        }
+                    },
+                    "3": {
+                        "id": "3",
+                        "nombre": "Unidad 4 -  ",
+                        "temas": {
+                            "0": "tema 1",
+                            "1": "tema 2",
+                            "2": "tema 3",
+                            "3": "tema 4",
+                            "4": "tema 5",
+                            "5": "tema 6",
+                            "6": "tema 7",
+                            "7": "tema 8",
+                            "8": "tema 9",
+                            "9": "tema 10"
+                        }
+                    },
+                    "4": {
+                        "id": "4",
+                        "nombre": "Unidad 5 -  ",
+                        "temas": {
+                            "0": "tema 1",
+                            "1": "tema 2",
+                            "2": "tema 3",
+                            "3": "tema 4",
+                            "4": "tema 5",
+                            "5": "tema 6",
+                            "6": "tema 7",
+                            "7": "tema 8",
+                            "8": "tema 9",
+                            "9": "tema 10"
+                        }
+                    },
+                    "5": {
+                        "id": "5",
+                        "nombre": "Unidad 6 -  ",
+                        "temas": {
+                            "0": "tema 1",
+                            "1": "tema 2",
+                            "2": "tema 3",
+                            "3": "tema 4",
+                            "4": "tema 5",
+                            "5": "tema 6",
+                            "6": "tema 7",
+                            "7": "tema 8",
+                            "8": "tema 9",
+                            "9": "tema 10"
+                        }
+                    },
+                    "6": {
+                        "id": "6",
+                        "nombre": "Unidad 7 -  ",
+                        "temas": {
+                            "0": "tema 1",
+                            "1": "tema 2",
+                            "2": "tema 3",
+                            "3": "tema 4",
+                            "4": "tema 5",
+                            "5": "tema 6",
+                            "6": "tema 7",
+                            "7": "tema 8",
+                            "8": "tema 9",
+                            "9": "tema 10"
+                        }
+                    },
+                    "7": {
+                        "id": "7",
+                        "nombre": "Unidad 8 -  ",
+                        "temas": {
+                            "0": "tema 1",
+                            "1": "tema 2",
+                            "2": "tema 3",
+                            "3": "tema 4",
+                            "4": "tema 5",
+                            "5": "tema 6",
+                            "6": "tema 7",
+                            "7": "tema 8",
+                            "8": "tema 9",
+                            "9": "tema 10"
+                        }
+                    },
+                    "8": {
+                        "id": "8",
+                        "nombre": "Unidad 9 -  ",
+                        "temas": {
+                            "0": "tema 1",
+                            "1": "tema 2",
+                            "2": "tema 3",
+                            "3": "tema 4",
+                            "4": "tema 5",
+                            "5": "tema 6",
+                            "6": "tema 7",
+                            "7": "tema 8",
+                            "8": "tema 9",
+                            "9": "tema 10"
+                        }
+                    },
+                    "9": {
+                        "id": "9",
+                        "nombre": "Unidad 10 -  ",
+                        "temas": {
+                            "0": "tema 1",
+                            "1": "tema 2",
+                            "2": "tema 3",
+                            "3": "tema 4",
+                            "4": "tema 5",
+                            "5": "tema 6",
+                            "6": "tema 7",
+                            "7": "tema 8",
+                            "8": "tema 9",
+                            "9": "tema 10"
+                        }
                     }
                 }
             }
         },
         "2": {
-            "activo": "1",
-            "titulo": "Comunicación 3",
-            "color": "#0099b8",
-            "grado": "3",
-            "curso": "comunicacion",
-            "portada": "comunicacion3.jpg",
-            "libros": {
-                "0": {
-                    "title": "Libro 1",
-                    "enlace": "com1-1"
-                },
-                "1": {
-                    "title": "Libro 2",
-                    "enlace": "com1-2"
-                }
-            },
-            "unidades": {
-                "0":{
-                    "id": "0",
-                    "nombre": "Unidad 1 -  ",
-                    "temas": {
-                        "0": "tema 1",
-                        "1": "tema 2",
-                        "2": "tema 3",
-                        "3": "tema 4",
-                        "4": "tema 5",
-                        "5": "tema 6",
-                        "6": "tema 7",
-                        "7": "tema 8",
-                        "8": "tema 9",
-                        "9": "tema 10"
+            "0": {
+                "activo": "0",
+                "titulo": "Inglés 1",
+                "color": "#c60059",
+                "grado": "1",
+                "curso": "ingles",
+                "portada": "comunicacion1.jpg",
+                "libros": {
+                    "0": {
+                        "title": "Actividades",
+                        "enlace": "com-act-1",
+                        "portada": "com-act-1.jpg"
+                    },
+                    "1": {
+                        "title": "Razonamiento Verbal",
+                        "enlace": "com-rv-1",
+                        "portada": "com-rv-1.jpg"
+                    },
+                    "2": {
+                        "title": "Texto",
+                        "enlace": "com-txt-1",
+                        "portada": "com-txt-1.jpg"
                     }
                 },
-                "1":{
-                    "id": "1",
-                    "nombre": "Unidad 2 -  ",
-                    "temas": {
-                        "0": "tema 1",
-                        "1": "tema 2",
-                        "2": "tema 3",
-                        "3": "tema 4",
-                        "4": "tema 5",
-                        "5": "tema 6",
-                        "6": "tema 7",
-                        "7": "tema 8",
-                        "8": "tema 9",
-                        "9": "tema 10"
-                    }
-                },
-                "2":{
-                    "id": "2",
-                    "nombre": "Unidad 3 -  ",
-                    "temas": {
-                        "0": "tema 1",
-                        "1": "tema 2",
-                        "2": "tema 3",
-                        "3": "tema 4",
-                        "4": "tema 5",
-                        "5": "tema 6",
-                        "6": "tema 7",
-                        "7": "tema 8",
-                        "8": "tema 9",
-                        "9": "tema 10"
-                    }
-                },
-                "3":{
-                    "id": "3",
-                    "nombre": "Unidad 4 -  ",
-                    "temas": {
-                        "0": "tema 1",
-                        "1": "tema 2",
-                        "2": "tema 3",
-                        "3": "tema 4",
-                        "4": "tema 5",
-                        "5": "tema 6",
-                        "6": "tema 7",
-                        "7": "tema 8",
-                        "8": "tema 9",
-                        "9": "tema 10"
-                    }
-                },
-                "4":{
-                    "id": "4",
-                    "nombre": "Unidad 5 -  ",
-                    "temas": {
-                        "0": "tema 1",
-                        "1": "tema 2",
-                        "2": "tema 3",
-                        "3": "tema 4",
-                        "4": "tema 5",
-                        "5": "tema 6",
-                        "6": "tema 7",
-                        "7": "tema 8",
-                        "8": "tema 9",
-                        "9": "tema 10"
-                    }
-                },
-                "5":{
-                    "id": "5",
-                    "nombre": "Unidad 6 -  ",
-                    "temas": {
-                        "0": "tema 1",
-                        "1": "tema 2",
-                        "2": "tema 3",
-                        "3": "tema 4",
-                        "4": "tema 5",
-                        "5": "tema 6",
-                        "6": "tema 7",
-                        "7": "tema 8",
-                        "8": "tema 9",
-                        "9": "tema 10"
-                    }
-                },
-                "6":{
-                    "id": "6",
-                    "nombre": "Unidad 7 -  ",
-                    "temas": {
-                        "0": "tema 1",
-                        "1": "tema 2",
-                        "2": "tema 3",
-                        "3": "tema 4",
-                        "4": "tema 5",
-                        "5": "tema 6",
-                        "6": "tema 7",
-                        "7": "tema 8",
-                        "8": "tema 9",
-                        "9": "tema 10"
-                    }
-                },
-                "7":{
-                    "id": "7",
-                    "nombre": "Unidad 8 -  ",
-                    "temas": {
-                        "0": "tema 1",
-                        "1": "tema 2",
-                        "2": "tema 3",
-                        "3": "tema 4",
-                        "4": "tema 5",
-                        "5": "tema 6",
-                        "6": "tema 7",
-                        "7": "tema 8",
-                        "8": "tema 9",
-                        "9": "tema 10"
-                    }
-                },
-                "8":{
-                    "id": "8",
-                    "nombre": "Unidad 9 -  ",
-                    "temas": {
-                        "0": "tema 1",
-                        "1": "tema 2",
-                        "2": "tema 3",
-                        "3": "tema 4",
-                        "4": "tema 5",
-                        "5": "tema 6",
-                        "6": "tema 7",
-                        "7": "tema 8",
-                        "8": "tema 9",
-                        "9": "tema 10"
-                    }
-                },
-                "9":{
-                    "id": "9",
-                    "nombre": "Unidad 10 -  ",
-                    "temas": {
-                        "0": "tema 1",
-                        "1": "tema 2",
-                        "2": "tema 3",
-                        "3": "tema 4",
-                        "4": "tema 5",
-                        "5": "tema 6",
-                        "6": "tema 7",
-                        "7": "tema 8",
-                        "8": "tema 9",
-                        "9": "tema 10"
-                    }
-                }
-            }
-        },
-        "3": { 
-            "activo": "0",
-            "titulo": "Comunicación 4",
-            "color": "#5f1e76",
-            "grado": "4",
-            "curso": "comunicacion",
-            "portada": "comunicacion4.jpg",
-            "libros": {
-                "0": {
-                    "title": "Libro 1",
-                    "enlace": "com1-1"
-                },
-                "1": {
-                    "title": "Libro 2",
-                    "enlace": "com1-2"
-                }
-            },
-            "unidades": {
-                "0":{
-                    "id": "0",
-                    "nombre": "Unidad 1 - Me gusta jugar con mis amigos ",
-                    "temas": {
-                        "0": "Un cuento 1",
-                        "1": "Un cuento 2",
-                        "2": "Abecedario",
-                        "3": "Las adivinanzas",
-                        "4": "Narra un cuento",
-                        "5": "La mayúscula y el punto",
-                        "6": "La oración: sujeto y predicado",
-                        "7": "Escribe un cuento",
-                        "8": "La estructura de un texto narrativo",
-                        "9": "Arca de lectura 2 - Comprensión lectora"
-                    }
-                },
-                "1": {
-                    
-                    "id": "1",
-                    "nombre": "Unidad 2 - Aprendiendo en mi escuela",
-                    "temas": {
-                        "0": "Actividad digital"
-                    }
-                },
-                "2":{
-                    "id": "2",
-                    "nombre": "Unidad 3 -  ",
-                    "temas": {
-                        "0": "tema 1",
-                        "1": "tema 2",
-                        "2": "tema 3",
-                        "3": "tema 4",
-                        "4": "tema 5",
-                        "5": "tema 6",
-                        "6": "tema 7",
-                        "7": "tema 8",
-                        "8": "tema 9",
-                        "9": "tema 10"
-                    }
-                },
-                "3":{
-                    "id": "3",
-                    "nombre": "Unidad 4 -  ",
-                    "temas": {
-                        "0": "tema 1",
-                        "1": "tema 2",
-                        "2": "tema 3",
-                        "3": "tema 4",
-                        "4": "tema 5",
-                        "5": "tema 6",
-                        "6": "tema 7",
-                        "7": "tema 8",
-                        "8": "tema 9",
-                        "9": "tema 10"
-                    }
-                },
-                "4":{
-                    "id": "4",
-                    "nombre": "Unidad 5 -  ",
-                    "temas": {
-                        "0": "tema 1",
-                        "1": "tema 2",
-                        "2": "tema 3",
-                        "3": "tema 4",
-                        "4": "tema 5",
-                        "5": "tema 6",
-                        "6": "tema 7",
-                        "7": "tema 8",
-                        "8": "tema 9",
-                        "9": "tema 10"
-                    }
-                },
-                "5":{
-                    "id": "5",
-                    "nombre": "Unidad 6 -  ",
-                    "temas": {
-                        "0": "tema 1",
-                        "1": "tema 2",
-                        "2": "tema 3",
-                        "3": "tema 4",
-                        "4": "tema 5",
-                        "5": "tema 6",
-                        "6": "tema 7",
-                        "7": "tema 8",
-                        "8": "tema 9",
-                        "9": "tema 10"
-                    }
-                },
-                "6":{
-                    "id": "6",
-                    "nombre": "Unidad 7 -  ",
-                    "temas": {
-                        "0": "tema 1",
-                        "1": "tema 2",
-                        "2": "tema 3",
-                        "3": "tema 4",
-                        "4": "tema 5",
-                        "5": "tema 6",
-                        "6": "tema 7",
-                        "7": "tema 8",
-                        "8": "tema 9",
-                        "9": "tema 10"
-                    }
-                },
-                "7":{
-                    "id": "7",
-                    "nombre": "Unidad 8 -  ",
-                    "temas": {
-                        "0": "tema 1",
-                        "1": "tema 2",
-                        "2": "tema 3",
-                        "3": "tema 4",
-                        "4": "tema 5",
-                        "5": "tema 6",
-                        "6": "tema 7",
-                        "7": "tema 8",
-                        "8": "tema 9",
-                        "9": "tema 10"
-                    }
-                },
-                "8":{
-                    "id": "8",
-                    "nombre": "Unidad 9 -  ",
-                    "temas": {
-                        "0": "tema 1",
-                        "1": "tema 2",
-                        "2": "tema 3",
-                        "3": "tema 4",
-                        "4": "tema 5",
-                        "5": "tema 6",
-                        "6": "tema 7",
-                        "7": "tema 8",
-                        "8": "tema 9",
-                        "9": "tema 10"
-                    }
-                },
-                "9":{
-                    "id": "9",
-                    "nombre": "Unidad 10 -  ",
-                    "temas": {
-                        "0": "tema 1",
-                        "1": "tema 2",
-                        "2": "tema 3",
-                        "3": "tema 4",
-                        "4": "tema 5",
-                        "5": "tema 6",
-                        "6": "tema 7",
-                        "7": "tema 8",
-                        "8": "tema 9",
-                        "9": "tema 10"
-                    }
-                }
-            }
-        },
-        
-        "4": {
-            "activo": "0",
-            "titulo": "Comunicación 5",
-            "color": "#91b715",
-            "grado": "5",
-            "curso": "comunicacion",
-            "portada": "comunicacion5.jpg",
-            "libros": {
-                "0": {
-                    "title": "Libro 1",
-                    "enlace": "com1-1"
-                },
-                "1": {
-                    "title": "Libro 2",
-                    "enlace": "com1-2"
-                }
-            },
-            "unidades": ""
-        },
-        "5": {
-            "activo": "0",
-            "titulo": "Comunicación 6",
-            "color": "#2f1b6d",
-            "grado": "6",
-            "curso": "comunicacion",
-            "portada": "comunicacion6.jpg",
-            "libros": {
-                "0": {
-                    "title": "Libro 1",
-                    "enlace": "com1-1"
-                },
-                "1": {
-                    "title": "Libro 2",
-                    "enlace": "com1-2"
-                }
-            },
-            "unidades": ""
-        }
-    },
-    "1": {
-        "0": {
-            "activo": "1",
-            "titulo": "Matemática 1",
-            "color": "#00b3ce",
-            "grado": "1",
-            "curso": "matematica",
-            "portada":"matematica1.jpg",
-            "libros": {
-                "0": {
-                    "title": "Libro 1",
-                    "enlace": "com1-1"
-                },
-                "1": {
-                    "title": "Libro 2",
-                    "enlace": "com1-2"
-                }
-            },
-            "unidades": {
-                "0":{
-                    "id": "0",
-                    "nombre": "Unidad 1 - Descubrimos nuestros talentos",
-                    "temas": {
-                        "0": "Aritmética - Conjuntos",
-                        "1": "Aritmética - Representación de conjuntos",
-                        "2": "Aritmética - Relación de pertenencia",
-                        "3": "Aritmética - Cantidades hasta el 9",
-                        "4": "Aritmética - La decena",
-                        "5": "Figuras geométricas",
-                        "6": "Conteo de figuras"
-                    }
-                },
-                "1":{
-                    "id": "1",
-                    "nombre": "Unidad 2 - Ayudamos a mamá en las compras",
-                    "temas": {
-                        "0": "Aritmética - La adición",
-                        "1": "Aritmética - Problemas con adición",
-                        "2": "Aritmética - Números hasta el 49",
-                        "3": "Geometría - Figuras geométricas",
-                        "4": "Estadística - Registro de datos y gráfico de barras"
-                    }
-                },
-                "2":{
-                    "id": "2",
-                    "nombre": "Unidad 3 - Somos pequeños agricultores",
-                    "temas": {
-                        "0": "Aritmética - Lectura y escritura de números",
-                        "1": "Aritmética - Descomposición de números",
-                        "2": "Aritmética - Comparación de números",
-                        "3": "Geometría - Figuras geométricas",
-                        "4": "Razonamiento matemático - Sucesiones crecientes y decrecientes"
-                    }
-                },
-                "3":{
-                    "id": "3",
-                    "nombre": "Unidad 4 - Peruanito soy y con orgullo",
-                    "temas": {
-                        "0": "Aritmética - Lectura y escritura de números hasta el 99",
-                        "1": "Aritmética - Comparación de números",
-                        "2": "Aritmética - Descomposición aditiva",
-                        "3": "Estadística - Gráficos de barras"
-                    }
-                },
-                "4":{
-                    "id": "4",
-                    "nombre": "Unidad 5 - Las maravillas de la naturaleza",
-                    "temas": {
-                        "0": "Aritmética - La centena",
-                        "1": "Aritmética - La centena en el tablero de valor posicional",
-                        "2": "Aritmética - Descomponemos las centenas",
-                        "3": "Aritmética - Lectura y escritura de números de tres cifras",
-                        "4": "Aritmética - Problemas con centenas",
-                        "5": "Aritmética - Propiedad conmutativa"
-                    }
-                },
-                "5":{
-                    "id": "5",
-                    "nombre": "Unidad 6 - Aprendemos a ahorrar para comprar lo que necesitamos",
-                    "temas": {
-                        "0": "Aritmética - Los meses del año y los días de la semana",
-                        "1": "Aritmética - La hora",
-                        "2": "Aritmética - Aritmética - La media hora",
-                        "3": "Aritmética - Medidas de peso o masa el kilogramo",
-                        "4": "Aritmética - Monedas y billetes del Perú"
-                    }
-                },
-                "6":{
-                    "id": "6",
-                    "nombre": "Unidad 7 - ¡Qué alegría... llegaron las olimpiadas!",
-                    "temas": {
-                        "0": "Aritmética - Números pares e impares",
-                        "1": "Aritmética - Aritmética - Adición de centenas llevando",
-                        "2": "Aritmética - Sustracción de centenas prestando",
-                        "3": "Aritmética - El doble de un número",
-                        "4": "Aritmética - Problemas con el doble"
-                    }
-                },
-                "7":{
-                    "id": "7",
-                    "nombre": "Unidad 8 - Juntos respetamos los derechos de todos los niños y las niñas",
-                    "temas": {
-                        "0": "Aritmética - La mitad",
-                        "1": "Aritmética - La tercia",
-                        "2": "Aritmética - Noción de fracción",
-                        "3": "Aritmética - Comparación de fracciones",
-                        "4": "Aritmética - Ecuaciones"
-                    }
-                },
-                "8":{
-                    "id": "8",
-                    "nombre": "Unidad 9 - La alegría de la navidad está en nuestros corazones",
-                    "temas": {
-                        "0": "Aritmética - Términos de la adición",
-                        "1": "Aritmética - Comparación de la adición",
-                        "2": "Aritmética - Términos de la sustracción",
-                        "3": "Aritmética - Números ordinales",
-                        "4": "Estadística - Probabilidades",
-                        "5": "Estadística - Diagrama del árbol"
-                    }
-                }
-            }
-        },
-        "1": {
-            "activo": "1",
-            "titulo": "Matemática 2",
-            "color": "#cf1a16",
-            "grado": "2",
-            "curso": "matematica",
-            "portada": "matematica2.jpg",
-            "libros": {
-                "0": {
-                    "title": "Libro 1",
-                    "enlace": "com1-1"
-                },
-                "1": {
-                    "title": "Libro 2",
-                    "enlace": "com1-2"
-                }
-            },
-            "unidades": {
-                "0":{
-                    "id": "0",
-                    "nombre": "Unidad 1 -  ",
-                    "temas": {
-                        "0": "tema 1",
-                        "1": "tema 2",
-                        "2": "tema 3",
-                        "3": "tema 4",
-                        "4": "tema 5",
-                        "5": "tema 6",
-                        "6": "tema 7",
-                        "7": "tema 8",
-                        "8": "tema 9",
-                        "9": "tema 10"
-                    }
-                },
-                "1":{
-                    "id": "1",
-                    "nombre": "Unidad 2 -  ",
-                    "temas": {
-                        "0": "tema 1",
-                        "1": "tema 2",
-                        "2": "tema 3",
-                        "3": "tema 4",
-                        "4": "tema 5",
-                        "5": "tema 6",
-                        "6": "tema 7",
-                        "7": "tema 8",
-                        "8": "tema 9",
-                        "9": "tema 10"
-                    }
-                },
-                "2":{
-                    "id": "2",
-                    "nombre": "Unidad 3 -  ",
-                    "temas": {
-                        "0": "tema 1",
-                        "1": "tema 2",
-                        "2": "tema 3",
-                        "3": "tema 4",
-                        "4": "tema 5",
-                        "5": "tema 6",
-                        "6": "tema 7",
-                        "7": "tema 8",
-                        "8": "tema 9",
-                        "9": "tema 10"
-                    }
-                },
-                "3":{
-                    "id": "3",
-                    "nombre": "Unidad 4 -  ",
-                    "temas": {
-                        "0": "tema 1",
-                        "1": "tema 2",
-                        "2": "tema 3",
-                        "3": "tema 4",
-                        "4": "tema 5",
-                        "5": "tema 6",
-                        "6": "tema 7",
-                        "7": "tema 8",
-                        "8": "tema 9",
-                        "9": "tema 10"
-                    }
-                },
-                "4":{
-                    "id": "4",
-                    "nombre": "Unidad 5 -  ",
-                    "temas": {
-                        "0": "tema 1",
-                        "1": "tema 2",
-                        "2": "tema 3",
-                        "3": "tema 4",
-                        "4": "tema 5",
-                        "5": "tema 6",
-                        "6": "tema 7",
-                        "7": "tema 8",
-                        "8": "tema 9",
-                        "9": "tema 10"
-                    }
-                },
-                "5":{
-                    "id": "5",
-                    "nombre": "Unidad 6 -  ",
-                    "temas": {
-                        "0": "tema 1",
-                        "1": "tema 2",
-                        "2": "tema 3",
-                        "3": "tema 4",
-                        "4": "tema 5",
-                        "5": "tema 6",
-                        "6": "tema 7",
-                        "7": "tema 8",
-                        "8": "tema 9",
-                        "9": "tema 10"
-                    }
-                },
-                "6":{
-                    "id": "6",
-                    "nombre": "Unidad 7 -  ",
-                    "temas": {
-                        "0": "tema 1",
-                        "1": "tema 2",
-                        "2": "tema 3",
-                        "3": "tema 4",
-                        "4": "tema 5",
-                        "5": "tema 6",
-                        "6": "tema 7",
-                        "7": "tema 8",
-                        "8": "tema 9",
-                        "9": "tema 10"
-                    }
-                },
-                "7":{
-                    "id": "7",
-                    "nombre": "Unidad 8 -  ",
-                    "temas": {
-                        "0": "tema 1",
-                        "1": "tema 2",
-                        "2": "tema 3",
-                        "3": "tema 4",
-                        "4": "tema 5",
-                        "5": "tema 6",
-                        "6": "tema 7",
-                        "7": "tema 8",
-                        "8": "tema 9",
-                        "9": "tema 10"
-                    }
-                },
-                "8":{
-                    "id": "8",
-                    "nombre": "Unidad 9 -  ",
-                    "temas": {
-                        "0": "tema 1",
-                        "1": "tema 2",
-                        "2": "tema 3",
-                        "3": "tema 4",
-                        "4": "tema 5",
-                        "5": "tema 6",
-                        "6": "tema 7",
-                        "7": "tema 8",
-                        "8": "tema 9",
-                        "9": "tema 10"
-                    }
-                },
-                "9":{
-                    "id": "9",
-                    "nombre": "Unidad 10 -  ",
-                    "temas": {
-                        "0": "tema 1",
-                        "1": "tema 2",
-                        "2": "tema 3",
-                        "3": "tema 4",
-                        "4": "tema 5",
-                        "5": "tema 6",
-                        "6": "tema 7",
-                        "7": "tema 8",
-                        "8": "tema 9",
-                        "9": "tema 10"
-                    }
-                }
-            }
-        },
-        "2": {
-            "activo": "1",
-            "titulo": "Matemática 3",
-            "color": "#fcbf00",
-            "grado": "3",
-            "curso": "matematica",
-            "portada": "matematica3.jpg",
-            "libros": {
-                "0": {
-                    "title": "Libro 1",
-                    "enlace": "com1-1"
-                },
-                "1": {
-                    "title": "Libro 2",
-                    "enlace": "com1-2"
-                }
-            },
-            "unidades": {
-                "0":{
-                    "id": "0",
-                    "nombre": "Unidad 1 -  Organizamos nuestro ambiente escolar",
-                    "temas": {
-                        "0": "Aritmética - Determinación de conjuntos",
-                        "1": "Aritmética - Pertenencia y no pertenencia",
-                        "2": "Aritmética - Unión e intersección de conjuntos",
-                        "3": "Geometría - Desplazamiento en la cuadrícula",
-                        "4": "Geometría - Puntos en el plano",
-                        "5": "Geometría - Simetría"
-                    }
-                },
-                "1":{
-                    "id": "1",
-                    "nombre": "Unidad 2 - Trabajamos en equipo responsablemente",
-                    "temas": {
-                        "0": "Aritmética - Números hasta la unidad de millar",
-                        "1": "Aritmética - Descomposición de números",
-                        "2": "Aritmética - Comparación de números",
-                        "3": "Aritmética - Aproximación de números",
-                        "4": "Aritmética - Adición",
-                        "5": "stadística - Diagrama de barras horizontales y verticales",
-                        "6": "Razonamiento Matemático - Sucesiones numéricas"
-                    }
-                },
-                "2":{
-                    "id": "2",
-                    "nombre": "Unidad 3 - Cuido mi salud con una buena alimentación",
-                    "temas": {
-                        "0": "La decena de millar, Descomposición de números ,Comparación y aproximación de números,\n Números ordinales, Números romanos, La adición",
-                        "1": "tema 2",
-                        "2": "tema 3",
-                        "3": "tema 4",
-                        "4": "tema 5",
-                        "5": "tema 6",
-                        "6": "tema 7",
-                        "7": "tema 8",
-                        "8": "tema 9",
-                        "9": "tema 10"
-                    }
-                },
-                "3":{
-                    "id": "3",
-                    "nombre": "Unidad 4 -  ",
-                    "temas": {
-                        "0": "tema 1",
-                        "1": "tema 2",
-                        "2": "tema 3",
-                        "3": "tema 4",
-                        "4": "tema 5",
-                        "5": "tema 6",
-                        "6": "tema 7",
-                        "7": "tema 8",
-                        "8": "tema 9",
-                        "9": "tema 10"
-                    }
-                },
-                "4":{
-                    "id": "4",
-                    "nombre": "Unidad 5 -  ",
-                    "temas": {
-                        "0": "tema 1",
-                        "1": "tema 2",
-                        "2": "tema 3",
-                        "3": "tema 4",
-                        "4": "tema 5",
-                        "5": "tema 6",
-                        "6": "tema 7",
-                        "7": "tema 8",
-                        "8": "tema 9",
-                        "9": "tema 10"
-                    }
-                },
-                "5":{
-                    "id": "5",
-                    "nombre": "Unidad 6 -  ",
-                    "temas": {
-                        "0": "tema 1",
-                        "1": "tema 2",
-                        "2": "tema 3",
-                        "3": "tema 4",
-                        "4": "tema 5",
-                        "5": "tema 6",
-                        "6": "tema 7",
-                        "7": "tema 8",
-                        "8": "tema 9",
-                        "9": "tema 10"
-                    }
-                },
-                "6":{
-                    "id": "6",
-                    "nombre": "Unidad 7 -  ",
-                    "temas": {
-                        "0": "tema 1",
-                        "1": "tema 2",
-                        "2": "tema 3",
-                        "3": "tema 4",
-                        "4": "tema 5",
-                        "5": "tema 6",
-                        "6": "tema 7",
-                        "7": "tema 8",
-                        "8": "tema 9",
-                        "9": "tema 10"
-                    }
-                },
-                "7":{
-                    "id": "7",
-                    "nombre": "Unidad 8 -  ",
-                    "temas": {
-                        "0": "tema 1",
-                        "1": "tema 2",
-                        "2": "tema 3",
-                        "3": "tema 4",
-                        "4": "tema 5",
-                        "5": "tema 6",
-                        "6": "tema 7",
-                        "7": "tema 8",
-                        "8": "tema 9",
-                        "9": "tema 10"
-                    }
-                },
-                "8":{
-                    "id": "8",
-                    "nombre": "Unidad 9 -  ",
-                    "temas": {
-                        "0": "tema 1",
-                        "1": "tema 2",
-                        "2": "tema 3",
-                        "3": "tema 4",
-                        "4": "tema 5",
-                        "5": "tema 6",
-                        "6": "tema 7",
-                        "7": "tema 8",
-                        "8": "tema 9",
-                        "9": "tema 10"
-                    }
-                },
-                "9":{
-                    "id": "9",
-                    "nombre": "Unidad 10 -  ",
-                    "temas": {
-                        "0": "tema 1",
-                        "1": "tema 2",
-                        "2": "tema 3",
-                        "3": "tema 4",
-                        "4": "tema 5",
-                        "5": "tema 6",
-                        "6": "tema 7",
-                        "7": "tema 8",
-                        "8": "tema 9",
-                        "9": "tema 10"
-                    }
-                }
+                "unidades": {}
             }
         }
     },
-    "2": {
+    "Inicial": {
         "0": {
-            "activo": "0",
-            "titulo": "Inglés 1",
-            "color": "#c60059",
-            "grado": "1",
-            "curso": "ingles",
-            "portada": "comunicacion1.jpg",
-            "libros": {
-                "0": {
-                    "title": "Actividades",
-                    "enlace": "com-act-1",
-                    "portada":"com-act-1.jpg"
-                },
-                "1": {
-                    "title": "Razonamiento Verbal",
-                    "enlace": "com-rv-1",
-                    "portada":"com-rv-1.jpg"
-                },
-                "2": {
-                    "title": "Texto",
-                    "enlace": "com-txt-1",
-                    "portada":"com-txt-1.jpg"
-                }
-            },
-            "unidades": {}
-            }   
-
-    }
-    },
-    "Inicial":{
-        "0":{
             "0": {
                 "activo": "1",
                 "titulo": "Ingles 4 años",
@@ -1256,12 +1248,12 @@
                     "0": {
                         "title": "The Kid's Club",
                         "enlace": "TKC-4",
-                        "portada":"TKC-4.jpg"
-                    }                    
+                        "portada": "TKC-4.jpg"
+                    }
                 },
-                "unidades": { }
+                "unidades": {}
             },
-            "1":{
+            "1": {
                 "activo": "1",
                 "titulo": "Ingles 5 años",
                 "color": "#6ec5ee",
@@ -1272,15 +1264,15 @@
                     "0": {
                         "title": "The Kid's Club",
                         "enlace": "TKC-5",
-                        "portada":"TKC-5.jpg"
-                    }                    
+                        "portada": "TKC-5.jpg"
+                    }
                 },
-                "unidades": { }
+                "unidades": {}
             }
         }
     },
-    "Secundaria":{
-        "0":{
+    "Secundaria": {
+        "0": {
             "0": {
                 "activo": "0",
                 "titulo": "",
@@ -1292,10 +1284,10 @@
                     "0": {
                         "title": "The Kid's Club",
                         "enlace": "TKC-4",
-                        "portada":"TKC-4.jpg"
-                    }                    
+                        "portada": "TKC-4.jpg"
+                    }
                 },
-                "unidades": { }
+                "unidades": {}
             }
         }
     }
