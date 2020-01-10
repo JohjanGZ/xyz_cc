@@ -128,7 +128,7 @@ var rpta = 0, otros = 0, element, element2;
       }
     });
 
-function result_tipo_2_1_10() {
+function result_tipo_2_2_15() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
@@ -136,15 +136,15 @@ function result_tipo_2_1_10() {
 
     if (rpta == 12) {
         console.log(rpta);
-        localStorage.setItem("Nota2-1-10", "2");
-        localStorage.setItem("Time2-1-10", tiempo);
+        localStorage.setItem("Nota2-2-15", "2");
+        localStorage.setItem("Time2-2-15", tiempo);
         correcto();
 
     } else {
         console.log(rpta);
         incorrecto();
-        localStorage.setItem("Nota2-1-10", "0");
-        localStorage.setItem("Time2-1-10", tiempo);
+        localStorage.setItem("Nota2-2-15", "0");
+        localStorage.setItem("Time2-2-15", tiempo);
 
     }
 }

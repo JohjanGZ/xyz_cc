@@ -131,7 +131,7 @@ $('.a').click(function(){
                     }
     });
 });
-                        function result_tipo_2_2_16(){           
+                        function result_tipo_2_2_1(){           
                               var  min= $('#Minutos').text();
                               var  seg= $('#Segundos').text();
                               var  milseg= $('#Centesimas').text();

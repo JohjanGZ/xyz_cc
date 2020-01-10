@@ -131,7 +131,7 @@ $(".slc").change(function() {
 console.log(r);
 // Formulario - Registrados
 
-function result_tipo_2_1_21() {
+function result_tipo_2_2_33() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
@@ -139,15 +139,15 @@ function result_tipo_2_1_21() {
 
     if (r == 6) {
         console.log(r);
-        localStorage.setItem("Nota2-1-21", "2");
-        localStorage.setItem("Time2-1-21", tiempo);
+        localStorage.setItem("Nota2-2-33", "2");
+        localStorage.setItem("Time2-2-33", tiempo);
         correcto();
 
     } else {
         console.log(r);
         incorrecto();
-        localStorage.setItem("Nota2-1-21", "0");
-        localStorage.setItem("Time2-1-21", tiempo);
+        localStorage.setItem("Nota2-2-33", "0");
+        localStorage.setItem("Time2-2-33", tiempo);
 
     }
 }

@@ -15,7 +15,7 @@
     <div class="container-two">
         <div class="grid-container">
             <div class="grid-item tt"><span></span>Número</div>
-            <div class="grid-item tt"><span></span>Lectura	</div>
+            <div class="grid-item tt"><span></span>Descomposición</div>
             <div class="grid-item">
             879
             </div>
@@ -85,7 +85,7 @@ $("#next").attr("onclick", "<?=$next?>");
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
 // Validar
-function result_tipo_2_2_3() {
+function result_tipo_2_2_6() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();

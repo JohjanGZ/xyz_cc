@@ -95,7 +95,7 @@ $(".slc").change(function() {
 console.log(r);
 // Formulario - Registrados
 
-function result_tipo_2_7_19() {
+function result_tipo_2_2_37() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
@@ -103,15 +103,15 @@ function result_tipo_2_7_19() {
 
     if (r == 4) {
         console.log(r);
-        localStorage.setItem("Nota2-7-18", "2");
-        localStorage.setItem("Time2-7-18", tiempo);
+        localStorage.setItem("Nota2-2-37", "2");
+        localStorage.setItem("Time2-2-37", tiempo);
         correcto();
 
     } else {
         console.log(r);
         incorrecto();
-        localStorage.setItem("Nota2-7-18", "0");
-        localStorage.setItem("Time2-7-18", tiempo);
+        localStorage.setItem("Nota2-2-37", "0");
+        localStorage.setItem("Time2-2-37", tiempo);
 
     }
 }

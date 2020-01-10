@@ -140,7 +140,7 @@
 $("#next").attr("onclick", "<?=$next?>");</script>
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
-function result_tipo_2_3_15() {
+function result_tipo_2_2_21() {
 
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();

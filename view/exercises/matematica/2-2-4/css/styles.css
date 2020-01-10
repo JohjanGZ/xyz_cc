@@ -113,3 +113,10 @@
         width: auto;
     }
 }
+@media screen and (max-width: 1300px){
+    .container-two{
+        width: 1280px;
+        width: 90%;
+        height: 70%;
+    }
+}

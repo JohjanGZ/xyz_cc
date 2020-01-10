@@ -10,7 +10,7 @@
 <?=$titulo?>
 <div class="container-two">
     <div class="image">
-        <img src="img/1/imagen.png" alt="">
+        <img src="<?= $dir ?>/img/imagen.png" alt="">
     </div>
     <div class="table">
         <h6 class="preg">Responde</h6>
@@ -131,7 +131,7 @@ $(".slc").change(function() {
 console.log(r);
 // Formulario - Registrados
 
-function result_tipo_2_1_19() {
+function result_tipo_2_2_31() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
@@ -139,15 +139,15 @@ function result_tipo_2_1_19() {
 
     if (r == 6 ) {
         console.log(r);
-        localStorage.setItem("Nota2-1-19", "2");
-        localStorage.setItem("Time2-1-19", tiempo);
+        localStorage.setItem("Nota2-2-31", "2");
+        localStorage.setItem("Time2-2-31", tiempo);
         correcto();
 
     } else {
         console.log(r);
         incorrecto();
-        localStorage.setItem("Nota2-1-19", "0");
-        localStorage.setItem("Time2-1-19", tiempo);
+        localStorage.setItem("Nota2-2-31", "0");
+        localStorage.setItem("Time2-2-31", tiempo);
 
     }
 }
