@@ -10,7 +10,7 @@ var cal = cant / cant;
 console.log(cant);
 var ruta = "../../../../exercises/inicial/";
 ////////////// 3do 
-// ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro 157 -----------------------
+// ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
 function start_7() {
     $("#ventana").load(ruta + '3-1-7/index.php', {
         next: "resultado()",
