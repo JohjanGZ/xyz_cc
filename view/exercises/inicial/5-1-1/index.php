@@ -7,12 +7,12 @@
 </head>
 <?=$titulo?>
 <div class="container-two">
-    <div class="contenedor">
+    <div class="contenedor aleatorio">
         <div class="item">
             <div class="image">
             <img src="<?= $dir ?>/img/1.png" class="materialboxed" alt="">
             </div>
-            <div class="options">
+            <div class="options aleatorio">
                 <div class="miniImage seleccion" alt="ooo">
                     <img src="<?= $dir ?>/img/4.png" alt="">
                 </div>
@@ -28,7 +28,7 @@
             <div class="image">
             <img src="<?= $dir ?>/img/2.png" class="materialboxed" alt="">
             </div>
-            <div class="options">
+            <div class="options aleatorio">
                 <div class="miniImage seleccion" alt="n">
                     <img src="<?= $dir ?>/img/7.png" alt="">
                 </div>
@@ -44,7 +44,7 @@
             <div class="image">
             <img src="<?= $dir ?>/img/3.png" class="materialboxed" alt="">
             </div>
-            <div class="options">
+            <div class="options aleatorio">
                 <div class="miniImage seleccion" alt="ooo">
                     <img src="<?= $dir ?>/img/10.png" alt="">
                 </div>

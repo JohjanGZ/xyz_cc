@@ -2,91 +2,57 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+
     <link rel="stylesheet" type="text/css" href="<?= $dir ?>/css/styles.css">
 </head>
 <?=$titulo?>
 <div class="container-two">
-    <div class="row">
-        <div class="h">
-            <div class="col s10">
-                <div class="grid-container">
-
-                    <div class="col1">
-                        <div id="sortable">
-                            <?php for ($i=1; $i < 5; $i++) { 
-                                if ($i == 5) {
-                            ?>
-                            <div class="grid-item w" id="<?=$i?>">
-                                <img src="<?=$dir?>/img/<?=$i?>.png" class="img-a">
-                            </div>
-                            <?php } else { ?>
-                            <div class="grid-item w" id="<?=$i?>">
-                                <img src="<?=$dir?>/img/<?=$i?>.png" class="img">
-                            </div>
-                            <?php } 
-                            } ?>
-                        </div>
-                    </div>
-                    <div class="col1 colo">
-                        <div class="grid-num">1.</div>
-                        <div class="grid-num">2.</div>
-                        <div class="grid-num">3.</div>
-                        <div class="grid-num">4.</div>
-                    </div>
-                </div>
-            </div>
+    <div class="contenedor">
+        <div class="imagePrincipal">
+            <img src="<?= $dir ?>/img/1.png" alt="">
+        </div>
+        <div class="options">
+            <div class="item seleccion" alt="n"><img src="<?= $dir ?>/img/2.png"></div>
+            <div class="item seleccion" alt="oo"><img src="<?= $dir ?>/img/3.png"></div>
+            <div class="item seleccion" alt="n"><img src="<?= $dir ?>/img/4.png"></div>
+            <div class="item seleccion" alt="oo"><img src="<?= $dir ?>/img/5.png"></div>
+            <div class="item seleccion" alt="oo"><img src="<?= $dir ?>/img/6.png"></div>
         </div>
     </div>
 </div>
+</section>
 <div id="modal1" class="modal">
     <div class="modal-content">
-        <h4 class="center">Respuesta correcta</h4>
+        <h4>Respuesta correcta</h4>
         <center>
-            <img class="materialboxed" width="80%" src="<?= $dir ?>/img/respuesta.png">
+            <img class="materialbox listaed" width="80%" src="<?= $dir ?>/img/respuesta.png">
         </center>
     </div>
     <div class="modal-footer">
         <a href="#!" class="modal-close waves-effect waves-green btn-flat">Listo!</a>
     </div>
 </div>
-</body>
 <script src="../../../../../js/core.js"></script>
 <?php require('../../../tools/botones/botones.php');?> <script>
 $("#next").attr("onclick", "<?=$next?>");
 </script>
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
-// Formulario - Registrados
-
 function result_tipo_5_1_2() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
-    // Sortable
-    var items = $('#sortable .grid-item').map(function() {
-        return $.trim($(this).attr('id'));
-    }).get();
-    var itsort = $('#sortable .grid-item').map(function() {
-        return $.trim($(this).attr('id'));
-    }).get();
-    itsort.sort();
-
-    var itemD = JSON.stringify(items);
-    var itemO = JSON.stringify(itsort);
-    console.log(itemD)
-    console.log(itemO)
-    // Sortable
-    
-    if (itemD == itemO) {
+    if (r == 2) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
-        correcto()
+        correcto();
     } else {
         incorrecto();
         localStorage.setItem("Nota<?=$cod?>", "0");
         localStorage.setItem("Time<?=$cod?>", tiempo);
     }
+
 }
 </script>

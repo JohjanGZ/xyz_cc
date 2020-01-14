@@ -1,16 +1,17 @@
 var lista = '.grid-lsta';
 listar_random(lista);
     var r = 0;
-    var color;
+    var tamano;
     var letra;
     var comparacion;
     $('.colores').click(function(e) {
         e.preventDefault();
-        color = $(this).attr('value');
-        letra = $(this).attr('letra');
+        tamano = $(this).attr('value');
+        scale= $(this).attr('tamano');
+        letra = $(this).attr('alt');
         $('.colores').css({
             transform: 'scale(1)',
-            border: '1px solid #333',
+            border: 'none',
             'box-shadow': 'none',
         });
         $(this).css({
@@ -18,19 +19,20 @@ listar_random(lista);
             border: 'solid rgb(254, 206, 87)',
             'box-shadow': '0 0 1px #00000057',
         });
+
     });
     $('.lista').click(function(e) {
         e.preventDefault();
         $(this).css({
-            'background-color': '#'+color+'',
+            'background-image': 'url(../../../../exercises/inicial/5-1-4/img/'+2+'.png)',
+            transform: 'scale(1.'+scale+')',
             'background-repeat': 'no-repeat',
-            'background-position': 'bottom',
+            'background-position': 'center',
             'background-size': 'cover',
             'font-size':'30px',
             'text-align':'center',
             'color':'#fff'
         });
-        $(this).html(letra);
         comparacion = $(this).attr('alt');
         if (letra == comparacion) {
             r++;

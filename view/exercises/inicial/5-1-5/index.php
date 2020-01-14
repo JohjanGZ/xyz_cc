@@ -8,20 +8,37 @@
 <?=$titulo?>
 <div class="container-two">
     <div class="pincel">
-        <div class="grid">
-            <div class="item seleccion">1</div>
-            <div class="item seleccion">2</div>
-            <div class="item seleccion">3</div>
-            <div class="item seleccion">4</div>
-            <div class="item seleccion" alt="n">5</div>
-            <div class="item seleccion">6</div>
-            <div class="item seleccion">7</div>
-            <div class="item seleccion">8</div>
-            <div class="item seleccion">9</div>
-            <div class="item seleccion" alt="n">10</div>
+        <div class="img punto red colores" alt="d" value="d83535" letra="D">
+            D
         </div>
-        <div class="image">
+        <div class="img punto blue colores" alt="i" value="4b6af3" letra="I">
+            I
+        </div>
+    </div>
+    <div class="contenedor aleatorio">
+        <div class="item">
             <img src="<?= $dir ?>/img/1.png" alt="">
+            <div class="box lista imd" alt="I"></div>
+        </div>
+        <div class="item">
+            <img src="<?= $dir ?>/img/2.png" alt="">
+            <div class="box lista imd" alt="D"></div>
+        </div>
+        <div class="item">
+            <img src="<?= $dir ?>/img/1.png" alt="">
+            <div class="box lista imd" alt="I"></div>
+        </div>
+        <div class="item">
+            <img src="<?= $dir ?>/img/2.png" alt="">
+            <div class="box lista imd" alt="D"></div>
+        </div>
+        <div class="item">
+            <img src="<?= $dir ?>/img/1.png" alt="">
+            <div class="box lista imd" alt="I"></div>
+        </div>
+        <div class="item">
+            <img src="<?= $dir ?>/img/2.png" alt="">
+            <div class="box lista imd" alt="D"></div>
         </div>
     </div>
 </div>
@@ -49,7 +66,7 @@ function result_tipo_5_1_5() {
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
-    if (r == 2) {
+    if (r == 6) {
         console.log(r)
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);

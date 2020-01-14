@@ -8,37 +8,24 @@
 <?=$titulo?>
 <div class="container-two">
     <div class="pincel">
-        <div class="img punto red colores" alt="d" value="d83535" letra="D">
-            D
+        <div>
+            <img src="<?=$dir?>/img/2.png" class="img colores" alt="1" tamano="00001" value="120">
         </div>
-        <div class="img punto blue colores" alt="i" value="4b6af3" letra="I">
-            I
+        <div>
+            <img src="<?=$dir?>/img/3.png" class="img colores" alt="2" tamano="3" value="180">
         </div>
     </div>
-    <div class="contenedor aleatorio">
+    <div class="contenedor">
         <div class="item">
-            <img src="<?= $dir ?>/img/1.png" alt="">
-            <div class="box lista imd" alt="I"></div>
-        </div>
-        <div class="item">
-            <img src="<?= $dir ?>/img/2.png" alt="">
-            <div class="box lista imd" alt="D"></div>
-        </div>
-        <div class="item">
-            <img src="<?= $dir ?>/img/1.png" alt="">
-            <div class="box lista imd" alt="I"></div>
-        </div>
-        <div class="item">
-            <img src="<?= $dir ?>/img/2.png" alt="">
-            <div class="box lista imd" alt="D"></div>
-        </div>
-        <div class="item">
-            <img src="<?= $dir ?>/img/1.png" alt="">
-            <div class="box lista imd" alt="I"></div>
-        </div>
-        <div class="item">
-            <img src="<?= $dir ?>/img/2.png" alt="">
-            <div class="box lista imd" alt="D"></div>
+            <img src="<?= $dir ?>/img/1.png">
+            <div class="box lista imd" alt="2"></div>
+            <div class="box lista imd" alt="1"></div>
+            <div class="box lista imd" alt="2"></div>
+            <div class="box lista imd" alt="1"></div>
+            <span class="lineTest line1"></span>
+            <span class="lineTest line2"></span>
+            <span class="lineTest line3"></span>
+            <span class="lineTest line4"></span>
         </div>
     </div>
 </div>
@@ -66,13 +53,11 @@ function result_tipo_5_1_4() {
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
-    if (r == 6) {
-        console.log(r)
+    if (r == 4) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();
     } else {
-        console.log(r)
         incorrecto();
         localStorage.setItem("Nota<?=$cod?>", "0");
         localStorage.setItem("Time<?=$cod?>", tiempo);

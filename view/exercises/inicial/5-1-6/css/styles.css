@@ -1,89 +1,74 @@
-/* *TODO: Container */
-
 .container-two {
     margin: 0 auto;
     max-width: 1080px;
-    width: 90%;
-    height: 72%;
-    display: flex;
-    justify-content: center;
-    /* align-items: center; */
-    flex-direction: column;
-}   
-
-/* *TODO: Grid */
-
-.grid-container {
-    display: grid;
-    grid-template-columns: auto;
-}
-
-.grid-item, .grid-num {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 2px solid silver;
-    padding: 5px;
-    font-size: 28px;
-    text-align: center;
-    margin: .5vh;
-    width: auto;
-    height: 125px;
+    width: 50%;
+    height: 70%;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* transition: all .4s; */
-    cursor: pointer;
+    flex-direction: column;
 }
-
-.grid-num {
-    height: 40px;
-    border: none;
-    font-weight: bold;
-    color: tomato;
-}
-
-.grid-item:hover {
-    border-color: #37D3F7;
-    background: #B6ECFF;
-    box-shadow: grey 2px 3px 8px 0px;
-}
-
-/* *TODO: Imagen */
-
-.principal {
-    width: 100%;
-    height: auto;
-}
-
-.img {
-    width: auto;
-    height: 135px;
-}
-
-.img-a {
-    width: auto;
-    height: 44px;
-}
-
-/* *TODO: General */
-
-.text {
-    font-size: 2em;
-    font-weight: bold;
-}
-
-.s {
-    color: tomato;
-    font-size: 1em !important;
-    margin-right: 1vh;
-    margin-left: 1vh;
-    font-weight: bold;
-}
-
-
-.w {
-    width: 180px;
-}
-#sortable, .colo{
+.pincel{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    padding-bottom: 20px;
+    grid-column-gap: 20px;    
+}
+.pincel .grid{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+}
+.grid .item{
+    width: 50px;
+    height: 50px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    border: 2px solid rgb(0, 195, 255);
+    font-size: 30px;
+    margin: 10px;
+}
+.image{
+    width: 100%;
+}
+.image img{
+    width: 700px;
+}
+@media screen and (max-width: 1300px){
+    .container-two {
+        margin: 0 auto;
+        max-width: 1280px;
+        width: 70%;
+        height: 65%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .grid{
+        width: 100%;
+        margin: auto;
+    }
+    .grid .item{
+        margin: 4px;
+    }
+    .image {
+        width: 100%;
+        margin: auto;
+    }
+    .item img{
+        width: 500px;
+    }
+    .colores{
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        width: 60px;
+        height: 60px;
+        border: 1px solid #333;
+        border-radius: 100px;
+        color: #fff;
+        font-size: 40px;
+        font-weight: 700;
+    }
 }
