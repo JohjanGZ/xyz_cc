@@ -1,26 +1,26 @@
 <script type="text/javascript">
   
-   function Page_1(){
-        start_1();
+   function Page_4(){
+        start_4();
         inicio();
         count = 3;
     }
 
     var cant=1;
     var cal= 20/20;
-    var ruta="../../../../exercises/comunicacion/";
+    var ruta="../../../../exercises/inicial/";
     ////////////// 2do 
             // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
    
-    function start_1(){
-        $("#ventana").load(ruta+'5-0-1/index.php', 
+    function start_4(){
+        $("#ventana").load(ruta+'4-1-4/index.php', 
         {
-        next: "Page_2()", 
-        procesar:"result_tipo_5_0_1()",
-        titulo:"<center><h5><span>Ordena</span> los siguientes elementos de acuerdo a cómo suceden en el texto.</h5></center>",
-        restaurar:"start_1()",
+        next: "resultado()", 
+        procesar:"result_tipo_4_1_4()",
+        titulo:"<center><h5><span>Cuenta</span> las figuras geométricas y <span>selecciona</span> la cantidad que hay de cada una.</h5></center>",
+        restaurar:"start_4()",
         dir:ruta,
-        cod: "5-0-1",
+        cod: "4-1-4",
         nota:cal
         }
         );
