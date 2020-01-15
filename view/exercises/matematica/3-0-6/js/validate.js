@@ -19,7 +19,7 @@ $(".caja").droppable({
     drop: function(event, ui) {
         // $(this).css("background-color", "rgba(139, 195, 74, 0.14)");
         element2 = $(this).attr("alt");
-        elementid.css({"background-color":"transparent","border":"none"});
+        // elementid.css({"background-color":"transparent","border":"none"});
         if (element == element2) {
             r++;
         }

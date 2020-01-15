@@ -8,195 +8,28 @@
 
 </style>
 <?=$titulo?>
-<?php $num = array('8000','3000','1000','5000','7000','6000','400','900','100','200','600','300','800','80','20','30','40','60','50','10','2','1','5','8','4') ?>
+
 <body>
 
     <div class="container-two">
-        <div class="grid-head">
-            <div class="grid-item w um">UM</div>
-            <div class="grid-item w c">C</div>
-            <div class="grid-item w d">D</div>
-            <div class="grid-item w u">U</div>
-            <div class="grid-item clr">Lectura numérica</div>
-
-            <div class="grid-item w">1</div>
-            <div class="grid-item w">7</div>
-            <div class="grid-item w">5</div>
-            <div class="grid-item w">9</div>
-            <div class="grid-item"><span class="text">1 000 <span class="s">+</span> 700 <span class="s">+</span> 50 <span class="s">+</span> 9</span></div>
+        <div class="grid-options">
+            <div class="pieza" alt="pen">527<span>+</span>0<span>=</span>527</div>
+            <div class="pieza" alt="pa"><span>(</span>23<span>+</span>75<span>) +</span>538<span>=</span>527<span>+
+                    (</span>231<span>+</span>538<span>)</span></div>
+            <div class="pieza" alt="pc">627<span>+</span>418<span>=</span>418<span>+</span>627</div>
+            <div class="pieza" alt="pc">950<span>+</span>435<span>=</span>435<span>+</span>950</div>
+            <div class="pieza" alt="pa"><span>(</span>527<span>+</span>231<span>) +</span>538<span>=</span>527<span>+
+                    (</span>231<span>+</span>538<span>)</span></div>
         </div>
-        <div class="grid-container">
-            <div class="grid-caja">
-                <div class="grid-item w">3</div>
-                <div class="grid-item w">4</div>
-                <div class="grid-item w">8</div>
-                <div class="grid-item w">2</div>
-                <div class="grid-item">
-                    <select class="slc" alt="3000">
-                        <option value="" disabled selected></option>
-                        <?php
-                            for ($i=1; $i < count($num); $i++) { 
-                                echo "<option value='$num[$i]'>$num[$i]</option>";
-                            }
-                        ?>
-                    </select>
-                    <span class="s">+</span>
-                    <select class="slc" alt="400">
-                        <option value="" disabled selected></option>
-                        <?php
-                            for ($i=1; $i < 21; $i++) { 
-                                echo "<option value='$num[$i]'>$num[$i]</option>";
-                            }
-                        ?>
-                    </select>
-                    <span class="s">+</span>
-                    <select class="slc" alt="80">
-                        <option value="" disabled selected></option>
-                        <?php
-                            for ($i=1; $i < count($num); $i++) { 
-                                echo "<option value='$num[$i]'>$num[$i]</option>";
-                            }
-                        ?>
-                    </select>
-                    <span class="s">+</span>
-                    <select class="slc" alt="2">
-                        <option value="" disabled selected></option>
-                        <?php
-                            for ($i=1; $i < count($num); $i++) { 
-                                echo "<option value='$num[$i]'>$num[$i]</option>";
-                            }
-                        ?>
-                    </select>
-                </div>
+        <div class="grid-contenedor">
+            <div class="contenedor" alt="pa">
+                <span>Propiedad asociativa</span>
             </div>
-            <div class="grid-caja">
-                <div class="grid-item w">7</div>
-                <div class="grid-item w">9</div>
-                <div class="grid-item w">3</div>
-                <div class="grid-item w">5</div>
-                <div class="grid-item">
-                    <select class="slc" alt="7000">
-                        <option value="" disabled selected></option>
-                        <?php
-                            for ($i=1; $i < count($num); $i++) { 
-                                echo "<option value='$num[$i]'>$num[$i]</option>";
-                            }
-                        ?>
-                    </select>
-                    <span class="s">+</span>
-                    <select class="slc" alt="900">
-                        <option value="" disabled selected></option>
-                        <?php
-                            for ($i=1; $i < count($num); $i++) { 
-                                echo "<option value='$num[$i]'>$num[$i]</option>";
-                            }
-                        ?>
-                    </select>
-                    <span class="s">+</span>
-                    <select class="slc" alt="30">
-                        <option value="" disabled selected></option>
-                        <?php
-                            for ($i=1; $i < count($num); $i++) { 
-                                echo "<option value='$num[$i]'>$num[$i]</option>";
-                            }
-                        ?>
-                    </select>
-                    <span class="s">+</span>
-                    <select class="slc" alt="5">
-                        <option value="" disabled selected></option>
-                        <?php
-                            for ($i=1; $i < count($num); $i++) { 
-                                echo "<option value='$num[$i]'>$num[$i]</option>";
-                            }
-                        ?>
-                    </select>
-                </div>
+            <div class="contenedor" alt="pc">
+                <span>Propiedad conmutativa</span>
             </div>
-            <div class="grid-caja">
-                <div class="grid-item w">5</div>
-                <div class="grid-item w">3</div>
-                <div class="grid-item w">6</div>
-                <div class="grid-item w">8</div>
-                <div class="grid-item">
-                    <select class="slc" alt="5000">
-                        <option value="" disabled selected></option>
-                        <?php
-                            for ($i=1; $i < count($num); $i++) { 
-                                echo "<option value='$num[$i]'>$num[$i]</option>";
-                            }
-                        ?>
-                    </select>
-                    <span class="s">+</span>
-                    <select class="slc" alt="300">
-                        <option value="" disabled selected></option>
-                        <?php
-                            for ($i=1; $i < count($num); $i++) { 
-                                echo "<option value='$num[$i]'>$num[$i]</option>";
-                            }
-                        ?>
-                    </select>
-                    <span class="s">+</span>
-                    <select class="slc" alt="60">
-                        <option value="" disabled selected></option>
-                        <?php
-                            for ($i=1; $i < count($num); $i++) { 
-                                echo "<option value='$num[$i]'>$num[$i]</option>";
-                            }
-                        ?>
-                    </select>
-                    <span class="s">+</span>
-                    <select class="slc" alt="8">
-                        <option value="" disabled selected></option>
-                        <?php
-                            for ($i=1; $i < count($num); $i++) { 
-                                echo "<option value='$num[$i]'>$num[$i]</option>";
-                            }
-                        ?>
-                    </select>
-                </div>
-            </div>
-            <div class="grid-caja">
-                <div class="grid-item w">6</div>
-                <div class="grid-item w">8</div>
-                <div class="grid-item w">1</div>
-                <div class="grid-item w">5</div>
-                <div class="grid-item">
-                    <select class="slc" alt="6000">
-                        <option value="" disabled selected></option>
-                        <?php
-                            for ($i=1; $i < count($num); $i++) { 
-                                echo "<option value='$num[$i]'>$num[$i]</option>";
-                            }
-                        ?>
-                    </select>
-                    <span class="s">+</span>
-                    <select class="slc" alt="800">
-                        <option value="" disabled selected></option>
-                        <?php
-                            for ($i=1; $i < count($num); $i++) { 
-                                echo "<option value='$num[$i]'>$num[$i]</option>";
-                            }
-                        ?>
-                    </select>
-                    <span class="s">+</span>
-                    <select class="slc" alt="10">
-                        <option value="" disabled selected></option>
-                        <?php
-                            for ($i=1; $i < count($num); $i++) { 
-                                echo "<option value='$num[$i]'>$num[$i]</option>";
-                            }
-                        ?>
-                    </select>
-                    <span class="s">+</span>
-                    <select class="slc" alt="5">
-                        <option value="" disabled selected></option>
-                        <?php
-                            for ($i=1; $i < count($num); $i++) { 
-                                echo "<option value='$num[$i]'>$num[$i]</option>";
-                            }
-                        ?>
-                    </select>
-                </div>
+            <div class="contenedor" alt="pen">
+                <span>Propiedad del elemento neutro</span>
             </div>
         </div>
     </div>
@@ -223,13 +56,12 @@ $("#next").attr("onclick", "<?=$next?>");
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
 // Validar
-function result_tipo_3_1_7() {
+function result_tipo_3_2_14() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
-
-    if (r == 16) {
+    if (r == 5) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();

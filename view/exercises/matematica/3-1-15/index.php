@@ -5,149 +5,27 @@
     <link rel="stylesheet" type="text/css" href="<?= $dir ?>/css/styles.css">
 </head>
 <?=$titulo?>
-<?php 
-$opciones  = array('5 470','5 480');
-$opciones1 = array('2 640','2 650');
-$opciones2 = array('6 160','6 170');
-$opciones3 = array('5 760','5 770');
-$opciones4 = array('2 820','2 830');
-$opciones5 = array('1 530','1 540');
-?>
 <div class="container-two">
-    <div class="grid-preguntas">
-        <!-- 1 -->
-        <div class="grid-container">
-            <span class="text"><span class="s">•</span>5 478</span>
+    <div class="row">
+        <div class="col l4">
             <div class="grid-option">
-                <?php for ($i=0; $i < count($opciones); $i++) { 
-                    if ($i == 1 ) {   
-                ?>
-                <div class="grid-item" alt="n">
-                    <div class="mes">
-                        <span><?=$opciones[$i]?></span>
-                    </div>
-                </div>
-                <?php } else { ?>
-                <div class="grid-item" alt="">
-                    <div class="mes">
-                        <span><?=$opciones[$i]?></span>
-                    </div>
-                </div>
-                <?php } 
-                }  ?>
+                <div class="pieza" alt="70">70</div>
+                <div class="pieza" alt="700">700</div>
+                <div class="pieza" alt="7000">7 000</div>
+                <div class="pieza" alt="700">700</div>
             </div>
         </div>
-        <!-- 2 -->
-        <div class="grid-container">
-            <span class="text"><span class="s">•</span>2 649</span>
-            <div class="grid-option">
-                <?php for ($i=0; $i < count($opciones1); $i++) { 
-                    if ($i == 1 ) {   
-                ?>
-                <div class="grid-item" alt="n">
-                    <div class="mes">
-                        <span><?=$opciones1[$i]?></span>
-                    </div>
-                </div>
-                <?php } else { ?>
-                <div class="grid-item" alt="">
-                    <div class="mes">
-                        <span><?=$opciones1[$i]?></span>
-                    </div>
-                </div>
-                <?php } 
-                }  ?>
-            </div>
-        </div>
-        <!-- 3 -->
-        <div class="grid-container">
-            <span class="text"><span class="s">•</span>6 165</span>
-            <div class="grid-option">
-                <?php for ($i=0; $i < count($opciones2); $i++) { 
-                    if ($i == 1 ) {   
-                ?>
-                <div class="grid-item" alt="n">
-                    <div class="mes">
-                        <span><?=$opciones2[$i]?></span>
-                    </div>
-                </div>
-                <?php } else { ?>
-                <div class="grid-item" alt="">
-                    <div class="mes">
-                        <span><?=$opciones2[$i]?></span>
-                    </div>
-                </div>
-                <?php } 
-                }  ?>
-            </div>
-        </div>
-        <!-- 4 -->
-        <div class="grid-container">
-            <span class="text"><span class="s">•</span>5 768</span>
-            <div class="grid-option">
-                <?php for ($i=0; $i < count($opciones3); $i++) { 
-                    if ($i == 1 ) {   
-                ?>
-                <div class="grid-item" alt="n">
-                    <div class="mes">
-                        <span><?=$opciones3[$i]?></span>
-                    </div>
-                </div>
-                <?php } else { ?>
-                <div class="grid-item" alt="">
-                    <div class="mes">
-                        <span><?=$opciones3[$i]?></span>
-                    </div>
-                </div>
-                <?php } 
-                }  ?>
-            </div>
-        </div>
-        <!-- 5 -->
-        <div class="grid-container">
-            <span class="text"><span class="s">•</span>2 827</span>
-            <div class="grid-option">
-                <?php for ($i=0; $i < count($opciones4); $i++) { 
-                    if ($i == 1 ) {   
-                ?>
-                <div class="grid-item" alt="n">
-                    <div class="mes">
-                        <span><?=$opciones4[$i]?></span>
-                    </div>
-                </div>
-                <?php } else { ?>
-                <div class="grid-item" alt="">
-                    <div class="mes">
-                        <span><?=$opciones4[$i]?></span>
-                    </div>
-                </div>
-                <?php } 
-                }  ?>
-            </div>
-        </div>
-        <!-- 6 -->
-        <div class="grid-container">
-            <span class="text"><span class="s">•</span>1 537</span>
-            <div class="grid-option">
-                <?php for ($i=0; $i < count($opciones5); $i++) { 
-                    if ($i == 1 ) {   
-                ?>
-                <div class="grid-item" alt="n">
-                    <div class="mes">
-                        <span><?=$opciones5[$i]?></span>
-                    </div>
-                </div>
-                <?php } else { ?>
-                <div class="grid-item" alt="">
-                    <div class="mes">
-                        <span><?=$opciones5[$i]?></span>
-                    </div>
-                </div>
-                <?php } 
-                }  ?>
+        <div class="col l8">
+            <div class="contenedor-img">
+                <img src="<?=$dir?>/img/principal.png" class="principal">
+                <div class="contenedor p1" alt="70"></div>
+                <div class="contenedor p2" alt="700"></div>
+                <div class="contenedor p3" alt="700"></div>
+                <div class="contenedor p4" alt="7000"></div>
             </div>
         </div>
     </div>
+
 </div>
 <div id="modal1" class="modal">
     <div class="modal-content">
@@ -169,13 +47,13 @@ $("#next").attr("onclick", "<?=$next?>");
 <script type="text/javascript">
 // Formulario - Registrados
 
-function result_tipo_3_1_15() {
+function result_tipo_3_4_6() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
-    if (r == 6) {
+    if (r == 4) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();

@@ -5,53 +5,28 @@
     <link rel="stylesheet" type="text/css" href="<?= $dir ?>/css/styles.css">
 </head>
 <?=$titulo?>
-<?php $opciones = array('sumar 5','sumar 3','restar 3') ?>
 <div class="container-two">
-    <div class="grid-random">
-        <div class="grid-preguntas">
-            <center>
-                <img src="<?=$dir?>/img/1.png" class="img">
-            </center>
-            <div class="grid-container">
-                <?php for ($i=0; $i < count($opciones); $i++) { 
-                if ($i == 1 ) {   
-            ?>
-                <div class="grid-item" alt="n">
-                    <div class="mes">
-                        <span><?= $opciones[$i] ?></span>
-                    </div>
-                </div>
-                <?php } else { ?>
-                <div class="grid-item" alt="">
-                    <div class="mes">
-                        <span><?= $opciones[$i] ?></span>
-                    </div>
-                </div>
-                <?php } 
-            }  ?>
-            </div>
+    <div class="row">
+        <div class="col l5">
+            <img src="<?=$dir?>/img/principal.png" class="principal materialboxed">
         </div>
-        <div class="grid-preguntas">
-            <center>
-                <img src="<?=$dir?>/img/2.png" class="img">
-            </center>
+        <div class="col l7">
+            <p class="pregunta"><span>•</span> Sandra compró una bolsa con 90 paletas de caramelo. Luego formó bolsitas
+                con 8 paletas de
+                caramelos cada una. ¿Cuántas bolsas formó?¿Cuántas paletas sobraron? </p>
             <div class="grid-container">
-                <?php for ($i=0; $i < count($opciones); $i++) { 
-                if ($i == 0 ) {   
-            ?>
-                <div class="grid-item" alt="n">
-                    <div class="mes">
-                        <span><?= $opciones[$i] ?></span>
-                    </div>
+                <div class="seleccion" alt="n">
+                    Formó 11 bolsas y le sobraron 2 paletas.
                 </div>
-                <?php } else { ?>
-                <div class="grid-item" alt="">
-                    <div class="mes">
-                        <span><?= $opciones[$i] ?></span>
-                    </div>
+                <div class="seleccion">
+                    Formó 16 bolsas y no le sobraron paletas.
                 </div>
-                <?php } 
-            }  ?>
+                <div class="seleccion">
+                    Formó 10 bolsas y le sobraron 3 paletas.
+                </div>
+                <div class="seleccion">
+                    Formó 12 bolsas y le sobra 1 paleta.
+                </div>
             </div>
         </div>
     </div>
@@ -76,13 +51,13 @@ $("#next").attr("onclick", "<?=$next?>");
 <script type="text/javascript">
 // Formulario - Registrados
 
-function result_tipo_3_1_24() {
+function result_tipo_3_4_17() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
-    if (r == 2) {
+    if (r == 1) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();
@@ -94,4 +69,3 @@ function result_tipo_3_1_24() {
 
 }
 </script>
-<script type="text/javascript" src="../../../exercises/comunicacion/1-0-9/js/validate.js"></script>

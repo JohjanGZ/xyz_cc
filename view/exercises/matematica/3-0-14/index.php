@@ -8,42 +8,19 @@
 <?php $opciones = array('vacío','unitario','finito','infinito') ?>
 <div class="container-two">
     <div class="grid-preguntas">
-        <p class="text"><span class="pto">•</span>El conjunto formado por la capital del Perú es:</p>
         <div class="grid-container">
-            <?php for ($i=0; $i < count($opciones); $i++) { 
-            if ($i == 1 ) {   
+            <?php for ($i=1; $i < 4; $i++) { 
+            if ($i == 3 ) {   
         ?>
             <div class="grid-item" alt="n">
                 <div class="mes">
-                    <span><?=$opciones[$i]?></span>
+                    <img src="<?=$dir?>/img/<?=$i?>.png" class="img">
                 </div>
             </div>
             <?php } else { ?>
             <div class="grid-item" alt="">
                 <div class="mes">
-                    <span><?=$opciones[$i]?></span>
-                </div>
-            </div>
-            <?php } 
-        }  ?>
-        </div>
-    </div>
-
-    <div class="grid-preguntas">
-        <p class="text"><span class="pto">•</span>El conjunto formado por todos los continentes es:</p>
-        <div class="grid-container">
-            <?php for ($i=0; $i < count($opciones); $i++) { 
-            if ($i == 2 ) {   
-        ?>
-            <div class="grid-item" alt="n">
-                <div class="mes">
-                    <span><?=$opciones[$i]?></span>
-                </div>
-            </div>
-            <?php } else { ?>
-            <div class="grid-item" alt="">
-                <div class="mes">
-                    <span><?=$opciones[$i]?></span>
+                    <img src="<?=$dir?>/img/<?=$i?>.png" class="img">
                 </div>
             </div>
             <?php } 
@@ -77,7 +54,7 @@ function result_tipo_3_0_14() {
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
-    if (r == 2) {
+    if (r == 1) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();

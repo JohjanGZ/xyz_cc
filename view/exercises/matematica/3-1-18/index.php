@@ -12,151 +12,91 @@
 <body>
     <div class="container-two">
         <div class="grid-tabla">
-            <!-- 1 -->
             <div class="grid-container">
                 <div class="grid-num bb">
-                    <div class="grid-item">5</div>
-                    <div class="grid-item">3</div>
-                    <div class="grid-item">5</div>
-                    <div class="grid-item">8<span class="ms">+</span></div>
-
-                    <div class="grid-item">3</div>
-                    <div class="grid-item">2</div>
-                    <div class="grid-item">7</div>
+                    <span class="ms">x</span>
                     <div class="grid-item">6</div>
-                </div>
-                <div class="grid-item">
-                    <select class="slc" alt="8">
-                        <option value="" disabled selected></option>
-                        <?php
-                            for ($i=0; $i < 10; $i++) { 
-                                echo "<option value='$i'>$i</option>";
-                            }
-                        ?>
-                    </select>
-                    <select class="slc" alt="6">
-                        <option value="" disabled selected></option>
-                        <?php
-                            for ($i=0; $i < 10; $i++) { 
-                                echo "<option value='$i'>$i</option>";
-                            }
-                        ?>
-                    </select>
-                    <select class="slc" alt="3">
-                        <option value="" disabled selected></option>
-                        <?php
-                            for ($i=0; $i < 10; $i++) { 
-                                echo "<option value='$i'>$i</option>";
-                            }
-                        ?>
-                    </select>
-                    <select class="slc" alt="4">
-                        <option value="" disabled selected></option>
-                        <?php
-                            for ($i=0; $i < 10; $i++) { 
-                                echo "<option value='$i'>$i</option>";
-                            }
-                        ?>
-                    </select>
-                </div>
-            </div>
-            <!-- 2 -->
-            <div class="grid-container">
-                <div class="grid-num bb">
-                    <div class="grid-item">4</div>
-                    <div class="grid-item">2</div>
-                    <div class="grid-item">1</div>
-                    <div class="grid-item">9<span class="ms">+</span></div>
-
-                    <div class="grid-item">3</div>
-                    <div class="grid-item">5</div>
                     <div class="grid-item">0</div>
-                    <div class="grid-item">4</div>
+                    <div class="grid-item">0</div>
+                    <div class="grid-item">0</div>
+
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item">3</div>
                 </div>
                 <div class="grid-item">
-                    <select class="slc" alt="7">
-                        <option value="" disabled selected></option>
-                        <?php
-                            for ($i=0; $i < 10; $i++) { 
-                                echo "<option value='$i'>$i</option>";
-                            }
-                        ?>
-                    </select>
-                    <select class="slc" alt="7">
-                        <option value="" disabled selected></option>
-                        <?php
-                            for ($i=0; $i < 10; $i++) { 
-                                echo "<option value='$i'>$i</option>";
-                            }
-                        ?>
-                    </select>
-                    <select class="slc" alt="2">
-                        <option value="" disabled selected></option>
-                        <?php
-                            for ($i=0; $i < 10; $i++) { 
-                                echo "<option value='$i'>$i</option>";
-                            }
-                        ?>
-                    </select>
-                    <select class="slc" alt="3">
-                        <option value="" disabled selected></option>
-                        <?php
-                            for ($i=0; $i < 10; $i++) { 
-                                echo "<option value='$i'>$i</option>";
-                            }
-                        ?>
-                    </select>
+                    <div class="total" alt="1"></div>
+                    <div class="total" alt="8"></div>
+                    <div class="total" alt="0"></div>
+                    <div class="total" alt="0"></div>
+                    <div class="total" alt="0"></div>
                 </div>
             </div>
-            <!-- 3 -->
+
             <div class="grid-container">
                 <div class="grid-num bb">
-                    <div class="grid-item">5</div>
-                    <div class="grid-item">1</div>
-                    <div class="grid-item">3</div>
-                    <div class="grid-item">7<span class="ms">+</span></div>
-
-                    <div class="grid-item">3</div>
+                    <span class="ms">x</span>
                     <div class="grid-item">9</div>
+                    <div class="grid-item">0</div>
+                    <div class="grid-item">0</div>
+                    <div class="grid-item">0</div>
+
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
                     <div class="grid-item">3</div>
-                    <div class="grid-item">7</div>
                 </div>
                 <div class="grid-item">
-                    <select class="slc" alt="9">
-                        <option value="" disabled selected></option>
-                        <?php
-                            for ($i=0; $i < 10; $i++) { 
-                                echo "<option value='$i'>$i</option>";
-                            }
-                        ?>
-                    </select>
-                    <select class="slc" alt="0">
-                        <option value="" disabled selected></option>
-                        <?php
-                            for ($i=0; $i < 10; $i++) { 
-                                echo "<option value='$i'>$i</option>";
-                            }
-                        ?>
-                    </select>
-                    <select class="slc" alt="7">
-                        <option value="" disabled selected></option>
-                        <?php
-                            for ($i=0; $i < 10; $i++) { 
-                                echo "<option value='$i'>$i</option>";
-                            }
-                        ?>
-                    </select>
-                    <select class="slc" alt="4">
-                        <option value="" disabled selected></option>
-                        <?php
-                            for ($i=0; $i < 10; $i++) { 
-                                echo "<option value='$i'>$i</option>";
-                            }
-                        ?>
-                    </select>
+                    <div class="total" alt="2"></div>
+                    <div class="total" alt="7"></div>
+                    <div class="total" alt="0"></div>
+                    <div class="total" alt="0"></div>
+                    <div class="total" alt="0"></div>
+                </div>
+            </div>
+
+            <div class="grid-container">
+                <div class="grid-num bb">
+                    <span class="ms">x</span>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item">2</div>
+
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item">8</div>
+                    <div class="grid-item">0</div>
+                </div>
+                <div class="grid-item">
+                    <div class="total" alt="1"></div>
+                    <div class="total" alt="6"></div>
+                    <div class="total" alt="0"></div>
+                </div>
+            </div>
+
+            <div class="grid-container">
+                <div class="grid-num bb">
+                    <span class="ms">x</span>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item">5</div>
+
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item">2</div>
+                    <div class="grid-item">0</div>
+                </div>
+                <div class="grid-item">
+                    <div class="total" alt="1"></div>
+                    <div class="total" alt="0"></div>
+                    <div class="total" alt="0"></div>
                 </div>
             </div>
         </div>
+        <div id="numeros"></div>
     </div>
     <!-- Respuesta -->
     <div id="modal1" class="modal">
@@ -180,13 +120,13 @@ $("#next").attr("onclick", "<?=$next?>");
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
 // Validar
-function result_tipo_3_1_18() {
+function result_tipo_3_4_9() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
-    if (r == 12) {
+    if (r == 16) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();
@@ -196,6 +136,5 @@ function result_tipo_3_1_18() {
         localStorage.setItem("Nota<?=$cod?>", "0");
         localStorage.setItem("Time<?=$cod?>", tiempo);
     }
-
 }
 </script>

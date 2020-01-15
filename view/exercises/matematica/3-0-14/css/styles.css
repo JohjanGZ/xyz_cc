@@ -22,7 +22,7 @@
     font-size: 28px;
     text-align: center;
     margin: .5vh;
-    width: 270px;
+    width: 360px;
     height: auto;
     display: flex;
     align-items: center;
@@ -30,12 +30,12 @@
     transition: all .4s;
     cursor: pointer;
 }
-@media (min-width: 1920px) {
+/* @media (min-width: 1920px) {
     .grid-item {
         width: 300px;
         height: auto;
     }
-}
+} */
 .grid-item:hover {
     border-color: #37D3F7;
     background: #B6ECFF;
@@ -45,13 +45,13 @@
 
 .img {
     width: auto;
-    height: 176px;
+    height: 220px;
 }
-@media (min-width: 1920px) {
+/* @media (min-width: 1920px) {
     .img {
-        width: 275px;
+        height: 220px;
     }
-}
+} */
 
 .mes {
     /* background: orange; */

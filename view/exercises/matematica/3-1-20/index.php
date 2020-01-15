@@ -8,64 +8,58 @@
 
 </style>
 <?=$titulo?>
-<?php $numero = array('575','345','140','41','91','22','30','53','230','90','205','49','114','19','61') ?>
 
 <body>
-
     <div class="container-two">
-        <div class="row">
-            <div class="col s4">
-                <div class="pregunta">
-                    <div class="grid-options">
-                        <?php for ($i=0; $i < count($numero); $i++) { ?>
-                        <div class="grid-option pieza" alt="<?=$numero[$i]?>">
-                            <?=$numero[$i]?>
-                        </div>
-                        <?php } ?>
-                    </div>
+        <div class="grid-tabla">
+            <div class="grid-container">
+                <div class="grid-num">
+                    <div class="text"><span class="ms">•</span>División:</div>
+                    <div class="text">27 <span class="ms">÷</span> 3 <span class="ms">=</span> 9</div>
+                    <div class="text"><span class="ms">•</span>Comprueba:</div>
+                </div>
+                <div class="grid-item">
+                    <div class="total" alt="9"></div>
+                    <span class="ms">x</span>
+                    <div class="total" alt="3"></div>
+                    <span class="ms">=</span>
+                    <div class="total" alt="2"></div>
+                    <div class="total" alt="7"></div>
                 </div>
             </div>
-            <div class="col s8">
-                <div class="respuesta">
-                    <div class="Grid">
-                        <div class="Grid-cell caja" alt="575"></div>
-                    </div>
-                    <div class="Grid">
-                        <div class="Grid-cell caja" alt="230"></div>
-                        <div class="Grid-cell caja" alt="345"></div>
-                    </div>
-                    <div class="Grid">
-                        <div class="Grid-cell caja" alt="90"></div>
-                        <div class="Grid-cell caja" alt="140"></div>
-                        <div class="Grid-cell caja" alt="205"></div>
-                    </div>
-                    <div class="Grid">
-                        <div class="Grid-cell caja" alt="41"></div>
-                        <div class="Grid-cell caja" alt="49"></div>
-                        <div class="Grid-cell caja" alt="91"></div>
-                        <div class="Grid-cell caja" alt="114"></div>
-                    </div>
-                    <div class="Grid">
-                        <div class="Grid-cell caja" alt="22"></div>
-                        <div class="Grid-cell caja" alt="19"></div>
-                        <div class="Grid-cell caja" alt="30"></div>
-                        <div class="Grid-cell caja" alt="61"></div>
-                        <div class="Grid-cell caja" alt="53"></div>
-                    </div>
-
-                    <div class="Grid">
-                        <div class="Grid-cell">12</div>
-                        <div class="Grid-cell">10</div>
-                        <div class="Grid-cell">9</div>
-                        <div class="Grid-cell">21</div>
-                        <div class="Grid-cell">40</div>
-                        <div class="Grid-cell">13</div>
-                    </div>
+            <div class="grid-container">
+                <div class="grid-num">
+                    <div class="text"><span class="ms">•</span>División:</div>
+                    <div class="text">24 <span class="ms">÷</span> 6 <span class="ms">=</span> 4</div>
+                    <div class="text"><span class="ms">•</span>Comprueba:</div>
+                </div>
+                <div class="grid-item">
+                    <div class="total" alt="6"></div>
+                    <span class="ms">x</span>
+                    <div class="total" alt="4"></div>
+                    <span class="ms">=</span>
+                    <div class="total" alt="2"></div>
+                    <div class="total" alt="4"></div>
+                </div>
+            </div>
+            <div class="grid-container">
+                <div class="grid-num">
+                    <div class="text"><span class="ms">•</span>División:</div>
+                    <div class="text">18 <span class="ms">÷</span> 3 <span class="ms">=</span> 6</div>
+                    <div class="text"><span class="ms">•</span>Comprueba:</div>
+                </div>
+                <div class="grid-item">
+                    <div class="total" alt="6"></div>
+                    <span class="ms">x</span>
+                    <div class="total" alt="3"></div>
+                    <span class="ms">=</span>
+                    <div class="total" alt="1"></div>
+                    <div class="total" alt="8"></div>
                 </div>
             </div>
         </div>
+        <div id="numeros"></div>
     </div>
-
     <!-- Respuesta -->
     <div id="modal1" class="modal">
         <div class="modal-content">
@@ -88,21 +82,21 @@ $("#next").attr("onclick", "<?=$next?>");
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
 // Validar
-function result_tipo_3_1_20() {
+function result_tipo_3_4_11() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
-    if (r == 15) {
+    if (r == 12) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();
     } else {
         incorrecto();
+        console.log(r);
         localStorage.setItem("Nota<?=$cod?>", "0");
         localStorage.setItem("Time<?=$cod?>", tiempo);
     }
-
 }
 </script>

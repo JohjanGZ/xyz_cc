@@ -11,104 +11,87 @@
 
 <body>
     <div class="container-two">
-        <div class="row">
-            <div class="col m5">
-                <center>
-                    <div class="grid-img">
-                        <img src="<?=$dir?>/img/principal.png" class="img materialboxed">
-                        <img src="<?=$dir?>/img/1.png" class="img-c materialboxed">
-                    </div>
-                </center>
+        <div class="grid-tabla">
+            <div class="grid-container">
+                <div class="grid-num">
+                    <div class="text"><span class="ms">•</span>División:</div>
+                    <div class="text">29 <span class="ms">÷</span>9</div>
+                    <div class="text"><span class="ms">•</span>Comprueba:</div>
+                </div>
+                <div class="grid-item">
+                    <div class="total" alt="9"></div>
+                    <span class="ms">x</span>
+                    <div class="total" alt="3"></div>
+                    <span class="ms">+</span>
+                    <div class="total" alt="2"></div>
+                    <span class="ms">=</span>
+                    <div class="total" alt="2"></div>
+                    <div class="total" alt="9"></div>
+                </div>
+                <div class="grid-item">
+                    <div class="total" alt="2"></div>
+                    <div class="total" alt="7"></div>
+                    <span class="ms">+</span>
+                    <div class="total" alt="2"></div>
+                    <span class="ms">=</span>
+                    <div class="total" alt="2"></div>
+                    <div class="total" alt="9"></div>
+                </div>
             </div>
-            <div class="col m7">
-                <div class="grid-container">
-                    <div class="grid-barras">
-                        <div class="grid-item tt"><span></span>Postre preferido</div>
-                    </div>
-
-                    <div class="grid-barras">
-                        <div class="grid-item">
-                            Pie de limón
-                        </div>
-                        <div class="grid-item">
-                            <select class="slc" alt="5">
-                                <option value="" disabled selected></option>
-                                <?php
-                                    for ($i=1; $i < 101; $i++) { 
-                                        echo "<option value='$i'>$i</option>";
-                                    }
-                                ?>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="grid-barras">
-                        <div class="grid-item">
-                            Mazamorra
-                        </div>
-                        <div class="grid-item">
-                            <select class="slc" alt="3">
-                                <option value="" disabled selected></option>
-                                <?php
-                                    for ($i=1; $i < 101; $i++) { 
-                                        echo "<option value='$i'>$i</option>";
-                                    }
-                                ?>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="grid-barras">
-                        <div class="grid-item">
-                            Suspiro a la limeña
-                        </div>
-                        <div class="grid-item">
-                            <select class="slc" alt="12">
-                                <option value="" disabled selected></option>
-                                <?php
-                                    for ($i=1; $i < 101; $i++) { 
-                                        echo "<option value='$i'>$i</option>";
-                                    }
-                                ?>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="grid-barras">
-                        <div class="grid-item">
-                            Arroz con leche
-                        </div>
-                        <div class="grid-item">
-                            <select class="slc" alt="8">
-                                <option value="" disabled selected></option>
-                                <?php
-                                    for ($i=1; $i < 101; $i++) { 
-                                        echo "<option value='$i'>$i</option>";
-                                    }
-                                ?>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="grid-barras">
-                        <div class="grid-item">
-                            Total
-                        </div>
-                        <div class="grid-item">
-                            <select class="slc" alt="28">
-                                <option value="" disabled selected></option>
-                                <?php
-                                    for ($i=1; $i < 101; $i++) { 
-                                        echo "<option value='$i'>$i</option>";
-                                    }
-                                ?>
-                            </select>
-                        </div>
-                    </div>
-
+            <div class="grid-container">
+                <div class="grid-num">
+                    <div class="text"><span class="ms">•</span>División:</div>
+                    <div class="text">33 <span class="ms">÷</span>6</div>
+                    <div class="text"><span class="ms">•</span>Comprueba:</div>
+                </div>
+                <div class="grid-item">
+                    <div class="total" alt="6"></div>
+                    <span class="ms">x</span>
+                    <div class="total" alt="5"></div>
+                    <span class="ms">+</span>
+                    <div class="total" alt="3"></div>
+                    <span class="ms">=</span>
+                    <div class="total" alt="3"></div>
+                    <div class="total" alt="3"></div>
+                </div>
+                <div class="grid-item">
+                    <div class="total" alt="3"></div>
+                    <div class="total" alt="0"></div>
+                    <span class="ms">+</span>
+                    <div class="total" alt="3"></div>
+                    <span class="ms">=</span>
+                    <div class="total" alt="3"></div>
+                    <div class="total" alt="3"></div>
+                </div>
+            </div>
+            <div class="grid-container">
+                <div class="grid-num">
+                    <div class="text"><span class="ms">•</span>División:</div>
+                    <div class="text">26 <span class="ms">÷</span>4</div>
+                    <div class="text"><span class="ms">•</span>Comprueba:</div>
+                </div>
+                <div class="grid-item">
+                    <div class="total" alt="6"></div>
+                    <span class="ms">x</span>
+                    <div class="total" alt="4"></div>
+                    <span class="ms">+</span>
+                    <div class="total" alt="2"></div>
+                    <span class="ms">=</span>
+                    <div class="total" alt="2"></div>
+                    <div class="total" alt="6"></div>
+                </div>
+                <div class="grid-item">
+                    <div class="total" alt="2"></div>
+                    <div class="total" alt="4"></div>
+                    <span class="ms">+</span>
+                    <div class="total" alt="2"></div>
+                    <span class="ms">=</span>
+                    <div class="total" alt="2"></div>
+                    <div class="total" alt="6"></div>
                 </div>
             </div>
         </div>
+        <div id="numeros"></div>
     </div>
     <!-- Respuesta -->
     <div id="modal1" class="modal">
@@ -126,27 +109,27 @@
 
 
 <script src="../../../../../js/core.js"></script>
-<?php require('../../../tools/botones/botones.php');?><script>
+<?php require('../../../tools/botones/botones.php');?> <script>
 $("#next").attr("onclick", "<?=$next?>");
 </script>
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
 // Validar
-function result_tipo_3_1_21() {
+function result_tipo_3_4_12() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
-    if (r == 5) {
+    if (r == 30) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();
     } else {
         incorrecto();
+        console.log(r);
         localStorage.setItem("Nota<?=$cod?>", "0");
         localStorage.setItem("Time<?=$cod?>", tiempo);
     }
-
 }
 </script>

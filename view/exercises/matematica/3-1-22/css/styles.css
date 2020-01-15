@@ -20,72 +20,53 @@
     width: 0px;
 }
 
-.row {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .grid-container {
     display: grid;
-    grid-template-columns: auto;
-    width: 100%;
-    justify-content: center;
-    margin-top: 6vh;
-}
-
-.grid-barras {
-    display: grid;
     grid-template-columns: auto auto;
+    padding: 10px;
     width: 100%;
-    position: relative;
 }
-
 .grid-item {
-    border: 1px solid rgb(255, 102, 51);
     padding: 6px;
     text-align: center;
     display: flex;
-    font-size: 24px;
+    font-size: 18px;
     align-items: center;
     justify-content: center;
-    width: 250px;
+    margin: 0.5vh;
+}
+.mult .grid-item {
+    border: 1px solid rgb(255, 102, 102);
+}
+.divi .grid-item {
+    border: 1px solid rgb(204, 102, 153);
+}
+.mult .grid-item.tt {
+    background-color:rgb(255, 102, 102);
+    color: #fff;
+}
+.divi .grid-item.tt {
+    background-color:rgb(204, 102, 153);
+    color: #fff;
 }
 
-.tt {
-    background-color: rgb(255, 102, 51);
-    border-color: rgb(255, 102, 51);
-    font-weight: bold;
-    position: absolute;
-    top: -50px;
-    width: 100%;
-    color: #fff;
+.grid-item span {
+    color: red;
+    margin-right: 1vh;
+    margin-left: 1vh;
+}
+.row {
+    display: flex;
+    align-items: center;
 }
 
 .bn {
     border: none;
 }
-
 .img {
-    height: auto;
-    width: 300px;
-    margin-left: 1vh;
-    background: #fff;
-}
-
-.grid-img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.img-c {
+    height: 60px;
     width: auto;
-    height: 200px;
-}
-@media (min-width: 1920px) {
-    .img {
-        width: 400px;
-    }
+    margin-left: 1vh;
 }
 
 /* Select */
@@ -93,9 +74,9 @@
 .select-wrapper input.select-dropdown {
     border: 1px solid silver;
     width: 90px;
-    margin: 0;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 20px;
+    margin: 0 0 0 0;
 }
 
 .select-wrapper input.select-dropdown:focus {
@@ -103,10 +84,11 @@
 }
 
 .select-wrapper ul {
-    height: 300px;
+    height: 200px;
 }
 
-.select-wrapper {
+.grande .select-wrapper {
+    width: 100%;
     position: relative;
     margin-left: .5vh;
     margin-right: .5vh;
@@ -130,14 +112,7 @@
 }
 
 .principal {
-    height: 240px;
-    width: auto;
+    height: auto;
+    width: 100%;
     background: #fff;
-}
-
-@media (min-width: 1920px) {
-    .principal {
-        height: 300px;
-        width: auto;
-    }
 }

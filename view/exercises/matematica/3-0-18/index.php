@@ -9,65 +9,81 @@
 </style>
 <?=$titulo?>
 <?php 
-$extension = array(
-    '10;20;25',
-    '10;15;25',
-    '10;20',
-    '3;6;12;18',
-    '6;12',
-    '6;12;18'
-);
+$comprension = array('A={regiones geográficas del Perú}','U={símbolos patrios del Perú}','T={números naturales menores que 6}','L={cubiertos}','V={figuras geométricas}');
 ?>
 
 <body>
     <div class="container-two">
-        <!-- <div class="grid-head">
+        <div class="grid-head">
             <div class="grid-item wc">Por extensión</div>
             <div class="grid-item we">Por comprensión</div>
-        </div> -->
+        </div>
         <div class="grid-body">
             <div class="grid-box">
-                <div class="grid-item wc">
-                    L<span class="s">={</span>5; 10; 15; 20; 25<span class="s">}</span>
-                    <span class="space"></span>
-                    E<span class="s">={</span>10; 20<span class="s">}</span>
-                </div>
+                <div class="grid-item wc">A <span class="s">= {</span>costa, sierra, selva<span class="s">}</span></div>
                 <div class="grid-item we">
-                    <span class="text">L <span class="s-u">∩</span> E</span>
-                    <span class="s">={</span>
-                    <select class="slc" alt="<?=$extension[2]?>">
+                    <select class="slc" alt="<?=$comprension[0]?>">
                         <option value="" disabled selected></option>
                         <?php
-                            for ($i=0; $i < count($extension); $i++) { 
-                                echo "<option value='$extension[$i]'>$extension[$i]</option>";
+                            for ($i=0; $i < count($comprension); $i++) { 
+                                echo "<option value='$comprension[$i]'>$comprension[$i]</option>";
                             }                                
                         ?>
                     </select>
-                    <span class="s">}</span>
                 </div>
             </div>
-
             <div class="grid-box">
-                <div class="grid-item wc">
-                    D<span class="s">={</span>3; 6; 9; 12; 15<span class="s">}</span>
-                    <span class="space"></span>
-                    E<span class="s">={</span>6; 12; 18<span class="s">}</span>
-                </div>
+                <div class="grid-item wc">U <span class="s">= {</span>bandera, escudo, himno nacional<span class="s">}</span></div>
                 <div class="grid-item we">
-                    <span class="text">D <span class="s-u">∩</span> E</span>
-                    <span class="s">={</span>
-                    <select class="slc" alt="<?=$extension[4]?>">
+                    <select class="slc" alt="<?=$comprension[1]?>">
                         <option value="" disabled selected></option>
                         <?php
-                            for ($i=0; $i < count($extension); $i++) { 
-                                echo "<option value='$extension[$i]'>$extension[$i]</option>";
+                            for ($i=0; $i < count($comprension); $i++) { 
+                                echo "<option value='$comprension[$i]'>$comprension[$i]</option>";
                             }                                
                         ?>
                     </select>
-                    <span class="s">}</span>
                 </div>
             </div>
-
+            <div class="grid-box">
+                <div class="grid-item wc">T <span class="s">= {</span>0; 1; 2; 3; 4; 5<span class="s">}</span></div>
+                <div class="grid-item we">
+                    <select class="slc" alt="<?=$comprension[2]?>">
+                        <option value="" disabled selected></option>
+                        <?php
+                            for ($i=0; $i < count($comprension); $i++) { 
+                                echo "<option value='$comprension[$i]'>$comprension[$i]</option>";
+                            }                                
+                        ?>
+                    </select>
+                </div>
+            </div>
+            <div class="grid-box">
+                <div class="grid-item wc">L <span class="s">= {</span>cuchara, tenedor, cuchillo<span class="s">}</span></div>
+                <div class="grid-item we">
+                    <select class="slc" alt="<?=$comprension[3]?>">
+                        <option value="" disabled selected></option>
+                        <?php
+                            for ($i=0; $i < count($comprension); $i++) { 
+                                echo "<option value='$comprension[$i]'>$comprension[$i]</option>";
+                            }                                
+                        ?>
+                    </select>
+                </div>
+            </div>
+            <div class="grid-box">
+                <div class="grid-item wc">V <span class="s">= {</span>triángulo, cuadrado, rectángulo<span class="s">}</span></div>
+                <div class="grid-item we">
+                    <select class="slc" alt="<?=$comprension[4]?>">
+                        <option value="" disabled selected></option>
+                        <?php
+                            for ($i=0; $i < count($comprension); $i++) { 
+                                echo "<option value='$comprension[$i]'>$comprension[$i]</option>";
+                            }                                
+                        ?>
+                    </select>
+                </div>
+            </div>
         </div>
     </div>
     <!-- Respuesta -->
@@ -97,7 +113,7 @@ function result_tipo_3_0_18() {
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
-    if (r == 2) {
+    if (r == 5) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();

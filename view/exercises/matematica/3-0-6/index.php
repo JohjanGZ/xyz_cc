@@ -14,21 +14,35 @@
     <div class="container-two">
         <div class="grid-options">
             <div class="grid-option pieza" alt="1">
-                M = {1;2;3;4;5;6;7}
+                M = {capital de Argentina}
             </div>
             <div class="grid-option pieza" alt="2">
-                N = {Departamentos de la Costa}
-            </div>
-            <div class="grid-option pieza" alt="2">
-                O = {Letras de la palabra PAZ}
+                N = {perro volador}
             </div>
             <div class="grid-option pieza" alt="1">
-                P = {rojo, amarrillo, azul, verde} 
+                O = {alcalde de Lima}
+            </div>
+            <div class="grid-option pieza" alt="1">
+                P = {número par mayor que 301 y menor que 303} 
+            </div>
+            <div class="grid-option pieza" alt="2">
+                Q = {personas que viven en la Luna} 
+            </div>
+            <div class="grid-option pieza" alt="3">
+                R = {estaciones del año} 
+            </div>
+            <div class="grid-option pieza" alt="2">
+                S = {rey actual del Perú} 
+            </div>
+            <div class="grid-option pieza" alt="3">
+                T = {huesos del cuerpo humano} 
             </div>
         </div>
         <div class="grid-container">
-            <div class="grid-item contenedorPieza caja" alt="1">Por extensión</div>
-            <div class="grid-item contenedorPieza caja" alt="2">Por comprensión</div>
+            <div class="grid-item contenedorPieza caja" alt="1">conjunto unitario</div>
+            <div class="grid-item contenedorPieza caja" alt="2">conjunto vacio</div>
+            <div class="grid-item contenedorPieza caja" alt="3">conjunto finito</div>
+            <div class="grid-item contenedorPieza caja" alt="4">conjunto infinito</div>
         </div>
     </div>
 
@@ -60,7 +74,7 @@ function result_tipo_3_0_6() {
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
-    if (r == 4) {
+    if (r == 8) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();

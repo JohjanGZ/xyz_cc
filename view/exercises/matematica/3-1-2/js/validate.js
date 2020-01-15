@@ -1,27 +1,31 @@
-/**
- * TODO: Random
- */
-var cols = document.querySelectorAll('#sortable');
+var cols = document.querySelectorAll('.grid-options');
+// console.log(cols);
 [].forEach.call(cols, (e) => {
     for (var i = e.children.length; i >= 0; i--) {
         e.appendChild(e.children[Math.random() * i | 0]);
     }
 });
-/**
- * TODO: Orden
- */
-$(function () {
-    $("#sortable").sortable({
-        revert: "invalid",
-    });
-    $("#draggable").draggable({
-        connectToSortable: "#sortable",
-        helper: "clone",
-        revert: "invalid",
-    });
-    // $("ul, li").disableSelection();
+// Droppable
+var r = 0 ;
+$(".pieza").draggable({
+    revert: "invalid",
+    start: function() {
+        element = $(this).attr("alt");
+        elementid = $(this);
+        // console.log(elementid);
+    }
 });
-function sortItems() {
-    var items = $('#sortable .grid-item').get(); items.sort(function (a, b) { return parseInt(a.id) > parseInt(b.id); });
-    
-};
+$(".caja").droppable({
+    drop: function(event, ui) { 
+        // $(this).css("background-color", "rgba(139, 195, 74, 0.14)");
+        element2 = $(this).attr("alt");
+        elementid.css({"background-color":"transparent","border":"none"});
+        if (element == element2) {
+            r++;
+        }
+        ui.draggable.draggable("disable", 1); //not ui.draggable("disable", 1);
+        // ui.draggable.draggable("disable", 1);
+
+        console.log(element);
+    }
+});
