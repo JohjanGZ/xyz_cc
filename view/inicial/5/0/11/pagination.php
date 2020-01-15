@@ -17,7 +17,7 @@ function start_11() {
     $("#ventana").load(ruta + '5-0-11/index.php', {
         next: "resultado()",
         procesar: "result_tipo_5_0_11()",
-        titulo: " <center><h5><span>Observa</span> los conjuntos y <span>arrastra</span> la representación correcta.</h5></center>",
+        titulo: " <center><h5><span>Encuentra</span> en el pupimágic los nombres de las imágenes siguiendo el sentido de las flechas.</h5></center>",
         restaurar: "start_11()",
         dir: ruta,
         cod: "5-0-11",

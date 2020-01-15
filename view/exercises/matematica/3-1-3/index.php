@@ -4,82 +4,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="<?= $dir ?>/css/styles.css">
 </head>
+<style type="text/css">
+
+</style>
 <?=$titulo?>
-<div class="container-two">
-    <div class="row">
-        <div class="h">
-            <div class="col s5">
-                <center>
-                    <img src="<?=$dir?>/img/principal.png" class="principal">
-                    <p class="text"><span class="s">•</span>5 249</p>
-                </center>
-            </div>
-            <div class="col s6">
-                <div class="grid-container">
-                    <div class="col1">
-                        <div class="grid-num">1.</div>
-                        <div class="grid-num">2.</div>
-                        <div class="grid-num">3.</div>
-                        <div class="grid-num">4.</div>
-                    </div>
-                    <div class="col1">
-                        <div id="sortable">
-                            <?php for ($i=1; $i < 5; $i++) { 
-                                if ($i == 4) {
-                            ?>
-                            <div class="grid-item lista-item w" id="<?=$i?>">
-                                <img src="<?=$dir?>/img/<?=$i?>.png" class="img-a">
-                            </div>
-                            <?php } else { ?>
-                            <div class="grid-item lista-item w" id="<?=$i?>">
-                                <img src="<?=$dir?>/img/<?=$i?>.png" class="img">
-                            </div>
-                            <?php } 
-                            } ?>
+<?php $numero = array('575','345','140','41','91','22','30','53','230','90','205','49','114','19','61') ?>
+
+<body>
+
+    <div class="container-two">
+        <div class="row">
+            <div class="col s4">
+                <div class="pregunta">
+                    <div class="grid-options">
+                        <?php for ($i=0; $i < count($numero); $i++) { ?>
+                        <div class="grid-option pieza" alt="<?=$numero[$i]?>">
+                            <?=$numero[$i]?>
                         </div>
+                        <?php } ?>
+                    </div>
+                </div>
+            </div>
+            <div class="col s8">
+                <div class="respuesta">
+                    <div class="Grid">
+                        <div class="Grid-cell caja" alt="575"></div>
+                    </div>
+                    <div class="Grid">
+                        <div class="Grid-cell caja" alt="230"></div>
+                        <div class="Grid-cell caja" alt="345"></div>
+                    </div>
+                    <div class="Grid">
+                        <div class="Grid-cell caja" alt="90"></div>
+                        <div class="Grid-cell caja" alt="140"></div>
+                        <div class="Grid-cell caja" alt="205"></div>
+                    </div>
+                    <div class="Grid">
+                        <div class="Grid-cell caja" alt="41"></div>
+                        <div class="Grid-cell caja" alt="49"></div>
+                        <div class="Grid-cell caja" alt="91"></div>
+                        <div class="Grid-cell caja" alt="114"></div>
+                    </div>
+                    <div class="Grid">
+                        <div class="Grid-cell caja" alt="22"></div>
+                        <div class="Grid-cell caja" alt="19"></div>
+                        <div class="Grid-cell caja" alt="30"></div>
+                        <div class="Grid-cell caja" alt="61"></div>
+                        <div class="Grid-cell caja" alt="53"></div>
                     </div>
 
+                    <div class="Grid">
+                        <div class="Grid-cell">12</div>
+                        <div class="Grid-cell">10</div>
+                        <div class="Grid-cell">9</div>
+                        <div class="Grid-cell">21</div>
+                        <div class="Grid-cell">40</div>
+                        <div class="Grid-cell">13</div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div id="modal1" class="modal">
-    <div class="modal-content">
-        <h4 class="center">Respuesta correcta</h4>
-        <center>
-            <img class="materialboxed" width="80%" src="<?= $dir ?>/img/respuesta.png">
-        </center>
+
+    <!-- Respuesta -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <center>
+                <h4>Respuesta correcta</h4>
+                <img class="materialboxed" width="80%" src="<?= $dir ?>/img/respuesta.png">
+            </center>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Listo!</a>
+        </div>
     </div>
-    <div class="modal-footer">
-        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Listo!</a>
-    </div>
-</div>
 </body>
+
+
 <script src="../../../../../js/core.js"></script>
 <?php require('../../../tools/botones/botones.php');?> <script>
 $("#next").attr("onclick", "<?=$next?>");
 </script>
-<script src="../../../../tools/procesos/script.js"></script>
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
-// Formulario - Registrados
-
-function result_tipo_3_1_3() {
+// Validar
+function result_tipo_3_1_20() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
-    if (r == true) {
+    if (r == 15) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
-        correcto()
+        correcto();
     } else {
         incorrecto();
         localStorage.setItem("Nota<?=$cod?>", "0");
         localStorage.setItem("Time<?=$cod?>", tiempo);
     }
+
 }
 </script>
-<script type="text/javascript" src="../../../exercises/comunicacion/1-0-9/js/validate.js"></script>

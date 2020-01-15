@@ -8,50 +8,74 @@
 
 </style>
 <?=$titulo?>
+<?php 
+$extension = array(
+    '10;20;25',
+    '10;15;25',
+    '10;20',
+    '3;6;12;18',
+    '6;12',
+    '6;12;18'
+);
+?>
 
 <body>
-
     <div class="container-two">
-        <div class="grid-options">
-            <div class="grid-option pieza" alt="1">
-                M = {capital de Argentina}
+        <!-- <div class="grid-head">
+            <div class="grid-item wc">Por extensión</div>
+            <div class="grid-item we">Por comprensión</div>
+        </div> -->
+        <div class="grid-body">
+            <div class="grid-box">
+                <div class="grid-item wc">
+                    L<span class="s">={</span>5; 10; 15; 20; 25<span class="s">}</span>
+                    <span class="space"></span>
+                    E<span class="s">={</span>10; 20<span class="s">}</span>
+                </div>
+                <div class="grid-item we">
+                    <span class="text">L <span class="s-u">∩</span> E</span>
+                    <span class="s">={</span>
+                    <select class="slc" alt="<?=$extension[2]?>">
+                        <option value="" disabled selected></option>
+                        <?php
+                            for ($i=0; $i < count($extension); $i++) { 
+                                echo "<option value='$extension[$i]'>$extension[$i]</option>";
+                            }                                
+                        ?>
+                    </select>
+                    <span class="s">}</span>
+                </div>
             </div>
-            <div class="grid-option pieza" alt="2">
-                N = {perro volador}
+
+            <div class="grid-box">
+                <div class="grid-item wc">
+                    D<span class="s">={</span>3; 6; 9; 12; 15<span class="s">}</span>
+                    <span class="space"></span>
+                    E<span class="s">={</span>6; 12; 18<span class="s">}</span>
+                </div>
+                <div class="grid-item we">
+                    <span class="text">D <span class="s-u">∩</span> E</span>
+                    <span class="s">={</span>
+                    <select class="slc" alt="<?=$extension[4]?>">
+                        <option value="" disabled selected></option>
+                        <?php
+                            for ($i=0; $i < count($extension); $i++) { 
+                                echo "<option value='$extension[$i]'>$extension[$i]</option>";
+                            }                                
+                        ?>
+                    </select>
+                    <span class="s">}</span>
+                </div>
             </div>
-            <div class="grid-option pieza" alt="1">
-                O = {alcalde de Lima}
-            </div>
-            <div class="grid-option pieza" alt="1">
-                P = {número par mayor que 301 y menor que 303} 
-            </div>
-            <div class="grid-option pieza" alt="2">
-                Q = {personas que viven en la Luna} 
-            </div>
-            <div class="grid-option pieza" alt="3">
-                R = {estaciones del año} 
-            </div>
-            <div class="grid-option pieza" alt="2">
-                S = {rey actual del Perú} 
-            </div>
-            <div class="grid-option pieza" alt="3">
-                T = {huesos del cuerpo humano} 
-            </div>
-        </div>
-        <div class="grid-container">
-            <div class="grid-item contenedorPieza caja" alt="1">conjunto unitario</div>
-            <div class="grid-item contenedorPieza caja" alt="2">conjunto vacio</div>
-            <div class="grid-item contenedorPieza caja" alt="3">conjunto finito</div>
-            <div class="grid-item contenedorPieza caja" alt="4">conjunto infinito</div>
+
         </div>
     </div>
-
     <!-- Respuesta -->
     <div id="modal1" class="modal">
         <div class="modal-content">
             <center>
                 <h4>Respuesta correcta</h4>
-                <img class="materialboxed" width="80%" src="<?= $dir ?>/img/respuesta.png">
+                <img class="materialboxed" width="80%" src="<?=$dir?>/img/respuesta.png">
             </center>
         </div>
         <div class="modal-footer">
@@ -60,9 +84,8 @@
     </div>
 </body>
 
-
 <script src="../../../../../js/core.js"></script>
-<?php require('../../../tools/botones/botones.php');?> <script>
+<?php require('../../../tools/botones/botones.php');?><script>
 $("#next").attr("onclick", "<?=$next?>");
 </script>
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
@@ -74,7 +97,7 @@ function result_tipo_3_0_12() {
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
-    if (r == 8) {
+    if (r == 2) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();

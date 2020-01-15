@@ -1,21 +1,24 @@
-/* *TODO: select */
-$('select').formSelect();
-/* *TODO: random */
-var cols = document.querySelectorAll('.grid-tabla');
-[].forEach.call(cols, (e) => {
+var cols = document.querySelectorAll('.grid-container');
+// console.log(cols);
+[].forEach.call(cols, (e)=>{
     for (var i = e.children.length; i >= 0; i--) {
         e.appendChild(e.children[Math.random() * i | 0]);
     }
 });
-/* *TODO: function */
+// checked
 var r = 0;
-$(".slc").change(function() {
-    slcalt = $(this).attr("alt");
-    slcval = $(this).val();
-    // console.log(slcalt);
-    // console.log(slcval);
-    if (slcalt == slcval) {
-        r++;
+$('.optn').click(function() {
+    $(this).attr("disabled","disabled");
+    var element = $(this).attr("alt");
+    var select = $(this).attr("value");
+    if (select != "seleccionado") {
+        if (element == "n") {
+            r++;
+            $(this).attr("value", "seleccionado");
+        } else {
+            r--;
+            $(this).attr("value", "seleccionado");
+        }
         console.log(r);
     }
-});
+})

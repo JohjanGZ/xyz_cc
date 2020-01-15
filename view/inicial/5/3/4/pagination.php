@@ -14,17 +14,17 @@ var ruta = "../../../../exercises/inicial/";
 // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
 
 function start_4() {
-    $("#ventana").load(ruta + '5-2-4/index.php', {
-        next: "resultado()",
-        procesar: "result_tipo_5_2_4()",
-        titulo: " <center><h5><span>Observa</span> los conjuntos y <span>arrastra</span> la representación correcta.</h5></center>",
-        restaurar: "start_4()",
-        dir: ruta,
-        cod: "5-2-4",
-        nota: cal
-    });
-    return false;
-};
+    $("#ventana").load(ruta + '5-3-4/index.php', {
+            next: "resultado()",
+            procesar: "result_tipo_5_3_4()",
+            titulo: " <center><h5><span>Selecciona</span> las banderas del Perú.</h5></center>",
+            restaurar: "start_4()",
+            dir: ruta,
+            cod: "5-3-4",
+            nota: cal
+        });
+        return false;
+    };
 
 function resultado() {
     $("#ventana").load('../../../../exercises/resultado/resultado.php');

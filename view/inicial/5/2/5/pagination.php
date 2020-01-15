@@ -17,7 +17,7 @@ function start_5() {
     $("#ventana").load(ruta + '5-2-5/index.php', {
         next: "resultado()",
         procesar: "result_tipo_5_2_5()",
-        titulo: " <center><h5><span>Observa</span> los conjuntos y <span>arrastra</span> la representación correcta.</h5></center>",
+        titulo: " <center><h5><span>Selecciona</span> las imágenes que dañan a nuestros pulmones.</h5></center>",
         restaurar: "start_5()",
         dir: ruta,
         cod: "5-2-5",

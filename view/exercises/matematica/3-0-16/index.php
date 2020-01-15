@@ -8,45 +8,84 @@
 
 </style>
 <?=$titulo?>
+<?php 
+$extension = array('I={do, re, mi, fa, sol, la, si}','I={do, ree, sol, fa, si}','I={fa, re, mi, so, la, si}','K={Lima}','K={Arequipa}','K={Loreto}'); 
+$comprension = array('I={notas}','I={notas musicales}','K={distrito}','K={departamento}');
+?>
 
 <body>
-
     <div class="container-two">
-        <div class="grid-options">
-            <div class="grid-option pieza" alt="2">
-                Peces que vuelan.
-            </div>
-            <div class="grid-option pieza" alt="1">
-                Lago más alto del mundo.
-            </div>
-            <div class="grid-option pieza" alt="1">
-                Mes del año que empieza con la letra e.
-            </div>
-            <div class="grid-option pieza" alt="2">
-                Reptil que vuela. 
-            </div>
-            <div class="grid-option pieza" alt="1">
-                Número impar mayor que 350 y menor que 352. 
-            </div>
-            <div class="grid-option pieza" alt="2">
-                Número par mayor que 120 y menor que 122.
-            </div>
-            <div class="grid-option pieza" alt="2">
-                Ser humano de más de 300 años.
-            </div>
-        </div>
         <div class="grid-container">
-            <div class="grid-item contenedorPieza caja" alt="1">conjunto unitario</div>
-            <div class="grid-item contenedorPieza caja" alt="2">conjunto vacio</div>
+            <div class="grid-box">
+                <div class="grid-item">
+                    <img src="<?=$dir?>/img/1.png" class="img">
+                </div>
+                <div class="grid-item">
+                    <div class="grid-determinacion">
+                        <div class="grid-option">
+                            <span class="opt">•</span> Por extensión:
+                            <select class="slc" alt="<?=$extension[0]?>">
+                                <option value="" disabled selected></option>
+                                <?php
+                                    for ($i=0; $i < count($extension); $i++) { 
+                                        echo "<option value='$extension[$i]'>$extension[$i]</option>";
+                                    }                                
+                                ?>
+                            </select>
+                        </div>
+                        <div class="grid-option">
+                            <span class="opt">•</span> Por comprensión:
+                            <select class="slc" alt="<?=$comprension[1]?>">
+                                <option value="" disabled selected></option>
+                                <?php
+                                    for ($i=0; $i < count($comprension); $i++) { 
+                                        echo "<option value='$comprension[$i]'>$comprension[$i]</option>";
+                                    }                                
+                                ?>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-box">
+                <div class="grid-item">
+                    <div class="grid-determinacion">
+                        <div class="grid-option">
+                            <span class="opt">•</span> Por extensión:
+                            <select class="slc" alt="<?=$extension[3]?>">
+                                <option value="" disabled selected></option>
+                                <?php
+                                    for ($i=0; $i < count($extension); $i++) { 
+                                        echo "<option value='$extension[$i]'>$extension[$i]</option>";
+                                    }                                
+                                ?>
+                            </select>
+                        </div>
+                        <div class="grid-option">
+                            <span class="opt">•</span> Por comprensión:
+                            <select class="slc" alt="<?=$comprension[3]?>">
+                                <option value="" disabled selected></option>
+                                <?php
+                                    for ($i=0; $i < count($comprension); $i++) { 
+                                        echo "<option value='$comprension[$i]'>$comprension[$i]</option>";
+                                    }                                
+                                ?>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="<?=$dir?>/img/2.png" class="img">
+                </div>
+            </div>
         </div>
     </div>
-
     <!-- Respuesta -->
     <div id="modal1" class="modal">
         <div class="modal-content">
             <center>
                 <h4>Respuesta correcta</h4>
-                <img class="materialboxed" width="80%" src="<?= $dir ?>/img/respuesta.png">
+                <img class="materialboxed" width="80%" src="<?=$dir?>/img/respuesta.png">
             </center>
         </div>
         <div class="modal-footer">
@@ -55,9 +94,8 @@
     </div>
 </body>
 
-
 <script src="../../../../../js/core.js"></script>
-<?php require('../../../tools/botones/botones.php');?> <script>
+<?php require('../../../tools/botones/botones.php');?><script>
 $("#next").attr("onclick", "<?=$next?>");
 </script>
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
@@ -69,7 +107,7 @@ function result_tipo_3_0_16() {
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
-    if (r == 7) {
+    if (r == 4) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();

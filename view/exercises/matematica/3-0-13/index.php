@@ -5,51 +5,93 @@
     <link rel="stylesheet" type="text/css" href="<?= $dir ?>/css/styles.css">
 </head>
 <?=$titulo?>
-<?php $opciones = array('vacío','unitario','finito','infinito') ?>
 <div class="container-two">
     <div class="grid-preguntas">
-        <p class="text"><span class="pto">•</span>El conjunto formado por los símbolos patrios es:</p>
-        <div class="grid-container">
-            <?php for ($i=0; $i < count($opciones); $i++) { 
-            if ($i == 2 ) {   
-        ?>
-            <div class="grid-item" alt="n">
-                <div class="mes">
-                    <span><?=$opciones[$i]?></span>
+        <div class="grid-pregunta">
+            <div class="grid-container">
+                <!-- 1 -->
+                <div class="pregunta">
+                    <div class="image">
+                        <img src="<?=$dir?>/img/1.png" class="img-o">
+                    </div>
+                    <div class="options">
+                        <div class="option">
+                            <label>
+                                <input type="checkbox" class="optn" alt="" />
+                                <span class="txtopt c1"><img src="<?=$dir?>/img/o1.png" class="img"></span>
+                            </label>
+                        </div>
+                        <div class="option">
+                            <label>
+                                <input type="checkbox" class="optn" alt="n" />
+                                <span class="txtopt c1"><img src="<?=$dir?>/img/o2.png" class="img"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="pregunta">
+                    <div class="image">
+                        <img src="<?=$dir?>/img/2.png" class="img-o">
+                    </div>
+                    <div class="options">
+                        <div class="option">
+                            <label>
+                                <input type="checkbox" class="optn" alt="n" />
+                                <span class="txtopt c1"><img src="<?=$dir?>/img/o1.png" class="img"></span>
+                            </label>
+                        </div>
+                        <div class="option">
+                            <label>
+                                <input type="checkbox" class="optn" alt="" />
+                                <span class="txtopt c1"><img src="<?=$dir?>/img/o2.png" class="img"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="pregunta">
+                    <div class="image">
+                        <img src="<?=$dir?>/img/3.png" class="img-o">
+                    </div>
+                    <div class="options">
+                        <div class="option">
+                            <label>
+                                <input type="checkbox" class="optn" alt="" />
+                                <span class="txtopt c1"><img src="<?=$dir?>/img/o1.png" class="img"></span>
+                            </label>
+                        </div>
+                        <div class="option">
+                            <label>
+                                <input type="checkbox" class="optn" alt="n" />
+                                <span class="txtopt c1"><img src="<?=$dir?>/img/o2.png" class="img"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="pregunta">
+                    <div class="image">
+                        <img src="<?=$dir?>/img/4.png" class="img-o">
+                    </div>
+                    <div class="options">
+                        <div class="option">
+                            <label>
+                                <input type="checkbox" class="optn" alt="n" />
+                                <span class="txtopt c1"><img src="<?=$dir?>/img/o1.png" class="img"></span>
+                            </label>
+                        </div>
+                        <div class="option">
+                            <label>
+                                <input type="checkbox" class="optn" alt="" />
+                                <span class="txtopt c1"><img src="<?=$dir?>/img/o2.png" class="img"></span>
+                            </label>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <?php } else { ?>
-            <div class="grid-item" alt="">
-                <div class="mes">
-                    <span><?=$opciones[$i]?></span>
-                </div>
-            </div>
-            <?php } 
-        }  ?>
         </div>
+
+
     </div>
 
-    <div class="grid-preguntas">
-        <p class="text"><span class="pto">•</span>El conjunto formado por los números naturales es:</p>
-        <div class="grid-container">
-            <?php for ($i=0; $i < count($opciones); $i++) { 
-            if ($i == 3 ) {   
-        ?>
-            <div class="grid-item" alt="n">
-                <div class="mes">
-                    <span><?=$opciones[$i]?></span>
-                </div>
-            </div>
-            <?php } else { ?>
-            <div class="grid-item" alt="">
-                <div class="mes">
-                    <span><?=$opciones[$i]?></span>
-                </div>
-            </div>
-            <?php } 
-        }  ?>
-        </div>
-    </div>
 </div>
 <div id="modal1" class="modal">
     <div class="modal-content">
@@ -77,7 +119,7 @@ function result_tipo_3_0_13() {
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
-    if (r == 2) {
+    if (r == 4) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();

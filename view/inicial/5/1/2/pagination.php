@@ -17,7 +17,7 @@ function start_2() {
     $("#ventana").load(ruta + '5-1-2/index.php', {
         next: "resultado()",
         procesar: "result_tipo_5_1_2()",
-        titulo: "<center><h5><span>Observa</span> atentamente la imagen y <span>completa</span> los espacios.</h5></center>",
+        titulo: "<center><h5><span>Selecciona</span> las imagenes con forma cuadrada.</h5></center>",
         restaurar: "start_2()",
         dir: ruta,
         cod: "5-1-2",

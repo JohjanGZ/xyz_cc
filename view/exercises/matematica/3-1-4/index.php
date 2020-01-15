@@ -8,42 +8,92 @@
 
 </style>
 <?=$titulo?>
-<?php $num = array('3000','2425','1508','5051','2004','2442','2058','3326','1516','1089','1920','9118')?>
+<?php $propiedades = array('Propiedad conmutativa','Propiedad del elemento neutro','Propiedad asociativa'); ?>
 <body>
+
     <div class="container-two">
-        <div class="grid-container">
-            <div class="grid-item">
-                <div class="campo">
-                    <img src="<?=$dir?>/img/1.png" class="img materialboxed">
-                    <div class="grid-body">
-                        <select class="slc" alt="2442">
-                            <option value="" disabled selected></option>
-                            <?php
-                                for ($i=1; $i < count($num); $i++) { 
-                                    echo "<option value='$num[$i]'>$num[$i]</option>";
-                                }
-                            ?>
-                        </select>
-                    </div>
-                </div>
+        <div class="grid-options">
+            <div class="grid-option">
+                <span class="ms">•</span>
+                567  <span class="ms">+</span> 384 <span class="ms">=</span> 384 <span class="ms">+</span> 567    
+                <span class="ms">→</span>
+                <select class="seleccion" alt="Propiedad conmutativa">
+                    <option value="" disabled selected></option>
+                    <?php
+                        for ($i=0; $i < count($propiedades); $i++) { 
+                            echo "<option value='$propiedades[$i]'>$propiedades[$i]</option>";
+                        }
+                    ?>
+                </select>
             </div>
-            <div class="grid-item">
-                <div class="campo">
-                    <img src="<?=$dir?>/img/2.png" class="img materialboxed">
-                    <div class="grid-body">
-                        <select class="slc" alt="3326">
-                            <option value="" disabled selected></option>
-                            <?php
-                                for ($i=1; $i < count($num); $i++) { 
-                                    echo "<option value='$num[$i]'>$num[$i]</option>";
-                                }
-                            ?>
-                        </select>
-                    </div>
-                </div>
+            <div class="grid-option">
+                <span class="ms">•</span>
+                45 765 <span class="ms">+</span> 0 <span class="ms">=</span> 45 765    
+                <span class="ms">→</span>
+                <select class="seleccion" alt="Propiedad del elemento neutro">
+                    <option value="" disabled selected></option>
+                    <?php
+                        for ($i=0; $i < count($propiedades); $i++) { 
+                            echo "<option value='$propiedades[$i]'>$propiedades[$i]</option>";
+                        }
+                    ?>
+                </select>
+            </div>
+            <div class="grid-option">
+                <span class="ms">•</span>
+                297 <span class="ms">+</span> 843 <span class="ms">=</span> 843 <span class="ms">+</span> 297 
+                <span class="ms">→</span>
+                <select class="seleccion" alt="Propiedad conmutativa">
+                    <option value="" disabled selected></option>
+                    <?php
+                        for ($i=0; $i < count($propiedades); $i++) { 
+                            echo "<option value='$propiedades[$i]'>$propiedades[$i]</option>";
+                        }
+                    ?>
+                </select>
+            </div>
+            <div class="grid-option">
+                <span class="ms">•</span>
+                470 <span class="ms">+ (</span>160 <span class="ms">+</span> 617 <span class="ms">) = (</span>470 <span class="ms">+</span> 160<span class="ms">) +</span> 617
+                <span class="ms">→</span>
+                <select class="seleccion" alt="Propiedad asociativa">
+                    <option value="" disabled selected></option>
+                    <?php
+                        for ($i=0; $i < count($propiedades); $i++) { 
+                            echo "<option value='$propiedades[$i]'>$propiedades[$i]</option>";
+                        }
+                    ?>
+                </select>
+            </div>
+            <div class="grid-option">
+                <span class="ms">•</span>
+                9 438 <span class="ms">+</span> 3 628 <span class="ms">=</span> 3 628 <span class="ms">+</span> 9 438     
+                <span class="ms">→</span>
+                <select class="seleccion" alt="Propiedad conmutativa">
+                    <option value="" disabled selected></option>
+                    <?php
+                        for ($i=0; $i < count($propiedades); $i++) { 
+                            echo "<option value='$propiedades[$i]'>$propiedades[$i]</option>";
+                        }
+                    ?>
+                </select>
+            </div>
+            <div class="grid-option">
+                <span class="ms">•</span>
+                729 <span class="ms">+ (</span>914 <span class="ms">+</span> 840<span class="ms">) = (</span>729 <span class="ms">+</span> 914<span class="ms">) +</span> 840     
+                <span class="ms">→</span>
+                <select class="seleccion" alt="Propiedad asociativa">
+                    <option value="" disabled selected></option>
+                    <?php
+                        for ($i=0; $i < count($propiedades); $i++) { 
+                            echo "<option value='$propiedades[$i]'>$propiedades[$i]</option>";
+                        }
+                    ?>
+                </select>
             </div>
         </div>
     </div>
+
     <!-- Respuesta -->
     <div id="modal1" class="modal">
         <div class="modal-content">
@@ -60,19 +110,20 @@
 
 
 <script src="../../../../../js/core.js"></script>
-<?php require('../../../tools/botones/botones.php');?><script>
+<?php require('../../../tools/botones/botones.php');?> <script>
 $("#next").attr("onclick", "<?=$next?>");
 </script>
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
 // Validar
-function result_tipo_3_1_4() {
+function result_tipo_3_2_11() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
-
-    if (r == 2) {
+    r=0;
+    seleccion_lista();
+    if (r == 6) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();

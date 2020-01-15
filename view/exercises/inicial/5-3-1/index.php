@@ -113,9 +113,9 @@
 
             <ul id="listA">
                 <li alt="1" class="a" id="obj1"><img src="<?= $dir ?>/img/1.png"></li>
-                <li alt="3" class="a" id="obj2"><img src="<?= $dir ?>/img/2.png"></li>
-                <li alt="5" class="a" id="obj3"><img src="<?= $dir ?>/img/3.png"></li>
-                <li alt="7" class="a" id="obj4"><img src="<?= $dir ?>/img/4.png"></li>
+                <li alt="2" class="a" id="obj2"><img src="<?= $dir ?>/img/2.png"></li>
+                <li alt="3" class="a" id="obj3"><img src="<?= $dir ?>/img/3.png"></li>
+                <li alt="4" class="a" id="obj4"><img src="<?= $dir ?>/img/4.png"></li>
             </ul>
 
         </div>
@@ -126,11 +126,11 @@
             <ul id="listB">
                 <li alt="1" class="b" id="obj2"><img src="<?= $dir ?>/img/5.png" alt="">
                 </li>
-                <li alt="5" class="b" id="obj3"><img src="<?= $dir ?>/img/6.png" alt="">
+                <li alt="4" class="b" id="obj3"><img src="<?= $dir ?>/img/6.png" alt="">
                 </li>
-                <li alt="7" class="b" id="obj4"><img src="<?= $dir ?>/img/7.png" alt="">
+                <li alt="3" class="b" id="obj4"><img src="<?= $dir ?>/img/7.png" alt="">
                 </li>
-                <li alt="3" class="b" id="obj4"><img src="<?= $dir ?>/img/8.png" alt="">
+                <li alt="2" class="b" id="obj4"><img src="<?= $dir ?>/img/8.png" alt="">
                 </li>
             </ul>
         </div>
@@ -260,13 +260,13 @@ $('.a').click(function() {
     });
 });
 
-function result_tipo_5_2_3() {
+function result_tipo_5_3_1() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
-    if (r == 5) {
+    if (r == 4) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();

@@ -17,7 +17,7 @@ function start_10() {
     $("#ventana").load(ruta + '5-0-10/index.php', {
         next: "resultado()",
         procesar: "result_tipo_5_0_10()",
-        titulo: " <center><h5><span>Observa</span> los conjuntos y <span>arrastra</span> la representación correcta.</h5></center>",
+        titulo: " <center><h5><span>Completa</span> el crucivocales <span>colocando</span> las vocales que faltan.</h5></center>",
         restaurar: "start_10()",
         dir: ruta,
         cod: "5-0-10",

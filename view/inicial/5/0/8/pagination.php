@@ -17,7 +17,7 @@ function start_8() {
     $("#ventana").load(ruta + '5-0-8/index.php', {
         next: "resultado()",
         procesar: "result_tipo_5_0_8()",
-        titulo: " <center><h5><span>Observa</span> los conjuntos y <span>arrastra</span> la representación correcta.</h5></center>",
+        titulo: " <center><h5><span>Selecciona</span> las figuras coloreadas en la tabla según el modelo para encontrar la letra “M”.</h5></center>",
         restaurar: "start_8()",
         dir: ruta,
         cod: "5-0-8",

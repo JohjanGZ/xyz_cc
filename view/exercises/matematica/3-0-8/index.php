@@ -5,123 +5,51 @@
     <link rel="stylesheet" type="text/css" href="<?= $dir ?>/css/styles.css">
 </head>
 <?=$titulo?>
+<?php $opciones = array('vacío','unitario','finito','infinito') ?>
 <div class="container-two">
-    <center>
-        <img src="<?=$dir?>/img/principal.png" class="principal materialboxed">
-    </center>
     <div class="grid-preguntas">
-        <div class="grid-pregunta">
-            <div class="grid-container">
-                <!-- 1 -->
-                <div class="pregunta">
-                    <div class="options">
-                        <div class="option">
-                            <label>
-                                <input type="checkbox" class="optn" alt="n" />
-                                <span class="txtopt c1"><img src="<?=$dir?>/img/p.png" class="img"></span>
-                            </label>
-                        </div>
-                        <span class="txtopt c1"><img src="<?=$dir?>/img/1.png" class="img">____G</span>
-                        <div class="option">
-                            <label>
-                                <input type="checkbox" class="optn" alt="" />
-                                <span class="txtopt c1"><img src="<?=$dir?>/img/n.png" class="img"></span>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div class="pregunta">
-                    <div class="options">
-                        <div class="option">
-                            <label>
-                                <input type="checkbox" class="optn" alt="n" />
-                                <span class="txtopt c1"><img src="<?=$dir?>/img/p.png" class="img"></span>
-                            </label>
-                        </div>
-                        <span class="txtopt c1"><img src="<?=$dir?>/img/2.png" class="img">____H</span>
-                        <div class="option">
-                            <label>
-                                <input type="checkbox" class="optn" alt="" />
-                                <span class="txtopt c1"><img src="<?=$dir?>/img/n.png" class="img"></span>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div class="pregunta">
-                    <div class="options">
-                        <div class="option">
-                            <label>
-                                <input type="checkbox" class="optn" alt="" />
-                                <span class="txtopt c1"><img src="<?=$dir?>/img/p.png" class="img"></span>
-                            </label>
-                        </div>
-                        <span class="txtopt c1"><img src="<?=$dir?>/img/3.png" class="img">____F</span>
-                        <div class="option">
-                            <label>
-                                <input type="checkbox" class="optn" alt="n" />
-                                <span class="txtopt c1"><img src="<?=$dir?>/img/n.png" class="img"></span>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <!-- 2 -->
-                <div class="pregunta">
-                    <div class="options">
-                        <div class="option">
-                            <label>
-                                <input type="checkbox" class="optn" alt="" />
-                                <span class="txtopt c1"><img src="<?=$dir?>/img/p.png" class="img"></span>
-                            </label>
-                        </div>
-                        <span class="txtopt c1"><img src="<?=$dir?>/img/4.png" class="img">____H</span>
-                        <div class="option">
-                            <label>
-                                <input type="checkbox" class="optn" alt="n" />
-                                <span class="txtopt c1"><img src="<?=$dir?>/img/n.png" class="img"></span>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div class="pregunta">
-                    <div class="options">
-                        <div class="option">
-                            <label>
-                                <input type="checkbox" class="optn" alt="n" />
-                                <span class="txtopt c1"><img src="<?=$dir?>/img/p.png" class="img"></span>
-                            </label>
-                        </div>
-                        <span class="txtopt c1"><img src="<?=$dir?>/img/5.png" class="img">____G</span>
-                        <div class="option">
-                            <label>
-                                <input type="checkbox" class="optn" alt="" />
-                                <span class="txtopt c1"><img src="<?=$dir?>/img/n.png" class="img"></span>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div class="pregunta">
-                    <div class="options">
-                        <div class="option">
-                            <label>
-                                <input type="checkbox" class="optn" alt="" />
-                                <span class="txtopt c1"><img src="<?=$dir?>/img/p.png" class="img"></span>
-                            </label>
-                        </div>
-                        <span class="txtopt c1"><img src="<?=$dir?>/img/6.png" class="img">____F</span>
-                        <div class="option">
-                            <label>
-                                <input type="checkbox" class="optn" alt="n" />
-                                <span class="txtopt c1"><img src="<?=$dir?>/img/n.png" class="img"></span>
-                            </label>
-                        </div>
-                    </div>
+        <p class="text"><span class="pto">•</span>El conjunto formado por la capital del Perú es:</p>
+        <div class="grid-container">
+            <?php for ($i=0; $i < count($opciones); $i++) { 
+            if ($i == 1 ) {   
+        ?>
+            <div class="grid-item" alt="n">
+                <div class="mes">
+                    <span><?=$opciones[$i]?></span>
                 </div>
             </div>
+            <?php } else { ?>
+            <div class="grid-item" alt="">
+                <div class="mes">
+                    <span><?=$opciones[$i]?></span>
+                </div>
+            </div>
+            <?php } 
+        }  ?>
         </div>
-
-
     </div>
 
+    <div class="grid-preguntas">
+        <p class="text"><span class="pto">•</span>El conjunto formado por todos los continentes es:</p>
+        <div class="grid-container">
+            <?php for ($i=0; $i < count($opciones); $i++) { 
+            if ($i == 2 ) {   
+        ?>
+            <div class="grid-item" alt="n">
+                <div class="mes">
+                    <span><?=$opciones[$i]?></span>
+                </div>
+            </div>
+            <?php } else { ?>
+            <div class="grid-item" alt="">
+                <div class="mes">
+                    <span><?=$opciones[$i]?></span>
+                </div>
+            </div>
+            <?php } 
+        }  ?>
+        </div>
+    </div>
 </div>
 <div id="modal1" class="modal">
     <div class="modal-content">
@@ -149,7 +77,7 @@ function result_tipo_3_0_8() {
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
-    if (r == 6) {
+    if (r == 2) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();

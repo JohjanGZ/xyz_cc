@@ -13,13 +13,13 @@ var ruta = "../../../../exercises/inicial/";
 ////////////// 2do 
 // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
 function start_3() {
-    $("#ventana").load(ruta + '5-2-3/index.php', {
+    $("#ventana").load(ruta + '5-3-3/index.php', {
         next: "resultado()",
-        procesar: "result_tipo_5_2_3()",
+        procesar: "result_tipo_5_3_3()",
         titulo: "<center><h5><span>Selecciona</span> el conjunto en donde todos los animales tienen dos patas.</h5></center>",
         restaurar: "start_3()",
         dir: ruta,
-        cod: "5-2-3",
+        cod: "5-3-3",
         nota: cal
     });
     return false;

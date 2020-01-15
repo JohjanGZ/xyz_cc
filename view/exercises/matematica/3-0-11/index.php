@@ -4,176 +4,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="<?= $dir ?>/css/styles.css">
 </head>
+<style type="text/css">
+
+</style>
 <?=$titulo?>
-<div class="container-two">
-    <center>
-        <img src="<?=$dir?>/img/principal.png" class="principal materialboxed">
-    </center>
-    <div class="grid-preguntas">
-        <div class="grid-pregunta">
-            <div class="grid-container">
-                <!-- 1 -->
-                <div class="pregunta">
-                    <div class="image">
-                        <span class="text">5</span>
-                        <img src="<?=$dir?>/img/p.png" class="img">
-                        <span class="text">R</span>
-                    </div>
-                    <div class="options">
-                        <div class="option">
-                            <label>
-                                <input type="checkbox" class="optn" alt="n" />
-                                <span class="txtopt c1">Verdadero</span>
-                            </label>
-                        </div>
-                        <div class="option">
-                            <label>
-                                <input type="checkbox" class="optn" alt="" />
-                                <span class="txtopt c1">Falso</span>
-                            </label>
-                        </div>
-                    </div>
+<?php 
+$extension = array(
+    '1;2;3;4;5;6;7;8;9;10;11;12;13;14;16',
+    '1;2;3;4;5;6;7;8;9;10;12;13;14;16',
+    '1;2;3;4;5;6;7;8;9;10;11;12;14;16',
+    '1;2;3;4;5;6;7;8;9;10;12;14;16',
+    'a,b,c,d,e,f,g,h,i',
+    'a,b,c,d,e,f,g,h,i,a,e,i',
+    'a,b,c,d,e,f,g,h,i,j,k,l,m',
+    'a,a,b,c,d,e,e,f,g,h,i,i',
+    'c,a,m,i,n,o,e,u',
+    'c,a,m,i,n,o,e,a,e,i,o,u',
+    'c,a,a,m,i,i,n,o,e,e,u',
+    '1;2;3;4;5;6;7;8;9;10;12;14;16',
+    '1;2;3;4;5;6;7;8;9;10;12;13;14;16',
+    '1;2;3;4;5;6;7;8;9;10;11;12;14;16',
+);
+?>
+
+<body>
+    <div class="container-two">
+        <!-- <div class="grid-head">
+            <div class="grid-item wc">Por extensión</div>
+            <div class="grid-item we">Por comprensión</div>
+        </div> -->
+        <div class="grid-body">
+            <div class="grid-box">
+                <div class="grid-item wc">
+                    D<span class="s">={</span>1; 2; 3; 4; 5; 6; 7; 8; 9<span class="s">}</span>
+                    <span class="space"></span>
+                    E<span class="s">={</span>2; 4; 6; 8; 10; 12; 14; 16<span class="s">}</span>
                 </div>
-                <div class="pregunta">
-                    <div class="image">
-                        <span class="text">4</span>
-                        <img src="<?=$dir?>/img/n.png" class="img">
-                        <span class="text">S</span>
-                    </div>
-                    <div class="options">
-                        <div class="option">
-                            <label>
-                                <input type="checkbox" class="optn" alt="" />
-                                <span class="txtopt c1">Verdadero</span>
-                            </label>
-                        </div>
-                        <div class="option">
-                            <label>
-                                <input type="checkbox" class="optn" alt="n" />
-                                <span class="txtopt c1">Falso</span>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div class="pregunta">
-                    <div class="image">
-                        <span class="text">9</span>
-                        <img src="<?=$dir?>/img/p.png" class="img">
-                        <span class="text">S</span>
-                    </div>
-                    <div class="options">
-                        <div class="option">
-                            <label>
-                                <input type="checkbox" class="optn" alt="n" />
-                                <span class="txtopt c1">Verdadero</span>
-                            </label>
-                        </div>
-                        <div class="option">
-                            <label>
-                                <input type="checkbox" class="optn" alt="" />
-                                <span class="txtopt c1">Falso</span>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <!-- 2 -->
-                <div class="pregunta">
-                    <div class="image">
-                        <span class="text">1</span>
-                        <img src="<?=$dir?>/img/p.png" class="img">
-                        <span class="text">R</span>
-                    </div>
-                    <div class="options">
-                        <div class="option">
-                            <label>
-                                <input type="checkbox" class="optn" alt="n" />
-                                <span class="txtopt c1">Verdadero</span>
-                            </label>
-                        </div>
-                        <div class="option">
-                            <label>
-                                <input type="checkbox" class="optn" alt="" />
-                                <span class="txtopt c1">Falso</span>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div class="pregunta">
-                    <div class="image">
-                        <span class="text">8</span>
-                        <img src="<?=$dir?>/img/p.png" class="img">
-                        <span class="text">S</span>
-                    </div>
-                    <div class="options">
-                        <div class="option">
-                            <label>
-                                <input type="checkbox" class="optn" alt="n" />
-                                <span class="txtopt c1">Verdadero</span>
-                            </label>
-                        </div>
-                        <div class="option">
-                            <label>
-                                <input type="checkbox" class="optn" alt="" />
-                                <span class="txtopt c1">Falso</span>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div class="pregunta">
-                    <div class="image">
-                        <span class="text">11</span>
-                        <img src="<?=$dir?>/img/n.png" class="img">
-                        <span class="text">S</span>
-                    </div>
-                    <div class="options">
-                        <div class="option">
-                            <label>
-                                <input type="checkbox" class="optn" alt="" />
-                                <span class="txtopt c1">Verdadero</span>
-                            </label>
-                        </div>
-                        <div class="option">
-                            <label>
-                                <input type="checkbox" class="optn" alt="n" />
-                                <span class="txtopt c1">Falso</span>
-                            </label>
-                        </div>
-                    </div>
+                <div class="grid-item we">
+                    <span class="text">D <span class="s">U</span> E</span>
+                    <span class="s">={</span>
+                    <select class="slc" alt="<?=$extension[3]?>">
+                        <option value="" disabled selected></option>
+                        <?php
+                            for ($i=0; $i < count($extension); $i++) { 
+                                echo "<option value='$extension[$i]'>$extension[$i]</option>";
+                            }                                
+                        ?>
+                    </select>
+                    <span class="s">}</span>
                 </div>
             </div>
+
+            <div class="grid-box">
+                <div class="grid-item wc">
+                    P<span class="s">={</span>a, b, c, d, e, f, g, h, i<span class="s">}</span>
+                    <span class="space"></span>
+                    O<span class="s">={</span>a, e, i<span class="s">}</span>
+                </div>
+                <div class="grid-item we">
+                    <span class="text">P <span class="s">U</span> O</span>
+                    <span class="s">={</span>
+                    <select class="slc" alt="<?=$extension[4]?>">
+                        <option value="" disabled selected></option>
+                        <?php
+                            for ($i=0; $i < count($extension); $i++) { 
+                                echo "<option value='$extension[$i]'>$extension[$i]</option>";
+                            }                                
+                        ?>
+                    </select>
+                    <span class="s">}</span>
+                </div>
+            </div>
+
+            <div class="grid-box">
+                <div class="grid-item wc">
+                    X<span class="s">={</span>c, a, m, i, n, o<span class="s">}</span>
+                    <span class="space"></span>
+                    Y<span class="s">={</span>a, e, i, o, u<span class="s">}</span>
+                </div>
+                <div class="grid-item we">
+                <span class="text">X <span class="s">U</span> Y</span>
+                <span class="s">={</span>
+                    <select class="slc" alt="<?=$extension[8]?>">
+                        <option value="" disabled selected></option>
+                        <?php
+                            for ($i=0; $i < count($extension); $i++) { 
+                                echo "<option value='$extension[$i]'>$extension[$i]</option>";
+                            }                                
+                        ?>
+                    </select>
+                    <span class="s">}</span>
+                </div>
+            </div>
+
         </div>
-
-
     </div>
-
-</div>
-<div id="modal1" class="modal">
-    <div class="modal-content">
-        <h4 class="center">Respuesta correcta</h4>
-        <center>
-            <img class="materialboxed" width="80%" src="<?= $dir ?>/img/respuesta.png">
-        </center>
+    <!-- Respuesta -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <center>
+                <h4>Respuesta correcta</h4>
+                <img class="materialboxed" width="80%" src="<?=$dir?>/img/respuesta.png">
+            </center>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Listo!</a>
+        </div>
     </div>
-    <div class="modal-footer">
-        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Listo!</a>
-    </div>
-</div>
 </body>
+
 <script src="../../../../../js/core.js"></script>
-<?php require('../../../tools/botones/botones.php');?> <script>
+<?php require('../../../tools/botones/botones.php');?><script>
 $("#next").attr("onclick", "<?=$next?>");
 </script>
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
-// Formulario - Registrados
-
+// Validar
 function result_tipo_3_0_11() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
-    if (r == 6) {
+    if (r == 3) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();
@@ -185,4 +138,3 @@ function result_tipo_3_0_11() {
 
 }
 </script>
-<script type="text/javascript" src="../../../exercises/comunicacion/1-0-9/js/validate.js"></script>
