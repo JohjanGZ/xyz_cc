@@ -41,25 +41,8 @@ function Page_7() {
     count = 3;
 }
 
-function Page_8() {
-    start_8();
-    inicio();
-    count = 3;
-}
 
-function Page_9() {
-    start_9();
-    inicio();
-    count = 3;
-}
-
-function Page_10() {
-    start_10();
-    inicio();
-    count = 3;
-}
-
-var cant = 18;
+var cant = 7;
 var cal = cant / cant;
 console.log(cant);
 var ruta = "../../../../exercises/matematica/";
@@ -145,7 +128,7 @@ function start_6() {
 
 function start_7() {
     $("#ventana").load(ruta + '3-4-7/index.php', {
-        next: "Page_8()",
+        next: "resultado()",
         procesar: "result_tipo_3_4_7()",
         titulo: "<center><h5><span>Relaciona</span> las multiplicaciones con su respectivo resultado.</h5></center>",
         restaurar: "start_7()",
@@ -156,44 +139,7 @@ function start_7() {
     return false;
 };
 
-function start_8() {
-    $("#ventana").load(ruta + '3-4-8/index.php', {
-        next: "Page_9()",
-        procesar: "result_tipo_3_4_8()",
-        titulo: "<center><h5><span>Resuelve</span> las multiplicaciones. </h5></center>",
-        restaurar: "start_8()",
-        dir: ruta,
-        cod: "3-4-8",
-        nota: cal
-    });
-    return false;
-};
 
-function start_9() {
-    $("#ventana").load(ruta + '3-4-9/index.php', {
-        next: "Page_10()",
-        procesar: "result_tipo_3_4_9()",
-        titulo: "<center><h5><span>Resuelve</span> las multiplicaciones. </h5></center>",
-        restaurar: "start_9()",
-        dir: ruta,
-        cod: "3-4-9",
-        nota: cal
-    });
-    return false;
-};
-
-function start_10() {
-    $("#ventana").load(ruta + '3-4-10/index.php', {
-        next: "resultado()",
-        procesar: "result_tipo_3_4_10()",
-        titulo: "<center><h5><span>Resuelve</span> las multiplicaciones. </h5></center>",
-        restaurar: "start_10()",
-        dir: ruta,
-        cod: "3-4-10",
-        nota: cal
-    });
-    return false;
-};
 
 function resultado() {
     $("#ventana").load('../../../../exercises/resultado/resultado.php');
