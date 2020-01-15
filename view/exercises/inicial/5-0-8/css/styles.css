@@ -1,0 +1,54 @@
+.container-two {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 70%;
+    height: 80%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 2fr;
+}
+.pincel{
+    display: grid;
+    padding-bottom: 20px;
+    grid-column-gap: 20px;
+}
+.pincel img{
+    width: 80px;
+    margin: 20px;
+}
+.box{
+    width: 100%;
+    height: 100%;
+    border: 2px solid #333;
+}
+.contenedor .content{
+    width: 60vh;
+    height: 60vh;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(5,1fr);
+}
+.item{
+    border: 1px solid rgb(197, 197, 197);
+    padding: 10px;
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.item img{
+    width: 50px;
+}
+@media screen and (max-width: 1300px){
+    .pincel img{
+        width: 90px;
+    }
+    .pincel{
+        padding-bottom: 10px;
+    }
+    .item img{
+        width: 90px;
+    }
+}

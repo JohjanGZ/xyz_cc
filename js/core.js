@@ -427,6 +427,37 @@ function colorear() {
     });
 }
 
+function colorear_fondo() {
+    var color;
+    var letra;
+    var comparacion;
+    $('.colores').click(function(e) {
+        e.preventDefault();
+        color = $(this).attr('value');
+        letra = $(this).attr('alt');
+        $('.colores').css({
+            transform: 'scale(1)',
+            border: 'none',
+            'box-shadow': 'none',
+        });
+        $(this).css({
+            transform: 'scale(1.1)',
+            border: 'solid rgb(254, 206, 87)',
+            'box-shadow': '0 0 4px #00000057',
+        });
+    });
+    $('.lista').click(function(e) {
+        e.preventDefault();
+        $(this).css({
+            'background-color': color,
+        });
+        comparacion = $(this).attr('alt');
+        if (letra == comparacion) {
+            r++;
+        }
+    });
+}
+
 function operacion_numeros() {
     var letra = '';
     $('.letras').click(function() {
