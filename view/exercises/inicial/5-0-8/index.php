@@ -9,91 +9,91 @@
 <div class="container-two">
     <div class="pincel">
         <div>
-            <img src="<?=$dir?>/img/1.png" class="img colores" alt="El" value="#00cc66">
+            <img src="<?=$dir?>/img/1.png" class="img " alt="El" value="1">
         </div>
         <div>
-            <img src="<?=$dir?>/img/2.png" class="img colores" alt="Lo" value="#51b9ff">
+            <img src="<?=$dir?>/img/2.png" class="img " alt="Lo" value="2">
         </div>
         <div>
-            <img src="<?=$dir?>/img/3.png" class="img colores" alt="La" value="#51b9ff">
+            <img src="<?=$dir?>/img/3.png" class="img " alt="La" value="3">
         </div>
     </div>
     <div class="contenedor">
         <div class="content">
-            <div class="item box lista" alt="ooo" forma="">
-                <img src="<?= $dir ?>/img/1.png" alt="">
+            <div class="item seleccion box lista" alt="n" forma="">
+                <img src="<?= $dir ?>/img/4.png" alt="">
             </div>
-            <div class="item box lista" alt="ooo" forma="">
-                <img src="<?= $dir ?>/img/1.png" alt="">
+            <div class="item seleccion box lista" alt="ooo" forma="">
+                <img src="<?= $dir ?>/img/11.png" alt="">
             </div>
-            <div class="item box lista" alt="ooo" forma="">
-                <img src="<?= $dir ?>/img/1.png" alt="">
+            <div class="item seleccion box lista" alt="ooo" forma="">
+                <img src="<?= $dir ?>/img/7.png" alt="">
             </div>
-            <div class="item box lista" alt="ooo" forma="">
-                <img src="<?= $dir ?>/img/1.png" alt="">
+            <div class="item seleccion box lista" alt="ooo" forma="">
+                <img src="<?= $dir ?>/img/6.png" alt="">
             </div>
-            <div class="item box lista" alt="ooo" forma="">
-                <img src="<?= $dir ?>/img/1.png" alt="">
+            <div class="item seleccion box lista" alt="n" forma="">
+                <img src="<?= $dir ?>/img/4.png" alt="">
             </div>
-            <div class="item box lista" alt="ooo" forma="">
-                <img src="<?= $dir ?>/img/1.png" alt="">
+            <div class="item seleccion box lista" alt="n" forma="">
+                <img src="<?= $dir ?>/img/8.png" alt="">
             </div>
-            <div class="item box lista" alt="ooo" forma="">
-                <img src="<?= $dir ?>/img/1.png" alt="">
+            <div class="item seleccion box lista" alt="n" forma="">
+                <img src="<?= $dir ?>/img/9.png" alt="">
             </div>
-            <div class="item box lista" alt="ooo" forma="">
-                <img src="<?= $dir ?>/img/1.png" alt="">
+            <div class="item seleccion box lista" alt="ooo" forma="">
+                <img src="<?= $dir ?>/img/7.png" alt="">
             </div>
-            <div class="item box lista" alt="ooo" forma="">
-                <img src="<?= $dir ?>/img/1.png" alt="">
+            <div class="item seleccion box lista" alt="n" forma="">
+                <img src="<?= $dir ?>/img/4.png" alt="">
             </div>
-            <div class="item box lista" alt="ooo" forma="">
-                <img src="<?= $dir ?>/img/1.png" alt="">
+            <div class="item seleccion box lista" alt="n" forma="">
+                <img src="<?= $dir ?>/img/8.png" alt="">
             </div>
-            <div class="item box lista" alt="ooo" forma="">
-                <img src="<?= $dir ?>/img/1.png" alt="">
+            <div class="item seleccion box lista" alt="n" forma="">
+                <img src="<?= $dir ?>/img/9.png" alt="">
             </div>
-            <div class="item box lista" alt="ooo" forma="">
-                <img src="<?= $dir ?>/img/1.png" alt="">
+            <div class="item seleccion box lista" alt="ooo" forma="">
+                <img src="<?= $dir ?>/img/11.png" alt="">
             </div>
-            <div class="item box lista" alt="ooo" forma="">
-                <img src="<?= $dir ?>/img/1.png" alt="">
+            <div class="item seleccion box lista" alt="n" forma="">
+                <img src="<?= $dir ?>/img/8.png" alt="">
             </div>
-            <div class="item box lista" alt="ooo" forma="">
-                <img src="<?= $dir ?>/img/1.png" alt="">
+            <div class="item seleccion box lista" alt="ooo" forma="">
+                <img src="<?= $dir ?>/img/6.png" alt="">
             </div>
-            <div class="item box lista" alt="ooo" forma="">
-                <img src="<?= $dir ?>/img/1.png" alt="">
+            <div class="item seleccion box lista" alt="n" forma="">
+                <img src="<?= $dir ?>/img/4.png" alt="">
             </div>
-            <div class="item box lista" alt="ooo" forma="">
-                <img src="<?= $dir ?>/img/1.png" alt="">
+            <div class="item seleccion box lista" alt="n" forma="">
+                <img src="<?= $dir ?>/img/8.png" alt="">
             </div>
-            <div class="item box lista" alt="ooo" forma="">
-                <img src="<?= $dir ?>/img/1.png" alt="">
+            <div class="item seleccion box lista" alt="ooo" forma="">
+                <img src="<?= $dir ?>/img/6.png" alt="">
             </div>
-            <div class="item box lista" alt="ooo" forma="">
-                <img src="<?= $dir ?>/img/1.png" alt="">
+            <div class="item seleccion box lista" alt="ooo" forma="">
+                <img src="<?= $dir ?>/img/10.png" alt="">
             </div>
-            <div class="item box lista" alt="ooo" forma="">
-                <img src="<?= $dir ?>/img/1.png" alt="">
+            <div class="item seleccion box lista" alt="ooo" forma="">
+                <img src="<?= $dir ?>/img/7.png" alt="">
             </div>
-            <div class="item box lista" alt="ooo" forma="">
-                <img src="<?= $dir ?>/img/1.png" alt="">
+            <div class="item seleccion box lista" alt="n" forma="">
+                <img src="<?= $dir ?>/img/8.png" alt="">
             </div>
-            <div class="item box lista" alt="ooo" forma="">
-                <img src="<?= $dir ?>/img/1.png" alt="">
+            <div class="item seleccion box lista" alt="n" forma="">
+                <img src="<?= $dir ?>/img/4.png" alt="">
             </div>
-            <div class="item box lista" alt="ooo" forma="">
-                <img src="<?= $dir ?>/img/1.png" alt="">
+            <div class="item seleccion box lista" alt="ooo" forma="">
+                <img src="<?= $dir ?>/img/5.png" alt="">
             </div>
-            <div class="item box lista" alt="ooo" forma="">
-                <img src="<?= $dir ?>/img/1.png" alt="">
+            <div class="item seleccion box lista" alt="ooo" forma="">
+                <img src="<?= $dir ?>/img/5.png" alt="">
             </div>
-            <div class="item box lista" alt="ooo" forma="">
-                <img src="<?= $dir ?>/img/1.png" alt="">
+            <div class="item seleccion box lista" alt="ooo" forma="">
+                <img src="<?= $dir ?>/img/10.png" alt="">
             </div>
-            <div class="item box lista" alt="ooo" forma="">
-                <img src="<?= $dir ?>/img/1.png" alt="">
+            <div class="item seleccion box lista" alt="n" forma="">
+                <img src="<?= $dir ?>/img/8.png" alt="">
             </div>
         </div>
     </div>
@@ -122,7 +122,7 @@ function result_tipo_5_0_8() {
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
-    if (r == 8) {
+    if (r == 13) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();

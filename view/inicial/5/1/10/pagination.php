@@ -17,7 +17,7 @@ function start_10() {
     $("#ventana").load(ruta + '5-1-10/index.php', {
         next: "resultado()",
         procesar: "result_tipo_5_1_10()",
-        titulo: " <center><h5><span>Observa</span> los conjuntos y <span>arrastra</span> la representación correcta.</h5></center>",
+        titulo: " <center><h5><span>Selecciona</span> en forma ascendente los números para completar el collar.</h5></center>",
         restaurar: "start_10()",
         dir: ruta,
         cod: "5-1-10",

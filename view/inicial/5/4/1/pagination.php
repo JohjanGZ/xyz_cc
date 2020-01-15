@@ -11,13 +11,13 @@ var ruta = "../../../../exercises/inicial/";
 ////////////// 2do 
 // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
 function start_1() {
-    $("#ventana").load(ruta + '5-2-1/index.php', {
+    $("#ventana").load(ruta + '5-4-1/index.php', {
         next: "resultado()",
-        procesar: "result_tipo_5_2_1()",
-        titulo: "<center><h5><span>Observa</span> los dibujos y <span>colorea</span> los cuadrados según el color de cada artículo pertenecientes a cada imagen.</h5></center>",
+        procesar: "result_tipo_5_4_1()",
+        titulo: "<center><h5><span>Coloca</span> los animales en los circulos ubicados en el arca de Noé.</h5></center>",
         restaurar: "start_1()",
         dir: ruta,
-        cod: "5-2-1",
+        cod: "5-4-1",
         nota: cal
     });
     return false;

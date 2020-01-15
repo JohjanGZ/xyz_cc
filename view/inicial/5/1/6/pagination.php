@@ -17,7 +17,7 @@ function start_6() {
     $("#ventana").load(ruta + '5-1-6/index.php', {
         next: "resultado()",
         procesar: "result_tipo_5_1_6()",
-        titulo: " <center><h5><span>Observa</span> los conjuntos y <span>arrastra</span> la representación correcta.</h5></center>",
+        titulo: " <center><h5><span>Observa</span> los objetos comparándolos cuál es más largo y cuál más corto y <span>pinta</span> el casillero del número hasta donde mide el objeto.</h5></center>",
         restaurar: "start_6()",
         dir: ruta,
         cod: "5-1-6",

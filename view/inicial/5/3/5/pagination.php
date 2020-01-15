@@ -14,13 +14,13 @@ var ruta = "../../../../exercises/inicial/";
 // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
 
 function start_5() {
-    $("#ventana").load(ruta + '5-2-5/index.php', {
+    $("#ventana").load(ruta + '5-3-5/index.php', {
         next: "resultado()",
-        procesar: "result_tipo_5_2_5()",
-        titulo: " <center><h5><span>Observa</span> los conjuntos y <span>arrastra</span> la representación correcta.</h5></center>",
+        procesar: "result_tipo_5_3_5()",
+        titulo: " <center><h5><span>Coloca</span> el cepillo de dientes en la mano derecha de la niña; la pasta dental, en la mano izquierda; y la toalla, en el lado derecho.</h5></center>",
         restaurar: "start_5()",
         dir: ruta,
-        cod: "5-2-5",
+        cod: "5-3-5",
         nota: cal
     });
     return false;
