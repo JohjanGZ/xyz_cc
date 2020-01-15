@@ -8,7 +8,7 @@
 
 </style>
 <?=$titulo?>
-<?php $num = array('637','749','1386','678','597','1275','718','290','1008','170','735','905','479','375','854'); ?>
+<?php $num = array('637','749','1 386','678','597','1 275','718','290','1 008','170','735','905','479','375','854'); ?>
 
 <body>
 
@@ -71,7 +71,7 @@
                 </div>
                 <div class="grid-respuesta">
                     <div class="grid-item">
-                        <select class="seleccion" alt="1386">
+                        <select class="seleccion" alt="1 386">
                             <option value="" disabled selected></option>
                             <?php
                         for ($i=0; $i < count($num); $i++) { 
@@ -82,7 +82,7 @@
                     </div>
                     <div class="grid-item ms">=</div>
                     <div class="grid-item">
-                        <select class="seleccion" alt="1386">
+                        <select class="seleccion" alt="1 386">
                             <option value="" disabled selected></option>
                             <?php
                         for ($i=0; $i < count($num); $i++) { 
@@ -150,7 +150,7 @@
                 </div>
                 <div class="grid-respuesta">
                     <div class="grid-item">
-                        <select class="seleccion" alt="1275">
+                        <select class="seleccion" alt="1 275">
                             <option value="" disabled selected></option>
                             <?php
                         for ($i=0; $i < count($num); $i++) { 
@@ -161,7 +161,7 @@
                     </div>
                     <div class="grid-item ms">=</div>
                     <div class="grid-item">
-                        <select class="seleccion" alt="1275">
+                        <select class="seleccion" alt="1 275">
                             <option value="" disabled selected></option>
                             <?php
                         for ($i=0; $i < count($num); $i++) { 
@@ -197,7 +197,7 @@ $("#next").attr("onclick", "<?=$next?>");
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
 // Validar
-function result_tipo_3_2_12() {
+function result_tipo_3_1_5() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();

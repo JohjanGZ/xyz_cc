@@ -5,7 +5,7 @@
     <link rel="stylesheet" type="text/css" href="<?= $dir ?>/css/styles.css">
 </head>
 <?=$titulo?>
-<?php $opciones = array('5 000 + 900 + 20 + 7','1 000 + 600 + 20 + 7','1 000 + 900 + 20 + 7','5 000 + 400 + 80 + 9') ?>
+<?php $opciones = array('200 + 10 + 9','400 + 10 + 4','300 + 20 + 9','200 + 50 + 5') ?>
 <div class="container-two">
     <div class="grid-preguntas">
         <center>
@@ -51,7 +51,7 @@ $("#next").attr("onclick", "<?=$next?>");
 <script type="text/javascript">
 // Formulario - Registrados
 
-function result_tipo_3_1_9() {
+function result_tipo_3_1_1() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
@@ -69,4 +69,3 @@ function result_tipo_3_1_9() {
 
 }
 </script>
-<script type="text/javascript" src="../../../exercises/comunicacion/1-0-9/js/validate.js"></script>
