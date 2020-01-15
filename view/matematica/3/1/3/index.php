@@ -47,7 +47,7 @@
 
         function IniciarCronometro() {
             $("#portada").css("display", "none");
-            Page_5();
+            Page_10();
         }
         </script>
     </body>

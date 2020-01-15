@@ -16,7 +16,7 @@
         <div class="grid-container">
             <div class="grid-ejercicio">
                 <div class="ejercicio">
-                    13 <span class="ms">+</span> 48 <span class="ms"> + </span> 25 <span class="ms"> = </span>
+                    13 <span class="ms">+</span> 48 <span class="ms"> + </span> 25 <span class="ms"> = </span> 86
                 </div>
                 <div class="grid-head">
                     <div class="grid-item">
@@ -24,7 +24,7 @@
                             <option value="" disabled selected></option>
                             <?php
                                 for ($i=0; $i < count($num); $i++) { 
-                                    echo "<option value='$num[$i]'>$num[$i]</option>";
+                                    echo "<option value='$num[$i]'>( $num[$i]</option>";
                                 }
                             ?>
                         </select>
@@ -35,7 +35,7 @@
                             <option value="" disabled selected></option>
                             <?php
                                 for ($i=0; $i < count($num); $i++) { 
-                                    echo "<option value='$num[$i]'>$num[$i]</option>";
+                                    echo "<option value='$num[$i]'>$num[$i] )</option>";
                                 }
                             ?>
                         </select>
@@ -57,7 +57,7 @@
                             <option value="" disabled selected></option>
                             <?php
                                 for ($i=0; $i < count($num); $i++) { 
-                                    echo "<option value='$num[$i]'>$num[$i]</option>";
+                                    echo "<option value='$num[$i]'>( $num[$i]</option>";
                                 }
                             ?>
                         </select>
@@ -68,7 +68,7 @@
                             <option value="" disabled selected></option>
                             <?php
                                 for ($i=0; $i < count($num); $i++) { 
-                                    echo "<option value='$num[$i]'>$num[$i]</option>";
+                                    echo "<option value='$num[$i]'>$num[$i] )</option>";
                                 }
                             ?>
                         </select>
@@ -196,7 +196,7 @@ $("#next").attr("onclick", "<?=$next?>");
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
 // Validar
-function result_tipo_3_3_10() {
+function result_tipo_3_1_9() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();

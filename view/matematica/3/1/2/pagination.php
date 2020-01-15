@@ -49,7 +49,7 @@ function start_2() {
     $("#ventana").load(ruta + '3-1-2/index.php', {
         next: "Page_3()",
         procesar: "result_tipo_3_1_2()",
-        titulo: "<center><h5><span>Arrastra</span> los números y <span>ubícalos</span> donde correspondan en las piramides aditivas.</h5></center>",
+        titulo: "<center><h5><span>Arrastra</span> los números en la pirámide aditiva según corresponda.</h5></center>",
         restaurar: "start_2()",
         dir: ruta,
         cod: "3-1-2",
@@ -62,7 +62,7 @@ function start_3() {
     $("#ventana").load(ruta + '3-1-3/index.php', {
         next: "Page_4()",
         procesar: "result_tipo_3_1_3()",
-        titulo: "<center><h5><span>Arrastra</span> los números y <span>ubícalos</span> donde correspondan en las piramides aditivas.</h5></center>",
+        titulo: "<center><h5><span>Arrastra</span> los números en la pirámide aditiva según corresponda.</h5></center>",
         restaurar: "start_3()",
         dir: ruta,
         cod: "3-1-3",
@@ -99,7 +99,7 @@ function start_6() {
     $("#ventana").load(ruta + '3-1-6/index.php', {
         next: "Page_7()",
         procesar: "result_tipo_3_1_6()",
-        titulo: "<center><h5><span>Observa</span> los conjuntos y <span>arrastra</span> la representación correcta.</h5></center>",
+        titulo: "<center><h5><span>Completa</span> el esquema y <span>aplica</span> la propiedad conmutativa de la adición.</h5></center>",
         restaurar: "start_6()",
         dir: ruta,
         cod: "3-1-6",
@@ -112,7 +112,7 @@ function start_7() {
     $("#ventana").load(ruta + '3-1-7/index.php', {
         next: "Page_8()",
         procesar: "result_tipo_3_1_7()",
-        titulo: "<center><h5><span>Observa</span> los conjuntos y <span>arrastra</span> la representación correcta.</h5></center>",
+        titulo: "<center><h5><span>Clasifica</span> cada ejercicio según la propiedad correspondiente.</h5></center>",
         restaurar: "start_7()",
         dir: ruta,
         cod: "3-1-7",
@@ -124,7 +124,7 @@ function start_8() {
     $("#ventana").load(ruta + '3-1-8/index.php', {
         next: "Page_9()",
         procesar: "result_tipo_3_1_8()",
-        titulo: "<center><h5><span>Observa</span> los conjuntos y <span>arrastra</span> la representación correcta.</h5></center>",
+        titulo: "<center><h5><span>Resuelve</span> las operaciones y <span>aplica</span> la propiedad asociativa.</h5></center>",
         restaurar: "start_8()",
         dir: ruta,
         cod: "3-1-8",
@@ -137,7 +137,7 @@ function start_9() {
     $("#ventana").load(ruta + '3-1-9/index.php', {
         next: "resultado()",
         procesar: "result_tipo_3_1_9()",
-        titulo: "<center><h5><span>Observa</span> los conjuntos y <span>arrastra</span> la representación correcta.</h5></center>",
+        titulo: "<center><h5><span>Resuelve</span> las operaciones y <span>aplica</span> la propiedad asociativa.</h5></center>",
         restaurar: "start_9()",
         dir: ruta,
         cod: "3-1-9",

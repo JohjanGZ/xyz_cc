@@ -13,9 +13,9 @@ var ruta = "../../../../exercises/matematica/";
 // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
 function start_1() {
     $("#ventana").load(ruta + '3-1-1/index.php', {
-        next: "Page_2()",
+        next: "resultado()",
         procesar: "result_tipo_3_1_1()",
-        titulo: "<center><h5><span>Cuenta</span> y <span>arrastra</span> la cantidad de elementos donde corresponda.</h5></center>",
+        titulo: "<center><h5><span>Observa</span> los precios de los microondas. Luego, <span>selecciona</span> el que tiene un costo de 329 soles.</h5></center>",
         restaurar: "start_1()",
         dir: ruta,
         cod: "3-1-1",
