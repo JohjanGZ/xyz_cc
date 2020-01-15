@@ -8,7 +8,7 @@
 
     var cant=1;
     var cal= 20/20;
-    var ruta="../../../../exercises/comunicacion/";
+    var ruta="../../../../exercises/inicial/";
     ////////////// 2do 
             // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
    
