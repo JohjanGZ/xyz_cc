@@ -14,7 +14,7 @@
 
 <body>
     <div class="caja-principal">
-        <div class="content">
+        <div class="content aleatorio">
             <div class="item">
                 <div class="image">
                     <img src="<?= $dir ?>/img/1.png" alt="">

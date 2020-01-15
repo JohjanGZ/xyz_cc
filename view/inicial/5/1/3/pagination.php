@@ -16,7 +16,7 @@ function start_3() {
     $("#ventana").load(ruta + '5-1-3/index.php', {
         next: "resultado()",
         procesar: "result_tipo_5_1_3()",
-        titulo: "<center><h5><span>Selecciona</span> el conjunto en donde todos los animales tienen dos patas.</h5></center>",
+        titulo: "<center><h5><span>Ordena</span> las cajas de las más pequeña a la más grande.</h5></center>",
         restaurar: "start_3()",
         dir: ruta,
         cod: "5-1-3",

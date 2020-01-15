@@ -17,7 +17,7 @@ function start_4() {
     $("#ventana").load(ruta + '5-2-4/index.php', {
         next: "resultado()",
         procesar: "result_tipo_5_2_4()",
-        titulo: " <center><h5><span>Observa</span> los conjuntos y <span>arrastra</span> la representación correcta.</h5></center>",
+        titulo: " <center><h5><span>Completa</span> el crucigrama con el nombre de cada estado del agua.</h5></center>",
         restaurar: "start_4()",
         dir: ruta,
         cod: "5-2-4",

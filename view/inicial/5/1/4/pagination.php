@@ -17,7 +17,7 @@ function start_4() {
     $("#ventana").load(ruta + '5-1-4/index.php', {
         next: "resultado()",
         procesar: "result_tipo_5_1_4()",
-        titulo: " <center><h5><span>Observa</span> los conjuntos y <span>arrastra</span> la representación correcta.</h5></center>",
+        titulo: " <center><h5><span>Crea</span> una secuencia. <span>Recuerda</span> que es por tamaño.</h5></center>",
         restaurar: "start_4()",
         dir: ruta,
         cod: "5-1-4",

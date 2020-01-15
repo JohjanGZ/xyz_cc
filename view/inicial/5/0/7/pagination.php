@@ -17,7 +17,7 @@ function start_7() {
     $("#ventana").load(ruta + '5-0-7/index.php', {
         next: "resultado()",
         procesar: "result_tipo_5_0_7()",
-        titulo: " <center><h5><span>Observa</span> los conjuntos y <span>arrastra</span> la representación correcta.</h5></center>",
+        titulo: " <center><h5><span>Selecciona</span> las letras que corresponden a cada palabra.</h5></center>",
         restaurar: "start_7()",
         dir: ruta,
         cod: "5-0-7",

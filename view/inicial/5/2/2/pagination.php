@@ -17,7 +17,7 @@ function start_2() {
     $("#ventana").load(ruta + '5-2-2/index.php', {
         next: "resultado()",
         procesar: "result_tipo_5_2_2()",
-        titulo: "<center><h5><span>Observa</span> atentamente la imagen y <span>completa</span> los espacios.</h5></center>",
+        titulo: "<center><h5><span>Coloca</span> los nombres de cada parte del cuerpo humano donde corresponda.</h5></center>",
         restaurar: "start_2()",
         dir: ruta,
         cod: "5-2-2",

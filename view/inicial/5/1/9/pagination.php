@@ -17,7 +17,7 @@ function start_9() {
     $("#ventana").load(ruta + '5-1-9/index.php', {
         next: "resultado()",
         procesar: "result_tipo_5_1_9()",
-        titulo: " <center><h5><span>Observa</span> los conjuntos y <span>arrastra</span> la representación correcta.</h5></center>",
+        titulo: " <center><h5><span>Selecciona</span> que objeto es mayor que el otro.</h5></center>",
         restaurar: "start_9()",
         dir: ruta,
         cod: "5-1-9",

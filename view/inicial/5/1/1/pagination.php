@@ -14,7 +14,7 @@ function start_1() {
     $("#ventana").load(ruta + '5-1-1/index.php', {
         next: "resultado()",
         procesar: "result_tipo_5_1_1()",
-        titulo: "<center><h5><span>Observa</span> los dibujos y <span>colorea</span> los cuadrados según el color de cada artículo pertenecientes a cada imagen.</h5></center>",
+        titulo: "<center><h5><span>Observa</span> las escenas de cada recuadro y <span>selecciona</span> la hora que corresponde a cada acción.</h5></center>",
         restaurar: "start_1()",
         dir: ruta,
         cod: "5-1-1",

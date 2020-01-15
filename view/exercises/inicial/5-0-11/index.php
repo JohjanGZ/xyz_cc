@@ -50,7 +50,7 @@
         var divs = $(".found").toArray().length;
 
         console.log(divs);
-        if (divs >= 22) {
+        if (divs >= 20) {
             localStorage.setItem("Nota<?=$cod?>", nota);
             localStorage.setItem("Time<?=$cod?>", tiempo);
             correcto();
