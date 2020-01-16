@@ -17,7 +17,7 @@ function start_21() {
     $("#ventana").load(ruta + '3-4-21/index.php', {
         next: "resultado()",
         procesar: "result_tipo_3_4_21()",
-        titulo: "<center><h5><span>Responde</span> las siguientes preguntas:</h5></center>",
+        titulo: "<center><h5><span>Escribe</span> los decimales que corresponden a las siguientes ubicaciones.</h5></center>",
         restaurar: "start_21()",
         dir: ruta,
         cod: "3-4-21",

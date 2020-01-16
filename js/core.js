@@ -170,7 +170,7 @@ function arrastre() {
         }
     });
     $(".contenedor").droppable({
-        drop: function (event, ui) {
+        drop: function(event, ui) {
             element2 = $(this).attr("alt");
             $(this).css("background-color", "rgba(139, 195, 74, 0.14)");
             elementid.css({ "background": "transparent", "border-color": "transparent" });
@@ -385,7 +385,7 @@ function operaciones() {
                 }
             }
         }
-        $(this).append(letra);
+        $(this).html(letra);
         console.log(r);
     });
 }

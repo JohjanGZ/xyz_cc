@@ -8,152 +8,111 @@
 
 </style>
 <?=$titulo?>
+<?php 
+    $numeros = array('23','18','10','2','4','5','3','7','6','9');
+?>
 
 <body>
     <div class="container-two">
         <div class="row">
-            <div class="col l3">
-                <center>
-                    <div class="grid-img">
-                        <img src="<?=$dir?>/img/principal.png" class="img materialboxed">
-                    </div>
-                </center>
+            <div class="col l6">
+                <img src="<?=$dir?>/img/principal.png" class="principal materialboxed">
             </div>
-            <div class="col l9">
-                <div class="grid-head">
-                    <div class="item c">Cupcakes preferidos</div>
-                    <div class="item c">Hombres</div>
-                    <div class="item c">Mujeres</div>
-                    <div class="item c">Total</div>
-                </div>
-                <div class="grid-contenedor">
-                    <div class="item c"><img src="<?=$dir?>/img/1.png" class="img-o"></div>
-                    <div class="item">
-                        <select class="seleccion" alt="4">
-                            <option value="" disabled selected></option>
-                            <?php foreach (range(1, 100) as $num) {
-                                    echo "<option value='$num'>$num</option>";
-                                } ?>
-                        </select>
+            <div class="col l6">
+                <div class="grid-container">
+                    <div class="grid-item tt"><span></span>Comida</div>
+                    <div class="grid-item tt"><span></span>Niños</div>
+                    <div class="grid-item tt"><span></span>Niñas</div>
+                    <div class="grid-item">
+                        <img src="<?=$dir?>/img/1.png" class="img">
                     </div>
-                    <div class="item">
+                    <div class="grid-item">
                         <select class="seleccion" alt="6">
                             <option value="" disabled selected></option>
-                            <?php foreach (range(1, 100) as $num) {
-                                    echo "<option value='$num'>$num</option>";
-                                } ?>
+                            <?php
+                                for ($i=0; $i < count($numeros); $i++) { 
+                                    echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                                }
+                            ?>
                         </select>
                     </div>
-                    <div class="item">
-                        <select class="seleccion" alt="10">
-                            <option value="" disabled selected></option>
-                            <?php foreach (range(1, 100) as $num) {
-                                    echo "<option value='$num'>$num</option>";
-                                } ?>
-                        </select>
-                    </div>
-
-                    <div class="item c"><img src="<?=$dir?>/img/2.png" class="img-o"></div>
-                    <div class="item">
+                    <div class="grid-item">
                         <select class="seleccion" alt="7">
                             <option value="" disabled selected></option>
-                            <?php foreach (range(1, 100) as $num) {
-                                    echo "<option value='$num'>$num</option>";
-                                } ?>
+                            <?php
+                                for ($i=0; $i < count($numeros); $i++) { 
+                                    echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                                }
+                            ?>
                         </select>
                     </div>
-                    <div class="item">
-                        <select class="seleccion" alt="5">
+                    <div class="grid-item">
+                        <img src="<?=$dir?>/img/2.png" class="img">
+                    </div>
+                    <div class="grid-item">
+                        <select class="seleccion" alt="9">
                             <option value="" disabled selected></option>
-                            <?php foreach (range(1, 100) as $num) {
-                                    echo "<option value='$num'>$num</option>";
-                                } ?>
+                            <?php
+                                for ($i=0; $i < count($numeros); $i++) { 
+                                    echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                                }
+                            ?>
                         </select>
                     </div>
-                    <div class="item">
-                        <select class="seleccion" alt="12">
+                    <div class="grid-item">
+                        <select class="seleccion" alt="6">
                             <option value="" disabled selected></option>
-                            <?php foreach (range(1, 100) as $num) {
-                                    echo "<option value='$num'>$num</option>";
-                                } ?>
+                            <?php
+                                for ($i=0; $i < count($numeros); $i++) { 
+                                    echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                                }
+                            ?>
                         </select>
                     </div>
-
-                    <div class="item c"><img src="<?=$dir?>/img/3.png" class="img-o"></div>
-                    <div class="item">
-                        <select class="seleccion" alt="10">
-                            <option value="" disabled selected></option>
-                            <?php foreach (range(1, 100) as $num) {
-                                    echo "<option value='$num'>$num</option>";
-                                } ?>
-                        </select>
+                    <div class="grid-item">
+                        <img src="<?=$dir?>/img/3.png" class="img">
                     </div>
-                    <div class="item">
-                        <select class="seleccion" alt="7">
-                            <option value="" disabled selected></option>
-                            <?php foreach (range(1, 100) as $num) {
-                                    echo "<option value='$num'>$num</option>";
-                                } ?>
-                        </select>
-                    </div>
-                    <div class="item">
-                        <select class="seleccion" alt="17">
-                            <option value="" disabled selected></option>
-                            <?php foreach (range(1, 100) as $num) {
-                                    echo "<option value='$num'>$num</option>";
-                                } ?>
-                        </select>
-                    </div>
-
-                    <div class="item c"><img src="<?=$dir?>/img/4.png" class="img-o"></div>
-                    <div class="item">
+                    <div class="grid-item">
                         <select class="seleccion" alt="3">
                             <option value="" disabled selected></option>
-                            <?php foreach (range(1, 100) as $num) {
-                                    echo "<option value='$num'>$num</option>";
-                                } ?>
+                            <?php
+                                for ($i=0; $i < count($numeros); $i++) { 
+                                    echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                                }
+                            ?>
                         </select>
                     </div>
-                    <div class="item">
-                        <select class="seleccion" alt="4">
+                    <div class="grid-item">
+                        <select class="seleccion" alt="10">
                             <option value="" disabled selected></option>
-                            <?php foreach (range(1, 100) as $num) {
-                                    echo "<option value='$num'>$num</option>";
-                                } ?>
+                            <?php
+                                for ($i=0; $i < count($numeros); $i++) { 
+                                    echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                                }
+                            ?>
                         </select>
                     </div>
-                    <div class="item">
-                        <select class="seleccion" alt="7">
+                    <div class="grid-item tt">
+                        Total
+                    </div>
+                    <div class="grid-item">
+                        <select class="seleccion" alt="18">
                             <option value="" disabled selected></option>
-                            <?php foreach (range(1, 100) as $num) {
-                                    echo "<option value='$num'>$num</option>";
-                                } ?>
+                            <?php
+                                for ($i=0; $i < count($numeros); $i++) { 
+                                    echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                                }
+                            ?>
                         </select>
                     </div>
-
-                    <div class="item c">Total</div>
-                    <div class="item c">
-                        <select class="seleccion" alt="24">
+                    <div class="grid-item">
+                        <select class="seleccion" alt="23">
                             <option value="" disabled selected></option>
-                            <?php foreach (range(1, 100) as $num) {
-                                    echo "<option value='$num'>$num</option>";
-                                } ?>
-                        </select>
-                    </div>
-                    <div class="item c">
-                        <select class="seleccion" alt="22">
-                            <option value="" disabled selected></option>
-                            <?php foreach (range(1, 100) as $num) {
-                                    echo "<option value='$num'>$num</option>";
-                                } ?>
-                        </select>
-                    </div>
-                    <div class="item c">
-                        <select class="seleccion" alt="46">
-                            <option value="" disabled selected></option>
-                            <?php foreach (range(1, 100) as $num) {
-                                    echo "<option value='$num'>$num</option>";
-                                } ?>
+                            <?php
+                                for ($i=0; $i < count($numeros); $i++) { 
+                                    echo "<option value='$numeros[$i]'>$numeros[$i]</option>";
+                                }
+                            ?>
                         </select>
                     </div>
                 </div>
@@ -189,7 +148,7 @@ function result_tipo_3_5_3() {
     var tiempo = min + ":" + seg + ":" + milseg;
     r = 0
     seleccion_lista();
-    if (r == 15) {
+    if (r == 8) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();

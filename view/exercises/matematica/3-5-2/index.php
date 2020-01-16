@@ -8,154 +8,127 @@
 
 </style>
 <?=$titulo?>
+<?php 
+$comprension = array('1←','1→','1↑','1↓','2←','2→','2↑','2↓','3←','3→','3↑','3↓','4←','4→','4↑','4↓','5←','5→','5↑','5↓','6←','6→','6↑','6↓');
+// 27← 26→ 24↑ 25↓
+?>
 
 <body>
     <div class="container-two">
-        <div class="row">
-            <div class="col l3">
-                <center>
-                    <div class="grid-img">
-                        <img src="<?=$dir?>/img/principal.png" class="img materialboxed">
-                    </div>
-                </center>
-            </div>
-            <div class="col l9">
-                <div class="grid-head">
-                    <div class="item c">Comida preferida</div>
-                    <div class="item c">Hombres</div>
-                    <div class="item c">Mujeres</div>
-                    <div class="item c">Total</div>
+        <center>
+            <img src="<?=$dir?>/img/principal.png" class="img materialboxed">
+        </center>
+        <div class="grid-body">
+            <div class="grid-box">
+                <div class="grid-item">
+                    <select class="slc" alt="4→">
+                        <option value="" disabled selected></option>
+                        <?php
+                            for ($i=0; $i < count($comprension); $i++) { 
+                                echo "<option value='$comprension[$i]'>$comprension[$i]</option>";
+                            }                                
+                        ?>
+                    </select>
                 </div>
-                <div class="grid-contenedor">
-                    <div class="item c">Causa</div>
-                    <div class="item">
-                        <select class="seleccion" alt="6">
-                            <option value="" disabled selected></option>
-                            <?php foreach (range(1, 100) as $num) {
-                                    echo "<option value='$num'>$num</option>";
-                                } ?>
-                        </select>
-                    </div>
-                    <div class="item">
-                        <select class="seleccion" alt="4">
-                            <option value="" disabled selected></option>
-                            <?php foreach (range(1, 100) as $num) {
-                                    echo "<option value='$num'>$num</option>";
-                                } ?>
-                        </select>
-                    </div>
-                    <div class="item">
-                        <select class="seleccion" alt="10">
-                            <option value="" disabled selected></option>
-                            <?php foreach (range(1, 100) as $num) {
-                                    echo "<option value='$num'>$num</option>";
-                                } ?>
-                        </select>
-                    </div>
-
-                    <div class="item c">Pizza</div>
-                    <div class="item">
-                        <select class="seleccion" alt="5">
-                            <option value="" disabled selected></option>
-                            <?php foreach (range(1, 100) as $num) {
-                                    echo "<option value='$num'>$num</option>";
-                                } ?>
-                        </select>
-                    </div>
-                    <div class="item">
-                        <select class="seleccion" alt="7">
-                            <option value="" disabled selected></option>
-                            <?php foreach (range(1, 100) as $num) {
-                                    echo "<option value='$num'>$num</option>";
-                                } ?>
-                        </select>
-                    </div>
-                    <div class="item">
-                        <select class="seleccion" alt="12">
-                            <option value="" disabled selected></option>
-                            <?php foreach (range(1, 100) as $num) {
-                                    echo "<option value='$num'>$num</option>";
-                                } ?>
-                        </select>
-                    </div>
-
-                    <div class="item c">Ceviche</div>
-                    <div class="item">
-                        <select class="seleccion" alt="7">
-                            <option value="" disabled selected></option>
-                            <?php foreach (range(1, 100) as $num) {
-                                    echo "<option value='$num'>$num</option>";
-                                } ?>
-                        </select>
-                    </div>
-                    <div class="item">
-                        <select class="seleccion" alt="10">
-                            <option value="" disabled selected></option>
-                            <?php foreach (range(1, 100) as $num) {
-                                    echo "<option value='$num'>$num</option>";
-                                } ?>
-                        </select>
-                    </div>
-                    <div class="item">
-                        <select class="seleccion" alt="17">
-                            <option value="" disabled selected></option>
-                            <?php foreach (range(1, 100) as $num) {
-                                    echo "<option value='$num'>$num</option>";
-                                } ?>
-                        </select>
-                    </div>
-
-                    <div class="item c">Tallarines</div>
-                    <div class="item">
-                        <select class="seleccion" alt="4">
-                            <option value="" disabled selected></option>
-                            <?php foreach (range(1, 100) as $num) {
-                                    echo "<option value='$num'>$num</option>";
-                                } ?>
-                        </select>
-                    </div>
-                    <div class="item">
-                        <select class="seleccion" alt="3">
-                            <option value="" disabled selected></option>
-                            <?php foreach (range(1, 100) as $num) {
-                                    echo "<option value='$num'>$num</option>";
-                                } ?>
-                        </select>
-                    </div>
-                    <div class="item">
-                        <select class="seleccion" alt="7">
-                            <option value="" disabled selected></option>
-                            <?php foreach (range(1, 100) as $num) {
-                                    echo "<option value='$num'>$num</option>";
-                                } ?>
-                        </select>
-                    </div>
-
-                    <div class="item c">Total</div>
-                    <div class="item">
-                        <select class="seleccion" alt="22">
-                            <option value="" disabled selected></option>
-                            <?php foreach (range(1, 100) as $num) {
-                                    echo "<option value='$num'>$num</option>";
-                                } ?>
-                        </select>
-                    </div>
-                    <div class="item">
-                        <select class="seleccion" alt="24">
-                            <option value="" disabled selected></option>
-                            <?php foreach (range(1, 100) as $num) {
-                                    echo "<option value='$num'>$num</option>";
-                                } ?>
-                        </select>
-                    </div>
-                    <div class="item">
-                        <select class="seleccion" alt="46">
-                            <option value="" disabled selected></option>
-                            <?php foreach (range(1, 100) as $num) {
-                                    echo "<option value='$num'>$num</option>";
-                                } ?>
-                        </select>
-                    </div>
+                <div class="grid-item">
+                    <select class="slc" alt="3↓">
+                        <option value="" disabled selected></option>
+                        <?php
+                            for ($i=0; $i < count($comprension); $i++) { 
+                                echo "<option value='$comprension[$i]'>$comprension[$i]</option>";
+                            }                                
+                        ?>
+                    </select>
+                </div>
+                <div class="grid-item">
+                    <select class="slc" alt="2→">
+                        <option value="" disabled selected></option>
+                        <?php
+                            for ($i=0; $i < count($comprension); $i++) { 
+                                echo "<option value='$comprension[$i]'>$comprension[$i]</option>";
+                            }                                
+                        ?>
+                    </select>
+                </div>
+                <div class="grid-item">
+                    <select class="slc" alt="3↓">
+                        <option value="" disabled selected></option>
+                        <?php
+                            for ($i=0; $i < count($comprension); $i++) { 
+                                echo "<option value='$comprension[$i]'>$comprension[$i]</option>";
+                            }                                
+                        ?>
+                    </select>
+                </div>
+                <div class="grid-item">
+                    <select class="slc" alt="5→">
+                        <option value="" disabled selected></option>
+                        <?php
+                            for ($i=0; $i < count($comprension); $i++) { 
+                                echo "<option value='$comprension[$i]'>$comprension[$i]</option>";
+                            }                                
+                        ?>
+                    </select>
+                </div>
+                <div class="grid-item">
+                    <select class="slc" alt="4↑">
+                        <option value="" disabled selected></option>
+                        <?php
+                            for ($i=0; $i < count($comprension); $i++) { 
+                                echo "<option value='$comprension[$i]'>$comprension[$i]</option>";
+                            }                                
+                        ?>
+                    </select>
+                </div>
+                <div class="grid-item">
+                    <select class="slc" alt="6→">
+                        <option value="" disabled selected></option>
+                        <?php
+                            for ($i=0; $i < count($comprension); $i++) { 
+                                echo "<option value='$comprension[$i]'>$comprension[$i]</option>";
+                            }                                
+                        ?>
+                    </select>
+                </div>
+                <div class="grid-item">
+                    <select class="slc" alt="5↓">
+                        <option value="" disabled selected></option>
+                        <?php
+                            for ($i=0; $i < count($comprension); $i++) { 
+                                echo "<option value='$comprension[$i]'>$comprension[$i]</option>";
+                            }                                
+                        ?>
+                    </select>
+                </div>
+                <div class="grid-item">
+                    <select class="slc" alt="5←">
+                        <option value="" disabled selected></option>
+                        <?php
+                            for ($i=0; $i < count($comprension); $i++) { 
+                                echo "<option value='$comprension[$i]'>$comprension[$i]</option>";
+                            }                                
+                        ?>
+                    </select>
+                </div>
+                <div class="grid-item">
+                    <select class="slc" alt="1↓">
+                        <option value="" disabled selected></option>
+                        <?php
+                            for ($i=0; $i < count($comprension); $i++) { 
+                                echo "<option value='$comprension[$i]'>$comprension[$i]</option>";
+                            }                                
+                        ?>
+                    </select>
+                </div>
+                <div class="grid-item">
+                    <select class="slc" alt="6→">
+                        <option value="" disabled selected></option>
+                        <?php
+                            for ($i=0; $i < count($comprension); $i++) { 
+                                echo "<option value='$comprension[$i]'>$comprension[$i]</option>";
+                            }                                
+                        ?>
+                    </select>
                 </div>
             </div>
         </div>
@@ -165,7 +138,7 @@
         <div class="modal-content">
             <center>
                 <h4>Respuesta correcta</h4>
-                <img class="materialboxed" width="80%" src="<?= $dir ?>/img/respuesta.png">
+                <img class="materialboxed" width="80%" src="<?=$dir?>/img/respuesta.png">
             </center>
         </div>
         <div class="modal-footer">
@@ -173,7 +146,6 @@
         </div>
     </div>
 </body>
-
 
 <script src="../../../../../js/core.js"></script>
 <?php require('../../../tools/botones/botones.php');?><script>
@@ -187,9 +159,8 @@ function result_tipo_3_5_2() {
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
-    r = 0
-    seleccion_lista();
-    if (r == 15) {
+
+    if (r == 11) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();

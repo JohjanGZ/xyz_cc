@@ -15,7 +15,7 @@ function start_1() {
     $("#ventana").load(ruta + '3-5-1/index.php', {
         next: "resultado()",
         procesar: "result_tipo_3_5_1()",
-        titulo: "<center><h5><span>Compara</span> las cantidades utilizando los símbolos.<span> <, > o =</span></h5></center>",
+        titulo: "<center><h5><span>Selecciona</span> el par ordenado en el que se ubican los siguientes objetos:</h5></center>",
         restaurar: "start_1()",
         dir: ruta,
         cod: "3-5-1",

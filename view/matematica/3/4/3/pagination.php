@@ -31,7 +31,7 @@ function start_10() {
     $("#ventana").load(ruta + '3-4-10/index.php', {
         next: "Page_11()",
         procesar: "result_tipo_3_4_10()",
-        titulo: "<center><h5><span>Resuelve</span> las multiplicaciones. </h5></center>",
+        titulo: "<center><h5><span>Observa</span> atentamente los gráficos y luego <span>compara</span> las fracciones usando los signos <span> ></span>, <span><</span> o <span>=</span>. </h5></center>",
         restaurar: "start_10()",
         dir: ruta,
         cod: "3-4-10",
@@ -43,7 +43,7 @@ function start_11() {
     $("#ventana").load(ruta + '3-4-11/index.php', {
         next: "Page_12()",
         procesar: "result_tipo_3_4_11()",
-        titulo: "<center><h5><span class='ftitulo'>Comprueba</span> las siguientes divisiones.</h5></center>",
+        titulo: "<center><h5><span>Observa</span> atentamente los gráficos y luego <span>compara</span> las fracciones usando los signos <span> ></span>, <span><</span> o <span>=</span>. </h5></center>",
         restaurar: "start_11()",
         dir: ruta,
         cod: "3-4-11",
@@ -55,7 +55,7 @@ function start_12() {
     $("#ventana").load(ruta + '3-4-12/index.php', {
         next: "Page_13()",
         procesar: "result_tipo_3_4_12()",
-        titulo: "<center><h5><span>Resuelve</span> las divisiones y <span>realiza</span> su comprobación.</h5></center>",
+        titulo: "<center><h5><span>Selecciona</span> la fracción menor.</h5></center>",
         restaurar: "start_12()",
         dir: ruta,
         cod: "3-4-12",
@@ -67,7 +67,7 @@ function start_13() {
     $("#ventana").load(ruta + '3-4-13/index.php', {
         next: "resultado()",
         procesar: "result_tipo_3_4_13()",
-        titulo: "<center><h5><span>Completa</span> los datos y <span>resuelve</span> los problemas.</h5></center>",
+        titulo: "<center><h5><span>Selecciona</span> la fracción mayor.</h5></center>",
         restaurar: "start_13()",
         dir: ruta,
         cod: "3-4-13",
