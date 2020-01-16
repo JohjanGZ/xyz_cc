@@ -14,7 +14,7 @@ function start_12() {
     $("#ventana").load(ruta + '3-3-12/index.php', {
         next: "resultado()",
         procesar: "result_tipo_3_3_12()",
-        titulo: "<center><h5><span>Selecciona</span> los medios de transporte que van por la tierra.</h5></center>",
+        titulo: "<center><h5><span>Selecciona</span> los medios de transporte que van por aire.</h5></center>",
         restaurar: "start_12()",
         dir: ruta,
         cod: "3-3-12",

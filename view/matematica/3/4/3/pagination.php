@@ -1,117 +1,76 @@
 <script type="text/javascript">
-function Page_20() {
-    start_20();
-    inicio();
-    count = 3;
-}
 
-function Page_21() {
-    start_21();
-    inicio();
-    count = 3;
-}
 
-function Page_22() {
-    start_22();
+function Page_10() {
+    start_10();
     inicio();
     count = 3;
 }
-
-function Page_23() {
-    start_23();
+function Page_11() {
+    start_11();
     inicio();
     count = 3;
 }
-
-function Page_24() {
-    start_24();
+function Page_12() {
+    start_12();
     inicio();
     count = 3;
 }
-
-function Page_25() {
-    start_25();
+function Page_13() {
+    start_13();
     inicio();
     count = 3;
 }
-var cant = 18;
+var cant = 4;
 var cal = cant / cant;
 console.log(cant);
 var ruta = "../../../../exercises/matematica/";
 ////////////// 2do 
-function start_20() {
-    $("#ventana").load(ruta + '3-4-20/index.php', {
-        next: "Page_21()",
-        procesar: "result_tipo_3_4_20()",
-        titulo: "<center><h5><span>Responde</span> las siguientes preguntas:</h5></center>",
-        restaurar: "start_20()",
+
+function start_10() {
+    $("#ventana").load(ruta + '3-4-10/index.php', {
+        next: "Page_11()",
+        procesar: "result_tipo_3_4_10()",
+        titulo: "<center><h5><span>Resuelve</span> las multiplicaciones. </h5></center>",
+        restaurar: "start_10()",
         dir: ruta,
-        cod: "3-4-20",
+        cod: "3-4-10",
         nota: cal
     });
     return false;
 };
-
-function start_21() {
-    $("#ventana").load(ruta + '3-4-21/index.php', {
-        next: "Page_22()",
-        procesar: "result_tipo_3_4_21()",
-        titulo: "<center><h5><span>Responde</span> las siguientes preguntas:</h5></center>",
-        restaurar: "start_21()",
+function start_11() {
+    $("#ventana").load(ruta + '3-4-11/index.php', {
+        next: "Page_12()",
+        procesar: "result_tipo_3_4_11()",
+        titulo: "<center><h5><span class='ftitulo'>Comprueba</span> las siguientes divisiones.</h5></center>",
+        restaurar: "start_11()",
         dir: ruta,
-        cod: "3-4-21",
+        cod: "3-4-11",
         nota: cal
     });
     return false;
 };
-
-function start_22() {
-    $("#ventana").load(ruta + '3-4-22/index.php', {
-        next: "Page_23()",
-        procesar: "result_tipo_3_4_22()",
-        titulo: "<center><h5><span>Observa</span> el gráfico y <span>selecciona</span> todas las oraciones que son correctas.</h5></center>",
-        restaurar: "start_22()",
+function start_12() {
+    $("#ventana").load(ruta + '3-4-12/index.php', {
+        next: "Page_13()",
+        procesar: "result_tipo_3_4_12()",
+        titulo: "<center><h5><span>Resuelve</span> las divisiones y <span>realiza</span> su comprobación.</h5></center>",
+        restaurar: "start_12()",
         dir: ruta,
-        cod: "3-4-22",
+        cod: "3-4-12",
         nota: cal
     });
     return false;
 };
-
-function start_23() {
-    $("#ventana").load(ruta + '3-4-23/index.php', {
-        next: "Page_24()",
-        procesar: "result_tipo_3_4_23()",
-        titulo: "<center><h5><span>Observa</span> el gráfico y <span>responde</span></h5></center>",
-        restaurar: "start_23()",
-        dir: ruta,
-        cod: "3-4-23",
-        nota: cal
-    });
-    return false;
-};
-
-function start_24() {
-    $("#ventana").load(ruta + '3-4-24/index.php', {
-        next: "Page_25()",
-        procesar: "result_tipo_3_4_24()",
-        titulo: "<center><h5><span>Selecciona</span> el diagrama que represente la indicación de cada enunciado. Ten en cuenta que cada círculo representa un total de 100 personas.</h5></center>",
-        restaurar: "start_24()",
-        dir: ruta,
-        cod: "3-4-24",
-        nota: cal
-    });
-    return false;
-};
-
-function start_25() {
-    $("#ventana").load(ruta + '3-4-25/index.php', {
+function start_13() {
+    $("#ventana").load(ruta + '3-4-13/index.php', {
         next: "resultado()",
-        procesar: "result_tipo_3_4_25()",
-        titulo: "<center><h5><span>Selecciona</span> el diagrama que represente la indicación de cada enunciado. Ten en cuenta que cada círculo representa un total de 100 personas.</h5></center>",
-        restaurar: "start_25()",
+        procesar: "result_tipo_3_4_13()",
+        titulo: "<center><h5><span>Completa</span> los datos y <span>resuelve</span> los problemas.</h5></center>",
+        restaurar: "start_13()",
         dir: ruta,
-        cod: "3-4-25",
+        cod: "3-4-13",
         nota: cal
     });
     return false;

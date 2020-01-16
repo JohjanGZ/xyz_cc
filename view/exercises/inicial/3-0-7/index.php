@@ -32,7 +32,7 @@
                             <div class="contenedor-img seleccion" alt="">
                                 <img src="<?= $dir ?>/img/5.png" alt="">
                             </div>
-                            <div class="contenedor-img seleccion" alt="n">
+                            <div class="contenedor-img seleccion" alt="">
                                 <img src="<?= $dir ?>/img/6.png" alt="">
                             </div>
                             <div class="contenedor-img seleccion" alt="n">
@@ -78,7 +78,7 @@ function result_tipo_3_0_7() {
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
-    if (r == 3) {
+    if (r == 2) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();
