@@ -1,81 +1,43 @@
 <script type="text/javascript">
-function Page_16() {
-    start_16();
+function Page_2() {
+    start_2();
     inicio();
     count = 3;
 }
 
-function Page_17() {
-    start_17();
+function Page_3() {
+    start_3();
     inicio();
     count = 3;
 }
 
-function Page_18() {
-    start_18();
-    inicio();
-    count = 3;
-}
-
-function Page_19() {
-    start_19();
-    inicio();
-    count = 3;
-}
-
-var cant = 18;
+var cant = 1;
 var cal = cant / cant;
 // console.log(cant);
 var ruta = "../../../../exercises/matematica/";
 ////////////// 2do 
 // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
-function start_16() {
-    $("#ventana").load(ruta + '3-3-16/index.php', {
-        next: "Page_17()",
-        procesar: "result_tipo_3_3_16()",
-        titulo: "<center><h5><span>Observa</span> las figuras 1 y 2 en el plano, luego <span>escribe</span> los pares ordenados de cada figura y si se redujo a la mitad, tercera o cuarta parte. </h5></center>",
-        restaurar: "start_16()",
+function start_2() {
+    $("#ventana").load(ruta + '3-3-2/index.php', {
+        next: "Page_3()",
+        procesar: "result_tipo_3_3_2()",
+        titulo: "<center><h5><span>Observa</span> atentamente el gráfico de barras y luego <span>completa</span> la tabla de frecuencia. </h5></center>",
+        restaurar: "start_2()",
         dir: ruta,
-        cod: "3-3-16",
+        cod: "3-3-2",
         nota: cal
     });
     return false;
 };
 
-function start_17() {
-    $("#ventana").load(ruta + '3-3-17/index.php', {
-        next: "Page_18()",
-        procesar: "result_tipo_3_3_17()",
-        titulo: "<center><h5><span>Observa</span> las figuras 1 y 2 en el plano, luego <span>escribe</span> los pares ordenados de cada figura y si se redujo a la mitad, tercera o cuarta parte. </h5></center>",
-        restaurar: "start_17()",
-        dir: ruta,
-        cod: "3-3-17",
-        nota: cal
-    });
-    return false;
-};
-
-function start_18() {
-    $("#ventana").load(ruta + '3-3-18/index.php', {
-        next: "Page_19()",
-        procesar: "result_tipo_3_3_18()",
-        titulo: "<center><h5><span>Observa</span> las figuras 1 y 2 en el plano, luego <span>escribe</span> los pares ordenados de cada figura y si se redujo a la mitad, tercera o cuarta parte. </h5></center>",
-        restaurar: "start_18()",
-        dir: ruta,
-        cod: "3-3-18",
-        nota: cal
-    });
-    return false;
-};
-
-function start_19() {
-    $("#ventana").load(ruta + '3-3-19/index.php', {
+function start_3() {
+    $("#ventana").load(ruta + '3-3-3/index.php', {
         next: "resultado()",
-        procesar: "result_tipo_3_3_19()",
-        titulo: "<center><h5><span>Observa</span> las figuras 1 y 2 en el plano, luego <span>escribe</span> los pares ordenados de cada figura.</h5></center>",
-        restaurar: "start_19()",
+        procesar: "result_tipo_3_3_3()",
+        titulo: "<center><h5><span>Observa</span> atentamente el gráfico de barras y luego <span>completa</span> la tabla de frecuencia. </h5></center>",
+        restaurar: "start_3()",
         dir: ruta,
-        cod: "3-3-19",
+        cod: "3-3-3",
         nota: cal
     });
     return false;
