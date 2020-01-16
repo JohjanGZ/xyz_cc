@@ -25,7 +25,7 @@ function start_14() {
     $("#ventana").load(ruta + '3-4-14/index.php', {
         next: "Page_15()",
         procesar: "result_tipo_3_4_14()",
-        titulo: "<center><h5><span>Resuelve</span> los siguientes problemas y <span>selecciona</span> la respuesta correcta.</h5></center>",
+        titulo: "<center><h5><span>Selecciona</span> la fracción que se representa en cada caso.</h5></center>",
         restaurar: "start_14()",
         dir: ruta,
         cod: "3-4-14",
@@ -37,7 +37,7 @@ function start_15() {
     $("#ventana").load(ruta + '3-4-15/index.php', {
         next: "Page_16()",
         procesar: "result_tipo_3_4_15()",
-        titulo: "<center><h5><span>Completa</span> la tabla.</h5></center>",
+        titulo: "<center><h5><span>Relaciona</span> según corresponda.</h5></center>",
         restaurar: "start_15()",
         dir: ruta,
         cod: "3-4-15",
@@ -49,7 +49,7 @@ function start_16() {
     $("#ventana").load(ruta + '3-4-16/index.php', {
         next: "resultado()",
         procesar: "result_tipo_3_4_16()",
-        titulo: "<center><h5><span>Relaciona</span> cada expresión con el valor correspondiente.</h5></center>",
+        titulo: "<center><h5><span>Selecciona</span> el número que representa la imagen.</h5></center>",
         restaurar: "start_16()",
         dir: ruta,
         cod: "3-4-16",
