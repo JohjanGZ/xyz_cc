@@ -13,7 +13,7 @@
         <div class="col l7">
             <p class="pregunta"><span>•</span> Sandra compró una bolsa con 90 paletas de caramelo. Luego formó bolsitas
                 con 8 paletas de
-                caramelos cada una. ¿Cuántas bolsas formó?¿Cuántas paletas sobraron? </p>
+                caramelo cada una. ¿Cuántas bolsas formó?¿Cuántas paletas sobraron? </p>
             <div class="grid-container">
                 <div class="seleccion" alt="n">
                     Formó 11 bolsas y le sobraron 2 paletas.

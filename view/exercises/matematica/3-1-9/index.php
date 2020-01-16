@@ -57,7 +57,7 @@
                             <option value="" disabled selected></option>
                             <?php
                                 for ($i=0; $i < count($num); $i++) { 
-                                    echo "<option value='$num[$i]'>( $num[$i]</option>";
+                                    echo "<option value='$num[$i]'>$num[$i]</option>";
                                 }
                             ?>
                         </select>
@@ -68,7 +68,7 @@
                             <option value="" disabled selected></option>
                             <?php
                                 for ($i=0; $i < count($num); $i++) { 
-                                    echo "<option value='$num[$i]'>$num[$i] )</option>";
+                                    echo "<option value='$num[$i]'>( $num[$i] </option>";
                                 }
                             ?>
                         </select>
@@ -79,7 +79,7 @@
                             <option value="" disabled selected></option>
                             <?php
                                 for ($i=0; $i < count($num); $i++) { 
-                                    echo "<option value='$num[$i]'>$num[$i]</option>";
+                                    echo "<option value='$num[$i]'>$num[$i] )</option>";
                                 }
                             ?>
                         </select>
