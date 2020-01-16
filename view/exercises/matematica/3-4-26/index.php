@@ -26,7 +26,7 @@ $cursos = array('sopas','bebidas','postres','sándwiches','ensaladas');
                         } ?>
                         </select>
                     </div>
-                    <span>niños.</span>
+                    <span>personas.</span>
                 </div>
             </div>
             <div class="pre">
@@ -40,7 +40,7 @@ $cursos = array('sopas','bebidas','postres','sándwiches','ensaladas');
                         } ?>
                         </select>
                     </div>
-                    <span>niños.</span>
+                    <span>personas.</span>
                 </div>
             </div>
             <div class="pre">
@@ -54,7 +54,7 @@ $cursos = array('sopas','bebidas','postres','sándwiches','ensaladas');
                         } ?>
                         </select>
                     </div>
-                    <span>niños.</span>
+                    <span>personas  .</span>
                 </div>
             </div>
             <div class="pre">

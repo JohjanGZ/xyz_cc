@@ -6,7 +6,7 @@
 </head>
 <?=$titulo?>
 <div class="container-two">
-<span class="pregunta-p"><span>a.</span> ¿Cuántas personas comieron sándwiches?</span>
+<span class="pregunta-p"><span>a.</span> 50 personas comieron sándwiches</span>
     <div class="grid-container">
         <div class="seleccion">
             <img src="<?=$dir?>/img/1.png" class="principal">

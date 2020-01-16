@@ -30,7 +30,7 @@ function start_17() {
     $("#ventana").load(ruta + '3-4-17/index.php', {
         next: "Page_18()",
         procesar: "result_tipo_3_4_17()",
-        titulo: "<center><h5><span>Resuelve</span> los siguientes problemas y <span>selecciona</span> la alternativa correcta.</h5></center>",
+        titulo: "<center><h5><span>Relaciona</span> las imágenes con los números decimales.</h5></center>",
         restaurar: "start_17()",
         dir: ruta,
         cod: "3-4-17",
@@ -42,7 +42,7 @@ function start_18() {
     $("#ventana").load(ruta + '3-4-18/index.php', {
         next: "Page_19()",
         procesar: "result_tipo_3_4_18()",
-        titulo: "<center><h5><span>Resuelve.</span></h5></center>",
+        titulo: "<center><h5><span>Relaciona</span> según corresponda.</h5></center>",
         restaurar: "start_18()",
         dir: ruta,
         cod: "3-4-18",
@@ -54,7 +54,7 @@ function start_19() {
     $("#ventana").load(ruta + '3-4-19/index.php', {
         next: "Page_20()",
         procesar: "result_tipo_3_4_19()",
-        titulo: "<center><h5><span class='ftitulo'>Relaciona</span> las divisiones con su respectivo resultado. </h5></center>",
+        titulo: "<center><h5><span>Coloca</span> el decimal según corresponda.</h5></center>",
         restaurar: "start_19()",
         dir: ruta,
         cod: "3-4-19",
@@ -66,7 +66,7 @@ function start_20() {
     $("#ventana").load(ruta + '3-4-20/index.php', {
         next: "resultado()",
         procesar: "result_tipo_3_4_20()",
-        titulo: "<center><h5><span>Responde</span> las siguientes preguntas:</h5></center>",
+        titulo: "<center><h5><span>Coloca</span> el decimal según corresponda.</h5></center>",
         restaurar: "start_20()",
         dir: ruta,
         cod: "3-4-20",
