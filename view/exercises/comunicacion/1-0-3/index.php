@@ -108,7 +108,7 @@
                 <li alt="n"  class="a" id="obj1"><img src="<?= $dir ?>/img/1.png"></li>
                 <li alt="" class="a" id="obj2"><img src="<?= $dir ?>/img/2.png"></li>
                 <li alt="" class="a" id="obj3"><img src="<?= $dir ?>/img/3.png"></li>
-                <li alt="" class="a" id="obj4"><img  src="<?= $dir ?>/img/4.png"></li>
+                <li alt="n" class="a" id="obj4"><img  src="<?= $dir ?>/img/4.png"></li>
                 <li alt="" class="a" id="obj1"><img src="<?= $dir ?>/img/5.png"></li>
                 <li alt="n" class="a" id="obj1"><img src="<?= $dir ?>/img/6.png"></li>
               </ul> 
@@ -172,7 +172,7 @@
         }
   })
 
-          function result_tipo_1_0_8(){               
+          function result_tipo_1_0_3(){               
                   var  min= $('#Minutos').text();
                   var  seg= $('#Segundos').text();
                   var  milseg= $('#Centesimas').text();
@@ -180,7 +180,7 @@
  
 
 
-                          if(r==5){                  
+                          if(r==6){                  
                               localStorage.setItem("Nota<?=$cod?>",nota);
                               localStorage.setItem("Time<?=$cod?>", tiempo);
                               correcto(); 

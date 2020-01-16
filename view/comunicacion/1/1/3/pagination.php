@@ -1,18 +1,13 @@
 <script type="text/javascript">
-   function Page_7(){
-        start_7();
+   function Page_5(){
+        start_5();
         inicio();
          count = 3;
     }
-   function  Page_8(){
-        start_8();
+   function  Page_6(){
+        start_6();
         inicio();
          count = 3;
-    }
-   function Page_9(){
-        start_9();
-        inicio();
-          count = 3;
     }
 
     var cant=2;
@@ -21,45 +16,31 @@
     ////////////// 2do 
             // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
    
-    function start_7(){
-        $("#ventana").load(ruta+'1-1-7/index.php', 
+    function start_5(){
+        $("#ventana").load(ruta+'1-1-5/index.php', 
         {
-        next: "Page_8()", 
-        procesar:"result_tipo_1_1_7()",
-        titulo:"<center><h5><span class='ftitulo'>Lee</span> atentamente y contesta las preguntas.</h5></center>",
-        restaurar:"start_7()",
+        next: "Page_6()", 
+        procesar:"result_tipo_1_1_5()",
+        titulo:"<center><h5><span>Selecciona</span> las palabras que empiezan con <span>M</span>.</h5></center>",
+        restaurar:"start_5()",
         dir:ruta,
-        cod: "1-1-7",
+        cod: "1-1-5",
         nota:cal
         }
         );
         return false;  
     };
-    function start_8(){
-        $("#ventana").load(ruta+'1-1-8/index.php', 
-        { 
-        next: "Page_9()", 
-        procesar:"result_tipo_1_1_8()",
-        titulo:"<center><h5>¿A dónde se fue el patito?<span class='ftitulo'> Selecciona</span> la respuesta.</h5></center>",
-        restaurar:"start_8()",
-        dir:ruta,
-        cod: "1-1-8",
-        nota:cal
-        }
-        );
-        return false;
-    };
-    function start_9(){   
-        $("#ventana").load(ruta+'1-1-9/index.php', 
+    function start_6(){
+        $("#ventana").load(ruta+'1-1-6/index.php', 
         { 
         next: "resultado()", 
-        procesar:"result_tipo_1_1_9()",
-        titulo:"<center><h5>¿Cómo estaban los papás del patito cuando se perdió?<span class='ftitulo'> Selecciona</span>.</h5></center>",
-        restaurar:"start_9()",
+        procesar:"result_tipo_1_1_6()",
+        titulo:"<center><h5><span>Une</span> las palabras con el dibujo que representa.</h5></center>",
+        restaurar:"start_6()",
         dir:ruta,
-        cod: "1-1-9",
+        cod: "1-1-6",
         nota:cal
-        }          
+        }
         );
         return false;
     };
