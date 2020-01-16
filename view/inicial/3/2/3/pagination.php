@@ -15,7 +15,7 @@ function start_3() {
     $("#ventana").load(ruta + '3-2-3/index.php', {
         next: "resultado()",
         procesar: "result_tipo_3_2_3()",
-        titulo: "<center><h5><span>Observa</span> lo que hacen los niños y <span>marca</span> con un aspa (X) que sentidos usan.</h5></center>",
+        titulo: "<center><h5><span>Selecciona</span> los objetos que utilizan los niños.</h5></center>",
         restaurar: "start_3()",
         dir: ruta,
         cod: "3-2-3",

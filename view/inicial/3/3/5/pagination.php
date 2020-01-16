@@ -14,7 +14,7 @@ function start_5() {
     $("#ventana").load(ruta + '3-3-5/index.php', {
         next: "resultado()",
         procesar: "result_tipo_3_3_5()",
-        titulo: "<center><h5><span>Observa</span> las imágenes y <span>selecciona</span> las situaciones peligrosas.</h5></center>",
+        titulo: "<center><h5><span>Relaciona</span> lo que se debe hacer antes de comer y usar, y cómo deben estar.</h5></center>",
         restaurar: "start_5()",
         dir: ruta,
         cod: "3-3-5",
