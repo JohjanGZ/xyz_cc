@@ -1,57 +1,57 @@
 <script type="text/javascript">
-function Page_17() {
-    start_17();
+function Page_9() {
+    start_9();
     inicio();
     count = 3;
 }
-function Page_18() {
-    start_18();
+function Page_10() {
+    start_10();
     inicio();
     count = 3;
 }
-function Page_19() {
-    start_19();
+function Page_11() {
+    start_11();
     inicio();
     count = 3;
 }
 
-var cant = 18;
+var cant = 3;
 var cal = cant / cant;
 console.log(cant);
 var ruta = "../../../../exercises/matematica/";
 ////////////// 2do 
-function start_17() {
-    $("#ventana").load(ruta + '3-2-17/index.php', {
-        next: "Page_18()",
-        procesar: "result_tipo_3_2_17()",
-        titulo: "<center><h5><span class='ftitulo'>Completa</span> los esquemas y <span>halla</span> el valor en cada caso.</h5></center>",
-        restaurar: "start_17()",
+function start_9() {
+    $("#ventana").load(ruta + '3-2-9/index.php', {
+        next: "Page_10()",
+        procesar: "result_tipo_3_2_9()",
+        titulo: "<center><h5><span>Arrastra</span> el número antecesor y sucesor de los siguientes números.</h5></center>",
+        restaurar: "start_9()",
         dir: ruta,
-        cod: "3-2-17",
+        cod: "3-2-9",
         nota: cal
     });
     return false;
 };
-function start_18() {
-    $("#ventana").load(ruta + '3-2-18/index.php', {
-        next: "Page_19()",
-        procesar: "result_tipo_3_2_18()",
-        titulo: "<center><h5><span class='ftitulo'>Completa</span> los esquemas y <span>halla</span> el valor en cada caso.</h5></center>",
-        restaurar: "start_18()",
+function start_10() {
+    $("#ventana").load(ruta + '3-2-10/index.php', {
+        next: "Page_11()",
+        procesar: "result_tipo_3_2_10()",
+        titulo: "<center><h5><span>Arrastra</span> el número antecesor y sucesor de los siguientes números.</h5></center>",
+        restaurar: "start_10()",
         dir: ruta,
-        cod: "3-2-18",
+        cod: "3-2-10",
         nota: cal
     });
     return false;
 };
-function start_19() {
-    $("#ventana").load(ruta + '3-2-19/index.php', {
+function start_11() {
+    $("#ventana").load(ruta + '3-2-11/index.php', {
         next: "resultado()",
-        procesar: "result_tipo_3_2_19()",
-        titulo: "<center><h5><span>Escríbe</span> el enunciado verbal que corresponde a cada ecuación.</h5></center>",
-        restaurar: "start_19()",
+        procesar: "result_tipo_3_2_11()",
+        titulo: "<center><h5><span>Arrastra</span> el número antecesor y sucesor de los siguientes números.</h5></center>",
+        restaurar: "start_11()",
         dir: ruta,
-        cod: "3-2-19",
+        cod: "3-2-11",
         nota: cal
     });
     return false;
