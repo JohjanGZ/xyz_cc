@@ -38,7 +38,7 @@
         <input type="hidden" name="" id="nota" value="0">
 
         <div id="ventana"></div>
-        <?php require ('pagination.php');?>   
+        <?php require ('pagination.php');?>
         <script src="../../../../../js/materialize.min.js"></script>
         <script type="text/javascript">
         $(document).ready(function() {
@@ -47,7 +47,7 @@
 
         function IniciarCronometro() {
             $("#portada").css("display", "none");
-            Page_21();
+            Page_2();
         }
         </script>
     </body>
