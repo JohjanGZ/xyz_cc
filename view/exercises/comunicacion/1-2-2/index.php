@@ -33,7 +33,7 @@
                             <div id="te" class="vocal">
 
                             </div>
-                            <span class="span-after">éfono</span>
+                            <span class="span-after">léfono</span>
                         </div>
 
                     </li>
@@ -131,7 +131,7 @@
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
     // Validar
-    function result_tipo_1_2_11() {
+    function result_tipo_1_2_2() {
         var min = $('#Minutos').text();
         var seg = $('#Segundos').text();
         var milseg = $('#Centesimas').text();

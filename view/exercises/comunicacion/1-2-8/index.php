@@ -93,7 +93,7 @@ for (var i = ul.children.length; i >= 0; i--) {
     }
   })
 
-function result_tipo_1_2_27(){
+function result_tipo_1_2_8(){
                 
                   var  min= $('#Minutos').text();
                   var  seg= $('#Segundos').text();

@@ -164,7 +164,7 @@
         <div class="modal-content">
             <h4>Respuesta correcta</h4>
             <center>
-              <img class="materialboxed"  width="80%" src="<?= $dir ?>/img/respuesta.png">
+              <img class="materialboxed"  width="80%" src="<?= $dir ?>/img/respuesta.jpg">
             </center>
         </div>
         <div class="modal-footer">
