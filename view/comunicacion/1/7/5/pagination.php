@@ -1,46 +1,63 @@
 <script type="text/javascript">
     
-    function Page_19(){
-        start_19();
+    function Page_15(){
+        start_15();
         inicio();
         count = 3;
     }
-    function Page_20(){
-        start_20();
+    function Page_16(){
+        start_16();
         inicio();
         count = 3;
     }
-
+    function Page_17(){
+        start_17();
+        inicio();
+        count = 3;
+    }
    
-    var cant=2;
+    var cant=3;
     var cal= 20/20;
     var ruta="../../../../exercises/comunicacion/";
     ////////////// 2do 
             // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
-
-    function start_19(){   
-        $("#ventana").load(ruta+'1-7-19/index.php', 
+    function start_15(){   
+        $("#ventana").load(ruta+'1-7-15/index.php', 
         { 
-        next: "Page_20()", 
-        procesar:"result_tipo_1_7_19()",
-        titulo:"<center><h5><span>Ordena</span> las palabras y <span>forma</span> las oraciones.</h5></center>",
-        restaurar:"start_19()",
+        next: "Page_16()", 
+        procesar:"result_tipo_1_7_15()",
+        titulo:"<center><h5><span>Observa</span> las imágenes y luego <span>completa</span> las oraciones con un verbo.</h5></center>",
+        restaurar:"start_15()",
         dir:ruta,
-        cod: "1-7-19",
+        cod: "1-7-15",
         nota:cal
         }          
         );
         return false;
     };
-    function start_20(){   
-        $("#ventana").load(ruta+'1-7-20/index.php', 
+    function start_16(){   
+        $("#ventana").load(ruta+'1-7-16/index.php', 
+        { 
+            next: "Page_17()", 
+            procesar:"result_tipo_1_7_16()",
+            titulo:"<center><h5><span>Indica</span> qué está haciendo cada personaje.</h5></center>",
+            restaurar:"start_16()",
+            dir:ruta,
+            cod: "1-7-16",
+            nota:cal
+        }          
+        );
+        return false;
+    };
+    function start_17(){   
+        $("#ventana").load(ruta+'1-7-17/index.php', 
         { 
         next: "resultado()", 
-        procesar:"result_tipo_1_7_20()",
-        titulo:"<center><h5><span>Ordena</span> las siguientes sílabas y <span>forma</span> las palabras.</h5></center>",
-        restaurar:"start_20()",
+        procesar:"result_tipo_1_7_17()",
+        titulo:"<center><h5>Ahora <span>encuentra</span> los verbos en la sopa de letras.</h5></center>",
+        restaurar:"start_17()",
         dir:ruta,
-        cod: "1-7-20",
+        cod: "1-7-17",
         nota:cal
         }          
         );

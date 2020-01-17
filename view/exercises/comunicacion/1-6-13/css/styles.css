@@ -1,0 +1,53 @@
+h4 {
+    text-align: center;
+}
+
+.contenedor-ejercicios {
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    padding-top: 50px;
+}
+
+.ejercicio {
+    width: 33%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.ejercicio .imagen-palabra {
+    width: 180px;
+    height: 180px;
+    border: 3px solid silver;
+    border-radius: 12px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ejercicio .imagen-palabra:hover {
+    border-color: #37D3F7;
+}
+
+.ejercicio .imagen-palabra img {
+    max-width: 90%;
+    max-height: 180px;
+}
+
+@media(max-height: 640px) {
+    .ejercicio {
+        width: 25%;
+    }
+    .ejercicio .imagen-palabra {
+        width: 160px;
+        height: 160px;
+        border: 3px solid silver;
+        margin-top: 10px;
+    }
+}

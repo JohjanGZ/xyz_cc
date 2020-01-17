@@ -1,45 +1,43 @@
 <script type="text/javascript">
-    
-   function Page_7(){
-        start_7();
+    function Page_lectura_1_7_2_1(){
+        start_lectura_1_7_2_1();
+        inicio();
+        count = 0;
+    }
+    function Page_5(){
+        start_5();
         inicio();
         count = 3;
     }
-    function Page_8(){
-        start_8();
-        inicio();
-        count = 3;
-    }
-   
-    var cant=2;
+  
+    var cant=1;
     var cal= 20/20;
     var ruta="../../../../exercises/comunicacion/";
     ////////////// 2do 
             // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
-    
-    function start_7(){   
-        $("#ventana").load(ruta+'1-7-7/index.php', 
-        { 
-        next: "Page_8()", 
-        procesar:"result_tipo_1_7_7()",
-        titulo:"<center><h5><span>Escribe</span> cuantas manos izquierdas y cuantas manos derechas hay.</h5></center>",
-        restaurar:"start_7()",
+    function start_lectura_1_7_2_1(){
+        $("#ventana").load(ruta+'lectura1-7-2-1/index.php', 
+        {
+        next: "Page_5()", 
+        procesar:"lectura1-7-2-1()",
+        titulo:"<center><h5><span>Lee</span> atentamente y <span>responde</span>.</h5></center>",
+        restaurar:"start_lectura_1_7_2_1()",
         dir:ruta,
-        cod: "1-7-7",
+        cod: "lectura1-7-2-1",
         nota:cal
-        }          
+        }
         );
-        return false;
+        return false;  
     };
-    function start_8(){   
-        $("#ventana").load(ruta+'1-7-8/index.php', 
+    function start_5(){   
+        $("#ventana").load(ruta+'1-7-5/index.php', 
         { 
         next: "resultado()", 
-        procesar:"result_tipo_1_7_8()",
-        titulo:"<center><h5><span>Escribe</span> cuantos pies izquierdos y cuantos pies derechos hay.</h5></center>",
-        restaurar:"start_8()",
+        procesar:"result_tipo_1_7_5()",
+        titulo:"<center><h5>¿Qué es lo que recoge la abejia en el jardin? <span>Selecciona</span>.</h5></center>",
+        restaurar:"start_5()",
         dir:ruta,
-        cod: "1-7-8",
+        cod: "1-7-5",
         nota:cal
         }          
         );
