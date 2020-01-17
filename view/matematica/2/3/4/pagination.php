@@ -1,36 +1,29 @@
 <script type="text/javascript">
 
-
-function Page_25() {
-    start_25();
+function Page_12() {
+    start_12();
     inicio();
     count = 3;
 }
 
-
-
-var cant = 18;
+var cant = 1;
 var cal = cant/cant;
-console.log(cant);
 var ruta = "../../../../exercises/matematica/";
 ////////////// 2do 
 // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
 
-
-function start_25() {
-    $("#ventana").load(ruta + '2-3-25/index.php', {
+function start_12() {
+    $("#ventana").load(ruta + '2-3-12/index.php', {
         next: "resultado()",
-        procesar: "result_tipo_2_3_25()",
-        titulo: "<center><h5><span>Completa</span> las secuencias numéricas.</h5></center>",
-        restaurar: "start_25()",
+        procesar: "result_tipo_2_3_12()",
+        titulo: "<center><h5><span>Arrastra</span> los números y <span>completa</span> la rueda de multiplicación.</h5></center>",
+        restaurar: "start_12()",
         dir: ruta,
-        cod: "2-3-25",
+        cod: "2-3-12",
         nota: cal
     });
     return false;
 };
-
-
 function resultado() {
     $("#ventana").load('../../../../exercises/resultado/resultado.php');
     return false;

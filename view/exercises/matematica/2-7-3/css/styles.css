@@ -1,0 +1,171 @@
+.container-two {
+    margin: 0 auto;
+    max-width: 1080px;
+    width: 80%;
+    margin-top: 10vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-column-gap: 20px;
+}
+
+.content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 30px;
+  align-items: center;
+  justify-items: center;
+}
+.image{
+  grid-column-gap: 1/2;
+  grid-row: 1/3;
+}
+.detalle{
+  grid-column-gap: 2/3;
+  grid-row: 1/2;
+  display: grid;
+  justify-items: center;
+}
+.detalle > div{
+  margin: 10px auto;
+}
+.gridTabla{
+  grid-column-gap: 2/3;
+  grid-row: 2/3;
+  display: grid;
+  justify-items: center;
+}
+.seLee{
+  display: block;
+}
+.image img{
+  width: 500px;
+}
+
+
+.header, .fila{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+.header > div, .fila > div{
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  border: 1px solid rgb(30, 53, 0);
+}
+.fila > div{
+  display: grid;
+  justify-items: center;
+}
+.tabla{
+ 
+}
+.detalle{
+  margin: 20px auto;
+}
+.detalle span{
+  display: inline-block;
+}
+.select-wrapper .caret{
+  display: none;
+}
+input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
+  background-color: #ffffff !important;
+  border-radius: 8px !important;
+}
+.azul{
+  background-color: blue;
+}
+.dos .item{
+  border: 1px solid rgb(78, 226, 182);
+}
+.tres .item{
+  border: 1px solid rgb(255, 217, 2);
+}
+.cuatro .item{
+  border: 1px solid rgb(0, 136, 91);
+}
+.colorRed{
+  background-color: rgb(255, 82, 14);
+}
+.colorBlue{
+  background-color: rgb(11, 163, 143);
+}
+.colorYellow{
+  background-color: rgb(250, 192, 0);
+}
+.colorGreen{
+  background-color: rgb(26, 214, 136);
+}
+
+
+
+
+
+
+/* Select */
+.select-wrapper input.select-dropdown {
+  border: 1px solid rgb(233, 233, 233);
+  width: 65px;
+  margin: 0;
+  font-weight: 400;
+  font-size: 24px;
+}
+.largo .select-wrapper input.select-dropdown {
+  border: 1px solid rgb(233, 233, 233);
+  width: 265px;
+  margin: 0;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.select-wrapper input.select-dropdown:focus {
+  border-bottom: 1px solid rgb(238, 238, 238);
+}
+
+.select-wrapper ul {
+  height: auto;
+}
+
+.select-wrapper {
+  position: relative;
+  margin-left: .5vh;
+  margin-right: .5vh;
+}
+
+.dropdown-content {
+  background-color: #fff;
+  margin: 0;
+  display: none;
+  min-width: 60px;
+  overflow-y: auto;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  width: 60px;
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar {
+  -webkit-border-radius: 5px;
+  background-color: transparent;
+  border-radius: 5px;
+  height: 10px;
+  -webkit-transition: background-color .2s linear;
+  -o-transition: background-color .2s linear;
+  transition: background-color .2s linear;
+  width: 0px;
+}
+@media screen and (max-width: 1300px){
+
+}

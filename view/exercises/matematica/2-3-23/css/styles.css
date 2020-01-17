@@ -1,0 +1,86 @@
+.caja-principal {
+  margin: 0 auto;
+  width: 85%;
+  margin-top: 5vh;
+}
+.content {
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 2fr 3fr;
+  grid-column-gap: 0px;
+}
+.content .image img{
+  width: 500px;
+}
+.tabla{
+  width: 90%;
+  margin: 0px auto;
+}
+.header {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  background-color: rgb(211, 28, 98);
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+}
+.cantidad{
+  grid-column: 2/9;
+}
+.header > div {
+  border: 1px solid rgb(105, 105, 105);
+  width: 100%;
+  padding: 10px 0px;
+  text-align: center;
+}
+.cuerpoTabla .fila {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  width: 100%;
+  text-align: center;
+}
+.cuerpoTabla .fila > div {
+  width: 100%;
+  padding: 0px 10px;
+  border: 1px solid rgb(139, 139, 139);
+  border-top: none;
+  font-size: 18px;
+  height: 50px;
+  display: grid;
+  font-weight: 600;
+  align-items: center;
+  color: rgb(0, 51, 80);
+}
+#final{
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+#final > div{
+  text-align: center;
+  border: 1px solid #fff!important;
+}
+.equis p{
+  margin: 0;
+  height: 50px;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 40px;
+}
+@media screen and (max-width: 1500px){
+  .image{
+    text-align: left;
+  }
+  .content .image img{
+    width: 400px!important;
+  }
+  .content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-column-gap: 0px;
+  }
+}

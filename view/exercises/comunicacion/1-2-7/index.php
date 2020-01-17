@@ -170,7 +170,7 @@
 
 // Validar
 
-function result_tipo_1_2_26() {
+function result_tipo_1_2_7() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();

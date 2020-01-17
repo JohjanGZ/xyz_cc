@@ -21,10 +21,6 @@ var NdE = 0;
 
 // uno
 $("#uno").droppable({
-    classes: {
-        "ui-droppable-active": "ui-state-active",
-        "ui-droppable-hover": "ui-state-hover"
-    },
     drop: function(event, ui) {
         $(this).css("background-color", "transparent");
         $(".box").css("background-color", "transparent");
@@ -37,10 +33,6 @@ $("#uno").droppable({
 });
 // dos
 $("#dos").droppable({
-    classes: {
-        "ui-droppable-active": "ui-state-active",
-        "ui-droppable-hover": "ui-state-hover"
-    },
     drop: function(event, ui) {
         $(this).css("background-color", "transparent");
         $(".box").css("background-color", "transparent");
@@ -53,10 +45,6 @@ $("#dos").droppable({
 });
 //tres
 $("#tres").droppable({
-    classes: {
-        "ui-droppable-active": "ui-state-active",
-        "ui-droppable-hover": "ui-state-hover"
-    },
     drop: function(event, ui) {
         $(this).css("background-color", "transparent");
         $(".box").css("background-color", "transparent");
@@ -70,10 +58,6 @@ $("#tres").droppable({
 });
 //cuatro
 $("#cuatro").droppable({
-    classes: {
-        "ui-droppable-active": "ui-state-active",
-        "ui-droppable-hover": "ui-state-hover"
-    },
     drop: function(event, ui) {
         $(this).css("background-color", "transparent");
         $(".box").css("background-color", "transparent");
@@ -87,10 +71,6 @@ $("#cuatro").droppable({
 });
 //cinco
 $("#cinco").droppable({
-    classes: {
-        "ui-droppable-active": "ui-state-active",
-        "ui-droppable-hover": "ui-state-hover"
-    },
     drop: function(event, ui) {
         $(this).css("background-color", "transparent");
         $(".box").css("background-color", "transparent");
