@@ -160,7 +160,7 @@
         })
 
 
-          function result_tipo_1_0_9(){               
+          function result_tipo_1_0_6(){               
                   var  min= $('#Minutos').text();
                   var  seg= $('#Segundos').text();
                   var  milseg= $('#Centesimas').text();

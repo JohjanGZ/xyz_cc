@@ -40,15 +40,7 @@ h4 {
     margin: auto;
     margin-top: 30px;
 }
-.box {
-    height: 200px;
-    width: 200px;
-    border: 3px solid silver;
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 .box img {
     width: 50%;
     height: auto;
@@ -62,9 +54,7 @@ h4 {
 <body>
     <div class="container">
         <div class="row">
-            <div class="muestra">
-                <img src="<?= $dir ?>/img/principal.png" class="responsive-img">
-            </div>
+            
             <div class="campo" id="palabras">
                 <ul id="listA">
                     <li id="obj1" >
@@ -141,7 +131,7 @@ h4 {
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
 
-    function result_tipo_1_0_11() {
+    function result_tipo_1_0_4() {
         var min = $('#Minutos').text();
         var seg = $('#Segundos').text();
         var milseg = $('#Centesimas').text();

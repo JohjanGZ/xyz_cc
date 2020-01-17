@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>1-1-11</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/materialize.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <h4>Selecciona las palabras que empiezan con m</h4>
+            <div class="campo" id="palabras">
+                <ul id="listA">
+                    <li id="obj1" >
+                        <div class="box a" alt="">
+                            <img src="img/1.png" class="responsive-img">
+                        </div>
+                    </li>
+                    <li id="obj2" >
+                        <div class="box a" alt="n">
+                            <img src="img/2.png" class="responsive-img">
+                        </div>
+                    </li>
+                    <li id="obj3" >
+                        <div class="box a" alt="n">
+                            <img src="img/3.png" class="responsive-img">
+                        </div>
+                    </li>
+                    <li id="obj4" >
+                        <div class="box a" alt="n">
+                            <img src="img/4.png" class="responsive-img">
+                        </div>
+                    </li>
+                    <li id="obj5" >
+                        <div class="box a" alt="n">
+                            <img src="img/5.png" class="responsive-img">
+                        </div>
+                    </li>
+                    <li id="obj6" >
+                        <div class="box a" alt="n">
+                            <img src="img/6.png" class="responsive-img">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <a class="btn" id="validar">Validar</a>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+        var r = 0;
+        var ul = document.querySelector('#listA');
+        for (var i = ul.children.length; i >= 0; i--) {
+            ul.appendChild(ul.children[Math.random() * i | 0]);
+        }
+        var r = 0;
+        $('.a').click(function () {
+
+            $(this).css({
+                "border": "solid",
+                "border-color": "#37D3F7",
+                "background": "#B6ECFF"
+            });
+            var element = $(this).attr("alt");
+            var select = $(this).attr("value");
+            if (select != "seleccionado") {
+
+                if (element == "n") {
+                    r++;
+                    $(this).attr("value", "seleccionado");
+                } else {
+                    r--;
+                    $(this).attr("value", "seleccionado");
+                }
+            }
+        })
+
+        // Formulario - Registrados
+        $('#validar').on('click', function (e) {
+            e.preventDefault();
+            //alert('hola');
+            function result_tipo_1_1_11() {
+                if (r == 5) {
+                    alert('Bien!');
+                } else {
+                    alert('Mal!');
+                }
+
+            }
+            result_tipo_1_1_11();
+        });
+
+
+    </script>
+</body>
+
+</html>
