@@ -1,5 +1,10 @@
 <script type="text/javascript">
     
+    function Page_5(){
+        start_5();
+        inicio();
+        count = 3;
+    }
     function Page_6(){
         start_6();
         inicio();
