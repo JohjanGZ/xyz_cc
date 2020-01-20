@@ -30,140 +30,111 @@
                         "id": "0",
                         "nombre": "Unidad 1 - Aprendiendo en mi escuela",
                         "temas": {
-                            "0": "Actividad digital"
+                            "0": "Las vocales",
+                            "1": "La canción"
                         }
                     },
                     "1": {
                         "id": "1",
-                        "nombre": "Unidad 2 - Voy a leer y a escribir",
+                        "nombre": "Unidad 2 - ¡La salud!",
                         "temas": {
-                            "0": "Comprensión lectora: Cuatro letritas",
-                            "1": "Comprensión lectora: Mi colegio",
-                            "2": "Comprensión lectora: Patito travieso",
-                            "3": "Lectoescritura: Palabras con P - p",
-                            "4": "Lectoescritura: Palabras con M - m",
-                            "5": "Lectoescritura: Palabras con L - l"
+                            "0": "Las rimas",
+                            "1": "La letra P",
+                            "2": "La letra M",
+                            "3": "La letra L",
+                            "4": "El sustantivo común y propio"
                         }
                     },
                     "2": {
                         "id": "2",
-                        "nombre": "Unidad 3 - Juego con mis amigos y amigas",
+                        "nombre": "Unidad 3 - ¡La familia – unión!",
                         "temas": {
-                            "0": "Lectoescritura: Palabras con D-d",
-                            "1": "¿Qué será? Mi oído me ayudará",
-                            "2": "Discriminacion visual",
-                            "3": "Lectoescritura: Palabras con T - t",
-                            "4": "Una canción",
-                            "5": "Una revisión media",
-                            "6": "Lectoescritura: Palabras con N-n",
-                            "7": "Lectoescritura: Palabras con F-f",
-                            "8": "Familia de palabras",
-                            "9": "El sustantivo"
+                            "0": "La letra S",
+                            "1": "La letra T",
+                            "2": "La letra D",
+                            "3": "La letra N",
+                            "4": "La sílaba"
                         }
                     },
                     "3": {
                         "id": "3",
-                        "nombre": "Unidad 4 - Leo en familia",
+                        "nombre": "Unidad 4 - Cuido mi alimentación",
                         "temas": {
-                            "0": "Lectura: Ondas Expresivas",
-                            "1": "Un cuento",
-                            "2": "Desplazamiento",
-                            "3": "¿Qué será? Mi oído me ayudará",
-                            "4": "Lectoescritura: Palabras con V-v",
-                            "5": "Lectoescritura: Palabras con R-r",
-                            "6": "Lectoescritura: Palabras con C- c y Q - q",
-                            "7": "Término excluido",
-                            "8": "El adjetivo"
+                            "0": "La poesía",
+                            "1": "Las letras F",
+                            "2": "La letra B",
+                            "3": "La letra V",
+                            "4": "La letra R",
+                            "5": "El género del sustantivo: femenino y masculino",
+                            "6": "El uso de la B y V"
                         }
                     },
                     "4": {
                         "id": "4",
-                        "nombre": "Unidad 5 - Disfruto del medio ambiente porque lo cuido con amor",
+                        "nombre": "Unidad 5 - La patria identidad nacional ",
                         "temas": {
-                            "0": "Lectura: Ondas Expresivas",
-                            "1": "Comprensión lectora",
-                            "2": "¿Qué será? Mi oído me ayudará",
-                            "3": "Lectoescritura: Palabras con H - h",
-                            "4": "Palabras con G - g",
-                            "5": "Analogías",
-                            "6": " El género masculino y femenino"
+                            "0": "La letra G",
+                            "1": "El número del sustantivo: singular y plural",
+                            "2": "El uso de la ca, co, cu, que, qui"
                         }
                     },
                     "5": {
                         "id": "5",
-                        "nombre": "Unidad 6 - Celebramos la fiesta de mi Perú",
+                        "nombre": "Unidad 6 - A pasear y las vacaciones a disfrutar",
                         "temas": {
-                            "0": "Un cuento",
-                            "1": "Un cuento 2",
-                            "2": "La descripción de un animal",
-                            "3": "Discriminación visual",
-                            "4": "Lectoescritura: Palabras con J - j",
-                            "5": "Lectoescritura: Palabras con Z - z",
-                            "6": "Lectoescritura: Palabras con ce, ci",
-                            "7": "Lectoescritura: Palabras con LL - ll",
-                            "8": "Lectoescritura: Palabras con Y - y",
-                            "9": "Sinónimos y antónimos",
-                            "10": "¿Qué será? Mi oído me ayudará",
-                            "11": "El singular y el plural"
+                            "0": "La descripción de un animal",
+                            "1": "El ratón Pérez ",
+                            "2": "La letra H",
+                            "3": "La letra J",
+                            "4": "La letra Ll",
+                            "5": "La letra Ñ",
+                            "6": "El adjetivo calificativo",
+                            "7": "Descripción de un animal: El patito travieso"
                         }
                     },
                     "6": {
                         "id": "6",
-                        "nombre": "Unidad 7 - Me gusta trabajar en equipo",
+                        "nombre": "Unidad 7 - El medio ambiente",
                         "temas": {
-                            "0": "Ondas Expresivas",
-                            "1": "Relaciones temporales",
-                            "2": "Palabras con Ñ - ñ, Palabras con Ch - ch, Palabras con X - x, Palabras con W - w,<br> Palabras con K - k, Palabras con Gü - gü",
-                            "3": "comprensión lectora"
+                            "0": "Comprensión lectora",
+                            "1": "El uso de la za, ce, ci, zo y zu y el plural Z - ces"
                         }
                     },
                     "7": {
                         "id": "7",
-                        "nombre": "Unidad 8 - Me gusta proteger a los animales y las plantas",
+                        "nombre": "Unidad 8 - Las costumbres peruanas",
                         "temas": {
-                            "0": "Comprensión lectora",
-                            "1": "Ubicación espacial",
-                            "2": "¿Qué será? Mi oído me ayudará",
-                            "3": "Palabras con Br-br",
-                            "4": "Palabras con Bl-bl",
-                            "5": "Palabras con Pr-pr",
-                            "6": "Los signos de interrogación",
-                            "7": " Describe el lugar"
+                            "0": "Comprensión lectora: Amigas del huerto",
+                            "1": "El cuento",
+                            "2": "Las palabras con Pr",
+                            "3": "Las palabras con Br",
+                            "4": "El verbo ",
+                            "5": "El cuento"
                         }
                     },
                     "8": {
                         "id": "8",
-                        "nombre": "Unidad 9 - Costumbres, gustos y sabores del Perú",
+                        "nombre": "Unidad 9 - Todos somos defensa civil",
                         "temas": {
-                            "0": "Arca de lectura 8 - Comprensión de lectura",
-                            "1": "Un cuento",
-                            "2": "Parte - todo",
-                            "3": "Palabras con Cr - cr",
-                            "4": "Palabras con Cl - cl",
-                            "5": "Palabras con Gr - gr",
-                            "6": "Palabras con Gl - gl",
-                            "7": "Oraciones Incompletas",
-                            "8": "Los signos de exclamación",
-                            "9": "Escribe rimas",
-                            "10": "Arca de lectura 8 - Comprensión lectora"
+                            "0": "La revisión médica",
+                            "1": "Las palabras con Bl",
+                            "2": "Las palabras con Pl",
+                            "3": "Las palabras con Gr y Gl",
+                            "4": "Las palabras con Cl",
+                            "5": "Las palabras con Cr",
+                            "6": "La oración: sujeto y predicado",
+                            "7": "Los sinónimos y antónimos"
                         }
                     },
                     "9": {
                         "id": "9",
-                        "nombre": "Unidad 10 - Navidad es compartir con los demás",
+                        "nombre": "Unidad 10 - Tiempo de amor y unión en familia",
                         "temas": {
-                            "0": "Arca de lectura 9 - Comprensión de lectura",
-                            "1": "Un cuento",
-                            "2": "Un poema",
-                            "3": "Una prosa",
-                            "4": "La inferencia",
-                            "5": "¿Qué será? Mi oído me ayudará",
-                            "6": "Palabras con Tr - tr",
-                            "7": "Palabras con Tl - tl",
-                            "8": "Palabras con Dr - dr",
-                            "9": "Palabras con Fr - fr",
-                            "10": "El verbo",
-                            "11": "Escribimos un cuento"
+                            "0": "La navidad de Isidro",
+                            "1": "Las palabras con Tr y Tl",
+                            "2": "Las palabras con Fr y Fl",
+                            "3": "Las palabras con Dr",
+                            "4": "El uso de los signos de interrogación y exclamación"
                         }
                     }
                 }
@@ -520,7 +491,7 @@
                 }
             },
             "3": {
-                "activo": "0",
+                "activo": "1",
                 "titulo": "Comunicación 4",
                 "color": "#5f1e76",
                 "grado": "4",
@@ -739,12 +710,24 @@
                 "portada": "matematica1.jpg",
                 "libros": {
                     "0": {
-                        "title": "Libro 1",
-                        "enlace": "com1-1"
+                        "title": "Actividades",
+                        "enlace": "MAT-1-ACT",
+                        "portada": "MAT-1-ACT.jpg"
                     },
                     "1": {
-                        "title": "Libro 2",
-                        "enlace": "com1-2"
+                        "title": "Actividades Part 2",
+                        "enlace": "MAT-1-ACT-2",
+                        "portada": "MAT-1-ACT-2.jpg"
+                    },
+                    "2": {
+                        "title": "Razonamiento matemático",
+                        "enlace": "MAT-1-RM",
+                        "portada": "MAT-1-RM.jpg"
+                    },
+                    "3": {
+                        "title": "Texto grado",
+                        "enlace": "MAT-1-TEXTO",
+                        "portada": "MAT-1-TEXTO.jpg"
                     }
                 },
                 "unidades": {
@@ -766,7 +749,7 @@
                             "11": "Identifica la forma de los cuerpos",
                             "12": "Representa conjuntos",
                             "13": "Clasifica según la forma y color",
-                            "14":"Identifica si pertenece o no pertenece",
+                            "14": "Identifica si pertenece o no pertenece",
                             "15": "Calcula mucho y pocos",
                             "16": "Interpreta tablas simples"
                         }
@@ -788,14 +771,13 @@
                             "10": "Calcula suma utilizando la recta numérica",
                             "11": "Calcula la suma de tres números asociándolos",
                             "12": "Interpreta situaciones de suma",
-                            "13":"Interpreta restas con números hasta el 9",
+                            "13": "Interpreta restas con números hasta el 9",
                             "14": "Calcula restas utilizando la recta numérica",
                             "15": "Interpreta situaciones de resta",
                             "16": "Mide longitudes con cuartas, pies y pasos",
                             "17": "Mide longitudes con unidades no usuales",
                             "18": "Representa datos en la cuadricula",
-                            "19":"Resuelve pirámides numéricas"
-
+                            "19": "Resuelve pirámides numéricas"
                         }
                     },
                     "2": {
@@ -834,7 +816,6 @@
                             "1": "Calcula el doble de un número",
                             "2": "Calcula la mitad de un numero",
                             "3": "Interpreta problema de triple"
-                            
                         }
                     },
                     "5": {
@@ -846,7 +827,6 @@
                             "2": "Identifica los días de la semana ",
                             "3": "Identifica los meses del año",
                             "4": "Interpreta problema con días de la semana y meses del año"
-                           
                         }
                     },
                     "6": {
@@ -872,7 +852,6 @@
                             "3": "Resta prestando de las cecenas",
                             "4": "Resta realizando prestamos",
                             "5": "Interpreta probabilidades"
-                            
                         }
                     }
                 }
@@ -1101,7 +1080,6 @@
                             "3": "Unidades de capacidad: el litro, el medio litro, el cuarto de litro"
                         }
                     }
-               
                 }
             }
         },
@@ -1138,7 +1116,23 @@
         "0": {
             "0": {
                 "activo": "1",
-                "titulo": "Ingles 4 años",
+                "titulo": "Inglés 3 años",
+                "color": "#de0521",
+                "grado": "3",
+                "curso": "ingles",
+                "portada": "TKC-3.jpg",
+                "libros": {
+                    "0": {
+                        "title": "The Kid's Club",
+                        "enlace": "TKC-3",
+                        "portada": "TKC-3.jpg"
+                    }
+                },
+                "unidades": {}
+            },
+            "1": {
+                "activo": "0",
+                "titulo": "Inglés 4 años",
                 "color": "#de0521",
                 "grado": "4",
                 "curso": "ingles",
@@ -1152,9 +1146,9 @@
                 },
                 "unidades": {}
             },
-            "1": {
-                "activo": "1",
-                "titulo": "Ingles 5 años",
+            "2": {
+                "activo": "0",
+                "titulo": "Inglés 5 años",
                 "color": "#6ec5ee",
                 "grado": "5",
                 "curso": "ingles",
@@ -1167,6 +1161,334 @@
                     }
                 },
                 "unidades": {}
+            }
+        },
+        "1": {
+            "0": {
+                "activo": "1",
+                "titulo": "Computación 3 años",
+                "color": "#de0521",
+                "grado": "3",
+                "curso": "teclitas",
+                "portada": "COMP-3.jpg",
+                "libros": {
+                    "0": {
+                        "title": "TECLITAS BRILLANTES 3 AÑOS",
+                        "enlace": "COMP-3",
+                        "portada": "COMP-3.jpg"
+                    }
+                },
+                "unidades": {}
+            },
+            "1": {
+                "activo": "0",
+                "titulo": "Computación 4 años",
+                "color": "#6ec5ee",
+                "grado": "4",
+                "curso": "teclitas",
+                "portada": "COMP-4.jpg",
+                "libros": {
+                    "0": {
+                        "title": "TECLITAS BRILLANTES 4 AÑOS",
+                        "enlace": "COMP-4",
+                        "portada": "COMP-4.jpg"
+                    }
+                },
+                "unidades": {}
+            }
+        },
+        "2": {
+
+            "0": {
+                "activo": "1",
+                "titulo": "Pequeñas Manitas 3 años",
+                "color": "#de0521",
+                "grado": "3",
+                "curso": "inicial",
+                "portada": "MANITAS-3.png",
+                "libros": {
+                    "0": {
+                        "title": "Pequeñas Manitas 3 AÑOS",
+                        "enlace": "COMP-3",
+                        "portada": "MANITAS-3.png"
+                    }
+                },
+                "unidades": {
+                    "0": {
+                        "id": "0",
+                        "nombre": "Unidad 1 -  ",
+                        "temas": {
+                            "0": "tema 1",
+                            "1": "tema 2",
+                            "2": "tema 3",
+                            "3": "tema 4",
+                            "4": "tema 5",
+                            "5": "tema 6",
+                            "6": "tema 7",
+                            "7": "tema 8",
+                            "8": "tema 9",
+                            "9": "tema 10"
+                        }
+                    },
+                    "1": {
+                        "id": "1",
+                        "nombre": "Unidad 2 -  ",
+                        "temas": {
+                            "0": "tema 1",
+                            "1": "tema 2",
+                            "2": "tema 3",
+                            "3": "tema 4",
+                            "4": "tema 5",
+                            "5": "tema 6",
+                            "6": "tema 7",
+                            "7": "tema 8",
+                            "8": "tema 9",
+                            "9": "tema 10"
+                        }
+                    },
+                    "2": {
+                        "id": "2",
+                        "nombre": "Unidad 3 -  ",
+                        "temas": {
+                            "0": "tema 1",
+                            "1": "tema 2",
+                            "2": "tema 3",
+                            "3": "tema 4",
+                            "4": "tema 5",
+                            "5": "tema 6",
+                            "6": "tema 7",
+                            "7": "tema 8",
+                            "8": "tema 9",
+                            "9": "tema 10"
+                        }
+                    },
+                    "3": {
+                        "id": "3",
+                        "nombre": "Unidad 4 -  ",
+                        "temas": {
+                            "0": "tema 1",
+                            "1": "tema 2",
+                            "2": "tema 3",
+                            "3": "tema 4",
+                            "4": "tema 5",
+                            "5": "tema 6",
+                            "6": "tema 7",
+                            "7": "tema 8",
+                            "8": "tema 9",
+                            "9": "tema 10"
+                        }
+                    },
+                    "4": {
+                        "id": "4",
+                        "nombre": "Unidad 5 -  ",
+                        "temas": {
+                            "0": "tema 1",
+                            "1": "tema 2",
+                            "2": "tema 3",
+                            "3": "tema 4",
+                            "4": "tema 5",
+                            "5": "tema 6",
+                            "6": "tema 7",
+                            "7": "tema 8",
+                            "8": "tema 9",
+                            "9": "tema 10"
+                        }
+                    }
+                }
+            },
+            "1": {
+                "activo": "1",
+                "titulo": "Pequeñas Manitas 4 años",
+                "color": "#6ec5ee",
+                "grado": "4",
+                "curso": "inicial",
+                "portada": "MANITAS-4.png",
+                "libros": {
+                    "0": {
+                        "title": "Pequeñas Manitas 4 AÑOS",
+                        "enlace": "COMP-4",
+                        "portada": "MANITAS-4.png"
+                    }
+                },
+                "unidades": {
+                    "0": {
+                        "id": "0",
+                        "nombre": "Unidad 1 -  ",
+                        "temas": {
+                            "0": "tema 1",
+                            "1": "tema 2",
+                            "2": "tema 3",
+                            "3": "tema 4",
+                            "4": "tema 5",
+                            "5": "tema 6",
+                            "6": "tema 7",
+                            "7": "tema 8",
+                            "8": "tema 9",
+                            "9": "tema 10"
+                        }
+                    },
+                    "1": {
+                        "id": "1",
+                        "nombre": "Unidad 2 -  ",
+                        "temas": {
+                            "0": "tema 1",
+                            "1": "tema 2",
+                            "2": "tema 3",
+                            "3": "tema 4",
+                            "4": "tema 5",
+                            "5": "tema 6",
+                            "6": "tema 7",
+                            "7": "tema 8",
+                            "8": "tema 9",
+                            "9": "tema 10"
+                        }
+                    },
+                    "2": {
+                        "id": "2",
+                        "nombre": "Unidad 3 -  ",
+                        "temas": {
+                            "0": "tema 1",
+                            "1": "tema 2",
+                            "2": "tema 3",
+                            "3": "tema 4",
+                            "4": "tema 5",
+                            "5": "tema 6",
+                            "6": "tema 7",
+                            "7": "tema 8",
+                            "8": "tema 9",
+                            "9": "tema 10"
+                        }
+                    },
+                    "3": {
+                        "id": "3",
+                        "nombre": "Unidad 4 -  ",
+                        "temas": {
+                            "0": "tema 1",
+                            "1": "tema 2",
+                            "2": "tema 3",
+                            "3": "tema 4",
+                            "4": "tema 5",
+                            "5": "tema 6",
+                            "6": "tema 7",
+                            "7": "tema 8",
+                            "8": "tema 9",
+                            "9": "tema 10"
+                        }
+                    },
+                    "4": {
+                        "id": "4",
+                        "nombre": "Unidad 5 -  ",
+                        "temas": {
+                            "0": "tema 1",
+                            "1": "tema 2",
+                            "2": "tema 3",
+                            "3": "tema 4",
+                            "4": "tema 5",
+                            "5": "tema 6",
+                            "6": "tema 7",
+                            "7": "tema 8",
+                            "8": "tema 9",
+                            "9": "tema 10"
+                        }
+                    }
+                }
+            },
+            "3": {
+                "activo": "1",
+                "titulo": "Pequeñas Manitas 5 años",
+                "color": "#6ec5ee",
+                "grado": "5",
+                "curso": "inicial",
+                "portada": "MANITAS-5.png",
+                "libros": {
+                    "0": {
+                        "title": "Pequeñas Manitas 5 AÑOS",
+                        "enlace": "MANITAS-5",
+                        "portada": "MANITAS-5.png"
+                    }
+                },
+                "unidades": {
+                    "0": {
+                        "id": "0",
+                        "nombre": "Unidad 1 -  ",
+                        "temas": {
+                            "0": "tema 1",
+                            "1": "tema 2",
+                            "2": "tema 3",
+                            "3": "tema 4",
+                            "4": "tema 5",
+                            "5": "tema 6",
+                            "6": "tema 7",
+                            "7": "tema 8",
+                            "8": "tema 9",
+                            "9": "tema 10"
+                        }
+                    },
+                    "1": {
+                        "id": "1",
+                        "nombre": "Unidad 2 -  ",
+                        "temas": {
+                            "0": "tema 1",
+                            "1": "tema 2",
+                            "2": "tema 3",
+                            "3": "tema 4",
+                            "4": "tema 5",
+                            "5": "tema 6",
+                            "6": "tema 7",
+                            "7": "tema 8",
+                            "8": "tema 9",
+                            "9": "tema 10"
+                        }
+                    },
+                    "2": {
+                        "id": "2",
+                        "nombre": "Unidad 3 -  ",
+                        "temas": {
+                            "0": "tema 1",
+                            "1": "tema 2",
+                            "2": "tema 3",
+                            "3": "tema 4",
+                            "4": "tema 5",
+                            "5": "tema 6",
+                            "6": "tema 7",
+                            "7": "tema 8",
+                            "8": "tema 9",
+                            "9": "tema 10"
+                        }
+                    },
+                    "3": {
+                        "id": "3",
+                        "nombre": "Unidad 4 -  ",
+                        "temas": {
+                            "0": "tema 1",
+                            "1": "tema 2",
+                            "2": "tema 3",
+                            "3": "tema 4",
+                            "4": "tema 5",
+                            "5": "tema 6",
+                            "6": "tema 7",
+                            "7": "tema 8",
+                            "8": "tema 9",
+                            "9": "tema 10"
+                        }
+                    },
+                    "4": {
+                        "id": "4",
+                        "nombre": "Unidad 5 -  ",
+                        "temas": {
+                            "0": "tema 1",
+                            "1": "tema 2",
+                            "2": "tema 3",
+                            "3": "tema 4",
+                            "4": "tema 5",
+                            "5": "tema 6",
+                            "6": "tema 7",
+                            "7": "tema 8",
+                            "8": "tema 9",
+                            "9": "tema 10"
+                        }
+                    }
+                }
             }
         }
     },
