@@ -98,7 +98,7 @@ $(".respuesta").click(function() {
 
 
 
-function result_tipo_2_3_15() {
+function result_tipo_2_5_10() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();

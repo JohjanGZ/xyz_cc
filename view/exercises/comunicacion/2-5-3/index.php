@@ -34,7 +34,7 @@
                 </div>
                 <div class="oracion">
                     <h5>
-                        <span>•</span> El lobo se fue a la tienda y compró un buen..
+                        <span>•</span> El lobo se fue a la tienda y compró un buen...
                     </h5>
                     <div class="contenedor-check">
                         <div class="respuesta" alt="n">
@@ -136,7 +136,7 @@ var cols = document.querySelectorAll('.contenedor-check');
     
     
 
-    function result_tipo_2_6_24() {
+    function result_tipo_2_5_3() {
         var min = $('#Minutos').text();
         var seg = $('#Segundos').text();
         var milseg = $('#Centesimas').text();

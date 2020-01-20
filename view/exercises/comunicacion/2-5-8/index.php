@@ -237,7 +237,7 @@ $(this).css({"background-color":"silver","background-color": "rgba(254, 205, 84,
 });
 });
 
-    function result_tipo_2_6_21() {
+    function result_tipo_2_5_8() {
             var min = $('#Minutos').text();
             var seg = $('#Segundos').text();
             var milseg = $('#Centesimas').text();

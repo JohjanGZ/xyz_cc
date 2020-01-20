@@ -22,7 +22,7 @@
                         x
                     </span>
                     <span class="palabra">
-                        de irme al colegio, reviso mi mochila para segurarme de llevar todo lo necesario.
+                        de irme al colegio, reviso mi mochila para asegurarme de llevar todo lo necesario.
                     </span>
                 </div>
                 <div class="secuencia">
@@ -38,7 +38,7 @@
                         x
                     </span>
                     <span class="palabra">
-                        de sacar el queque del horno, debes esperar a que se enfríe para poder comerlo.
+                        de sacar el queque del horno, debes esperar que se enfríe para poder comerlo.
                     </span>
                 </div>
                
@@ -82,7 +82,7 @@
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
 // Validar
-function result_tipo_2_6_8() {
+function result_tipo_2_5_7() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();

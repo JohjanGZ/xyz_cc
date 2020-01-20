@@ -21,7 +21,7 @@
                     </div>
                     <div class="contenedor-oracion">
                         <span>
-                            Primero Ramón tenia el cabello largo.
+                            Primero, Ramón tenía el cabello largo.
                         </span>
                     </div>
                 </div>
@@ -31,7 +31,7 @@
                     </div>
                     <div class="contenedor-oracion">
                         <span>
-                            Luego su madre le corto el cabello.
+                            Luego, su madre le cortó el cabello.
                         </span>
                     </div>
                 </div>
@@ -41,7 +41,7 @@
                     </div>
                     <div class="contenedor-oracion">
                         <span>
-                            Finalmente Ramón tiene nuevo corte.
+                            Finalmente, Ramón tiene nuevo corte.
                         </span>
                     </div>
                 </div>
@@ -77,11 +77,13 @@
 
 
 <script src="../../../../../js/core.js"></script>
-<?php require('../../../tools/botones/botones.php');?> <script>$("#next").attr("onclick","<?=$next?>");</script>
+<?php require('../../../tools/botones/botones.php');?> <script>
+$("#next").attr("onclick", "<?=$next?>");
+</script>
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
 // Validar
-function result_tipo_2_6_7() {
+function result_tipo_2_5_6() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
@@ -96,6 +98,5 @@ function result_tipo_2_6_7() {
         localStorage.setItem("Nota<?=$cod?>", "0");
         localStorage.setItem("Time<?=$cod?>", tiempo);
     }
-
 }
 </script>
