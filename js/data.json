@@ -750,107 +750,131 @@
                 "unidades": {
                     "0": {
                         "id": "0",
-                        "nombre": "Unidad 1 - Descubrimos nuestros talentos",
+                        "nombre": "Unidad 1 - Juntos colocaremos cada cosa en su lugar",
                         "temas": {
-                            "0": "Aritmética - Conjuntos",
-                            "1": "Aritmética - Representación de conjuntos",
-                            "2": "Aritmética - Relación de pertenencia",
-                            "3": "Aritmética - Cantidades hasta el 9",
-                            "4": "Aritmética - La decena",
-                            "5": "Figuras geométricas",
-                            "6": "Conteo de figuras"
+                            "0": "Ubica adelante - atrás",
+                            "1": "Ubica delante de - detrás de",
+                            "2": "Ubica entre",
+                            "3": "Ubica arriba abajo",
+                            "4": "Ubica encima de - debajo de",
+                            "5": "Ubica dentro, afuera y al borde",
+                            "6": "Identifica izquierda y derecha",
+                            "7": "Identifica a la izquierda de y a la derecha de",
+                            "8": "Identifica cerca y lejos",
+                            "9": "Reconoce y traza línea abiertas y cerradas",
+                            "10": "Reconoce y grafica figuras planas",
+                            "11": "Identifica la forma de los cuerpos",
+                            "12": "Representa conjuntos",
+                            "13": "Clasifica según la forma y color",
+                            "14":"Identifica si pertenece o no pertenece",
+                            "15": "Calcula mucho y pocos",
+                            "16": "Interpreta tablas simples"
                         }
                     },
                     "1": {
                         "id": "1",
-                        "nombre": "Unidad 2 - Ayudamos a mamá en las compras",
+                        "nombre": "Unidad 2 - Trabajemos con armonía",
                         "temas": {
-                            "0": "Aritmética - La adición",
-                            "1": "Aritmética - Problemas con adición",
-                            "2": "Aritmética - Números hasta el 49",
-                            "3": "Geometría - Figuras geométricas",
-                            "4": "Estadística - Registro de datos y gráfico de barras"
+                            "0": "Identifica todos, algunos, ninguno",
+                            "1": "Relaciona tantos como, más que, menos que",
+                            "2": "Reconoce los números del 0 al 9 (Nivel 1)",
+                            "3": "Reconoce los números del 0 al 9 (Nivel 2)",
+                            "4": "Ubica los números en la recta numérica",
+                            "5": "Ordena los números en forma ascendente",
+                            "6": "Identifica el anterior, posterior y entre los números",
+                            "7": "Compara y ordena números hasta el 9",
+                            "8": "Calcula sumas hasta 9",
+                            "9": "Calcula sumas en forma vertical y horizontal",
+                            "10": "Calcula suma utilizando la recta numérica",
+                            "11": "Calcula la suma de tres números asociándolos",
+                            "12": "Interpreta situaciones de suma",
+                            "13":"Interpreta restas con números hasta el 9",
+                            "14": "Calcula restas utilizando la recta numérica",
+                            "15": "Interpreta situaciones de resta",
+                            "16": "Mide longitudes con cuartas, pies y pasos",
+                            "17": "Mide longitudes con unidades no usuales",
+                            "18": "Representa datos en la cuadricula",
+                            "19":"Resuelve pirámides numéricas"
+
                         }
                     },
                     "2": {
                         "id": "2",
-                        "nombre": "Unidad 3 - Somos pequeños agricultores",
+                        "nombre": "Unidad 3 - Soy responsable con mis obligaciones",
                         "temas": {
-                            "0": "Aritmética - Lectura y escritura de números",
-                            "1": "Aritmética - Descomposición de números",
-                            "2": "Aritmética - Comparación de números",
-                            "3": "Geometría - Figuras geométricas",
-                            "4": "Razonamiento matemático - Sucesiones crecientes y decrecientes"
+                            "0": "Reconoce la decena",
+                            "1": "Compara y ordena números hasta el 19",
+                            "2": "Calcula sumas hasta el 19",
+                            "3": "Calcula sumas contando hacia adelante",
+                            "4": "Calcula restas hasta el 19",
+                            "5": "Identifica las partes de una suma",
+                            "6": "Calcula el sumando desconocido"
                         }
                     },
                     "3": {
                         "id": "3",
-                        "nombre": "Unidad 4 - Peruanito soy y con orgullo",
+                        "nombre": "Unidad 4 - Orgulloso de mi patria",
                         "temas": {
-                            "0": "Aritmética - Lectura y escritura de números hasta el 99",
-                            "1": "Aritmética - Comparación de números",
-                            "2": "Aritmética - Descomposición aditiva",
-                            "3": "Estadística - Gráficos de barras"
+                            "0": "Descompone decenas y unidades",
+                            "1": "Representa números con bloques de decenas y unidades",
+                            "2": "Identifica la relación mayor que y menor que",
+                            "3": "Ordena los números hasta el 99",
+                            "4": "Lee y escribe los números hasta el 99",
+                            "5": "Secuencias numéricas",
+                            "6": "Resuelve problemas con la suma",
+                            "7": "Calcula sumas llevando",
+                            "8": "Resta hasta 99"
                         }
                     },
                     "4": {
                         "id": "4",
-                        "nombre": "Unidad 5 - Las maravillas de la naturaleza",
+                        "nombre": "Unidad 5 - Mejoramos la armonía en nuestro planeta",
                         "temas": {
-                            "0": "Aritmética - La centena",
-                            "1": "Aritmética - La centena en el tablero de valor posicional",
-                            "2": "Aritmética - Descomponemos las centenas",
-                            "3": "Aritmética - Lectura y escritura de números de tres cifras",
-                            "4": "Aritmética - Problemas con centenas",
-                            "5": "Aritmética - Propiedad conmutativa"
+                            "0": "Identificamos los números ordinales",
+                            "1": "Calcula el doble de un número",
+                            "2": "Calcula la mitad de un numero",
+                            "3": "Interpreta problema de triple"
+                            
                         }
                     },
                     "5": {
                         "id": "5",
-                        "nombre": "Unidad 6 - Aprendemos a ahorrar para comprar lo que necesitamos",
+                        "nombre": "Unidad 6 - Demuestro una educación basada en la igualdad",
                         "temas": {
-                            "0": "Aritmética - Los meses del año y los días de la semana",
-                            "1": "Aritmética - La hora",
-                            "2": "Aritmética - Aritmética - La media hora",
-                            "3": "Aritmética - Medidas de peso o masa el kilogramo",
-                            "4": "Aritmética - Monedas y billetes del Perú"
+                            "0": "Reconoce las monedas y los billetes",
+                            "1": "Resuelve problemas utilizando monedas y billetes",
+                            "2": "Identifica los días de la semana ",
+                            "3": "Identifica los meses del año",
+                            "4": "Interpreta problema con días de la semana y meses del año"
+                           
                         }
                     },
                     "6": {
                         "id": "6",
-                        "nombre": "Unidad 7 - ¡Qué alegría... llegaron las olimpiadas!",
+                        "nombre": "Unidad 7 - Respeto todo lo que nos rodea por medio de una vida saludable",
                         "temas": {
-                            "0": "Aritmética - Números pares e impares",
-                            "1": "Aritmética - Aritmética - Adición de centenas llevando",
-                            "2": "Aritmética - Sustracción de centenas prestando",
-                            "3": "Aritmética - El doble de un número",
-                            "4": "Aritmética - Problemas con el doble"
+                            "0": "Cuenta y escribe centenas",
+                            "1": "Suma y restas centenas",
+                            "2": "Representa números de tres cifras con el ábaco",
+                            "3": "Descompone en centenas decenas y unidades",
+                            "4": "Lee y escribe números de tres cifras",
+                            "5": "Aprende a ver la hora y la media hora",
+                            "6": "Interpreta y representa grafica de barras o rectángulos"
                         }
                     },
                     "7": {
                         "id": "7",
-                        "nombre": "Unidad 8 - Juntos respetamos los derechos de todos los niños y las niñas",
+                        "nombre": "Unidad 8 - Juntos sumamos amor en navidad",
                         "temas": {
-                            "0": "Aritmética - La mitad",
-                            "1": "Aritmética - La tercia",
-                            "2": "Aritmética - Noción de fracción",
-                            "3": "Aritmética - Comparación de fracciones",
-                            "4": "Aritmética - Ecuaciones"
-                        }
-                    },
-                    "8": {
-                        "id": "8",
-                        "nombre": "Unidad 9 - La alegría de la navidad está en nuestros corazones",
-                        "temas": {
-                            "0": "Aritmética - Términos de la adición",
-                            "1": "Aritmética - Comparación de la adición",
-                            "2": "Aritmética - Términos de la sustracción",
-                            "3": "Aritmética - Números ordinales",
-                            "4": "Estadística - Probabilidades",
-                            "5": "Estadística - Diagrama del árbol"
+                            "0": "Suma llevando decenas y unidades",
+                            "1": "Suma tres números",
+                            "2": "Resta prestando de las decenas",
+                            "3": "Resta prestando de las cecenas",
+                            "4": "Resta realizando prestamos",
+                            "5": "Interpreta probabilidades"
+                            
                         }
                     }
-                }
             },
             "1": {
                 "activo": "1",
@@ -872,162 +896,104 @@
                 "unidades": {
                     "0": {
                         "id": "0",
-                        "nombre": "Unidad 1 -  ",
+                        "nombre": "Unidad 1 - Retornando al colegio. Practicando orden y limpieza",
                         "temas": {
-                            "0": "tema 1",
-                            "1": "tema 2",
-                            "2": "tema 3",
-                            "3": "tema 4",
-                            "4": "tema 5",
-                            "5": "tema 6",
-                            "6": "tema 7",
-                            "7": "tema 8",
-                            "8": "tema 9",
-                            "9": "tema 10"
+                            "0": "Representa conjuntos",
+                            "1": "Identifica pertenece o no pertenece",
+                            "2": "Determina conjuntos",
+                            "3": "Ubica los objetos en los puntos de las cuadriculas ",
+                            "4": "Realiza recorridos ",
+                            "5": "Utiliza pictogramas"
                         }
                     },
                     "1": {
                         "id": "1",
-                        "nombre": "Unidad 2 -  ",
+                        "nombre": "Unidad 2 - Trabajemos con armonía en clase",
                         "temas": {
-                            "0": "tema 1",
-                            "1": "tema 2",
-                            "2": "tema 3",
-                            "3": "tema 4",
-                            "4": "tema 5",
-                            "5": "tema 6",
-                            "6": "tema 7",
-                            "7": "tema 8",
-                            "8": "tema 9",
-                            "9": "tema 10"
+                            "0": "Ordena forma creciente y decreciente",
+                            "1": "Compara números",
+                            "2": "Reproduce figuras en la cuadricula",
+                            "3": "Traza líneas poligonales y curvas",
+                            "4": "Registra y organiza datos"
                         }
                     },
                     "2": {
                         "id": "2",
-                        "nombre": "Unidad 3 -  ",
+                        "nombre": "Unidad 3 - Soy responsable en mi vida diaria",
                         "temas": {
-                            "0": "tema 1",
-                            "1": "tema 2",
-                            "2": "tema 3",
-                            "3": "tema 4",
-                            "4": "tema 5",
-                            "5": "tema 6",
-                            "6": "tema 7",
-                            "7": "tema 8",
-                            "8": "tema 9",
-                            "9": "tema 10"
+                            "0": "Representa números de tres cifras con bloques",
+                            "1": "Representa números de tres cifras en el ábaco",
+                            "2": "Descompone en centenas, decenas y unidades",
+                            "3": "Compara números de tres cifras",
+                            "4": "Cuenta centenas decenas y unidades",
+                            "5": "Suma sin llevar",
+                            "6": "Suma llevando la unidades y decenas ",
+                            "7": "Resuelve problemas utilizando sumas",
+                            "8": "Suma asociando",
+                            "9": "Reconoce lados y vértices de un polígono",
+                            "10": "Interpreta gráficos"
                         }
                     },
                     "3": {
                         "id": "3",
-                        "nombre": "Unidad 4 -  ",
+                        "nombre": "Unidad 4 - Estoy orgulloso de mi país",
                         "temas": {
-                            "0": "tema 1",
-                            "1": "tema 2",
-                            "2": "tema 3",
-                            "3": "tema 4",
-                            "4": "tema 5",
-                            "5": "tema 6",
-                            "6": "tema 7",
-                            "7": "tema 8",
-                            "8": "tema 9",
-                            "9": "tema 10"
+                            "0": "Aprende a multiplicar por 2",
+                            "1": "Aprende a multiplicar por 3",
+                            "2": "Halla el doble",
+                            "3": "Aprende a multiplicar por 4",
+                            "4": "Reconoce rectángulos, cuadrados y círculos",
+                            "5": "Construye gráficos"
                         }
                     },
                     "4": {
                         "id": "4",
-                        "nombre": "Unidad 5 -  ",
+                        "nombre": "Unidad 5 - Cuido mi planeta creativamente",
                         "temas": {
-                            "0": "tema 1",
-                            "1": "tema 2",
-                            "2": "tema 3",
-                            "3": "tema 4",
-                            "4": "tema 5",
-                            "5": "tema 6",
-                            "6": "tema 7",
-                            "7": "tema 8",
-                            "8": "tema 9",
-                            "9": "tema 10"
+                            "0": "Multiplica dos cifras por una cifra",
+                            "1": "Resuelve operaciones combinadas",
+                            "2": "Clasificación de polígonos por sus lados",
+                            "3": "Mide perímetros y áreas",
+                            "4": "Utiliza tablas de doble entrada y gráficos de barras o rectángulos"
                         }
                     },
                     "5": {
                         "id": "5",
-                        "nombre": "Unidad 6 -  ",
+                        "nombre": "Unidad 6 - Con perseverancia aprendo lo mejor de los demás",
                         "temas": {
-                            "0": "tema 1",
-                            "1": "tema 2",
-                            "2": "tema 3",
-                            "3": "tema 4",
-                            "4": "tema 5",
-                            "5": "tema 6",
-                            "6": "tema 7",
-                            "7": "tema 8",
-                            "8": "tema 9",
-                            "9": "tema 10"
+                            "0": "Utiliza la división como reparto exacto",
+                            "1": "Reconoce la familia de operaciones",
+                            "2": "Aprende a dividir entre 2",
+                            "3": "Resuelve problemas dividiendo entre 2 y 3",
+                            "4": "Aprende a dividir entre 4 y 5",
+                            "5": "Aprende a dividir entre 6; 7; 8 y 9",
+                            "6": "Mide en decímetros",
+                            "7": "Utiliza el metro"
                         }
                     },
                     "6": {
                         "id": "6",
-                        "nombre": "Unidad 7 -  ",
+                        "nombre": "Unidad 7 - Somos felices respetando nuestros derechos",
                         "temas": {
-                            "0": "tema 1",
-                            "1": "tema 2",
-                            "2": "tema 3",
-                            "3": "tema 4",
-                            "4": "tema 5",
-                            "5": "tema 6",
-                            "6": "tema 7",
-                            "7": "tema 8",
-                            "8": "tema 9",
-                            "9": "tema 10"
+                            "0": "Divide como reparto no exacto",
+                            "1": "Divide figuras en partes iguales",
+                            "2": "Identifica la fracción que representa una parte en un todo",
+                            "3": "Compara masas",
+                            "4": "Utilizo el gramo y el kilogramo"
                         }
                     },
                     "7": {
                         "id": "7",
-                        "nombre": "Unidad 8 -  ",
+                        "nombre": "Unidad 8 - Todos unidos pensando en un futuro mejor",
                         "temas": {
-                            "0": "tema 1",
-                            "1": "tema 2",
-                            "2": "tema 3",
-                            "3": "tema 4",
-                            "4": "tema 5",
-                            "5": "tema 6",
-                            "6": "tema 7",
-                            "7": "tema 8",
-                            "8": "tema 9",
-                            "9": "tema 10"
-                        }
-                    },
-                    "8": {
-                        "id": "8",
-                        "nombre": "Unidad 9 -  ",
-                        "temas": {
-                            "0": "tema 1",
-                            "1": "tema 2",
-                            "2": "tema 3",
-                            "3": "tema 4",
-                            "4": "tema 5",
-                            "5": "tema 6",
-                            "6": "tema 7",
-                            "7": "tema 8",
-                            "8": "tema 9",
-                            "9": "tema 10"
-                        }
-                    },
-                    "9": {
-                        "id": "9",
-                        "nombre": "Unidad 10 -  ",
-                        "temas": {
-                            "0": "tema 1",
-                            "1": "tema 2",
-                            "2": "tema 3",
-                            "3": "tema 4",
-                            "4": "tema 5",
-                            "5": "tema 6",
-                            "6": "tema 7",
-                            "7": "tema 8",
-                            "8": "tema 9",
-                            "9": "tema 10"
+                            "0": "Forma el millar",
+                            "1": "Cuenta y escribe millares ",
+                            "2": "Descompone, lee y escribe números de 4 cifras",
+                            "3": "Compara números de 4 cifras",
+                            "4": "Suma números de 4 cifras",
+                            "5": "Resta con minuendo de 4 cifras",
+                            "6": "Utiliza el calendario",
+                            "7": "Lee la hora, media hora, un cuarto de hora que marca el reloj"
                         }
                     }
                 }
@@ -1052,157 +1018,89 @@
                 "unidades": {
                     "0": {
                         "id": "0",
-                        "nombre": "Unidad 1 -  Organizamos nuestro ambiente escolar",
+                        "nombre": "Unidad 1 - Nos movemos entre conjuntos",
                         "temas": {
-                            "0": "Aritmética - Determinación de conjuntos",
-                            "1": "Aritmética - Pertenencia y no pertenencia",
-                            "2": "Aritmética - Unión e intersección de conjuntos",
-                            "3": "Geometría - Desplazamiento en la cuadrícula",
-                            "4": "Geometría - Puntos en el plano",
-                            "5": "Geometría - Simetría"
+                            "0": "Forma y representa conjuntos",
+                            "1": "Clase de conjuntos",
+                            "2": "Determinación de conjuntos: por extensión y comprensión"
                         }
                     },
                     "1": {
                         "id": "1",
-                        "nombre": "Unidad 2 - Trabajamos en equipo responsablemente",
+                        "nombre": "Unidad 2 - Empleamos números hasta de tres cifras",
                         "temas": {
-                            "0": "Aritmética - Números hasta la unidad de millar",
-                            "1": "Aritmética - Descomposición de números",
-                            "2": "Aritmética - Comparación de números",
-                            "3": "Aritmética - Aproximación de números",
-                            "4": "Aritmética - Adición",
-                            "5": "stadística - Diagrama de barras horizontales y verticales",
-                            "6": "Razonamiento Matemático - Sucesiones numéricas"
+                            "0": "Escritura y representación de números de dos y tres cifras",
+                            "1": "Adición y sustracción. Propiedades",
+                            "2": "Multiplicación: propiedades y técnicas operativas",
+                            "3": "Potenciación y división"
                         }
                     },
                     "2": {
                         "id": "2",
-                        "nombre": "Unidad 3 - Cuido mi salud con una buena alimentación",
+                        "nombre": "Unidad 3 - Empleamos números hasta de cuatro cifras",
                         "temas": {
-                            "0": "La decena de millar, Descomposición de números ,Comparación y aproximación de números,\n Números ordinales, Números romanos, La adición",
-                            "1": "tema 2",
-                            "2": "tema 3",
-                            "3": "tema 4",
-                            "4": "tema 5",
-                            "5": "tema 6",
-                            "6": "tema 7",
-                            "7": "tema 8",
-                            "8": "tema 9",
-                            "9": "tema 10"
+                            "0": "Números de cuatro cifras, escritura, lectura y representación grafica",
+                            "1": "Descomposición de un número de cuatro cifras",
+                            "2": "Números anteriores y posteriores",
+                            "3": "Compara números naturales de cuatro cifras",
+                            "4": "Adiciones llevando números",
+                            "5": "Sustracciones prestando números",
+                            "6": "Operaciones combinadas de adición y sustracción",
+                            "7": "Divisiones: exacta e inexactas, procedimiento",
+                            "8": "Operaciones combinadas",
+                            "9": "Gráfico de barras"
                         }
                     },
                     "3": {
                         "id": "3",
-                        "nombre": "Unidad 4 -  ",
+                        "nombre": "Unidad 4 - Empleamos números hasta de cinco cifras",
                         "temas": {
-                            "0": "tema 1",
-                            "1": "tema 2",
-                            "2": "tema 3",
-                            "3": "tema 4",
-                            "4": "tema 5",
-                            "5": "tema 6",
-                            "6": "tema 7",
-                            "7": "tema 8",
-                            "8": "tema 9",
-                            "9": "tema 10"
+                            "0": "Comparación de números",
+                            "1": "Tabla de doble entrada. Gráfico de barras dobles"
                         }
                     },
                     "4": {
                         "id": "4",
-                        "nombre": "Unidad 5 -  ",
+                        "nombre": "Unidad 5 - Las partes tienen significado",
                         "temas": {
-                            "0": "tema 1",
-                            "1": "tema 2",
-                            "2": "tema 3",
-                            "3": "tema 4",
-                            "4": "tema 5",
-                            "5": "tema 6",
-                            "6": "tema 7",
-                            "7": "tema 8",
-                            "8": "tema 9",
-                            "9": "tema 10"
+                            "0": "Fracciones",
+                            "1": "Fracciones equivalentes",
+                            "2": "Comparación de fracciones",
+                            "3": "Fracciones de un numero",
+                            "4": "Números decimales: decimas centésimas",
+                            "5": "Comparación",
+                            "6": "Multiplicación y división de decímales",
+                            "7": "Construcción de un gráfico circular o de sectores"
                         }
                     },
                     "5": {
                         "id": "5",
-                        "nombre": "Unidad 6 -  ",
+                        "nombre": "Unidad 6 - Algunas cantidades varían proporcionalmente",
                         "temas": {
-                            "0": "tema 1",
-                            "1": "tema 2",
-                            "2": "tema 3",
-                            "3": "tema 4",
-                            "4": "tema 5",
-                            "5": "tema 6",
-                            "6": "tema 7",
-                            "7": "tema 8",
-                            "8": "tema 9",
-                            "9": "tema 10"
+                            "0": "Ubicación de personas u objetos en una cuadricula. ",
+                            "1": "Traslaciones en una cuadricula.",
+                            "2": "Representación de una tabla en un pictograma"
                         }
                     },
                     "6": {
                         "id": "6",
-                        "nombre": "Unidad 7 -  ",
+                        "nombre": "Unidad 7 - Uno, dos, tres, otra vez",
                         "temas": {
-                            "0": "tema 1",
-                            "1": "tema 2",
-                            "2": "tema 3",
-                            "3": "tema 4",
-                            "4": "tema 5",
-                            "5": "tema 6",
-                            "6": "tema 7",
-                            "7": "tema 8",
-                            "8": "tema 9",
-                            "9": "tema 10"
+                            "0": "Patrones en secuencias numéricas",
+                            "1": "Secuencias graficas"
                         }
                     },
                     "7": {
                         "id": "7",
-                        "nombre": "Unidad 8 -  ",
+                        "nombre": "Unidad 8 - Los equilibrios y desequilibrios nos inspiran",
                         "temas": {
-                            "0": "tema 1",
-                            "1": "tema 2",
-                            "2": "tema 3",
-                            "3": "tema 4",
-                            "4": "tema 5",
-                            "5": "tema 6",
-                            "6": "tema 7",
-                            "7": "tema 8",
-                            "8": "tema 9",
-                            "9": "tema 10"
-                        }
-                    },
-                    "8": {
-                        "id": "8",
-                        "nombre": "Unidad 9 -  ",
-                        "temas": {
-                            "0": "tema 1",
-                            "1": "tema 2",
-                            "2": "tema 3",
-                            "3": "tema 4",
-                            "4": "tema 5",
-                            "5": "tema 6",
-                            "6": "tema 7",
-                            "7": "tema 8",
-                            "8": "tema 9",
-                            "9": "tema 10"
-                        }
-                    },
-                    "9": {
-                        "id": "9",
-                        "nombre": "Unidad 10 -  ",
-                        "temas": {
-                            "0": "tema 1",
-                            "1": "tema 2",
-                            "2": "tema 3",
-                            "3": "tema 4",
-                            "4": "tema 5",
-                            "5": "tema 6",
-                            "6": "tema 7",
-                            "7": "tema 8",
-                            "8": "tema 9",
-                            "9": "tema 10"
+                            "0": "Variables y expresiones algebraicas",
+                            "1": "Ampliación y reducción de figura en una cuadricula",
+                            "2": "Ejes e simetría en figuras planas",
+                            "3": "Unidades de capacidad: el litro, el medio litro, el cuarto de litro"
                         }
                     }
+               
                 }
             }
         },
