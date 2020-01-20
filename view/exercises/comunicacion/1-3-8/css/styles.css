@@ -1,0 +1,81 @@
+h4 {
+    text-align: center;
+}
+
+.contenedor-ejercicios {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ejercicio {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.ejercicio .imagen-palabra img {
+    width: 100px;
+}
+
+.ejercicio .contenedor-respuesta .palabra {
+    width: 130px;
+    height: 50px;
+    border: 3px solid silver;
+    border-radius: 12px;
+    margin-bottom: 3px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.ejercicio .contenedor-respuesta .palabra.vena {
+    background-image: url(../img/3.jpg);
+}
+
+.ejercicio .contenedor-respuesta .palabra.venda {
+    background-image: url(../img/4.jpg);
+}
+
+.ejercicio .contenedor-respuesta .palabra.vela {
+    background-image: url(../img/5.jpg);
+}
+
+.ejercicio .contenedor-respuesta .palabra.velero {
+    background-image: url(../img/6.jpg);
+}
+
+.ejercicio .contenedor-respuesta .palabra:hover {
+    border-color: #37D3F7;
+}
+
+
+/************/
+
+.contenedor-silabas {
+    display: inline-flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+    margin-left: 5%;
+}
+
+.contenedor-silabas .silabas {
+    margin: 0px 5px;
+}
+
+.silabas h4 {
+    display: inline-block;
+    font-size: 1.8rem;
+    background-color: #37D3F7;
+    font-weight: bold;
+    padding: 3px 15px;
+    border-radius: 12px;
+}
+
+
+/**************/
+
+@media(max-height: 640px) {}
