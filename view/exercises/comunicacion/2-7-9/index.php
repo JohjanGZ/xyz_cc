@@ -14,53 +14,31 @@
     <div class="container">
         <div class="row">
 
-            <div class="contenedor-ejercicios">
-                <div class="ejercicio">
-                    <div class="contenedor-img">
-                        <img src="<?= $dir ?>/img/1.png" alt="">
-                    </div>
-                    <select class="browser-default" alt="n">
-                        <option value="" disabled selected>Escoge una opción</option>
-                        <option value="x">guirasol</option>
-                        <option value="n">girasol</option>
-                        <option value="x">jirasol</option>
-                    </select>
+            <div class="contenedor-ejercicio">
+                <div class="contenedor-x" alt="pasado">
+                    <span>Pasado</span>
                 </div>
-                <div class="ejercicio">
-                    <div class="contenedor-img">
-                        <img src="<?= $dir ?>/img/2.png" alt="">
-                    </div>
-                    <select class="browser-default" alt="n">
-                        <option value="" disabled selected>Escoge una opción</option>
-                        <option value="x">girafa</option>
-                        <option value="x">guirafa</option>
-                        <option value="n">jirafa</option>
-                    </select>
+                <div class="contenedor-x" alt="presente">
+                    <span>Presente</span>
                 </div>
-                <div class="ejercicio">
-                    <div class="contenedor-img">
-                        <img src="<?= $dir ?>/img/3.png" alt="">
-                    </div>
-                    <select class="browser-default" alt="n">
-                        <option value="" disabled selected>Escoge una opción</option>
-                        <option value="x">guersey</option>
-                        <option value="x">gersey</option>
-                        <option value="n">jersey</option>
-                    </select>
-                </div>
-                <div class="ejercicio">
-                    <div class="contenedor-img">
-                        <img src="<?= $dir ?>/img/4.png" alt="">
-                    </div>
-                    <select class="browser-default" alt="n">
-                        <option value="" disabled selected>Escoge una opción</option>
-                        <option value="n">tijera</option>
-                        <option value="x">tigera</option>
-                        <option value="x">tiguera</option>
-                    </select>
+                <div class="contenedor-x" alt="futuro">
+                    <span>Futuro</span>
                 </div>
             </div>
-
+            <div class="contenedor-palabras">
+                <span class="palabra pieza" alt="presente">
+                    Andrea toma una taza de leche
+                </span>
+                <span class="palabra pieza" alt="presente">
+                    La profesora explica la clase
+                </span>
+                <span class="palabra pieza" alt="futuro">
+                    El próximo año viajaré a Iquitos
+                </span>
+                <span class="palabra pieza" alt="pasado">
+                    Patricia estudió mucho para el examen
+                </span>
+            </div>
         </div>
     </div>
 
@@ -85,17 +63,11 @@
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
 // Validar
-function result_tipo_2_6_14() {
+function result_tipo_2_7_9() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
-
-    $("select").each(function() {
-        if ($(this).attr("alt") == $(this).val()) {
-            r++;
-        }
-    });
 
     if (r == 4) {
         localStorage.setItem("Nota<?=$cod?>", nota);

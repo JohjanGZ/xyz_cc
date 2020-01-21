@@ -16,62 +16,43 @@
 
             <div class="contenedor-ejercicios">
                 <div class="ejercicio">
-                    <div class="imagen-palabra">
-                        <img src="<?= $dir ?>/img/1.png">
-                    </div>
+                    
                     <div class="contenedor-respuesta">
-                        <div class="palabra" alt="gelatina">
-
-                        </div>
+                        <p>
+                            Dos <span class="palabra" alt="cestos">x</span> de leche y un <span class="palabra" alt="litro">x</span> de <br>
+                            nabos, un saco de <span class="palabra" alt="mantequilla">x</span> y un <span class="palabra" alt="pan">x</span> de <br>
+                            <span class="palabra" alt="tocino">x</span>. Y media <span class="palabra" alt="docena">x</span> de coles y una <br>
+                            <span class="palabra" alt="jarra">x</span> de <span class="palabra" alt="fideos">x</span>, por favor.
+                        </p>
 
                     </div>
                 </div>
-                <div class="ejercicio">
-                    <div class="imagen-palabra">
-                        <img src="<?= $dir ?>/img/2.png">
-                    </div>
-                    <div class="contenedor-respuesta">
-                        <div class="palabra" alt="aji">
-
-                        </div>
-
-                    </div>
-                </div>
-                <div class="ejercicio">
-                    <div class="imagen-palabra">
-                        <img src="<?= $dir ?>/img/3.png">
-                    </div>
-                    <div class="contenedor-respuesta">
-                        <div class="palabra" alt="jirafa">
-
-                        </div>
-
-                    </div>
-                </div>
-                <div class="ejercicio">
-                    <div class="imagen-palabra">
-                        <img src="<?= $dir ?>/img/4.png">
-                    </div>
-                    <div class="contenedor-respuesta">
-                        <div class="palabra" alt="genio">
-
-                        </div>
-
-                    </div>
-                </div>
+                
             </div>
             <ul class="contenedor-silabas">
                 <li class="silabas">
-                    <h4 class="pieza" alt="gelatina">Gelatina</h4>
+                    <h4 class="pieza" alt="cestos">cestos</h4>
                 </li>
                 <li class="silabas">
-                    <h4 class="pieza" alt="aji">Ají</h4>
+                    <h4 class="pieza" alt="mantequilla">mantequilla</h4>
                 </li>
                 <li class="silabas">
-                    <h4 class="pieza" alt="jirafa">Jirafa</h4>
+                    <h4 class="pieza" alt="tocino">tocino</h4>
                 </li>
                 <li class="silabas">
-                    <h4 class="pieza" alt="genio">Genio</h4>
+                    <h4 class="pieza" alt="jarra">jarra</h4>
+                </li>
+                <li class="silabas">
+                    <h4 class="pieza" alt="litro">litro</h4>
+                </li>
+                <li class="silabas">
+                    <h4 class="pieza" alt="pan">pan</h4>
+                </li>
+                <li class="silabas">
+                    <h4 class="pieza" alt="docena">docena</h4>
+                </li>
+                <li class="silabas">
+                    <h4 class="pieza" alt="fideos">fideos</h4>
                 </li>
             </ul>
         </div>
@@ -94,17 +75,19 @@
 
 
 <script src="../../../../../js/core.js"></script>
-<?php require('../../../tools/botones/botones.php');?> <script>$("#next").attr("onclick","<?=$next?>");</script>
+<?php require('../../../tools/botones/botones.php');?> <script>
+$("#next").attr("onclick", "<?=$next?>");
+</script>
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
 // Validar
-function result_tipo_2_6_10() {
+function result_tipo_2_7_5() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
-    if (r == 4) {
+    if (r == 8) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();

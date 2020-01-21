@@ -14,80 +14,44 @@
     <div class="container">
         <div class="row">
 
-            <div class="contenedor-ejercicios">
+            <div class="contenedor-oraciones">
 
-                <table>
-                    <tr>
-                        <th>Presente</th>
-                        <th>Pasado</th>
-                        <th>Futuro</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="respuesta" alt="presente"></span>
-                        </td>
-                        <td>
-                            <span class="respuesta" alt="pasado"></span>
-                        </td>
-                        <td>
-                            <span class="respuesta" alt="futuro"></span>
-                        </td>   
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="respuesta" alt="presente"></span>
-                        </td>
-                        <td>
-                            <span class="respuesta" alt="pasado"></span>
-                        </td>
-                        <td>
-                            <span class="respuesta" alt="futuro"></span>
-                        </td>   
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="respuesta" alt="presente"></span>
-                        </td>
-                        <td>
-                            <span class="respuesta" alt="pasado"></span>
-                        </td>
-                        <td>
-                            <span class="respuesta" alt="futuro"></span>
-                        </td>   
-                    </tr>
-                   
-                </table>
+                
+                <div class="oracion">
+                    <h4>
+                    <span style="color: #37d7f3;">•</span>¿Quién vivía en el sombrero de Palitroque?
+                    </h4>
+                    <div class="contenedor-check">
+                        <div class="respuesta">
+                            <div class="img-rpst">
+                                <img src="<?= $dir ?>/img/1.png">
+                            </div>
+                        </div>
+                        <div class="respuesta">
+                            <div class="img-rpst" alt="n">
+                                <img src="<?= $dir ?>/img/2.png">
+
+                            </div>
+                        </div>
+                        <div class="respuesta">
+                            <div class="img-rpst">
+                                <img src="<?= $dir ?>/img/3.png">
+
+                            </div>
+                        </div>
+                        <div class="respuesta">
+                            <div class="img-rpst">
+                                <img src="<?= $dir ?>/img/4.png">
+
+                            </div>
+                        </div>
+                       
+                    </div>
+
+                </div>
 
             </div>
-            <div class="contenedor-palabras">
-                <span class="palabra pieza" alt="presente">
-                    bailo
-                </span>
-                <span class="palabra pieza" alt="presente">
-                    lavo
-                </span>
-                <span class="palabra pieza" alt="presente">
-                    caminas
-                </span>
-                <span class="palabra pieza" alt="pasado">
-                    pinté
-                </span>
-                <span class="palabra pieza" alt="pasado">
-                    lavé
-                </span>
-                <span class="palabra pieza" alt="pasado">
-                    manejé
-                </span>
-                <span class="palabra pieza" alt="futuro">
-                    esperaré
-                </span>
-                <span class="palabra pieza" alt="futuro">
-                    caminaré
-                </span>
-                <span class="palabra pieza" alt="futuro">
-                    cantaré
-                </span>
-            </div>
+
         </div>
     </div>
 
@@ -108,19 +72,47 @@
 
 
 <script src="../../../../../js/core.js"></script>
-<?php require('../../../tools/botones/botones.php');?> <script>
-$("#next").attr("onclick", "<?=$next?>");
-</script>
+<?php require('../../../tools/botones/botones.php');?> <script>$("#next").attr("onclick","<?=$next?>");</script>
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
 // Validar
-function result_tipo_2_8_14() {
+
+var r = 0;
+
+
+var ul = document.querySelector('.contenedor-check');
+for (var i = ul.children.length; i >= 0; i--) {
+    ul.appendChild(ul.children[Math.random() * i | 0]);
+}
+
+$(".img-rpst").click(function() {
+    $(this).css({
+        "border": "solid",
+        "border-color": "#37D3F7",
+        "background": "#B6ECFF"
+    });
+    var element = $(this).attr("alt");
+    var select = $(this).attr("value");
+    if (select != "seleccionado") {
+
+        if (element == "n") {
+            r++;
+            $(this).attr("value", "seleccionado");
+        } else {
+            r--;
+            $(this).attr("value", "seleccionado");
+        }
+    }
+});
+
+
+function result_tipo_2_7_2() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
-    if (r == 9) {
+    if (r == 1) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();
