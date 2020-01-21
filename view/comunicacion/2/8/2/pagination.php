@@ -10,7 +10,6 @@
     var ruta="../../../../exercises/comunicacion/";
     ////////////// 2do 
             // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
-    
     function start_3(){
         $("#ventana").load(ruta+'2-8-3/index.php', 
         {
@@ -25,7 +24,7 @@
         );
         return false;  
     };
-   
+    
     function resultado(){
         $("#ventana").load('../../../../exercises/resultado/resultado.php');
         return false;

@@ -1,82 +1,79 @@
 <?php require('../../../tools/var/variables.php'); ?>
-
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <head>     
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
     <link rel="stylesheet" type="text/css" href="<?= $dir ?>/css/styles.css">
-</head>
-<style type="text/css">
+  </head>
+  <style type="text/css">
 
-</style>
-<?=$titulo?>
-
-<body>
-
-    <div class="container">
+  </style>
+  <?=$titulo?>
+  <body>
+    
+  <div class="container">
         <div class="row">
+           
+            <div class="contenedor-oraciones">
 
-            <div class="contenedor-ejercicios">
-
-                <div class="secuencia">
-                    <span class="palabra">
-                        <b><i>ge 🠲</i></b>
-                    </span>
-                    <span class="respuesta" alt="ge">
-
-                    </span>
+               
+                <div class="oracion">
+                    <h5>
+                        <span>•</span> La abuela de Palitroque no se curó de su resfrío.
+                    </h5>
+                    <div class="contenedor-check">
+                       <div class="respuesta">
+                            <span>Verdadero</span>
+                       </div>
+                       <div class="respuesta" alt="n">
+                            <span>Falso</span>
+                       </div>
+                    </div>
+                   
                 </div>
-                <div class="secuencia">
-                    <span class="palabra">
-                        <b><i>gi 🠲</i></b>
-                    </span>
-                    <span class="respuesta" alt="gi">
-                        x
-                    </span>
+                <div class="oracion">
+                    <h5>
+                        <span>•</span> El señor malas pintas recibió muy bien a Palitroque en su caravana.
+                    </h5>
+                    <div class="contenedor-check">
+                        <div class="respuesta" alt="n">
+                            <span>Verdadero</span>
+                       </div>
+                       <div class="respuesta">
+                            <span>Falso</span>
+                       </div>
+                    </div>
+                   
                 </div>
-                <div class="secuencia">
-                    <span class="palabra">
-                        <b><i>je 🠲</i></b>
-                    </span>
-                    <span class="respuesta" alt="je">
-                        x
-                    </span>
+                <div class="oracion">
+                    <h5>
+                        <span>•</span> Palitroque regresó a su casa luego de hacer todas las compras.
+                    </h5>
+                    <div class="contenedor-check">
+                       <div class="respuesta" alt="n">
+                            <span>Verdadero</span>
+                       </div>
+                       <div class="respuesta">
+                            <span>Falso</span>
+                       </div>
+                    </div>
+                   
                 </div>
-                <div class="secuencia">
-                    <span class="palabra">
-                        <b><i>ji 🠲</i></b>
-                    </span>
-                    <span class="respuesta" alt="ji">
-                        x
-                    </span>
+                <div class="oracion">
+                    <h5>
+                        <span>•</span> A la abuela le creció la nariz por curiosa.
+                    </h5>
+                    <div class="contenedor-check">
+                       <div class="respuesta">
+                            <span>Verdadero</span>
+                       </div>
+                       <div class="respuesta" alt="n">
+                            <span>Falso</span>
+                       </div>
+                    </div>
+                   
                 </div>
-
+                
+                
             </div>
-
-            <ul class="contenedor-silabas">
-                <li class="silabas">
-                    <h4 class="pieza" alt="gi">gigante</h4>
-                </li>
-                <li class="silabas">
-                    <h4 class="pieza" alt="gi">girasol</h4>
-                </li>
-                <li class="silabas">
-                    <h4 class="pieza" alt="ge">geranio</h4>
-                </li>
-                <li class="silabas">
-                    <h4 class="pieza" alt="ge">gente</h4>
-                </li>
-                <li class="silabas">
-                    <h4 class="pieza" alt="je">ejercicio</h4>
-                </li>
-                <li class="silabas">
-                    <h4 class="pieza" alt="je">equipaje</h4>
-                </li>
-                <li class="silabas">
-                    <h4 class="pieza" alt="ji">jinete</h4>
-                </li>
-                <li class="silabas">
-                    <h4 class="pieza" alt="ji">jilguero</h4>
-                </li>
-            </ul>
 
         </div>
     </div>
@@ -87,36 +84,69 @@
         <div class="modal-content">
             <h4>Respuesta correcta</h4>
             <center>
-                <img class="materialboxed" width="80%" src="<?= $dir ?>/img/respuesta.png">
+              <img class="materialboxed"  width="80%" src="<?= $dir ?>/img/respuesta.png">
             </center>
         </div>
         <div class="modal-footer">
             <a href="#!" class="modal-close waves-effect waves-green btn-flat">Listo!</a>
         </div>
     </div>
-</body>
+  </body>
 
 
 <script src="../../../../../js/core.js"></script>
 <?php require('../../../tools/botones/botones.php');?> <script>$("#next").attr("onclick","<?=$next?>");</script>
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
-// Validar
-function result_tipo_2_6_11() {
-    var min = $('#Minutos').text();
-    var seg = $('#Segundos').text();
-    var milseg = $('#Centesimas').text();
-    var tiempo = min + ":" + seg + ":" + milseg;
+    // Validar
 
-    if (r == 8) {
-        localStorage.setItem("Nota<?=$cod?>", nota);
-        localStorage.setItem("Time<?=$cod?>", tiempo);
-        correcto();
-    } else {
-        incorrecto();
-        localStorage.setItem("Nota<?=$cod?>", "0");
-        localStorage.setItem("Time<?=$cod?>", tiempo);
-    }
+    var r = 0;
+    var v = 1;
 
+    
+var ul = document.querySelector('.contenedor-oraciones');
+for (var i = ul.children.length; i >= 0; i--) {
+    ul.appendChild(ul.children[Math.random() * i | 0]);
 }
+
+    $(".respuesta").click(function(){
+        $(this).css({
+        "border": "solid",
+        "border-color": "#37D3F7",
+        "background": "#B6ECFF"
+        });
+        var element = $(this).attr("alt");
+        var select = $(this).attr("value");
+        if (select != "seleccionado") {
+
+            if (element == "n") {
+                r++;
+                $(this).attr("value", "seleccionado");
+            } else {
+                r--;
+                $(this).attr("value", "seleccionado");
+            }
+        }
+    });
+
+    
+    
+
+    function result_tipo_2_7_6() {
+        var min = $('#Minutos').text();
+        var seg = $('#Segundos').text();
+        var milseg = $('#Centesimas').text();
+        var tiempo = min + ":" + seg + ":" + milseg;
+
+        if (r == 4) {
+            localStorage.setItem("Nota<?=$cod?>", nota);
+            localStorage.setItem("Time<?=$cod?>", tiempo);
+            correcto();
+        } else {
+            incorrecto();
+            localStorage.setItem("Nota<?=$cod?>", "0");
+            localStorage.setItem("Time<?=$cod?>", tiempo);
+        }
+
+    }
 </script>

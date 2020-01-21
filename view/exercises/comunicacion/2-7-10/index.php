@@ -15,45 +15,79 @@
         <div class="row">
 
             <div class="contenedor-ejercicios">
-                <div class="ejercicio">
-                    <div class="imagen-palabra">
-                        <img src="<?= $dir ?>/img/1.png">
-                    </div>
-                    <div class="contenedor-respuesta">
-                        <p>
-                            Barco es a <span class="palabra" alt="mar">x</span>
-                            como avión es a<span class="palabra" alt="cielo">x</span>
-                        </p>
 
-                    </div>
-                </div>
-                <div class="ejercicio">
-                    <div class="imagen-palabra">
-                        <img src="<?= $dir ?>/img/2.png">
-                    </div>
-                    <div class="contenedor-respuesta">
-                        <p>
-                            Paraguas es a <span class="palabra" alt="lluvia">x</span>
-                            como sombrilla es a<span class="palabra" alt="sol">x</span>
-                        </p>
+                <table>
+                    <tr>
+                        <th>Presente</th>
+                        <th>Pasado</th>
+                        <th>Futuro</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="respuesta" alt="presente"></span>
+                        </td>
+                        <td>
+                            <span class="respuesta" alt="pasado"></span>
+                        </td>
+                        <td>
+                            <span class="respuesta" alt="futuro"></span>
+                        </td>   
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="respuesta" alt="presente"></span>
+                        </td>
+                        <td>
+                            <span class="respuesta" alt="pasado"></span>
+                        </td>
+                        <td>
+                            <span class="respuesta" alt="futuro"></span>
+                        </td>   
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="respuesta" alt="presente"></span>
+                        </td>
+                        <td>
+                            <span class="respuesta" alt="pasado"></span>
+                        </td>
+                        <td>
+                            <span class="respuesta" alt="futuro"></span>
+                        </td>   
+                    </tr>
+                   
+                </table>
 
-                    </div>
-                </div>
             </div>
-            <ul class="contenedor-silabas">
-                <li class="silabas">
-                    <h4 class="pieza" alt="cielo">cielo</h4>
-                </li>
-                <li class="silabas">
-                    <h4 class="pieza" alt="mar">mar</h4>
-                </li>
-                <li class="silabas">
-                    <h4 class="pieza" alt="lluvia">lluvia</h4>
-                </li>
-                <li class="silabas">
-                    <h4 class="pieza" alt="sol">sol</h4>
-                </li>
-            </ul>
+            <div class="contenedor-palabras">
+                <span class="palabra pieza" alt="presente">
+                    bailo
+                </span>
+                <span class="palabra pieza" alt="presente">
+                    lavo
+                </span>
+                <span class="palabra pieza" alt="presente">
+                    caminas
+                </span>
+                <span class="palabra pieza" alt="pasado">
+                    pinté
+                </span>
+                <span class="palabra pieza" alt="pasado">
+                    lavé
+                </span>
+                <span class="palabra pieza" alt="pasado">
+                    manejé
+                </span>
+                <span class="palabra pieza" alt="futuro">
+                    esperaré
+                </span>
+                <span class="palabra pieza" alt="futuro">
+                    caminaré
+                </span>
+                <span class="palabra pieza" alt="futuro">
+                    cantaré
+                </span>
+            </div>
         </div>
     </div>
 
@@ -80,13 +114,13 @@ $("#next").attr("onclick", "<?=$next?>");
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
 // Validar
-function result_tipo_2_7_5() {
+function result_tipo_2_7_10() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
-    if (r == 4) {
+    if (r == 9) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();

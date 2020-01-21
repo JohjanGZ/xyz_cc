@@ -1,128 +1,125 @@
 <script type="text/javascript">
-    
-    function Page_4(){
-        start_4();
-        inicio();
-        count = 3;
-    }
-    function Page_5(){
-        start_5();
-        inicio();
-        count = 3;
-    }
-    function Page_6(){
-        start_6();
-        inicio();
-        count = 3;
-    }
-    function Page_7(){
-        start_7();
-        inicio();
-        count = 3;
-    }
-    function Page_8(){
-        start_8();
-        inicio();
-        count = 3;
-    }
-    function Page_9(){
-        start_9();
-        inicio();
-        count = 3;
-    }
+function Page_12() {
+    start_12();
+    inicio();
+    count = 3;
+}
 
-    var cant=2;
-    var cal= 20/20;
-    var ruta="../../../../exercises/comunicacion/";
-    ////////////// 2do 
-            // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
-    function start_4(){
-        $("#ventana").load(ruta+'2-8-4/index.php', 
-        {
-        next: "Page_5()", 
-        procesar:"result_tipo_2_8_4()",
-        titulo:"<center><h5><span>Selecciona</span> la alternativa que responda correctamente la pregunta.</h5></center>",
-        restaurar:"start_4()",
-        dir:ruta,
-        cod: "2-8-4",
-        nota:cal
-        }
-        );
-        return false;  
-    };
-    function start_5(){
-        $("#ventana").load(ruta+'2-8-5/index.php', 
-        {
-        next: "resultado()", 
-        procesar:"result_tipo_2_8_5()",
-        titulo:"<center><h5><span>Selecciona</span> la alternativa que responda correctamente la pregunta.</h5></center>",
-        restaurar:"start_5()",
-        dir:ruta,
-        cod: "2-8-5",
-        nota:cal
-        }
-        );
-        return false;  
-    };
-    function start_6(){
-        $("#ventana").load(ruta+'2-8-6/index.php', 
-        {
-        next: "Page_7()", 
-        procesar:"result_tipo_2_8_6()",
-        titulo:"<center><h5><span>Observa</span> la imagen y selecciona <i>verdadero</i> o <i>falso</i> según corresponda.</h5></center>",
-        restaurar:"start_6()",
-        dir:ruta,
-        cod: "2-8-6",
-        nota:cal
-        }
-        );
-        return false;  
-    };
-    function start_7(){
-        $("#ventana").load(ruta+'2-8-7/index.php', 
-        {
-        next: "Page_8()", 
-        procesar:"result_tipo_2_8_7()",
-        titulo:"<center><h5><span>Ordena</span> las palabras de modo que formen oraciones.</h5></center>",
-        restaurar:"start_7()",
-        dir:ruta,
-        cod: "2-8-7",
-        nota:cal
-        }
-        );
-        return false;  
-    };
-    function start_8(){
-        $("#ventana").load(ruta+'2-8-8/index.php', 
-        {
-        next: "resultado()", 
-        procesar:"result_tipo_2_8_8()",
-        titulo:"<center><h5><span>Ordena</span> las palabras de modo que formen oraciones.</h5></center>",
-        restaurar:"start_8()",
-        dir:ruta,
-        cod: "2-8-8",
-        nota:cal
-        }
-        );
-        return false;  
-    };
-    function start_9(){
-        $("#ventana").load(ruta+'2-8-9/index.php', 
-        {
-        next: "Page_10()", 
-        procesar:"result_tipo_2_8_9()",
-        titulo:"<center><h5><span>Lee</span> atentamente el diálogo, luego <span>completa</span> el enunciado.</h5></center>",
-        restaurar:"start_9()",
-        dir:ruta,
-        cod: "2-8-9",
-        nota:cal
-        }
-        );
-        return false;  
-    };
+function Page_13() {
+    start_13();
+    inicio();
+    count = 3;
+}
 
-    function resultado(){
-        $("#ventana").load('../../../../exercises/resultado/resultado.php');
-        return false;
-    };
+function Page_14() {
+    start_14();
+    inicio();
+    count = 3;
+}
+
+function Page_15() {
+    start_15();
+    inicio();
+    count = 3;
+}
+
+function Page_16() {
+    start_16();
+    inicio();
+    count = 3;
+}
+
+function Page_17() {
+    start_17();
+    inicio();
+    count = 3;
+}
+
+var cant = 6;
+var cal = 20 / 20;
+var ruta = "../../../../exercises/comunicacion/";
+////////////// 2do 
+// ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
+function start_12() {
+    $("#ventana").load(ruta + '2-7-12/index.php', {
+        next: "Page_13()",
+        procesar: "result_tipo_2_7_12()",
+        titulo: "<center><h5><span>Arrastra</span> 'g' o 'j'  y <span>completa</span> la palabra.</h5></center>",
+        restaurar: "start_12()",
+        dir: ruta,
+        cod: "2-7-12",
+        nota: cal
+    });
+    return false;
+};
+
+function start_13() {
+    $("#ventana").load(ruta + '2-7-13/index.php', {
+        next: "Page_14()",
+        procesar: "result_tipo_2_7_13()",
+        titulo: "<center><h5><span>Arrastra</span> el nombre de cada imagen.</h5></center>",
+        restaurar: "start_13()",
+        dir: ruta,
+        cod: "2-7-13",
+        nota: cal
+    });
+    return false;
+};
+
+function start_14() {
+    $("#ventana").load(ruta + '2-7-14/index.php', {
+        next: "Page_15()",
+        procesar: "result_tipo_2_7_14()",
+        titulo: "<center><h5><span>Arrastra</span> y <span>clasifica</span> las palabras en su fila correspondiente.</h5></center>",
+        restaurar: "start_14()",
+        dir: ruta,
+        cod: "2-7-14",
+        nota: cal
+    });
+    return false;
+};
+
+function start_15() {
+    $("#ventana").load(ruta + '2-7-15/index.php', {
+        next: "Page_16()",
+        procesar: "result_tipo_2_7_15()",
+        titulo: "<center><h5><span>Arrastra</span> las palabras en el lu.</h5></center>",
+        restaurar: "start_15()",
+        dir: ruta,
+        cod: "2-7-15",
+        nota: cal
+    });
+    return false;
+};
+
+function start_16() {
+    $("#ventana").load(ruta + '2-7-16/index.php', {
+        next: "Page_17()",
+        procesar: "result_tipo_2_7_16()",
+        titulo: "<center><h5><span>Ordena</span> las palabras de modo que formen oraciones.</h5></center>",
+        restaurar: "start_16()",
+        dir: ruta,
+        cod: "2-7-16",
+        nota: cal
+    });
+    return false;
+};
+
+function start_17() {
+    $("#ventana").load(ruta + '2-7-17/index.php', {
+        next: "resultado()",
+        procesar: "result_tipo_2_7_17()",
+        titulo: "<center><h5><span>Lee</span> atentamente el diálogo, luego <span>completa</span> el enunciado.</h5></center>",
+        restaurar: "start_17()",
+        dir: ruta,
+        cod: "2-7-17",
+        nota: cal
+    });
+    return false;
+};
+
+function resultado() {
+    $("#ventana").load('../../../../exercises/resultado/resultado.php');
+    return false;
+};
 </script>

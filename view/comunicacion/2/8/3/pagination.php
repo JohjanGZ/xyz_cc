@@ -2,6 +2,7 @@
 function Page_lectura_2_8_3_1() {
     start_lectura_2_8_3_1();
     inicio();
+<<<<<<< HEAD
     count = 0;
 }
 
@@ -17,6 +18,20 @@ function Page_5() {
     count = 3;
 }
 
+=======
+}
+function Page_4() {
+    start_4();
+    inicio();
+    count = 3;
+}
+function Page_5() {
+    start_5();
+    inicio();
+    count = 3;
+}
+
+>>>>>>> ed682bf0afc34c73fa3bd48c50ce1b667845b464
 function Page_6() {
     start_6();
     inicio();
@@ -43,8 +58,13 @@ var ruta = "../../../../exercises/comunicacion/";
 function start_lectura_2_8_3_1() {
     $("#ventana").load(ruta + 'lectura2-8-3-1/index.php', {
         next: "Page_4()",
+<<<<<<< HEAD
         procesar: "lectura2-8-3-1()",
         titulo: "<center><h5><span class='ftitulo'>Lee</span> atentamente y contesta las preguntas.</h5></center>",
+=======
+        procesar: "lectura2-2-1-1()",
+        titulo: "<center><h5><span>Lee</span> atentamente y <span>contesta</span> las preguntas.</h5></center>",
+>>>>>>> ed682bf0afc34c73fa3bd48c50ce1b667845b464
         restaurar: "start_lectura_2_8_3_1()",
         dir: ruta,
         cod: "lectura2-8-3-1",
@@ -52,7 +72,6 @@ function start_lectura_2_8_3_1() {
     });
     return false;
 };
-
 function start_4() {
     $("#ventana").load(ruta + '2-8-4/index.php', {
         next: "Page_5()",
@@ -65,7 +84,6 @@ function start_4() {
     });
     return false;
 };
-
 function start_5() {
     $("#ventana").load(ruta + '2-8-5/index.php', {
         next: "Page_6()",
@@ -83,7 +101,7 @@ function start_6() {
     $("#ventana").load(ruta + '2-8-6/index.php', {
         next: "Page_7()",
         procesar: "result_tipo_2_8_6()",
-        titulo: "<center><h5><span>Selecciona</span> la imágenes de los ingredientes utilizados.</h5></center>",
+        titulo: "<center><h5><span>Selecciona</span> las imágenes de los ingredientes utilizados.</h5></center>",
         restaurar: "start_6()",
         dir: ruta,
         cod: "2-8-6",
@@ -96,7 +114,7 @@ function start_7() {
     $("#ventana").load(ruta + '2-8-7/index.php', {
         next: "Page_8()",
         procesar: "result_tipo_2_8_7()",
-        titulo: "<center><h5><span>Marca</span> Verdadero o Falso según corresponda.</h5></center>",
+        titulo: "<center><h5><span>Marca</span> <i>verdadero</i> o <i>falso</i> según corresponda.</h5></center>",
         restaurar: "start_7()",
         dir: ruta,
         cod: "2-8-7",
@@ -117,6 +135,8 @@ function start_8() {
     });
     return false;
 };
+
+
 
 function resultado() {
     $("#ventana").load('../../../../exercises/resultado/resultado.php');

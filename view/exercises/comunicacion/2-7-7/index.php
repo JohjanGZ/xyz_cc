@@ -14,47 +14,51 @@
     <div class="container">
         <div class="row">
 
-            <div class="contenedor-ejercicios">
+            <div class="contenedor-oraciones">
 
-                <div class="secuencia">
-                    <span class="palabra">
-                        <b><i>con J 🠲</i></b>
-                    </span>
-                    <span class="respuesta" alt="j">
 
-                    </span>
+                <div class="oracion">
+                    <h5>
+                        <span>•</span> El doctor Hierbabuena
+                    </h5>
+                    <div class="contenedor-check">
+                        <div class="respuesta" alt="n">
+                            <span>Mentiroso</span>
+                        </div>
+                        <div class="respuesta">
+                            <span>Bromista</span>
+                        </div>
+                        <div class="respuesta">
+                            <span>Renegón</span>
+                        </div>
+                        <div class="respuesta">
+                            <span>Humilde</span>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="secuencia">
-                    <span class="palabra">
-                        <b><i>Con G 🠲</i></b>
-                    </span>
-                    <span class="respuesta" alt="g">
-                        x
-                    </span>
+                <div class="oracion">
+                    <h5>
+                        <span>•</span> La abuela
+                    </h5>
+                    <div class="contenedor-check">
+                        <div class="respuesta" alt="n">
+                            <span>Curiosa</span>
+                        </div>
+                        <div class="respuesta">
+                            <span>Vanidosa</span>
+                        </div>
+                        <div class="respuesta">
+                            <span>Triste</span>
+                        </div>
+                        <div class="respuesta">
+                            <span>Estudiosa</span>
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
-
-            <ul class="contenedor-silabas">
-                <li class="silabas">
-                    <h4 class="pieza" alt="g">congelador</h4>
-                </li>
-                <li class="silabas">
-                    <h4 class="pieza" alt="g">gigante</h4>
-                </li>
-                <li class="silabas">
-                    <h4 class="pieza" alt="g">gente</h4>
-                </li>
-                <li class="silabas">
-                    <h4 class="pieza" alt="j">cojín</h4>
-                </li>
-                <li class="silabas">
-                    <h4 class="pieza" alt="j">jilguero</h4>
-                </li>
-                <li class="silabas">
-                    <h4 class="pieza" alt="j">equipaje</h4>
-                </li>
-            </ul>
 
         </div>
     </div>
@@ -76,17 +80,62 @@
 
 
 <script src="../../../../../js/core.js"></script>
-<?php require('../../../tools/botones/botones.php');?> <script>$("#next").attr("onclick","<?=$next?>");</script>
+<?php require('../../../tools/botones/botones.php');?> <script>
+$("#next").attr("onclick", "<?=$next?>");
+</script>
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
 // Validar
-function result_tipo_2_6_12() {
+
+var r = 0;
+var v = 1;
+
+
+var ul = document.querySelector('.contenedor-oraciones');
+for (var i = ul.children.length; i >= 0; i--) {
+    ul.appendChild(ul.children[Math.random() * i | 0]);
+}
+
+var cols = document.querySelectorAll('.contenedor-check');
+
+[].forEach.call(cols, (e) => {
+
+    for (var i = e.children.length; i >= 0; i--) {
+        e.appendChild(e.children[Math.random() * i | 0]);
+    }
+
+});
+
+$(".respuesta").click(function() {
+    $(this).css({
+        "border": "solid",
+        "border-color": "#37D3F7",
+        "background": "#B6ECFF"
+    });
+    var element = $(this).attr("alt");
+    var select = $(this).attr("value");
+    if (select != "seleccionado") {
+
+        if (element == "n") {
+            r++;
+            $(this).attr("value", "seleccionado");
+        } else {
+            r--;
+            $(this).attr("value", "seleccionado");
+        }
+    }
+});
+
+
+
+
+function result_tipo_2_7_7() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
-    if (r == 6) {
+    if (r == 2) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();

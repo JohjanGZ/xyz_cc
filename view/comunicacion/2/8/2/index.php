@@ -45,10 +45,26 @@
             $('#resolucion').html(window.innerWidth + " x " + window.innerHeight);
         });
 
+<<<<<<< HEAD
         function IniciarCronometro() {
             $("#portada").css("display", "none");
             Page_3();
         }
         </script>
     </body>
+=======
+<div id="ventana"></div>
+<?php require ('pagination.php');?>  
+ <script src="../../../../../js/materialize.min.js"></script>
+<script type="text/javascript"> 
+  $(document).ready(function(){
+    $('#resolucion').html(window.innerWidth + " x " + window.innerHeight);
+  });
+  function IniciarCronometro(){
+        $("#portada").css("display", "none");
+        Page_3(); 
+  }
+</script>
+</body>
+>>>>>>> ed682bf0afc34c73fa3bd48c50ce1b667845b464
 </div>

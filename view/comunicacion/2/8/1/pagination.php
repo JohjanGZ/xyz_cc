@@ -20,7 +20,7 @@ function start_1() {
     $("#ventana").load(ruta + '2-8-1/index.php', {
         next: "Page_2()",
         procesar: "result_tipo_2_8_1()",
-        titulo: "<center><h5><span>Relaciona</span> cada sujeto con el predicado correspondiente.</h5></center>",
+        titulo: "<center><h5><span>Relaciona</span> cada sujeto con su predicado correspondiente.</h5></center>",
         restaurar: "start_1()",
         dir: ruta,
         cod: "2-8-1",

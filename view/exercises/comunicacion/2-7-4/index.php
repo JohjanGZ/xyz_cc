@@ -14,168 +14,46 @@
     <div class="container">
         <div class="row">
 
-            <div class="contenedor-ejercicios">
-                <div class="ejercicio">
+            <div class="contenedor-oraciones">
 
-                    <div class="contenedor-respuesta">
 
-                        <div class="palabra" alt="j">
-
+                <div class="oracion">
+                    <h5>
+                        <span>•</span> ¿A dónde mandó la abuela a Palitroque?
+                    </h5>
+                    <div class="contenedor-check">
+                        <div class="respuesta" alt="n">
+                            <span>Al mercado</span>
                         </div>
-                        <span class="span-after">inete</span>
-
+                        <div class="respuesta">
+                            <span>Al colegio</span>
+                        </div>
+                        <div class="respuesta">
+                            <span>A la feria</span>
+                        </div>
                     </div>
+
                 </div>
-                <div class="ejercicio">
-
-                    <div class="contenedor-respuesta">
-                    <div class="palabra" alt="g">
-
+                <div class="oracion">
+                    <h5>
+                        <span>•</span> ¿Cómo le decían al curandero que vendía el brebaje Pelón?
+                    </h5>
+                    <div class="contenedor-check">
+                        <div class="respuesta">
+                            <span>Dr. Matasanos</span>
                         </div>
-                        <span class="span-after">eranio</span>
-                        
-                    </div>
-                </div>
-                <div class="ejercicio">
-
-                    <div class="contenedor-respuesta">
-                        <div class="palabra" alt="g">
-
+                        <div class="respuesta" alt="n">
+                            <span>Dr. Hierbabuena</span>
                         </div>
-                        <span>igante</span>
-                    </div>
-                </div>
-                <div class="ejercicio">
-
-                    <div class="contenedor-respuesta">
-                        <div class="palabra" alt="g">
-
+                        <div class="respuesta">
+                            <span>Dr. Manhattan</span>
                         </div>
-                        <span class="span-after">eología</span>
                     </div>
-                </div>
-                <div class="ejercicio">
 
-                    <div class="contenedor-respuesta">
-                        <span>ti</span>
-                        <div class="palabra" alt="j">
-
-                        </div>
-                        <span class="span-after">era</span>
-                    </div>
-                </div>
-                <div class="ejercicio">
-
-                    <div class="contenedor-respuesta">
-                        <span>mensa</span>
-                        <div class="palabra" alt="j">
-
-                        </div>
-                        <span class="span-after">ero</span>
-                       
-                    </div>
-                </div>
-                <div class="ejercicio">
-
-                    <div class="contenedor-respuesta">
-                        <span>tar</span>
-                        <div class="palabra" alt="j">
-
-                        </div>
-                        <span class="span-after">eta</span>
-                    </div>
-                </div>
-                <div class="ejercicio">
-
-                    <div class="contenedor-respuesta">
-                        <span>a</span>
-                        <div class="palabra" alt="j">
-
-                        </div>
-                        <span class="span-after">edrez</span>
-                    </div>
-                </div>
-                <div class="ejercicio">
-
-                    <div class="contenedor-respuesta">
-                        <span>re</span>
-                        <div class="palabra" alt="g">
-
-                        </div>
-                        <span class="span-after">ión</span>
-
-                    </div>
-                </div>
-                <div class="ejercicio">
-
-                    <div class="contenedor-respuesta">
-
-                        <div class="palabra" alt="g">
-
-                        </div>
-                        <span class="span-after">imnasia</span>
-                    </div>
-                </div>
-                <div class="ejercicio">
-
-                    <div class="contenedor-respuesta">
-
-                        <div class="palabra" alt="j">
-
-                        </div>
-                        <span class="span-after">ilguero</span>
-                    </div>
-                </div>
-                <div class="ejercicio">
-
-                    <div class="contenedor-respuesta">
-                        <span>a</span>
-                        <div class="palabra" alt="g">
-
-                        </div>
-                        <span class="span-after">enda</span>
-
-                    </div>
                 </div>
 
             </div>
-            <ul class="contenedor-silabas">
-                <li class="silabas">
-                    <h4 class="pieza" alt="j">j</h4>
-                </li>
-                <li class="silabas">
-                    <h4 class="pieza" alt="j">j</h4>
-                </li>
-                <li class="silabas">
-                    <h4 class="pieza" alt="j">j</h4>
-                </li>
-                <li class="silabas">
-                    <h4 class="pieza" alt="j">j</h4>
-                </li>
-                <li class="silabas">
-                    <h4 class="pieza" alt="g">g</h4>
-                </li>
-                <li class="silabas">
-                    <h4 class="pieza" alt="g">g</h4>
-                </li>
-                <li class="silabas">
-                    <h4 class="pieza" alt="g">g</h4>
-                </li>
-                <li class="silabas">
-                    <h4 class="pieza" alt="g">g</h4>
-                </li>
-                <li class="silabas">
-                    <h4 class="pieza" alt="g">g</h4>
-                </li>
-                <li class="silabas">
-                    <h4 class="pieza" alt="g">g</h4>
-                </li>
-                <li class="silabas">
-                    <h4 class="pieza" alt="j">j</h4>
-                </li>
-                <li class="silabas">
-                    <h4 class="pieza" alt="j">j</h4>
-                </li>
+
         </div>
     </div>
 
@@ -196,17 +74,62 @@
 
 
 <script src="../../../../../js/core.js"></script>
-<?php require('../../../tools/botones/botones.php');?> <script>$("#next").attr("onclick","<?=$next?>");</script>
+<?php require('../../../tools/botones/botones.php');?> <script>
+$("#next").attr("onclick", "<?=$next?>");
+</script>
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
 // Validar
-function result_tipo_2_6_9() {
+
+var r = 0;
+var v = 1;
+
+
+var ul = document.querySelector('.contenedor-oraciones');
+for (var i = ul.children.length; i >= 0; i--) {
+    ul.appendChild(ul.children[Math.random() * i | 0]);
+}
+
+var cols = document.querySelectorAll('.contenedor-check');
+
+[].forEach.call(cols, (e) => {
+
+    for (var i = e.children.length; i >= 0; i--) {
+        e.appendChild(e.children[Math.random() * i | 0]);
+    }
+
+});
+
+$(".respuesta").click(function() {
+    $(this).css({
+        "border": "solid",
+        "border-color": "#37D3F7",
+        "background": "#B6ECFF"
+    });
+    var element = $(this).attr("alt");
+    var select = $(this).attr("value");
+    if (select != "seleccionado") {
+
+        if (element == "n") {
+            r++;
+            $(this).attr("value", "seleccionado");
+        } else {
+            r--;
+            $(this).attr("value", "seleccionado");
+        }
+    }
+});
+
+
+
+
+function result_tipo_2_7_4() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
-    if (r == 12) {
+    if (r == 2) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();
