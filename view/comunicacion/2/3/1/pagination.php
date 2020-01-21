@@ -1,6 +1,6 @@
 <script type="text/javascript">
-    function Page_lectura_2_4_1_1(){
-        start_lectura_2_4_1_1();
+    function Page_lectura_2_3_1_1(){
+        start_lectura_2_3_1_1();
         inicio();
         count = 0;
     }
@@ -15,7 +15,7 @@
     var ruta="../../../../exercises/comunicacion/";
     ////////////// 2do 
             // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
-    function start_lectura_2_4_1_1(){
+    function start_lectura_2_3_1_1(){
         $("#ventana").load(ruta+'lectura2-3-1-1/index.php', 
         {
         next: "Page_1()", 
