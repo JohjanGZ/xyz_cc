@@ -17,7 +17,7 @@
         {
         next: "resultado()", 
         procesar:"result_tipo_4_0_9()",
-        titulo:"<center><h5><span>Selecciona</span> los medios de comunicación.</h5></center>",
+        titulo:"<center><h5><span>Relaciona</span> las imágenes que terminen con el mismo sonido.</h5></center>",
         restaurar:"start_9()",
         dir:ruta,
         cod: "4-0-9",
