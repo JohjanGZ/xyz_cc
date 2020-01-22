@@ -102,7 +102,7 @@ $(".img-rpst").click(function() {
 
 
 
-function result_tipo_2_6_23() {
+function result_tipo_2_5_2() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();

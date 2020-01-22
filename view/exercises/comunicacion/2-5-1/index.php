@@ -17,7 +17,7 @@
             <div class="contenedor-oraciones">
 
                 <h4>
-                    ¿Quiénes son los personajes centrales del texto? 
+                    ¿Quiénes son los personajes centrales del texto?
                 </h4>
 
                 <div class="oracion">
@@ -66,7 +66,9 @@
 
 
 <script src="../../../../../js/core.js"></script>
-<?php require('../../../tools/botones/botones.php');?> <script>$("#next").attr("onclick","<?=$next?>");</script>
+<?php require('../../../tools/botones/botones.php');?> <script>
+$("#next").attr("onclick", "<?=$next?>");
+</script>
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
 // Validar
@@ -102,7 +104,7 @@ $(".img-rpst").click(function() {
 
 
 
-function result_tipo_2_6_22() {
+function result_tipo_2_5_1() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();

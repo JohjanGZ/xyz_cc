@@ -25,16 +25,16 @@
 
                     <div class="contenedor-check">
                         <div class="respuesta" alt="n">
-                            <span>Vertebrados de la familia de los reptiles</span>
+                            <span>Vertebrados de la familia de los reptiles.</span>
                         </div>
                         <div class="respuesta">
-                            <span>Invertebrado de la familia de las aves</span>
+                            <span>Invertebrado de la familia de las aves.</span>
                         </div>
                         <div class="respuesta">
-                            <span>Vertebrado de la familia de los anfibios</span>
+                            <span>Vertebrado de la familia de los anfibios.</span>
                         </div>
                         <div class="respuesta">
-                            <span>Invertebrado de la familia de los peces</span>
+                            <span>Invertebrado de la familia de los peces.</span>
                         </div>
                     </div>
 
@@ -98,7 +98,7 @@ $(".respuesta").click(function() {
 
 
 
-function result_tipo_2_3_14() {
+function result_tipo_2_5_9() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();

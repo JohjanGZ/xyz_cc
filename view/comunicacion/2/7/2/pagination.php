@@ -1,69 +1,71 @@
 <script type="text/javascript">
+
+   function Page_9(){
+        start_9();
+        inicio();
+        count = 3;
+    }
+    function Page_10(){
+        start_10();
+        inicio();
+        count = 3;
+    }
+    function Page_11(){
+        start_11();
+        inicio();
+        count = 3;
+    }
     
-    function Page_6(){
-        start_6();
-        inicio();
-        count = 3;
-    }
-    function Page_7(){
-        start_7();
-        inicio();
-        count = 3;
-    }
-    function Page_8(){
-        start_8();
-        inicio();
-        count = 3;
-    }
 
     var cant=3;
     var cal= 20/20;
     var ruta="../../../../exercises/comunicacion/";
     ////////////// 2do 
             // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
-  
-    function start_6(){
-        $("#ventana").load(ruta+'2-8-6/index.php', 
+
+    function start_9(){
+        $("#ventana").load(ruta+'2-7-9/index.php', 
         {
-        next: "Page_7()", 
-        procesar:"result_tipo_2_8_6()",
-        titulo:"<center><h5><span>Observa</span> la imagen y selecciona <i>verdadero</i> o <i>falso</i> según corresponda.</h5></center>",
-        restaurar:"start_6()",
+        next: "Page_10()", 
+        procesar:"result_tipo_2_7_9()",
+        titulo:"<center><h5><span>Arrastra</span> cada oración  en el recuadro que correspondesegún su tiempo verbal.</h5></center>",
+        restaurar:"start_9()",
         dir:ruta,
-        cod: "2-8-6",
+        cod: "2-7-9",
         nota:cal
         }
         );
         return false;  
     };
-    function start_7(){
-        $("#ventana").load(ruta+'2-8-7/index.php', 
+    function start_10(){
+        $("#ventana").load(ruta+'2-7-10/index.php', 
         {
-        next: "Page_8()", 
-        procesar:"result_tipo_2_8_7()",
-        titulo:"<center><h5><span>Ordena</span> las palabras de modo que formen oraciones.</h5></center>",
-        restaurar:"start_7()",
+        next: "Page_11()", 
+        procesar:"result_tipo_2_7_10()",
+        titulo:"<center><h5><span>Observa</span> los siguientes verbos, luego <span>arrastralos</span> en el recuadro que corresponda.</h5></center>",
+        restaurar:"start_10()",
         dir:ruta,
-        cod: "2-8-7",
+        cod: "2-7-10",
         nota:cal
         }
         );
         return false;  
     };
-    function start_8(){
-        $("#ventana").load(ruta+'2-8-8/index.php', 
+    function start_11(){
+        $("#ventana").load(ruta+'2-7-11/index.php', 
         {
         next: "resultado()", 
-        procesar:"result_tipo_2_8_8()",
-        titulo:"<center><h5><span>Ordena</span> las palabras de modo que formen oraciones.</h5></center>",
-        restaurar:"start_8()",
+        procesar:"result_tipo_2_7_11()",
+        titulo:"<center><h5><span>Clasifica</span> la siguiente lista de verbos según el tiempo que se indica.</h5></center>",
+        restaurar:"start_11()",
         dir:ruta,
-        cod: "2-8-8",
+        cod: "2-7-11",
         nota:cal
         }
         );
         return false;  
     };
+    
     function resultado(){
         $("#ventana").load('../../../../exercises/resultado/resultado.php');
         return false;

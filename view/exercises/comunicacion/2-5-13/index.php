@@ -54,7 +54,7 @@
                             <span>En las flores</span>
                         </div>
                         <div class="respuesta">
-                            <span>En los árbol</span>
+                            <span>En los árboles</span>
                         </div>
                         <div class="respuesta">
                             <span>En el mar</span>
@@ -121,7 +121,7 @@ $(".respuesta").click(function() {
 
 
 
-function result_tipo_2_3_18() {
+function result_tipo_2_5_13() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();

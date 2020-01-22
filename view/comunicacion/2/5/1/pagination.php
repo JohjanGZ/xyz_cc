@@ -25,7 +25,7 @@
         count = 3;
     }
 
-    var cant=5;
+    var cant=4;
     var cal= 20/20;
     var ruta="../../../../exercises/comunicacion/";
     ////////////// 2do 
@@ -63,7 +63,7 @@
         {
         next: "Page_3()", 
         procesar:"result_tipo_2_5_2()",
-        titulo:"<center><h5><span>Arrastra</span> los números según los pasos de la preparación.</h5></center>",
+        titulo:"<center><h5><span>Selecciona</span> la respuesta correcta.</h5></center>",
         restaurar:"start_2()",
         dir:ruta,
         cod: "2-5-2",
@@ -77,7 +77,7 @@
         {
         next: "Page_4()", 
         procesar:"result_tipo_2_5_3()",
-        titulo:"<center><h5><span>Selecciona</span> las imágenes de los ingredientes utilizados.</h5></center>",
+        titulo:"<center><h5><span>Selecciona</span> la respuesta correcta.</h5></center>",
         restaurar:"start_3()",
         dir:ruta,
         cod: "2-5-3",
@@ -91,7 +91,7 @@
         {
         next: "Page_5()", 
         procesar:"result_tipo_2_5_4()",
-        titulo:"<center><h5><span>Marca</span> <i>Verdadero</i> o <i>Falso</i> según corresponda.</h5></center>",
+        titulo:"<center><h5><span>Lee</span> los siguientes hechos y <span>arrastra</span> el número que le corresponde según el texto.</h5></center>",
         restaurar:"start_4()",
         dir:ruta,
         cod: "2-5-4",
