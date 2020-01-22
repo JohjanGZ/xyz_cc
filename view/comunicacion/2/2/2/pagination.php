@@ -1,12 +1,12 @@
 <script type="text/javascript">
-function Page_6() {
-    start_6();
+function Page_2() {
+    start_2();
     inicio();
     count = 3;
 }
 
-function Page_7() {
-    start_7();
+function Page_3() {
+    start_3();
     inicio();
     count = 3;
 }
@@ -16,27 +16,26 @@ var cal = 20 / 20;
 var ruta = "../../../../exercises/comunicacion/";
 ////////////// 2do 
 // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
-function start_6() {
-    $("#ventana").load(ruta + '2-3-6/index.php', {
-        next: "Page_7()",
-        procesar: "result_tipo_2_3_6()",
-        titulo: "<center><h5><span>Observa</span> atentamente la imágen y responde las preguntas.</h5></center>",
-        restaurar: "start_6()",
+function start_2() {
+    $("#ventana").load(ruta + '2-2-2/index.php', {
+        next: "Page_3()",
+        procesar: "result_tipo_2_2_2()",
+        titulo: "<center><h5><span>Observa</span> atentamente la imagen y responde las preguntas.</h5></center>",
+        restaurar: "start_2()",
         dir: ruta,
-        cod: "2-3-6",
+        cod: "2-2-2",
         nota: cal
     });
     return false;
 };
-
-function start_7() {
-    $("#ventana").load(ruta + '2-3-7/index.php', {
+function start_3() {
+    $("#ventana").load(ruta + '2-2-3/index.php', {
         next: "resultado()",
-        procesar: "result_tipo_2_3_7()",
-        titulo: "<center><h5><span>Observa</span> atentamente la imágen y responde las preguntas.</h5></center>",
-        restaurar: "start_7()",
+        procesar: "result_tipo_2_2_3()",
+        titulo: "<center><h5><span>Observa</span> atentamente la imagen y responde las preguntas.</h5></center>",
+        restaurar: "start_3()",
         dir: ruta,
-        cod: "2-3-7",
+        cod: "2-2-3",
         nota: cal
     });
     return false;

@@ -13,7 +13,7 @@ h4 {
 
 .parrafo p span {
     display: inline-block;
-    width: 180px;
+    width: 190px;
     height: 40px;
     border: 3px solid silver;
     border-radius: 12px;
@@ -38,7 +38,7 @@ h4 {
 
 .silabas h4 {
     display: inline-block;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     background-color: #37D3F7;
     font-weight: bold;
     padding: 3px 15px;

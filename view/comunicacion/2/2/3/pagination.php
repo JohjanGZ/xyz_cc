@@ -1,45 +1,46 @@
 <script type="text/javascript">
-   function Page_lectura_2_3_3_1(){
-        start_lectura_2_3_3_1();
+   
+    function Page_4(){
+        start_4();
         inicio();
-        count = 0;
+         count = 3;
     }
-    function Page_8(){
-        start_8();
+    function Page_5(){
+        start_5();
         inicio();
          count = 3;
     }
 
 
-    var cant=1;
+    var cant=2;
     var cal= 20/20;
     var ruta="../../../../exercises/comunicacion/";
     ////////////// 2do 
             // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
    
-    function start_lectura_2_3_3_1(){
-        $("#ventana").load(ruta+'lectura2-3-3-1/index.php', 
+    function start_4(){
+        $("#ventana").load(ruta+'2-2-4/index.php', 
         {
-        next: "Page_8()", 
-        procesar:"lectura2-2-1-1()",
-        titulo:"<center><h5><span class='ftitulo'>Lee</span> atentamente y contesta las preguntas.</h5></center>",
-        restaurar:"start_lectura_2_3_3_1()",
+        next: "Page_5()", 
+        procesar:"result_tipo_2_2_4()",
+        titulo:"<center><h5><span>Marca</span> la alternativa correcta de acuerdo a la lectura.</h5></center>",
+        restaurar:"start_4()",
         dir:ruta,
-        cod: "lectura2-3-3-1",
+        cod: "2-2-4",
         nota:cal
         }
         );
         return false;  
     };
-    function start_8(){
-        $("#ventana").load(ruta+'2-3-8/index.php', 
+    function start_5(){
+        $("#ventana").load(ruta+'2-2-5/index.php', 
         {
         next: "resultado()", 
-        procesar:"result_tipo_2_3_8()",
-        titulo:"<center><h5><span>Marca</span> la alternativa correcta de acuerdo a la lectura.</h5></center>",
-        restaurar:"start_8()",
+        procesar:"result_tipo_2_2_5()",
+        titulo:"<center><h5><span>Arrastra</span> en el recuadro los artículos 'El' o 'La' según corresponda.</h5></center>",
+        restaurar:"start_5()",
         dir:ruta,
-        cod: "2-3-8",
+        cod: "2-2-5",
         nota:cal
         }
         );
