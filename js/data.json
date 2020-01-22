@@ -1085,30 +1085,100 @@
         },
         "2": {
             "0": {
-                "activo": "0",
-                "titulo": "Inglés 1",
-                "color": "#c60059",
+                "activo": "1",
+                "titulo": "Arcagrafía 1",
+                "color": "#d70862",
                 "grado": "1",
-                "curso": "ingles",
-                "portada": "comunicacion1.jpg",
+                "curso": "arcagrafia",
+                "portada": "ARCAGRAFIA-1.jpg",
                 "libros": {
                     "0": {
-                        "title": "Actividades",
-                        "enlace": "com-act-1",
-                        "portada": "com-act-1.jpg"
-                    },
-                    "1": {
-                        "title": "Razonamiento Verbal",
-                        "enlace": "com-rv-1",
-                        "portada": "com-rv-1.jpg"
-                    },
-                    "2": {
-                        "title": "Texto",
-                        "enlace": "com-txt-1",
-                        "portada": "com-txt-1.jpg"
+                        "title": "Arcagrafía 1",
+                        "enlace": "ARCAGRAFIA-1",
+                        "portada": "ARCAGRAFIA-1.jpg"
                     }
                 },
-                "unidades": {}
+                "unidades": ""
+            },
+            "1": {
+                "activo": "1",
+                "titulo": "Arcagrafía 2",
+                "color": "#ed2f31",
+                "grado": "2",
+                "curso": "arcagrafia",
+                "portada": "ARCAGRAFIA-2.jpg",
+                "libros": {
+                    "0": {
+                        "title": "Arcagrafía 2",
+                        "enlace": "ARCAGRAFIA-2",
+                        "portada": "ARCAGRAFIA-2.jpg"
+                    }
+                },
+                "unidades": ""
+            },
+            "2": {
+                "activo": "1",
+                "titulo": "Arcagrafía 3",
+                "color": "#15b3cc",
+                "grado": "3",
+                "curso": "arcagrafia",
+                "portada": "ARCAGRAFIA-3.jpg",
+                "libros": {
+                    "0": {
+                        "title": "Arcagrafía 3",
+                        "enlace": "ARCAGRAFIA-3",
+                        "portada": "ARCAGRAFIA-3.jpg"
+                    }
+                },
+                "unidades": ""
+            },
+            "3": {
+                "activo": "1",
+                "titulo": "Arcagrafía 4",
+                "color": "#5e2590",
+                "grado": "4",
+                "curso": "arcagrafia",
+                "portada": "ARCAGRAFIA-4.jpg",
+                "libros": {
+                    "0": {
+                        "title": "Arcagrafía 4",
+                        "enlace": "ARCAGRAFIA-4",
+                        "portada": "ARCAGRAFIA-4.jpg"
+                    }
+                },
+                "unidades": ""
+            },
+            "4": {
+                "activo": "1",
+                "titulo": "Arcagrafía 5",
+                "color": "#7fcc28",
+                "grado": "5",
+                "curso": "arcagrafia",
+                "portada": "ARCAGRAFIA-5.jpg",
+                "libros": {
+                    "0": {
+                        "title": "Arcagrafía 5",
+                        "enlace": "ARCAGRAFIA-5",
+                        "portada": "ARCAGRAFIA-5.jpg"
+                    }
+                },
+                "unidades": ""
+            },
+            "5": {
+                "activo": "1",
+                "titulo": "Arcagrafía 6",
+                "color": "#372f92",
+                "grado": "6",
+                "curso": "arcagrafia",
+                "portada": "ARCAGRAFIA-6.jpg",
+                "libros": {
+                    "0": {
+                        "title": "Arcagrafía 6",
+                        "enlace": "ARCAGRAFIA-6",
+                        "portada": "ARCAGRAFIA-6.jpg"
+                    }
+                },
+                "unidades": ""
             }
         }
     },
@@ -1117,7 +1187,7 @@
             "0": {
                 "activo": "1",
                 "titulo": "Inglés 3 años",
-                "color": "#de0521",
+                "color": "#f9a626",
                 "grado": "3",
                 "curso": "ingles",
                 "portada": "TKC-3.jpg",
@@ -1131,7 +1201,7 @@
                 "unidades": {}
             },
             "1": {
-                "activo": "0",
+                "activo": "1",
                 "titulo": "Inglés 4 años",
                 "color": "#de0521",
                 "grado": "4",
@@ -1147,7 +1217,7 @@
                 "unidades": {}
             },
             "2": {
-                "activo": "0",
+                "activo": "1",
                 "titulo": "Inglés 5 años",
                 "color": "#6ec5ee",
                 "grado": "5",
@@ -1167,7 +1237,7 @@
             "0": {
                 "activo": "1",
                 "titulo": "Computación 3 años",
-                "color": "#de0521",
+                "color": "#2d4ba4",
                 "grado": "3",
                 "curso": "teclitas",
                 "portada": "COMP-3.jpg",
@@ -1181,9 +1251,9 @@
                 "unidades": {}
             },
             "1": {
-                "activo": "0",
+                "activo": "1",
                 "titulo": "Computación 4 años",
-                "color": "#6ec5ee",
+                "color": "#45aeaa",
                 "grado": "4",
                 "curso": "teclitas",
                 "portada": "COMP-4.jpg",
@@ -1195,14 +1265,29 @@
                     }
                 },
                 "unidades": {}
+            },
+            "2": {
+                "activo": "1",
+                "titulo": "Computación 5 años",
+                "color": "#cfede5",
+                "grado": "5",
+                "curso": "teclitas",
+                "portada": "COMP-5.jpg",
+                "libros": {
+                    "0": {
+                        "title": "TECLITAS BRILLANTES 5 AÑOS",
+                        "enlace": "COMP-5",
+                        "portada": "COMP-5.jpg"
+                    }
+                },
+                "unidades": {}
             }
         },
         "2": {
-
             "0": {
                 "activo": "1",
                 "titulo": "Pequeñas Manitas 3 años",
-                "color": "#de0521",
+                "color": "#dda5c6",
                 "grado": "3",
                 "curso": "inicial",
                 "portada": "MANITAS-3.png",
@@ -1299,7 +1384,7 @@
             "1": {
                 "activo": "1",
                 "titulo": "Pequeñas Manitas 4 años",
-                "color": "#6ec5ee",
+                "color": "#f37646",
                 "grado": "4",
                 "curso": "inicial",
                 "portada": "MANITAS-4.png",
@@ -1396,7 +1481,7 @@
             "3": {
                 "activo": "1",
                 "titulo": "Pequeñas Manitas 5 años",
-                "color": "#6ec5ee",
+                "color": "#f5a636",
                 "grado": "5",
                 "curso": "inicial",
                 "portada": "MANITAS-5.png",
