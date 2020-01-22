@@ -103,7 +103,7 @@ h4 {
         margin-left: 0;
     }
     .ejercicio {
-        padding-top: 25px;
+        padding-top: 14px;
     }
     .contenedor-img img {
         width: 200px;
@@ -111,11 +111,24 @@ h4 {
     .contenedor-silabas {
         width: 20%;
         margin-left: 0;
+        flex-wrap: wrap;
     }
     .silabas {
         text-align: center;
     }
+    .silabas h4 {
+        font-size: 1.7rem;
+        padding: 2px 11px;
+    }
     .contenedor-ejercicios {
         padding-top: 0px;
+    }
+    .contenedor-respuesta span {
+        font-size: 1.6rem;
+    }
+    .contenedor-respuesta .palabra {
+        width: 55px;
+        height: 45px;
+        margin: 0;
     }
 }
