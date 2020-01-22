@@ -1187,7 +1187,7 @@
             "0": {
                 "activo": "1",
                 "titulo": "Inglés 3 años",
-                "color": "#de0521",
+                "color": "#f9a626",
                 "grado": "3",
                 "curso": "ingles",
                 "portada": "TKC-3.jpg",
@@ -1201,7 +1201,7 @@
                 "unidades": {}
             },
             "1": {
-                "activo": "0",
+                "activo": "1",
                 "titulo": "Inglés 4 años",
                 "color": "#de0521",
                 "grado": "4",
@@ -1217,7 +1217,7 @@
                 "unidades": {}
             },
             "2": {
-                "activo": "0",
+                "activo": "1",
                 "titulo": "Inglés 5 años",
                 "color": "#6ec5ee",
                 "grado": "5",
@@ -1237,7 +1237,7 @@
             "0": {
                 "activo": "1",
                 "titulo": "Computación 3 años",
-                "color": "#de0521",
+                "color": "#2d4ba4",
                 "grado": "3",
                 "curso": "teclitas",
                 "portada": "COMP-3.jpg",
@@ -1251,9 +1251,9 @@
                 "unidades": {}
             },
             "1": {
-                "activo": "0",
+                "activo": "1",
                 "titulo": "Computación 4 años",
-                "color": "#6ec5ee",
+                "color": "#45aeaa",
                 "grado": "4",
                 "curso": "teclitas",
                 "portada": "COMP-4.jpg",
@@ -1265,13 +1265,29 @@
                     }
                 },
                 "unidades": {}
+            },
+            "2": {
+                "activo": "1",
+                "titulo": "Computación 5 años",
+                "color": "#cfede5",
+                "grado": "5",
+                "curso": "teclitas",
+                "portada": "COMP-5.jpg",
+                "libros": {
+                    "0": {
+                        "title": "TECLITAS BRILLANTES 5 AÑOS",
+                        "enlace": "COMP-5",
+                        "portada": "COMP-5.jpg"
+                    }
+                },
+                "unidades": {}
             }
         },
         "2": {
             "0": {
                 "activo": "1",
                 "titulo": "Pequeñas Manitas 3 años",
-                "color": "#de0521",
+                "color": "#dda5c6",
                 "grado": "3",
                 "curso": "inicial",
                 "portada": "MANITAS-3.png",
@@ -1368,7 +1384,7 @@
             "1": {
                 "activo": "1",
                 "titulo": "Pequeñas Manitas 4 años",
-                "color": "#6ec5ee",
+                "color": "#f37646",
                 "grado": "4",
                 "curso": "inicial",
                 "portada": "MANITAS-4.png",
@@ -1465,7 +1481,7 @@
             "3": {
                 "activo": "1",
                 "titulo": "Pequeñas Manitas 5 años",
-                "color": "#6ec5ee",
+                "color": "#f5a636",
                 "grado": "5",
                 "curso": "inicial",
                 "portada": "MANITAS-5.png",
