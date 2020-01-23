@@ -1301,82 +1301,69 @@
                 "unidades": {
                     "0": {
                         "id": "0",
-                        "nombre": "Unidad 1 -  ",
+                        "nombre": "TOMO A - COMUNICACION",
                         "temas": {
                             "0": "tema 1",
                             "1": "tema 2",
                             "2": "tema 3",
                             "3": "tema 4",
-                            "4": "tema 5",
-                            "5": "tema 6",
-                            "6": "tema 7",
-                            "7": "tema 8",
-                            "8": "tema 9",
-                            "9": "tema 10"
+                            "4": "Interpretación de textos",
+                            "5": "¿Dónde está?",
+                            "6": "Los tres cerditos (Comprensión de lectura)",
+                            "7": "Adivina qué juguete es",
+                            "8": "El conejo Peluchín",
+                            "9": "Jugamos con los sonidos"
                         }
                     },
                     "1": {
                         "id": "1",
-                        "nombre": "Unidad 2 -  ",
+                        "nombre": "TOMO A - MATEMATICAS",
                         "temas": {
-                            "0": "tema 1",
-                            "1": "tema 2",
-                            "2": "tema 3",
-                            "3": "tema 4",
-                            "4": "tema 5",
-                            "5": "tema 6",
-                            "6": "tema 7",
-                            "7": "tema 8",
-                            "8": "tema 9",
-                            "9": "tema 10"
+                            "0": "Encontramos iguras iguales y diferentes",
+                            "1": "Agrupamos objetos",
+                            "2": "Más que... - menos que...",
+                            "3": "¡Vamos a contar!",
+                            "4": "Vamos a contar",
+                            "5": "Repaso: vamos a contar",
+                            "6": "Repaso: vamos a contar7",
+                            "7": "Repaso: secuencia de números",
+                            "8": "Repaso: clave de números"
                         }
                     },
                     "2": {
                         "id": "2",
-                        "nombre": "Unidad 3 -  ",
+                        "nombre": "TOMO B - CIENCIA Y TECNOLOGIA",
                         "temas": {
-                            "0": "tema 1",
-                            "1": "tema 2",
-                            "2": "tema 3",
-                            "3": "tema 4",
-                            "4": "tema 5",
-                            "5": "tema 6",
-                            "6": "tema 7",
-                            "7": "tema 8",
-                            "8": "tema 9",
-                            "9": "tema 10"
+                            "0": "¿Qué sentidos usamos?",
+                            "1": "¿Qué sentidos usamos?",
+                            "2": "Exploro animales de mi jardín",
+                            "3": "Me divierto contando los animales de la granja",
+                            "4": "Características de los animales",
+                            "5": "Cómo quiero a mis mascotas",
+                            "6": "Las plantas nos son útiles",
+                            "7": "¿Qué podemos ver?",
+                            "8": "Importancia del agua",
+                            "9": "¿Quiénes aparecen en primavera?",
+                            "10": "¿Qué cosas hay en verano?",
+                            "11": "Lo que llevo a la playa"
                         }
                     },
                     "3": {
                         "id": "3",
-                        "nombre": "Unidad 4 -  ",
+                        "nombre": "TOMO B - PERSONAL SOCIAL",
                         "temas": {
-                            "0": "tema 1",
-                            "1": "tema 2",
-                            "2": "tema 3",
-                            "3": "tema 4",
-                            "4": "tema 5",
-                            "5": "tema 6",
-                            "6": "tema 7",
-                            "7": "tema 8",
-                            "8": "tema 9",
-                            "9": "tema 10"
-                        }
-                    },
-                    "4": {
-                        "id": "4",
-                        "nombre": "Unidad 5 -  ",
-                        "temas": {
-                            "0": "tema 1",
-                            "1": "tema 2",
-                            "2": "tema 3",
-                            "3": "tema 4",
-                            "4": "tema 5",
-                            "5": "tema 6",
-                            "6": "tema 7",
-                            "7": "tema 8",
-                            "8": "tema 9",
-                            "9": "tema 10"
+                            "0": "Mis emociones",
+                            "1": "¿Cómo me siento?",
+                            "2": "Hábitos de higiene",
+                            "3": "Situaciones y lugares peligrosos que nos pueden dañar",
+                            "4": "Alimentos limpios y saludables",
+                            "5": "Resolvamos conlictos en el juego",
+                            "6": "El compañerismo",
+                            "7": "Los amigos de la salud",
+                            "8": "El amigo zapatero",
+                            "9": "Cuida la ciudad: El policía",
+                            "10": "Medios de transporte terretre",
+                            "11": "Medios de transporte aéreo"
                         }
                     }
                 }
@@ -1478,82 +1465,69 @@
                 "unidades": {
                     "0": {
                         "id": "0",
-                        "nombre": "Unidad 1 -  ",
+                        "nombre": "TOMO A - Comunicación",
                         "temas": {
-                            "0": "tema 1",
-                            "1": "tema 2",
-                            "2": "tema 3",
-                            "3": "tema 4",
-                            "4": "tema 5",
-                            "5": "tema 6",
-                            "6": "tema 7",
-                            "7": "tema 8",
-                            "8": "tema 9",
-                            "9": "tema 10"
+                            "0": "Artículos: El – La",
+                            "1": "Describimos la imagen",
+                            "2": "Tema 3",
+                            "3": "Un – Unos",
+                            "4": "Un – Unos",
+                            "5": "Buscamos la semejanza",
+                            "6": "Descubrimos la letra",
+                            "7": "Descubrimos la letra",
+                            "8": "Descubrimos las vocales",
+                            "9": "Crucifrutas",
+                            "10": "Pupimagic"
                         }
                     },
                     "1": {
                         "id": "1",
-                        "nombre": "Unidad 2 -  ",
+                        "nombre": "TOMO A: Matemática",
                         "temas": {
-                            "0": "tema 1",
-                            "1": "tema 2",
-                            "2": "tema 3",
-                            "3": "tema 4",
-                            "4": "tema 5",
-                            "5": "tema 6",
-                            "6": "tema 7",
-                            "7": "tema 8",
-                            "8": "tema 9",
-                            "9": "tema 10"
+                            "0": "El tiempo",
+                            "1": "Buscamos cuadrados",
+                            "2": "Clasificamos por tamaño",
+                            "3": "Secuencia",
+                            "4": "Direccionalidad: a la derecha – a la izquierda",
+                            "5": "Comparamos objetos",
+                            "6": "Ordenamos la seriación",
+                            "7": "Ubicación: encima de... / debajo de...",
+                            "8": "Mayor que...",
+                            "9": "Ascendente"
                         }
                     },
                     "2": {
                         "id": "2",
-                        "nombre": "Unidad 3 -  ",
+                        "nombre": "TOMO B - Ciencia y ambiente",
                         "temas": {
-                            "0": "tema 1",
-                            "1": "tema 2",
-                            "2": "tema 3",
-                            "3": "tema 4",
-                            "4": "tema 5",
-                            "5": "tema 6",
-                            "6": "tema 7",
-                            "7": "tema 8",
-                            "8": "tema 9",
-                            "9": "tema 10"
+                            "0": "¿Cómo funciona mi cuerpo? El sistema digestivo",
+                            "1": "¿Cómo es mi cuerpo por dentro?",
+                            "2": "Reconocemos una parte del animal",
+                            "3": "Los estados del agua",
+                            "4": "¿Cómo se contaminan mis pulmones?",
+                            "5": "¿Cómo funciona mi cuerpo? El sistema respiratorio",
+                            "6": "¿Cómo nacen los animales?",
+                            "7": "Pirámide nutricional"
                         }
                     },
                     "3": {
                         "id": "3",
-                        "nombre": "Unidad 4 -  ",
+                        "nombre": "TOMO B - Personal Social",
                         "temas": {
-                            "0": "tema 1",
-                            "1": "tema 2",
+                            "0": "Los ayudantes de la comunidad",
+                            "1": "Acuerdos de convivencia",
                             "2": "tema 3",
-                            "3": "tema 4",
-                            "4": "tema 5",
+                            "3": "Símbolos de la patria: la bandera del Perú",
+                            "4": "Ubica: lado derecho – lado izquierdo",
                             "5": "tema 6",
-                            "6": "tema 7",
-                            "7": "tema 8",
-                            "8": "tema 9",
-                            "9": "tema 10"
+                            "6": "El semáforo"
                         }
                     },
                     "4": {
                         "id": "4",
-                        "nombre": "Unidad 5 -  ",
+                        "nombre": "TOMO B - Religión",
                         "temas": {
-                            "0": "tema 1",
-                            "1": "tema 2",
-                            "2": "tema 3",
-                            "3": "tema 4",
-                            "4": "tema 5",
-                            "5": "tema 6",
-                            "6": "tema 7",
-                            "7": "tema 8",
-                            "8": "tema 9",
-                            "9": "tema 10"
+                            "0": "La Biblia"
                         }
                     }
                 }
