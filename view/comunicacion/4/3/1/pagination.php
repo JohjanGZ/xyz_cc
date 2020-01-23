@@ -1,9 +1,4 @@
 <script type="text/javascript">
-   function Page_lectura_4_3_1_1(){
-        start_lectura_4_3_1_1();
-        inicio();
-        count = 0;
-    }
    function Page_1(){
         start_1();
         inicio();
@@ -25,26 +20,13 @@
     var ruta="../../../../exercises/comunicacion/";
     ////////////// 2do 
             // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
-    function start_lectura_4_3_1_1(){
-        $("#ventana").load(ruta+'lectura4-3-1-1/index.php', 
-        {
-        next: "Page_1()", 
-        procesar:"lectura1-1-1-1()",
-        titulo:"<center><h5><span>Lee</span> atentamente y <span>contesta</span> las preguntas.</h5></center>",
-        restaurar:"start_lectura_4_3_1_1()",
-        dir:ruta,
-        cod: "lectura4-3-1-1",
-        nota:cal
-        }
-        );
-        return false;  
-    };
+    
     function start_1(){
         $("#ventana").load(ruta+'4-3-1/index.php', 
         {
         next: "Page_2()", 
         procesar:"result_tipo_4_3_1()",
-        titulo:"<center><h5><span>Selecciona</span> las respuestas correctas.</h5></center>",
+        titulo:"<center><h5><span>Encuentra</span>, en la sopa de letras, los siguientes adjetivos.</h5></center>",
         restaurar:"start_1()",
         dir:ruta,
         cod: "4-3-1",
@@ -58,7 +40,7 @@
         { 
         next: "Page_3()", 
         procesar:"result_tipo_4_3_2()",
-        titulo:"<center><h5><span>Selecciona</span> la respuesta correcta.</h5></center>",
+        titulo:"<center><h5><span>Selecciona</span> los adjetivos de las siguientes oraciones.</h5></center>",
         restaurar:"start_2()",
         dir:ruta,
         cod: "4-3-2",
@@ -72,7 +54,7 @@
         {
         next: "resultado()", 
         procesar:"result_tipo_4_3_3()",
-        titulo:"<center><h5><span>Selecciona</span> la respuesta correcta.</h5></center>",
+        titulo:"<center><h5><span>Selecciona</span> los adjetivos de las siguientes oraciones.</h5></center>",
         restaurar:"start_3()",
         dir:ruta,
         cod: "4-3-3",
