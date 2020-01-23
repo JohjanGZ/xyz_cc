@@ -1365,7 +1365,7 @@
                             "10": "Medios de transporte terretre",
                             "11": "Medios de transporte aéreo"
                         }
-                    },
+                    }
                 }
             },
             "1": {
@@ -1465,82 +1465,69 @@
                 "unidades": {
                     "0": {
                         "id": "0",
-                        "nombre": "Unidad 1 -  ",
+                        "nombre": "TOMO A - Comunicación",
                         "temas": {
-                            "0": "tema 1",
-                            "1": "tema 2",
-                            "2": "tema 3",
-                            "3": "tema 4",
-                            "4": "tema 5",
-                            "5": "tema 6",
-                            "6": "tema 7",
-                            "7": "tema 8",
-                            "8": "tema 9",
-                            "9": "tema 10"
+                            "0": "Artículos: El – La",
+                            "1": "Describimos la imagen",
+                            "2": "Tema 3",
+                            "3": "Un – Unos",
+                            "4": "Un – Unos",
+                            "5": "Buscamos la semejanza",
+                            "6": "Descubrimos la letra",
+                            "7": "Descubrimos la letra",
+                            "8": "Descubrimos las vocales",
+                            "9": "Crucifrutas",
+                            "10": "Pupimagic"
                         }
                     },
                     "1": {
                         "id": "1",
-                        "nombre": "Unidad 2 -  ",
+                        "nombre": "TOMO A: Matemática",
                         "temas": {
-                            "0": "tema 1",
-                            "1": "tema 2",
-                            "2": "tema 3",
-                            "3": "tema 4",
-                            "4": "tema 5",
-                            "5": "tema 6",
-                            "6": "tema 7",
-                            "7": "tema 8",
-                            "8": "tema 9",
-                            "9": "tema 10"
+                            "0": "El tiempo",
+                            "1": "Buscamos cuadrados",
+                            "2": "Clasificamos por tamaño",
+                            "3": "Secuencia",
+                            "4": "Direccionalidad: a la derecha – a la izquierda",
+                            "5": "Comparamos objetos",
+                            "6": "Ordenamos la seriación",
+                            "7": "Ubicación: encima de... / debajo de...",
+                            "8": "Mayor que...",
+                            "9": "Ascendente"
                         }
                     },
                     "2": {
                         "id": "2",
-                        "nombre": "Unidad 3 -  ",
+                        "nombre": "TOMO B - Ciencia y ambiente",
                         "temas": {
-                            "0": "tema 1",
-                            "1": "tema 2",
-                            "2": "tema 3",
-                            "3": "tema 4",
-                            "4": "tema 5",
-                            "5": "tema 6",
-                            "6": "tema 7",
-                            "7": "tema 8",
-                            "8": "tema 9",
-                            "9": "tema 10"
+                            "0": "¿Cómo funciona mi cuerpo? El sistema digestivo",
+                            "1": "¿Cómo es mi cuerpo por dentro?",
+                            "2": "Reconocemos una parte del animal",
+                            "3": "Los estados del agua",
+                            "4": "¿Cómo se contaminan mis pulmones?",
+                            "5": "¿Cómo funciona mi cuerpo? El sistema respiratorio",
+                            "6": "¿Cómo nacen los animales?",
+                            "7": "Pirámide nutricional"
                         }
                     },
                     "3": {
                         "id": "3",
-                        "nombre": "Unidad 4 -  ",
+                        "nombre": "TOMO B - Personal Social",
                         "temas": {
-                            "0": "tema 1",
-                            "1": "tema 2",
+                            "0": "Los ayudantes de la comunidad",
+                            "1": "Acuerdos de convivencia",
                             "2": "tema 3",
-                            "3": "tema 4",
-                            "4": "tema 5",
+                            "3": "Símbolos de la patria: la bandera del Perú",
+                            "4": "Ubica: lado derecho – lado izquierdo",
                             "5": "tema 6",
-                            "6": "tema 7",
-                            "7": "tema 8",
-                            "8": "tema 9",
-                            "9": "tema 10"
+                            "6": "El semáforo"
                         }
                     },
                     "4": {
                         "id": "4",
-                        "nombre": "Unidad 5 -  ",
+                        "nombre": "TOMO B - Religión",
                         "temas": {
-                            "0": "tema 1",
-                            "1": "tema 2",
-                            "2": "tema 3",
-                            "3": "tema 4",
-                            "4": "tema 5",
-                            "5": "tema 6",
-                            "6": "tema 7",
-                            "7": "tema 8",
-                            "8": "tema 9",
-                            "9": "tema 10"
+                            "0": "La Biblia"
                         }
                     }
                 }
