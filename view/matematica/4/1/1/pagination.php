@@ -81,116 +81,116 @@ var ruta = "../../../../exercises/matematica/";
 ////////////// 2do 
 // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
 function start_1() {
-    $("#ventana").load(ruta + '2-1-1/index.php', {
+    $("#ventana").load(ruta + '4-1-1/index.php', {
         next: "Page_2()",
-        procesar: "result_tipo_2_1_1()",
+        procesar: "result_tipo_4_1_1()",
         titulo: "<center><h5><span>Observa</span> los cuadros y luego <span>completa</span>.</h5></center>",
         restaurar: "start_1()",
         dir: ruta,
-        cod: "2-1-1",
+        cod: "4-1-1",
         nota: cal
     });
     return false;
 };
 
 function start_2() {
-    $("#ventana").load(ruta + '2-1-2/index.php', {
+    $("#ventana").load(ruta + '4-1-2/index.php', {
         next: "Page_3()",
-        procesar: "result_tipo_2_1_2()",
+        procesar: "result_tipo_4_1_2()",
         titulo: "<center><h5><span>Relaciona</span> el número correcto según corresponda.</h5></center>",
         restaurar: "start_2()",
         dir: ruta,
-        cod: "2-1-2",
+        cod: "4-1-2",
         nota: cal
     });
     return false;
 };
 
 function start_3() {
-    $("#ventana").load(ruta + '2-1-3/index.php', {
+    $("#ventana").load(ruta + '4-1-3/index.php', {
         next: "Page_4()",
-        procesar: "result_tipo_2_1_3()",
+        procesar: "result_tipo_4_1_3()",
         titulo: "<center><h5><span>Completa</span> el cuadro.</h5></center>",
         restaurar: "start_3()",
         dir: ruta,
-        cod: "2-1-3",
+        cod: "4-1-3",
         nota: cal
     });
     return false;
 };
 
 function start_4() {
-    $("#ventana").load(ruta + '2-1-4/index.php', {
+    $("#ventana").load(ruta + '4-1-4/index.php', {
         next: "Page_5()",
-        procesar: "result_tipo_2_1_4()",
+        procesar: "result_tipo_4_1_4()",
         titulo: " <center><h5> <span>Coloca</span>, en el rectángulo, el número que corresponde.</h5></center>",
         restaurar: "start_4()",
         dir: ruta,
-        cod: "2-1-4",
+        cod: "4-1-4",
         nota: cal
     });
     return false;
 };
 
 function start_5() {
-    $("#ventana").load(ruta + '2-1-5/index.php', {
+    $("#ventana").load(ruta + '4-1-5/index.php', {
         next: "Page_6()",
-        procesar: "result_tipo_2_1_5()",
+        procesar: "result_tipo_4_1_5()",
         titulo: "<center><h5><span>Coloca</span> en la línea cómo se leen los siguientes números:</h5></center>",
         restaurar: "start_5()",
         dir: ruta,
-        cod: "2-1-5",
+        cod: "4-1-5",
         nota: cal
     });
     return false;
 };
 
 function start_6() {
-    $("#ventana").load(ruta + '2-1-6/index.php', {
+    $("#ventana").load(ruta + '4-1-6/index.php', {
         next: "Page_7()",
-        procesar: "result_tipo_2_1_6()",
+        procesar: "result_tipo_4_1_6()",
         titulo: "<center><h5> <span>Coloca</span> cómo se leen los siguientes números y luego <span>realiza</span> su descomposición:</h5></center>",
         restaurar: "start_6()",
         dir: ruta,
-        cod: "2-1-6",
+        cod: "4-1-6",
         nota: cal
     });
     return false;
 };
 
 function start_7() {
-    $("#ventana").load(ruta + '2-1-7/index.php', {
+    $("#ventana").load(ruta + '4-1-7/index.php', {
         next: "Page_8()",
-        procesar: "result_tipo_2_1_7()",
+        procesar: "result_tipo_4_1_7()",
         titulo: "<center><h5><span>Observa</span> el ejemplo y <span>completa</span> el cuadro.</h5></center>",
         restaurar: "start_7()",
         dir: ruta,
-        cod: "2-1-7",
+        cod: "4-1-7",
         nota: cal
     });
     return false;
 };
 
 function start_8() {
-    $("#ventana").load(ruta + '2-1-8/index.php', {
+    $("#ventana").load(ruta + '4-1-8/index.php', {
         next: "Page_9()",
-        procesar: "result_tipo_2_1_8()",
+        procesar: "result_tipo_4_1_8()",
         titulo: "<center><h5><span>Coloca</span> el número antecesor de los siguientes números:</h5></center>",
         restaurar: "start_8()",
         dir: ruta,
-        cod: "2-1-8",
+        cod: "4-1-8",
         nota: cal
     });
     return false;
 };
 function start_9() {
-    $("#ventana").load(ruta + '2-1-9/index.php', {
+    $("#ventana").load(ruta + '4-1-9/index.php', {
         next: "Page_10()",
-        procesar: "result_tipo_2_1_9()",
+        procesar: "result_tipo_4_1_9()",
         titulo: "<center><h5><span>Resuelve</span> las siguientes adiciones:</h5></center>",
         restaurar: "start_9()",
         dir: ruta,
-        cod: "2-1-9",
+        cod: "4-1-9",
         nota: cal
     });
     return false;
