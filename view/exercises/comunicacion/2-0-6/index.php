@@ -19,43 +19,48 @@
                 <div class="ejercicio">
                     
                     <div class="contenedor-respuesta">
-                        <div class="palabra" alt="m">
+                        <div class="palabra" alt="M">
                             
                         </div>
-                        <span>añana voy a ir al</span>
-                        <div class="palabra" alt="c">
+                        <span>añana en la </span>
+                        <div class="palabra" alt="t">
                             
                         </div>
-                        <span>ine con mis</span>
-                        <div class="palabra" alt="p">
+                        <span>arde iremos al parque con mis </span>
+                        <div class="palabra" alt="a">
                             
                         </div>
-                        <span>rimos</span>
+                        <span>migos</span>
+                        <div class="palabra" alt="x">
+                            
+                        </div>
                     </div>
                 </div>
                 <div class="ejercicio">
                     
                     <div class="contenedor-respuesta">
-                        <div class="palabra" alt="d">
+                        <div class="palabra" alt="D">
                             
                         </div>
-                        <span>espués, iremos a merendar.</span>
-                        <div class="palabra" alt="e">
+                        <span>espués, iremos a cenar</span>
+                        <div class="palabra" alt="x">
                             
                         </div>
-                        <span>estoy segura de que</span>
+                       
                         
                     </div>
                 </div>
                 <div class="ejercicio">
                     
                     <div class="contenedor-respuesta">
-                        
-                        <span>nos vamos a divertir</span>
+                        <div class="palabra" alt="E">
+                            
+                        </div>
+                        <span>stoy seguro que nos divertiremos</span>
                         <div class="palabra" alt="m">
                             
                         </div>
-                        <span>ucho</span>
+                        <span>ucho todos juntos.</span>
                     </div>
                 </div>
                 
@@ -64,22 +69,28 @@
 
            <ul class="contenedor-silabas">
                 <li class="silabas">
-                    <h4 class="pieza" alt="m">M</h4>
+                    <h4 class="pieza" alt="M">M</h4>
                 </li>
                 <li class="silabas">
-                    <h4 class="pieza" alt="c">c</h4>
+                    <h4 class="pieza" alt="t">t</h4>
                 </li>
                 <li class="silabas">
-                    <h4 class="pieza" alt="p">p</h4>
+                    <h4 class="pieza" alt="a">a</h4>
                 </li>
                 <li class="silabas">
-                    <h4 class="pieza" alt="d">D</h4>
+                    <h4 class="pieza" alt="D">D</h4>
                 </li>
                 <li class="silabas">
-                    <h4 class="pieza" alt="e">E</h4>
+                    <h4 class="pieza" alt="E">E</h4>
                 </li>
                 <li class="silabas">
                     <h4 class="pieza" alt="m">m</h4>
+                </li>
+                <li class="silabas">
+                    <h4 class="pieza" alt="x">.</h4>
+                </li>
+                <li class="silabas">
+                    <h4 class="pieza" alt="x">.</h4>
                 </li>
         </div>
     </div>
@@ -105,13 +116,13 @@
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
     // Validar
-    function result_tipo_2_1_15() {
+    function result_tipo_2_0_6() {
         var min = $('#Minutos').text();
         var seg = $('#Segundos').text();
         var milseg = $('#Centesimas').text();
         var tiempo = min + ":" + seg + ":" + milseg;
 
-        if (r == 6) {
+        if (r == 8) {
             localStorage.setItem("Nota<?=$cod?>", nota);
             localStorage.setItem("Time<?=$cod?>", tiempo);
             correcto();

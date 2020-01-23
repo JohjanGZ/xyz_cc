@@ -1085,30 +1085,100 @@
         },
         "2": {
             "0": {
-                "activo": "0",
-                "titulo": "Inglés 1",
-                "color": "#c60059",
+                "activo": "1",
+                "titulo": "Arcagrafía 1",
+                "color": "#d70862",
                 "grado": "1",
-                "curso": "ingles",
-                "portada": "comunicacion1.jpg",
+                "curso": "arcagrafia",
+                "portada": "ARCAGRAFIA-1.jpg",
                 "libros": {
                     "0": {
-                        "title": "Actividades",
-                        "enlace": "com-act-1",
-                        "portada": "com-act-1.jpg"
-                    },
-                    "1": {
-                        "title": "Razonamiento Verbal",
-                        "enlace": "com-rv-1",
-                        "portada": "com-rv-1.jpg"
-                    },
-                    "2": {
-                        "title": "Texto",
-                        "enlace": "com-txt-1",
-                        "portada": "com-txt-1.jpg"
+                        "title": "Arcagrafía 1",
+                        "enlace": "ARCAGRAFIA-1",
+                        "portada": "ARCAGRAFIA-1.jpg"
                     }
                 },
-                "unidades": {}
+                "unidades": ""
+            },
+            "1": {
+                "activo": "1",
+                "titulo": "Arcagrafía 2",
+                "color": "#ed2f31",
+                "grado": "2",
+                "curso": "arcagrafia",
+                "portada": "ARCAGRAFIA-2.jpg",
+                "libros": {
+                    "0": {
+                        "title": "Arcagrafía 2",
+                        "enlace": "ARCAGRAFIA-2",
+                        "portada": "ARCAGRAFIA-2.jpg"
+                    }
+                },
+                "unidades": ""
+            },
+            "2": {
+                "activo": "1",
+                "titulo": "Arcagrafía 3",
+                "color": "#15b3cc",
+                "grado": "3",
+                "curso": "arcagrafia",
+                "portada": "ARCAGRAFIA-3.jpg",
+                "libros": {
+                    "0": {
+                        "title": "Arcagrafía 3",
+                        "enlace": "ARCAGRAFIA-3",
+                        "portada": "ARCAGRAFIA-3.jpg"
+                    }
+                },
+                "unidades": ""
+            },
+            "3": {
+                "activo": "1",
+                "titulo": "Arcagrafía 4",
+                "color": "#5e2590",
+                "grado": "4",
+                "curso": "arcagrafia",
+                "portada": "ARCAGRAFIA-4.jpg",
+                "libros": {
+                    "0": {
+                        "title": "Arcagrafía 4",
+                        "enlace": "ARCAGRAFIA-4",
+                        "portada": "ARCAGRAFIA-4.jpg"
+                    }
+                },
+                "unidades": ""
+            },
+            "4": {
+                "activo": "1",
+                "titulo": "Arcagrafía 5",
+                "color": "#7fcc28",
+                "grado": "5",
+                "curso": "arcagrafia",
+                "portada": "ARCAGRAFIA-5.jpg",
+                "libros": {
+                    "0": {
+                        "title": "Arcagrafía 5",
+                        "enlace": "ARCAGRAFIA-5",
+                        "portada": "ARCAGRAFIA-5.jpg"
+                    }
+                },
+                "unidades": ""
+            },
+            "5": {
+                "activo": "1",
+                "titulo": "Arcagrafía 6",
+                "color": "#372f92",
+                "grado": "6",
+                "curso": "arcagrafia",
+                "portada": "ARCAGRAFIA-6.jpg",
+                "libros": {
+                    "0": {
+                        "title": "Arcagrafía 6",
+                        "enlace": "ARCAGRAFIA-6",
+                        "portada": "ARCAGRAFIA-6.jpg"
+                    }
+                },
+                "unidades": ""
             }
         }
     },
@@ -1117,7 +1187,7 @@
             "0": {
                 "activo": "1",
                 "titulo": "Inglés 3 años",
-                "color": "#de0521",
+                "color": "#f9a626",
                 "grado": "3",
                 "curso": "ingles",
                 "portada": "TKC-3.jpg",
@@ -1131,7 +1201,7 @@
                 "unidades": {}
             },
             "1": {
-                "activo": "0",
+                "activo": "1",
                 "titulo": "Inglés 4 años",
                 "color": "#de0521",
                 "grado": "4",
@@ -1147,7 +1217,7 @@
                 "unidades": {}
             },
             "2": {
-                "activo": "0",
+                "activo": "1",
                 "titulo": "Inglés 5 años",
                 "color": "#6ec5ee",
                 "grado": "5",
@@ -1167,7 +1237,7 @@
             "0": {
                 "activo": "1",
                 "titulo": "Computación 3 años",
-                "color": "#de0521",
+                "color": "#2d4ba4",
                 "grado": "3",
                 "curso": "teclitas",
                 "portada": "COMP-3.jpg",
@@ -1181,9 +1251,9 @@
                 "unidades": {}
             },
             "1": {
-                "activo": "0",
+                "activo": "1",
                 "titulo": "Computación 4 años",
-                "color": "#6ec5ee",
+                "color": "#45aeaa",
                 "grado": "4",
                 "curso": "teclitas",
                 "portada": "COMP-4.jpg",
@@ -1195,14 +1265,29 @@
                     }
                 },
                 "unidades": {}
+            },
+            "2": {
+                "activo": "1",
+                "titulo": "Computación 5 años",
+                "color": "#cfede5",
+                "grado": "5",
+                "curso": "teclitas",
+                "portada": "COMP-5.jpg",
+                "libros": {
+                    "0": {
+                        "title": "TECLITAS BRILLANTES 5 AÑOS",
+                        "enlace": "COMP-5",
+                        "portada": "COMP-5.jpg"
+                    }
+                },
+                "unidades": {}
             }
         },
         "2": {
-
             "0": {
                 "activo": "1",
                 "titulo": "Pequeñas Manitas 3 años",
-                "color": "#de0521",
+                "color": "#dda5c6",
                 "grado": "3",
                 "curso": "inicial",
                 "portada": "MANITAS-3.png",
@@ -1299,7 +1384,7 @@
             "1": {
                 "activo": "1",
                 "titulo": "Pequeñas Manitas 4 años",
-                "color": "#6ec5ee",
+                "color": "#f37646",
                 "grado": "4",
                 "curso": "inicial",
                 "portada": "MANITAS-4.png",
@@ -1313,82 +1398,65 @@
                 "unidades": {
                     "0": {
                         "id": "0",
-                        "nombre": "Unidad 1 -  ",
+                        "nombre": "Tomo A - Comunicación",
                         "temas": {
-                            "0": "tema 1",
-                            "1": "tema 2",
-                            "2": "tema 3",
-                            "3": "tema 4",
+                            "0": "Encontramos su sombra",
+                            "1": "¡Adivina, adivinador!",
+                            "2": "Objetos que no corresponden",
+                            "3": "¿Con qué vocal empieza?",
                             "4": "tema 5",
-                            "5": "tema 6",
-                            "6": "tema 7",
-                            "7": "tema 8",
-                            "8": "tema 9",
-                            "9": "tema 10"
+                            "5": "¡Adivina, adivinador!",
+                            "6": "Completamos palabras",
+                            "7": "Medios de comunicación",
+                            "8": "¿Cuáles terminan igual?",
+                            "9": "¿Qué dice la noticia?"
                         }
                     },
                     "1": {
                         "id": "1",
-                        "nombre": "Unidad 2 -  ",
+                        "nombre": "Tomo A - Matemática",
                         "temas": {
-                            "0": "tema 1",
-                            "1": "tema 2",
-                            "2": "tema 3",
-                            "3": "tema 4",
-                            "4": "tema 5",
-                            "5": "tema 6",
-                            "6": "tema 7",
-                            "7": "tema 8",
+                            "0": "Seguimos la secuencia",
+                            "1": "¿Dónde hay más?",
+                            "2": "Número 1",
+                            "3": "Encontramos formas",
+                            "4": "Número 5",
+                            "5": "Descubrimos medidas: Alto - Bajo",
+                            "6": "Números 6, 7, 8 y 9",
+                            "7": "Ordenamos por tamaño",
                             "8": "tema 9",
                             "9": "tema 10"
                         }
                     },
                     "2": {
                         "id": "2",
-                        "nombre": "Unidad 3 -  ",
+                        "nombre": "Tomo B - Ciencia y Tecnología",
                         "temas": {
-                            "0": "tema 1",
-                            "1": "tema 2",
-                            "2": "tema 3",
-                            "3": "tema 4",
-                            "4": "tema 5",
-                            "5": "tema 6",
-                            "6": "tema 7",
-                            "7": "tema 8",
-                            "8": "tema 9",
-                            "9": "tema 10"
+                            "0": "El sol",
+                            "1": "Acciones que dañan el medio ambiente",
+                            "2": "Las plantas crecen",
+                            "3": "El sismo",
+                            "4": "Las estaciones",
+                            "5": "¿Qué debemos comer?"
                         }
                     },
                     "3": {
                         "id": "3",
-                        "nombre": "Unidad 4 -  ",
+                        "nombre": "Tomo B - Personal Social",
                         "temas": {
-                            "0": "tema 1",
-                            "1": "tema 2",
-                            "2": "tema 3",
-                            "3": "tema 4",
-                            "4": "tema 5",
-                            "5": "tema 6",
-                            "6": "tema 7",
-                            "7": "tema 8",
-                            "8": "tema 9",
-                            "9": "tema 10"
+                            "0": "¿Cómo somos?",
+                            "1": "¿Cómo me siento?",
+                            "2": "¿Qué hacen?",
+                            "3": "Debo evitar peligros",
+                            "4": "Medios de transporte"
                         }
                     },
                     "4": {
                         "id": "4",
-                        "nombre": "Unidad 5 -  ",
+                        "nombre": "Tomo B - Religión",
                         "temas": {
-                            "0": "tema 1",
-                            "1": "tema 2",
-                            "2": "tema 3",
-                            "3": "tema 4",
-                            "4": "tema 5",
-                            "5": "tema 6",
-                            "6": "tema 7",
-                            "7": "tema 8",
-                            "8": "tema 9",
-                            "9": "tema 10"
+                            "0": "Dios creó",
+                            "1": "Santa Rosa de Lima"
                         }
                     }
                 }
@@ -1396,7 +1464,7 @@
             "3": {
                 "activo": "1",
                 "titulo": "Pequeñas Manitas 5 años",
-                "color": "#6ec5ee",
+                "color": "#f5a636",
                 "grado": "5",
                 "curso": "inicial",
                 "portada": "MANITAS-5.png",

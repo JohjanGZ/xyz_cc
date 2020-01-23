@@ -89,6 +89,16 @@ h4 {
     padding: 0;
 }
 
+@media(max-width: 1600px) {
+    .ejercicio .imagen-palabra img {
+        max-width: 100%;
+        max-height: 150px;
+    }
+    .contenedor-silabas {
+        padding-top: 25px;
+    }
+}
+
 
 /**************/
 
