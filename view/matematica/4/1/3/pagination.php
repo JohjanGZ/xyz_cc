@@ -33,13 +33,13 @@ var ruta = "../../../../exercises/matematica/";
 
 
 function start_18() {
-    $("#ventana").load(ruta + '2-1-18/index.php', {
+    $("#ventana").load(ruta + '4-1-18/index.php', {
         next: "Page_19()",
-        procesar: "result_tipo_2_1_18()",
+        procesar: "result_tipo_4_1_18()",
         titulo: "<center><h5>El frutero ha representado sus ventas de la semana en un gráfico de barras. <span>Observa</span> y <span>responde</span>.</h5></center>",
         restaurar: "start_18()",
         dir: ruta,
-        cod: "2-1-18",
+        cod: "4-1-18",
         nota: cal
     });
     return false;
