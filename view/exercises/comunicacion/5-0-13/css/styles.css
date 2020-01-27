@@ -1,0 +1,122 @@
+h5 {
+    width: 80%;
+    font-size: 24px;
+}
+
+@media (min-width: 1920px) {
+    h5 {
+        font-size: 200%;
+    }
+}
+
+.contenedor-two {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 90%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+}
+
+/* Parte 1 */
+
+.opciones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+}
+
+.pieza {
+    margin: 1vh;
+    z-index: 1;
+}
+
+/* Parte 2 */
+
+.esquema {
+    position: relative;
+    width: 1110px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.principal {
+    width: 100%;
+    height: auto;
+}
+
+.img {
+    width: auto;
+    height: 50px;
+}
+
+.contenedor {
+    position: absolute;
+    width: 184px;
+    height: 50px;
+    /* background: #000000ab; */
+    background: transparent !important;
+}
+
+.c1 {
+    top: 46px;
+    left: 6px;
+}
+
+.c2 {
+    top: 166px;
+    left: 11px;
+}
+
+.c3 {
+    right: 17px;
+    top: 84px;
+}
+
+.c4 {
+    bottom: 97px;
+    right: 17px;
+}
+
+/* Responsive */
+
+@media (min-width: 1920px) {
+    .esquema {
+        width: 1338px;
+    }
+    .contenedor {
+        width: 229px;
+        height: 60px;
+    }
+    .c1 {
+        top: 24px;
+        left: 2px;
+    }
+    .c2 {
+        left: -4px;
+        top: 169px;
+    }
+    .c3 {
+        right: 14px;
+        top: 70px;
+    }
+    .c4 {
+        bottom: 87px;
+    right: 12px;
+    }
+    .img {
+        width: auto;
+        height: 58px;
+    }
+}
