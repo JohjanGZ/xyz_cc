@@ -1,106 +1,50 @@
 <script type="text/javascript">
 
-
-function Page_13() {
-    start_13();
+function Page_5() {
+   
+    start_5();
     inicio();
     count = 3;
 }
 
-function Page_14() {  
-   start_14();
+function Page_6() {
+   
+   start_6();
    inicio();
    count = 3;
 }
 
-function Page_15() {
-   start_15();
-   inicio();
-   count = 3;
-}
 
-function Page_16() {
-   start_16();
-   inicio();
-   count = 3;
-}
-
-function Page_17() {
-   start_17();
-   inicio();
-   count = 3;
-}
-
-var cant = 18;
+var cant = 2;
 var cal = cant / cant;
 console.log(cant);
 var ruta = "../../../../exercises/matematica/";
 ////////////// 2do 
 // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
-
-
-function start_13() {
-    $("#ventana").load(ruta + '4-1-13/index.php', {
-        next: "Page_14()",
-        procesar: "result_tipo_4_1_13()",
-        titulo: "<center><h5><span>Escribe</span> cuántas figuras hay de cada forma geométrica.</h5></center>",
-        restaurar: "start_13()",
+function start_5() {
+    $("#ventana").load(ruta + '4-1-5/index.php', {
+        next: "Page_6()",
+        procesar: "result_tipo_4_1_5()",
+        titulo: "<center><h5><span>Observa</span> el recuadro. Luego, <span>selecciona</span> los números mayores que 7 184.</h5></center>",
+        restaurar: "start_5()",
         dir: ruta,
-        cod: "4-1-13",
+        cod: "4-1-5",
         nota: cal
     });
     return false;
 };
-function start_14() {
-    $("#ventana").load(ruta + '4-1-14/index.php', {
-        next: "Page_15()",
-        procesar: "result_tipo_4_1_14()",
-        titulo: "<center><h5><span>Selecciona</span> las figuras geométricas que tienen los lados rectos.</h5></center>",
-        restaurar: "start_14()",
-        dir: ruta,
-        cod: "4-1-14",
-        nota: cal
-    });
-    return false;
-};
-function start_15() {
-    $("#ventana").load(ruta + '4-1-15/index.php', {
-        next: "Page_16()",
-        procesar: "result_tipo_4_1_15()",
-        titulo: "<center><h5><span>Selecciona</span> las figuras geométricas que tienen 3 vértices.</h5></center>",
-        restaurar: "start_15()",
-        dir: ruta,
-        cod: "4-1-15",
-        nota: cal
-    });
-    return false;
-};
-function start_16() {
-    $("#ventana").load(ruta + '4-1-16/index.php', {
-        next: "Page_17()",
-        procesar: "result_tipo_4_1_16()",
-        titulo: "<center><h5><span>Selecciona</span> las figuras geométricas que no tienen vértices.</h5></center>",
-        restaurar: "start_16()",
-        dir: ruta,
-        cod: "4-1-16",
-        nota: cal
-    });
-    return false;
-};
-
-function start_17() {
-    $("#ventana").load(ruta + '4-1-17/index.php', {
+function start_6() {
+    $("#ventana").load(ruta + '4-1-6/index.php', {
         next: "resultado()",
-        procesar: "result_tipo_4_1_17()",
-        titulo: "<center><h5><span>Relaciona</span> cada imagen con su respectivo nombre.</h5></center>",
-        restaurar: "start_17()",
+        procesar: "result_tipo_4_1_6()",
+        titulo: "<center><h5><span>Observa</span> el recuadro. Luego, <span>selecciona</span> los números menores que 5 692.</h5></center>",
+        restaurar: "start_6()",
         dir: ruta,
-        cod: "4-1-17",
+        cod: "4-1-6",
         nota: cal
     });
     return false;
 };
-
 
 function resultado() {
     $("#ventana").load('../../../../exercises/resultado/resultado.php');
