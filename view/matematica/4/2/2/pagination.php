@@ -1,64 +1,44 @@
 <script type="text/javascript">
 
-
-function Page_23() {
-    start_23();
+function Page_3() {
+    start_3();
     inicio();
     count = 3;
 }
 
-function Page_24() {  
-   start_24();
-   inicio();
-   count = 3;
+function Page_4() {
+    start_4();
+    inicio();
+    count = 3;
 }
 
-function Page_25() {
-   start_25();
-   inicio();
-   count = 3;
-}
-
-var cant = 18;
-var cal = cant/cant;
+var cant = 2;
+var cal = cant / cant;
 console.log(cant);
 var ruta = "../../../../exercises/matematica/";
 ////////////// 2do 
 // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
-
-
-function start_23() {
-    $("#ventana").load(ruta + '2-2-23/index.php', {
-        next: "Page_24()",
-        procesar: "result_tipo_2_2_23()",
-        titulo: "<center><h5><span>Completa</span> los números que faltan. </h5></center>",
-        restaurar: "start_23()",
+function start_3() {
+    $("#ventana").load(ruta + '4-2-3/index.php', {
+        next: "Page_4()",
+        procesar: "result_tipo_4_2_3()",
+        titulo: "<center><h5><span>Observa</span> la tabla. Luego, <span>completa</span> según corresponda.</h5></center>",
+        restaurar: "start_3()",
         dir: ruta,
-        cod: "2-2-23",
+        cod: "4-2-3",
         nota: cal
     });
     return false;
 };
-function start_24() {
-    $("#ventana").load(ruta + '2-2-24/index.php', {
-        next: "Page_25()",
-        procesar: "result_tipo_2_2_24()",
-        titulo: "<center><h5><span>Completa</span> los siguientes cuadrados mágicos.</h5></center>",
-        restaurar: "start_24()",
-        dir: ruta,
-        cod: "2-2-24",
-        nota: cal
-    });
-    return false;
-};
-function start_25() {
-    $("#ventana").load(ruta + '2-2-25/index.php', {
+
+function start_4() {
+    $("#ventana").load(ruta + '4-2-4/index.php', {
         next: "resultado()",
-        procesar: "result_tipo_2_2_25()",
-        titulo: "<center><h5>La suma de los números en los cuadrados es igual al número del rectángulo.</h5></center>",
-        restaurar: "start_25()",
+        procesar: "result_tipo_4_2_4()",
+        titulo: "<center><h5><span>Observa</span> las tablas. Luego, <span>selecciona</span> de la lista el valor de posición del dígito encerrado.</h5></center>",
+        restaurar: "start_4()",
         dir: ruta,
-        cod: "2-2-25",
+        cod: "4-2-4",
         nota: cal
     });
     return false;
