@@ -7,38 +7,36 @@ h5 {
     color: #20bcdb;
 }
 
-.container {
-    display: flex;
-    height: 70%;
-    align-items: center;
-}
-
-.container .row {
-    width: 100%;
-}
-
-.contenedor-oraciones {
+.contenedor-two {
+    margin: 0 auto;
+    max-width: 1280px;
     width: 70%;
-    margin: auto;
+    height: 70%;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-}
-
-.contenedor-check {
-    padding-top: 20px;
+    flex-direction: column;
 }
 
 .oracion {
-    width: 100%;
+    /* width: 100%; */
     padding-top: 15px;
 }
 
 .contenedor-check {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
     justify-content: center;
-    padding-top: 25px;
-    flex-wrap: wrap;
+}
+
+.seleccion {
+    margin: 3vh;
+    border: 1px solid silver;
+    width: 150px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .contenedor-check .respuesta {

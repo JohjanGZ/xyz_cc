@@ -35,10 +35,15 @@ h5 {
 }
 
 .contenedor-check {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
     justify-content: center;
-    padding-top: 25px;
-    flex-wrap: wrap;
+}
+
+.img {
+    width: auto;
+    height: 175px;
+    margin: 6vh;
 }
 
 .contenedor-check .respuesta {

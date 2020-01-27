@@ -1,5 +1,6 @@
-var r = false;
+var r = 0;
 
-var clases = ".alfabeto";
+var clases = ".contenedor-check";
 listar_random(clases);
-ordenar_lista();
+
+seleccion_click();
