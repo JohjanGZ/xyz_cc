@@ -11,36 +11,35 @@
 
 <body>
 
-    <div class="container">
-        <div class="row">
-
-            <div class="contenedor-oraciones">
-
-
-                <div class="oracion">
-
-                    <h4>
-                    ¿Por qué Ukañán seguía sigilosamente a la princesa?
-                    </h4>
-
-                    <div class="contenedor-check">
-                        
-                        <div class="respuesta seleccion">
-                            <span class="celeste">●</span><span> Porque su padre lo había mandado a cuidarla.</span>
-                        </div>
-                        <div class="respuesta seleccion">
-                            <span class="celeste">●</span><span> Pensaba aprovechar que estaba sola para contarle la verdad.</span>
-                        </div>
-                        <div class="respuesta seleccion" alt="n">
-                            <span class="celeste">●</span><span> Porque estaba pendiente de ella y esperaba encontrarla sola.</span>
-                        </div>
-                        
-                    </div>
-
+    <div class="contenedor-two">
+        <div class="contenedor-oraciones">
+            <div class="oracion">
+                <span>•</span> Mañana voy a ___________________ con unas patas del salón.
+                <div class="contenedor-check">
+                    <div class="seleccion" alt="">jugar</div>
+                    <div class="seleccion" alt="">fulbitear</div>
+                    <div class="seleccion" alt="n">pichanguear</div>
+                    <div class="seleccion" alt="">correr</div>
                 </div>
-
             </div>
-
+            <div class="oracion">
+                <span>•</span> Saqué un gol de la ___________________, cuando ya terminaba el partido.
+                <div class="contenedor-check">
+                    <div class="seleccion" alt="">línea</div>
+                    <div class="seleccion" alt="">límite</div>
+                    <div class="seleccion" alt="">cancha</div>
+                    <div class="seleccion" alt="n">raya</div>
+                </div>
+            </div>
+            <div class="oracion">
+                <span>•</span> Ya estamos inscritos con un nombre bravazo: ___________________.
+                <div class="contenedor-check">
+                    <div class="seleccion" alt="">Tennis Club</div>
+                    <div class="seleccion" alt="n">Suave Loco</div>
+                    <div class="seleccion" alt="">Bayern</div>
+                    <div class="seleccion" alt="">Surquillo</div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -74,7 +73,7 @@ function result_tipo_5_0_3() {
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
-    if (r == 1) {
+    if (r == 3) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();

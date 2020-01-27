@@ -18,7 +18,7 @@ function start_7() {
     $("#ventana").load(ruta + '4-0-7/index.php', {
         next: "resultado()",
         procesar: "result_tipo_4_0_7()",
-        titulo: "<center><h5><span>Observa</span> el siguiente conjuntos. Luego <span>selecciona</span> de la lista los símbolos <span>⊂, ⊄, ∈ </span> o <span>∉</span> según corresponda.</h5></center>",
+        titulo: "<center><h5><span>Observa</span> los siguientes conjuntos. Luego <span>selecciona</span> de la lista los símbolos <span>⊂, ⊄, ∈ </span> o <span>∉</span> según corresponda.</h5></center>",
         restaurar: "start_7()",
         dir: ruta,
         cod: "4-0-7",
