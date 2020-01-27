@@ -14,28 +14,19 @@
     <div class="container">
         <div class="row">
 
-            <div class="contenedor-ejercicio">
-                <ul class="alfabeto" id="sortable">
-                    <li id="1" class="palabra lista-item">
-                        <span> La princesa recibe la triste noticia de la muerte de su prometido.</span>
-                    </li>
-                    <li id="2" class="palabra lista-item">
-                        <span>
-                         Ukañán siguió sigilosamente a la princesa.
-                        </span>
-                    </li>
-                    <li id="3" class="palabra lista-item">
-                        <span>
-                        La princesa seca sus lágrimas mirándose en el espejo.
-                        </span>
-                    </li>
-                    <li id="4" class="palabra lista-item">
-                        <span>
-                        El joven guerrero va a su encuentro en la laguna y se sumerge en ella.
-                        </span>
-                    </li>
-                </ul>
-                
+            <div class="contenedor-oraciones">
+
+
+                <div class="oracion">
+                    <div class="contenedor-check">
+                        <img src="<?=$dir?>/img/1.png" class="img seleccion" alt="">
+                        <img src="<?=$dir?>/img/2.png" class="img seleccion" alt="">
+                        <img src="<?=$dir?>/img/3.png" class="img seleccion" alt="n">
+                        <img src="<?=$dir?>/img/4.png" class="img seleccion" alt="">
+                    </div>
+
+                </div>
+
             </div>
 
         </div>
@@ -65,16 +56,13 @@ $("#next").attr("onclick", "<?=$next?>");
 <script type="text/javascript">
 // Validar
 
-var r = 0;
-var v = 1;
-
 function result_tipo_5_0_1() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
-    if (r) {
+    if (r == 1) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();

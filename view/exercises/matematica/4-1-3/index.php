@@ -9,7 +9,7 @@
 </style>
 <?=$titulo?>
 <?php
-    $letras = array('8 unidades de millar','7 centenas','4 unidades','1 unidad','6 centenas','0 decena');
+    $letras = array('8','7','9','4','2','1','5','6','0');
 ?>
 <body>
     <div class="container-two">
@@ -78,7 +78,7 @@
             </div>
             <div class="grid-item">5 628</div>
             <div class="grid-item">
-                <select class="slc" alt="8">
+                <select class="slc" alt="5">
                     <option value="" disabled selected></option>
                     <?php
                         for ($i=0; $i < count($letras); $i++) { 

@@ -40,62 +40,62 @@ var ruta = "../../../../exercises/matematica/";
 
 
 function start_13() {
-    $("#ventana").load(ruta + '2-1-13/index.php', {
+    $("#ventana").load(ruta + '4-1-13/index.php', {
         next: "Page_14()",
-        procesar: "result_tipo_2_1_13()",
+        procesar: "result_tipo_4_1_13()",
         titulo: "<center><h5><span>Escribe</span> cuántas figuras hay de cada forma geométrica.</h5></center>",
         restaurar: "start_13()",
         dir: ruta,
-        cod: "2-1-13",
+        cod: "4-1-13",
         nota: cal
     });
     return false;
 };
 function start_14() {
-    $("#ventana").load(ruta + '2-1-14/index.php', {
+    $("#ventana").load(ruta + '4-1-14/index.php', {
         next: "Page_15()",
-        procesar: "result_tipo_2_1_14()",
+        procesar: "result_tipo_4_1_14()",
         titulo: "<center><h5><span>Selecciona</span> las figuras geométricas que tienen los lados rectos.</h5></center>",
         restaurar: "start_14()",
         dir: ruta,
-        cod: "2-1-14",
+        cod: "4-1-14",
         nota: cal
     });
     return false;
 };
 function start_15() {
-    $("#ventana").load(ruta + '2-1-15/index.php', {
+    $("#ventana").load(ruta + '4-1-15/index.php', {
         next: "Page_16()",
-        procesar: "result_tipo_2_1_15()",
+        procesar: "result_tipo_4_1_15()",
         titulo: "<center><h5><span>Selecciona</span> las figuras geométricas que tienen 3 vértices.</h5></center>",
         restaurar: "start_15()",
         dir: ruta,
-        cod: "2-1-15",
+        cod: "4-1-15",
         nota: cal
     });
     return false;
 };
 function start_16() {
-    $("#ventana").load(ruta + '2-1-16/index.php', {
+    $("#ventana").load(ruta + '4-1-16/index.php', {
         next: "Page_17()",
-        procesar: "result_tipo_2_1_16()",
+        procesar: "result_tipo_4_1_16()",
         titulo: "<center><h5><span>Selecciona</span> las figuras geométricas que no tienen vértices.</h5></center>",
         restaurar: "start_16()",
         dir: ruta,
-        cod: "2-1-16",
+        cod: "4-1-16",
         nota: cal
     });
     return false;
 };
 
 function start_17() {
-    $("#ventana").load(ruta + '2-1-17/index.php', {
+    $("#ventana").load(ruta + '4-1-17/index.php', {
         next: "resultado()",
-        procesar: "result_tipo_2_1_17()",
+        procesar: "result_tipo_4_1_17()",
         titulo: "<center><h5><span>Relaciona</span> cada imagen con su respectivo nombre.</h5></center>",
         restaurar: "start_17()",
         dir: ruta,
-        cod: "2-1-17",
+        cod: "4-1-17",
         nota: cal
     });
     return false;

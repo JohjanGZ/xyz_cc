@@ -18,23 +18,11 @@
 
 
                 <div class="oracion">
-
-                    <h4>
-                    ¿Por qué el Señor de Ica y su hija creyeron las palabras de Ukañán?
-                    </h4>
-
                     <div class="contenedor-check">
-                        
-                        <div class="respuesta seleccion">
-                            <span class="celeste">●</span><span> Porque trajo pruebas de la derrota.</span>
-                        </div>
-                        <div class="respuesta seleccion" alt="n">
-                            <span class="celeste">●</span><span> Porque era un guerrero del ejército.</span>
-                        </div>
-                        <div class="respuesta seleccion">
-                            <span class="celeste">●</span><span> Porque estaba enamorado de la princesa.</span>
-                        </div>
-                        
+                        <img src="<?=$dir?>/img/1.png" class="img seleccion" alt="n">
+                        <img src="<?=$dir?>/img/2.png" class="img seleccion" alt="">
+                        <img src="<?=$dir?>/img/3.png" class="img seleccion" alt="n">
+                        <img src="<?=$dir?>/img/4.png" class="img seleccion" alt="">
                     </div>
 
                 </div>
@@ -74,7 +62,7 @@ function result_tipo_5_0_2() {
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
-    if (r == 1) {
+    if (r == 2) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();

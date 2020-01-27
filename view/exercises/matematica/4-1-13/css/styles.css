@@ -1,0 +1,93 @@
+h4 {
+    text-align: center;
+}
+
+.row {
+    text-align: center;
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.row-img {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.contenedor-ejercicios {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 40px;
+}
+
+.letrax {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 30px;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 1s ease;
+}
+
+.letra:hover {
+    width: auto;
+}
+
+.letra:hover .guion {
+    display: flex;
+}
+
+.letrax span {
+    display: block;
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+.trax span{
+    display: block;
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+.guion {
+    display: flex;
+    min-width: 30px;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s ease;
+    font-weight: bold;
+    color: red;
+}
+.rojo{
+    color: red;
+}
+.letra .guion {
+    display: none;
+}
+
+
+/************/
+
+
+/**************/
+
+@media(max-height: 850px) {
+    .contenedor-ejercicios {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-top: 10px;
+    }
+}
+@media(max-height: 620px) {
+    .contenedor-ejercicios span{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-top: 10px;
+        font-size: 25px;
+    }
+}

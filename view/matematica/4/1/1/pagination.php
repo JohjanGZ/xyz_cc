@@ -197,39 +197,39 @@ function start_9() {
 };
 
 function start_10() {
-    $("#ventana").load(ruta + '2-1-10/index.php', {
+    $("#ventana").load(ruta + '4-1-10/index.php', {
         next: "Page_11()",
-        procesar: "result_tipo_2_1_10()",
+        procesar: "result_tipo_4_1_10()",
         titulo: "<center><h5><span>Completa</span> cada relación.</h5></center>",
         restaurar: "start_10()",
         dir: ruta,
-        cod: "2-1-10",
+        cod: "4-1-10",
         nota: cal
     });
     return false;
 };
 
 function start_11() {
-    $("#ventana").load(ruta + '2-1-11/index.php', {
+    $("#ventana").load(ruta + '4-1-11/index.php', {
         next: "Page_12()",
-        procesar: "result_tipo_2_1_11()",
+        procesar: "result_tipo_4_1_11()",
         titulo: "<center><h5><span>Observa</span> la imagen y <span>resuelve</span> el problema.</h5></center>",
         restaurar: "start_11()",
         dir: ruta,
-        cod: "2-1-11",
+        cod: "4-1-11",
         nota: cal
     });
     return false;
 };
 
 function start_12() {
-    $("#ventana").load(ruta + '2-1-12/index.php', {
+    $("#ventana").load(ruta + '4-1-12/index.php', {
         next: "resultado()",
-        procesar: "result_tipo_2_1_12()",
+        procesar: "result_tipo_4_1_12()",
         titulo: " <center><h5><span>Observa</span> los precios y <span>resuelve</span>.</h5></center>",
         restaurar: "start_12()",
         dir: ruta,
-        cod: "2-1-12",
+        cod: "4-1-12",
         nota: cal
     });
     return false;
