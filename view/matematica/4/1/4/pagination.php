@@ -11,7 +11,7 @@ var cant = 1;
 var cal = cant / cant;
 console.log(cant);
 var ruta = "../../../../exercises/matematica/";
-////////////// 2do 
+////////////// 2do
 // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
 function start_4() {
     $("#ventana").load(ruta + '4-1-4/index.php', {
