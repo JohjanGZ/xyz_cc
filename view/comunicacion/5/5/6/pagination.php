@@ -20,42 +20,42 @@
     ////////////// 2do 
             // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
     function start_16(){
-        $("#ventana").load(ruta+'5-4-16/index.php', 
+        $("#ventana").load(ruta+'5-5-16/index.php', 
         {
         next: "Page_17()", 
-        procesar:"result_tipo_5_4_16()",
-        titulo:"<center><h5><span>Selecciona</span> la respuesta correcta.</h5></center>",
+        procesar:"result_tipo_5_5_16()",
+        titulo:"<center><h5><span>Selecciona</span> la alternativa que complete el siguiente enunciado: “El poema es…”.</center>",
         restaurar:"start_16()",
         dir:ruta,
-        cod: "5-4-16",
+        cod: "5-5-16",
         nota:cal
         }
         );
         return false;  
     };
     function start_17(){
-        $("#ventana").load(ruta+'5-4-17/index.php', 
+        $("#ventana").load(ruta+'5-5-17/index.php', 
         {
         next: "Page_18()", 
-        procesar:"result_tipo_5_4_17()",
-        titulo:"<center><h5><span>Selecciona</span> la imagen que no aparece en la infografía de la página 83 de tu Texto escolar.</h5></center>",
+        procesar:"result_tipo_5_5_17()",
+        titulo:"<center><h5><span>Relaciona</span> con líneas los siguientes subgéneros del género lírico.</h5></center>",
         restaurar:"start_17()",
         dir:ruta,
-        cod: "5-4-17",
+        cod: "5-5-17",
         nota:cal
         }
         );
         return false;  
     };
     function start_18(){
-        $("#ventana").load(ruta+'5-4-18/index.php', 
+        $("#ventana").load(ruta+'5-5-18/index.php', 
         {
         next: "resultado()", 
-        procesar:"result_tipo_5_4_18()",
-        titulo:"<center><h5><span>Selecciona</span> cuál es uno de los beneficios de trabajar con infografías.</h5></center>",
+        procesar:"result_tipo_5_5_18()",
+        titulo:"<center><h5>Selecciona la afirmación incorrecta acerca del poema.</h5></center>",
         restaurar:"start_18()",
         dir:ruta,
-        cod: "5-4-18",
+        cod: "5-5-18",
         nota:cal
         }
         );

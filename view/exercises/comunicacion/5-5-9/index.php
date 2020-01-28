@@ -16,7 +16,7 @@
 
             <div class="contenedor-oraciones">
                 <div class="oracion">
-                    <div class="contenedor-check">
+                    <div class="contenedor-check ale">
                         <img src="<?=$dir?>/img/1.png" class="img seleccion" alt="">
                         <img src="<?=$dir?>/img/2.png" class="img seleccion" alt="n">
                         <img src="<?=$dir?>/img/3.png" class="img seleccion" alt="">

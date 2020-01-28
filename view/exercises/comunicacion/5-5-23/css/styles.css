@@ -1,0 +1,40 @@
+.container-two {
+  margin: 0 auto;
+  width: 90%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
+}
+.content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.image{
+  background-image: url('../img/1.png');
+  width: 600px;
+  height: 500px;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.poema{
+  width: 300px;
+  margin: auto;
+  border: 1px solid #333;
+}
+.pieza{
+  box-shadow: none;
+  width: 300px;
+  font-weight: 600;
+  text-align: center;
+}
+.contenedor{
+  width: 330px;
+  height: 50px;
+  border: 1px solid #333;
+}
+@media screen and (max-height: 890px){
+  
+}

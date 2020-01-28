@@ -12,9 +12,8 @@
 <body>
 
     <div class="contenedor-two">
-        <div class="contenedor-oraciones">
-            
-            <div class="oracion">
+        <div class="contenedor-oraciones ale">
+            <div class="oracion ">
                 <div class="contenedor-check">
                     <div class="seleccion" alt="">•Indica una característica del sustantivo.</div>
                 </div>
@@ -60,14 +59,14 @@ $("#next").attr("onclick", "<?=$next?>");
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
 // Validar
-
-function result_tipo_5_5_2() {
+listar_random(".ale")
+function result_tipo_5_5_10() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();
     var tiempo = min + ":" + seg + ":" + milseg;
 
-    if (r == 2) {
+    if (r == 1) {
         localStorage.setItem("Nota<?=$cod?>", nota);
         localStorage.setItem("Time<?=$cod?>", tiempo);
         correcto();

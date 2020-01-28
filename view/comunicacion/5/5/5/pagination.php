@@ -20,42 +20,42 @@
     ////////////// 2do 
             // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
     function start_13(){
-        $("#ventana").load(ruta+'5-4-13/index.php', 
+        $("#ventana").load(ruta+'5-5-13/index.php', 
         {
         next: "Page_14()", 
-        procesar:"result_tipo_5_4_13()",
-        titulo:"<center><h5><span>Selecciona</span> la alternativa que completa adecuadamente el siguiente enunciado: “La infografía es…”.</h5></center>",
+        procesar:"result_tipo_5_5_13()",
+        titulo:"<center><h5><span>Selecciona</span> la afirmación correcta sobre los dos puntos.</h5></center>",
         restaurar:"start_13()",
         dir:ruta,
-        cod: "5-4-13",
+        cod: "5-5-13",
         nota:cal
         }
         );
         return false;  
     };
     function start_14(){
-        $("#ventana").load(ruta+'5-4-14/index.php', 
+        $("#ventana").load(ruta+'5-5-14/index.php', 
         {
         next: "Page_15()", 
-        procesar:"result_tipo_5_4_14()",
-        titulo:"<center><h5><span>Relaciona</span> los elementos de la infografía con su respectiva definición.</h5></center>",
+        procesar:"result_tipo_5_5_14()",
+        titulo:"<center><h5><span>Selecciona</span> la característica correspondiente a los puntos suspensivos.</h5></center>",
         restaurar:"start_14()",
         dir:ruta,
-        cod: "5-4-14",
+        cod: "5-5-14",
         nota:cal
         }
         );
         return false;  
     };
     function start_15(){
-        $("#ventana").load(ruta+'5-4-15/index.php', 
+        $("#ventana").load(ruta+'5-5-15/index.php', 
         {
         next: "resultado()", 
-        procesar:"result_tipo_5_4_15()",
-        titulo:"<center><h5><span>Selecciona</span> la alternativa correcta.</h5></center>",
+        procesar:"result_tipo_5_5_15()",
+        titulo:"<center><h5><span></span> los enunciados que emplean adecuadamente los dos puntos y los puntos suspensivos.</h5></center>",
         restaurar:"start_15()",
         dir:ruta,
-        cod: "5-4-15",
+        cod: "5-5-15",
         nota:cal
         }
         );

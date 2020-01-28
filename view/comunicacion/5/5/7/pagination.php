@@ -20,42 +20,42 @@
     ////////////// 2do 
             // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
     function start_19(){
-        $("#ventana").load(ruta+'5-4-19/index.php', 
+        $("#ventana").load(ruta+'5-5-19/index.php', 
         {
         next: "Page_20()", 
-        procesar:"result_tipo_5_4_19()",
-        titulo:"<center><h5><span>Relaciona</span> las figuras literarias con su definición.</h5></center>",
+        procesar:"result_tipo_5_5_19()",
+        titulo:"<center><h5><span>Selecciona</span> la alternativa correcta sobre la estructura de un poema.</h5></center>",
         restaurar:"start_19()",
         dir:ruta,
-        cod: "5-4-19",
+        cod: "5-5-19",
         nota:cal
         }
         );
         return false;  
     };
     function start_20(){
-        $("#ventana").load(ruta+'5-4-20/index.php', 
+        $("#ventana").load(ruta+'5-5-20/index.php', 
         {
         next: "Page_21()", 
-        procesar:"result_tipo_5_4_20()",
-        titulo:"<center><h5><span>Selecciona</span> las figuras literarias del poema y colócalas donde corresponden.</h5></center>",
+        procesar:"result_tipo_5_5_20()",
+        titulo:"<center><h5><span>Lee</span> el poema leído en la página 100 del Texto escolar y <span>selecciona</span> la respuesta correcta.</h5></center>",
         restaurar:"start_20()",
         dir:ruta,
-        cod: "5-4-20",
+        cod: "5-5-20",
         nota:cal
         }
         );
         return false;  
     };
     function start_21(){
-        $("#ventana").load(ruta+'5-4-21/index.php', 
+        $("#ventana").load(ruta+'5-5-21/index.php', 
         {
         next: "resultado()", 
-        procesar:"result_tipo_5_4_21()",
-        titulo:"<center><h5><span>Coloca</span> los siguientes enunciados en la tabla según corresponda.</h5></center>",
+        procesar:"result_tipo_5_5_21()",
+        titulo:"<center><h5><span>Selecciona</span> las alternativas que completan adecuadamente los enunciados.</h5></center>",
         restaurar:"start_21()",
         dir:ruta,
-        cod: "5-4-21",
+        cod: "5-5-21",
         nota:cal
         }
         );
