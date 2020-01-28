@@ -1448,7 +1448,7 @@
                     }
                 }
             },
-            "3": {
+            "2": {
                 "activo": "1",
                 "titulo": "Pequeñas Manitas 5 años",
                 "color": "#f5a636",
@@ -1537,17 +1537,81 @@
     "Secundaria": {
         "0": {
             "0": {
-                "activo": "0",
-                "titulo": "",
-                "color": "#de0521",
-                "grado": "4",
-                "curso": "ingles",
-                "portada": "TKC-4.jpg",
+                "activo": "1",
+                "titulo": "Emprendimiento 1",
+                "color": "#568f17",
+                "grado": "1",
+                "curso": "emprendimiento",
+                "portada": "EMP-1.jpg",
                 "libros": {
                     "0": {
-                        "title": "The Kid's Club",
-                        "enlace": "TKC-4",
-                        "portada": "TKC-4.jpg"
+                        "title": "Emprendimiento",
+                        "enlace": "EMP-1",
+                        "portada": "EMP-1.jpg"
+                    }
+                },
+                "unidades": {}
+            },
+            "1": {
+                "activo": "1",
+                "titulo": "Emprendimiento 2",
+                "color": "#d87d4f",
+                "grado": "2",
+                "curso": "emprendimiento",
+                "portada": "EMP-2.jpg",
+                "libros": {
+                    "0": {
+                        "title": "Emprendimiento",
+                        "enlace": "EMP-2",
+                        "portada": "EMP-2.jpg"
+                    }
+                },
+                "unidades": {}
+            },
+            "2": {
+                "activo": "1",
+                "titulo": "Emprendimiento 3",
+                "color": "#e93804",
+                "grado": "3",
+                "curso": "emprendimiento",
+                "portada": "EMP-3.jpg",
+                "libros": {
+                    "0": {
+                        "title": "Emprendimiento",
+                        "enlace": "EMP-3",
+                        "portada": "EMP-3.jpg"
+                    }
+                },
+                "unidades": {}
+            },
+            "3": {
+                "activo": "1",
+                "titulo": "Emprendimiento 4",
+                "color": "#2f9391",
+                "grado": "4",
+                "curso": "emprendimiento",
+                "portada": "EMP-4.jpg",
+                "libros": {
+                    "0": {
+                        "title": "Emprendimiento",
+                        "enlace": "EMP-4",
+                        "portada": "EMP-4.jpg"
+                    }
+                },
+                "unidades": {}
+            },
+            "4": {
+                "activo": "1",
+                "titulo": "Emprendimiento 5",
+                "color": "#2b58a5",
+                "grado": "5",
+                "curso": "emprendimiento",
+                "portada": "EMP-5.jpg",
+                "libros": {
+                    "0": {
+                        "title": "Emprendimiento",
+                        "enlace": "EMP-5",
+                        "portada": "EMP-5.jpg"
                     }
                 },
                 "unidades": {}
