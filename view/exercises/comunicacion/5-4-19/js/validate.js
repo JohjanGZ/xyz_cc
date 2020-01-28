@@ -30,13 +30,7 @@ $('.grid-item-a').click(function() {
                 ctx.moveTo(0,150);
                 break;
             case 2:
-                ctx.moveTo(0,240);
-                break;
-            case 3:
-                ctx.moveTo(0,340);
-                break;
-            case 4:
-                ctx.moveTo(0,440);
+                ctx.moveTo(0,250);
                 break;
         }
         valor = 1;
@@ -65,13 +59,7 @@ $('.grid-item-a').click(function() {
                 ctx.lineTo(100,150);
                 break;
             case 2:
-                ctx.lineTo(100,240);
-                break;
-            case 3:
-                ctx.lineTo(100,340);
-                break;
-            case 4:
-                ctx.lineTo(100,440);
+                ctx.lineTo(100,250);
                 break;
         }
         ctx.strokeStyle = "orange";

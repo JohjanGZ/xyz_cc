@@ -24,7 +24,7 @@
         {
         next: "Page_11()", 
         procesar:"result_tipo_5_4_10()",
-        titulo:"<center><h5><span>Selecciona</span> la alternativa que completa adecuadamente el siguiente enunciado: “La infografía es…”.</h5></center>",
+        titulo:"<center><h5><span>Relaciona</span> los conceptos con sus definiciones o características según corresponda.</h5></center>",
         restaurar:"start_10",
         dir:ruta,
         cod: "5-4-10",
@@ -38,7 +38,7 @@
         {
         next: "Page_12()", 
         procesar:"result_tipo_5_4_11()",
-        titulo:"<center><h5><span>Selecciona</span> la alternativa que completa adecuadamente el siguiente enunciado: “La infografía es…”.</h5></center>",
+        titulo:"<center><h5><span>Analiza</span> los enunciados y <span>selecciona</span> la alternativa correcta.</h5></center>",
         restaurar:"start_11()",
         dir:ruta,
         cod: "5-4-11",
@@ -52,7 +52,7 @@
         {
         next: "resultado()", 
         procesar:"result_tipo_5_4_12()",
-        titulo:"<center><h5><span>Selecciona</span> la alternativa que completa adecuadamente el siguiente enunciado: “La infografía es…”.</h5></center>",
+        titulo:"<center><h5><span>Completa</span> los enunciados con las palabras adecuadas.</h5></center>",
         restaurar:"start_12()",
         dir:ruta,
         cod: "5-4-12",

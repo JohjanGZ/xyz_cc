@@ -24,7 +24,7 @@
         {
         next: "Page_5()", 
         procesar:"result_tipo_5_4_4()",
-        titulo:"<center><h5><span>Selecciona</span> la alternativa que completa adecuadamente el siguiente enunciado: “La infografía es…”.</h5></center>",
+        titulo:"<center><h5><span>Completa</span> el enunciado con la alternativa propuesta.</h5></center>",
         restaurar:"start_4()",
         dir:ruta,
         cod: "5-4-4",
@@ -38,7 +38,7 @@
         {
         next: "Page_6()", 
         procesar:"result_tipo_5_4_5()",
-        titulo:"<center><h5><span>Selecciona</span> la alternativa que completa adecuadamente el siguiente enunciado: “La infografía es…”.</h5></center>",
+        titulo:"<center><h5><span>Selecciona</span> el propósito de la exposición.</h5></center>",
         restaurar:"start_5()",
         dir:ruta,
         cod: "5-4-5",
@@ -52,7 +52,7 @@
         {
         next: "resultado()", 
         procesar:"result_tipo_5_4_6()",
-        titulo:"<center><h5><span>Selecciona</span> la alternativa que completa adecuadamente el siguiente enunciado: “La infografía es…”.</h5></center>",
+        titulo:"<center><h5><span>Organiza</span> los enunciados para realizar la exposición y <span>selecciona</span> la alternativa correcta.</h5></center>",
         restaurar:"start_6()",
         dir:ruta,
         cod: "5-4-6",

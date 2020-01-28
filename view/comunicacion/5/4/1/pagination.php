@@ -24,7 +24,7 @@
         {
         next: "Page_2()", 
         procesar:"result_tipo_5_4_1()",
-        titulo:"<center><h5><span>Selecciona</span> la alternativa que completa adecuadamente el siguiente enunciado: “La infografía es…”.</h5></center>",
+        titulo:"<center><h5><span>Selecciona</span> la respuesta correcta según la infografía “Las regiones del ají” de la página 72 del Texto escolar.</h5></center>",
         restaurar:"start_1()",
         dir:ruta,
         cod: "5-4-1",
@@ -38,7 +38,7 @@
         {
         next: "Page_3()", 
         procesar:"result_tipo_5_4_2()",
-        titulo:"<center><h5><span>Selecciona</span> la alternativa que completa adecuadamente el siguiente enunciado: “La infografía es…”.</h5></center>",
+        titulo:"<center><h5><span>Relaciona</span> el tipo de ají con su ubicación según corresponda.</h5></center>",
         restaurar:"start_2()",
         dir:ruta,
         cod: "5-4-2",
@@ -52,7 +52,7 @@
         {
         next: "resultado()", 
         procesar:"result_tipo_5_4_3()",
-        titulo:"<center><h5><span>Selecciona</span> la alternativa que completa adecuadamente el siguiente enunciado: “La infografía es…”.</h5></center>",
+        titulo:"<center><h5><span>Ordena</span> las palabras en la tabla según corresponda.</h5></center>",
         restaurar:"start_3()",
         dir:ruta,
         cod: "5-4-3",

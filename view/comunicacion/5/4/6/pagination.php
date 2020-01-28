@@ -24,7 +24,7 @@
         {
         next: "Page_17()", 
         procesar:"result_tipo_5_4_16()",
-        titulo:"<center><h5><span>Selecciona</span> la alternativa que completa adecuadamente el siguiente enunciado: “La infografía es…”.</h5></center>",
+        titulo:"<center><h5><span>Selecciona</span> la respuesta correcta.</h5></center>",
         restaurar:"start_16()",
         dir:ruta,
         cod: "5-4-16",
@@ -38,7 +38,7 @@
         {
         next: "Page_18()", 
         procesar:"result_tipo_5_4_17()",
-        titulo:"<center><h5><span>Selecciona</span> la alternativa que completa adecuadamente el siguiente enunciado: “La infografía es…”.</h5></center>",
+        titulo:"<center><h5><span>Selecciona</span> la imagen que no aparece en la infografía de la página 83 de tu Texto escolar.</h5></center>",
         restaurar:"start_17()",
         dir:ruta,
         cod: "5-4-17",
@@ -52,7 +52,7 @@
         {
         next: "resultado()", 
         procesar:"result_tipo_5_4_18()",
-        titulo:"<center><h5><span>Selecciona</span> la alternativa que completa adecuadamente el siguiente enunciado: “La infografía es…”.</h5></center>",
+        titulo:"<center><h5><span>Selecciona</span> cuál es uno de los beneficios de trabajar con infografías.</h5></center>",
         restaurar:"start_18()",
         dir:ruta,
         cod: "5-4-18",

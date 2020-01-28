@@ -38,7 +38,7 @@
         {
         next: "Page_15()", 
         procesar:"result_tipo_5_4_14()",
-        titulo:"<center><h5><span>Selecciona</span> la alternativa que completa adecuadamente el siguiente enunciado: “La infografía es…”.</h5></center>",
+        titulo:"<center><h5><span>Relaciona</span> los elementos de la infografía con su respectiva definición.</h5></center>",
         restaurar:"start_14()",
         dir:ruta,
         cod: "5-4-14",
@@ -52,7 +52,7 @@
         {
         next: "resultado()", 
         procesar:"result_tipo_5_4_15()",
-        titulo:"<center><h5><span>Selecciona</span> la alternativa que completa adecuadamente el siguiente enunciado: “La infografía es…”.</h5></center>",
+        titulo:"<center><h5><span>Selecciona</span> la alternativa correcta.</h5></center>",
         restaurar:"start_15()",
         dir:ruta,
         cod: "5-4-15",

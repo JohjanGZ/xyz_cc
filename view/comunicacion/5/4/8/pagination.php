@@ -25,7 +25,7 @@ function start_22() {
     $("#ventana").load(ruta + '5-4-22/index.php', {
         next: "Page_23()",
         procesar: "result_tipo_5_4_22()",
-        titulo: "<center><h5><span>Selecciona</span> la alternativa que completa adecuadamente el siguiente enunciado: “La infografía es…”.</h5></center>",
+        titulo: "<center><h5><span>Selecciona</span> la alternativa que completa el siguiente enunciado: “El afiche es un texto…”.</h5></center>",
         restaurar: "start_22()",
         dir: ruta,
         cod: "5-4-22",
@@ -38,7 +38,7 @@ function start_23() {
     $("#ventana").load(ruta + '5-4-23/index.php', {
         next: "Page_24()",
         procesar: "result_tipo_5_4_23()",
-        titulo: "<center><h5><span>Selecciona</span> la alternativa que completa adecuadamente el siguiente enunciado: “La infografía es…”.</h5></center>",
+        titulo: "<center><h5><span>Selecciona</span> el personaje que no participará en la elaboración del afiche.</h5></center>",
         restaurar: "start_23()",
         dir: ruta,
         cod: "5-4-23",
@@ -51,7 +51,7 @@ function start_24() {
     $("#ventana").load(ruta + '5-4-24/index.php', {
         next: "resultado()",
         procesar: "result_tipo_5_4_24()",
-        titulo: "<center><h5><span>Selecciona</span> la alternativa que completa adecuadamente el siguiente enunciado: “La infografía es…”.</h5></center>",
+        titulo: "<center><h5><span>Selecciona</span> los materiales que corresponden para elaborar un afiche.</h5></center>",
         restaurar: "start_24()",
         dir: ruta,
         cod: "5-4-24",

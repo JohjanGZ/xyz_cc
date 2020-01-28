@@ -24,7 +24,7 @@
         {
         next: "Page_20()", 
         procesar:"result_tipo_5_4_19()",
-        titulo:"<center><h5><span>Selecciona</span> la alternativa que completa adecuadamente el siguiente enunciado: “La infografía es…”.</h5></center>",
+        titulo:"<center><h5><span>Relaciona</span> las figuras literarias con su definición.</h5></center>",
         restaurar:"start_19()",
         dir:ruta,
         cod: "5-4-19",
@@ -38,7 +38,7 @@
         {
         next: "Page_21()", 
         procesar:"result_tipo_5_4_20()",
-        titulo:"<center><h5><span>Selecciona</span> la alternativa que completa adecuadamente el siguiente enunciado: “La infografía es…”.</h5></center>",
+        titulo:"<center><h5><span>Selecciona</span> las figuras literarias del poema y colócalas donde corresponden.</h5></center>",
         restaurar:"start_20()",
         dir:ruta,
         cod: "5-4-20",
@@ -52,7 +52,7 @@
         {
         next: "resultado()", 
         procesar:"result_tipo_5_4_21()",
-        titulo:"<center><h5><span>Selecciona</span> la alternativa que completa adecuadamente el siguiente enunciado: “La infografía es…”.</h5></center>",
+        titulo:"<center><h5><span>Coloca</span> los siguientes enunciados en la tabla según corresponda.</h5></center>",
         restaurar:"start_21()",
         dir:ruta,
         cod: "5-4-21",

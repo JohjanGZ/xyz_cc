@@ -24,7 +24,7 @@
         {
         next: "Page_8()", 
         procesar:"result_tipo_5_4_7()",
-        titulo:"<center><h5><span>Selecciona</span> la alternativa que completa adecuadamente el siguiente enunciado: “La infografía es…”.</h5></center>",
+        titulo:"<center><h5><span>Coloca</span> los tipos de pronombre según la definición propuesta.</h5></center>",
         restaurar:"start_7()",
         dir:ruta,
         cod: "5-4-7",
@@ -38,7 +38,7 @@
         {
         next: "Page_9()", 
         procesar:"result_tipo_5_4_8()",
-        titulo:"<center><h5><span>Selecciona</span> la alternativa que completa adecuadamente el siguiente enunciado: “La infografía es…”.</h5></center>",
+        titulo:"<center><h5><span>Coloca</span> los tipos de pronombre al lado de los enunciados según corresponda.</h5></center>",
         restaurar:"start_8()",
         dir:ruta,
         cod: "5-4-8",
@@ -52,7 +52,7 @@
         {
         next: "resultado()", 
         procesar:"result_tipo_5_4_9()",
-        titulo:"<center><h5><span>Selecciona</span> la alternativa que completa adecuadamente el siguiente enunciado: “La infografía es…”.</h5></center>",
+        titulo:"<center><h5><span>Lee</span> el texto, <span>identifica</span> los tipos de pronombre y <span>completa</span> la tabla según corresponda</h5></center>",
         restaurar:"start_9()",
         dir:ruta,
         cod: "5-4-9",
