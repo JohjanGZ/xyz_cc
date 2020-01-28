@@ -1,17 +1,17 @@
 <script type="text/javascript">
    
-   function Page_17(){
-        start_17();
+   function Page_13(){
+        start_13();
         inicio();
         count = 3;
     }
-   function  Page_18(){
-        start_18();
+   function  Page_14(){
+        start_14();
         inicio();
          count = 3;
     }
-    function Page_19(){
-        start_19();
+    function Page_15(){
+        start_15();
         inicio();
         count = 3;
     }
@@ -22,43 +22,43 @@
     ////////////// 2do 
             // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
 
-    function start_17(){
-        $("#ventana").load(ruta+'4-1-17/index.php', 
+    function start_13(){
+        $("#ventana").load(ruta+'5-1-13/index.php', 
         {
-        next: "Page_18()", 
-        procesar:"result_tipo_4_1_17()",
-        titulo:"<center><h5><span>Lee</span> los siguientes textos y <span>relaciona</span> cada uno con su tema.</h5></center>",
-        restaurar:"start_17()",
+        next: "Page_14()", 
+        procesar:"result_tipo_5_1_13()",
+        titulo:"<center><h5><span>Relaciona</span> los tipos de palabras con sus definiciones según corresponda.</h5></center>",
+        restaurar:"start_13()",
         dir:ruta,
-        cod: "4-1-17",
+        cod: "5-1-13",
         nota:cal
         }
         );
         return false;  
     };
-    function start_18(){
-        $("#ventana").load(ruta+'4-1-18/index.php', 
+    function start_14(){
+        $("#ventana").load(ruta+'5-1-14/index.php', 
         {
-        next: "Page_19()", 
-        procesar:"result_tipo_4_1_18()",
-        titulo:"<center><h5><span>Lee</span> el texto y <span>selecciona</span> el género literario al que pertenece.</h5></center>",
-        restaurar:"start_18()",
+        next: "Page_15()", 
+        procesar:"result_tipo_5_1_14()",
+        titulo:"<center><h5><span>Ordena</span> las palabras en la tabla según corresponda.</h5></center>",
+        restaurar:"start_14()",
         dir:ruta,
-        cod: "4-1-18",
+        cod: "5-1-14",
         nota:cal
         }
         );
         return false;  
     };
-    function start_19(){
-        $("#ventana").load(ruta+'4-1-19/index.php', 
+    function start_15(){
+        $("#ventana").load(ruta+'5-1-15/index.php', 
         {
         next: "resultado()", 
-        procesar:"result_tipo_4_1_19()",
-        titulo:"<center><h5><span>Lee</span> el texto y <span>selecciona</span> el género literario al que pertenece.</h5></center>",
-        restaurar:"start_19()",
+        procesar:"result_tipo_5_1_15()",
+        titulo:"<center><h5><span>Completa</span> el enunciado según corresponda.</h5></center>",
+        restaurar:"start_15()",
         dir:ruta,
-        cod: "4-1-19",
+        cod: "5-1-15",
         nota:cal
         }
         );
