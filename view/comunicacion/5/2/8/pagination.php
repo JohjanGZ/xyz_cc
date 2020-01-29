@@ -26,7 +26,7 @@ function start_22() {
     $("#ventana").load(ruta + '5-2-22/index.php', {
         next: "Page_23()",
         procesar: "result_tipo_5_2_22()",
-        titulo: "<center><h5><span>Relaciona</span> los elementos con sus ejemplos según corresponda.</h5></center>",
+        titulo: "<center><h5><span>Selecciona</span> quiénes son los responsables de elaborar un folleto.</h5></center>",
         restaurar: "start_22()",
         dir: ruta,
         cod: "5-2-22",
@@ -39,7 +39,7 @@ function start_23() {
     $("#ventana").load(ruta + '5-2-23/index.php', {
         next: "Page_24()",
         procesar: "result_tipo_5_2_23()",
-        titulo: "<center><h5><span>Ordena</span> las palabras en la tabla según corresponda.</h5></center>",
+        titulo: "<center><h5><span>Selecciona</span> qué materiales son los que se emplearán para elaborar un folleto.</h5></center>",
         restaurar: "start_23()",
         dir: ruta,
         cod: "5-2-23",
