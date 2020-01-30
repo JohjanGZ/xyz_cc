@@ -22,39 +22,39 @@ var ruta = "../../../../exercises/comunicacion/";
 ////////////// 2do 
 // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
 function start_16() {
-    $("#ventana").load(ruta + '5-6-16/index.php', {
+    $("#ventana").load(ruta + '5-7-16/index.php', {
         next: "Page_17()",
-        procesar: "result_tipo_5_6_16()",
-        titulo: "<center><h5><span>Selecciona</span> la característica principal del texto expositivo.</center>",
+        procesar: "result_tipo_5_7_16()",
+        titulo: "<center><h5><span>Coloca</span> los elementos de la noticia según corresponda.</h5></center>",
         restaurar: "start_16()",
         dir: ruta,
-        cod: "5-6-16",
+        cod: "5-7-16",
         nota: cal
     });
     return false;
 };
 
 function start_17() {
-    $("#ventana").load(ruta + '5-6-17/index.php', {
+    $("#ventana").load(ruta + '5-7-17/index.php', {
         next: "Page_18()",
-        procesar: "result_tipo_5_6_17()",
-        titulo: "<center><h5><span>Selecciona</span> la imagen que representa el texto expositivo de tipo divulgativo.</h5></center>",
+        procesar: "result_tipo_5_7_17()",
+        titulo: "<center><h5><span>Selecciona</span> la alternativa que completa de manera adecuada el siguiente enunciado: “La noticia es…”.</h5></center>",
         restaurar: "start_17()",
         dir: ruta,
-        cod: "5-6-17",
+        cod: "5-7-17",
         nota: cal
     });
     return false;
 };
 
 function start_18() {
-    $("#ventana").load(ruta + '5-6-18/index.php', {
+    $("#ventana").load(ruta + '5-7-18/index.php', {
         next: "resultado()",
-        procesar: "result_tipo_5_6_18()",
-        titulo: "<center><h5><span>Selecciona</span> los elementos y <span>completa</span> la tabla según corresponda.</h5></center>",
+        procesar: "result_tipo_5_7_18()",
+        titulo: "<center><h5><span>Relaciona</span> las partes de la noticia con su definición correspondiente.</h5></center>",
         restaurar: "start_18()",
         dir: ruta,
-        cod: "5-6-18",
+        cod: "5-7-18",
         nota: cal
     });
     return false;

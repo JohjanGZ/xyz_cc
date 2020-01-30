@@ -21,39 +21,39 @@ var cal = 20 / 20;
 var ruta = "../../../../exercises/comunicacion/";
 ////////////// 2do// ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
 function start_19() {
-    $("#ventana").load(ruta + '5-6-19/index.php', {
+    $("#ventana").load(ruta + '5-7-19/index.php', {
         next: "Page_20()",
-        procesar: "result_tipo_5_6_19()",
-        titulo: "<center><h5><span>Selecciona</span> el término excluido.</h5></center>",
+        procesar: "result_tipo_5_7_19()",
+        titulo: "<center><h5><span>Selecciona</span> la afirmación correcta acerca de la correcta escritura de los titulares en las noticias.</h5></center>",
         restaurar: "start_19()",
         dir: ruta,
-        cod: "5-6-19",
+        cod: "5-7-19",
         nota: cal
     });
     return false;
 };
 
 function start_20() {
-    $("#ventana").load(ruta + '5-6-20/index.php', {
+    $("#ventana").load(ruta + '5-7-20/index.php', {
         next: "Page_21()",
-        procesar: "result_tipo_5_6_20()",
-        titulo: "<center><h5><span>Relaciona</span> las especies del género dramático con sus respectivas definiciones.</h5></center>",
+        procesar: "result_tipo_5_7_20()",
+        titulo: "<center><h5><span>Selecciona</span> la respuesta correcta.</h5></center>",
         restaurar: "start_20()",
         dir: ruta,
-        cod: "5-6-20",
+        cod: "5-7-20",
         nota: cal
     });
     return false;
 };
 
 function start_21() {
-    $("#ventana").load(ruta + '5-6-21/index.php', {
+    $("#ventana").load(ruta + '5-7-21/index.php', {
         next: "resultado()",
-        procesar: "result_tipo_5_6_21()",
-        titulo: "<center><h5><span>Resuelve</span> la siguiente sopa de letras acerca del género dramático.</h5></center>",
+        procesar: "result_tipo_5_7_21()",
+        titulo: "<center><h5><span>Selecciona</span> la alternativa que no representa una característica de un buen titular.</h5></center>",
         restaurar: "start_21()",
         dir: ruta,
-        cod: "5-6-21",
+        cod: "5-7-21",
         nota: cal
     });
     return false;
