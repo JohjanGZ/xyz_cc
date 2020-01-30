@@ -1,51 +1,67 @@
 <script type="text/javascript">
-   function Page_lectura_4_8_5_1(){
-        start_lectura_4_8_5_1();
-        inicio();
-        count = 0;
-    }
-   function  Page_11(){
-        start_11();
-        inicio();
-         count = 3;
-    }
+function Page_13() {
+    start_13();
+    inicio();
+    count = 3;
+}
 
-    var cant=1;
-    var cal= 20/20;
-    var ruta="../../../../exercises/comunicacion/";
-    ////////////// 2do 
-            // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
-    function start_lectura_4_8_5_1(){
-        $("#ventana").load(ruta+'lectura4-8-5-1/index.php', 
-        {
-        next: "Page_11()", 
-        procesar:"lectura1-1-1-1()",
-        titulo:"<center><h5><span>Lee</span> atentamente y <span>contesta</span> las preguntas.</h5></center>",
-        restaurar:"start_lectura_4_8_5_1()",
-        dir:ruta,
-        cod: "lectura4-8-5-1",
-        nota:cal
-        }
-        );
-        return false;  
-    };
-    
-    function start_11(){
-        $("#ventana").load(ruta+'4-8-11/index.php', 
-        { 
-        next: "resultado()", 
-        procesar:"result_tipo_4_8_11()",
-        titulo:"<center><h5><span>Arrastra</span> un sujeto para cada predicado.</h5></center>",
-        restaurar:"start_11()",
-        dir:ruta,
-        cod: "4-8-11",
-        nota:cal
-        }
-        );
-        return false;
-    };
-    function resultado(){
-        $("#ventana").load('../../../../exercises/resultado/resultado.php');
-        return false;
-    };
+function Page_14() {
+    start_14();
+    inicio();
+    count = 3;
+}
+
+function Page_15() {
+    start_15();
+    inicio();
+    count = 3;
+}
+var cant = 3;
+var cal = 20 / 20;
+var ruta = "../../../../exercises/comunicacion/";
+////////////// 2do 
+// ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
+function start_13() {
+    $("#ventana").load(ruta + '5-8-13/index.php', {
+        next: "Page_14()",
+        procesar: "result_tipo_5_8_13()",
+        titulo: "<center><h5><span>Lee</span> “El peligro de manipular juegos pirotécnicos” ubicado en la página 145 del Texto escolar y selecciona la respuesta correcta.</h5></center>",
+        restaurar: "start_13()",
+        dir: ruta,
+        cod: "5-8-13",
+        nota: cal
+    });
+    return false;
+};
+
+function start_14() {
+    $("#ventana").load(ruta + '5-8-14/index.php', {
+        next: "Page_15()",
+        procesar: "result_tipo_5_8_14()",
+        titulo: "<center><h5>Selecciona la alternativa que completa adecuadamente el siguiente enunciado: “El texto argumentativo es…”.</h5></center>",
+        restaurar: "start_14()",
+        dir: ruta,
+        cod: "5-8-14",
+        nota: cal
+    });
+    return false;
+};
+
+function start_15() {
+    $("#ventana").load(ruta + '5-8-15/index.php', {
+        next: "resultado()",
+        procesar: "result_tipo_5_8_15()",
+        titulo: "<center><h5>Selecciona la alternativa que no es un propósito del autor.</h5></center>",
+        restaurar: "start_15()",
+        dir: ruta,
+        cod: "5-8-15",
+        nota: cal
+    });
+    return false;
+};
+
+function resultado() {
+    $("#ventana").load('../../../../exercises/resultado/resultado.php');
+    return false;
+};
 </script>

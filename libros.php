@@ -221,7 +221,7 @@ a:hover, a:active, a:focus {
                 $titulo=substr($title, 0, -7);
             }
             elseif($nivel=='s'){
-                $titulo=substr($title, 0, -6);
+                $titulo=substr($title, 0, -2);
             }
 
          ?>
