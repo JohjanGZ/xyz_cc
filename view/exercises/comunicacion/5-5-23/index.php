@@ -14,23 +14,23 @@
         <div class="content">
             <div class="image">
                 <div class="poema">
-                <p class="pieza" alt="oo">Como sirenas de aguas dulces</p>
-                <p class="pieza" alt="oo">Los buses cantaban con voces extrañas</p>
-                <p class="pieza" alt="oo">Teteteeee/Titiiiiiit</p>
-                <p class="pieza" alt="oo">Era de los buses el diario cancionero</p>
-                <p class="pieza" alt="oo">Pero era la sinfonía de la ciudad</p>
-                <p class="pieza" alt="oo">La ciudad sequísima como el desierto</p>
-                <p class="pieza" alt="oo">Que albergaba algunos árboles</p>
-                <p class="pieza" alt="oo">Y algunas flores como sonrisas.</p>
+                    <p class="pieza" alt="oo">Como sirenas de aguas dulces</p>
+                    <p class="pieza" alt="oo">Los buses cantaban con voces extrañas</p>
+                    <p class="pieza" alt="1">Teteteeee/Titiiiiiit</p>
+                    <p class="pieza" alt="2">Era de los buses el diario cancionero</p>
+                    <p class="pieza" alt="oo">Pero era la sinfonía de la ciudad</p>
+                    <p class="pieza" alt="3">La ciudad sequísima como el desierto</p>
+                    <p class="pieza" alt="oo">Que albergaba algunos árboles</p>
+                    <p class="pieza" alt="oo">Y algunas flores como sonrisas.</p>
                 </div>
             </div>
             <div class="problem">
                 <h5>Onomatopeya:</h5>
-                <div class="contenedor"></div>
+                <div class="contenedor" alt="1"></div>
                 <h5>Hipérbaton:</h5>
-                <div class="contenedor"></div>
+                <div class="contenedor" alt="2"></div>
                 <h5>Hipérbole:</h5>
-                <div class="contenedor"></div>
+                <div class="contenedor" alt="3"></div>
             </div>
         </div>
     </div>
