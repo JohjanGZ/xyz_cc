@@ -1,0 +1,113 @@
+h4 {
+    text-align: center;
+}
+
+h5 {
+    width: 80%;
+}
+
+.container {
+    display: flex;
+    height: 70%;
+    align-items: center;
+}
+
+.container .row {
+    width: 100%;
+}
+
+.contenedor-ejercicio {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.contenedor-balanzas {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contenedor-palabras {
+    width: fit-content;
+    margin: auto;
+    padding: 25px 0;
+    display: flex;
+}
+
+.brb {
+    border-bottom: 2px solid cornflowerblue;
+}
+
+.balanza {
+    text-align: center;
+    width: fit-content;
+}
+
+.balanza-img {
+    width: 400px;
+    height: auto;
+    margin: auto;
+}
+
+span.palabra {
+    display: inline-flex;
+    width: 85px;
+    height: 100;
+    padding: 5px 8px;
+    border: 3px solid silver;
+    border-radius: 12px;
+    margin: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.unox,
+.dox {
+    position: relative;
+}
+
+.contenedor-peso {
+    position: absolute;
+    top: -61px;
+    left: -41px;
+    width: 185px;
+    height: 100px;
+    border: 2px solid silver;
+    border-radius: 12px;
+}
+
+.dox .contenedor-peso {
+    width: 230px;
+    top: -20px;
+    left: initial;
+    right: 21px!important;
+}
+
+span.palabra img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+span.palabra:hover {
+    border-color: #37D3F7;
+}
+
+@media(max-width: 1550px) {
+    .contenedor-palabras {
+        padding-top: 25px;
+    }
+}
+
+@media(max-height: 640px) {
+    .contenedor-ejercicio {
+        padding-top: 0px;
+    }
+    .contenedor-x {
+        height: 240px;
+    }
+    .contenedor-palabras {
+        padding-top: 15px;
+        padding-bottom: 0;
+        text-align: center;
+    }
+}

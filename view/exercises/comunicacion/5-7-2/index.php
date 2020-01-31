@@ -21,8 +21,8 @@
                 <canvas id="micanvas" width="95" height="310"></canvas>
             </div>
             <div class="grid-container">
-                <div class="grid-item-b" alt="3"><img src="<?=$dir?>/img/4.png" class="img"></div>
-                <div class="grid-item-b" alt="2"><img src="<?=$dir?>/img/5.png" class="img"></div>
+                <div class="grid-item-b" alt="2"><img src="<?=$dir?>/img/4.png" class="img"></div>
+                <div class="grid-item-b" alt="3"><img src="<?=$dir?>/img/5.png" class="img"></div>
                 <div class="grid-item-b" alt="1"><img src="<?=$dir?>/img/6.png" class="img"></div>
             </div>
         </div>
@@ -50,7 +50,7 @@ $("#next").attr("onclick", "<?=$next?>");
 <script type="text/javascript" src="<?= $dir ?>/js/validate.js"></script>
 <script type="text/javascript">
 // Validar
-function result_tipo_5_6_20() {
+function result_tipo_5_7_2() {
     var min = $('#Minutos').text();
     var seg = $('#Segundos').text();
     var milseg = $('#Centesimas').text();

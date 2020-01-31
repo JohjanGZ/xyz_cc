@@ -1,0 +1,92 @@
+h4 {
+    text-align: center;
+}
+
+h5 {
+    width: 80%;
+}
+
+.container {
+    display: flex;
+    height: 70%;
+    align-items: center;
+}
+
+.container .row {
+    width: 100%;
+}
+
+.contenedor-ejercicios {
+    width: 90%;
+    min-width: 1000px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+}
+
+.contenedor-ejercicios img {
+    width: 350px;
+}
+
+.contenedor p {
+    font-size: 1.6rem;
+    margin-bottom: .7rem;
+}
+
+p span {
+    color: cornflowerblue;
+}
+
+span.palabra {
+    display: inline-block;
+    padding: 4px 8px;
+    border: 3px solid silver;
+    border-radius: 12px;
+    margin: 0 3px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    background-color: white;
+}
+
+span.palabra:hover {
+    border-color: #37D3F7;
+}
+
+span.select {
+    display: inline-flex;
+    width: fit-content;
+}
+
+span.select select {
+    color: rgb(47, 196, 230);
+    font-size: 1.4rem;
+}
+
+@media(max-height: 640px) {
+    .contenedor-ejercicios {
+        width: 80%;
+    }
+    table td {
+        padding: 1px 5px;
+    }
+    table td span {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    h5 {
+        font-size: 150%;
+    }
+    select {
+        height: 2.5rem;
+    }
+    .contenedor-ejercicios img {
+        max-width: 350px;
+        max-height: 60vh;
+    }
+    .contenedor p {
+        font-size: 1.5rem;
+        margin: .5rem 0;
+    }
+}

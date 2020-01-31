@@ -22,39 +22,39 @@ var ruta = "../../../../exercises/comunicacion/";
 ////////////// 2do 
 // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
 function start_22() {
-    $("#ventana").load(ruta + '5-6-22/index.php', {
+    $("#ventana").load(ruta + '5-7-22/index.php', {
         next: "Page_23()",
-        procesar: "result_tipo_5_6_22()",
-        titulo: "<center><h5><span>Selecciona</span> la definición correcta de un tríptico.</h5></center>",
+        procesar: "result_tipo_5_7_22()",
+        titulo: "<center><h5><span>Selecciona</span> la respuesta correcta.</h5></center>",
         restaurar: "start_22()",
         dir: ruta,
-        cod: "5-6-22",
+        cod: "5-7-22",
         nota: cal
     });
     return false;
 };
 
 function start_23() {
-    $("#ventana").load(ruta + '5-6-23/index.php', {
+    $("#ventana").load(ruta + '5-7-23/index.php', {
         next: "Page_24()",
-        procesar: "result_tipo_5_6_23()",
-        titulo: "<center><h5><span>Selecciona</span> la imagen que representa un tríptico.</h5></center>",
+        procesar: "result_tipo_5_7_23()",
+        titulo: "<center><h5><span>Relaciona</span> los elementos del género dramático con sus definiciones correspondientes.</h5></center>",
         restaurar: "start_23()",
         dir: ruta,
-        cod: "5-6-23",
+        cod: "5-7-23",
         nota: cal
     });
     return false;
 };
 
 function start_24() {
-    $("#ventana").load(ruta + '5-6-24/index.php', {
+    $("#ventana").load(ruta + '5-7-24/index.php', {
         next: "resultado()",
-        procesar: "result_tipo_5_6_24()",
-        titulo: "<center><h5><span>Selecciona</span> el propósito adecuado de un tríptico.</h5></center>",
+        procesar: "result_tipo_5_7_24()",
+        titulo: "<center><h5><span>Selecciona</span> la alternativa que indica el significado de las partes surbayadas.</h5></center>",
         restaurar: "start_24()",
         dir: ruta,
-        cod: "5-6-24",
+        cod: "5-7-24",
         nota: cal
     });
     return false;

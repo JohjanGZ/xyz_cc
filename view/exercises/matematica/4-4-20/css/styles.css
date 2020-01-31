@@ -1,0 +1,119 @@
+h4 {
+    text-align: center;
+}
+
+h5 {
+    width: 85%;
+}
+
+.container {
+    display: flex;
+    height: 70%;
+    align-items: center;
+}
+
+.container .row {
+    width: 100%;
+}
+
+.contenedor-ejercicios {
+    width: 70%;
+    min-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contenedor {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.uno {
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.uno p {
+    position: absolute;
+}
+
+.uno img {
+    max-width: 98%;
+    max-height: 98%;
+}
+
+p.izquierda {
+    top: 40px;
+    left: -100px;
+}
+
+p.derecha {
+    top: 40px;
+    right: -100px;
+}
+
+p.centro {
+    bottom: -35px;
+}
+
+.contenedor p {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 5px;
+    margin: 0;
+}
+
+span.select {
+    display: inline-flex;
+    width: fit-content;
+    margin-left: 4px;
+}
+
+span.select select {
+    color: rgb(47, 196, 230);
+    font-size: 1.6rem;
+}
+
+#numeros {
+    align-self: center;
+}
+
+@media(max-height: 640px) {
+    .contenedor-ejercicios {
+        width: fit-content;
+    }
+    .contenedor p {
+        font-size: 1.3rem;
+        padding: 2px;
+    }
+    .uno {
+        height: 200px;
+        margin-bottom: 25px;
+    }
+    .uno img {
+        max-height: 80%;
+    }
+    p.centro {
+        bottom: -25px;
+    }
+    p.izquierda {
+        left: -70px;
+    }
+    p.derecha {
+        right: -70px;
+    }
+}
