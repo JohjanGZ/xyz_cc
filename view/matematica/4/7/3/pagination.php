@@ -1,65 +1,25 @@
 <script type="text/javascript">
-
-
-function Page_17() {
-    start_17();
+function Page_5() {
+    start_5();
     inicio();
     count = 3;
 }
 
-function Page_18() {
-    start_18();
-    inicio();
-    count = 3;
-}
-function Page_19() {
-    start_19();
-    inicio();
-    count = 3;
-}
-
-
-var cant = 18;
+var cant = 1;
 var cal = cant / cant;
 console.log(cant);
 var ruta = "../../../../exercises/matematica/";
 ////////////// 2do 
 // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
 
-function start_17() {
-    $("#ventana").load(ruta + '2-7-17/index.php', {
-        next: "Page_18()",
-        procesar: "result_tipo_2_7_17()",
-        titulo: "<center><h5><span>Observa</span> el gráfico de barras y <span>responde</span> las preguntas.</h5></center>",
-        restaurar: "start_17()",
-        dir: ruta,
-        cod: "2-7-17",
-        nota: cal
-    });
-    return false;
-};
-
-function start_18() {
-    $("#ventana").load(ruta + '2-7-18/index.php', {
-        next: "Page_19()",
-        procesar: "result_tipo_2_7_18()",
-        titulo: "<center><h5><span>Observa</span> el gráfico de barras y <span>responde</span> las preguntas.</h5></center>",
-        restaurar: "start_18()",
-        dir: ruta,
-        cod: "2-7-18",
-        nota: cal
-    });
-    return false;
-};
-
-function start_19() {
-    $("#ventana").load(ruta + '2-7-19/index.php', {
+function start_5() {
+    $("#ventana").load(ruta + '4-7-5/index.php', {
         next: "resultado()",
-        procesar: "result_tipo_2_7_19()",
-        titulo: "<center><h5><span>Observa</span> el gráfico de barras y <span>responde</span> las preguntas.</h5></center>",
-        restaurar: "start_19()",
+        procesar: "result_tipo_4_7_5()",
+        titulo: "<center><h5><span>Resuelve</span> las siguientes ecuaciones y luego <span>selecciona</span> de la lista el conjunto solución de “x” según corresponda.</h5></center>",
+        restaurar: "start_5()",
         dir: ruta,
-        cod: "2-7-19",
+        cod: "4-7-5",
         nota: cal
     });
     return false;
