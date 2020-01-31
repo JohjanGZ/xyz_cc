@@ -1,0 +1,134 @@
+.container-two {
+    margin: 0 auto;
+    max-width: 1300px;
+    width: 70%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h5 {
+    max-width: 85%;
+    margin: auto;
+}
+
+::-webkit-scrollbar {
+    -webkit-border-radius: 5px;
+    background-color: transparent;
+    border-radius: 5px;
+    height: 10px;
+    -webkit-transition: background-color 0.2s linear;
+    -o-transition: background-color 0.2s linear;
+    transition: background-color 0.2s linear;
+    width: 0px;
+}
+
+
+/* Select */
+
+.select-wrapper input.select-dropdown {
+    border: 1px solid silver;
+    width: 100%;
+    margin: 0;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.select-wrapper input.select-dropdown:focus {
+    border-bottom: 1px solid silver;
+}
+
+.select-wrapper ul {
+    height: auto;
+}
+
+.select-wrapper {
+    position: relative;
+    margin-left: 0.5vh;
+    margin-right: 0.5vh;
+}
+
+.dropdown-content {
+    background-color: rgb(236, 236, 236);
+    margin: 0;
+    display: none;
+    min-width: 20px;
+    overflow-y: auto;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    width: 10px;
+    border-radius: 12px;
+}
+
+
+/* Grid */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+}
+
+.grid-item {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    padding: 6vh;
+    align-self: flex-start;
+}
+
+.item {
+    width: 30px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bl {
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+    width: 100%;
+}
+
+.bb {
+    border-bottom: 1px solid #000;
+    width: 100%;
+    margin-bottom: 1vh;
+}
+
+.img {
+    height: 60px;
+    width: auto;
+    margin-left: 1vh;
+}
+
+.principal {
+    height: 240px;
+    width: auto;
+    background: #fff;
+}
+
+.total {
+    width: 30px;
+    height: 40px;
+    border: 1px solid silver;
+    margin: 0.2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-height: 640px) {
+    .grid-item {
+        padding: 2px 6vh;
+    }
+    h5 {
+        font-size: 120%;
+    }
+}

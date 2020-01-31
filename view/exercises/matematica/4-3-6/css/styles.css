@@ -1,0 +1,62 @@
+h4 {
+    text-align: center;
+}
+
+h5 {
+    width: 85%;
+}
+
+.container {
+    display: flex;
+    height: 70%;
+    align-items: center;
+}
+
+.container .row {
+    width: 100%;
+}
+
+.contenedor-ejercicios {
+    min-width: 1000px;
+    margin: auto;
+}
+
+.contenedor {
+    width: fit-content;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 15px;
+}
+
+.contenedor p {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.1rem;
+    font-weight: 600;
+    padding: 30px;
+    margin: 0;
+}
+
+span.select {
+    display: inline-flex;
+    width: fit-content;
+}
+
+span.select select {
+    color: rgb(47, 196, 230);
+    font-size: 2.1rem;
+    height: 3.7rem;
+}
+
+#numeros {
+    align-self: center;
+}
+
+@media(max-height: 640px) {
+    .contenedor-ejercicios {
+        width: fit-content;
+    }
+}
