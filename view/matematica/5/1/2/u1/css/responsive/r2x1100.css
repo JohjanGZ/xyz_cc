@@ -1,0 +1,89 @@
+
+@media (max-width: 1100px) {
+
+h4 {
+    margin: 8% 15%;
+    font-size: 1.68rem;
+    /* margin-top: 63px; */
+    /* margin-bottom: -41px; */
+    position: fixed;
+}
+
+#uno, #dos, #tres {
+    box-shadow: inset 0px 1px 3px 0px #7d7c7c;
+    /* border: #25252591 solid 2px; */
+    width: 310px;
+    /* min-width: 346px; */
+}
+
+#contenedorPiezas {
+    background: #5561ff00;
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-left: 29px;
+    margin: 0 20%;
+    /* box-shadow: 0px 0px 10px 2px #dadada; */
+    margin-top: auto;
+}
+.imgvf {
+    background-image: url(../../img/2-2/a2.gif);
+    background-size: 450px 240px;
+    width: 450px;
+    height: 240px;
+    margin: 11% auto 0;
+    background-repeat: no-repeat;
+}
+
+.logoUnidad {
+    width: 7%;
+    left: 15px;
+    top: 26px;
+    position: fixed;
+}
+
+
+.botones {
+    padding: 0px;
+    position: fixed;
+    top: 91%;
+    left: 4%;
+    margin: 0 auto;
+    width: 90%;
+}
+.btnEnviar {
+    width: 100px;
+}
+
+.btnCorregir {
+    width: 90px;
+    position: relative;
+}
+
+.btnSiguiente {
+    width: 90px;
+    position: relative;
+}
+
+#f, #v {
+    box-shadow: inset 0px 1px 3px 0px #7d7c7c;
+
+    width: 100%;
+
+    min-width: 100%;
+}
+
+.recibidores {
+    position: relative;
+    margin: 0 auto;
+    left: 195px;
+    margin: 0 9% 0;
+    width: 70%;
+}
+.container, .content-wrapper {
+    position: fixed;
+    margin: 0% auto 0;
+    width: 100%;
+    max-width: 100%;
+}
+}

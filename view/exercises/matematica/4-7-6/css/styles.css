@@ -1,0 +1,61 @@
+h5 {
+    width: 80%;
+}
+
+.contenedor-two {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 70%;
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.pieza img {
+    width: 120px;
+}
+
+.cajas {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.pieza {
+    margin: .5vh;
+    border: 1px solid orange !important;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    font-size: 1.4em;
+}
+
+.contenedor {
+    background: rgb(236, 225, 236);
+    border: 2px solid purple;
+    color: purple;
+    width: 330px;
+    height: 270px;
+    border-radius: 12px;
+    margin: 1vh;
+    -webkit-box-shadow: inset 0px 0px 13px -1px rgba(50, 50, 50, 1);
+    -moz-box-shadow: inset 0px 0px 13px -1px rgba(50, 50, 50, 1);
+    box-shadow: inset 0px 0px 13px -1px rgba(50, 50, 50, 1);
+    text-align: center;
+    font-size: 1.4em;
+    padding: 10px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

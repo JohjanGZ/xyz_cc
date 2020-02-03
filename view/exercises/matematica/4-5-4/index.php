@@ -19,13 +19,16 @@
                 <img src="<?= $dir ?>/img/1.png" alt="">
 
                 <table>
+                    
 
                     <tr>
-                        <td style="padding: 5px 0;">
+                        <td style="padding: 5px 0;background-color: cornflowerblue;color: white;">
                             Número de Kg
                         </td>
                         <td>
-                            1
+                            <span>
+                                1
+                            </span>
                         </td>
                         <td>
                             2
@@ -44,7 +47,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td style="padding: 5px 25px;">
+                        <td style="padding: 5px 25px;background-color: cornflowerblue;color: white;">
                             Precio ( S/ )
                         </td>
                         <td>

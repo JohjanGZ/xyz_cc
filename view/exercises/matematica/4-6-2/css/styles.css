@@ -1,0 +1,85 @@
+.container-two {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 70%;
+  height: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
+}
+
+h5 {
+  width: 80%;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+}
+
+.secuencia {
+  position: relative;
+  width: 600px;
+  height: 200px;
+  margin: auto;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.pieza {
+  width: 60px;
+  height: 60px;
+  border: 1px solid silver;
+  border-radius: 50%;
+  font-size: 2em;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1vh;
+}
+
+.p1 {
+  width: 60px;
+  height: 60px;
+  /* border: 1px solid silver; */
+  border-radius: 50%;
+  position: absolute;
+  top: 19px;
+  right: 35px;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.op {
+  position: absolute;
+  bottom: 47px;
+  font-size: 1.8em;
+  color: darkseagreen;
+}
+
+.op1 {
+  left: 65px;
+}
+.op2 {
+  left: 165px;
+}
+.op3 {
+  left: 265px;
+}
+.op4 {
+  left: 365px;
+}
+.op5 {
+  left: 465px;
+}

@@ -1,0 +1,29 @@
+   
+    @media (max-width: 2750px) {
+#contenedorPiezas {
+    background: #5561ff00;
+    /* width: 652px; */
+    height: 242px;
+    float: left;
+    margin-left: 40px;
+    /* box-shadow: 0px 0px 10px 2px #dadada; */
+    margin-top: 110px;
+      margin: 9% 24% 0%;
+}
+h4 {
+    margin-top: -22px;
+    margin-bottom: -41px;
+    position: fixed;
+        margin: 4% 26% 0%;
+}
+.recibidor {
+    width: 55%;
+}
+
+.botones {
+    padding: 50px;
+    position: fixed;
+    top: 685px;
+    margin: 0% 34% 0%;
+}
+}

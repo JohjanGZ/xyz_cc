@@ -104,7 +104,7 @@ span.palabra:hover {
 
 td span.select {
     display: inline-flex;
-    width: 95px;
+    width: 75px;
 }
 
 td span.select select {

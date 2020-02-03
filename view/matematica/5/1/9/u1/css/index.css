@@ -1,0 +1,187 @@
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("font/Montserrat-Regular.otf");
+}
+
+body{
+
+  font-family: Montserrat-Regular;
+}
+
+ 
+ ul li {
+    list-style: none;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    width: 160px;
+    height: auto;
+    overflow: visible;
+    margin: 0 28px 20px;
+    padding: 4px 8px;
+    border: 0;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+/*-------------------------------------------------------Portadas----------------------------------------------------------------- */
+
+.portada1{
+    background-image: url(../img/portada1.png);
+    background-size: 160px 220px;
+    height: 220px;
+    width: 160px;
+    z-index: 50;
+    color:transparent;
+}
+
+.portada1:hover {
+background-image:
+linear-gradient( rgba(255, 140, 0, 0.75), rgba(255, 140, 0, 0.75)),
+url(../img/portada1.png);
+ background-size: 160px 220px;
+    height: 220px;
+    width: 160px;
+    cursor: pointer;
+    z-index: 50;
+    color:white;
+}
+
+.portada2 {
+    background-image: url(../img/portada2.png);
+    background-size: 160px 220px;
+    height: 220px;
+    width: 160px;
+    color:transparent;
+}
+
+.portada2:hover {
+background-image:
+linear-gradient(
+      rgba(255, 0, 0, 0.65), 
+      rgba(255, 0, 0, 0.65)
+
+    ),
+url(../img/portada2.png);
+ background-size: 160px 220px;
+    height: 220px;
+    width: 160px;
+    cursor: pointer;
+     color:white;
+}
+
+.portada3{
+    background-image: url(../img/portada3.png);
+    background-size: 160px 220px;
+    height: 220px;
+    width: 160px;
+    color:transparent;
+}
+
+.portada3:hover {
+background-image:
+linear-gradient(
+       rgba(4, 216, 205, 0.7),        
+      rgba(4, 216, 205, 0.7) 
+
+    ),
+url(../img/portada3.png);
+ background-size: 160px 220px;
+    height: 220px;
+    width: 160px;
+    cursor: pointer;
+     color:white;
+}
+
+.portada4{
+    background-image: url(../img/portada4.png);
+    background-size: 160px 220px;
+    height: 220px;
+    width: 160px;
+    color:transparent;
+}
+
+.portada4:hover {
+background-image:
+linear-gradient(
+      rgba(107, 7, 140, 0.82),        
+      rgba(107, 7, 140, 0.82)
+
+    ),
+url(../img/portada4.png);
+ background-size: 160px 220px;
+    height: 220px;
+    width: 160px;
+    cursor: pointer;
+     color:white;
+}
+
+.portada5{
+    background-image: url(../img/portada5.png);
+    background-size: 160px 220px;
+    height: 220px;
+    width: 160px;
+    color:transparent;
+}
+
+.portada5:hover {
+background-image:
+linear-gradient(
+      rgba(7, 189, 3, 0.68), 
+      rgba(7, 189, 3, 0.68)
+
+    ),
+url(../img/portada5.png);
+ background-size: 160px 220px;
+    height: 220px;
+    width: 160px;
+    cursor: pointer;
+     color:white;
+}
+
+.portada6{
+    background-image: url(../img/portada6.png);
+    background-size: 160px 220px;
+    height: 220px;
+    width: 160px;
+    color:transparent;
+}
+
+.portada6:hover {
+background-image:
+linear-gradient(
+      rgba(255, 81, 0, 0.74), 
+       rgba(255, 81, 0, 0.74)
+
+    ),
+url(../img/portada6.png);
+ background-size: 160px 220px;
+    height: 220px;
+    width: 160px;
+    cursor: pointer;
+    color:white;
+}
+
+.iconview{
+    position: relative;
+    top: 100px;
+    left: 70px;
+    z-index: 0;
+}
+
+/*-------------------------------------------------------fin Portadas----------------------------------------------------------------- */
+
+
+
+.btn, .btn-large, .btn-small, .btn-flat {
+    background-color: #5561ff !important;
+    text-transform: none;
+    
+}
+
+.btn:hover, .btn:focus {
+    color: #fff !important;
+    text-decoration: none;
+}
