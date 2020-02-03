@@ -1,0 +1,113 @@
+h5 {
+    width: 80%;
+}
+
+.oracion h4 {
+    text-align: center;
+    color: #20bcdb;
+}
+
+.contenedor-two {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 70%;
+    height: 62%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.content{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+.image{
+    position: relative;
+    width: 800px;
+    height: 520px;
+    background-image: url('../img/1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.item{
+    width: 180px;
+    padding: 10px 0px;
+    border: 2px solid rgb(11, 117, 255);
+    text-align: center;
+    margin: 30px;
+    font-weight: 600;
+    font-size: 24px;
+}
+.box{
+    border: 1px solid rgb(24, 24, 24);
+    width: 200px;
+    height: 70px;
+    position: absolute;
+    background-color: #fff;
+    z-index: 99;
+}
+.box1{
+    left: 42;
+    top: 120;
+}
+.box2{
+    left: 528;
+    top: 170;
+}
+.box3{
+    left: 42;
+    top: 200;
+}
+.pieza{
+    z-index: 100;
+}
+@media(max-height: 800px) {
+    
+.contenedor-two {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 70%;
+    height: 72%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+    .image{
+        position: relative;
+        width: 700px;
+        height: 420px;
+        background-image: url('../img/1.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .item{
+        width: 160px;
+        padding: 6px 0px;
+        border: 2px solid rgb(11, 117, 255);
+        text-align: center;
+        margin: 10px;
+        font-weight: 600;
+        font-size: 24px;
+    }
+    .box{
+        border: 1px solid rgb(24, 24, 24);
+        width: 176px;
+        height:60px;
+        position: absolute;
+    }
+    .box1{
+        left: 42;
+        top: 90;
+    }
+    .box2{
+        left: 462;
+        top: 130;
+    }
+    .box3{
+        left: 42;
+        top: 170;
+    }
+}

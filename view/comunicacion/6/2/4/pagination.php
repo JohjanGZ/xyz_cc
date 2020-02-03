@@ -1,65 +1,56 @@
 <script type="text/javascript">
-function Page_10() {
-    start_10();
+
+
+
+function Page_8() {
+    start_8();
     inicio();
     count = 3;
 }
 
-function Page_11() {
-    start_11();
+function Page_9() {
+    start_9();
     inicio();
     count = 3;
 }
 
-function Page_12() {
-    start_12();
-    inicio();
-    count = 3;
-}
 
-var cant = 3;
+
+var cant = 2;
 var cal = 20 / 20;
 var ruta = "../../../../exercises/comunicacion/";
 ////////////// 2do 
 // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
-function start_10() {
-    $("#ventana").load(ruta + '5-2-10/index.php', {
-        next: "Page_11()",
-        procesar: "result_tipo_5_2_10()",
-        titulo: "<center><h5>Reflexiona y <span>selecciona</span> la alternativa correcta.<br>• ¿Cuántos monosílabos pueden tildarse?</h5></center>",
-        restaurar: "start_10()",
+
+
+function start_8() {
+    $("#ventana").load(ruta + '6-1-8/index.php', {
+        next: "Page_9()",
+        procesar: "result_tipo_6_1_8()",
+        titulo: "<center><h5><span>Identifica</span> las partes del siguiente mapa conceptual.</h5></center>",
+        restaurar: "start_8()",
         dir: ruta,
-        cod: "5-2-10",
+        cod: "6-1-8",
         nota: cal
     });
     return false;
 };
 
-function start_11() {
-    $("#ventana").load(ruta + '5-2-11/index.php', {
-        next: "Page_12()",
-        procesar: "result_tipo_5_2_11()",
-        titulo: "<center><h5><span>Lee</span> el siguiente texto y selecciona los monosílabos que deben ser tildados.</h5></center>",
-        restaurar: "start_11()",
-        dir: ruta,
-        cod: "5-2-11",
-        nota: cal
-    });
-    return false;
-};
-
-function start_12() {
-    $("#ventana").load(ruta + '5-2-12/index.php', {
+function start_9() {
+    $("#ventana").load(ruta + '6-1-9/index.php', {
         next: "resultado()",
-        procesar: "result_tipo_5_2_12()",
-        titulo: "<center><h5><span>Selecciona</span> el enunciado que tenga los monosílabos correctamente tildados.</h5></center>",
-        restaurar: "start_12()",
+        procesar: "result_tipo_6_1_9()",
+        titulo: "<center><h5><span>Marca</span> si son verdaderas (V) o falsas (F) las siguientes afirmaciones.</h5></center>",
+        restaurar: "start_9()",
         dir: ruta,
-        cod: "5-2-12",
+        cod: "6-1-9",
         nota: cal
     });
     return false;
 };
+
+
+
 
 function resultado() {
     $("#ventana").load('../../../../exercises/resultado/resultado.php');

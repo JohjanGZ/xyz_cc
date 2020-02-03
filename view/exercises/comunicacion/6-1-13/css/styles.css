@@ -1,0 +1,121 @@
+h5 {
+    width: 85%;
+}
+
+.oracion h4 {
+    text-align: center;
+    color: #20bcdb;
+}
+
+.contenedor-two {
+    margin: 0 auto;
+    max-width: 1180px;
+    width: 90%;
+    height: 70%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.image{
+    width: 900px;
+    height: 430px;
+    background-image: url('../img/1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+}
+.box{
+    border: 1px solid rgba(12, 12, 12, 0);
+    width: 82px;
+    height: 36px;
+    position: absolute;
+}
+.box1{
+    top:23px;
+    left: 122px;
+}
+.box2{
+    top: 128px;
+    left: 122px
+}
+.box3{
+    top: 273px;
+    left: 122px
+}
+.box4{
+    top: 349px;
+    left: 122px
+}
+.box5{
+    right: 122px;
+    top: 110px;
+}
+.box6{
+    right: 122px;
+    top: 258px;
+}
+.pieza{
+    width: 120px;
+    height: 40px;
+    border: 2px solid #e63600;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    font-weight: 500;
+    font-size: 13px;
+    margin: 10px;
+}
+@media(max-height: 620px) {
+    .pieza{
+        width: 80px;
+        height: 30px;
+        border: 2px solid rgba(236, 86, 16, 0.993);
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        font-weight: 600;
+        font-size: 11px;
+        margin: 10px;
+    }
+    .image{
+        width: 800px;
+        height: 350px;
+        background-image: url('../img/1.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        position: relative;
+    }
+    .box{
+        border: 1px solid rgba(12, 12, 12, 0);
+        width: 72px;
+        height: 36px;
+        position: absolute;
+    }
+    .box1{
+        top: 16px;
+        left: 126px;
+    }
+    .box2{
+        top:100px;
+        left: 126px;
+    }
+    .box3{
+        top: 219px;
+        left: 126px;
+    }
+    .box4{
+        top: 281px;
+        left: 126px;
+    }
+    .box5{
+        right: 128px;
+        top: 86px;
+    }
+    .box6{
+        right: 128px;
+        top: 206px;
+    }
+}

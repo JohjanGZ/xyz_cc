@@ -1,13 +1,13 @@
-<?php require ('../../head.php');?>
+<?php require('../../head.php'); ?>
 <link rel="stylesheet" type="text/css" href="css/force-lastcape.css">
 <div id="vertical"></div>
 <div id="contenedor">
     <?php
- 	  require ('../../../../tools/sidenav/sidenav.php');
-   require ('../../../../tools/sound/sound.php');
-   require ('../../../../tools/crono/crono.php');
-    require ('../../../../tools/pantalla-inicio/2do.php');   
- ?>
+    require('../../../../tools/sidenav/sidenav.php');
+    require('../../../../tools/sound/sound.php');
+    require('../../../../tools/crono/crono.php');
+    require('../../../../tools/pantalla-inicio/2do.php');
+    ?>
     <div style="transform: translate(0vw, -13vh);
     color: white;" id="resolucion"></div>
     <img class="logoUnidad" src="../unidad.png">
@@ -38,17 +38,17 @@
         <input type="hidden" name="" id="nota" value="0">
 
         <div id="ventana"></div>
-        <?php require ('pagination.php');?>
+        <?php require('pagination.php'); ?>
         <script src="../../../../../js/materialize.min.js"></script>
         <script type="text/javascript">
-        $(document).ready(function() {
-            $('#resolucion').html(window.innerWidth + " x " + window.innerHeight);
-        });
+            $(document).ready(function() {
+                $('#resolucion').html(window.innerWidth + " x " + window.innerHeight);
+            });
 
-        function IniciarCronometro() {
-            $("#portada").css("display", "none");
-            Page_16();
-        }
+            function IniciarCronometro() {
+                $("#portada").css("display", "none");
+                Page_13();
+            }
         </script>
     </body>
 </div>
