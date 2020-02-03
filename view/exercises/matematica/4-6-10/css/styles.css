@@ -1,0 +1,80 @@
+.container-two {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 70%;
+  height: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h5 {
+  width: 80%;
+}
+
+.title {
+  font-size: 2em;
+  margin-bottom: 4vh;
+}
+
+.img {
+  width: auto;
+  height: 50px;
+}
+
+.grid {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.two-grid {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.ejercicio {
+  margin-left: 5vh;
+}
+
+.item {
+  width: 50px;
+  height: 50px;
+  border: 1px solid silver;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: .5vh;
+  font-size: 1.6em;
+}
+
+.eje-item {
+  display: flex;
+  font-size: 1.6em;
+  margin-bottom: 1vh;
+  align-items: flex-end;
+}
+
+.eje-item span {
+  /* color: tomato; */
+  margin-left: 1vh;
+  font-size: 15px;
+}
+
+.s {
+  font-size: 1em !important;
+  font-weight: 600 !important;
+}
+/* Select */
+
+select {
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 170px;
+  padding: 5px;
+  border: 1px solid #dddddd;
+  border-radius: 2px;
+  height: 3rem;
+  margin-right: 1vh;
+  margin-left: 1vh;
+}

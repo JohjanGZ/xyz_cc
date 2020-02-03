@@ -1,0 +1,129 @@
+
+.contenedor-two{
+    width: 80%;
+    margin: auto;
+    padding-top: 6vh;
+}
+.content{
+    width: 90%;
+    margin: auto;
+}
+.image{
+    background-image: url('../img/1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 1000px;
+    height: 400px;
+    margin: auto;
+    position: relative;
+}
+.options{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+}
+.pieza{
+    width: 150px;
+    text-align: center;
+}
+.item img{
+    width: 140px;
+}
+.box{
+    position: absolute;
+    width: 120px;
+    height: 50px;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+.box1{
+    left: 178px;
+   top: 20px; 
+}
+.box2{
+    left: 178px;
+    top: 80px; 
+}
+.box3{
+    left: 178px;
+    top: 208px; 
+}
+.box4{
+    left: 178px;
+    top: 308px; 
+}
+
+@media(max-height: 750px) {
+
+    .contenedor-two{
+        width: 90%;
+        margin: auto;
+        padding-top: 1vh;
+
+    }
+    .content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+    .image{
+        background-image: url('../img/1.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 600px;
+        height: 400px;
+        margin: auto;
+        position: relative;
+    }
+    .options{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+    }
+    .item img{
+        width: 100px;
+    }
+    .box1{
+        left: -10px;
+       top: 28px; 
+    }
+    .box2{
+        left: -10px;
+        top: 90px; 
+     }
+    .box3{
+        left: -10px;
+        top: 213px; 
+    }
+    .box4{
+        left: -10px;
+        top: 309px; 
+    }
+    .box{
+        height: 40px;
+        border:  1px solid rgba(51, 51, 51, 0);
+    }
+    .item{
+        margin: 10px;
+    }
+}
+/* @media(max-width: 1300px) {
+
+    .contenedor-two{
+        width: 90%;
+        margin: auto;
+        padding-top: 1vh;
+    }
+    .image{
+        background-image: url('../img/1.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 1000px;
+        height: 300px;
+        margin: 20px auto;
+        position: relative;
+    }
+} */
