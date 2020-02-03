@@ -1,8 +1,13 @@
 <?php
+$indev=date("d".'-'."m".'-'."Y");
+
+  $o=strtotime($indev);
+if ($o <= strtotime('04-03-2020')){  
 require('head.php'); 
 include('header.php');
 include('carga.php');
-echo "<div id='fullscreen' >";   
+echo "<div id='fullscreen' >";  
+}
 
 ?>
 </head>

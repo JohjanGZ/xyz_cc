@@ -1,0 +1,90 @@
+
+
+@media (max-width: 1100px) {
+	h5 {
+    font-size: 1.0rem;
+    margin-bottom: -41px;
+    position: fixed;
+    top: 62px;
+    margin-top: 22px;
+    margin: 1% 10% 0;
+}
+.imgvf {
+    background-image: url(../../img/2-7/a7.png);
+    background-size: 300px 140px;
+    width: 300px;
+    height: 140px;
+    margin: 0 auto 0;
+    background-repeat: no-repeat;
+}
+.container, .content-wrapper {
+    position: fixed;
+    margin: 11% auto 0%;
+    width: 100%;
+    max-width: 100%;
+}
+.seleccion {
+    top: 0;
+    position: relative;
+    margin: 0% 7% 0;
+}
+
+.logoUnidad {
+    width: 55px;
+    left: 15px;
+    top: 26px;
+    position: fixed;
+}
+
+.cronometro {
+    width: 130px;
+    left: 74%;
+    top: 26px;
+    position: fixed;
+}
+
+.botones {
+    width: 100%;
+    padding: 0;
+    position: fixed;
+    top: 87%;
+    margin: 0 auto 0;
+}
+
+.contenedorimg {
+    border: solid 1px #dcdcdc00;
+    width: auto;
+    height: auto;
+    margin: 5px;
+    border-radius: 15px;
+    float: left;
+}
+#contenedorPiezas {
+    background: #5561ff00;
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-left: auto;
+    /* box-shadow: 0px 0px 10px 2px #dadada; */
+    margin-top: auto;
+    margin: 0% 10% 0;
+}
+
+.recibidores {
+    width: 63%;
+    position: relative;
+    left: auto;
+    top: auto;
+    margin: 5% auto 0;
+}
+
+
+.item6 {
+    font-size: 14px;
+    float: left;
+    /* padding: 0px; */
+    margin-left: 28px;
+    margin-right: 25px;
+}
+
+}
