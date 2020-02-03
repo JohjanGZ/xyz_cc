@@ -89,16 +89,12 @@ a:hover, a:active, a:focus {
 </style>
    <?php 
    $date=date("d".'-'."m".'-'."Y");
-
-  $F=strtotime($fecha);
-if ($F <= strtotime('07-03-2020')){  
+   $F=strtotime($fecha);
+    if ($F <= strtotime('07-03-2020')){  
                         $libros=$_POST['data'];
                        $g=$_POST['g'];
                        $nivel=$_POST['nivel'];
-}
-                     
-                      
-                     
+}                                  
                         ?>
 <!--<script type="text/javascript" src="js/data.js"></script>-->
 
