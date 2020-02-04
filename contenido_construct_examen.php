@@ -17,7 +17,6 @@
     </center>
 </div>
 	<script type="text/javascript">
-        
 		$("#portada").css("display", "none");
         var select=[];
         
@@ -30,5 +29,5 @@
                      });
                 localStorage.setItem("seleccion",select);
                 window.location.replace("view/examen/index.php");
-            });	
+            });
 	</script>
