@@ -36,6 +36,9 @@
             </div>
         </div>
         <input type="hidden" name="" id="nota" value="0">
+        <script>
+
+        </script>
 
         <div id="ventana"></div>
         <?php require ('pagination.php');?>
@@ -47,7 +50,7 @@
 
         function IniciarCronometro() {
             $("#portada").css("display", "none");
-            Page_4();
+            Page_3();
         }
         </script>
     </body>
