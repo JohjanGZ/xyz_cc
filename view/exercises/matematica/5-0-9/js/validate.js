@@ -4,7 +4,6 @@ $('.rectangulo, .triangulo').click(function() {
     if ($(this).attr("alt") == "") {
         r++;
         console.log(r);
-    } else {
         $(this).attr("alt", "xd");
     }
 
