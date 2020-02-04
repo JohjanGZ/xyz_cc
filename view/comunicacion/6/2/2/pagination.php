@@ -10,7 +10,6 @@
         inicio();
          count = 3;
     }
-
     var cant=2;
     var cal= 20/20;
     var ruta="../../../../exercises/comunicacion/";
@@ -18,28 +17,28 @@
             // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
     
     function start_4(){
-        $("#ventana").load(ruta+'6-1-4/index.php', 
+        $("#ventana").load(ruta+'6-2-4/index.php', 
         {
         next: "Page_5()", 
-        procesar:"result_tipo_6_1_4()",
-        titulo:"<center><h5><span>Selecciona</span> la opción correcta. Los tipos de destinatarios de un artículo de divulgación científica son:</h5></center>",
+        procesar:"result_tipo_6_2_4()",
+        titulo:"<center><h5><span>Ubica</span> adecuadamente los diálogos en las viñetas que les correspondan.</h5></center>",
         restaurar:"start_4()",
         dir:ruta,
-        cod: "6-1-4",
+        cod: "6-2-4",
         nota:cal
         }
         );
         return false;  
     };
     function start_5(){
-        $("#ventana").load(ruta+'6-1-5/index.php', 
+        $("#ventana").load(ruta+'6-2-5/index.php', 
         { 
         next: "resultado()", 
-        procesar:"result_tipo_6_1_5()",
-        titulo:"<center><h5><span>Lee</span> y <span>selecciona</span> el enunciado que no describe un beneficio de establecer el destinatario de un artículo de divulgación científica.</h5></center>",
+        procesar:"result_tipo_6_2_5()",
+        titulo:"<center><h5><span>Selecciona</span>. ¿Cuál de las siguientes es una característica del diálogo?</h5></center>",
         restaurar:"start_5()",
         dir:ruta,
-        cod: "6-1-5",
+        cod: "6-2-5",
         nota:cal
         }
         );

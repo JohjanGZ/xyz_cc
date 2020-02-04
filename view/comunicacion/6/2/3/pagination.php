@@ -15,25 +15,25 @@ var ruta = "../../../../exercises/comunicacion/";
 ////////////// 2do 
 // ----------  para iniciar y reiniciar ejercicios sin que afecte el cronometro -----------------------
 function start_6() {
-    $("#ventana").load(ruta + '6-1-6/index.php', {
+    $("#ventana").load(ruta + '6-2-6/index.php', {
         next: "Page_7()",
-        procesar: "result_tipo_6_1_6()",
-        titulo: "<center><h5><span>Selecciona</span>. ¿De qué género literario es propio el narrador?</h5></center>",
+        procesar: "result_tipo_6_2_6()",
+        titulo: "<center><h5><span>Arrastra</span> los términos de manera que completen la definición del propósito de una entrevista.</h5></center>",
         restaurar: "start_6()",
         dir: ruta,
-        cod: "6-1-6",
+        cod: "6-2-6",
         nota: cal
     });
     return false;
 };
 function start_7() {
-    $("#ventana").load(ruta + '6-1-7/index.php', {
+    $("#ventana").load(ruta + '6-2-7/index.php', {
         next: "resultado()",
-        procesar: "result_tipo_6_1_7()",
-        titulo: "<center><h5><span>Relaciona</span> cada miembro de la comunicación con su definición.</h5></center>",
+        procesar: "result_tipo_6_2_7()",
+        titulo: "<center><h5><span>Selecciona</span> los enunciados que sean un tipo de entrevista.</h5></center>",
         restaurar: "start_7()",
         dir: ruta,
-        cod: "6-1-7",
+        cod: "6-2-7",
         nota: cal
     });
     return false;
