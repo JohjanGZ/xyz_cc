@@ -10,7 +10,7 @@
  ?>
  <div style="transform: translate(0vw, -13vh);
     color: white;" id="resolucion"></div>
-<img class="logoUnidad" src="../unidad.png">
+<img class="logoUnidad"><script>$('.logoUnidad').attr("src","../../../../../img/unidades/"+unidad+".png");</script>
 <body  scroll=no class="fnd" >
 <div style="transform: translate(0vw, -11vh);
     color: white;" id="resolucion"></div>
