@@ -1,0 +1,76 @@
+h5 {
+    width: 85%;
+}
+
+.container {
+    display: flex;
+    height: 70%;
+    align-items: center;
+}
+
+.container .row {
+    width: 100%;
+}
+
+.contenedor-ejercicios {
+    width: 60%;
+    margin: auto;
+    min-width: 1000px;
+    /* display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start; */
+}
+
+.contenedor-ejercicios .ejercicio {
+    text-align: center;
+    padding: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.ejercicio h4 span {
+    color: tomato;
+    font-weight: 700;
+}
+
+.ejercicio p {
+    width: fit-content;
+    margin: 0 0;
+    font-size: 1.6rem;
+    margin-top: 20px;
+}
+
+p span {
+    color: tomato;
+}
+
+p span.select {
+    display: inline-flex;
+    width: 80px;
+}
+
+span select {
+    color: rgb(47, 196, 230);
+}
+
+@media(max-width: 1550px) {
+    .ejercicio h4 {
+        font-size: 2rem;
+        margin: 0;
+    }
+}
+
+@media(max-height: 640px) {
+    .contenedor-ejercicios .ejercicio {
+        padding: 5px 0;
+    }
+    .ejercicio h4 {
+        font-size: 1.7rem;
+    }
+    .ejercicio p {
+        font-size: 1.5rem;
+        margin-top: 14px;
+    }
+}

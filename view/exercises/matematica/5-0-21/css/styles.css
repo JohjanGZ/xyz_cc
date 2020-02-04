@@ -1,0 +1,106 @@
+h5 {
+    width: 85%;
+}
+
+.container {
+    display: flex;
+    height: 70%;
+    align-items: center;
+}
+
+.container .row {
+    width: 100%;
+}
+
+.contenedor-ejercicios {
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+
+.contenedor-ejercicios .ejercicio {
+    text-align: center;
+    padding: 15px 0;
+    /* display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; */
+}
+
+.ejercicio h4 {
+    width: 100%;
+}
+
+.ejercicio h4 span {
+    color: tomato;
+    font-weight: 700;
+}
+
+.ejercicio p {
+    width: fit-content;
+    margin: auto;
+    font-size: 1.7rem;
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p span {
+    color: tomato;
+}
+
+p span.select {
+    display: inline-flex;
+    width: fit-content;
+}
+
+span select {
+    color: rgb(47, 196, 230);
+}
+
+.ejercicio .conjunto {
+    width: 348px;
+    height: 337px;
+    background-image: url(../img/1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin: auto;
+}
+
+.conjunto p {
+    position: absolute;
+}
+
+p.letra span {
+    width: 50px;
+}
+
+p.uno {
+    top: calc(50% - 70px);
+    left: 30px;
+}
+
+p.dos {
+    top: 50%;
+    left: 30px;
+}
+
+p.tres {
+    top: calc(50% - 70px);
+    left: calc(70% - 80px);
+}
+
+p.cuatro {
+    top: 50%;
+    left: calc(70% - 80px);
+}
+
+@media(max-height: 640px) {
+    .ejercicio p {
+        margin-top: 20px;
+    }
+}

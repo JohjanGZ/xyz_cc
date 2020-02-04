@@ -10,10 +10,16 @@
     ?>
     <div style="transform: translate(0vw, -13vh);
     color: white;" id="resolucion"></div>
+<<<<<<< HEAD
     <img class="logoUnidad" src="../unidad.png">
 
     <body scroll=no class="fnd">
         <div style="transform: translate(0vw, -11vh);
+=======
+<img class="logoUnidad"><script>$('.logoUnidad').attr("src","../../../../../img/unidades/"+unidad+".png");</script>
+<body  scroll=no class="fnd" >
+<div style="transform: translate(0vw, -11vh);
+>>>>>>> 2f07d6941302ed22ca44ee2514dd9acc6db22e85
     color: white;" id="resolucion"></div>
         <div id="correcto" class="modal">
             <div class="modal-content">

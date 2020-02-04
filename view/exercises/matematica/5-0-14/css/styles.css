@@ -1,0 +1,117 @@
+h5 {
+    width: 85%;
+}
+
+.container {
+    display: flex;
+    height: 70%;
+    align-items: center;
+}
+
+.container .row {
+    width: 100%;
+}
+
+.contenedor-ejercicios {
+    width: fit-content;
+    margin: auto;
+    /* display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start; */
+}
+
+.contenedor-ejercicios .ejercicio {
+    text-align: center;
+    padding: 15px 0;
+    /* display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; */
+}
+
+.ejercicio h4 {
+    width: 100%;
+    font-size: 1.6rem;
+    padding-bottom: 25px;
+}
+
+.ejercicio h4 span {
+    color: tomato;
+    font-weight: 700;
+}
+
+.ejercicio p {
+    width: fit-content;
+    margin: auto;
+    font-size: 1.7rem;
+    margin-top: 20px;
+}
+
+p span {
+    display: inline-flex;
+    width: 250px;
+}
+
+span select {
+    font-size: 1.5rem;
+    color: rgb(47, 196, 230);
+}
+
+.ejercicio .conjunto {
+    width: 345px;
+    height: 321px;
+    background-image: url(../img/1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin: auto;
+}
+
+.conjunto p {
+    position: absolute;
+}
+
+p.letra span {
+    width: 58px;
+}
+
+p.uno {
+    top: 49px;
+    left: 119px;
+}
+
+p.dos {
+    top: 49px;
+    left: 207px;
+}
+
+p.tres {
+    top: 49px;
+    left: 295px;
+}
+
+p.cuatro {
+    top: 136px;
+    left: 119px;
+}
+
+p.cinco {
+    top: 136px;
+    left: 207px;
+}
+
+p.seis {
+    top: 136px;
+    left: 295px;
+}
+
+@media(max-height: 640px) {
+    .row {
+        margin-bottom: 40px;
+    }
+    .ejercicio h4 {
+        width: 100%;
+        padding-bottom: initial;
+    }
+}

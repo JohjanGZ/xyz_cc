@@ -1,0 +1,64 @@
+
+
+@media (max-width: 800px) {
+	h4 {
+    margin-top: 76px;
+    margin-bottom: 0;
+    position: fixed;
+    font-size: 1.5rem;
+    margin: 13% 13%;
+}
+
+.botones {
+    padding: 0;
+    position: fixed;
+    top: 90%;
+    margin: 0 17%;
+}
+
+.logoUnidad {
+    width: 55px;
+    left: 15px;
+    top: 26px;
+    position: fixed;
+}
+
+.cronometro {
+    width: 130px;
+    left: 74%;
+    top: 26px;
+    position: fixed;
+}
+
+#contenedorPiezas {
+    background: #5561ff00;
+    width: auto;
+    height: 242px;
+    float: left;
+    margin-left: 16px;
+    /* box-shadow: 0px 0px 10px 2px #dadada; */
+    margin-top: 106px;
+}
+
+
+.contenedorimg {
+    border: solid 1px #dcdcdc00;
+    width: auto;
+    height: 100px;
+    margin: 5px;
+    border-radius: 15px;
+}
+
+
+#uno, #dos, #tres {
+    box-shadow: inset 0px 1px 3px 0px #7d7c7c;
+    /* border: #25252591 solid 2px; */
+        width: 100%;
+    /* min-width: 346px; */
+}
+.recibidor {
+    width: 100%;
+}
+
+
+}
