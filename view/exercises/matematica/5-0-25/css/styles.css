@@ -1,0 +1,103 @@
+h5 {
+    width: 85%;
+}
+
+.container {
+    display: flex;
+    height: 70%;
+    align-items: center;
+}
+
+.container .row {
+    width: 100%;
+}
+
+.contenedor-ejercicios {
+    width: fit-content;
+    margin: auto;
+    min-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+table {
+    width: fit-content;
+    font-size: 1.6rem;
+}
+
+table,
+tr,
+td,
+th {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+table tr th {
+    background-color: cornflowerblue;
+    color: white;
+    text-align: center;
+}
+
+table tr td {
+    text-align: center;
+    padding: 8px 1rem;
+}
+
+.contenedor-ejerciciosx .ejercicio {
+    text-align: center;
+    padding: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.ejercicio h4 span {
+    color: tomato;
+    font-weight: 700;
+}
+
+.ejercicio p {
+    width: fit-content;
+    margin: 0 0;
+    font-size: 1.6rem;
+    margin-top: 20px;
+}
+
+p span {
+    color: tomato;
+}
+
+p span.select {
+    display: inline-flex;
+    width: fit-content;
+}
+
+span select {
+    color: rgb(47, 196, 230);
+}
+
+@media(max-width: 1550px) {
+    .ejercicio h4 {
+        font-size: 2rem;
+        margin: 0;
+    }
+}
+
+@media(max-height: 640px) {
+    .contenedor-ejercicios .ejercicio {
+        padding: 5px 0;
+    }
+    .ejercicio h4 {
+        font-size: 1.7rem;
+    }
+    .ejercicio p {
+        font-size: 1.5rem;
+        margin-top: 14px;
+    }
+    .contenedor-ejercicios {
+        min-width: 1111px;
+    }
+}
