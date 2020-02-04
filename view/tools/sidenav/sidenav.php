@@ -77,7 +77,7 @@ $(document).ready(function() {
 
 
         i++;
-        if (i == 5) {
+        if (i == 4) {
             $("#menu").menu({
                 classes: {
                     "ui-menu": "green"

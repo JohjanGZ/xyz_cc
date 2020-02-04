@@ -23,7 +23,7 @@ function start_7() {
     $("#ventana").load(ruta + '5-0-7/index.php', {
         next: "Page_8()",
         procesar: "result_tipo_5_0_7()",
-        titulo: "<center><h5><span>Observa</span> el diagrama de Venn y <span>resalta</span> la operación que piden.Luego, <span>selecciona</span> de la lista las respuestas de las operaciones correspondientes.</h5></center>",
+        titulo: "<center><h5><span>Observa</span> el diagrama de Venn y <span>selecciona</span> de la lista las respuestas de las operaciones correspondientes.</h5></center>",
         restaurar: "start_7()",
         dir: ruta,
         cod: "5-0-7",
