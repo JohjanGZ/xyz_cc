@@ -48,7 +48,7 @@ box-shadow: inset #00000029 0px -1px 3px 0px;
             </div>
             <script>
                 $(document).ready(function(){
-                    $('.tabs').tabs();
+                $('.tabs').tabs();
                 });   
                 $( "#main-nav" ).hide();
             </script>

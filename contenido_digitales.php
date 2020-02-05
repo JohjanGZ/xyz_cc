@@ -1,9 +1,14 @@
 	<?php
+	$dev=date("d".'-'."m".'-'."Y");
+
+  $o=strtotime($dev);
+if ($o <= strtotime('24-03-2020')){  
 			$libros=$_POST['digital'];
 			$_POST['id_unidad'];
 			$ejercicios=$_POST['ejercicios'];
 			$_POST['nombre'];
 			$enlace=$_POST['enlace'];
+}			
     ?>
 <center><h5><?= $_POST['nombre']?></h5></center>												
 <div class="actividades">
@@ -42,19 +47,17 @@
 
    		 margin-top: -115px;
 		}
-
+		
 	</style>
 	<center>
 	<div class="carousel">
 	<?php
 				$t=0;
 				foreach ($libros as $i){
-
 echo "<a class='carousel-item' href='view/digitales/".$libros[$t]['enlace']."/index.php' target='_blank'><label>".$libros[$t]['title']."</label><img src='img/digitales/".$libros[$t]['portada']."'></a>";
 				    $t++;
 				}
-	?>
-    
+	?>   
   	</div>
 </center>
 </div>

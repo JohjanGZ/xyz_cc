@@ -229,7 +229,7 @@ a:hover, a:active, a:focus {
          ?>
             <a href="#<?=$list?>" title="<?=$titulo?>" >
                 <li  class="li_m_cursos" >
-                <?=$titulo?>
+                    <?=$titulo?>
                 </li>
             </a>
             <?php $x++;} ?>
